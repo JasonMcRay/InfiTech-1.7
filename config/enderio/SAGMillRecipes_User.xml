@@ -21,7 +21,6 @@ found in the core file.
 -->
 
 <SAGMillRecipes>
-
 <!-- Disables all recipes in the group 'Vanilla'
 <recipeGroup name="Vanilla" enabled="false"/> 
 -->
@@ -80,5 +79,30 @@ found in the core file.
 </recipeGroup>
 -->
   
-
+<recipeGroup name="EnderIO">
+  <recipe name="ClayBlock" energyCost="240">     
+      <input>
+        <itemStack modID="minecraft" itemName="clay" />        
+      </input>
+      <output>      
+        <itemStack modID="minecraft" itemName="clay_ball" number="2" />
+        <itemStack modID="minecraft" itemName="clay_ball" number="1" chance="0.1" />        
+      </output>
+    </recipe>
+	
+  <recipe name="RedstoneOre" energyCost="300">
+      <input>
+        <itemStack modID="minecraft" itemName="redstone_ore" />        
+      </input>
+      <output>
+        <itemStack modID="minecraft" itemName="redstone" number="8"/>
+        <itemStack modID="minecraft" itemName="redstone" number="1" chance="0.2"/>        
+        <itemStack modID="minecraft" itemName="cobblestone" chance="0.15"/>
+      </output>
+    </recipe>
+	
+  <recipe name="Silicon"/>
+  
+</recipeGroup>
+	
 </SAGMillRecipes>
