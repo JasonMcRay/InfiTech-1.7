@@ -1,5 +1,7 @@
 import mods.nei.NEI;
 import mods.gregtech.ChemicalReactor;
+import mods.gregtech.Wiremill;
+import mods.gregtech.Assembler;
 
 var BCGearWood = <BuildCraft|Core:woodenGearItem>;
 var BCGearStone = <BuildCraft|Core:stoneGearItem>;
@@ -29,7 +31,7 @@ var engineStirling = <BuildCraft|Energy:engineBlock:1>;
 var cobblestone = <ore:cobblestone>;
 var chute = <BuildCraft|Factory:blockHopper>;
 var plateIron = <ore:plateIron>;
-var woodChest = <minecraft:chest>;
+var chestWood = <minecraft:chest>;
 var hammer = <ore:craftingToolHardHammer>;
 var PCGearIron = <PneumaticCraft:compressedIronGear>;
 var ingotCompressedIron = <PneumaticCraft:ingotIronCompressed>;
@@ -50,7 +52,7 @@ var gateBasic = <BuildCraft|Transport:pipeGate>;
 var pipeKinesisDiamond = <BuildCraft|Transport:item.buildcraftPipe.pipepowerdiamond>;
 var turbineRotor = <PneumaticCraft:turbineRotor>;
 var tubePressureAdvanced = <PneumaticCraft:advancedPressureTube>;
-var furnace = <ore:craftingFurnace>;
+var craftingFurnace = <ore:craftingFurnace>;
 var circuitBoardPrinted = <PneumaticCraft:printedCircuitBoard>;
 var filler = <BuildCraft|Builders:fillerBlock>;
 var dyeBlack = <ore:dyeBlack>;
@@ -93,13 +95,13 @@ var farmStation = <EnderIO:blockFarmStation>;
 var dimTransceiver = <EnderIO:blockHyperCube>;
 var plateIridium = <ore:plateIridium>;
 var capacitorBank = <EnderIO:blockCapacitorBank>;
-var enderChest = <minecraft:ender_chest>;
+var chestEnder = <minecraft:ender_chest>;
 var pumpElectricMV = <gregtech:gt.metaitem.01:32611>;
 var capacitorOctadic = <EnderIO:itemBasicCapacitor:2>;
 var machineHullMV = <gregtech:gt.blockmachines:12>;
 var EISilicon = <EnderIO:itemMaterial>;
 var silicon = <ore:itemSilicon>;
-var vacuumChest = <EnderIO:blockVacuumChest>;
+var chestVacuum = <EnderIO:blockVacuumChest>;
 var ingotRedAlloy = <gregtech:gt.metaitem.01:11308>;
 var ingotGold = <ore:ingotGold>;
 var wrench = <ore:craftingToolWrench>;
@@ -109,10 +111,215 @@ var vibrantCrystal = <EnderIO:itemMaterial:6>;
 var nuggetVibrant = <EnderIO:itemMaterial:4>;
 var emerald = <minecraft:emerald>;
 var nuggetPulsating = <EnderIO:itemMaterial:3>;
+var anchorDimensional = <DimensionalAnchors:chunkloader>;
+var plateGold = <ore:plateGold>;
+var enderPearl = <minecraft:ender_pearl>;
+var upgradeBSpace = <JABBA:upgradeCore:1>;
+var plateEnderium = <ore:plateEnderium>;
+var dolly = <JABBA:mover>;
+var chestEnder = <minecraft:ender_chest>;
+var teleporter = <IC2:blockMachine2>;
+var ingotEnderium = <ore:ingotEnderium>;
+var plateObsidian = <ore:plateObsidian>;
+var charcoal = <minecraft:coal:1>;
+var furnace3d = <furnace3d:furnace>;
+var nuggetSteel = <ore:nuggetSteel>;
+var RCNuggetSteel = <Railcraft:nugget:1>;
+var nuggetIron = <ore:nuggetIron>;
+var aerialInterface = <PneumaticCraft:aerialInterface>;
+var pressureWall = <PneumaticCraft:pressureChamberWall:*>;
+var pressureTubeAdv = <PneumaticCraft:advancedPressureTube>;
+var netherStar = <minecraft:nether_star>;
+var hopper = <minecraft:hopper>;
+var hopperOmni = <PneumaticCraft:omnidirectionalHopper>;
+var coilIron = <ProjRed|Core:projectred.core.part:17>;
+var coilCopper = <ProjRed|Core:projectred.core.part:16>;
+var coilGold = <ProjRed|Core:projectred.core.part:18>;
+var drawPlate = <ProjRed|Core:projectred.core.drawplate>;
+var wireIron = <gregtech:gt.blockmachines:1300>;
+var wireCopper = <gregtech:gt.blockmachines:1360>;
+var wireGold = <gregtech:gt.blockmachines:1420>;
+var plateDiamond = <gregtech:gt.metaitem.01:17500>;
+var GTDustElectrumFlux = <gregtech:gt.metaitem.01:2320>;
+var itemRedstone = <minecraft:redstone>;
+var GTDustElectrum = <gregtech:gt.metaitem.01:2303>;
+var GTDustEnderium = <gregtech:gt.metaitem.01:2321>;
+var IC2DustTin = <IC2:itemDust:7>;
+var GTDustEnderPearl = <gregtech:gt.metaitem.01:2532>;
+var GTCrystalFlux = <gregtech:gt.metaitem.01:8517>;
+var AEDustEnder = <appliedenergistics2:item.ItemMultiMaterial:46>;
+var railStandard = <Railcraft:part.rail>;
+var railAdvanced = <Railcraft:part.rail:1>;
+var railHS = <Railcraft:part.rail:3>;
+var railReinforced = <Railcraft:part.rail:4>;
+var stickGold = <ore:stickGold>;
+var stickSteel = <ore:stickSteel>;
+var blazePowder = <minecraft:blaze_powder>;
+var fireboxSolid = <Railcraft:tile.railcraft.machine.beta:5>;
+var brickAbyssal = <Railcraft:tile.railcraft.brick.abyssal>;
+var furnaceSteam = <gregtech:gt.blockmachines:103>;
+var fireCharge = <minecraft:fire_charge>;
+var fireboxLiquid = <Railcraft:tile.railcraft.machine.beta:6>;
+var furnaceHighPressure = <gregtech:gt.blockmachines:104>;
+var bucket = <minecraft:bucket>;
+var RCCrowbar = <Railcraft:tool.crowbar>;
+var RCCrowbarReinforced = <Railcraft:tool.crowbar.reinforced>;
+var dispenserTrain = <Railcraft:tile.railcraft.machine.gamma:9>;
+var dispenserCart = <Railcraft:tile.railcraft.machine.gamma:8>;
+var woodenRailbed = <Railcraft:part.railbed>;
+var trackCoupler = <Railcraft:tile.railcraft.track>.withTag({track:"railcraft:track.coupler"});
+var crowbar = <ore:craftingToolCrowbar>;
+var playerRelocator = <RefinedRelocation:playerRelocator>;
+var blazeRod = <minecraft:blaze_rod>;
+var relocationController = <RefinedRelocation:relocationController>;
+var enderEye = <minecraft:ender_eye>;
+var compass = <minecraft:compass>;
+
+# Refined Relocation
+recipes.remove(playerRelocator);
+recipes.addShaped(playerRelocator, [
+	[plateIridium, blazeRod, plateIridium],
+	[ingotEnderium, diamond, ingotEnderium],
+	[plateIridium, fireCharge, plateIridium]]);
+recipes.remove(relocationController);
+recipes.addShaped(relocationController, [
+	[plateDiamond, enderEye, plateDiamond],
+	[enderEye, compass, enderEye],
+	[plateDiamond, enderEye, plateDiamond]]);
+
+# Railcraft
+recipes.remove(RCCrowbar);
+NEI.hide(RCCrowbar);
+recipes.remove(RCCrowbarReinforced);
+NEI.hide(RCCrowbarReinforced);
+recipes.remove(RCGearPlated);
+recipes.addShaped(RCGearPlated, [
+	[null, nuggetGold, null],
+	[nuggetGold, GTGearStone, nuggetGold],
+	[null, nuggetGold, null]]);
+recipes.remove(RCGearSteel);
+NEI.hide(RCGearSteel);
+recipes.remove(engineSteamIndustrial);
+recipes.addShaped(engineSteamIndustrial, [
+	[plateSteel, plateSteel, plateSteel],
+	[null, glass, null],
+	[GTGearSteel, piston, GTGearSteel]]);
+recipes.remove(engineSteamCommercial);
+recipes.addShaped(engineSteamCommercial, [
+	[plateIron, plateIron, plateIron],
+	[null, glass, null],
+	[GTGearIron, piston, GTGearIron]]);
+recipes.remove(railStandard);
+recipes.remove(railAdvanced);
+recipes.addShaped(railAdvanced * 8, [
+	[railStandard, redstone, stickGold],
+	[railStandard, redstone, stickGold],
+	[railStandard, redstone, stickGold]]);
+recipes.remove(railHS);
+recipes.addShaped(railHS, [
+	[stickSteel, blazePowder, stickGold],
+	[stickSteel, blazePowder, stickGold],
+	[stickSteel, blazePowder, stickGold]]);
+recipes.remove(railReinforced);
+recipes.remove(fireboxSolid);
+recipes.addShaped(fireboxSolid, [
+	[brickAbyssal, brickAbyssal, brickAbyssal],
+	[brickAbyssal, fireCharge, brickAbyssal],
+	[brickAbyssal, furnaceSteam, brickAbyssal]]);
+recipes.remove(fireboxLiquid);
+recipes.addShaped(fireboxLiquid, [
+	[plateSteel, bucket, plateSteel],
+	[ironBars, fireCharge, ironBars],
+	[plateSteel, furnaceHighPressure, plateSteel]]);
+recipes.remove(dispenserTrain);
+recipes.addShaped(dispenserTrain, [
+	[redstone, crowbar, redstone],
+	[crowbar, dispenserCart, crowbar],
+	[redstone, crowbar, redstone]]);
+recipes.remove(trackCoupler);
+recipes.addShaped(trackCoupler, [
+	[railAdvanced, crowbar, railAdvanced],
+	[railAdvanced, woodenRailbed, railAdvanced],
+	[railAdvanced, crowbar, railAdvanced]]);
+
+
+# Project Red
+recipes.remove(coilIron);
+Wiremill.addRecipe(coilIron, wireIron * 2, 100, 4);
+recipes.remove(coilCopper);
+Wiremill.addRecipe(coilCopper, wireCopper * 2, 100, 4);
+recipes.remove(coilGold);
+Wiremill.addRecipe(coilGold, wireGold * 2, 100, 4);
+recipes.remove(drawPlate);
+NEI.hide(drawPlate);
+
+# PneumaticCraft
+recipes.remove(PCGearIron);
+recipes.addShaped(PCGearIron, [
+	[null, ingotCompressedIron, null],
+	[ingotCompressedIron, GTGearStone, ingotCompressedIron],
+	[null, ingotCompressedIron, null]]);
+recipes.remove(compressorKinetic);
+recipes.addShaped(compressorKinetic, [
+	[gateBasic, GTGearGold, circuitBoardPrinted],
+	[pipeKinesisDiamond, turbineRotor, tubePressureAdvanced],
+	[gateBasic, craftingFurnace, circuitBoardPrinted]]);
+recipes.remove(aerialInterface);
+recipes.addShaped(aerialInterface, [
+	[pressureWall, hopper, pressureWall],
+	[ingotEnderium, netherStar, ingotEnderium],
+	[pressureWall, pressureTubeAdv, pressureWall]]);
+recipes.remove(hopperOmni);
+recipes.addShaped(hopperOmni, [
+	[ingotCompressedIron, hammer, ingotCompressedIron],
+	[ingotCompressedIron, hopper, ingotCompressedIron],
+	[null, ingotCompressedIron, null]]);
+
+# 3D Furnace
+recipes.remove(furnace3d);
+recipes.addShapeless(furnace3d, [<minecraft:furnace>]);
+
+# Extras
+furnace.remove(nuggetSteel, nuggetIron);
+nuggetSteel.remove(RCNuggetSteel);
+
+# GT and IC2
+Assembler.addRecipe(GTGearDiamond, GTGearGold, plateDiamond, 1600, 2);
+ChemicalReactor.addRecipe(GTDustElectrumFlux, itemRedstone * 5, GTDustElectrum, 500);
+ChemicalReactor.addRecipe(GTDustEnderium, IC2DustTin * 4, GTDustEnderPearl, 500);
+ChemicalReactor.addRecipe(GTDustEnderium, IC2DustTin * 4, AEDustEnder, 500);
+ChemicalReactor.addRecipe(GTCrystalFlux, diamond, itemRedstone * 5, 500);
+
+# Vanilla
+recipes.remove(chestEnder);
+recipes.addShaped(chestEnder, [
+	[plateObsidian, plateObsidian, plateObsidian],
+	[ingotEnderium, teleporter, ingotEnderium],
+	[plateObsidian, plateObsidian, plateObsidian]]);
+furnace.remove(charcoal);
+
+# JABBA
+recipes.remove(upgradeBSpace);
+recipes.addShaped(upgradeBSpace, [
+	[null, piston, null],
+	[plateEnderium, chestEnder, plateEnderium],
+	[null, piston, null]]);
+recipes.remove(dolly);
+recipes.addShaped(dolly, [
+	[null, wrench, plateIron],
+	[hammer, plankWood, plateIron],
+	[plateIron, plateIron, plateIron]]);
 
 # Ore Dictionary stuff
-furnace.add(<furnace3d:furnace>);
+craftingFurnace.add(furnace3d);
 silicon.remove(EISilicon);
+
+# Immibis Dimensional Anchor
+recipes.remove(anchorDimensional);
+recipes.addShaped(anchorDimensional, [
+	[plateGold, plateIron, plateGold],
+	[plateIron, enderPearl, plateIron],
+	[plateGold, plateIron, plateGold]]);
 
 # Ender IO
 NEI.hide(EISilicon);
@@ -144,7 +351,7 @@ recipes.addShaped(SAGMill, [
 recipes.remove(alloySmelter);
 recipes.addShaped(alloySmelter, [
 	[plateInvar, wireCupronickel4x, plateInvar],
-	[wireCupronickel4x, furnace, wireCupronickel4x],
+	[wireCupronickel4x, craftingFurnace, wireCupronickel4x],
 	[capacitorBasic, machineChassis, capacitorBasic]]);
 recipes.remove(farmStation);
 recipes.addShaped(farmStation, [
@@ -154,12 +361,12 @@ recipes.addShaped(farmStation, [
 recipes.remove(dimTransceiver);
 recipes.addShaped(dimTransceiver, [
 	[plateIridium, machineHullMV, plateIridium],
-	[capacitorBank, enderChest, pumpElectricMV],
+	[capacitorBank, chestEnder, pumpElectricMV],
 	[plateIridium, capacitorOctadic, plateIridium]]);
-recipes.remove(vacuumChest);
-recipes.addShaped(vacuumChest, [
+recipes.remove(chestVacuum);
+recipes.addShaped(chestVacuum, [
 	[plateIron, plateIron, plateIron],
-	[plateIron, woodChest, plateIron],
+	[plateIron, chestWood, plateIron],
 	[plateIron, pulsatingCrystal, plateIron]]);
 recipes.remove(capacitorBasic);
 recipes.addShaped(capacitorBasic, [
@@ -180,9 +387,6 @@ recipes.remove(vibrantCrystal);
 ChemicalReactor.addRecipe(vibrantCrystal, nuggetVibrant * 8, emerald, 400);
 recipes.remove(pulsatingCrystal);
 ChemicalReactor.addRecipe(pulsatingCrystal, nuggetPulsating * 8, diamond, 400);
-
-
-
 
 # Buildcraft
 recipes.remove(BCGearWood);
@@ -218,11 +422,11 @@ recipes.addShaped(engineStirling, [
 	[GTGearStone, piston, GTGearStone]]);
 recipes.remove(chute);
 recipes.addShaped(chute, [
-	[plateIron, woodChest, plateIron],
+	[plateIron, chestWood, plateIron],
 	[plateIron, GTGearStone, plateIron],
 	[hammer, plateIron, null]]);
 recipes.addShaped(chute, [
-	[plateIron, woodChest, plateIron],
+	[plateIron, chestWood, plateIron],
 	[plateIron, GTGearStone, plateIron],
 	[null, plateIron, hammer]]);
 recipes.remove(engineCombustion);
@@ -244,7 +448,7 @@ recipes.remove(filler);
 recipes.addShaped(filler, [
 	[dyeBlack, landMark, dyeBlack],
 	[dyeYellow, craftingTable, dyeYellow],
-	[GTGearGold, woodChest, GTGearGold]]);
+	[GTGearGold, chestWood, GTGearGold]]);
 recipes.remove(quarry);
 recipes.addShaped(quarry, [
 	[GTGearSteel, circuitAdvanced, GTGearSteel],
@@ -257,7 +461,7 @@ recipes.remove(builder);
 recipes.addShaped(builder, [
 	[dyeBlack, landMark, dyeBlack],
 	[dyeYellow, craftingTable, dyeYellow],
-	[GTGearDiamond, woodChest, GTGearDiamond]]);
+	[GTGearDiamond, chestWood, GTGearDiamond]]);
 recipes.remove(architectTable);
 recipes.addShaped(architectTable, [
 	[dyeBlack, landMark, dyeBlack],
@@ -278,42 +482,7 @@ recipes.addShaped(BCRefinery, [
 	[redstoneTorch, BCTank, redstoneTorch],
 	[BCTank, GTGearDiamond, BCTank]]);
 
-
-	
-# Railcraft
-recipes.remove(RCGearPlated);
-recipes.addShaped(RCGearPlated, [
-	[null, nuggetGold, null],
-	[nuggetGold, GTGearStone, nuggetGold],
-	[null, nuggetGold, null]]);
-recipes.remove(RCGearSteel);
-NEI.hide(RCGearSteel);
-recipes.remove(engineSteamIndustrial);
-recipes.addShaped(engineSteamIndustrial, [
-	[plateSteel, plateSteel, plateSteel],
-	[null, glass, null],
-	[GTGearSteel, piston, GTGearSteel]]);
-recipes.remove(engineSteamCommercial);
-recipes.addShaped(engineSteamCommercial, [
-	[plateIron, plateIron, plateIron],
-	[null, glass, null],
-	[GTGearIron, piston, GTGearIron]]);
-
-# PneumaticCraft
-recipes.remove(PCGearIron);
-recipes.addShaped(PCGearIron, [
-	[null, ingotCompressedIron, null],
-	[ingotCompressedIron, GTGearStone, ingotCompressedIron],
-	[null, ingotCompressedIron, null]]);
-recipes.remove(compressorKinetic);
-recipes.addShaped(compressorKinetic, [
-	[gateBasic, GTGearGold, circuitBoardPrinted],
-	[pipeKinesisDiamond, turbineRotor, tubePressureAdvanced],
-	[gateBasic, furnace, circuitBoardPrinted]]);
-
-
-
-# Forestry Recipes FIX IT YXOU SON OF A BITCH
+# Forestry Recipes
 recipes.remove(FTGearBronze);
 recipes.remove(FTGearCopper);
 recipes.remove(FTGearTin);
