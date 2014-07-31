@@ -3,6 +3,10 @@ import mods.gregtech.ChemicalReactor;
 import mods.gregtech.Wiremill;
 import mods.gregtech.Assembler;
 import mods.gregtech.ImplosionCompressor;
+import mods.gregtech.Grinder;
+import mods.gregtech.Assembler;
+import mods.gregtech.BlastFurnace;
+import mods.ic2.Macerator;
 
 var BCGearWood = <BuildCraft|Core:woodenGearItem>;
 var BCGearStone = <BuildCraft|Core:stoneGearItem>;
@@ -243,6 +247,60 @@ var GCoreCopperMars = <GalacticraftMars:tile.mars>;
 var GCoreTinMars = <GalacticraftMars:tile.mars:1>;
 var GCoreAluminiumAsteroid = <GalacticraftMars:tile.asteroidsBlock:3>;
 var GCoreIlmenite = <GalacticraftMars:tile.asteroidsBlock:4>;
+var cellWater = <IC2:itemCellEmpty:1>;
+var purifiedOreIlmenite = <gregtech:gt.metaitem.01:6918>;
+var smallPileIron = <gregtech:gt.metaitem.01:1032>;
+var smallPileTitanium = <gregtech:gt.metaitem.01:1028>;
+var cellEmpty = <IC2:itemCellEmpty>;
+var purifiedOreAluminium = <gregtech:gt.metaitem.01:6019>;
+var smallPileBauxite = <gregtech:gt.metaitem.01:1822>;
+var waferBasic = <GalacticraftCore:item.basicItem:13>;
+var waferAdvanced = <GalacticraftCore:item.basicItem:14>;
+var waferSolar = <GalacticraftCore:item.basicItem:12>;
+var GTdustLapis = <gregtech:gt.metaitem.01:2526>;
+var boardBasic = <gregtech:gt.metaitem.01:32710>;
+var boardAdvanced = <gregtech:gt.metaitem.01:32711>;
+var plateCopper = <ore:plateCopper>;
+var plateTin = <ore:plateTin>;
+var canisterTin = <GalacticraftCore:item.canister>;
+var canisterCopper = <GalacticraftCore:item.canister:1>;
+var meteorFallen = <GalacticraftCore:tile.fallenMeteor>;
+var rawMeteoricIron = <GalacticraftCore:item.meteoricIronRaw>;
+var smallPileIlmenite = <gregtech:gt.metaitem.01:1918>;
+var crushedOreDesh = <gregtech:gt.metaitem.01:5884>;
+var GCoreDesh = <GalacticraftMars:tile.mars:2>;
+var dustIron = <IC2:itemDust:5>;
+var smallPileTin = <gregtech:gt.metaitem.01:1057>;
+var cellSodiumPersulfate = <gregtech:gt.metaitem.01:30718>;
+var smallPileDesh = <gregtech:gt.metaitem.01:1884>;
+var purifiedOreDesh = <gregtech:gt.metaitem.01:6884>;
+var smallPileNickel = <gregtech:gt.metaitem.01:1034>;
+var dustNickel = <gregtech:gt.metaitem.01:2034>;
+var purifiedOreIron = <gregtech:gt.metaitem.01:6032>;
+var purifiedOreCopper = <gregtech:gt.metaitem.01:6035>;
+var smallPileCobalt = <gregtech:gt.metaitem.01:1033>;
+var smallPileGold = <gregtech:gt.metaitem.01:1086>;
+var IC2dustGold = <IC2:itemDust:4>;
+var cellMercury = <gregtech:gt.metaitem.01:30087>;
+var GTdustZinc = <gregtech:gt.metaitem.01:2036>;
+var smallPileZinc = <gregtech:gt.metaitem.01:1036>;
+var purifiedOreTin = <gregtech:gt.metaitem.01:6057>;
+var titaniumSword = <GalacticraftMars:item.titanium_sword>;
+var titaniumShovel = <GalacticraftMars:item.titanium_shovel>;
+var titaniumAxe = <GalacticraftMars:item.titanium_axe>;
+var titaniumHoe = <GalacticraftMars:item.titanium_hoe>;
+var titaniumPickaxe = <GalacticraftMars:item.titanium_pickaxe>;
+var titaniumHelm = <GalacticraftMars:item.titanium_helmet>;
+var titaniumBoots = <GalacticraftMars:item.titanium_boots>;
+var titaniumLeggings = <GalacticraftMars:item.titanium_leggings>;
+var titaniumChestplate = <GalacticraftMars:item.titanium_chestplate>;
+var compressedTitanium = <GalacticraftMars:item.itemBasicAsteroids:6>;
+var GTplateTitanium = <gregtech:gt.metaitem.01:17028>;
+var stickWood = <ore:stickWood>;
+var shardTitanium = <GalacticraftMars:item.itemBasicAsteroids:4>;
+var GTdustTitanium = <gregtech:gt.metaitem.01:2028>;
+var GTingotTitanium = <gregtech:gt.metaitem.01:11028>;
+
 
 # Ore Dictionary stuff
 craftingFurnace.add(furnace3d);
@@ -272,6 +330,7 @@ ImplosionCompressor.addRecipe([compressedBronze, tinyPileDarkAshes], GTplateBron
 ImplosionCompressor.addRecipe([compressedIron, tinyPileDarkAshes], RCplateIron * 2, 2);
 ImplosionCompressor.addRecipe([compressedMeteoricIron, tinyPileDarkAshes], GCingotMeteoricIron * 2, 2);
 ImplosionCompressor.addRecipe([compressedDesh, tinyPileDarkAshes], GCingotDesh * 2, 2);
+ImplosionCompressor.addRecipe([compressedTitanium, tinyPileDarkAshes], GTplateTitanium * 2, 2);
 recipes.addShaped(plateNailed, [
 	[boltStainlessSteel, hammer, boltStainlessSteel],
 	[compressedBronze, compressedAluminium, compressedSteel],
@@ -333,7 +392,66 @@ recipes.addShaped(deshPickaxe, [
 recipes.remove(GCstickDesh);
 NEI.hide(GCstickDesh);
 furnace.remove(<*>, GCoreIlmenite);
-
+Grinder.addRecipe([purifiedOreIlmenite * 2, smallPileIron, smallPileTitanium, cellEmpty], GCoreIlmenite, cellWater);
+furnace.remove(<*>, GCoreAluminiumAsteroid);
+Grinder.addRecipe([purifiedOreAluminium * 2, smallPileIlmenite, smallPileIlmenite, cellEmpty], GCoreAluminiumAsteroid, cellWater);
+Assembler.addRecipe(waferBasic, diamond, boardBasic, 1600, 2);
+Assembler.addRecipe(waferAdvanced, diamond, boardAdvanced, 3200, 4);
+Assembler.addRecipe(waferSolar * 9, diamond, GTdustLapis * 9, 1600, 2);
+recipes.remove(canisterTin);
+recipes.addShaped(canisterTin, [
+	[plateTin, null, plateTin],
+	[plateTin, hammer, plateTin],
+	[plateTin, plateTin, plateTin]]);
+recipes.remove(canisterCopper);
+recipes.addShaped(canisterCopper, [
+	[plateCopper, null, plateCopper],
+	[plateCopper, hammer, plateCopper],
+	[plateCopper, plateCopper, plateCopper]]);
+Macerator.addRecipe(rawMeteoricIron * 2, meteorFallen);
+Grinder.addRecipe([rawMeteoricIron * 2, smallPileIlmenite, null, cellEmpty], meteorFallen, cellWater);
+Macerator.addRecipe(crushedOreDesh * 2, GCoreDesh);
+Grinder.addRecipe([purifiedOreDesh * 2, smallPileDesh, smallPileDesh, cellEmpty], GCoreDesh, cellWater);
+Grinder.addRecipe([purifiedOreIron * 2, smallPileNickel, smallPileTin, cellEmpty], GCoreIronAsteroid, cellWater);
+Grinder.addRecipe([purifiedOreIron * 2, dustNickel, smallPileTin, cellEmpty], GCoreIronAsteroid, cellSodiumPersulfate);
+Grinder.addRecipe([purifiedOreIron * 2, smallPileNickel, smallPileTin, cellEmpty], GCoreIronMars, cellWater);
+Grinder.addRecipe([purifiedOreIron * 2, dustNickel, smallPileTin, cellEmpty], GCoreIronMars, cellSodiumPersulfate);
+Grinder.addRecipe([purifiedOreCopper * 2, smallPileCobalt, smallPileGold, cellEmpty], GCoreCopperMars, cellWater);
+Grinder.addRecipe([purifiedOreCopper * 2, smallPileCobalt, IC2dustGold, cellEmpty], GCoreCopperMars, cellMercury);
+Grinder.addRecipe([purifiedOreCopper * 3, smallPileCobalt, smallPileGold, cellEmpty], GCoreCopperMars, cellSodiumPersulfate);
+Grinder.addRecipe([purifiedOreTin * 2, smallPileIron, smallPileZinc, cellEmpty], GCoreTinMars, cellWater);
+Grinder.addRecipe([purifiedOreTin * 2, smallPileIron, GTdustZinc, cellEmpty], GCoreTinMars, cellSodiumPersulfate);
+recipes.remove(titaniumShovel);
+NEI.hide(titaniumShovel);
+recipes.remove(titaniumAxe);
+NEI.hide(titaniumAxe);
+recipes.remove(titaniumHoe);
+NEI.hide(titaniumHoe);
+recipes.remove(titaniumPickaxe);
+NEI.hide(titaniumPickaxe);
+recipes.remove(titaniumSword);
+NEI.hide(titaniumSword);
+recipes.remove(titaniumHelm);
+recipes.addShaped(titaniumHelm, [
+	[compressedTitanium, compressedTitanium, compressedTitanium],
+	[compressedTitanium, hammer, compressedTitanium]]);
+recipes.remove(titaniumBoots);
+recipes.addShaped(titaniumBoots, [
+	[compressedTitanium, null, compressedTitanium],
+	[compressedTitanium, hammer, compressedTitanium]]);
+recipes.remove(titaniumChestplate);
+recipes.addShaped(titaniumChestplate, [
+	[compressedTitanium, hammer, compressedTitanium],
+	[compressedTitanium, compressedTitanium, compressedTitanium],
+	[compressedTitanium, compressedTitanium, compressedTitanium]]);
+recipes.remove(titaniumLeggings);
+recipes.addShaped(titaniumLeggings, [
+	[compressedTitanium, compressedTitanium, compressedTitanium],
+	[compressedTitanium, hammer, compressedTitanium],
+	[compressedTitanium, null, compressedTitanium]]);
+furnace.remove(<*>, shardTitanium);
+Macerator.addRecipe(GTdustTitanium, shardTitanium);
+BlastFurnace.addRecipe(GTingotTitanium, shardTitanium, null, 1500, 120, 1500);
 
 # Refined Relocation
 recipes.remove(playerRelocator);
