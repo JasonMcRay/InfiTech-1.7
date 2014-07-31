@@ -2,6 +2,7 @@ import mods.nei.NEI;
 import mods.gregtech.ChemicalReactor;
 import mods.gregtech.Wiremill;
 import mods.gregtech.Assembler;
+import mods.gregtech.ImplosionCompressor;
 
 var BCGearWood = <BuildCraft|Core:woodenGearItem>;
 var BCGearStone = <BuildCraft|Core:stoneGearItem>;
@@ -174,6 +175,165 @@ var blazeRod = <minecraft:blaze_rod>;
 var relocationController = <RefinedRelocation:relocationController>;
 var enderEye = <minecraft:ender_eye>;
 var compass = <minecraft:compass>;
+var GCRefinery = <GalacticraftCore:tile.refinery>;
+var GCElectricCompressor = <GalacticraftCore:tile.machine2>;
+var GCCircuitFabricator = <GalacticraftCore:tile.machine2:4>;
+var GCCompressor = <GalacticraftCore:tile.machine:12>;
+var GCBlockAluminum = <GalacticraftCore:tile.gcBlockCore:11>;
+var plateHeavyDuty = <GalacticraftCore:item.heavyPlating>;
+var tinyPileDarkAshes = <gregtech:gt.metaitem.01:816>;
+var compressedCopper = <GalacticraftCore:item.basicItem:6>;
+var GTplateCopper = <gregtech:gt.metaitem.01:17035>;
+var compressedTin = <GalacticraftCore:item.basicItem:7>;
+var GTplateTin = <gregtech:gt.metaitem.01:17057>;
+var compressedAluminium = <GalacticraftCore:item.basicItem:8>;
+var compressedSteel = <GalacticraftCore:item.basicItem:9>;
+var compressedBronze = <GalacticraftCore:item.basicItem:10>;
+var compressedIron = <GalacticraftCore:item.basicItem:11>;
+var GTplateAluminium = <gregtech:gt.metaitem.01:17019>;
+var GTplateBronze = <gregtech:gt.metaitem.01:17300>;
+var RCplateIron = <Railcraft:part.plate>;
+var RCplateSteel = <Railcraft:part.plate:1>;
+var compressedDesh = <GalacticraftMars:item.null:5>;
+var compressedMeteoricIron = <GalacticraftCore:item.meteoricIronIngot:1>;
+var GCingotMeteoricIron = <GalacticraftCore:item.meteoricIronIngot>;
+var GCingotDesh = <GalacticraftMars:item.null:2>;
+var plateNailed = <infitech:plateNailed>;
+var plateNailedT2 = <infitech:plateNailed:1>;
+var plateNailedT3 = <infitech:plateNailed:2>;
+var plateHeavyDutyT2 = <GalacticraftMars:item.null:3>;
+var plateHeavyDutyT3 = <GalacticraftMars:item.itemBasicAsteroids>;
+var tinyPileStainlessSteel = <gregtech:gt.metaitem.01:306>;
+var tinyPileTungsten = <gregtech:gt.metaitem.01:81>;
+var tinyPileTungstenSteel = <gregtech:gt.metaitem.01:316>;
+var boltStainlessSteel = <gregtech:gt.metaitem.01:26306>;
+var boltTungsten = <gregtech:gt.metaitem.01:26081>;
+var boltTungstenSteel = <gregtech:gt.metaitem.01:26316>;
+var heavyDutyHoe = <GalacticraftCore:item.steel_hoe>;
+var heavyDutyBoots = <GalacticraftCore:item.steel_boots>;
+var heavyDutyAxe = <GalacticraftCore:item.steel_axe>;
+var heavyDutyChestplate = <GalacticraftCore:item.steel_chestplate>;
+var heavyDutyHelm = <GalacticraftCore:item.steel_helmet>;
+var heavyDutyLeggings = <GalacticraftCore:item.steel_leggings>;
+var heavyDutyPickaxe = <GalacticraftCore:item.steel_pickaxe>;
+var heavyDutySword = <GalacticraftCore:item.steel_sword>;
+var heavyDutyShovel = <GalacticraftCore:item.steel_shovel>;
+var deshHoe = <GalacticraftMars:item.deshHoe>;
+var deshChestplate = <GalacticraftMars:item.deshChestplate>;
+var deshBoots = <GalacticraftMars:item.deshBoots>;
+var deshAxe = <GalacticraftMars:item.deshAxe>;
+var deshSword = <GalacticraftMars:item.deshSword>;
+var deshHelm = <GalacticraftMars:item.deshHelmet>;
+var deshShovel = <GalacticraftMars:item.deshSpade>;
+var deshLeggings = <GalacticraftMars:item.deshLeggings>;
+var deshPickaxe = <GalacticraftMars:item.deshPick>;
+var stickDesh = <ore:stickDesh>;
+var file = <ore:craftingToolFile>;
+var ingotDesh = <ore:ingotDesh>;
+var plateDesh = <ore:plateDesh>;
+var GCstickDesh = <GalacticraftMars:item.null:1>;
+var oreIron = <ore:oreIron>;
+var oreIlmenite = <ore:oreIlmenite>;
+var oreCopper = <ore:oreCopper>;
+var oreTin = <ore:oreTin>;
+var oreAluminium = <ore:oreAluminium>;
+var GCoreIronMars = <GalacticraftMars:tile.mars:3>;
+var GCoreIronAsteroid = <GalacticraftMars:tile.asteroidsBlock:5>;
+var GCoreCopperMars = <GalacticraftMars:tile.mars>;
+var GCoreTinMars = <GalacticraftMars:tile.mars:1>;
+var GCoreAluminiumAsteroid = <GalacticraftMars:tile.asteroidsBlock:3>;
+var GCoreIlmenite = <GalacticraftMars:tile.asteroidsBlock:4>;
+
+# Ore Dictionary stuff
+craftingFurnace.add(furnace3d);
+silicon.remove(EISilicon);
+oreIron.add(GCoreIronMars);
+oreIron.add(GCoreIronAsteroid);
+oreCopper.add(GCoreCopperMars);
+oreTin.add(GCoreTinMars);
+oreAluminium.add(GCoreAluminiumAsteroid);
+oreIlmenite.add(GCoreIlmenite);
+
+# Galacticraft 3
+recipes.remove(GCRefinery);
+NEI.hide(GCRefinery);
+recipes.remove(GCElectricCompressor);
+NEI.hide(GCElectricCompressor);
+recipes.remove(GCCircuitFabricator);
+NEI.hide(GCCircuitFabricator);
+recipes.remove(GCCompressor);
+NEI.hide(GCCompressor);
+recipes.remove(GCBlockAluminum);
+ImplosionCompressor.addRecipe([compressedCopper, tinyPileDarkAshes], GTplateCopper * 2, 2);
+ImplosionCompressor.addRecipe([compressedTin, tinyPileDarkAshes], GTplateTin * 2, 2);
+ImplosionCompressor.addRecipe([compressedAluminium, tinyPileDarkAshes], GTplateAluminium * 2, 2);
+ImplosionCompressor.addRecipe([compressedSteel, tinyPileDarkAshes], RCplateSteel * 2, 2);
+ImplosionCompressor.addRecipe([compressedBronze, tinyPileDarkAshes], GTplateBronze * 2, 2);
+ImplosionCompressor.addRecipe([compressedIron, tinyPileDarkAshes], RCplateIron * 2, 2);
+ImplosionCompressor.addRecipe([compressedMeteoricIron, tinyPileDarkAshes], GCingotMeteoricIron * 2, 2);
+ImplosionCompressor.addRecipe([compressedDesh, tinyPileDarkAshes], GCingotDesh * 2, 2);
+recipes.addShaped(plateNailed, [
+	[boltStainlessSteel, hammer, boltStainlessSteel],
+	[compressedBronze, compressedAluminium, compressedSteel],
+	[boltStainlessSteel, null, boltStainlessSteel]]);
+recipes.addShaped(plateNailedT2, [
+	[null, boltTungsten, boltTungsten],
+	[hammer, plateHeavyDuty, compressedMeteoricIron],
+	[null, boltTungsten, boltTungsten]]);
+recipes.addShaped(plateNailedT3, [
+	[null, boltTungstenSteel, boltTungstenSteel],
+	[hammer, plateHeavyDutyT2, compressedDesh],
+	[null, boltTungstenSteel, boltTungstenSteel]]);
+ImplosionCompressor.addRecipe([plateHeavyDuty, tinyPileStainlessSteel * 2], plateNailed, 2); 
+ImplosionCompressor.addRecipe([plateHeavyDutyT2, tinyPileTungsten * 2], plateNailedT2, 2);
+ImplosionCompressor.addRecipe([plateHeavyDutyT3, tinyPileTungstenSteel * 2], plateNailedT3, 2);
+recipes.remove(heavyDutyHoe);
+NEI.hide(heavyDutyHoe);
+recipes.remove(heavyDutyBoots);
+NEI.hide(heavyDutyBoots);
+recipes.remove(heavyDutyAxe);
+NEI.hide(heavyDutyAxe);
+recipes.remove(heavyDutyChestplate);
+NEI.hide(heavyDutyChestplate);
+recipes.remove(heavyDutyHelm);
+NEI.hide(heavyDutyHelm);
+recipes.remove(heavyDutyLeggings);
+NEI.hide(heavyDutyLeggings);
+recipes.remove(heavyDutyPickaxe);
+NEI.hide(heavyDutyPickaxe);
+recipes.remove(heavyDutySword);
+NEI.hide(heavyDutySword);
+recipes.remove(heavyDutyShovel);
+NEI.hide(heavyDutyShovel);
+recipes.remove(deshHoe);
+recipes.addShaped(deshHoe, [
+	[plateDesh, ingotDesh, hammer],
+	[file, stickDesh, null],
+	[null, stickDesh, null]]);
+recipes.remove(deshAxe);
+recipes.addShaped(deshAxe, [
+	[plateDesh, ingotDesh, hammer],
+	[plateDesh, stickDesh, null],
+	[file, stickDesh, null]]);
+recipes.remove(deshSword);
+recipes.addShaped(deshSword, [
+	[null, plateDesh, null],
+	[file, plateDesh, hammer],
+	[null, stickDesh]]);
+recipes.remove(deshShovel);
+recipes.addShaped(deshShovel, [
+	[file, plateDesh, hammer],
+	[null, stickDesh, null],
+	[null, stickDesh, null]]);
+recipes.remove(deshPickaxe);
+recipes.addShaped(deshPickaxe, [
+	[plateDesh, ingotDesh, ingotDesh],
+	[file, stickDesh, hammer],
+	[null, stickDesh, null]]);
+recipes.remove(GCstickDesh);
+NEI.hide(GCstickDesh);
+furnace.remove(<*>, GCoreIlmenite);
+
 
 # Refined Relocation
 recipes.remove(playerRelocator);
@@ -309,10 +469,6 @@ recipes.addShaped(dolly, [
 	[null, wrench, plateIron],
 	[hammer, plankWood, plateIron],
 	[plateIron, plateIron, plateIron]]);
-
-# Ore Dictionary stuff
-craftingFurnace.add(furnace3d);
-silicon.remove(EISilicon);
 
 # Immibis Dimensional Anchor
 recipes.remove(anchorDimensional);
