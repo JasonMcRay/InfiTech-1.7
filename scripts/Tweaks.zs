@@ -3,7 +3,7 @@ import mods.gregtech.ChemicalReactor;
 import mods.gregtech.Wiremill;
 import mods.gregtech.Assembler;
 import mods.gregtech.ImplosionCompressor;
-import mods.gregtech.Grinder;
+#import mods.gregtech.Grinder;
 import mods.gregtech.Assembler;
 import mods.gregtech.BlastFurnace;
 import mods.ic2.Macerator;
@@ -300,7 +300,25 @@ var stickWood = <ore:stickWood>;
 var shardTitanium = <GalacticraftMars:item.itemBasicAsteroids:4>;
 var GTdustTitanium = <gregtech:gt.metaitem.01:2028>;
 var GTingotTitanium = <gregtech:gt.metaitem.01:11028>;
+var crushedOreTin = <gregtech:gt.metaitem.01:5057>;
+var crushedOreCopper = <gregtech:gt.metaitem.01:5035>;
+var crushedOreAluminium = <gregtech:gt.metaitem.01:5019>;
+var crushedOreIlmenite = <gregtech:gt.metaitem.01:5918>;
 
+# Grinder Recipes (not used, yet?)
+//Grinder.addRecipe([purifiedOreIlmenite * 2, smallPileIron, smallPileTitanium, cellEmpty], GCoreIlmenite, cellWater);
+//Grinder.addRecipe([purifiedOreAluminium * 2, smallPileIlmenite, smallPileIlmenite, cellEmpty], GCoreAluminiumAsteroid, cellWater);
+//Grinder.addRecipe([rawMeteoricIron * 2, smallPileIlmenite, null, cellEmpty], meteorFallen, cellWater);
+//Grinder.addRecipe([purifiedOreDesh * 2, smallPileDesh, smallPileDesh, cellEmpty], GCoreDesh, cellWater);
+//Grinder.addRecipe([purifiedOreIron * 2, smallPileNickel, smallPileTin, cellEmpty], GCoreIronAsteroid, cellWater);
+//Grinder.addRecipe([purifiedOreIron * 2, dustNickel, smallPileTin, cellEmpty], GCoreIronAsteroid, cellSodiumPersulfate);
+//Grinder.addRecipe([purifiedOreIron * 2, smallPileNickel, smallPileTin, cellEmpty], GCoreIronMars, cellWater);
+//Grinder.addRecipe([purifiedOreIron * 2, dustNickel, smallPileTin, cellEmpty], GCoreIronMars, cellSodiumPersulfate);
+//Grinder.addRecipe([purifiedOreCopper * 2, smallPileCobalt, smallPileGold, cellEmpty], GCoreCopperMars, cellWater);
+//Grinder.addRecipe([purifiedOreCopper * 2, smallPileCobalt, IC2dustGold, cellEmpty], GCoreCopperMars, cellMercury);
+//Grinder.addRecipe([purifiedOreCopper * 3, smallPileCobalt, smallPileGold, cellEmpty], GCoreCopperMars, cellSodiumPersulfate);
+//Grinder.addRecipe([purifiedOreTin * 2, smallPileIron, smallPileZinc, cellEmpty], GCoreTinMars, cellWater);
+//Grinder.addRecipe([purifiedOreTin * 2, smallPileIron, GTdustZinc, cellEmpty], GCoreTinMars, cellSodiumPersulfate);
 
 # Ore Dictionary stuff
 craftingFurnace.add(furnace3d);
@@ -313,6 +331,14 @@ oreAluminium.add(GCoreAluminiumAsteroid);
 oreIlmenite.add(GCoreIlmenite);
 
 # Galacticraft 3
+Macerator.addRecipe(crushedOreTin * 3, GCoreIronMars);
+Macerator.addRecipe(crushedOreTin * 3, GCoreIronAsteroid);
+Macerator.addRecipe(crushedOreCopper * 3, GCoreCopperMars);
+Macerator.addRecipe(crushedOreTin * 3, GCoreTinMars);
+Macerator.addRecipe(crushedOreAluminium * 3, GCoreAluminiumAsteroid);
+Macerator.addRecipe(crushedOreIlmenite * 3, GCoreIlmenite);
+Macerator.addRecipe(rawMeteoricIron * 2, meteorFallen);
+Macerator.addRecipe(crushedOreDesh * 2, GCoreDesh);
 recipes.remove(GCRefinery);
 NEI.hide(GCRefinery);
 recipes.remove(GCElectricCompressor);
@@ -392,9 +418,7 @@ recipes.addShaped(deshPickaxe, [
 recipes.remove(GCstickDesh);
 NEI.hide(GCstickDesh);
 furnace.remove(<*>, GCoreIlmenite);
-Grinder.addRecipe([purifiedOreIlmenite * 2, smallPileIron, smallPileTitanium, cellEmpty], GCoreIlmenite, cellWater);
 furnace.remove(<*>, GCoreAluminiumAsteroid);
-Grinder.addRecipe([purifiedOreAluminium * 2, smallPileIlmenite, smallPileIlmenite, cellEmpty], GCoreAluminiumAsteroid, cellWater);
 Assembler.addRecipe(waferBasic, diamond, boardBasic, 1600, 2);
 Assembler.addRecipe(waferAdvanced, diamond, boardAdvanced, 3200, 4);
 Assembler.addRecipe(waferSolar * 9, diamond, GTdustLapis * 9, 1600, 2);
@@ -408,19 +432,6 @@ recipes.addShaped(canisterCopper, [
 	[plateCopper, null, plateCopper],
 	[plateCopper, hammer, plateCopper],
 	[plateCopper, plateCopper, plateCopper]]);
-Macerator.addRecipe(rawMeteoricIron * 2, meteorFallen);
-Grinder.addRecipe([rawMeteoricIron * 2, smallPileIlmenite, null, cellEmpty], meteorFallen, cellWater);
-Macerator.addRecipe(crushedOreDesh * 2, GCoreDesh);
-Grinder.addRecipe([purifiedOreDesh * 2, smallPileDesh, smallPileDesh, cellEmpty], GCoreDesh, cellWater);
-Grinder.addRecipe([purifiedOreIron * 2, smallPileNickel, smallPileTin, cellEmpty], GCoreIronAsteroid, cellWater);
-Grinder.addRecipe([purifiedOreIron * 2, dustNickel, smallPileTin, cellEmpty], GCoreIronAsteroid, cellSodiumPersulfate);
-Grinder.addRecipe([purifiedOreIron * 2, smallPileNickel, smallPileTin, cellEmpty], GCoreIronMars, cellWater);
-Grinder.addRecipe([purifiedOreIron * 2, dustNickel, smallPileTin, cellEmpty], GCoreIronMars, cellSodiumPersulfate);
-Grinder.addRecipe([purifiedOreCopper * 2, smallPileCobalt, smallPileGold, cellEmpty], GCoreCopperMars, cellWater);
-Grinder.addRecipe([purifiedOreCopper * 2, smallPileCobalt, IC2dustGold, cellEmpty], GCoreCopperMars, cellMercury);
-Grinder.addRecipe([purifiedOreCopper * 3, smallPileCobalt, smallPileGold, cellEmpty], GCoreCopperMars, cellSodiumPersulfate);
-Grinder.addRecipe([purifiedOreTin * 2, smallPileIron, smallPileZinc, cellEmpty], GCoreTinMars, cellWater);
-Grinder.addRecipe([purifiedOreTin * 2, smallPileIron, GTdustZinc, cellEmpty], GCoreTinMars, cellSodiumPersulfate);
 recipes.remove(titaniumShovel);
 NEI.hide(titaniumShovel);
 recipes.remove(titaniumAxe);
