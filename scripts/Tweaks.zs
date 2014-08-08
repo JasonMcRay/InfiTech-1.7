@@ -7,6 +7,8 @@ import mods.gregtech.ImplosionCompressor;
 import mods.gregtech.Assembler;
 import mods.gregtech.BlastFurnace;
 import mods.ic2.Macerator;
+import mods.ic2.Compressor;
+import mods.gregtech.Boxing;
 
 var BCGearWood = <BuildCraft|Core:woodenGearItem>;
 var BCGearStone = <BuildCraft|Core:stoneGearItem>;
@@ -304,6 +306,96 @@ var crushedOreTin = <gregtech:gt.metaitem.01:5057>;
 var crushedOreCopper = <gregtech:gt.metaitem.01:5035>;
 var crushedOreAluminium = <gregtech:gt.metaitem.01:5019>;
 var crushedOreIlmenite = <gregtech:gt.metaitem.01:5918>;
+var EUtilsDrum = <ExtraUtilities:drum>;
+var ringIron = <gregtech:gt.metaitem.01:28032>;
+var pressurePlateWeightedHeavy = <minecraft:heavy_weighted_pressure_plate>;
+var cauldron = <minecraft:cauldron>;
+var ringGold = <gregtech:gt.metaitem.01:28086>;
+var pressurePlateWeightedLight = <minecraft:light_weighted_pressure_plate>;
+var ingotBedrockium = <ExtraUtilities:bedrockiumIngot>;
+var EUtilsDrumBedrock = <ExtraUtilities:drum:1>;
+var EUtilsAnyCompressed = <ExtraUtilities:cobblestone_compressed:*>;
+var cobbleCompressed = <ExtraUtilities:cobblestone_compressed>;
+var cobbleCompressedDouble = <ExtraUtilities:cobblestone_compressed:1>;
+var cobbleCompressedTriple = <ExtraUtilities:cobblestone_compressed:2>;
+var cobbleCompressedQuadruple = <ExtraUtilities:cobblestone_compressed:3>;
+var cobbleCompressedQuintuple = <ExtraUtilities:cobblestone_compressed:4>;
+var cobbleCompressedSextuple = <ExtraUtilities:cobblestone_compressed:5>;
+var cobbleCompressedSeptuple = <ExtraUtilities:cobblestone_compressed:6>;
+var cobbleCompressedOctuple = <ExtraUtilities:cobblestone_compressed:7>;
+var dirtCompressed = <ExtraUtilities:cobblestone_compressed:8>;
+var dirtCompressedDouble = <ExtraUtilities:cobblestone_compressed:9>;
+var dirtCompressedTriple = <ExtraUtilities:cobblestone_compressed:10>;
+var dirtCompressedQuadruple = <ExtraUtilities:cobblestone_compressed:11>;
+var gravelCompressed = <ExtraUtilities:cobblestone_compressed:12>;
+var gravelCompressedDouble = <ExtraUtilities:cobblestone_compressed:13>;
+var sandCompressed = <ExtraUtilities:cobblestone_compressed:14>;
+var sandCompressedDouble = <ExtraUtilities:cobblestone_compressed:15>;
+var dirt = <minecraft:dirt:*>;
+var sand = <minecraft:sand:*>;
+var gravel = <minecraft:gravel>;
+var itemCobblestone = <minecraft:cobblestone>;
+var schematic3x3 = <gregtech:gt.metaitem.01:32497>;
+var QED = <ExtraUtilities:endConstructor>;
+var enderInfusedObsidian = <ExtraUtilities:decorativeBlock1:1>;
+var coreEnder = <ExtraUtilities:decorativeBlock1:11>;
+var computationalMatrix = <ExtraUtilities:decorativeBlock1:12>;
+
+
+# Extra Utilities
+recipes.remove(enderInfusedObsidian);
+recipes.addShaped(enderInfusedObsidian, [
+	[plateEnderium, obsidian, plateEnderium],
+	[obsidian, enderEye, obsidian],
+	[plateEnderium, obsidian, plateEnderium]]);
+recipes.remove(QED);
+recipes.addShaped(QED, [
+	[enderEye, craftingTable, enderEye],
+	[enderInfusedObsidian, coreEnder, enderInfusedObsidian],
+	[enderInfusedObsidian, computationalMatrix, enderInfusedObsidian]]);
+recipes.remove(EUtilsAnyCompressed);
+Compressor.addRecipe(cobbleCompressed, itemCobblestone * 9);
+Boxing.addUnboxingRecipe(itemCobblestone * 9, null, cobbleCompressed, 800, 1);
+Compressor.addRecipe(cobbleCompressedDouble, cobbleCompressed * 9);
+Boxing.addUnboxingRecipe(cobbleCompressed * 9, null, cobbleCompressedDouble, 800, 1);
+Compressor.addRecipe(cobbleCompressedTriple, cobbleCompressedDouble * 9);
+Boxing.addUnboxingRecipe(cobbleCompressedDouble * 9, null, cobbleCompressedTriple, 800, 1);
+Compressor.addRecipe(cobbleCompressedQuadruple, cobbleCompressedTriple * 9);
+Boxing.addUnboxingRecipe(cobbleCompressedTriple * 9, null, cobbleCompressedQuadruple, 800, 1);
+Compressor.addRecipe(cobbleCompressedQuintuple, cobbleCompressedQuadruple * 9);
+Boxing.addUnboxingRecipe(cobbleCompressedQuadruple * 9, null, cobbleCompressedQuintuple, 800, 1);
+Compressor.addRecipe(cobbleCompressedSextuple, cobbleCompressedQuintuple * 9);
+Boxing.addUnboxingRecipe(cobbleCompressedQuintuple * 9, null, cobbleCompressedSextuple, 800, 1);
+Compressor.addRecipe(cobbleCompressedSeptuple, cobbleCompressedSextuple * 9);
+Boxing.addUnboxingRecipe(cobbleCompressedSextuple * 9, null, cobbleCompressedSeptuple, 800, 1);
+Compressor.addRecipe(cobbleCompressedOctuple, cobbleCompressedSeptuple * 9);
+Boxing.addUnboxingRecipe(cobbleCompressedSeptuple * 9, null, cobbleCompressedOctuple, 800, 1);
+Compressor.addRecipe(dirtCompressed, dirt * 9);
+Boxing.addUnboxingRecipe(dirt * 9, null, dirtCompressed, 800, 1);
+Compressor.addRecipe(dirtCompressedDouble, dirtCompressed * 9);
+Boxing.addUnboxingRecipe(dirtCompressed * 9, null, dirtCompressedDouble, 800, 1);
+Compressor.addRecipe(dirtCompressedTriple, dirtCompressedDouble * 9);
+Boxing.addUnboxingRecipe(dirtCompressedDouble * 9, null, dirtCompressedTriple, 800, 1);
+Compressor.addRecipe(dirtCompressedQuadruple, dirtCompressedTriple * 9);
+Boxing.addUnboxingRecipe(dirtCompressedTriple * 9, null, dirtCompressedQuadruple, 800, 1);
+Compressor.addRecipe(gravelCompressed, gravel * 9);
+Boxing.addUnboxingRecipe(gravel * 9, null, gravelCompressed, 800, 1);
+Compressor.addRecipe(gravelCompressedDouble, gravelCompressed * 9);
+Boxing.addUnboxingRecipe(gravelCompressed * 9, null, gravelCompressedDouble, 800, 1);
+Compressor.addRecipe(sandCompressed, sand * 9);
+Boxing.addUnboxingRecipe(sand * 9, null, sandCompressed, 800, 1);
+Compressor.addRecipe(sandCompressedDouble, sandCompressed * 9);
+Boxing.addUnboxingRecipe(sandCompressed * 9, null, sandCompressedDouble, 800, 1);
+recipes.remove(EUtilsDrum);
+recipes.addShaped(EUtilsDrum, [
+	[plateIron, ringIron, plateIron],
+	[plateIron, cauldron, plateIron],
+	[plateIron, pressurePlateWeightedHeavy, plateIron]]);
+recipes.remove(EUtilsDrumBedrock);
+recipes.addShaped(EUtilsDrumBedrock, [
+	[ingotBedrockium, ringGold, ingotBedrockium],
+	[ingotBedrockium, cauldron, ingotBedrockium],
+	[ingotBedrockium, pressurePlateWeightedLight, ingotBedrockium]]);
 
 # Grinder Recipes (not used, yet?)
 //Grinder.addRecipe([purifiedOreIlmenite * 2, smallPileIron, smallPileTitanium, cellEmpty], GCoreIlmenite, cellWater);
@@ -331,12 +423,6 @@ oreAluminium.add(GCoreAluminiumAsteroid);
 oreIlmenite.add(GCoreIlmenite);
 
 # Galacticraft 3
-Macerator.addRecipe(crushedOreTin * 3, GCoreIronMars);
-Macerator.addRecipe(crushedOreTin * 3, GCoreIronAsteroid);
-Macerator.addRecipe(crushedOreCopper * 3, GCoreCopperMars);
-Macerator.addRecipe(crushedOreTin * 3, GCoreTinMars);
-Macerator.addRecipe(crushedOreAluminium * 3, GCoreAluminiumAsteroid);
-Macerator.addRecipe(crushedOreIlmenite * 3, GCoreIlmenite);
 Macerator.addRecipe(rawMeteoricIron * 2, meteorFallen);
 Macerator.addRecipe(crushedOreDesh * 2, GCoreDesh);
 recipes.remove(GCRefinery);
@@ -579,14 +665,6 @@ ChemicalReactor.addRecipe(GTDustEnderium, IC2DustTin * 4, GTDustEnderPearl, 500)
 ChemicalReactor.addRecipe(GTDustEnderium, IC2DustTin * 4, AEDustEnder, 500);
 ChemicalReactor.addRecipe(GTCrystalFlux, diamond, itemRedstone * 5, 500);
 
-# Vanilla
-recipes.remove(chestEnder);
-recipes.addShaped(chestEnder, [
-	[plateObsidian, plateObsidian, plateObsidian],
-	[ingotEnderium, teleporter, ingotEnderium],
-	[plateObsidian, plateObsidian, plateObsidian]]);
-furnace.remove(charcoal);
-
 # JABBA
 recipes.remove(upgradeBSpace);
 recipes.addShaped(upgradeBSpace, [
@@ -771,3 +849,12 @@ recipes.addShaped(BCRefinery, [
 recipes.remove(FTGearBronze);
 recipes.remove(FTGearCopper);
 recipes.remove(FTGearTin);
+
+# Vanilla
+recipes.remove(chestEnder);
+recipes.addShaped(chestEnder, [
+	[plateObsidian, plateObsidian, plateObsidian],
+	[ingotEnderium, teleporter, ingotEnderium],
+	[plateObsidian, plateObsidian, plateObsidian]]);
+furnace.remove(charcoal);
+recipes.removeShapeless(enderEye, [enderPearl, blazePowder]);
