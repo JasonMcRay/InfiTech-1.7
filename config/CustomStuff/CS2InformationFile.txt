@@ -42,6 +42,82 @@ Mesa
 Mesa Plateau F
 Mesa Plateau
 Storage Cell
+Alps
+Arctic
+Bamboo Forest
+Bayou
+Bog
+Boreal Forest
+Brushland
+Canyon
+Chaparral
+Cherry Blossom Grove
+Coniferous Forest
+Snowy Coniferous Forest
+Crag
+Dead Forest
+Dead Swamp
+Deciduous Forest
+Fen
+Flower Field
+Frost Forest
+Fungi Forest
+Garden
+Grassland
+Grove
+Heathland
+Highland
+Jade Cliffs
+Lavender Fields
+Lush Desert
+Lush Swamp
+Maple Woods
+Marsh
+Meadow
+Moor
+Mountain
+Mystic Grove
+Ominous Woods
+Origin Valley
+Outback
+Prairie
+Rainforest
+Redwood Forest
+Sacred Springs
+Seasonal Forest
+Shield
+Shrubland
+Sludgepit
+Steppe
+Temperate Rainforest
+Thicket
+Tropical Rainforest
+Tundra
+Wasteland
+Wetland
+Woodland
+Coral Reef
+Kelp Forest
+Tropics
+Volcano
+Mangrove
+Alps Forest
+Canyon Ravine
+Glacier
+Meadow Forest
+Oasis
+Orchard
+Quagmire
+Scrubland
+Silkglades
+Spruce Woods
+Corrupted Sands
+Phantasmagoric Inferno
+Boneyard
+Visceral Heap
+Undergarden
+Lush River
+Dry River
 Ocean Oil Field
 Desert Oil Field
 Sunflower Plains
@@ -65,6 +141,9 @@ Savanna Plateau M
 Mesa (Bryce)
 Mesa Plateau F M
 Mesa Plateau M
+Tainted Land
+Magical Forest
+Eerie
 
 -------------------------------------
 --- Fluid list
@@ -101,6 +180,7 @@ uuamplifier
 potion.invisibility
 nutrient_distillation
 potion.chillysauce
+fluxgoo
 uumatter
 potion.wheatyhopsjuice
 potion.strength.splash
@@ -170,9 +250,11 @@ potion.limoncello
 potion.thick
 potion.slowness.long.splash
 potion.regen.strong
+spring_water
 potion.slowness.splash
 potion.diablosauce
 bioethanol
+poison
 potion.speed.strong
 potion.coffee
 chlorite
@@ -211,8 +293,8 @@ potion.potatojuice
 potion.nightvision.long
 potion.strength.long
 bacterialsludge
-nitrogendioxide
 lubricant
+nitrogendioxide
 potion.speed
 potion.weakness.long.splash
 fire_water
@@ -426,6 +508,42 @@ pearlFluix
 dustEnder
 gemCertusQuartz
 oreCertusQuartz
+cropRaspberry
+cropBlueberry
+cropBlackberry
+cropMaloberry
+cropStrawberry
+cropCranberry
+crafterWood
+craftingTableWood
+glassSoul
+bowlWood
+chestWood
+glass
+cropBlightberry
+cropDuskberry
+cropSkyberry
+cropStingberry
+taintedSoil
+saplingTree
+leavesTree
+blockMeatRaw
+gemRuby
+gemPeridot
+gemOlivine
+gemTopaz
+gemTanzanite
+gemMalachite
+gemSapphire
+gemAmber
+oreRuby
+oreTopaz
+orePeridot
+oreOlivine
+oreTanzanite
+oreMalachite
+oreSapphire
+oreAmber
 gemApatite
 brickPeat
 dustAsh
@@ -490,6 +608,35 @@ stainedGlassPaneBrown
 stainedGlassPaneGreen
 stainedGlassPaneRed
 stainedGlassPaneBlack
+oreCinnabar
+oreInfusedAir
+oreInfusedFire
+oreInfusedWater
+oreInfusedEarth
+oreInfusedOrder
+oreInfusedEntropy
+shardAir
+shardFire
+shardWater
+shardEarth
+shardOrder
+shardEntropy
+quicksilver
+nuggetCopper
+nuggetTin
+nuggetSilver
+nuggetLead
+nuggetThaumium
+nuggetQuicksilver
+ingotThaumium
+clusterIron
+clusterCopper
+clusterTin
+clusterSilver
+clusterLead
+clusterCinnabar
+clusterGold
+plateThaumium
 dustEnderPearl
 ingotConductiveIron
 ingotElectricalSteel
@@ -497,11 +644,37 @@ ingotEnergeticAlloy
 ingotVibrantAlloy
 ingotPulsatingIron
 ingotDarkSteel
-glass
 woodStick
 sand
 glassHardened
 itemSkull
+bricksGravel
+enderobsidian
+burntquartz
+icestone
+blockUnstable
+magicinfusedwood
+endercore
+sandyglass
+compressedCobblestone1x
+compressedCobblestone2x
+compressedCobblestone3x
+compressedCobblestone4x
+compressedCobblestone5x
+compressedCobblestone6x
+compressedCobblestone7x
+compressedCobblestone8x
+compressedDirt1x
+compressedDirt2x
+compressedDirt3x
+compressedDirt4x
+compressedGravel1x
+compressedGravel2x
+compressedSand1x
+compressedSand2x
+ingotUnstable
+nuggetUnstable
+bricksStone
 oreAluminum
 oreAluminium
 oreNaturalAluminum
@@ -526,8 +699,6 @@ shardTitanium
 shardIron
 ingotSteel
 nuggetSteel
-nuggetCopper
-nuggetTin
 fuelCoke
 blockSteel
 dustSaltpeter
@@ -920,12 +1091,10 @@ oreNetherrackEmerald
 oreEndstoneEmerald
 oreBlackgraniteEmerald
 oreRedgraniteEmerald
-oreRuby
 oreNetherrackRuby
 oreEndstoneRuby
 oreBlackgraniteRuby
 oreRedgraniteRuby
-oreSapphire
 oreNetherrackSapphire
 oreEndstoneSapphire
 oreBlackgraniteSapphire
@@ -935,8 +1104,6 @@ oreNetherrackGreenSapphire
 oreEndstoneGreenSapphire
 oreBlackgraniteGreenSapphire
 oreRedgraniteGreenSapphire
-oreOlivine
-orePeridot
 oreNetherrackOlivine
 oreNetherrackPeridot
 oreEndstoneOlivine
@@ -945,12 +1112,10 @@ oreBlackgraniteOlivine
 oreBlackgranitePeridot
 oreRedgraniteOlivine
 oreRedgranitePeridot
-oreTopaz
 oreNetherrackTopaz
 oreEndstoneTopaz
 oreBlackgraniteTopaz
 oreRedgraniteTopaz
-oreTanzanite
 oreNetherrackTanzanite
 oreEndstoneTanzanite
 oreBlackgraniteTanzanite
@@ -980,7 +1145,6 @@ oreNetherrackBlueTopaz
 oreEndstoneBlueTopaz
 oreBlackgraniteBlueTopaz
 oreRedgraniteBlueTopaz
-oreAmber
 oreNetherrackAmber
 oreEndstoneAmber
 oreBlackgraniteAmber
@@ -1091,32 +1255,26 @@ oreNetherrackLignite
 oreEndstoneLignite
 oreBlackgraniteLignite
 oreRedgraniteLignite
-oreInfusedAir
 oreNetherrackInfusedAir
 oreEndstoneInfusedAir
 oreBlackgraniteInfusedAir
 oreRedgraniteInfusedAir
-oreInfusedFire
 oreNetherrackInfusedFire
 oreEndstoneInfusedFire
 oreBlackgraniteInfusedFire
 oreRedgraniteInfusedFire
-oreInfusedEarth
 oreNetherrackInfusedEarth
 oreEndstoneInfusedEarth
 oreBlackgraniteInfusedEarth
 oreRedgraniteInfusedEarth
-oreInfusedWater
 oreNetherrackInfusedWater
 oreEndstoneInfusedWater
 oreBlackgraniteInfusedWater
 oreRedgraniteInfusedWater
-oreInfusedEntropy
 oreNetherrackInfusedEntropy
 oreEndstoneInfusedEntropy
 oreBlackgraniteInfusedEntropy
 oreRedgraniteInfusedEntropy
-oreInfusedOrder
 oreNetherrackInfusedOrder
 oreEndstoneInfusedOrder
 oreBlackgraniteInfusedOrder
@@ -1165,7 +1323,6 @@ oreNetherrackChromite
 oreEndstoneChromite
 oreBlackgraniteChromite
 oreRedgraniteChromite
-oreCinnabar
 oreNetherrackCinnabar
 oreEndstoneCinnabar
 oreBlackgraniteCinnabar
@@ -1260,7 +1417,6 @@ oreNetherrackMagnetite
 oreEndstoneMagnetite
 oreBlackgraniteMagnetite
 oreRedgraniteMagnetite
-oreMalachite
 oreNetherrackMalachite
 oreEndstoneMalachite
 oreBlackgraniteMalachite
@@ -1563,6 +1719,8 @@ stickBlaze
 craftingEnderChest
 craftingIndustrialDiamond
 glassReinforced
+stoneBasalt
+stoneMarble
 stoneObsidian
 stoneMossy
 stoneBricks
@@ -3470,19 +3628,12 @@ crushedCentrifugedStibnite
 crushedCentrifugedAsbestos
 crushedCentrifugedDiatomite
 gemFirestone
-gemRuby
-gemSapphire
 gemGreenSapphire
-gemOlivine
-gemPeridot
-gemTopaz
-gemTanzanite
 gemAmethyst
 gemOpal
 gemJasper
 gemFoolsRuby
 gemBlueTopaz
-gemAmber
 gemDilithium
 gemCrystalFlux
 gemForcicium
@@ -3523,7 +3674,6 @@ nuggetYttrium
 nuggetNiobium
 nuggetMolybdenum
 nuggetPalladium
-nuggetSilver
 nuggetIndium
 nuggetAntimony
 nuggetTellurium
@@ -3548,7 +3698,6 @@ nuggetTungsten
 nuggetOsmium
 nuggetIridium
 nuggetPlatinum
-nuggetLead
 nuggetBismuth
 nuggetThorium
 nuggetUranium235
@@ -3588,7 +3737,6 @@ nuggetNaquadahEnriched
 nuggetNaquadria
 nuggetDuranium
 nuggetTritanium
-nuggetThaumium
 nuggetMithril
 nuggetMidasium
 nuggetAstralSilver
@@ -3694,7 +3842,6 @@ ingotNaquadahEnriched
 ingotNaquadria
 ingotDuranium
 ingotTritanium
-ingotThaumium
 ingotMithril
 ingotMidasium
 ingotAstralSilver
@@ -3818,7 +3965,6 @@ plateNaquadahEnriched
 plateNaquadria
 plateDuranium
 plateTritanium
-plateThaumium
 plateMithril
 plateMidasium
 plateAstralSilver
@@ -4852,6 +4998,7 @@ cellUUAmplifier
 cellSeedOilHemp
 cellSeedOilLin
 cellLubricant
+cellHoney
 cellGlowstone
 cellPhosphate
 cellSiliconDioxide
@@ -7674,6 +7821,10 @@ pipeHugeOsmium
 pipeRestrictiveMediumOsmium
 pipeRestrictiveLargeOsmium
 pipeRestrictiveHugeOsmium
+nuggetMercury
+gemMercury
+gemQuicksilver
+paperResearchFragment
 calclavia:BATTERY
 batteryBasic
 batteryAdvanced
@@ -7700,7 +7851,6 @@ bookEmpty
 bookWritable
 bookWritten
 bookEnchanted
-chestWood
 obsidian
 whiteStone
 transdimBlock
@@ -7712,7 +7862,6 @@ cropBeet
 cropBroccoli
 cropCauliflower
 cropCelery
-cropCranberry
 cropGarlic
 cropGinger
 cropLeek
@@ -7735,8 +7884,6 @@ cropTurnip
 cropWhitemushroom
 cropArtichoke
 cropBellpepper
-cropBlackberry
-cropBlueberry
 cropBrusselsprout
 cropCabbage
 cropCactusfruit
@@ -7753,10 +7900,8 @@ cropKiwi
 cropMustard
 cropOkra
 cropPeas
-cropRaspberry
 cropRhubarb
 cropSeaweed
-cropStrawberry
 cropTomato
 cropWintersquash
 cropZucchini
@@ -8372,6 +8517,7 @@ blockIronCompressed
 ingotIronCompressed
 camoPaste
 rodStone
+cropVine
 oc:adapter
 oc:cable
 oc:capacitor
@@ -8490,9 +8636,9 @@ hopper
 dispenser
 book
 craftingTank
-stoneBasalt
-stoneMarble
 paperBlueprint
+paperResearch
+bookThaumonomicon
 crystalNetherQuartz
 itemIlluminatedPanel
 wool
@@ -8524,3 +8670,10 @@ healthBoost
 absorption
 saturation
 ic2.potion.radiation
+fluxtaint
+paralysis
+possession
+Fire Imbued
+Wated Imbued
+Earth Imbued
+Air Imbued
