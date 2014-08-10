@@ -340,7 +340,31 @@ var QED = <ExtraUtilities:endConstructor>;
 var enderInfusedObsidian = <ExtraUtilities:decorativeBlock1:1>;
 var coreEnder = <ExtraUtilities:decorativeBlock1:11>;
 var computationalMatrix = <ExtraUtilities:decorativeBlock1:12>;
+var GTOreGenGuide = <Enchiridion:items>.withTag({booksid:"GT_OreSpawn"});
+var book = <minecraft:book>;
+var inkSac = <minecraft:dye>;
+var stone = <ore:stone>;
+var hullBronze = <gregtech:gt.blockmachines:1>;
+var gunpowder  = <minecraft:gunpowder>;
+var NaturaSulfur = <Natura:barleyFood:4>;
+var tinyGunpowder = <gregtech:gt.metaitem.01:800>;
+var smallGunpowder = <gregtech:gt.metaitem.01:1800>;
+var dustCoal = <ore:dustCoal>;
+var dustSulfur = <ore:dustSulfur>;
+var dustSaltpeter = <ore:dustSaltpeter>;
+var dustCharcoal = <ore:dustCharcoal>;
+var crateOfGunpowder = <gregtech:gt.metaitem.03:800>;
 
+# Extras
+furnace.remove(nuggetSteel, nuggetIron);
+nuggetSteel.remove(RCNuggetSteel);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, hullBronze]);
+recipes.remove(gunpowder);
+recipes.addShapeless(gunpowder, [tinyGunpowder, tinyGunpowder, tinyGunpowder, tinyGunpowder, tinyGunpowder, tinyGunpowder, tinyGunpowder, tinyGunpowder, tinyGunpowder]);
+recipes.addShapeless(gunpowder, [smallGunpowder, smallGunpowder, smallGunpowder, smallGunpowder]);
+recipes.addShapeless(gunpowder * 3, [dustCoal, dustSulfur, dustSaltpeter, dustSaltpeter]);
+recipes.addShapeless(gunpowder * 2, [dustCharcoal, dustSulfur, dustSaltpeter, dustSaltpeter]);
+recipes.addShapeless(gunpowder* 16, [crateOfGunpowder, crowbar]);
 
 # Extra Utilities
 recipes.remove(enderInfusedObsidian);
@@ -388,9 +412,9 @@ Compressor.addRecipe(sandCompressedDouble, sandCompressed * 9);
 Boxing.addUnboxingRecipe(sandCompressed * 9, null, sandCompressedDouble, 800, 1);
 recipes.remove(EUtilsDrum);
 recipes.addShaped(EUtilsDrum, [
-	[plateIron, ringIron, plateIron],
-	[plateIron, cauldron, plateIron],
-	[plateIron, pressurePlateWeightedHeavy, plateIron]]);
+	[plateSteel, ringIron, plateSteel],
+	[plateSteel, cauldron, plateSteel],
+	[plateSteel, pressurePlateWeightedHeavy, plateSteel]]);
 recipes.remove(EUtilsDrumBedrock);
 recipes.addShaped(EUtilsDrumBedrock, [
 	[ingotBedrockium, ringGold, ingotBedrockium],
@@ -653,10 +677,6 @@ recipes.addShaped(hopperOmni, [
 # 3D Furnace
 recipes.remove(furnace3d);
 recipes.addShapeless(furnace3d, [<minecraft:furnace>]);
-
-# Extras
-furnace.remove(nuggetSteel, nuggetIron);
-nuggetSteel.remove(RCNuggetSteel);
 
 # GT and IC2
 Assembler.addRecipe(GTGearDiamond, GTGearGold, plateDiamond, 1600, 2);
