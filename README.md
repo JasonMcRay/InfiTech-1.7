@@ -17,14 +17,14 @@ InfiTech - GregTech focused FTB modpack for Minecraft 1.7
 * Bibliowoods [Forestry] by Nuchaz - http://www.bibliocraftmod.com/
 * Biomes o'Plenty by TDWP_FTW, Adubbz - http://www.reddit.com/r/biomesoplenty
 * Buildcraft 6 by CovertJaguar, SirSengir, Krapht, cpw, spacetoad - http://www.mod-buildcraft.com/
-* Carpenter's Blocks by Mineshopper - http://www.minecraftforum.net/topic/1790919-17forge-carpenters-blocks-v314/
-* Code Chicken Core by Chickenbones - http://www.minecraftforum.net/topic/909223-164-smp-chickenbones-mods/
-* Custom Stuff 2 by CubeX2 - http://www.minecraftforum.net/topic/506109-172-cubex2s-mods-all-mods-available-for-172/#CustomStuff2
+* Carpenter's Blocks by Mineshopper - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1288875-carpenters-blocks
+* Code Chicken Core by Chickenbones - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1279956-chickenbones-mods
+* Custom Stuff 2 by CubeX2 - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1275500-cubex2s-mods-all-mods-available-for-1-7-10#CustomStuff2
 * Dimensional Anchor by Immibis - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1281065-immibiss-mods-now-with-85-7-less-version-numbers
 * Electro Magic Tools by Tombenpotter - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1292998-industrialcraft-2-thaumcraft-4-electro-magic
 * EnderIO by CrazyPants - http://enderio.com/
 * Enchiridion by Joshie - http://www.curse.com/mc-mods/minecraft/enchiridion
-* Extra Cells 2 by Leonelf - http://www.minecraftforum.net/topic/1801643-ae-add-onm3gas-extracells-v-169b-and-200alpha/
+* Extra Cells 2 by Leonelf - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1289077-ae-add-on-m3gas-extracells-1-6-9e-2-1-3-2-1-8
 * Extra Utilities by RWTema - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1443963-extra-utilities-v1-1-0f
 * Forestry by SirSengir - http://forestry.sengir.net/wiki.new/doku.php
 * Galacticraft Core by micdoodle8 - http://micdoodle8.com/mods/galacticraft
@@ -34,8 +34,8 @@ InfiTech - GregTech focused FTB modpack for Minecraft 1.7
 * Chisel by Pokefenn, AutomaticMaiden - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1294901-chisel
 * Immibis Core by Immibis - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1281065-immibiss-mods-now-with-85-7-less-version-numbers
 * Industrial Craft 2 by IC2Team - http://forum.industrial-craft.net/index.php?page=Index
-* Inventory Tweaks by Kobata - http://www.minecraftforum.net/topic/1720872-172-inventory-tweaks-157-march-14/
-* Iron Chest by cpw - http://www.minecraftforum.net/topic/981855-15-and-up-forge-universalironchests-50-minecraft-15-update/
+* Inventory Tweaks by Kobata - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1288184-inventory-tweaks-1-58-july-25
+* Iron Chest by cpw - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1280827-1-5-and-up-forge-universal-ironchests-5-0
 * Jabba by ProfMobius - http://www.mobiusstrip.eu/
 * Mantle by mDiyo - http://www.curse.com/mc-mods/minecraft/mantle
 * Micdoodle Core by micdoodle8 - http://micdoodle8.com/mods/galacticraft
@@ -44,7 +44,7 @@ InfiTech - GregTech focused FTB modpack for Minecraft 1.7
 * ModTweaker by Joshie - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/2093121-1-7-x-modtweaker-0-5d-minetweaker-addon#entry31759679
 * Natura by progwml6 - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1294968-natura
 * NEI Addons by bdew - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1289113-nei-addons-v1-12-0-updated-to-mc-1-7-2-1-7-10
-* Not Enough Items by Chickenbones - http://www.minecraftforum.net/topic/909223-164-smp-chickenbones-mods/
+* Not Enough Items by Chickenbones - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1279956-chickenbones-mods
 * Open Computers by Sangar - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1293018-opencomputers-v1-3-2
 * Open Eye by Mikeemoo - http://openeye.openmods.info/
 * Opis by ProfMobius - http://www.mobiusstrip.eu/
