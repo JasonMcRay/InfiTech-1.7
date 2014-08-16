@@ -40,8 +40,8 @@ var chute = <BuildCraft|Factory:blockHopper>;
 var plateIron = <ore:plateIron>;
 var chestWood = <minecraft:chest>;
 var hammer = <ore:craftingToolHardHammer>;
-var PCGearIron = <PneumaticCraft:compressedIronGear>;
-var ingotCompressedIron = <PneumaticCraft:ingotIronCompressed>;
+//var PCGearIron = <PneumaticCraft:compressedIronGear>;
+//var ingotCompressedIron = <PneumaticCraft:ingotIronCompressed>;
 var ingotBronze = <ore:ingotBronze>;
 var FTGearBronze = <Forestry:gearBronze>;
 var FTGearCopper = <Forestry:gearCopper>;
@@ -54,13 +54,13 @@ var pickaxeIron = <minecraft:iron_pickaxe>;
 var redstone = <ore:dustRedstone>;
 var ironBars = <minecraft:iron_bars>;
 var BCTank = <BuildCraft|Factory:tankBlock>;
-var compressorKinetic = <PneumaticCraft:kineticCompressor>;
+//var compressorKinetic = <PneumaticCraft:kineticCompressor>;
 var gateBasic = <BuildCraft|Transport:pipeGate>;
 var pipeKinesisDiamond = <BuildCraft|Transport:item.buildcraftPipe.pipepowerdiamond>;
-var turbineRotor = <PneumaticCraft:turbineRotor>;
-var tubePressureAdvanced = <PneumaticCraft:advancedPressureTube>;
+//var turbineRotor = <PneumaticCraft:turbineRotor>;
+//var tubePressureAdvanced = <PneumaticCraft:advancedPressureTube>;
 var craftingFurnace = <ore:craftingFurnace>;
-var circuitBoardPrinted = <PneumaticCraft:printedCircuitBoard>;
+//var circuitBoardPrinted = <PneumaticCraft:printedCircuitBoard>;
 var filler = <BuildCraft|Builders:fillerBlock>;
 var dyeBlack = <ore:dyeBlack>;
 var dyeYellow = <ore:dyeYellow>;
@@ -133,12 +133,12 @@ var furnace3d = <furnace3d:furnace>;
 var nuggetSteel = <ore:nuggetSteel>;
 var RCNuggetSteel = <Railcraft:nugget:1>;
 var nuggetIron = <ore:nuggetIron>;
-var aerialInterface = <PneumaticCraft:aerialInterface>;
-var pressureWall = <PneumaticCraft:pressureChamberWall:*>;
-var pressureTubeAdv = <PneumaticCraft:advancedPressureTube>;
+//var aerialInterface = <PneumaticCraft:aerialInterface>;
+//var pressureWall = <PneumaticCraft:pressureChamberWall:*>;
+//var pressureTubeAdv = <PneumaticCraft:advancedPressureTube>;
 var netherStar = <minecraft:nether_star>;
 var hopper = <minecraft:hopper>;
-var hopperOmni = <PneumaticCraft:omnidirectionalHopper>;
+//var hopperOmni = <PneumaticCraft:omnidirectionalHopper>;
 var coilIron = <ProjRed|Core:projectred.core.part:17>;
 var coilCopper = <ProjRed|Core:projectred.core.part:16>;
 var coilGold = <ProjRed|Core:projectred.core.part:18>;
@@ -346,7 +346,7 @@ var inkSac = <minecraft:dye>;
 var stone = <ore:stone>;
 var hullBronze = <gregtech:gt.blockmachines:1>;
 var gunpowder  = <minecraft:gunpowder>;
-var NaturaSulfur = <Natura:barleyFood:4>;
+//var NaturaSulfur = <Natura:barleyFood:4>;
 var tinyGunpowder = <gregtech:gt.metaitem.01:800>;
 var smallGunpowder = <gregtech:gt.metaitem.01:1800>;
 var dustCoal = <ore:dustCoal>;
@@ -354,17 +354,145 @@ var dustSulfur = <ore:dustSulfur>;
 var dustSaltpeter = <ore:dustSaltpeter>;
 var dustCharcoal = <ore:dustCharcoal>;
 var crateOfGunpowder = <gregtech:gt.metaitem.03:800>;
+var oreSilver = <ore:oreSilver>;
+var oreLead = <ore:oreLead>;
+var oreGold = <ore:oreGold>;
+var modIronChests = <IronChest:BlockIronChest:*>;
+var chestCopper = <IronChest:BlockIronChest:3>;
+var chestCrystal = <IronChest:BlockIronChest:5>;
+var chestDiamond = <IronChest:BlockIronChest:2>;
+var chestDirt = <IronChest:BlockIronChest:7>;
+var chestGold = <IronChest:BlockIronChest:1>;
+var chestIron = <IronChest:BlockIronChest:0>;
+var chestObsidian = <IronChest:BlockIronChest:6>;
+var chestSilver = <IronChest:BlockIronChest:4>;
+var upgCopperIron = <IronChest:copperIronUpgrade>;
+var upgCopperSilver = <IronChest:copperSilverUpgrade>;
+var upgDiamondCrystal = <IronChest:diamondCrystalUpgrade>;
+var upgDiamondObsidian = <IronChest:diamondObsidianUpgrade>;
+var upgGoldDiamond = <IronChest:goldDiamondUpgrade>;
+var upgIronGold = <IronChest:ironGoldUpgrade>;
+var upgSilverGold = <IronChest:silverGoldUpgrade>;
+var upgWoodCopper = <IronChest:woodCopperUpgrade>;
+var upgWoodIron = <IronChest:woodIronUpgrade>;
+var paneGlass = <minecraft:glass_pane>;
+var plateSilver = <ore:plateSilver>;
+
+# Iron Chests
+recipes.removeShaped(modIronChests);
+recipes.removeShaped(upgIronGold);
+recipes.removeShaped(upgGoldDiamond);
+recipes.removeShaped(upgCopperSilver);
+recipes.removeShaped(upgSilverGold);
+recipes.removeShaped(upgCopperIron);
+recipes.removeShaped(upgDiamondCrystal);
+recipes.removeShaped(upgWoodIron);
+recipes.removeShaped(upgWoodCopper);
+recipes.removeShaped(upgDiamondObsidian);
+recipes.addShaped(chestIron, [
+	[plateIron, plateIron, plateIron],
+	[plateIron, chestWood, plateIron],
+	[plateIron, plateIron, plateIron]]);
+recipes.addShaped(chestGold, [
+	[plateGold, plateGold, plateGold],
+	[plateGold, chestIron, plateGold],
+	[plateGold, plateGold, plateGold]]);
+recipes.addShaped(chestDiamond, [
+	[paneGlass, paneGlass, paneGlass],
+	[plateDiamond, chestGold, plateDiamond],
+	[paneGlass, paneGlass, paneGlass]]);
+recipes.addShaped(chestCopper, [
+	[plateCopper, plateCopper, plateCopper],
+	[plateCopper, chestWood, plateCopper],
+	[plateCopper, plateCopper, plateCopper]]);
+recipes.addShaped(chestSilver, [
+	[plateSilver, plateSilver, plateSilver],
+	[plateSilver, chestCopper, plateSilver],
+	[plateSilver, plateSilver, plateSilver]]);
+recipes.addShaped(chestCrystal, [
+	[paneGlass, paneGlass, paneGlass],
+	[paneGlass, chestDiamond, paneGlass],
+	[paneGlass, paneGlass, paneGlass]]);
+recipes.addShaped(chestObsidian, [
+	[plateObsidian, plateObsidian, plateObsidian],
+	[plateObsidian, chestDiamond, plateObsidian],
+	[plateObsidian, plateObsidian, plateObsidian]]);
+recipes.addShaped(chestDirt, [
+	[dirt, dirt, dirt],
+	[dirt, chestWood, dirt],
+	[dirt, dirt, dirt]]);
+recipes.addShaped(upgIronGold, [
+	[plateGold, plateGold, plateGold],
+	[plateGold, plateIron, plateGold],
+	[plateGold, plateGold, plateGold]]);
+recipes.addShaped(upgGoldDiamond, [
+	[paneGlass, paneGlass, paneGlass],
+	[plateDiamond, plateGold, plateDiamond],
+	[paneGlass, paneGlass, paneGlass]]);
+recipes.addShaped(upgCopperSilver, [
+	[plateSilver, plateSilver, plateSilver],
+	[plateSilver, plateCopper, plateSilver],
+	[plateSilver, plateSilver, plateSilver]]);
+recipes.addShaped(upgSilverGold, [
+	[plateGold, glass, plateGold],
+	[glass, plateSilver, glass],
+	[plateGold, glass, plateGold]]);
+recipes.addShaped(upgCopperIron, [
+	[plateIron, glass, plateIron],
+	[glass, plateCopper, glass],
+	[plateIron, glass, plateIron]]);
+recipes.addShaped(upgDiamondCrystal, [
+	[paneGlass, paneGlass, paneGlass],
+	[paneGlass, plateObsidian, paneGlass],
+	[paneGlass, paneGlass, paneGlass]]);
+recipes.addShaped(upgWoodIron, [
+	[plateIron, plateIron, plateIron],
+	[plateIron, plankWood, plateIron],
+	[plateIron, plateIron, plateIron]]);
+recipes.addShaped(upgWoodCopper, [
+	[plateCopper, plateCopper, plateCopper],
+	[plateCopper, plankWood, plateCopper],
+	[plateCopper, plateCopper, plateCopper]]);
+recipes.addShaped(upgDiamondObsidian, [
+	[plateObsidian, plateObsidian, plateObsidian],
+	[plateObsidian, paneGlass, plateObsidian],
+	[plateObsidian, plateObsidian, plateObsidian]]);
+recipes.addShaped(chestIron, [
+	[plateIron, glass, plateIron],
+	[glass, chestCopper, glass],
+	[plateIron, glass, plateIron]]);
+recipes.addShaped(chestGold, [
+	[plateGold, glass, plateGold],
+	[glass, chestSilver, glass],
+	[plateGold, glass, plateGold]]);
+recipes.addShaped(chestDiamond, [
+	[paneGlass, paneGlass, paneGlass],
+	[paneGlass, chestSilver, paneGlass],
+	[plateDiamond, plateDiamond, plateDiamond]]);
+recipes.addShaped(chestSilver, [
+	[plateSilver, glass, plateSilver],
+	[glass, chestIron, glass],
+	[plateSilver, glass, plateSilver]]);
+
+# Ore Dictionary stuff
+craftingFurnace.add(furnace3d);
+silicon.remove(EISilicon);
+oreIron.add(GCoreIronMars);
+oreIron.add(GCoreIronAsteroid);
+oreCopper.add(GCoreCopperMars);
+oreTin.add(GCoreTinMars);
+oreAluminium.add(GCoreAluminiumAsteroid);
+oreIlmenite.add(GCoreIlmenite);
 
 # Extras
 furnace.remove(nuggetSteel, nuggetIron);
 nuggetSteel.remove(RCNuggetSteel);
-recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, hullBronze]);
-recipes.remove(gunpowder);
-recipes.addShapeless(gunpowder, [tinyGunpowder, tinyGunpowder, tinyGunpowder, tinyGunpowder, tinyGunpowder, tinyGunpowder, tinyGunpowder, tinyGunpowder, tinyGunpowder]);
-recipes.addShapeless(gunpowder, [smallGunpowder, smallGunpowder, smallGunpowder, smallGunpowder]);
-recipes.addShapeless(gunpowder * 3, [dustCoal, dustSulfur, dustSaltpeter, dustSaltpeter]);
-recipes.addShapeless(gunpowder * 2, [dustCharcoal, dustSulfur, dustSaltpeter, dustSaltpeter]);
-recipes.addShapeless(gunpowder* 16, [crateOfGunpowder, crowbar]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreIron]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreCopper]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreTin]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreLead]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreGold]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreSilver]);
 
 # Extra Utilities
 recipes.remove(enderInfusedObsidian);
@@ -436,15 +564,7 @@ recipes.addShaped(EUtilsDrumBedrock, [
 //Grinder.addRecipe([purifiedOreTin * 2, smallPileIron, smallPileZinc, cellEmpty], GCoreTinMars, cellWater);
 //Grinder.addRecipe([purifiedOreTin * 2, smallPileIron, GTdustZinc, cellEmpty], GCoreTinMars, cellSodiumPersulfate);
 
-# Ore Dictionary stuff
-craftingFurnace.add(furnace3d);
-silicon.remove(EISilicon);
-oreIron.add(GCoreIronMars);
-oreIron.add(GCoreIronAsteroid);
-oreCopper.add(GCoreCopperMars);
-oreTin.add(GCoreTinMars);
-oreAluminium.add(GCoreAluminiumAsteroid);
-oreIlmenite.add(GCoreIlmenite);
+
 
 # Galacticraft 3
 Macerator.addRecipe(rawMeteoricIron * 2, meteorFallen);
@@ -653,26 +773,26 @@ recipes.remove(drawPlate);
 NEI.hide(drawPlate);
 
 # PneumaticCraft
-recipes.remove(PCGearIron);
-recipes.addShaped(PCGearIron, [
-	[null, ingotCompressedIron, null],
-	[ingotCompressedIron, GTGearStone, ingotCompressedIron],
-	[null, ingotCompressedIron, null]]);
-recipes.remove(compressorKinetic);
-recipes.addShaped(compressorKinetic, [
-	[gateBasic, GTGearGold, circuitBoardPrinted],
-	[pipeKinesisDiamond, turbineRotor, tubePressureAdvanced],
-	[gateBasic, craftingFurnace, circuitBoardPrinted]]);
-recipes.remove(aerialInterface);
-recipes.addShaped(aerialInterface, [
-	[pressureWall, hopper, pressureWall],
-	[ingotEnderium, netherStar, ingotEnderium],
-	[pressureWall, pressureTubeAdv, pressureWall]]);
-recipes.remove(hopperOmni);
-recipes.addShaped(hopperOmni, [
-	[ingotCompressedIron, hammer, ingotCompressedIron],
-	[ingotCompressedIron, hopper, ingotCompressedIron],
-	[null, ingotCompressedIron, null]]);
+//recipes.remove(PCGearIron);
+//recipes.addShaped(PCGearIron, [
+//	[null, ingotCompressedIron, null],
+//	[ingotCompressedIron, GTGearStone, ingotCompressedIron],
+//	[null, ingotCompressedIron, null]]);
+//recipes.remove(compressorKinetic);
+//recipes.addShaped(compressorKinetic, [
+//	[gateBasic, GTGearGold, circuitBoardPrinted],
+//	[pipeKinesisDiamond, turbineRotor, tubePressureAdvanced],
+//	[gateBasic, craftingFurnace, circuitBoardPrinted]]);
+//recipes.remove(aerialInterface);
+//recipes.addShaped(aerialInterface, [
+//	[pressureWall, hopper, pressureWall],
+//	[ingotEnderium, netherStar, ingotEnderium],
+//	[pressureWall, pressureTubeAdv, pressureWall]]);
+//recipes.remove(hopperOmni);
+//recipes.addShaped(hopperOmni, [
+//	[ingotCompressedIron, hammer, ingotCompressedIron],
+//	[ingotCompressedIron, hopper, ingotCompressedIron],
+//	[null, ingotCompressedIron, null]]);
 
 # 3D Furnace
 recipes.remove(furnace3d);
