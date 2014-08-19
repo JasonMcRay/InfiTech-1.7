@@ -3,7 +3,6 @@ import mods.gregtech.ChemicalReactor;
 import mods.gregtech.Wiremill;
 import mods.gregtech.Assembler;
 import mods.gregtech.ImplosionCompressor;
-#import mods.gregtech.Grinder;
 import mods.gregtech.Assembler;
 import mods.gregtech.BlastFurnace;
 import mods.ic2.Macerator;
@@ -40,8 +39,6 @@ var chute = <BuildCraft|Factory:blockHopper>;
 var plateIron = <ore:plateIron>;
 var chestWood = <minecraft:chest>;
 var hammer = <ore:craftingToolHardHammer>;
-//var PCGearIron = <PneumaticCraft:compressedIronGear>;
-//var ingotCompressedIron = <PneumaticCraft:ingotIronCompressed>;
 var ingotBronze = <ore:ingotBronze>;
 var FTGearBronze = <Forestry:gearBronze>;
 var FTGearCopper = <Forestry:gearCopper>;
@@ -54,13 +51,9 @@ var pickaxeIron = <minecraft:iron_pickaxe>;
 var redstone = <ore:dustRedstone>;
 var ironBars = <minecraft:iron_bars>;
 var BCTank = <BuildCraft|Factory:tankBlock>;
-//var compressorKinetic = <PneumaticCraft:kineticCompressor>;
 var gateBasic = <BuildCraft|Transport:pipeGate>;
 var pipeKinesisDiamond = <BuildCraft|Transport:item.buildcraftPipe.pipepowerdiamond>;
-//var turbineRotor = <PneumaticCraft:turbineRotor>;
-//var tubePressureAdvanced = <PneumaticCraft:advancedPressureTube>;
 var craftingFurnace = <ore:craftingFurnace>;
-//var circuitBoardPrinted = <PneumaticCraft:printedCircuitBoard>;
 var filler = <BuildCraft|Builders:fillerBlock>;
 var dyeBlack = <ore:dyeBlack>;
 var dyeYellow = <ore:dyeYellow>;
@@ -133,12 +126,8 @@ var furnace3d = <furnace3d:furnace>;
 var nuggetSteel = <ore:nuggetSteel>;
 var RCNuggetSteel = <Railcraft:nugget:1>;
 var nuggetIron = <ore:nuggetIron>;
-//var aerialInterface = <PneumaticCraft:aerialInterface>;
-//var pressureWall = <PneumaticCraft:pressureChamberWall:*>;
-//var pressureTubeAdv = <PneumaticCraft:advancedPressureTube>;
 var netherStar = <minecraft:nether_star>;
 var hopper = <minecraft:hopper>;
-//var hopperOmni = <PneumaticCraft:omnidirectionalHopper>;
 var coilIron = <ProjRed|Core:projectred.core.part:17>;
 var coilCopper = <ProjRed|Core:projectred.core.part:16>;
 var coilGold = <ProjRed|Core:projectred.core.part:18>;
@@ -346,7 +335,6 @@ var inkSac = <minecraft:dye>;
 var stone = <ore:stone>;
 var hullBronze = <gregtech:gt.blockmachines:1>;
 var gunpowder  = <minecraft:gunpowder>;
-//var NaturaSulfur = <Natura:barleyFood:4>;
 var tinyGunpowder = <gregtech:gt.metaitem.01:800>;
 var smallGunpowder = <gregtech:gt.metaitem.01:1800>;
 var dustCoal = <ore:dustCoal>;
@@ -392,6 +380,16 @@ var PRhoeSapphire = <ProjRed|Exploration:projectred.exploration.hoesapphire>;
 var PRpickaxeSapphire = <ProjRed|Exploration:projectred.exploration.pickaxesapphire>;
 var PRshovelSapphire = <ProjRed|Exploration:projectred.exploration.shovelsapphire>;
 var PRswordSapphire = <ProjRed|Exploration:projectred.exploration.swordsapphire>;
+//var PCGearIron = <PneumaticCraft:compressedIronGear>;
+//var ingotCompressedIron = <PneumaticCraft:ingotIronCompressed>;
+//var compressorKinetic = <PneumaticCraft:kineticCompressor>;
+//var turbineRotor = <PneumaticCraft:turbineRotor>;
+//var tubePressureAdvanced = <PneumaticCraft:advancedPressureTube>;
+//var circuitBoardPrinted = <PneumaticCraft:printedCircuitBoard>;
+//var aerialInterface = <PneumaticCraft:aerialInterface>;
+//var pressureWall = <PneumaticCraft:pressureChamberWall:*>;
+//var pressureTubeAdv = <PneumaticCraft:advancedPressureTube>;
+//var hopperOmni = <PneumaticCraft:omnidirectionalHopper>;
 
 # ProjectRed Tools
 recipes.remove(PRaxePeridot);
@@ -595,23 +593,6 @@ recipes.addShaped(EUtilsDrumBedrock, [
 	[ingotBedrockium, ringGold, ingotBedrockium],
 	[ingotBedrockium, cauldron, ingotBedrockium],
 	[ingotBedrockium, pressurePlateWeightedLight, ingotBedrockium]]);
-
-# Grinder Recipes (not used, yet?)
-//Grinder.addRecipe([purifiedOreIlmenite * 2, smallPileIron, smallPileTitanium, cellEmpty], GCoreIlmenite, cellWater);
-//Grinder.addRecipe([purifiedOreAluminium * 2, smallPileIlmenite, smallPileIlmenite, cellEmpty], GCoreAluminiumAsteroid, cellWater);
-//Grinder.addRecipe([rawMeteoricIron * 2, smallPileIlmenite, null, cellEmpty], meteorFallen, cellWater);
-//Grinder.addRecipe([purifiedOreDesh * 2, smallPileDesh, smallPileDesh, cellEmpty], GCoreDesh, cellWater);
-//Grinder.addRecipe([purifiedOreIron * 2, smallPileNickel, smallPileTin, cellEmpty], GCoreIronAsteroid, cellWater);
-//Grinder.addRecipe([purifiedOreIron * 2, dustNickel, smallPileTin, cellEmpty], GCoreIronAsteroid, cellSodiumPersulfate);
-//Grinder.addRecipe([purifiedOreIron * 2, smallPileNickel, smallPileTin, cellEmpty], GCoreIronMars, cellWater);
-//Grinder.addRecipe([purifiedOreIron * 2, dustNickel, smallPileTin, cellEmpty], GCoreIronMars, cellSodiumPersulfate);
-//Grinder.addRecipe([purifiedOreCopper * 2, smallPileCobalt, smallPileGold, cellEmpty], GCoreCopperMars, cellWater);
-//Grinder.addRecipe([purifiedOreCopper * 2, smallPileCobalt, IC2dustGold, cellEmpty], GCoreCopperMars, cellMercury);
-//Grinder.addRecipe([purifiedOreCopper * 3, smallPileCobalt, smallPileGold, cellEmpty], GCoreCopperMars, cellSodiumPersulfate);
-//Grinder.addRecipe([purifiedOreTin * 2, smallPileIron, smallPileZinc, cellEmpty], GCoreTinMars, cellWater);
-//Grinder.addRecipe([purifiedOreTin * 2, smallPileIron, GTdustZinc, cellEmpty], GCoreTinMars, cellSodiumPersulfate);
-
-
 
 # Galacticraft 3
 Macerator.addRecipe(rawMeteoricIron * 2, meteorFallen);
@@ -819,28 +800,6 @@ Wiremill.addRecipe(coilGold, wireGold * 2, 100, 4);
 recipes.remove(drawPlate);
 NEI.hide(drawPlate);
 
-# PneumaticCraft
-//recipes.remove(PCGearIron);
-//recipes.addShaped(PCGearIron, [
-//	[null, ingotCompressedIron, null],
-//	[ingotCompressedIron, GTGearStone, ingotCompressedIron],
-//	[null, ingotCompressedIron, null]]);
-//recipes.remove(compressorKinetic);
-//recipes.addShaped(compressorKinetic, [
-//	[gateBasic, GTGearGold, circuitBoardPrinted],
-//	[pipeKinesisDiamond, turbineRotor, tubePressureAdvanced],
-//	[gateBasic, craftingFurnace, circuitBoardPrinted]]);
-//recipes.remove(aerialInterface);
-//recipes.addShaped(aerialInterface, [
-//	[pressureWall, hopper, pressureWall],
-//	[ingotEnderium, netherStar, ingotEnderium],
-//	[pressureWall, pressureTubeAdv, pressureWall]]);
-//recipes.remove(hopperOmni);
-//recipes.addShaped(hopperOmni, [
-//	[ingotCompressedIron, hammer, ingotCompressedIron],
-//	[ingotCompressedIron, hopper, ingotCompressedIron],
-//	[null, ingotCompressedIron, null]]);
-
 # 3D Furnace
 recipes.remove(furnace3d);
 recipes.addShapeless(furnace3d, [<minecraft:furnace>]);
@@ -1045,3 +1004,25 @@ recipes.addShaped(chestEnder, [
 	[plateObsidian, plateObsidian, plateObsidian]]);
 furnace.remove(charcoal);
 recipes.removeShapeless(enderEye, [enderPearl, blazePowder]);
+
+# PneumaticCraft
+//recipes.remove(PCGearIron);
+//recipes.addShaped(PCGearIron, [
+//	[null, ingotCompressedIron, null],
+//	[ingotCompressedIron, GTGearStone, ingotCompressedIron],
+//	[null, ingotCompressedIron, null]]);
+//recipes.remove(compressorKinetic);
+//recipes.addShaped(compressorKinetic, [
+//	[gateBasic, GTGearGold, circuitBoardPrinted],
+//	[pipeKinesisDiamond, turbineRotor, tubePressureAdvanced],
+//	[gateBasic, craftingFurnace, circuitBoardPrinted]]);
+//recipes.remove(aerialInterface);
+//recipes.addShaped(aerialInterface, [
+//	[pressureWall, hopper, pressureWall],
+//	[ingotEnderium, netherStar, ingotEnderium],
+//	[pressureWall, pressureTubeAdv, pressureWall]]);
+//recipes.remove(hopperOmni);
+//recipes.addShaped(hopperOmni, [
+//	[ingotCompressedIron, hammer, ingotCompressedIron],
+//	[ingotCompressedIron, hopper, ingotCompressedIron],
+//	[null, ingotCompressedIron, null]]);
