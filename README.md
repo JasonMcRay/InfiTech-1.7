@@ -37,19 +37,17 @@ InfiTech - GregTech focused FTB modpack for Minecraft 1.7
 * Inventory Tweaks by Kobata - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1288184-inventory-tweaks-1-58-july-25
 * Iron Chest by cpw - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1280827-1-5-and-up-forge-universal-ironchests-5-0
 * Jabba by ProfMobius - http://www.mobiusstrip.eu/
-* Mantle by mDiyo - http://www.curse.com/mc-mods/minecraft/mantle
 * Micdoodle Core by micdoodle8 - http://micdoodle8.com/mods/galacticraft
 * MineTweaker 3 by StanH - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1290366-1-6-4-1-7-x-minetweaker-3-customize-your
 * Mobius Core by ProfMobius - http://www.mobiusstrip.eu/
 * ModTweaker by Joshie - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/2093121-1-7-x-modtweaker-0-5d-minetweaker-addon#entry31759679
-* Natura by progwml6 - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1294968-natura
 * NEI Addons by bdew - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1289113-nei-addons-v1-12-0-updated-to-mc-1-7-2-1-7-10
 * Not Enough Items by Chickenbones - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1279956-chickenbones-mods
 * Open Computers by Sangar - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1293018-opencomputers-v1-3-2
 * Open Eye by Mikeemoo - http://openeye.openmods.info/
 * Opis by ProfMobius - http://www.mobiusstrip.eu/
 * Pam's Harvestcraft by MatrexsVigil - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1294413-pams-mods-july-16th-all-mods-updated-to-1-7-10#entry29809669
-* Pneumaticraft by Minemaarten - http://www.minemaarten.com/wikis/pneumaticcraft-wiki/
+* (Removed until 1.7.10) Pneumaticraft by Minemaarten - http://www.minemaarten.com/wikis/pneumaticcraft-wiki/
 * ProjectRed Base by MrTJP, Chickenbones - http://projectredwiki.com/wiki/Main_Page
 * ProjectRed Integration by MrTJP, Chickenbones - http://projectredwiki.com/wiki/Main_Page
 * ProjectRed Lighting by MrTJP, Chickenbones - http://projectredwiki.com/wiki/Main_Page
