@@ -205,6 +205,7 @@ potion.leninade
 oil
 potion.applejuice
 potion.damage.splash
+endergoo
 potion.fireresistance
 potion.nightvision.long.splash
 molten.glass

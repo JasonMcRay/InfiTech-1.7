@@ -380,6 +380,10 @@ var PRhoeSapphire = <ProjRed|Exploration:projectred.exploration.hoesapphire>;
 var PRpickaxeSapphire = <ProjRed|Exploration:projectred.exploration.pickaxesapphire>;
 var PRshovelSapphire = <ProjRed|Exploration:projectred.exploration.shovelsapphire>;
 var PRswordSapphire = <ProjRed|Exploration:projectred.exploration.swordsapphire>;
+var HCbarrelWater = <harvestcraft:sink>;
+var HCstoneBasin = <harvestcraft:sink:1>;
+var HCclayJug = <harvestcraft:sink:2>;
+var HCbrickWell = <harvestcraft:sink:3>;
 //var PCGearIron = <PneumaticCraft:compressedIronGear>;
 //var ingotCompressedIron = <PneumaticCraft:ingotIronCompressed>;
 //var compressorKinetic = <PneumaticCraft:kineticCompressor>;
@@ -390,6 +394,16 @@ var PRswordSapphire = <ProjRed|Exploration:projectred.exploration.swordsapphire>
 //var pressureWall = <PneumaticCraft:pressureChamberWall:*>;
 //var pressureTubeAdv = <PneumaticCraft:advancedPressureTube>;
 //var hopperOmni = <PneumaticCraft:omnidirectionalHopper>;
+
+# Harvescraft water barrels
+recipes.remove(HCbarrelWater);
+NEI.hide(HCbarrelWater);
+recipes.remove(HCstoneBasin);
+NEI.hide(HCstoneBasin);
+recipes.remove(HCclayJug);
+NEI.hide(HCclayJug);
+recipes.remove(HCbrickWell);
+NEI.hide(HCbrickWell);
 
 # ProjectRed Tools
 recipes.remove(PRaxePeridot);
