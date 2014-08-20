@@ -42,6 +42,82 @@ Mesa
 Mesa Plateau F
 Mesa Plateau
 Storage Cell
+Alps
+Arctic
+Bamboo Forest
+Bayou
+Bog
+Boreal Forest
+Brushland
+Canyon
+Chaparral
+Cherry Blossom Grove
+Coniferous Forest
+Snowy Coniferous Forest
+Crag
+Dead Forest
+Dead Swamp
+Deciduous Forest
+Fen
+Flower Field
+Frost Forest
+Fungi Forest
+Garden
+Grassland
+Grove
+Heathland
+Highland
+Jade Cliffs
+Lavender Fields
+Lush Desert
+Lush Swamp
+Maple Woods
+Marsh
+Meadow
+Moor
+Mountain
+Mystic Grove
+Ominous Woods
+Origin Valley
+Outback
+Prairie
+Rainforest
+Redwood Forest
+Sacred Springs
+Seasonal Forest
+Shield
+Shrubland
+Sludgepit
+Steppe
+Temperate Rainforest
+Thicket
+Tropical Rainforest
+Tundra
+Wasteland
+Wetland
+Woodland
+Coral Reef
+Kelp Forest
+Tropics
+Volcano
+Mangrove
+Alps Forest
+Canyon Ravine
+Glacier
+Meadow Forest
+Oasis
+Orchard
+Quagmire
+Scrubland
+Silkglades
+Spruce Woods
+Corrupted Sands
+Phantasmagoric Inferno
+Boneyard
+Visceral Heap
+Undergarden
+Lush River
+Dry River
 Ocean Oil Field
 Desert Oil Field
 Sunflower Plains
@@ -65,6 +141,9 @@ Savanna Plateau M
 Mesa (Bryce)
 Mesa Plateau F M
 Mesa Plateau M
+Tainted Land
+Magical Forest
+Eerie
 
 -------------------------------------
 --- Fluid list
@@ -76,6 +155,7 @@ nitrofuel
 potion.regen.long.splash
 potion.slowness
 honey
+sulfuricacid
 potion.strength.strong.splash
 potion.waterbreathing.splash
 milk
@@ -101,6 +181,7 @@ uuamplifier
 potion.invisibility
 nutrient_distillation
 potion.chillysauce
+fluxgoo
 uumatter
 potion.wheatyhopsjuice
 potion.strength.splash
@@ -124,9 +205,10 @@ potion.leninade
 oil
 potion.applejuice
 potion.damage.splash
+endergoo
 potion.fireresistance
-molten.glass
 potion.nightvision.long.splash
+molten.glass
 potion.vodka
 potion.waterbreathing
 potion.poison.strong
@@ -154,7 +236,6 @@ potion.alcopops
 potion.reedwater
 potion.grapejuice
 steam
-etchacid
 potion.purpledrink
 potion.invisibility.splash
 potion.fireresistance.long.splash
@@ -170,12 +251,13 @@ potion.limoncello
 potion.thick
 potion.slowness.long.splash
 potion.regen.strong
+spring_water
 potion.slowness.splash
 potion.diablosauce
 bioethanol
+poison
 potion.speed.strong
 potion.coffee
-chlorite
 atmosphericgases
 potion.regen.long
 potion.darkcafeaulait
@@ -205,14 +287,15 @@ potion.nightvision.splash
 potion.lemonade
 potion.hopsjuice
 potion.dragonblood
+chlorine
 rocket_fuel
 methane
 potion.potatojuice
 potion.nightvision.long
 potion.strength.long
 bacterialsludge
-nitrogendioxide
 lubricant
+nitrogendioxide
 potion.speed
 potion.weakness.long.splash
 fire_water
@@ -226,6 +309,7 @@ potion.fireresistance.splash
 potion.darkbeer
 potion.wheatyjuice
 potion.regen.strong.splash
+molten.concrete
 
 -------------------------------------
 --- Ore dictionary classes
@@ -426,6 +510,23 @@ pearlFluix
 dustEnder
 gemCertusQuartz
 oreCertusQuartz
+blockMeatRaw
+gemRuby
+gemPeridot
+gemOlivine
+gemTopaz
+gemTanzanite
+gemMalachite
+gemSapphire
+gemAmber
+oreRuby
+oreTopaz
+orePeridot
+oreOlivine
+oreTanzanite
+oreMalachite
+oreSapphire
+oreAmber
 gemApatite
 brickPeat
 dustAsh
@@ -490,6 +591,35 @@ stainedGlassPaneBrown
 stainedGlassPaneGreen
 stainedGlassPaneRed
 stainedGlassPaneBlack
+oreCinnabar
+oreInfusedAir
+oreInfusedFire
+oreInfusedWater
+oreInfusedEarth
+oreInfusedOrder
+oreInfusedEntropy
+shardAir
+shardFire
+shardWater
+shardEarth
+shardOrder
+shardEntropy
+quicksilver
+nuggetCopper
+nuggetTin
+nuggetSilver
+nuggetLead
+nuggetThaumium
+nuggetQuicksilver
+ingotThaumium
+clusterIron
+clusterCopper
+clusterTin
+clusterSilver
+clusterLead
+clusterCinnabar
+clusterGold
+plateThaumium
 dustEnderPearl
 ingotConductiveIron
 ingotElectricalSteel
@@ -502,6 +632,33 @@ woodStick
 sand
 glassHardened
 itemSkull
+bricksGravel
+enderobsidian
+burntquartz
+icestone
+blockUnstable
+magicinfusedwood
+endercore
+sandyglass
+compressedCobblestone1x
+compressedCobblestone2x
+compressedCobblestone3x
+compressedCobblestone4x
+compressedCobblestone5x
+compressedCobblestone6x
+compressedCobblestone7x
+compressedCobblestone8x
+compressedDirt1x
+compressedDirt2x
+compressedDirt3x
+compressedDirt4x
+compressedGravel1x
+compressedGravel2x
+compressedSand1x
+compressedSand2x
+ingotUnstable
+nuggetUnstable
+bricksStone
 oreAluminum
 oreAluminium
 oreNaturalAluminum
@@ -526,17 +683,17 @@ shardTitanium
 shardIron
 ingotSteel
 nuggetSteel
-nuggetCopper
-nuggetTin
 fuelCoke
 blockSteel
 dustSaltpeter
 dustCharcoal
 oreFirestone
-stoneGraniteBlack
-stoneGraniteRed
+craftingToolScrewdriver
 craftingToolFile
 craftingToolHardHammer
+stoneGraniteBlack
+stoneGraniteRed
+stoneConcrete
 oreLithium
 oreNetherrackLithium
 oreEndstoneLithium
@@ -920,12 +1077,10 @@ oreNetherrackEmerald
 oreEndstoneEmerald
 oreBlackgraniteEmerald
 oreRedgraniteEmerald
-oreRuby
 oreNetherrackRuby
 oreEndstoneRuby
 oreBlackgraniteRuby
 oreRedgraniteRuby
-oreSapphire
 oreNetherrackSapphire
 oreEndstoneSapphire
 oreBlackgraniteSapphire
@@ -935,8 +1090,6 @@ oreNetherrackGreenSapphire
 oreEndstoneGreenSapphire
 oreBlackgraniteGreenSapphire
 oreRedgraniteGreenSapphire
-oreOlivine
-orePeridot
 oreNetherrackOlivine
 oreNetherrackPeridot
 oreEndstoneOlivine
@@ -945,12 +1098,10 @@ oreBlackgraniteOlivine
 oreBlackgranitePeridot
 oreRedgraniteOlivine
 oreRedgranitePeridot
-oreTopaz
 oreNetherrackTopaz
 oreEndstoneTopaz
 oreBlackgraniteTopaz
 oreRedgraniteTopaz
-oreTanzanite
 oreNetherrackTanzanite
 oreEndstoneTanzanite
 oreBlackgraniteTanzanite
@@ -980,7 +1131,6 @@ oreNetherrackBlueTopaz
 oreEndstoneBlueTopaz
 oreBlackgraniteBlueTopaz
 oreRedgraniteBlueTopaz
-oreAmber
 oreNetherrackAmber
 oreEndstoneAmber
 oreBlackgraniteAmber
@@ -1091,32 +1241,26 @@ oreNetherrackLignite
 oreEndstoneLignite
 oreBlackgraniteLignite
 oreRedgraniteLignite
-oreInfusedAir
 oreNetherrackInfusedAir
 oreEndstoneInfusedAir
 oreBlackgraniteInfusedAir
 oreRedgraniteInfusedAir
-oreInfusedFire
 oreNetherrackInfusedFire
 oreEndstoneInfusedFire
 oreBlackgraniteInfusedFire
 oreRedgraniteInfusedFire
-oreInfusedEarth
 oreNetherrackInfusedEarth
 oreEndstoneInfusedEarth
 oreBlackgraniteInfusedEarth
 oreRedgraniteInfusedEarth
-oreInfusedWater
 oreNetherrackInfusedWater
 oreEndstoneInfusedWater
 oreBlackgraniteInfusedWater
 oreRedgraniteInfusedWater
-oreInfusedEntropy
 oreNetherrackInfusedEntropy
 oreEndstoneInfusedEntropy
 oreBlackgraniteInfusedEntropy
 oreRedgraniteInfusedEntropy
-oreInfusedOrder
 oreNetherrackInfusedOrder
 oreEndstoneInfusedOrder
 oreBlackgraniteInfusedOrder
@@ -1165,7 +1309,6 @@ oreNetherrackChromite
 oreEndstoneChromite
 oreBlackgraniteChromite
 oreRedgraniteChromite
-oreCinnabar
 oreNetherrackCinnabar
 oreEndstoneCinnabar
 oreBlackgraniteCinnabar
@@ -1260,7 +1403,6 @@ oreNetherrackMagnetite
 oreEndstoneMagnetite
 oreBlackgraniteMagnetite
 oreRedgraniteMagnetite
-oreMalachite
 oreNetherrackMalachite
 oreEndstoneMalachite
 oreBlackgraniteMalachite
@@ -1560,9 +1702,11 @@ dustSugar
 dustGunpowder
 dustBlaze
 stickBlaze
-craftingEnderChest
+enderChest
 craftingIndustrialDiamond
 glassReinforced
+stoneBasalt
+stoneMarble
 stoneObsidian
 stoneMossy
 stoneBricks
@@ -1687,6 +1831,9 @@ dustTinySterlingSilver
 dustTinyRoseGold
 dustTinyBlackBronze
 dustTinyBismuthBronze
+dustTinyIronMagnetic
+dustTinySteelMagnetic
+dustTinyNeodymiumMagnetic
 dustTinyDiamond
 dustTinyEmerald
 dustTinyRuby
@@ -1826,6 +1973,7 @@ dustTinyCocoa
 dustTinyCoffee
 dustTinyWoodSealed
 dustTinyGlass
+dustTinyRareEarth
 dustTinyMirabilite
 dustTinyMica
 dustTinyTalc
@@ -1873,6 +2021,7 @@ dustTinyPyrolusite
 dustTinyRockSalt
 dustTinyStibnite
 dustTinyAsbestos
+dustTinyConcrete
 dustTinyDiatomite
 dustSmallLithium
 dustSmallBeryllium
@@ -1997,6 +2146,9 @@ dustSmallSterlingSilver
 dustSmallRoseGold
 dustSmallBlackBronze
 dustSmallBismuthBronze
+dustSmallIronMagnetic
+dustSmallSteelMagnetic
+dustSmallNeodymiumMagnetic
 dustSmallDiamond
 dustSmallEmerald
 dustSmallRuby
@@ -2136,6 +2288,7 @@ dustSmallCocoa
 dustSmallCoffee
 dustSmallWoodSealed
 dustSmallGlass
+dustSmallRareEarth
 dustSmallMirabilite
 dustSmallMica
 dustSmallTalc
@@ -2183,6 +2336,7 @@ dustSmallPyrolusite
 dustSmallRockSalt
 dustSmallStibnite
 dustSmallAsbestos
+dustSmallConcrete
 dustSmallDiatomite
 dustBeryllium
 dustBoron
@@ -2297,6 +2451,9 @@ dustSterlingSilver
 dustRoseGold
 dustBlackBronze
 dustBismuthBronze
+dustIronMagnetic
+dustSteelMagnetic
+dustNeodymiumMagnetic
 dustEmerald
 dustRuby
 dustSapphire
@@ -2416,6 +2573,7 @@ dustCocoa
 dustCoffee
 dustWoodSealed
 dustGlass
+dustRareEarth
 dustMirabilite
 dustMica
 dustTalc
@@ -2463,6 +2621,7 @@ dustPyrolusite
 dustRockSalt
 dustStibnite
 dustAsbestos
+dustConcrete
 dustDiatomite
 dustImpureLithium
 dustImpureBeryllium
@@ -3470,19 +3629,12 @@ crushedCentrifugedStibnite
 crushedCentrifugedAsbestos
 crushedCentrifugedDiatomite
 gemFirestone
-gemRuby
-gemSapphire
 gemGreenSapphire
-gemOlivine
-gemPeridot
-gemTopaz
-gemTanzanite
 gemAmethyst
 gemOpal
 gemJasper
 gemFoolsRuby
 gemBlueTopaz
-gemAmber
 gemDilithium
 gemCrystalFlux
 gemForcicium
@@ -3523,7 +3675,6 @@ nuggetYttrium
 nuggetNiobium
 nuggetMolybdenum
 nuggetPalladium
-nuggetSilver
 nuggetIndium
 nuggetAntimony
 nuggetTellurium
@@ -3548,7 +3699,6 @@ nuggetTungsten
 nuggetOsmium
 nuggetIridium
 nuggetPlatinum
-nuggetLead
 nuggetBismuth
 nuggetThorium
 nuggetUranium235
@@ -3588,7 +3738,6 @@ nuggetNaquadahEnriched
 nuggetNaquadria
 nuggetDuranium
 nuggetTritanium
-nuggetThaumium
 nuggetMithril
 nuggetMidasium
 nuggetAstralSilver
@@ -3611,6 +3760,9 @@ nuggetSterlingSilver
 nuggetRoseGold
 nuggetBlackBronze
 nuggetBismuthBronze
+nuggetIronMagnetic
+nuggetSteelMagnetic
+nuggetNeodymiumMagnetic
 nuggetForce
 nuggetDeepIron
 nuggetPlastic
@@ -3694,7 +3846,6 @@ ingotNaquadahEnriched
 ingotNaquadria
 ingotDuranium
 ingotTritanium
-ingotThaumium
 ingotMithril
 ingotMidasium
 ingotAstralSilver
@@ -3716,6 +3867,9 @@ ingotSterlingSilver
 ingotRoseGold
 ingotBlackBronze
 ingotBismuthBronze
+ingotIronMagnetic
+ingotSteelMagnetic
+ingotNeodymiumMagnetic
 ingotForce
 ingotDeepIron
 ingotPlastic
@@ -3818,7 +3972,6 @@ plateNaquadahEnriched
 plateNaquadria
 plateDuranium
 plateTritanium
-plateThaumium
 plateMithril
 plateMidasium
 plateAstralSilver
@@ -3841,6 +3994,9 @@ plateSterlingSilver
 plateRoseGold
 plateBlackBronze
 plateBismuthBronze
+plateIronMagnetic
+plateSteelMagnetic
+plateNeodymiumMagnetic
 plateDiamond
 plateEmerald
 plateRuby
@@ -3900,6 +4056,7 @@ sheetRubber
 plateDesh
 plateWoodSealed
 plateGlass
+plateConcrete
 plateDoublePaper
 plateTriplePaper
 plateQuadruplePaper
@@ -4016,6 +4173,9 @@ stickSterlingSilver
 stickRoseGold
 stickBlackBronze
 stickBismuthBronze
+stickIronMagnetic
+stickSteelMagnetic
+stickNeodymiumMagnetic
 stickDiamond
 stickEmerald
 stickRuby
@@ -4218,6 +4378,9 @@ roundSterlingSilver
 roundRoseGold
 roundBlackBronze
 roundBismuthBronze
+roundIronMagnetic
+roundSteelMagnetic
+roundNeodymiumMagnetic
 roundForce
 roundDeepIron
 roundPlastic
@@ -4335,6 +4498,9 @@ boltSterlingSilver
 boltRoseGold
 boltBlackBronze
 boltBismuthBronze
+boltIronMagnetic
+boltSteelMagnetic
+boltNeodymiumMagnetic
 boltDiamond
 boltEmerald
 boltRuby
@@ -4499,6 +4665,9 @@ screwSterlingSilver
 screwRoseGold
 screwBlackBronze
 screwBismuthBronze
+screwIronMagnetic
+screwSteelMagnetic
+screwNeodymiumMagnetic
 screwDiamond
 screwEmerald
 screwRuby
@@ -4662,6 +4831,9 @@ ringSterlingSilver
 ringRoseGold
 ringBlackBronze
 ringBismuthBronze
+ringIronMagnetic
+ringSteelMagnetic
+ringNeodymiumMagnetic
 ringForce
 ringDeepIron
 ringPlastic
@@ -4778,6 +4950,9 @@ foilSterlingSilver
 foilRoseGold
 foilBlackBronze
 foilBismuthBronze
+foilIronMagnetic
+foilSteelMagnetic
+foilNeodymiumMagnetic
 foilForce
 foilDeepIron
 foilPlastic
@@ -4812,7 +4987,6 @@ cellBarium
 cellLanthanum
 cellCerium
 cellPraseodymium
-cellNeodymium
 cellPromethium
 cellSamarium
 cellEuropium
@@ -4852,6 +5026,7 @@ cellUUAmplifier
 cellSeedOilHemp
 cellSeedOilLin
 cellLubricant
+cellHoney
 cellGlowstone
 cellPhosphate
 cellSiliconDioxide
@@ -4886,7 +5061,6 @@ cellPlasmaBarium
 cellPlasmaLanthanum
 cellPlasmaCerium
 cellPlasmaPraseodymium
-cellPlasmaNeodymium
 cellPlasmaPromethium
 cellPlasmaSamarium
 cellPlasmaEuropium
@@ -4900,7 +5074,6 @@ cellPlasmaYtterbium
 cellPlasmaLutetium
 cellPlasmaMercury
 cellPlasmaQuicksilver
-craftingToolScrewdriver
 craftingWireTin
 craftingWireCopper
 cableGt01Tin
@@ -4911,13 +5084,18 @@ calclavia:ADVANCED_BATTERY
 batteryUltimate
 batteryMaster
 wireGt01Tin
+wireGt01Copper
+wireGt01AnnealedCopper
 wireGt02Copper
+wireGt02AnnealedCopper
 wireGt04Copper
+wireGt04AnnealedCopper
 wireGt08AnnealedCopper
 cableGt01Aluminium
 wireGt16AnnealedCopper
 cableGt01Tungsten
 pipeMediumBronze
+craftingToolWrench
 pipeMediumSteel
 pipeMediumStainlessSteel
 pipeMediumTitanium
@@ -4959,6 +5137,7 @@ toolHeadSwordNickel
 toolHeadSwordMolybdenum
 toolHeadSwordPalladium
 toolHeadSwordSilver
+toolHeadSwordNeodymium
 toolHeadSwordTungsten
 toolHeadSwordOsmium
 toolHeadSwordIridium
@@ -5023,6 +5202,9 @@ toolHeadSwordSterlingSilver
 toolHeadSwordRoseGold
 toolHeadSwordBlackBronze
 toolHeadSwordBismuthBronze
+toolHeadSwordIronMagnetic
+toolHeadSwordSteelMagnetic
+toolHeadSwordNeodymiumMagnetic
 toolHeadSwordDiamond
 toolHeadSwordEmerald
 toolHeadSwordRuby
@@ -5072,6 +5254,7 @@ toolHeadPickaxeNickel
 toolHeadPickaxeMolybdenum
 toolHeadPickaxePalladium
 toolHeadPickaxeSilver
+toolHeadPickaxeNeodymium
 toolHeadPickaxeTungsten
 toolHeadPickaxeOsmium
 toolHeadPickaxeIridium
@@ -5136,6 +5319,9 @@ toolHeadPickaxeSterlingSilver
 toolHeadPickaxeRoseGold
 toolHeadPickaxeBlackBronze
 toolHeadPickaxeBismuthBronze
+toolHeadPickaxeIronMagnetic
+toolHeadPickaxeSteelMagnetic
+toolHeadPickaxeNeodymiumMagnetic
 toolHeadPickaxeDiamond
 toolHeadPickaxeEmerald
 toolHeadPickaxeRuby
@@ -5185,6 +5371,7 @@ toolHeadShovelNickel
 toolHeadShovelMolybdenum
 toolHeadShovelPalladium
 toolHeadShovelSilver
+toolHeadShovelNeodymium
 toolHeadShovelTungsten
 toolHeadShovelOsmium
 toolHeadShovelIridium
@@ -5249,6 +5436,9 @@ toolHeadShovelSterlingSilver
 toolHeadShovelRoseGold
 toolHeadShovelBlackBronze
 toolHeadShovelBismuthBronze
+toolHeadShovelIronMagnetic
+toolHeadShovelSteelMagnetic
+toolHeadShovelNeodymiumMagnetic
 toolHeadShovelDiamond
 toolHeadShovelEmerald
 toolHeadShovelRuby
@@ -5298,6 +5488,7 @@ toolHeadAxeNickel
 toolHeadAxeMolybdenum
 toolHeadAxePalladium
 toolHeadAxeSilver
+toolHeadAxeNeodymium
 toolHeadAxeTungsten
 toolHeadAxeOsmium
 toolHeadAxeIridium
@@ -5362,6 +5553,9 @@ toolHeadAxeSterlingSilver
 toolHeadAxeRoseGold
 toolHeadAxeBlackBronze
 toolHeadAxeBismuthBronze
+toolHeadAxeIronMagnetic
+toolHeadAxeSteelMagnetic
+toolHeadAxeNeodymiumMagnetic
 toolHeadAxeDiamond
 toolHeadAxeEmerald
 toolHeadAxeRuby
@@ -5411,6 +5605,7 @@ toolHeadHoeNickel
 toolHeadHoeMolybdenum
 toolHeadHoePalladium
 toolHeadHoeSilver
+toolHeadHoeNeodymium
 toolHeadHoeTungsten
 toolHeadHoeOsmium
 toolHeadHoeIridium
@@ -5475,6 +5670,9 @@ toolHeadHoeSterlingSilver
 toolHeadHoeRoseGold
 toolHeadHoeBlackBronze
 toolHeadHoeBismuthBronze
+toolHeadHoeIronMagnetic
+toolHeadHoeSteelMagnetic
+toolHeadHoeNeodymiumMagnetic
 toolHeadHoeDiamond
 toolHeadHoeEmerald
 toolHeadHoeRuby
@@ -5524,6 +5722,7 @@ toolHeadHammerNickel
 toolHeadHammerMolybdenum
 toolHeadHammerPalladium
 toolHeadHammerSilver
+toolHeadHammerNeodymium
 toolHeadHammerTungsten
 toolHeadHammerOsmium
 toolHeadHammerIridium
@@ -5588,6 +5787,9 @@ toolHeadHammerSterlingSilver
 toolHeadHammerRoseGold
 toolHeadHammerBlackBronze
 toolHeadHammerBismuthBronze
+toolHeadHammerIronMagnetic
+toolHeadHammerSteelMagnetic
+toolHeadHammerNeodymiumMagnetic
 toolHeadHammerDiamond
 toolHeadHammerEmerald
 toolHeadHammerRuby
@@ -5637,6 +5839,7 @@ toolHeadFileNickel
 toolHeadFileMolybdenum
 toolHeadFilePalladium
 toolHeadFileSilver
+toolHeadFileNeodymium
 toolHeadFileTungsten
 toolHeadFileOsmium
 toolHeadFileIridium
@@ -5700,6 +5903,9 @@ toolHeadFileSterlingSilver
 toolHeadFileRoseGold
 toolHeadFileBlackBronze
 toolHeadFileBismuthBronze
+toolHeadFileIronMagnetic
+toolHeadFileSteelMagnetic
+toolHeadFileNeodymiumMagnetic
 toolHeadFileDiamond
 toolHeadFileEmerald
 toolHeadFileRuby
@@ -5742,6 +5948,7 @@ toolHeadSawNickel
 toolHeadSawMolybdenum
 toolHeadSawPalladium
 toolHeadSawSilver
+toolHeadSawNeodymium
 toolHeadSawTungsten
 toolHeadSawOsmium
 toolHeadSawIridium
@@ -5805,6 +6012,9 @@ toolHeadSawSterlingSilver
 toolHeadSawRoseGold
 toolHeadSawBlackBronze
 toolHeadSawBismuthBronze
+toolHeadSawIronMagnetic
+toolHeadSawSteelMagnetic
+toolHeadSawNeodymiumMagnetic
 toolHeadSawDiamond
 toolHeadSawEmerald
 toolHeadSawRuby
@@ -5847,6 +6057,7 @@ toolHeadDrillNickel
 toolHeadDrillMolybdenum
 toolHeadDrillPalladium
 toolHeadDrillSilver
+toolHeadDrillNeodymium
 toolHeadDrillTungsten
 toolHeadDrillOsmium
 toolHeadDrillIridium
@@ -5910,6 +6121,9 @@ toolHeadDrillSterlingSilver
 toolHeadDrillRoseGold
 toolHeadDrillBlackBronze
 toolHeadDrillBismuthBronze
+toolHeadDrillIronMagnetic
+toolHeadDrillSteelMagnetic
+toolHeadDrillNeodymiumMagnetic
 toolHeadDrillDiamond
 toolHeadDrillEmerald
 toolHeadDrillRuby
@@ -5952,6 +6166,7 @@ toolHeadChainsawNickel
 toolHeadChainsawMolybdenum
 toolHeadChainsawPalladium
 toolHeadChainsawSilver
+toolHeadChainsawNeodymium
 toolHeadChainsawTungsten
 toolHeadChainsawOsmium
 toolHeadChainsawIridium
@@ -6015,6 +6230,9 @@ toolHeadChainsawSterlingSilver
 toolHeadChainsawRoseGold
 toolHeadChainsawBlackBronze
 toolHeadChainsawBismuthBronze
+toolHeadChainsawIronMagnetic
+toolHeadChainsawSteelMagnetic
+toolHeadChainsawNeodymiumMagnetic
 toolHeadChainsawDiamond
 toolHeadChainsawEmerald
 toolHeadChainsawRuby
@@ -6057,6 +6275,7 @@ toolHeadWrenchNickel
 toolHeadWrenchMolybdenum
 toolHeadWrenchPalladium
 toolHeadWrenchSilver
+toolHeadWrenchNeodymium
 toolHeadWrenchTungsten
 toolHeadWrenchOsmium
 toolHeadWrenchIridium
@@ -6120,6 +6339,9 @@ toolHeadWrenchSterlingSilver
 toolHeadWrenchRoseGold
 toolHeadWrenchBlackBronze
 toolHeadWrenchBismuthBronze
+toolHeadWrenchIronMagnetic
+toolHeadWrenchSteelMagnetic
+toolHeadWrenchNeodymiumMagnetic
 toolHeadWrenchDiamond
 toolHeadWrenchEmerald
 toolHeadWrenchRuby
@@ -6161,6 +6383,7 @@ toolHeadUniversalSpadeNickel
 toolHeadUniversalSpadeMolybdenum
 toolHeadUniversalSpadePalladium
 toolHeadUniversalSpadeSilver
+toolHeadUniversalSpadeNeodymium
 toolHeadUniversalSpadeTungsten
 toolHeadUniversalSpadeOsmium
 toolHeadUniversalSpadeIridium
@@ -6224,6 +6447,9 @@ toolHeadUniversalSpadeSterlingSilver
 toolHeadUniversalSpadeRoseGold
 toolHeadUniversalSpadeBlackBronze
 toolHeadUniversalSpadeBismuthBronze
+toolHeadUniversalSpadeIronMagnetic
+toolHeadUniversalSpadeSteelMagnetic
+toolHeadUniversalSpadeNeodymiumMagnetic
 toolHeadUniversalSpadeDiamond
 toolHeadUniversalSpadeEmerald
 toolHeadUniversalSpadeRuby
@@ -6266,6 +6492,7 @@ toolHeadSenseNickel
 toolHeadSenseMolybdenum
 toolHeadSensePalladium
 toolHeadSenseSilver
+toolHeadSenseNeodymium
 toolHeadSenseTungsten
 toolHeadSenseOsmium
 toolHeadSenseIridium
@@ -6330,6 +6557,9 @@ toolHeadSenseSterlingSilver
 toolHeadSenseRoseGold
 toolHeadSenseBlackBronze
 toolHeadSenseBismuthBronze
+toolHeadSenseIronMagnetic
+toolHeadSenseSteelMagnetic
+toolHeadSenseNeodymiumMagnetic
 toolHeadSenseDiamond
 toolHeadSenseEmerald
 toolHeadSenseRuby
@@ -6379,6 +6609,7 @@ toolHeadPlowNickel
 toolHeadPlowMolybdenum
 toolHeadPlowPalladium
 toolHeadPlowSilver
+toolHeadPlowNeodymium
 toolHeadPlowTungsten
 toolHeadPlowOsmium
 toolHeadPlowIridium
@@ -6443,6 +6674,9 @@ toolHeadPlowSterlingSilver
 toolHeadPlowRoseGold
 toolHeadPlowBlackBronze
 toolHeadPlowBismuthBronze
+toolHeadPlowIronMagnetic
+toolHeadPlowSteelMagnetic
+toolHeadPlowNeodymiumMagnetic
 toolHeadPlowDiamond
 toolHeadPlowEmerald
 toolHeadPlowRuby
@@ -6495,6 +6729,8 @@ gearPalladium
 gearGtSilver
 gearSilver
 gearGtTin
+gearGtNeodymium
+gearNeodymium
 gearGtTungsten
 gearTungsten
 gearGtOsmium
@@ -6552,6 +6788,12 @@ gearGtBlackBronze
 gearBlackBronze
 gearGtBismuthBronze
 gearBismuthBronze
+gearGtIronMagnetic
+gearIronMagnetic
+gearGtSteelMagnetic
+gearSteelMagnetic
+gearGtNeodymiumMagnetic
+gearNeodymiumMagnetic
 gearGtDiamond
 gearGtForce
 gearForce
@@ -6707,6 +6949,9 @@ crateGtDustSterlingSilver
 crateGtDustRoseGold
 crateGtDustBlackBronze
 crateGtDustBismuthBronze
+crateGtDustIronMagnetic
+crateGtDustSteelMagnetic
+crateGtDustNeodymiumMagnetic
 crateGtDustDiamond
 crateGtDustEmerald
 crateGtDustRuby
@@ -6846,6 +7091,7 @@ crateGtDustCocoa
 crateGtDustCoffee
 crateGtDustWoodSealed
 crateGtDustGlass
+crateGtDustRareEarth
 crateGtDustMirabilite
 crateGtDustMica
 crateGtDustTalc
@@ -6893,6 +7139,7 @@ crateGtDustPyrolusite
 crateGtDustRockSalt
 crateGtDustStibnite
 crateGtDustAsbestos
+crateGtDustConcrete
 crateGtDustDiatomite
 crateGtIngotBeryllium
 crateGtIngotMagnesium
@@ -7004,6 +7251,9 @@ crateGtIngotSterlingSilver
 crateGtIngotRoseGold
 crateGtIngotBlackBronze
 crateGtIngotBismuthBronze
+crateGtIngotIronMagnetic
+crateGtIngotSteelMagnetic
+crateGtIngotNeodymiumMagnetic
 crateGtIngotForce
 crateGtIngotDeepIron
 crateGtIngotPlastic
@@ -7170,6 +7420,9 @@ crateGtPlateSterlingSilver
 crateGtPlateRoseGold
 crateGtPlateBlackBronze
 crateGtPlateBismuthBronze
+crateGtPlateIronMagnetic
+crateGtPlateSteelMagnetic
+crateGtPlateNeodymiumMagnetic
 crateGtPlateDiamond
 crateGtPlateEmerald
 crateGtPlateRuby
@@ -7238,7 +7491,6 @@ craftingToolShovel
 craftingToolAxe
 craftingToolHoe
 craftingToolSoftHammer
-craftingToolWrench
 craftingToolCrowbar
 craftingToolMortar
 craftingToolScoop
@@ -7270,7 +7522,6 @@ pipeSmallBronze
 pipeSmallSteel
 craftingPiston
 wireGt01Lead
-wireGt01Copper
 wireGt01Gold
 wireGt01Aluminium
 wireGt01Tungsten
@@ -7303,6 +7554,7 @@ cableGt04Tin
 cableGt04Copper
 cableGt04Gold
 cableGt04Aluminium
+wireGt02Tin
 cableGt01AnnealedCopper
 frameGtBeryllium
 frameGtMagnesium
@@ -7407,6 +7659,9 @@ frameGtSterlingSilver
 frameGtRoseGold
 frameGtBlackBronze
 frameGtBismuthBronze
+frameGtIronMagnetic
+frameGtSteelMagnetic
+frameGtNeodymiumMagnetic
 frameGtForce
 frameGtWood
 frameGtDeepIron
@@ -7431,7 +7686,6 @@ cableGt02Lead
 cableGt04Lead
 cableGt08Lead
 cableGt12Lead
-wireGt02Tin
 wireGt12Tin
 cableGt02Tin
 cableGt08Tin
@@ -7495,9 +7749,6 @@ wireCopper
 cableGt02Copper
 cableGt08Copper
 cableGt12Copper
-wireGt01AnnealedCopper
-wireGt02AnnealedCopper
-wireGt04AnnealedCopper
 wireGt12AnnealedCopper
 cableGt02AnnealedCopper
 cableGt04AnnealedCopper
@@ -7593,11 +7844,6 @@ wireGt04Graphene
 wireGt08Graphene
 wireGt12Graphene
 wireGt16Graphene
-cableGt01Graphene
-cableGt02Graphene
-cableGt04Graphene
-cableGt08Graphene
-cableGt12Graphene
 wireGt12Osmium
 cableGt01Osmium
 cableGt02Osmium
@@ -7624,6 +7870,12 @@ cableGt02Naquadah
 cableGt04Naquadah
 cableGt08Naquadah
 cableGt12Naquadah
+wireGt01Superconductor
+wireGt02Superconductor
+wireGt04Superconductor
+wireGt08Superconductor
+wireGt12Superconductor
+wireGt16Superconductor
 pipeSmallWood
 pipeMediumWood
 pipeLargeWood
@@ -7674,6 +7926,10 @@ pipeHugeOsmium
 pipeRestrictiveMediumOsmium
 pipeRestrictiveLargeOsmium
 pipeRestrictiveHugeOsmium
+nuggetMercury
+gemMercury
+gemQuicksilver
+paperResearchFragment
 calclavia:BATTERY
 batteryBasic
 batteryAdvanced
@@ -8368,8 +8624,6 @@ materialHardenedleather
 beeQueen
 materialWaxcomb
 materialHoneycomb
-blockIronCompressed
-ingotIronCompressed
 camoPaste
 rodStone
 oc:adapter
@@ -8490,9 +8744,9 @@ hopper
 dispenser
 book
 craftingTank
-stoneBasalt
-stoneMarble
 paperBlueprint
+paperResearch
+bookThaumonomicon
 crystalNetherQuartz
 itemIlluminatedPanel
 wool
@@ -8524,3 +8778,10 @@ healthBoost
 absorption
 saturation
 ic2.potion.radiation
+fluxtaint
+paralysis
+possession
+Fire Imbued
+Wated Imbued
+Earth Imbued
+Air Imbued

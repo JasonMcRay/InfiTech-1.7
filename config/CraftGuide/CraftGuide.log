@@ -1,0 +1,18 @@
+CraftGuide: Extracting 'base/base.png' to 'E:\MultiMC\instances\InfiTech 1.7\minecraft\config\CraftGuide\themes\base\base.png'
+CraftGuide: Extracting 'base/readme.txt' to 'E:\MultiMC\instances\InfiTech 1.7\minecraft\config\CraftGuide\themes\base\readme.txt'
+CraftGuide: Extracting 'base/theme.xml' to 'E:\MultiMC\instances\InfiTech 1.7\minecraft\config\CraftGuide\themes\base\theme.xml'
+CraftGuide: Extracting 'dark/dark.png' to 'E:\MultiMC\instances\InfiTech 1.7\minecraft\config\CraftGuide\themes\dark\dark.png'
+CraftGuide: Extracting 'dark/dark_brew.png' to 'E:\MultiMC\instances\InfiTech 1.7\minecraft\config\CraftGuide\themes\dark\dark_brew.png'
+CraftGuide: Extracting 'dark/dark_craft.png' to 'E:\MultiMC\instances\InfiTech 1.7\minecraft\config\CraftGuide\themes\dark\dark_craft.png'
+CraftGuide: Extracting 'dark/theme.xml' to 'E:\MultiMC\instances\InfiTech 1.7\minecraft\config\CraftGuide\themes\dark\theme.xml'
+CraftGuide: Extracting 'texpack_support/theme.xml' to 'E:\MultiMC\instances\InfiTech 1.7\minecraft\config\CraftGuide\themes\texpack_support\theme.xml'
+(re)loading themes...
+  Trying to load directory: base
+    Found theme.xml
+    Loaded base
+  Trying to load directory: dark
+    Found theme.xml
+    Loaded dark
+  Trying to load directory: texpack_support
+    Found theme.xml
+    Loaded texpack_support
