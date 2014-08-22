@@ -380,6 +380,14 @@ var PRhoeSapphire = <ProjRed|Exploration:projectred.exploration.hoesapphire>;
 var PRpickaxeSapphire = <ProjRed|Exploration:projectred.exploration.pickaxesapphire>;
 var PRshovelSapphire = <ProjRed|Exploration:projectred.exploration.shovelsapphire>;
 var PRswordSapphire = <ProjRed|Exploration:projectred.exploration.swordsapphire>;
+var PRsickleRuby = <ProjRed|Exploration:projectred.exploration.sickleruby>;
+var PRsickleSapphire = <ProjRed|Exploration:projectred.exploration.sicklesapphire>;
+var PRsicklePeridot = <ProjRed|Exploration:projectred.exploration.sickleperidot>;
+var PRsickleWood = <ProjRed|Exploration:projectred.exploration.sicklewood>;
+var PRsickleGold = <ProjRed|Exploration:projectred.exploration.sicklegold>;
+var PRsickleDiamond = <ProjRed|Exploration:projectred.exploration.sicklediamond>;
+var PRsickleIron = <ProjRed|Exploration:projectred.exploration.sickleiron>;
+var PRsickleStone = <ProjRed|Exploration:projectred.exploration.sicklestone>;
 var HCbarrelWater = <harvestcraft:sink>;
 var HCstoneBasin = <harvestcraft:sink:1>;
 var HCclayJug = <harvestcraft:sink:2>;
@@ -436,6 +444,23 @@ recipes.remove(PRshovelSapphire);
 NEI.hide(PRshovelSapphire);
 recipes.remove(PRswordSapphire);
 NEI.hide(PRswordSapphire);
+recipes.remove(PRsicklePeridot);
+NEI.hide(PRsicklePeridot);
+recipes.remove(PRsickleSapphire);
+NEI.hide(PRsickleSapphire);
+recipes.remove(PRsickleRuby);
+NEI.hide(PRsickleRuby);
+recipes.remove(PRsickleWood);
+NEI.hide(PRsickleWood);
+recipes.remove(PRsickleGold);
+NEI.hide(PRsickleGold);
+recipes.remove(PRsickleDiamond);
+NEI.hide(PRsickleDiamond);
+recipes.remove(PRsickleIron);
+NEI.hide(PRsickleIron);
+recipes.remove(PRsickleStone);
+NEI.hide(PRsickleStone);
+
 
 # Iron Chests
 recipes.removeShaped(modIronChests);
