@@ -4,8 +4,8 @@ InfiTech - GregTech focused FTB modpack for Minecraft 1.7
 
 
 * Infinity team website: http://infinity-minecraft.co.uk
-* FTB Thread: N/A
-* FTB Pack code: N/A
+* FTB Thread: http://forum.feed-the-beast.com/threads/1-7-2-infitech-2-modpack-gregtech-galacticraft-hard-mode-modpack.50185/
+* FTB Pack code: 17infitech
 
 ### ModList:
 * 3D Furnace by spAnser - http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1288346-3d-furnace-v1-3a
