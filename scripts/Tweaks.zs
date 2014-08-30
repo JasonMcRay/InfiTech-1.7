@@ -72,7 +72,7 @@ var blueprint = <BuildCraft|Builders:blueprintItem>;
 var diamond = <minecraft:diamond>;
 var BCRefinery = <BuildCraft|Factory:refineryBlock>;
 var redstoneTorch = <minecraft:redstone_torch>;
-var enderIO = <EnderIO:blockTravelAnchor>;
+var travelAnchor = <EnderIO:blockTravelAnchor>;
 var ingotElectricalSteel = <EnderIO:itemAlloy>;
 var conduitBinder = <EnderIO:itemMaterial:1>;
 var pulsatingCrystal = <EnderIO:itemMaterial:5>;
@@ -876,8 +876,8 @@ NEI.hide(EIGearBasic);
 NEI.addEntry(vibrantCrystal);
 NEI.addEntry(pulsatingCrystal);
 
-recipes.remove(enderIO);
-recipes.addShaped(enderIO, [
+recipes.remove(travelAnchor);
+recipes.addShaped(travelAnchor, [
 	[ingotElectricalSteel, conduitBinder, ingotElectricalSteel],
 	[conduitBinder, pulsatingCrystal, conduitBinder],
 	[ingotElectricalSteel, conduitBinder, ingotElectricalSteel]]);
@@ -928,9 +928,9 @@ recipes.addShaped(machineChassis, [
 	[ironBars, plateSteel, ironBars]]);
 recipes.remove(wrenchYeta);
 recipes.addShaped(wrenchYeta, [
-	[ingotElectricalSteel, null, ingotElectricalSteel],
-	[null, GTGearStone, null],
-	[null, ingotElectricalSteel, null]]);
+	[ingotIron, null, ingotIron],
+	[conduitBinder, GTGearStone, conduitBinder],
+	[null, ingotIron, null]]);
 recipes.remove(vibrantCrystal);
 ChemicalReactor.addRecipe(vibrantCrystal, nuggetVibrant * 8, emerald, 400);
 recipes.remove(pulsatingCrystal);
