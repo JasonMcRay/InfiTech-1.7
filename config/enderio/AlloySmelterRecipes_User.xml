@@ -47,6 +47,17 @@ ore dictionary.
         <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="3" exp="0.5"/> 
       </output>
     </recipe> 
+    
+    <recipe name="Dark Steel" energyCost="2000">
+      <input>
+        <itemStack modID="minecraft" itemName="iron_ingot"/>         
+        <itemStack oreDictionary="dustCoal" /> <!--  coal dust -->
+        <itemStack modID="minecraft" itemName="obsidian"/>
+      </input>
+      <output>
+        <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="6" exp="0.5"/> 
+      </output>
+    </recipe>
 </recipeGroup>
 
 <vanillaFurnaceRecipes enabled="false"/> 
