@@ -1,3 +1,37 @@
 1.0.4
 
 - First public FTB release
+
+1.0.5
+
+- Dark steel recipe needs any Coal Dust - oreDicted
+- Yeta Wrench recipe changed - Instead of electrical steel, it needs iron and conduit binders
+- eIO Alloy Smelter is now capable of creating GT alloys (some might be still missing)
+- Removed few duplicate entries in MT3 script
+
+1.1.0
+
+- Modpack updted to MC 1.7.10
+- Added IHL Tools and Machines
+- Added Binnies Mods
+- Added NEI Plugins Unofficial
+- Added Spice of Life
+- Added ExtrabiomesXL (disabled per default)
+- Added OpenComponents
+
+1.1.1
+
+- Updated AE2 to RV1 beta 23
+- Updated BiomesOPlenty to 2.1.0.987
+- Updated Carpenters Blocks to 3.2.7
+- Updated ChickenCore to 1.0.3.26
+- Updated EnderIO to 2.1.0 beta 13
+- Updated Extra Cells 2 to 1.11
+- Updated Forestry to 3.0.0.119
+- Updated Galacticraft to 3.0.2.184
+- Updated IC2 to 2.2.638
+- Updated MineTweaker3 to 3.0.8B
+- Updated NEI to 1.0.3.56
+- Updated OpenComputers to 1.3.4.63
+- Updated Thaumic Tinkerer to 2.5.371
+- Updated Translocator to 1.1.1.12

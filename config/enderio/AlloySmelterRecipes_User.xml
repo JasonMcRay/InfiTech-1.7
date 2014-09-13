@@ -47,6 +47,99 @@ ore dictionary.
         <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="3" exp="0.5"/> 
       </output>
     </recipe> 
+    
+    <recipe name="Dark Steel" energyCost="2000">
+      <input>
+        <itemStack modID="minecraft" itemName="iron_ingot"/>         
+        <itemStack oreDictionary="dustCoal" /> <!--  coal dust -->
+        <itemStack modID="minecraft" itemName="obsidian"/>
+      </input>
+      <output>
+        <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="6" exp="0.5"/> 
+      </output>
+    </recipe>
+</recipeGroup>
+
+<recipeGroup name="GregTech">
+  	<recipe name="Bronze" energyCost="750">
+	  <input>
+		<itemStack oreDictionary="ingotCopper" number="3"/> <!-- Copper Ingot -->
+		<itemStack oreDictionary="ingotTin"/> <!-- Tin Ingot -->
+	  </input>
+	  <output>
+		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11300" number="4" exp="0.25"/> <!-- Bronze Ingot -->
+	  </output>
+	</recipe>
+
+	<recipe name="Brass" energyCost="1000">
+	  <input>
+		<itemStack oreDictionary="ingotCopper" number="3"/> <!-- Copper Ingot -->
+		<itemStack oreDictionary="ingotZinc"/> <!-- Zinc Ingot -->
+	  </input>
+	  <output>
+		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11301" number="4" exp="0.25"/> <!-- Brass Ingot -->
+	  </output>
+	</recipe>
+
+	<recipe name="Cupronickel" energyCost="500">
+	  <input>
+		<itemStack oreDictionary="ingotCopper"/> <!-- Copper Ingot -->
+		<itemStack oreDictionary="ingotNickel"/> <!-- Nickel Ingot -->
+	  </input>
+	  <output>
+		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11310" number="2" exp="0.25"/> <!-- Cupronickel Ingot -->
+	  </output>
+	</recipe>
+
+	<recipe name="Nichrome" energyCost="1250">
+	  <input>
+		<itemStack oreDictionary="ingotChrome"/> <!-- Chrome Ingot -->
+		<itemStack oreDictionary="ingotNickel" number="4"/> <!-- Nickel Ingot -->
+	  </input>
+	  <output>
+		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11311" number="5" exp="0.3"/> <!-- Nichrome Ingot -->
+	  </output>
+	</recipe>
+
+	<recipe name="SolderingAlloy" energyCost="2500">
+	  <input>
+		<itemStack oreDictionary="ingotTin" number="9"/> <!-- Tin Ingot -->
+		<itemStack oreDictionary="ingotAntimony"/> <!-- Antimony Ingot -->
+	  </input>
+	  <output>
+		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11314" number="10" exp="0.5"/> <!-- Soldering Alloy Ingot -->
+	  </output>
+	</recipe>
+
+	<recipe name="BatteryAlloy" energyCost="1250">
+	  <input>
+		<itemStack oreDictionary="ingotLead" number="4"/> <!-- Lead Ingot -->
+		<itemStack oreDictionary="ingotAntimony"/> <!-- Antimony Ingot -->
+	   </input>
+	  <output>
+		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11315" number="5" exp="0.3"/> <!-- Battery Alloy Ingot -->
+	  </output>
+	</recipe>
+
+	<recipe name="Magnalium" energyCost="750">
+	  <input>
+		<itemStack oreDictionary="ingotMagnesium"/> <!-- Magnesium Ingot -->
+		<itemStack oreDictionary="ingotAluminium" number="2"/> <!-- Aluminium Ingot -->
+	  </input>
+	  <output>
+		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11313" number="3" exp="0.25"/> <!-- Magnalium Ingot -->
+	  </output>
+	</recipe>
+
+	<recipe name="RedAlloy" energyCost="250">
+	  <input>
+		<itemStack oreDictionary="ingotCopper"/> <!-- Copper Ingot -->
+		<itemStack oreDictionary="dustRedstone" number="4"/> <!-- Redstone -->
+	  </input>
+	  <output>
+		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11308"/> <!-- Red Alloy Ingot-->
+	  </output>
+	</recipe>
 </recipeGroup>
 
 <vanillaFurnaceRecipes enabled="false"/> 
