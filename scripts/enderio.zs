@@ -59,7 +59,6 @@ var ingotIron = <minecraft:iron_ingot>;
 var craftingFurnace = <ore:craftingFurnace>;
 
 # Items/Blocks Removal
-NEI.hide(EISilicon);
 recipes.remove(EIGearBasic);
 NEI.hide(EIGearBasic);
 
@@ -114,11 +113,6 @@ recipes.addShaped(machineChassis, [
 	[ironBars, plateSteel, ironBars],
 	[plateSteel, wrench, plateSteel],
 	[ironBars, plateSteel, ironBars]]);
-recipes.remove(wrenchYeta);
-recipes.addShaped(wrenchYeta, [
-	[ingotIron, null, ingotIron],
-	[conduitBinder, GTGearStone, conduitBinder],
-	[null, ingotIron, null]]);
     
 # GT/IC2 Integration
 recipes.remove(vibrantCrystal);
@@ -129,5 +123,6 @@ ChemicalReactor.addRecipe(pulsatingCrystal, nuggetPulsating * 8, diamond, 400);
 # Specialities
 NEI.addEntry(vibrantCrystal);
 NEI.addEntry(pulsatingCrystal);
+NEI.addEntry(EISilicon);
 
 

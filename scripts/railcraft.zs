@@ -7,6 +7,7 @@ import mods.gregtech.BlastFurnace;
 import mods.ic2.Macerator;
 import mods.ic2.Compressor;
 import mods.gregtech.Boxing;
+import mods.railcraft.CokeOven;
 
 # Aliases
 var brickAbyssal = <Railcraft:tile.railcraft.brick.abyssal>;

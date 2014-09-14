@@ -27,27 +27,6 @@ ore dictionary.
 
 <AlloySmelterRecipes>
 <recipeGroup name="EnderIO">
-    <recipe name="Electrical Steel" energyCost="1000">
-      <input>
-        <itemStack modID="minecraft" itemName="iron_ingot"/>
-        <itemStack modID="minecraft" itemName="coal"/>        
-        <itemStack modID="appliedenergistics2" itemName="item.ItemMultiMaterial" itemMeta="5"/> <!-- Silicon -->
-      </input>
-      <output>
-        <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="0" exp="0.5"/> 
-      </output>
-    </recipe>
-	
-	<recipe name="Redstone Alloy" energyCost="1000">
-      <input>
-        <itemStack modID="minecraft" itemName="redstone"/>
-        <itemStack modID="appliedenergistics2" itemName="item.ItemMultiMaterial" itemMeta="5"/> <!-- Silicon -->
-      </input>
-      <output>
-        <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="3" exp="0.5"/> 
-      </output>
-    </recipe> 
-    
     <recipe name="Dark Steel" energyCost="2000">
       <input>
         <itemStack modID="minecraft" itemName="iron_ingot"/>         
@@ -140,6 +119,17 @@ ore dictionary.
 		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11308"/> <!-- Red Alloy Ingot-->
 	  </output>
 	</recipe>
+</recipeGroup>
+
+<recipeGroup name="infitech">
+    <recipe name="Charcoal" energyCost="1000">
+      <input>
+        <itemStack oreDictionary="logWood"/>
+      </input>
+      <output>
+        <itemStack modID="minecraft" itemName="coal" itemMeta="1"/>
+      </output>
+    </recipe>
 </recipeGroup>
 
 <vanillaFurnaceRecipes enabled="false"/> 

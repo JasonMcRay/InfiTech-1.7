@@ -86,7 +86,8 @@ found in the core file.
       </input>
       <output>      
         <itemStack modID="minecraft" itemName="clay_ball" number="2" />
-        <itemStack modID="minecraft" itemName="clay_ball" number="1" chance="0.1" />        
+        <itemStack modID="minecraft" itemName="clay_ball" number="1" chance="0.1" />      
+        <itemStack modID="EnderIO" itemName="itemMaterial" number="2" itemMeta="0" chance="0.5" />
       </output>
     </recipe>
 	
@@ -98,10 +99,18 @@ found in the core file.
         <itemStack modID="minecraft" itemName="redstone" number="8"/>
         <itemStack modID="minecraft" itemName="redstone" number="1" chance="0.2"/>        
         <itemStack modID="minecraft" itemName="cobblestone" chance="0.15"/>
+        <itemStack modID="EnderIO" itemName="itemMaterial" itemMeta="0" chance="0.5" />
       </output>
     </recipe>
-	
-  <recipe name="Silicon"/>
+    
+    <recipe name="Silicon" energyCost="720">
+      <input>
+        <itemStack modID="minecraft" itemName="sand"/>
+      </input>
+      <output>
+        <itemStack modID="EnderIO" itemName="itemMaterial" number="1" itemMeta="0" chance="0.25" />
+      </output>
+    </recipe>
   
 </recipeGroup>
 
