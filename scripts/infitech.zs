@@ -51,7 +51,7 @@ var diamond = <minecraft:diamond>;
 
 # Ore Dictionary stuff
 craftingFurnace.add(furnace3d);
-silicon.remove(EISilicon);
+//silicon.remove(EISilicon);
 oreIron.add(GCoreIronMars);
 oreIron.add(GCoreIronAsteroid);
 oreCopper.add(GCoreCopperMars);
@@ -71,10 +71,3 @@ recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreGold]);
 recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreSilver]);
 recipes.remove(furnace3d);
 recipes.addShapeless(furnace3d, [<minecraft:furnace>]);
-
-# GT and IC2
-Assembler.addRecipe(GTGearDiamond, GTGearGold, plateDiamond, 1600, 2);
-ChemicalReactor.addRecipe(GTDustElectrumFlux, itemRedstone * 5, GTDustElectrum, 500);
-ChemicalReactor.addRecipe(GTDustEnderium, IC2DustTin * 4, GTDustEnderPearl, 500);
-ChemicalReactor.addRecipe(GTDustEnderium, IC2DustTin * 4, AEDustEnder, 500);
-ChemicalReactor.addRecipe(GTCrystalFlux, diamond, itemRedstone * 5, 500);

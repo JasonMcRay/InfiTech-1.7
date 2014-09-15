@@ -35,3 +35,27 @@
 - Updated OpenComputers to 1.3.4.63
 - Updated Thaumic Tinkerer to 2.5.371
 - Updated Translocator to 1.1.1.12
+
+1.1.2
+
+- Updated AE2 to RV1 beta 30
+- Updated BiblioCraft to v1.8.0
+- Updated Biomes O' Plenty to 2.1.0.989
+- Updated Carpenter's Blocks to v3.2.8
+- Updated EnderIO to 2.1.0 beta 21
+- Updated ExtrabiomesXL to 3.16.a18 (disabled per default)
+- Updated Forestry to 3.0.0.136
+- Updated Galacticraft to 3.0.2.193
+- Updated GregTech to 5.05.03
+- Updated IHL Tools and Machines to 0.509
+- Updated IC2 to 2.2.645
+- Updated IronChest to 6.0.56.739
+- Updated ModTweaker to 0.6-17
+- Updated OpenComponents to 0.2.0.20
+- Updated Railcraft to 9.3.1.0
+- Updated RefinedRelocation to 1.0.6d
+- Updated Waila to 1.5.4a
+- Added charcoal smelting recipe to eIO Alloy Smelter - Wood => Charcoal
+- Removed AE2 Inscriber - Forming Press from GT is replacement
+- Re-enabled eIO silicon in all eIO recipes
+- Changed recipe for IC2 Crop Harvester
