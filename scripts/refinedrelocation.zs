@@ -19,7 +19,9 @@ var fireCharge = <minecraft:fire_charge>;
 var plateDiamond = <gregtech:gt.metaitem.01:17500>;
 var enderEye = <minecraft:ender_eye>;
 var compass = <minecraft:compass>;
-
+var blockExtenderWireless = <RefinedRelocation:blockExtender:4>;
+var blockExtenderFilteredAdvanced = <RefinedRelocation:blockExtender:3>;
+var rodDiamond = <ore:stickDiamond>;
 
 # Recipe Tweaks
 recipes.remove(playerRelocator);
@@ -32,3 +34,8 @@ recipes.addShaped(relocationController, [
 	[plateDiamond, enderEye, plateDiamond],
 	[enderEye, compass, enderEye],
 	[plateDiamond, enderEye, plateDiamond]]);
+recipes.remove(blockExtenderWireless);
+recipes.addShaped(blockExtenderWireless, [
+    [plateDiamond, rodDiamond, plateDiamond],
+    [rodDiamond, blockExtenderFilteredAdvanced, rodDiamond],
+    [plateDiamond, rodDiamond, plateDiamond]]);

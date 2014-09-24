@@ -232,5 +232,5 @@ BlastFurnace.addRecipe(GTingotTitanium, shardTitanium, null, 1500, 120, 1500);
 
 # Specialities
 furnace.remove(<*>, GCoreIlmenite);
-furnace.remove(<*>, GCoreAluminiumAsteroid);
+//furnace.remove(<*>, GCoreAluminiumAsteroid);
 furnace.remove(<*>, shardTitanium);

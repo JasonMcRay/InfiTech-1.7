@@ -48,10 +48,16 @@ var GTDustEnderPearl = <gregtech:gt.metaitem.01:2532>;
 var AEDustEnder = <appliedenergistics2:item.ItemMultiMaterial:46>;
 var GTCrystalFlux = <gregtech:gt.metaitem.01:8517>;
 var diamond = <minecraft:diamond>;
+var chisel = <chisel:chisel>;
+var plateIron = <ore:plateIron>;
+var stick = <ore:stickWood>;
+var hammer = <ore:craftingToolHardHammer>;
+var file = <ore:craftingToolFile>;
+var sigilDivision = <ExtraUtilities:divisionSigil>;
+
 
 # Ore Dictionary stuff
 craftingFurnace.add(furnace3d);
-//silicon.remove(EISilicon);
 oreIron.add(GCoreIronMars);
 oreIron.add(GCoreIronAsteroid);
 oreCopper.add(GCoreCopperMars);
@@ -71,3 +77,15 @@ recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreGold]);
 recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreSilver]);
 recipes.remove(furnace3d);
 recipes.addShapeless(furnace3d, [<minecraft:furnace>]);
+recipes.addShaped(chisel, [
+    [null, hammer, plateIron],
+    [null, stick, file],
+    [stick, null, null]]);
+    
+# Dungeon Loot
+vanilla.loot.removeChestLoot("dungeonChest", sigilDivision);
+vanilla.loot.removeChestLoot("mineshaftCorridor", sigilDivision);
+vanilla.loot.removeChestLoot("pyramidDesertyChest", sigilDivision);
+vanilla.loot.removeChestLoot("pyramidJungleChest", sigilDivision);
+vanilla.loot.removeChestLoot("strongholdCorridor", sigilDivision);
+vanilla.loot.removeChestLoot("strongholdCrossing", sigilDivision);
