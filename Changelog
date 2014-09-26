@@ -59,3 +59,38 @@
 - Removed AE2 Inscriber - Forming Press from GT is replacement
 - Re-enabled eIO silicon in all eIO recipes
 - Changed recipe for IC2 Crop Harvester
+
+1.1.3
+
+- Updated AE2 to RV1 stable 1
+- Updated Bibliocraft to v1.8.1
+- Updated BiblioWoods [BoP] to v1.8
+- Updated BiblioWoods [Forestry] to v1.6
+- Updated BoP to 2.1.0.991
+- Updated Chisel to 1.5.7
+- Updated EnderIO to 2.1.0 beta 32
+- Updated ExtraCells to 2.1.12b8
+- Updated Forestry to 3.0.0.170
+- Updated Galacticraft to 3.0.2.199
+- Updated GregTech to 5.05.07
+- Updated IHL Tools and Machines to 0.510
+- Updated IC2 to 2.2.646
+- Updated IronChests to 6.0.60.741
+- Updated MagicBees to 2.1.20
+- Updated NEIPlugins Unofficial to 1.1.0.9
+- Updated Pam's Harvestcraft to 1.7.10b
+- Updated ProjectRed to 4.4.9.49
+- Updated Railcraft to 9.3.2.0
+- Updated SecretRoomsMod to 4.7.1.373
+- Updated ThaumicTinkerer to 2.5.384
+- Added AsieLib
+- Added Computronics
+- Added Warpbook
+- Added BiblioWoods [EBXL] (disabled per default)
+- Removed not necessary script for GC Aluminum (asteroid)
+- Fixed Chisel mod recipe for Chisel Tool
+- Removed Division Sigils from Dungeon chests (those already generated will stay unaffected)
+- Made Wireless Block Extender bit more expensive
+- Semi-Fixes for GT-ERR-01 items
+- Semi-fixed recipe for Focus of Excavation
+- Disabled Extended Liquid Physics in IHL
