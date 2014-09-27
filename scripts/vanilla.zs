@@ -21,9 +21,9 @@ var charcoal = <minecraft:coal:1>;
 var emerald = <minecraft:emerald>;
 var fragmentEmerald = <ExtraBees:misc:2>;
 var fragmentDiamond = <ExtraBees:misc:1>;
-var ruby = <BiomesOPlenty:gems:1>;
+var ruby = <gregtech:gt.metaitem.01:8502>;
 var fragmentRuby = <ExtraBees:misc:3>;
-var sapphire = <BiomesOPlenty:gems:6>;
+var sapphire = <gregtech:gt.metaitem.01:8503>;
 var diamond = <minecraft:diamond>;
 var fragmentSapphire = <ExtraBees:misc:4>;
 var focusExcavation = <Thaumcraft:FocusExcavation>;
@@ -60,6 +60,8 @@ recipes.addShapeless(sapphire, [
     fragmentSapphire, fragmentSapphire, fragmentSapphire,
     fragmentSapphire, fragmentSapphire, fragmentSapphire,
     fragmentSapphire, fragmentSapphire, fragmentSapphire]);
+
+# Fix for Focus of Excavation
 Arcane.addShaped("FOCUSEXCAVATION", focusExcavation, "terra 20, perditio 5, ordo 5", [
     [shardEarth, quartzNether, shardEarth],
     [quartzNether, emerald, quartzNether],
