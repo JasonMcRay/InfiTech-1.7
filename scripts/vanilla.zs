@@ -42,8 +42,8 @@ furnace.remove(charcoal);
 # Recipe Fixes (GT-ERR-01 fixes)
 recipes.removeShapeless(emerald.onlyWithTag({display: {Name: "ERROR! PLEASE CHECK YOUR LOG FOR 'GT-ERR-01'!"}}));
 recipes.removeShapeless(diamond.onlyWithTag({display: {Name: "ERROR! PLEASE CHECK YOUR LOG FOR 'GT-ERR-01'!"}}));
-recipes.removeShapeless(ruby.onlyWithTag({display: {Name: "ERROR! PLEASE CHECK YOUR LOG FOR 'GT-ERR-01'!"}}));
-recipes.removeShapeless(sapphire.onlyWithTag({display: {Name: "ERROR! PLEASE CHECK YOUR LOG FOR 'GT-ERR-01'!"}}));
+recipes.removeShapeless(<BiomesOPlenty:gems:1>.onlyWithTag({display: {Name: "ERROR! PLEASE CHECK YOUR LOG FOR 'GT-ERR-01'!"}}));
+recipes.removeShapeless(<BiomesOPlenty:gems:6>.onlyWithTag({display: {Name: "ERROR! PLEASE CHECK YOUR LOG FOR 'GT-ERR-01'!"}}));
 recipes.addShapeless(emerald, [
     fragmentEmerald, fragmentEmerald, fragmentEmerald,
     fragmentEmerald, fragmentEmerald, fragmentEmerald,
