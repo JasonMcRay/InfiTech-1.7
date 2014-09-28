@@ -40,10 +40,22 @@ recipes.removeShapeless(enderEye, [enderPearl, blazePowder]);
 furnace.remove(charcoal);
 
 # Recipe Fixes (GT-ERR-01 fixes)
-recipes.removeShapeless(emerald.onlyWithTag({display: {Name: "ERROR! PLEASE CHECK YOUR LOG FOR 'GT-ERR-01'!"}}));
-recipes.removeShapeless(diamond.onlyWithTag({display: {Name: "ERROR! PLEASE CHECK YOUR LOG FOR 'GT-ERR-01'!"}}));
-recipes.removeShapeless(ruby.onlyWithTag({display: {Name: "ERROR! PLEASE CHECK YOUR LOG FOR 'GT-ERR-01'!"}}));
-recipes.removeShapeless(sapphire.onlyWithTag({display: {Name: "ERROR! PLEASE CHECK YOUR LOG FOR 'GT-ERR-01'!"}}));
+recipes.removeShapeless(<*>, [
+    fragmentRuby, fragmentRuby, fragmentRuby,
+    fragmentRuby, fragmentRuby, fragmentRuby,
+    fragmentRuby, fragmentRuby, fragmentRuby]);
+recipes.removeShapeless(<*>, [
+    fragmentDiamond, fragmentDiamond, fragmentDiamond,
+    fragmentDiamond, fragmentDiamond, fragmentDiamond,
+    fragmentDiamond, fragmentDiamond, fragmentDiamond]);
+recipes.removeShapeless(<*>, [
+    fragmentEmerald, fragmentEmerald, fragmentEmerald,
+    fragmentEmerald, fragmentEmerald, fragmentEmerald,
+    fragmentEmerald, fragmentEmerald, fragmentEmerald]);
+recipes.removeShapeless(<*>, [
+    fragmentSapphire, fragmentSapphire, fragmentSapphire,
+    fragmentSapphire, fragmentSapphire, fragmentSapphire,
+    fragmentSapphire, fragmentSapphire, fragmentSapphire]);
 recipes.addShapeless(emerald, [
     fragmentEmerald, fragmentEmerald, fragmentEmerald,
     fragmentEmerald, fragmentEmerald, fragmentEmerald,
@@ -60,8 +72,6 @@ recipes.addShapeless(sapphire, [
     fragmentSapphire, fragmentSapphire, fragmentSapphire,
     fragmentSapphire, fragmentSapphire, fragmentSapphire,
     fragmentSapphire, fragmentSapphire, fragmentSapphire]);
-
-# Fix for Focus of Excavation
 Arcane.addShaped("FOCUSEXCAVATION", focusExcavation, "terra 20, perditio 5, ordo 5", [
     [shardEarth, quartzNether, shardEarth],
     [quartzNether, emerald, quartzNether],
