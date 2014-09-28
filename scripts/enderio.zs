@@ -113,6 +113,12 @@ recipes.addShaped(machineChassis, [
 	[ironBars, plateSteel, ironBars],
 	[plateSteel, wrench, plateSteel],
 	[ironBars, plateSteel, ironBars]]);
+recipes.remove(wrenchYeta);
+recipes.addShaped(wrenchYeta, [
+    [ingotElectricalSteel, null, ingotElectricalSteel],
+    [null, GTGearStone, null],
+    [null, ingotElectricalSteel, null]]);
+
     
 # GT/IC2 Integration
 recipes.remove(vibrantCrystal);
