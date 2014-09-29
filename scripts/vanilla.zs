@@ -40,22 +40,22 @@ recipes.removeShapeless(enderEye, [enderPearl, blazePowder]);
 furnace.remove(charcoal);
 
 # Recipe Fixes (GT-ERR-01 fixes)
-recipes.removeShapeless(<*>, [
-    fragmentRuby, fragmentRuby, fragmentRuby,
-    fragmentRuby, fragmentRuby, fragmentRuby,
-    fragmentRuby, fragmentRuby, fragmentRuby]);
-recipes.removeShapeless(<*>, [
-    fragmentDiamond, fragmentDiamond, fragmentDiamond,
-    fragmentDiamond, fragmentDiamond, fragmentDiamond,
-    fragmentDiamond, fragmentDiamond, fragmentDiamond]);
-recipes.removeShapeless(<*>, [
-    fragmentEmerald, fragmentEmerald, fragmentEmerald,
-    fragmentEmerald, fragmentEmerald, fragmentEmerald,
-    fragmentEmerald, fragmentEmerald, fragmentEmerald]);
-recipes.removeShapeless(<*>, [
-    fragmentSapphire, fragmentSapphire, fragmentSapphire,
-    fragmentSapphire, fragmentSapphire, fragmentSapphire,
-    fragmentSapphire, fragmentSapphire, fragmentSapphire]);
+//recipes.removeShapeless(<*>, [
+//    fragmentRuby, fragmentRuby, fragmentRuby,
+//    fragmentRuby, fragmentRuby, fragmentRuby,
+//    fragmentRuby, fragmentRuby, fragmentRuby]);
+//recipes.removeShapeless(<*>, [
+//    fragmentDiamond, fragmentDiamond, fragmentDiamond,
+//    fragmentDiamond, fragmentDiamond, fragmentDiamond,
+//    fragmentDiamond, fragmentDiamond, fragmentDiamond]);
+//recipes.removeShapeless(<*>, [
+//    fragmentEmerald, fragmentEmerald, fragmentEmerald,
+//    fragmentEmerald, fragmentEmerald, fragmentEmerald,
+//    fragmentEmerald, fragmentEmerald, fragmentEmerald]);
+//recipes.removeShapeless(<*>, [
+//    fragmentSapphire, fragmentSapphire, fragmentSapphire,
+//    fragmentSapphire, fragmentSapphire, fragmentSapphire,
+//    fragmentSapphire, fragmentSapphire, fragmentSapphire]);
 recipes.addShapeless(emerald, [
     fragmentEmerald, fragmentEmerald, fragmentEmerald,
     fragmentEmerald, fragmentEmerald, fragmentEmerald,
