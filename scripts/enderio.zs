@@ -57,6 +57,8 @@ var wrench = <ore:craftingToolWrench>;
 var emerald = <minecraft:emerald>;
 var ingotIron = <minecraft:iron_ingot>;
 var craftingFurnace = <ore:craftingFurnace>;
+var EIOHead = <EnderIO:blockEndermanSkull>;
+var HEEHead = <HardcoreEnderExpansion:enderman_head>;
 
 # Items/Blocks Removal
 recipes.remove(EIGearBasic);
@@ -130,5 +132,9 @@ ChemicalReactor.addRecipe(pulsatingCrystal, nuggetPulsating * 8, diamond, 400);
 NEI.addEntry(vibrantCrystal);
 NEI.addEntry(pulsatingCrystal);
 NEI.addEntry(EISilicon);
+
+# Add recipe to craft enderman head between EnderIO and HEE
+recipes.addShapeless(EIOHead, [HEEHead]);
+recipes.addShapeless(HEEHead, [EIOHead]);
 
 
