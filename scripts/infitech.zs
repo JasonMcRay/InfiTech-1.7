@@ -131,7 +131,9 @@ recipes.addShapeless(gemDiamond, [
 recipes.addShapeless(gemDiamond * 9, [blockDiamond]);
 recipes.addShapeless(gemDiamond * 16, [crateDiamond, crowbar]);
 recipes.removeShapeless(gemRubyBoP);
+recipes.addShapeless(gemRubyGT * 9, [blockRubyBoP]);
 recipes.removeShapeless(gemSapphireBoP);
+recipes.addShapeless(gemSapphireGT * 9, [blockSapphireBoP]);
 
 # Block Crafting
 Compressor.addRecipe(blockRubyBoP, gemRubyGT * 9);
