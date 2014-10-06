@@ -54,7 +54,27 @@ var stick = <ore:stickWood>;
 var hammer = <ore:craftingToolHardHammer>;
 var file = <ore:craftingToolFile>;
 var sigilDivision = <ExtraUtilities:divisionSigil>;
-
+var gemEmerald = <minecraft:emerald>;
+var fragmentEmerald = <ExtraBees:misc:2>;
+var blockEmerald = <minecraft:emerald_block>;
+var crowbar = <ore:craftingToolCrowbar>;
+var crateEmerald = <gregtech:gt.metaitem.03:2501>;
+var gemDiamond = <minecraft:diamond>;
+var fragmentDiamond = <ExtraBees:misc:1>;
+var blockDiamond = <minecraft:diamond_block>;
+var crateDiamond = <gregtech:gt.metaitem.03:2500>;
+var nuggetDiamond = <Translocator:diamondNugget>;
+var gemRubyBoP = <BiomesOPlenty:gems:1>;
+var gemSapphireBoP = <BiomesOPlenty:gems:6>;
+var blockRubyBoP = <BiomesOPlenty:gemOre:3>;
+var gemRubyGT = <gregtech:gt.metaitem.01:8512>;
+var blockSapphireBoP = <BiomesOPlenty:gemOre:13>;
+var gemSapphireGT = <gregtech:gt.metaitem.01:8503>;
+var blockPeridotBoP = <BiomesOPlenty:gemOre:5>;
+var gemOlivineGT = <gregtech:gt.metaitem.01:8505>;
+var blockRubyPR = <ProjRed|Exploration:projectred.exploration.stone:5>;
+var blockSapphirePR = <ProjRed|Exploration:projectred.exploration.stone:6>;
+var blockPeridotPR = <ProjRed|Exploration:projectred.exploration.stone:7>;
 
 # Ore Dictionary stuff
 craftingFurnace.add(furnace3d);
@@ -89,3 +109,39 @@ vanilla.loot.removeChestLoot("pyramidDesertyChest", sigilDivision);
 vanilla.loot.removeChestLoot("pyramidJungleChest", sigilDivision);
 vanilla.loot.removeChestLoot("strongholdCorridor", sigilDivision);
 vanilla.loot.removeChestLoot("strongholdCrossing", sigilDivision);
+
+# Fixes
+# GT-ERR-01
+recipes.removeShapeless(gemEmerald);
+recipes.addShapeless(gemEmerald, [
+    fragmentEmerald, fragmentEmerald, fragmentEmerald,
+    fragmentEmerald, fragmentEmerald, fragmentEmerald,
+    fragmentEmerald, fragmentEmerald, fragmentEmerald]);
+recipes.addShapeless(gemEmerald * 9, [blockEmerald]);
+recipes.addShapeless(gemEmerald * 16, [crateEmerald, crowbar]);
+recipes.removeShapeless(gemDiamond);
+recipes.addShapeless(gemDiamond, [
+    fragmentDiamond, fragmentDiamond, fragmentDiamond,
+    fragmentDiamond, fragmentDiamond, fragmentDiamond,
+    fragmentDiamond, fragmentDiamond, fragmentDiamond]);
+recipes.addShapeless(gemDiamond, [
+    nuggetDiamond, nuggetDiamond, nuggetDiamond,
+    nuggetDiamond, nuggetDiamond, nuggetDiamond,
+    nuggetDiamond, nuggetDiamond, nuggetDiamond]);
+recipes.addShapeless(gemDiamond * 9, [blockDiamond]);
+recipes.addShapeless(gemDiamond * 16, [crateDiamond, crowbar]);
+recipes.removeShapeless(gemRubyBoP);
+recipes.addShapeless(gemRubyGT * 9, [blockRubyBoP]);
+recipes.removeShapeless(gemSapphireBoP);
+recipes.addShapeless(gemSapphireGT * 9, [blockSapphireBoP]);
+
+# Block Crafting
+Compressor.addRecipe(blockRubyBoP, gemRubyGT * 9);
+Compressor.addRecipe(blockSapphireBoP, gemSapphireGT * 9);
+Compressor.addRecipe(blockPeridotBoP, gemOlivineGT * 9);
+recipes.addShapeless(blockRubyBoP * 9, [blockRubyPR, blockRubyPR, blockRubyPR, blockRubyPR, blockRubyPR, blockRubyPR, blockRubyPR, blockRubyPR, blockRubyPR]);
+recipes.addShapeless(blockSapphireBoP * 9, [blockSapphirePR, blockSapphirePR, blockSapphirePR, blockSapphirePR, blockSapphirePR, blockSapphirePR, blockSapphirePR, blockSapphirePR, blockSapphirePR]);
+recipes.addShapeless(blockPeridotBoP * 9, [blockPeridotPR, blockPeridotPR, blockPeridotPR, blockPeridotPR, blockPeridotPR, blockPeridotPR, blockPeridotPR, blockPeridotPR, blockPeridotPR]);
+recipes.addShapeless(blockRubyPR * 9, [blockRubyBoP, blockRubyBoP, blockRubyBoP, blockRubyBoP, blockRubyBoP, blockRubyBoP, blockRubyBoP, blockRubyBoP, blockRubyBoP]);
+recipes.addShapeless(blockSapphirePR * 9, [blockSapphireBoP, blockSapphireBoP, blockSapphireBoP, blockSapphireBoP, blockSapphireBoP, blockSapphireBoP, blockSapphireBoP, blockSapphireBoP, blockSapphireBoP]);
+recipes.addShapeless(blockPeridotPR * 9, [blockPeridotBoP, blockPeridotBoP, blockPeridotBoP, blockPeridotBoP, blockPeridotBoP, blockPeridotBoP, blockPeridotBoP, blockPeridotBoP, blockPeridotBoP]);
