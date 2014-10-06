@@ -19,13 +19,9 @@ var enderPearl = <minecraft:ender_pearl>;
 var blazePowder = <minecraft:blaze_powder>;
 var charcoal = <minecraft:coal:1>;
 var emerald = <minecraft:emerald>;
-var fragmentEmerald = <ExtraBees:misc:2>;
-var fragmentDiamond = <ExtraBees:misc:1>;
-var ruby = <BiomesOPlenty:gems:1>;
-var fragmentRuby = <ExtraBees:misc:3>;
-var sapphire = <BiomesOPlenty:gems:6>;
+var ruby = <gregtech:gt.metaitem.01:8502>;
+var sapphire = <gregtech:gt.metaitem.01:8503>;
 var diamond = <minecraft:diamond>;
-var fragmentSapphire = <ExtraBees:misc:4>;
 var focusExcavation = <Thaumcraft:FocusExcavation>;
 var shardEarth = <Thaumcraft:ItemShard:3>;
 var quartzNether = <minecraft:quartz>;
@@ -39,27 +35,7 @@ recipes.addShaped(chestEnder, [
 recipes.removeShapeless(enderEye, [enderPearl, blazePowder]);
 furnace.remove(charcoal);
 
-# Recipe Fixes (GT-ERR-01 fixes)
-recipes.removeShapeless(emerald.onlyWithTag({display: {Name: "ERROR! PLEASE CHECK YOUR LOG FOR 'GT-ERR-01'!"}}));
-recipes.removeShapeless(diamond.onlyWithTag({display: {Name: "ERROR! PLEASE CHECK YOUR LOG FOR 'GT-ERR-01'!"}}));
-recipes.removeShapeless(ruby.onlyWithTag({display: {Name: "ERROR! PLEASE CHECK YOUR LOG FOR 'GT-ERR-01'!"}}));
-recipes.removeShapeless(sapphire.onlyWithTag({display: {Name: "ERROR! PLEASE CHECK YOUR LOG FOR 'GT-ERR-01'!"}}));
-recipes.addShapeless(emerald, [
-    fragmentEmerald, fragmentEmerald, fragmentEmerald,
-    fragmentEmerald, fragmentEmerald, fragmentEmerald,
-    fragmentEmerald, fragmentEmerald, fragmentEmerald]);
-recipes.addShapeless(diamond, [
-    fragmentDiamond, fragmentDiamond, fragmentDiamond,
-    fragmentDiamond, fragmentDiamond, fragmentDiamond,
-    fragmentDiamond, fragmentDiamond, fragmentDiamond]);
-recipes.addShapeless(ruby, [
-    fragmentRuby, fragmentRuby, fragmentRuby,
-    fragmentRuby, fragmentRuby, fragmentRuby,
-    fragmentRuby, fragmentRuby, fragmentRuby]);
-recipes.addShapeless(sapphire, [
-    fragmentSapphire, fragmentSapphire, fragmentSapphire,
-    fragmentSapphire, fragmentSapphire, fragmentSapphire,
-    fragmentSapphire, fragmentSapphire, fragmentSapphire]);
+# Recipe Fixes
 Arcane.addShaped("FOCUSEXCAVATION", focusExcavation, "terra 20, perditio 5, ordo 5", [
     [shardEarth, quartzNether, shardEarth],
     [quartzNether, emerald, quartzNether],
