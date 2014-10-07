@@ -8,6 +8,7 @@ var sand         = <minecraft:sand>;
 var diamond      = <minecraft:diamond>;
 var emerald      = <minecraft:emerald>;
 var ruby         = <gregtech:gt.metaitem.01:8502>;
+var rubyBoP      = <BiomesOPlenty:gems:1>;
 
 # Dusts
 var dustCopper   = <IC2:itemDust:3>;
@@ -93,7 +94,7 @@ AlloySmelter.addRecipe(dustTungsten  * 5, tungstenGrains * 16, sand, 400, 200 );
 
 recipes.removeShapeless(diamond, [diamondFragment,diamondFragment,diamondFragment,diamondFragment,
                        diamondFragment,diamondFragment,diamondFragment,diamondFragment,diamondFragment]);
-BlastFurnace.addRecipe(diamond, diamondFragment * 4, diamondFragment * 5, 600, 200, 2500 );
+BlastFurnace.addRecipe(diamond, diamondFragment * 9, null, 600, 200, 2500 );
 
 ##
 ## HV + 1 tier - these are more rare and harder to get
@@ -103,8 +104,8 @@ AlloySmelter.addRecipe(ingotPlatinum * 5, platinumGrains * 16, sand, 400, 600 );
 
 recipes.removeShapeless(emerald, [emeraldFragment,emeraldFragment,emeraldFragment,emeraldFragment,
                        emeraldFragment,emeraldFragment,emeraldFragment,emeraldFragment,emeraldFragment]);
-BlastFurnace.addRecipe(emerald, emeraldFragment * 4, emeraldFragment * 5, 1200, 640, 3000 );
+BlastFurnace.addRecipe(emerald, emeraldFragment * 9, null, 1200, 640, 3000 );
 
-recipes.removeShapeless(ruby, [rubyFragment,rubyFragment,rubyFragment,rubyFragment,
+recipes.removeShapeless(rubyBoP, [rubyFragment,rubyFragment,rubyFragment,rubyFragment,
                        rubyFragment,rubyFragment,rubyFragment,rubyFragment,rubyFragment]);
-BlastFurnace.addRecipe(ruby   , rubyFragment    * 4, rubyFragment    * 5, 1200, 640, 3000 );
+BlastFurnace.addRecipe(ruby   , rubyFragment    * 9, null, 1200, 640, 3000 );

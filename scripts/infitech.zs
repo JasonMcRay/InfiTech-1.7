@@ -111,30 +111,6 @@ vanilla.loot.removeChestLoot("strongholdCorridor", sigilDivision);
 vanilla.loot.removeChestLoot("strongholdCrossing", sigilDivision);
 
 # Fixes
-# GT-ERR-01
-recipes.removeShapeless(gemEmerald);
-recipes.addShapeless(gemEmerald, [
-    fragmentEmerald, fragmentEmerald, fragmentEmerald,
-    fragmentEmerald, fragmentEmerald, fragmentEmerald,
-    fragmentEmerald, fragmentEmerald, fragmentEmerald]);
-recipes.addShapeless(gemEmerald * 9, [blockEmerald]);
-recipes.addShapeless(gemEmerald * 16, [crateEmerald, crowbar]);
-recipes.removeShapeless(gemDiamond);
-recipes.addShapeless(gemDiamond, [
-    fragmentDiamond, fragmentDiamond, fragmentDiamond,
-    fragmentDiamond, fragmentDiamond, fragmentDiamond,
-    fragmentDiamond, fragmentDiamond, fragmentDiamond]);
-recipes.addShapeless(gemDiamond, [
-    nuggetDiamond, nuggetDiamond, nuggetDiamond,
-    nuggetDiamond, nuggetDiamond, nuggetDiamond,
-    nuggetDiamond, nuggetDiamond, nuggetDiamond]);
-recipes.addShapeless(gemDiamond * 9, [blockDiamond]);
-recipes.addShapeless(gemDiamond * 16, [crateDiamond, crowbar]);
-recipes.removeShapeless(gemRubyBoP);
-recipes.addShapeless(gemRubyGT * 9, [blockRubyBoP]);
-recipes.removeShapeless(gemSapphireBoP);
-recipes.addShapeless(gemSapphireGT * 9, [blockSapphireBoP]);
-
 # Block Crafting
 Compressor.addRecipe(blockRubyBoP, gemRubyGT * 9);
 Compressor.addRecipe(blockSapphireBoP, gemSapphireGT * 9);
