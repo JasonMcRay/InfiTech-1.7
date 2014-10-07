@@ -138,3 +138,23 @@
 - Disabled hard recipes for WarpBook
 - Added reversable recipe between eIO and HEE enderman heads
 - Disabled Death Pages due to exploit
+
+1.1.6 - WIP
+
+New mods:
+- BigReactors with recipe and energy generation tweaks. Thanks to @MigukNamja
+- CustomOreGen and Per Fabrica Ad Astra mods. To enable PFAA you need to enable it during world creation. Thanks to @lawremi
+
+Updated mods:
+- Forestry to 3.1.0.3
+- MagicBees to 2.1.21-dev
+- Thaumcraft to 4.2.1.3
+
+Config changes:
+- Rehauled Extra Bees comb processing. It now needs to be processed in Alloy Smelter. You also get one extra ingot/dust for this. Thanks to @MigukNamja
+- Disabled ProjectRed Marble caves. Redundant with Chisel Marble.
+- Forestry farms changed to be squared instead of diamond shaped
+- Thaumcraft saplings droprate tweaked to 10% when using Thaumium Grafter
+- Moved Oxygen bars to the bottom right
+- Moved Wand dial display to the top left
+- Re-enabled Inventory Tweaks shortcuts
