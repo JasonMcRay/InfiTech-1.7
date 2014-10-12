@@ -93,7 +93,7 @@ found in the core file.
 	
   <recipe name="RedstoneOre" energyCost="300">
       <input>
-        <oreDictionary name="oreRedstone" />        
+        <itemStack oreDictionary="oreRedstone" />        
       </input>
       <output>
         <itemStack modID="minecraft" itemName="redstone" number="8"/>
