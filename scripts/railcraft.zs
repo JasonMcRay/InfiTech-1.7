@@ -48,6 +48,8 @@ var ironBars = <minecraft:iron_bars>;
 var furnaceHighPressure = <gregtech:gt.blockmachines:104>;
 var crowbar = <ore:craftingToolCrowbar>;
 var stickSteel = <ore:stickSteel>;
+var stoneBricks = <minecraft:stonebrick>;
+var wallStoneBrick = <Railcraft:tile.railcraft.wall.alpha:5>;
 
 # Items/Blocks Removal
 recipes.remove(RCCrowbar);
@@ -105,3 +107,9 @@ recipes.addShaped(trackCoupler, [
 	[railAdvanced, crowbar, railAdvanced],
 	[railAdvanced, woodenRailbed, railAdvanced],
 	[railAdvanced, crowbar, railAdvanced]]);
+
+# Recipe Fixes
+recipes.removeShaped(wallStoneBrick);
+recipes.addShaped(wallStoneBrick * 6, [
+    [stoneBricks, stoneBricks, stoneBricks],
+    [stoneBricks, stoneBricks, stoneBricks]]);
