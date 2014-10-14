@@ -27,7 +27,7 @@ ore dictionary.
 
 <AlloySmelterRecipes>
 <recipeGroup name="EnderIO">
-    <recipe name="Dark Steel" energyCost="2000">
+    <recipe name="Dark Steel" energyCost="20000">
       <input>
         <itemStack modID="minecraft" itemName="iron_ingot"/>         
         <itemStack oreDictionary="dustCoal" /> <!--  coal dust -->
@@ -40,7 +40,7 @@ ore dictionary.
 </recipeGroup>
 
 <recipeGroup name="GregTech">
-  	<recipe name="Bronze" energyCost="750">
+  	<recipe name="Bronze" energyCost="7500">
 	  <input>
 		<itemStack oreDictionary="ingotCopper" number="3"/> <!-- Copper Ingot -->
 		<itemStack oreDictionary="ingotTin"/> <!-- Tin Ingot -->
@@ -50,7 +50,7 @@ ore dictionary.
 	  </output>
 	</recipe>
 
-	<recipe name="Brass" energyCost="1000">
+	<recipe name="Brass" energyCost="10000">
 	  <input>
 		<itemStack oreDictionary="ingotCopper" number="3"/> <!-- Copper Ingot -->
 		<itemStack oreDictionary="ingotZinc"/> <!-- Zinc Ingot -->
@@ -60,7 +60,7 @@ ore dictionary.
 	  </output>
 	</recipe>
 
-	<recipe name="Cupronickel" energyCost="500">
+	<recipe name="Cupronickel" energyCost="5000">
 	  <input>
 		<itemStack oreDictionary="ingotCopper"/> <!-- Copper Ingot -->
 		<itemStack oreDictionary="ingotNickel"/> <!-- Nickel Ingot -->
@@ -70,7 +70,7 @@ ore dictionary.
 	  </output>
 	</recipe>
 
-	<recipe name="Nichrome" energyCost="1250">
+	<recipe name="Nichrome" energyCost="12500">
 	  <input>
 		<itemStack oreDictionary="ingotChrome"/> <!-- Chrome Ingot -->
 		<itemStack oreDictionary="ingotNickel" number="4"/> <!-- Nickel Ingot -->
@@ -80,7 +80,7 @@ ore dictionary.
 	  </output>
 	</recipe>
 
-	<recipe name="SolderingAlloy" energyCost="2500">
+	<recipe name="SolderingAlloy" energyCost="25000">
 	  <input>
 		<itemStack oreDictionary="ingotTin" number="9"/> <!-- Tin Ingot -->
 		<itemStack oreDictionary="ingotAntimony"/> <!-- Antimony Ingot -->
@@ -90,7 +90,7 @@ ore dictionary.
 	  </output>
 	</recipe>
 
-	<recipe name="BatteryAlloy" energyCost="1250">
+	<recipe name="BatteryAlloy" energyCost="12500">
 	  <input>
 		<itemStack oreDictionary="ingotLead" number="4"/> <!-- Lead Ingot -->
 		<itemStack oreDictionary="ingotAntimony"/> <!-- Antimony Ingot -->
@@ -100,7 +100,7 @@ ore dictionary.
 	  </output>
 	</recipe>
 
-	<recipe name="Magnalium" energyCost="750">
+	<recipe name="Magnalium" energyCost="7500">
 	  <input>
 		<itemStack oreDictionary="ingotMagnesium"/> <!-- Magnesium Ingot -->
 		<itemStack oreDictionary="ingotAluminium" number="2"/> <!-- Aluminium Ingot -->
@@ -110,7 +110,7 @@ ore dictionary.
 	  </output>
 	</recipe>
 
-	<recipe name="RedAlloy" energyCost="250">
+	<recipe name="RedAlloy" energyCost="2500">
 	  <input>
 		<itemStack oreDictionary="ingotCopper"/> <!-- Copper Ingot -->
 		<itemStack oreDictionary="dustRedstone" number="4"/> <!-- Redstone -->
@@ -122,7 +122,7 @@ ore dictionary.
 </recipeGroup>
 
 <recipeGroup name="infitech">
-    <recipe name="Charcoal" energyCost="1000">
+    <recipe name="Charcoal" energyCost="9000">
       <input>
         <itemStack oreDictionary="logWood"/>
       </input>
