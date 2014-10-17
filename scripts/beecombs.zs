@@ -51,6 +51,19 @@ var zincGrains      = <ExtraBees:misc:14>;
 var titaniumGrains  = <ExtraBees:misc:15>;
 var tungstenGrains  = <ExtraBees:misc:16>;
 
+# Small Dust Piles
+var smallPileCopper = <ore:dustSmallCopper>; 
+var smallPileGold = <ore:dustSmallGold>;
+var smallPileIron = <ore:dustSmallIron>;
+var smallPileLead = <ore:dustSmallLead>;
+var smallPileNickel = <ore:dustSmallNickel>;
+var smallPilePlatinum = <ore:dustSmallPlatinum>;
+var smallPileSilver = <ore:dustSmallSilver>;
+var smallPileTin = <ore:dustSmallTin>;
+var smallPileTitanium = <ore:dustSmallTitanium>;
+var smallPileTungsten = <ore:dustSmallTungsten>;
+var smallPileZinc = <ore:dustSmallZinc>;
+
 # Bee combs
 # AlloySmelter.addRecipe(output, input1, input2, durationTicks, euPerTick);
 # Electrolyzer.addRecipe([output1, output2, output3, output4], input, cells, duration, euPerTick);
@@ -109,3 +122,16 @@ BlastFurnace.addRecipe(emerald, emeraldFragment * 9, null, 1200, 640, 3000 );
 recipes.removeShapeless(rubyBoP, [rubyFragment,rubyFragment,rubyFragment,rubyFragment,
                        rubyFragment,rubyFragment,rubyFragment,rubyFragment,rubyFragment]);
 BlastFurnace.addRecipe(ruby   , rubyFragment    * 9, null, 1200, 640, 3000 );
+
+# Small Dusts into Dust fixes - MT3 Bug fix
+recipes.addShapeless(dustCopper, [smallPileCopper, smallPileCopper, smallPileCopper, smallPileCopper]);
+recipes.addShapeless(dustGold, [smallPileGold, smallPileGold, smallPileGold, smallPileGold]);
+recipes.addShapeless(dustIron, [smallPileIron, smallPileIron, smallPileIron, smallPileIron]);
+recipes.addShapeless(dustLead, [smallPileLead, smallPileLead, smallPileLead, smallPileLead]);
+recipes.addShapeless(dustNickel, [smallPileNickel, smallPileNickel, smallPileNickel, smallPileNickel]);
+recipes.addShapeless(dustPlatinum, [smallPilePlatinum, smallPilePlatinum, smallPilePlatinum, smallPilePlatinum]);
+recipes.addShapeless(dustSilver, [smallPileSilver, smallPileSilver, smallPileSilver, smallPileSilver]);
+recipes.addShapeless(dustTin, [smallPileTin, smallPileTin, smallPileTin, smallPileTin]);
+recipes.addShapeless(dustTitanium, [smallPileTitanium, smallPileTitanium, smallPileTitanium, smallPileTitanium]);
+recipes.addShapeless(dustTungsten, [smallPileTungsten, smallPileTungsten, smallPileTungsten, smallPileTungsten]);
+recipes.addShapeless(dustZinc, [smallPileZinc, smallPileZinc, smallPileZinc, smallPileZinc]);
