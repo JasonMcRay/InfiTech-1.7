@@ -20,13 +20,14 @@ var circuitEnergyFlow = <gregtech:gt.metaitem.01:32706>;
 var pistonElectricHV = <gregtech:gt.metaitem.01:32642>;
 var machineHullHV = <gregtech:gt.blockmachines:13>;
 var cableElectrum4x = <gregtech:gt.blockmachines:1448>;
-var moduleConveyorEV = <gregtech:gt.metaitem.01:32633>;
-var sensorEV = <gregtech:gt.metaitem.01:32693>;
+var moduleConveyorHV = <gregtech:gt.metaitem.01:32632>;
+var sensorHV = <gregtech:gt.metaitem.01:32692>;
 var fuelRodUranium = <IC2:reactorUraniumSimple>;
 var fuelRodMox = <IC2:reactorMOXSimple>;
 var nuclearFuelEnrichedUranium = <IC2:itemUran>;
 var nuclearFuelMOX = <IC2:itemMOX>;
 var fuelRodEmpty = <IC2:itemFuelRod>;
+var circuitAdvanced = <ore:circuitAdvanced>;
 
 
 # Diamond Gear
@@ -46,5 +47,5 @@ Canner.addRecipe(fuelRodMox, nuclearFuelMOX, fuelRodEmpty, 210, 2);
 recipes.remove(cropHarvester);
 recipes.addShaped(cropHarvester, [
     [robotArmHV, circuitEnergyFlow, robotArmHV],
-    [pistonElectricHV, machineHullHV, sensorEV],
-    [cableElectrum4x, moduleConveyorEV, cableElectrum4x]]);
+    [pistonElectricHV, machineHullHV, sensorHV],
+    [cableElectrum4x, moduleConveyorHV, cableElectrum4x]]);
