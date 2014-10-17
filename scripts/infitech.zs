@@ -75,6 +75,10 @@ var gemOlivineGT = <gregtech:gt.metaitem.01:8505>;
 var blockRubyPR = <ProjRed|Exploration:projectred.exploration.stone:5>;
 var blockSapphirePR = <ProjRed|Exploration:projectred.exploration.stone:6>;
 var blockPeridotPR = <ProjRed|Exploration:projectred.exploration.stone:7>;
+var oreSalt = <ore:oreSalt>;
+var dustSaltPHC = <harvestcraft:saltItem>;
+var itemSalt = <ore:itemSalt>;
+var dustSaltGT = <gregtech:gt.metaitem.01:2817>;
 
 # Ore Dictionary stuff
 craftingFurnace.add(furnace3d);
@@ -85,6 +89,7 @@ oreTin.add(GCoreTinMars);
 oreAluminium.add(GCoreAluminiumAsteroid);
 oreIlmenite.add(GCoreIlmenite);
 oreDesh.add(GCoreDesh);
+oreSalt.remove(dustSaltPHC);
 
 # Extras
 furnace.remove(nuggetSteel, nuggetIron);
