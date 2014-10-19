@@ -25,6 +25,13 @@ var diamond = <minecraft:diamond>;
 var focusExcavation = <Thaumcraft:FocusExcavation>;
 var shardEarth = <Thaumcraft:ItemShard:3>;
 var quartzNether = <minecraft:quartz>;
+var slabWood = <ore:slabWood>;
+var gemNetherQuartz = <ore:gemNetherQuartz>;
+var glass = <ore:blockGlass>;
+var sensorDaylight = <minecraft:daylight_detector>;
+
+# Ore Dictionary
+gemNetherQuartz.add(<appliedenergistics2:item.ItemMultiMaterial:11>);
 
 # Recipes Tweaks
 recipes.remove(chestEnder);
@@ -40,3 +47,8 @@ Arcane.addShaped("FOCUSEXCAVATION", focusExcavation, "terra 20, perditio 5, ordo
     [shardEarth, quartzNether, shardEarth],
     [quartzNether, emerald, quartzNether],
     [shardEarth, quartzNether, shardEarth]]);
+recipes.remove(sensorDaylight);
+recipes.addShaped(sensorDaylight, [
+    [glass, glass, glass],
+    [gemNetherQuartz, gemNetherQuartz, gemNetherQuartz],
+    [slabWood, slabWood, slabWood]]);
