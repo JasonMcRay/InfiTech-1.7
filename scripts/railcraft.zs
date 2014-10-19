@@ -50,6 +50,12 @@ var crowbar = <ore:craftingToolCrowbar>;
 var stickSteel = <ore:stickSteel>;
 var stoneBricks = <minecraft:stonebrick>;
 var wallStoneBrick = <Railcraft:tile.railcraft.wall.alpha:5>;
+var chestMetals = <Railcraft:tile.railcraft.machine.beta:12>;
+var anvil = <minecraft:anvil>;
+var locomotiveERlectric = <Railcraft:cart.loco.electric>;
+var cart = <minecraft:minecart>;
+var redstoneLamp = <minecraft:redstone_lamp>;
+var feederUnitElectric = <Railcraft:tile.railcraft.machine.epsilon>;
 
 # Items/Blocks Removal
 recipes.remove(RCCrowbar);
@@ -60,6 +66,16 @@ recipes.remove(RCGearSteel);
 NEI.hide(RCGearSteel);
 
 # Recipe Tweaks
+recipes.remove(locomotiveERlectric);
+recipes.addShaped(locomotiveERlectric, [
+    [redstoneLamp, plateSteel, null],
+    [plateSteel, feederUnitElectric, plateSteel],
+    [GTGearSteel, cart, GTGearSteel]]);
+recipes.remove(chestMetals);
+recipes.addShaped(chestMetals, [
+    [GTGearSteel, piston, GTGearSteel],
+    [piston, anvil, piston],
+    [GTGearSteel, piston, GTGearSteel]]);
 recipes.remove(RCGearPlated);
 recipes.addShaped(RCGearPlated, [
 	[null, nuggetGold, null],
