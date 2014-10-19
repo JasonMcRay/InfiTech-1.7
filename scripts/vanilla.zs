@@ -18,13 +18,6 @@ var enderEye = <minecraft:ender_eye>;
 var enderPearl = <minecraft:ender_pearl>;
 var blazePowder = <minecraft:blaze_powder>;
 var charcoal = <minecraft:coal:1>;
-var emerald = <minecraft:emerald>;
-var ruby = <gregtech:gt.metaitem.01:8502>;
-var sapphire = <gregtech:gt.metaitem.01:8503>;
-var diamond = <minecraft:diamond>;
-var focusExcavation = <Thaumcraft:FocusExcavation>;
-var shardEarth = <Thaumcraft:ItemShard:3>;
-var quartzNether = <minecraft:quartz>;
 var slabWood = <ore:slabWood>;
 var gemNetherQuartz = <ore:gemNetherQuartz>;
 var glass = <ore:blockGlass>;
@@ -43,10 +36,6 @@ recipes.removeShapeless(enderEye, [enderPearl, blazePowder]);
 furnace.remove(charcoal);
 
 # Recipe Fixes
-Arcane.addShaped("FOCUSEXCAVATION", focusExcavation, "terra 20, perditio 5, ordo 5", [
-    [shardEarth, quartzNether, shardEarth],
-    [quartzNether, emerald, quartzNether],
-    [shardEarth, quartzNether, shardEarth]]);
 recipes.remove(sensorDaylight);
 recipes.addShaped(sensorDaylight, [
     [glass, glass, glass],
