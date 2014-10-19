@@ -132,7 +132,5 @@ ore dictionary.
     </recipe>
 </recipeGroup>
 
-<vanillaFurnaceRecipes enabled="false"/> 
-	
 </AlloySmelterRecipes>  
 
