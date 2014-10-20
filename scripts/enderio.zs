@@ -21,7 +21,8 @@ var capacitorBasic = <EnderIO:itemBasicCapacitor>;
 var SAGMill = <EnderIO:blockSagMill>;
 var alloySmelter = <EnderIO:blockAlloySmelter>;
 var farmStation = <EnderIO:blockFarmStation>;
-var dimTransceiver = <EnderIO:blockHyperCube>;
+var dimTransceiverOld = <EnderIO:blockHyperCube>;
+var dimTransceiver = <EnderIO:blockTransceiver>;
 var capacitorBank = <EnderIO:blockCapacitorBank>;
 var capacitorOctadic = <EnderIO:itemBasicCapacitor:2>;
 var EISilicon = <EnderIO:itemMaterial>;
@@ -59,6 +60,7 @@ var ingotIron = <minecraft:iron_ingot>;
 var craftingFurnace = <ore:craftingFurnace>;
 var EIOHead = <EnderIO:blockEndermanSkull>;
 var HEEHead = <HardcoreEnderExpansion:enderman_head>;
+var alloyVibrant = <EnderIO:itemAlloy:2>;
 
 # Items/Blocks Removal
 recipes.remove(EIGearBasic);
@@ -97,9 +99,10 @@ recipes.addShaped(farmStation, [
 	[pulsatingCrystal, capacitorBasic, pulsatingCrystal]]);
 recipes.remove(dimTransceiver);
 recipes.addShaped(dimTransceiver, [
-	[plateIridium, machineHullMV, plateIridium],
+	[alloyVibrant, machineHullMV, alloyVibrant],
 	[capacitorBank, chestEnder, pumpElectricMV],
-	[plateIridium, capacitorOctadic, plateIridium]]);
+	[alloyVibrant, capacitorOctadic, alloyVibrant]]);
+recipes.addShapeless(dimTransceiver, [dimTransceiverOld]);
 recipes.remove(chestVacuum);
 recipes.addShaped(chestVacuum, [
 	[plateIron, plateIron, plateIron],
