@@ -70,16 +70,6 @@ ore dictionary.
 	  </output>
 	</recipe>
 
-	<recipe name="Nichrome" energyCost="12500">
-	  <input>
-		<itemStack oreDictionary="ingotChrome"/> <!-- Chrome Ingot -->
-		<itemStack oreDictionary="ingotNickel" number="4"/> <!-- Nickel Ingot -->
-	  </input>
-	  <output>
-		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11311" number="5" exp="0.3"/> <!-- Nichrome Ingot -->
-	  </output>
-	</recipe>
-
 	<recipe name="SolderingAlloy" energyCost="25000">
 	  <input>
 		<itemStack oreDictionary="ingotTin" number="9"/> <!-- Tin Ingot -->
