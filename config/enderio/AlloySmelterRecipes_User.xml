@@ -112,7 +112,7 @@ ore dictionary.
 </recipeGroup>
 
 <recipeGroup name="infitech">
-    <recipe name="Charcoal" energyCost="9000">
+    <recipe name="Charcoal" energyCost="7000">
       <input>
         <itemStack oreDictionary="logWood"/>
       </input>
