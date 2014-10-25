@@ -187,3 +187,61 @@ Updated mods:
 - Red Alloy Ingots are unifying to ProjectRed version instead of GT.
 - Fixed an energy usage of some processing recipes in eIO (Alloy Smelter and SAG Mill)
 - Semi-Fixed Railcraft Stone Brick Wall crafting, when PFAA is enabled.
+
+1.1.7
+
+Forge Updated to 10.13.2.1232
+
+Updated Mods:
+- AsieLib to 0.3.2
+- BigReactors to 0.4.0rc11
+- Biomes O plenty to 2.1.0.1004
+- Carpenter's Blocks to 3.3.0.1
+- Computronics to 1.2.0
+- EnderIO to 2.1.6.251
+- Galacticraft to 3.0.5.228
+- GregTech to 5.05.13
+- Hardcore Ender Expansion to 1.6.4
+- IHL Tools and Machines to 0.513
+- Logistics Pipes to 0.8.1.75
+- Magic Bees to 2.1.22
+- MineTweaker to 3.0.9B
+- ModTweaker to 0.6.22
+- NEI Addons to 1.12.3.11
+- NEI to 1.0.3.64
+- Open Computers to 1.4.0.5 beta 2
+- Pam's Harvestcraft to 1.7.10c
+- PFAA to 0.2.13 (still disabled per default)
+- PneumaticCraft to 1.2.13-28
+- ProjectRed to 4.5.1.51
+- ProjectZulu to 1.3f
+- Refined Relocation to 1.0.6h
+- Thaumcraft to 4.2.1.4
+- Thaumic Tinkerer to 2.5.399
+- Translocators to 1.1.1.13
+- WarpBook to 2.0.35
+- Wireless Redstone to 1.4.1.7
+- YAMPST to 1.1.7
+
+Fixes and Changes:
+- Basic Capacitor now uses any Red Alloy Ingot
+- Few AE2 were not craftable. They are now.
+- Small Dusts into Standart Dusts crafting fixes
+- Cropnalyzer craftable with GT Copper Cables
+- Crop Harvester recipe needs fully HV parts
+- Exploit with infinite salt fixed
+- Pneumaticcraft plants spreading disabled
+- Fixed Tombstones bug where items were loosing their NBT data (Enchants and tool materials with GT Tools)
+- Removed outdated entries in MT3 scripts, and little script cleanup
+- Fixed Electric Locomotive and Metals Chest crafting
+- Fixed Daylight Sensor crafting
+- Fixes a crash with RR when using Relocator pipes and CESU (or other inventory with diferent input/output slots)
+- Enabled hidden recipes in IC2
+- EnderIO changes:
+    - Changed recipe of Dimensional Transceiver
+    - Nichrome is no longer craftable using eIO alloy smelter
+    - Reseted EnderIO config:
+        - See commit: https://github.com/JasonMcRay/InfiTech-1.7/commit/68120489f33cc3ddcbf28de1ca9b5663e41bb6bd for changes (there is a lot)
+- Disabled Kinetic Wind Generator from IC2
+- Made Charcoal Creation more feasable with eIO Smelter
+- Fixed Solar Helmet crafting recipe to require GT parts (solar panel)
