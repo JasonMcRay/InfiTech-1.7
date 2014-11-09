@@ -1,3 +1,4 @@
+# enable this file by renaming this file to "beecombs.zs" if you are using Binnie Mods
 import mods.nei.NEI;
 import mods.gregtech.BlastFurnace;
 import mods.gregtech.AlloySmelter;

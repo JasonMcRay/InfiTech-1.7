@@ -7,7 +7,6 @@ import mods.gregtech.BlastFurnace;
 import mods.ic2.Macerator;
 import mods.ic2.Compressor;
 import mods.gregtech.Boxing;
-import mods.thaumcraft.Arcane;
 
 # Aliases
 var chestEnder = <minecraft:ender_chest>;

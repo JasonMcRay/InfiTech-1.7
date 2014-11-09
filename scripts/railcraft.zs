@@ -7,7 +7,6 @@ import mods.gregtech.BlastFurnace;
 import mods.ic2.Macerator;
 import mods.ic2.Compressor;
 import mods.gregtech.Boxing;
-import mods.railcraft.CokeOven;
 
 # Aliases
 var brickAbyssal = <Railcraft:tile.railcraft.brick.abyssal>;
@@ -76,11 +75,11 @@ recipes.addShaped(chestMetals, [
     [GTGearSteel, piston, GTGearSteel],
     [piston, anvil, piston],
     [GTGearSteel, piston, GTGearSteel]]);
-recipes.remove(RCGearPlated);
-recipes.addShaped(RCGearPlated, [
-	[null, nuggetGold, null],
-	[nuggetGold, GTGearStone, nuggetGold],
-	[null, nuggetGold, null]]);
+//recipes.remove(RCGearPlated);
+//recipes.addShaped(RCGearPlated, [
+//	[null, nuggetGold, null],
+//	[nuggetGold, GTGearStone, nuggetGold],
+//	[null, nuggetGold, null]]);
 recipes.remove(engineSteamIndustrial);
 recipes.addShaped(engineSteamIndustrial, [
 	[plateSteel, plateSteel, plateSteel],
