@@ -250,29 +250,34 @@ Fixes and Changes:
 
 Updated Mods:
 - AppleCore to 1.0.1
+- BiblioCraft to 1.9.0
 - BiblioWoods [BoP] to v1.9
 - BiblioWoods [Forestry] to v1.7
-- Buildcraft to 6.1.7
+- Buildcraft to 6.1.8
 - Carpenter's Blocks to 3.3.1
 - CoFHCore to 3.0.0B8-36
-- EnderIO to 2.1.8.269
+- EnderIO to 2.1.8.272
 - ExtraCells to 2.1.12b11
 - Galacticraft to 3.0.6.232
 - GregTech to 5.06.02
-- IHL Tools and Machines to 0.515
+- IHL Tools and Machines to 0.517
 - Immibis Core to 59.0.4
+- IC2 to 2.2.651
+- InventoryTweaks to 1.59-dev-156
 - JourneyMap to 5.0.0RC4
 - LogisticPipes to 0.8.2.77
-- MineTweaker3 to 3.0.9C-Beta1
+- MineTweaker3 to 3.0.9C
 - MrCrayfishFurnitureMod to 3.3.6
-- OpenComputers to 1.4.0.6-rc1
-- PFAA to 0.2.16
-- PneumaticCraft to  1.3.1-31
+- NotEnoughItems to 1.0.3.67
+- OpenComputers to 1.4.0.8-rc2
+- PFAA to 0.2.17
+- PneumaticCraft to  1.3.2-32
 - ProjectRed to 4.5.3.54
-- ThaumicTinkerer to 2.5.160
+- ThaumicTinkerer to 2.5.161
 - WR-CBE to 1.4.1.9
 - Yampst to 2.0.0
 - ForgeMultipart to 1.1.0.314
+
 
 Removed or Disabled mods
 - Binnie Mods - will be replaced by Gendustry
@@ -286,6 +291,8 @@ New Mods:
 - Malisis Doors
 - Thaumic Energistics
 - NEI Integration
+- IC2 Nuclear Control
+- MrTJPCore
 
 Config Changes:
 - GT OreGen (Naquadah is generating in the End; Tin/Cassi is now in layer 40-120 instead of 80-120)
