@@ -300,3 +300,4 @@ Config Changes:
 - Recipe Script fixes for BC/RC
 - Removed Thaumcraft scripts, since they are no longer needed
 - Disabled Beecombs script since Binnie Mods are disabled
+- Disabled showing mobs in the Main menu to prevent crashes from ProjectZulu
