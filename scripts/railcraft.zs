@@ -55,6 +55,8 @@ var locomotiveERlectric = <Railcraft:cart.loco.electric>;
 var cart = <minecraft:minecart>;
 var redstoneLamp = <minecraft:redstone_lamp>;
 var feederUnitElectric = <Railcraft:tile.railcraft.machine.epsilon>;
+var tankWallIron = <Railcraft:tile.railcraft.machine.beta>;
+var tankWallSteel = <Railcraft:tile.railcraft.machine.beta:13>;
 
 # Items/Blocks Removal
 recipes.remove(RCCrowbar);
@@ -122,6 +124,12 @@ recipes.addShaped(trackCoupler, [
 	[railAdvanced, crowbar, railAdvanced],
 	[railAdvanced, woodenRailbed, railAdvanced],
 	[railAdvanced, crowbar, railAdvanced]]);
+recipes.removeShaped(tankWallIron, [
+    [RCplateIron, RCplateIron],
+    [RCplateIron, RCplateIron]]);
+recipes.removeShaped(tankWallSteel, [
+    [RCplateSteel, RCplateSteel],
+    [RCplateSteel, RCplateSteel]]);
 
 # Recipe Fixes
 recipes.removeShaped(wallStoneBrick);
