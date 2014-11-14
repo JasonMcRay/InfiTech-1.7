@@ -98,11 +98,7 @@ recipes.addShaped(farmStation, [
 	[ingotElectricalSteel, machineChassis, ingotElectricalSteel],
 	[pulsatingCrystal, capacitorBasic, pulsatingCrystal]]);
 recipes.remove(dimTransceiver);
-recipes.addShaped(dimTransceiver, [
-	[alloyVibrant, machineHullMV, alloyVibrant],
-	[capacitorBank, chestEnder, pumpElectricMV],
-	[alloyVibrant, capacitorOctadic, alloyVibrant]]);
-recipes.addShapeless(dimTransceiver, [dimTransceiverOld]);
+NEI.hide(dimTransceiver);
 recipes.remove(chestVacuum);
 recipes.addShaped(chestVacuum, [
 	[plateIron, plateIron, plateIron],

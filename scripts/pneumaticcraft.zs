@@ -37,10 +37,7 @@ recipes.addShaped(gearCompressedIron, [
     [ingotCompressedIron, gearStone, ingotCompressedIron],
     [null, ingotCompressedIron, null]]);
 recipes.remove(aerialInterface);
-recipes.addShaped(aerialInterface, [
-    [pressureWall, hopper, pressureWall],
-    [ingotEnderium, skullWither, ingotEnderium],
-    [pressureWall, tubePressureAdv, pressureWall]]);
+NEI.hide(aerialInterface);
 recipes.remove(drone);
 recipes.addShaped(drone, [
     [turbineRotor, stickStainlessSteel, turbineRotor],
