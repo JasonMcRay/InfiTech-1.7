@@ -39,7 +39,7 @@ gendustry.bees.species.Platinum=Platinum
 gendustry.bees.species.Iridium=Iridium
 gendustry.bees.species.Uranium=Uranium
 gendustry.bees.species.Plutonium=Plutonium
-gendustry.bees.species.Naquada=Naquada
+gendustry.bees.species.Naquadah=Naquadah
 
 gendustry.honeycomb.lignite.name=Lignite Comb
 gendustry.honeycomb.coal.name=Coal Comb
@@ -86,7 +86,7 @@ gendustry.honeycomb.iridium.name=Iridium Comb
 
 gendustry.honeycomb.uranium.name=Uranium Comb
 gendustry.honeycomb.plutonium.name=Plutonium Comb
-gendustry.honeycomb.naquada.name=Naquada Comb
+gendustry.honeycomb.naquadah.name=Naquadah Comb
 gendustry.honeycomb.mutagencatalyst.name=Mutagen
 gendustry.honeydrop.oildrop.name=Oil Drop
 gendustry.honeydrop.smallmutagencatalyst.name=Mutagen Catalyst
