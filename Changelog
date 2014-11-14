@@ -65,6 +65,7 @@ Config Changes:
     - IHL Item Teleporter
     - EnderIO Dimensional Transceiver
     - PneumaticCraft Aerial Interface
+    - Jabba bSpace barrel upgrade
 - Implemented GregTech recipes for OpenComputers
 - Made already existiing Dimensional Transceivers not worth using (really its not worth it)
 - Changed Farming Station recipe. This might be changed again further in the future

@@ -12,6 +12,7 @@
     "Witch" : "5",                                      
     "Slime" : "5",           
     "Enderman" : "10",
+    "SpecialMobs.SpecialEnderman" : "10",
     
     "LavaSlime" : "2",
     "PigZombie" : "5",
@@ -32,7 +33,12 @@
     "Sheep" : "0.5",
     "Cow" : "0.5",
     "Pig" : "0.5",    
-    "MushroomCow" : "1"
+    "MushroomCow" : "1",
+    
+    "enderzoo.Enderminy" : "10",
+    "enderzoo.ConcussionCreeper" : "1.5",
+    "enderzoo.enderzoo.FallenKnight" : "1",
+    "enderzoo.WitherWitch" : "3"
   },
   
   "blackList": [
