@@ -21,10 +21,7 @@ var hammer = <ore:craftingToolHardHammer>;
 
 # Recipe Tweaks
 recipes.remove(upgradeBSpace);
-recipes.addShaped(upgradeBSpace, [
-	[null, piston, null],
-	[plateEnderium, chestEnder, plateEnderium],
-	[null, piston, null]]);
+NEI.hide(upgradeBSpace);
 recipes.remove(dolly);
 recipes.addShaped(dolly, [
 	[null, wrench, plateIron],
