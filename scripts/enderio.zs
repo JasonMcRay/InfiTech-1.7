@@ -61,6 +61,9 @@ var craftingFurnace = <ore:craftingFurnace>;
 var EIOHead = <EnderIO:blockEndermanSkull>;
 var HEEHead = <HardcoreEnderExpansion:enderman_head>;
 var alloyVibrant = <EnderIO:itemAlloy:2>;
+var controllerZLogic = <EnderIO:itemFrankenSkull:1>;
+var hoeElectrum = <gregtech:gt.metatool.01:8>.withTag({"GT.ToolStats": {SecondaryMaterial: "Wood", MaxDamage: 6400 as long, PrimaryMaterial: "Electrum"}});
+var hoeElectrical = <IC2:itemToolHoe:*>;
 
 # Items/Blocks Removal
 recipes.remove(EIGearBasic);
@@ -94,9 +97,9 @@ recipes.addShaped(alloySmelter, [
 	[capacitorBasic, machineChassis, capacitorBasic]]);
 recipes.remove(farmStation);
 recipes.addShaped(farmStation, [
-	[hoeDiamond, ingotElectricalSteel, axeDiamond],
+	[ingotElectricalSteel, hoeElectrical, ingotElectricalSteel],
 	[ingotElectricalSteel, machineChassis, ingotElectricalSteel],
-	[pulsatingCrystal, capacitorBasic, pulsatingCrystal]]);
+	[pulsatingCrystal, controllerZLogic, pulsatingCrystal]]);
 recipes.remove(dimTransceiver);
 NEI.hide(dimTransceiver);
 recipes.remove(chestVacuum);
