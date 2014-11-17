@@ -27,7 +27,3 @@ recipes.remove(HCclayJug);
 NEI.hide(HCclayJug);
 recipes.remove(HCbrickWell);
 NEI.hide(HCbrickWell);
-
-# New recipes
-furnace.addRecipe(dustSalt, bucketWater);
-furnace.addRecipe(dustTinySalt * 2, freshWater);
