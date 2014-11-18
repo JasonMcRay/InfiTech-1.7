@@ -47,6 +47,8 @@ var dirt = <minecraft:dirt:*>;
 var gravel = <minecraft:gravel>;
 var sand = <minecraft:sand:*>;
 var ringIron = <gregtech:gt.metaitem.01:28032>;
+var enderReceiver = <ExtraUtilities:nodeUpgrade:6>;
+var enderTransmitter = <ExtraUtilities:nodeUpgrade:5>;
 
 # Recipe Tweaks
 recipes.remove(enderInfusedObsidian);
@@ -69,6 +71,10 @@ recipes.addShaped(EUtilsDrumBedrock, [
 	[ingotBedrockium, ringGold, ingotBedrockium],
 	[ingotBedrockium, cauldron, ingotBedrockium],
 	[ingotBedrockium, pressurePlateWeightedLight, ingotBedrockium]]);
+recipes.remove(enderReceiver);
+NEI.hide(enderReceiver);
+recipes.remove(enderTransmitter);
+NEI.hide(enderTransmitter);
 
 # GT/IC2 Integration
 recipes.remove(EUtilsAnyCompressed);
