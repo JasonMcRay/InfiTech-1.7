@@ -57,16 +57,48 @@ var redstoneLamp = <minecraft:redstone_lamp>;
 var feederUnitElectric = <Railcraft:tile.railcraft.machine.epsilon>;
 var tankWallIron = <Railcraft:tile.railcraft.machine.beta>;
 var tankWallSteel = <Railcraft:tile.railcraft.machine.beta:13>;
+var RCPlateTin = <Railcraft:part.plate:2>;
+var forceTrackEmitter = <Railcraft:tile.railcraft.machine.epsilon:3>;
+var plateTin = <ore:plateTin>;
+var ingotCopper = <ore:ingotCopper>;
+var pressurePlateStone = <minecraft:stone_pressure_plate>;
+var blockDiamond = <ore:blockDiamond>;
+var detectorEnergy = <Railcraft:tile.railcraft.detector:10>;
+var RCPlateCopper = <Railcraft:part.plate:3>;
+var fluxTransformer = <Railcraft:tile.railcraft.machine.epsilon:4>;
+var plateCopper = <ore:plateCopper>;
+var ingotGold = <ore:ingotGold>;
+var blockRedstone = <ore:blockRedstone>;
+var RCGearIron = <Railcraft:part.gear:1>;
 
 # Items/Blocks Removal
+recipes.remove(RCPlateTin);
+recipes.remove(RCPlateCopper);
 recipes.remove(RCCrowbar);
 NEI.hide(RCCrowbar);
 recipes.remove(RCCrowbarReinforced);
 NEI.hide(RCCrowbarReinforced);
 recipes.remove(RCGearSteel);
 NEI.hide(RCGearSteel);
+recipes.remove(RCGearIron);
+NEI.hide(RCGearIron);
 
 # Recipe Tweaks
+recipes.remove(fluxTransformer);
+recipes.addShaped(fluxTransformer * 2, [
+    [plateCopper, ingotGold, plateCopper],
+    [ingotGold, blockRedstone, ingotGold],
+    [plateCopper, ingotGold, plateCopper]]);
+recipes.remove(forceTrackEmitter);
+recipes.addShaped(forceTrackEmitter, [
+    [plateTin, ingotCopper, plateTin],
+    [ingotCopper, blockDiamond, ingotCopper],
+    [plateTin, ingotCopper, plateTin]]);
+recipes.remove(detectorEnergy);
+recipes.addShaped(detectorEnergy, [
+    [plateTin, plateTin, plateTin],
+    [plateTin, pressurePlateStone, plateTin],
+    [plateTin, plateTin, plateTin]]);
 recipes.remove(locomotiveERlectric);
 recipes.addShaped(locomotiveERlectric, [
     [redstoneLamp, plateSteel, null],
@@ -77,11 +109,6 @@ recipes.addShaped(chestMetals, [
     [GTGearSteel, piston, GTGearSteel],
     [piston, anvil, piston],
     [GTGearSteel, piston, GTGearSteel]]);
-//recipes.remove(RCGearPlated);
-//recipes.addShaped(RCGearPlated, [
-//	[null, nuggetGold, null],
-//	[nuggetGold, GTGearStone, nuggetGold],
-//	[null, nuggetGold, null]]);
 recipes.remove(engineSteamIndustrial);
 recipes.addShaped(engineSteamIndustrial, [
 	[plateSteel, plateSteel, plateSteel],
