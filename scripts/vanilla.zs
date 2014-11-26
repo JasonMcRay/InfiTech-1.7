@@ -16,7 +16,6 @@ var teleporter = <IC2:blockMachine2>;
 var enderEye = <minecraft:ender_eye>;
 var enderPearl = <minecraft:ender_pearl>;
 var blazePowder = <minecraft:blaze_powder>;
-var charcoal = <minecraft:coal:1>;
 var slabWood = <ore:slabWood>;
 var gemNetherQuartz = <ore:gemNetherQuartz>;
 var glass = <ore:blockGlass>;
@@ -32,7 +31,6 @@ recipes.addShaped(chestEnder, [
 	[ingotEnderium, teleporter, ingotEnderium],
 	[plateObsidian, plateObsidian, plateObsidian]]);
 recipes.removeShapeless(enderEye, [enderPearl, blazePowder]);
-furnace.remove(charcoal);
 
 # Recipe Fixes
 recipes.remove(sensorDaylight);
