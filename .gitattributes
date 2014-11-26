@@ -1,0 +1,6 @@
+mods/*ArmorStatusHUD-client*.jar merge=ours
+mods/*DamageIndicatorsMod*.jar merge=ours
+mods/*StatusEffectHUD-client*.jar merge=ours
+mods/JourneyMap*.jar merge=ours
+.gitignore merge=ours
+.gitattributes merge=ours
