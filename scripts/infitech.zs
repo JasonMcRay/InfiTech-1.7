@@ -117,10 +117,7 @@ vanilla.loot.removeChestLoot("strongholdCorridor", sigilDivision);
 vanilla.loot.removeChestLoot("strongholdCrossing", sigilDivision);
 
 # Fixes
-# Block Crafting
-Compressor.addRecipe(blockRubyBoP, gemRubyGT * 9);
-Compressor.addRecipe(blockSapphireBoP, gemSapphireGT * 9);
-Compressor.addRecipe(blockPeridotBoP, gemOlivineGT * 9);
+# GemBlock Crafting - no longer needed due to fix in ProjectRed
 recipes.addShapeless(blockRubyBoP * 9, [blockRubyPR, blockRubyPR, blockRubyPR, blockRubyPR, blockRubyPR, blockRubyPR, blockRubyPR, blockRubyPR, blockRubyPR]);
 recipes.addShapeless(blockSapphireBoP * 9, [blockSapphirePR, blockSapphirePR, blockSapphirePR, blockSapphirePR, blockSapphirePR, blockSapphirePR, blockSapphirePR, blockSapphirePR, blockSapphirePR]);
 recipes.addShapeless(blockPeridotBoP * 9, [blockPeridotPR, blockPeridotPR, blockPeridotPR, blockPeridotPR, blockPeridotPR, blockPeridotPR, blockPeridotPR, blockPeridotPR, blockPeridotPR]);
