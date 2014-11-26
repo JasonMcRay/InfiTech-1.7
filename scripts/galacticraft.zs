@@ -100,8 +100,19 @@ var RCplateIron = <Railcraft:part.plate>;
 var RCplateSteel = <Railcraft:part.plate:1>;
 var GTplateTitanium = <gregtech:gt.metaitem.01:17028>;
 var GTingotTitanium = <gregtech:gt.metaitem.01:11028>;
+var blockCopper = <ore:blockCopper>;
+var blockCopperGC = <GalacticraftCore:tile.gcBlockCore:9>;
+var blockTin = <ore:blockTin>;
+var blockTinGC = <GalacticraftCore:tile.gcBlockCore:10>;
+var blockAluminium = <ore:blockAluminium>;
+var blockAluminiumGC = <GalacticraftCore:tile.gcBlockCore:11>;
+var blockMeteoricIron = <GalacticraftCore:tile.gcBlockCore:12>;
+var blockDesh = <GalacticraftMars:tile.mars:8>;
 
 # Items/blocks removal
+recipes.remove(blockCopperGC);
+recipes.remove(blockTinGC);
+recipes.remove(blockAluminiumGC);
 recipes.remove(GCRefinery);
 NEI.hide(GCRefinery);
 recipes.remove(GCElectricCompressor);
@@ -210,6 +221,10 @@ recipes.addShaped(titaniumLeggings, [
 	[compressedTitanium, compressedTitanium, compressedTitanium],
 	[compressedTitanium, hammer, compressedTitanium],
 	[compressedTitanium, null, compressedTitanium]]);
+recipes.remove(blockMeteoricIron);
+Compressor.addRecipe(blockMeteoricIron, GCingotMeteoricIron * 9);
+recipes.remove(blockDesh);
+Compressor.addRecipe(blockDesh, GCingotDesh * 9);
     
 # GT/IC2 Integration    
 Macerator.addRecipe(rawMeteoricIron * 2, meteorFallen);
@@ -234,3 +249,8 @@ BlastFurnace.addRecipe(GTingotTitanium, shardTitanium, null, 1500, 120, 1500);
 furnace.remove(<*>, GCoreIlmenite);
 //furnace.remove(<*>, GCoreAluminiumAsteroid);
 furnace.remove(<*>, shardTitanium);
+
+# OreDictionary Stuff
+blockCopper.add(blockCopperGC);
+blockTin.add(blockTinGC);
+blockAluminium.add(blockAluminiumGC);
