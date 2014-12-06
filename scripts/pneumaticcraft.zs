@@ -24,7 +24,6 @@ var PCB = <PneumaticCraft:printedCircuitBoard>;
 var stickStainlessSteel = <ore:stickStainlessSteel>;
 var omniHopper = <PneumaticCraft:omnidirectionalHopper>;
 var hammer = <ore:craftingToolHardHammer>;
-var compressorKinetic = <PneumaticCraft:kineticCompressor>;
 var gateBasic = <BuildCraft|Transport:pipeGate>;
 var gearGold = <ore:gearGold>;
 var pipeKinesisDiamond = <BuildCraft|Transport:item.buildcraftPipe.pipepowerdiamond>;
@@ -48,8 +47,3 @@ recipes.addShaped(omniHopper, [
     [ingotCompressedIron, hammer, ingotCompressedIron],
     [ingotCompressedIron, hopper, ingotCompressedIron],
     [null, ingotCompressedIron, null]]);
-recipes.remove(compressorKinetic);
-recipes.addShaped(compressorKinetic, [
-	[gateBasic, gearGold, PCB],
-	[pipeKinesisDiamond, turbineRotor, tubePressureAdv],
-	[gateBasic, furnace, PCB]]);
