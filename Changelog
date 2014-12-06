@@ -1,3 +1,48 @@
+2.0.2
+
+Updated Mods:
+- Baubles to 1.0.1.10
+- Automagy to 0.15
+- BuildCraft to 6.2.2
+- Carpenter's Blocks to 3.3.3
+- Chisel to 2.1.3
+- CustomOreGen to 1.2.14
+- EnderIO to 2.2.1.286
+- ExtraCells to 2.1.13b15
+- GalacticGreg to 0.4
+- Galacticraft to 3.0.6.240
+- Gendustry to 1.4.2.46
+- GregTech to 5.06.06
+- Hardcore Ender Expansion to 1.6.6
+- IHL to 0.521
+- Immibis Core to 59.0.5
+- JourneyMap to 5.0.1
+- LogisticPipes to 0.8.2.83
+- MrCrayfish Furniture to 3.4.4
+- NEI to 1.0.3.72
+- Open Computers to 1.4.1.14
+- PneumaticCraft to 1.4.3-40
+- Thaumic Energistics to 0.8.7b
+- ttCore to 0.1.0-40
+- Waila to 1.5.6_dev1
+- Waila Plugins to 0.0.1-7
+
+New mods:
+- Random Things (primary Fast Leaf Decay)
+
+Config Changes:
+- Buildcraft Pump is consuming water.
+- Fillers arent suppose to drop broken blocks
+- Buildcraft engines CAN explode
+- EnderIO Dim Transceiver is disabled and removed from game.
+- Its no longer possible to directly convert RF/MJ to EU. However its still possible to convert EU to RF/MJ.
+- Added few blocks to be used as air sealant in space.
+- Rockets require 2x more fuel.
+- You can now turn Books => Paper
+- Boats will stack up to 16
+- You can mine Packed ice with pickaxe
+- You can turn 2x slab => plank
+
 2.0.1
 
 Updated Mods:
