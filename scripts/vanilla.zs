@@ -20,6 +20,7 @@ var slabWood = <ore:slabWood>;
 var gemNetherQuartz = <ore:gemNetherQuartz>;
 var glass = <ore:blockGlass>;
 var sensorDaylight = <minecraft:daylight_detector>;
+var blazeRod = <minecraft:blaze_rod>;
 
 # Ore Dictionary
 gemNetherQuartz.add(<appliedenergistics2:item.ItemMultiMaterial:11>);
@@ -31,6 +32,8 @@ recipes.addShaped(chestEnder, [
 	[ingotEnderium, teleporter, ingotEnderium],
 	[plateObsidian, plateObsidian, plateObsidian]]);
 recipes.removeShapeless(enderEye, [enderPearl, blazePowder]);
+recipes.removeShapeless(blazePowder, [blazeRod]);
+recipes.addShapeless(blazePowder, [blazeRod]);
 
 # Recipe Fixes
 recipes.remove(sensorDaylight);
