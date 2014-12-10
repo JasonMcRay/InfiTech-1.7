@@ -23,13 +23,13 @@ You can also "clean" the dust by smelting it to ingot and then crushing it to du
     <text x="20" y="5" bold="true">Distribution Information</text>
     <text x="0" y="30" italic="true" underline="true">Copper:</text>
     <text x="0" y="45" wrap="200">Height(Y): 60 - 120
-Dimensions: Overworld, Nether, End</text>
+Dimensions: Overworld, Nether, End, Moon, Mars</text>
 <text x="0" y="70" italic="true" underline="true">Tin:</text>
     <text x="0" y="85" wrap="200">Height(Y): 60 - 120
-Dimensions: Overworld, Nether, End</text>
+Dimensions: Overworld, Nether, End, Moon, Mars</text>
 <text x="0" y="110" italic="true" underline="true">Bismuth:</text>
     <text x="0" y="125" wrap="200">Height(Y): 80 - 120
-Dimensions: Overworld, Nether</text>
+Dimensions: Overworld, Nether, Moon, Mars</text>
 <text x="0" y="150" italic="true" underline="true">Coal:</text>
     <text x="0" y="165" wrap="200">Height(Y): 60 - 100
 Dimensions: Overworld</text>
@@ -39,31 +39,89 @@ Dimensions: Overworld</text>
     <text x="20" y="5" bold="true">Distribution Information</text>
     <text x="0" y="30" italic="true" underline="true">Iron:</text>
     <text x="0" y="45" wrap="200">Height(Y): 40 - 80
-Dimensions: Overworld, Nether, End</text>
+Dimensions: Overworld, Nether, End, Moon, Mars</text>
 <text x="0" y="70" italic="true" underline="true">Lead:</text>
     <text x="0" y="85" wrap="200">Height(Y): 40 - 80
-Dimensions: Overworld, Nether, End</text>
+Dimensions: Overworld, Nether, End, Moon, Mars</text>
 <text x="0" y="110" italic="true" underline="true">Zinc:</text>
     <text x="0" y="125" wrap="200">Height(Y): 30 - 60
-Dimensions: Overworld, Nether, End</text>
+Dimensions: Overworld, Nether, End, Moon, Mars</text>
 <text x="0" y="150" italic="true" underline="true">Gold:</text>
     <text x="0" y="165" wrap="200">Height(Y): 20 - 40
-Dimensions: Overworld, Nether, End</text>
+Dimensions: Overworld, Nether, End, Moon, Mars</text>
     </page>
     <page>
     <text x="55" y="-5" bold="true">Small Ores</text>
     <text x="20" y="5" bold="true">Distribution Information</text>
     <text x="0" y="30" italic="true" underline="true">Silver:</text>
     <text x="0" y="45" wrap="200">Height(Y): 20 - 40
-Dimensions: Overworld, Nether, End</text>
+Dimensions: Overworld, Nether, End, Moon, Mars</text>
 <text x="0" y="70" italic="true" underline="true">Nickel:</text>
     <text x="0" y="85" wrap="200">Height(Y): 20 - 40
-Dimensions: Overworld, Nether, End</text>
+Dimensions: Overworld, Nether, End, Moon, Mars</text>
 <text x="0" y="110" italic="true" underline="true">Lapis:</text>
     <text x="0" y="125" wrap="200">Height(Y): 20 - 40
 Dimensions: Overworld</text>
 <text x="0" y="150" italic="true" underline="true">Diamond:</text>
     <text x="0" y="165" wrap="200">Height(Y): 5 - 10
+Dimensions: Overworld, Nether, Moon, Mars</text>
+    </page>
+    <page>
+    <text x="55" y="-5" bold="true">Small Ores</text>
+    <text x="20" y="5" bold="true">Distribution Information</text>
+    <text x="0" y="30" italic="true" underline="true">Emerald:</text>
+    <text x="0" y="165" wrap="200">Height(Y): 5 - 250
+Dimensions: Overworld, Nether</text>
+<text x="0" y="70" italic="true" underline="true">Ruby:</text>
+    <text x="0" y="85" wrap="200">Height(Y): 5 - 250
+Dimensions: Overworld, Nether</text>
+<text x="0" y="110" italic="true" underline="true">Sapphire:</text>
+    <text x="0" y="125" wrap="200">Height(Y): 5 - 250
+Dimensions: Overworld, Nether</text>
+<text x="0" y="150" italic="true" underline="true">Green Sapphire:</text>
+    <text x="0" y="165" wrap="200">Height(Y): 5 - 250
+Dimensions: Overworld, Nether</text>
+    </page>
+    <page>
+    <text x="55" y="-5" bold="true">Small Ores</text>
+    <text x="20" y="5" bold="true">Distribution Information</text>
+    <text x="0" y="30" italic="true" underline="true">Olivine:</text>
+    <text x="0" y="165" wrap="200">Height(Y): 5 - 250
+Dimensions: Overworld, Nether</text>
+<text x="0" y="70" italic="true" underline="true">Tanzanite:</text>
+    <text x="0" y="85" wrap="200">Height(Y): 5 - 250
+Dimensions: Overworld, Nether</text>
+<text x="0" y="110" italic="true" underline="true">Amethyst:</text>
+    <text x="0" y="125" wrap="200">Height(Y): 5 - 250
+Dimensions: Overworld, Nether</text>
+<text x="0" y="150" italic="true" underline="true">Opal:</text>
+    <text x="0" y="165" wrap="200">Height(Y): 5 - 250
+Dimensions: Overworld, Nether</text>
+    </page>
+    <page>
+    <text x="55" y="-5" bold="true">Small Ores</text>
+    <text x="20" y="5" bold="true">Distribution Information</text>
+    <text x="0" y="30" italic="true" underline="true">Jasper:</text>
+    <text x="0" y="165" wrap="200">Height(Y): 5 - 250
+Dimensions: Overworld, Nether</text>
+<text x="0" y="70" italic="true" underline="true">Blue Topaz:</text>
+    <text x="0" y="85" wrap="200">Height(Y): 5 - 250
+Dimensions: Overworld, Nether</text>
+<text x="0" y="110" italic="true" underline="true">Amber:</text>
+    <text x="0" y="125" wrap="200">Height(Y): 5 - 250
+Dimensions: Overworld, Nether</text>
+<text x="0" y="150" italic="true" underline="true">Fool's Ruby:</text>
+    <text x="0" y="165" wrap="200">Height(Y): 5 - 250
+Dimensions: Overworld, Nether</text>
+    </page>
+    <page>
+    <text x="55" y="-5" bold="true">Small Ores</text>
+    <text x="20" y="5" bold="true">Distribution Information</text>
+    <text x="0" y="30" italic="true" underline="true">Red Garnet:</text>
+    <text x="0" y="165" wrap="200">Height(Y): 5 - 250
+Dimensions: Overworld, Nether</text>
+<text x="0" y="70" italic="true" underline="true">Yellow Garnet:</text>
+    <text x="0" y="85" wrap="200">Height(Y): 5 - 250
 Dimensions: Overworld, Nether</text>
     </page>
     <page>
@@ -71,13 +129,13 @@ Dimensions: Overworld, Nether</text>
     <text x="20" y="5" bold="true">Distribution Information</text>
     <text x="0" y="30" italic="true" underline="true">Redstone:</text>
     <text x="0" y="45" wrap="200">Height(Y): 5 - 20
-Dimensions: Overworld, Nether</text>
+Dimensions: Overworld, Nether, Moon, Mars</text>
 <text x="0" y="70" italic="true" underline="true">Platinum:</text>
     <text x="0" y="85" wrap="200">Height(Y): 20 - 40
-Dimensions: End</text>
+Dimensions: End, Mars</text>
 <text x="0" y="110" italic="true" underline="true">Iridium:</text>
     <text x="0" y="125" wrap="200">Height(Y): 20 - 40
-Dimensions: End</text>
+Dimensions: End, Mars</text>
 <text x="0" y="150" italic="true" underline="true">NetherQuartz:</text>
     <text x="0" y="165" wrap="200">Height(Y): 30 - 120
 Dimensions: Nether</text>
@@ -98,12 +156,12 @@ Dimensions: Overworld</text>
     <page>
     </page>
     <page>
-    <text x="55" y="-5" bold="true">Regular Ores</text>
+    <text x="55" y="-5" bold="true">Regular Ores (mixed veins)</text>
     <text x="20" y="5" bold="true">Distribution Information</text>
     <text x="0" y="30" italic="true" underline="true">Naquadah:</text>
     <text x="0" y="45" wrap="200">Height(Y): 10 - 60
 Vein Size: max 80x80
-Dimensions: End</text>
+Dimensions: End, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="80" italic="true" underline="true">Lignite:</text>
     <text x="0" y="95" wrap="200">Height(Y): 50 - 130
 Vein Size: max 80x80
@@ -119,27 +177,27 @@ Dimensions: Overworld</text>
     <text x="0" y="30" italic="true" underline="true">Magnetite:</text>
     <text x="0" y="45" wrap="200">Height(Y): 50 - 120
 Vein Size: max 80x80
-Dimensions: Overworld, Nether</text>
+Dimensions: Overworld, Nether, Moon, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="80" italic="true" underline="true">Gold:</text>
     <text x="0" y="95" wrap="200">Height(Y): 60 - 80
 Vein Size: max 80x80
-Dimensions: Overworld</text>
+Dimensions: Overworld, Moon, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="130" italic="true" underline="true">Iron:</text>
     <text x="0" y="145" wrap="200">Height(Y): 10 - 40
 Vein Size: max 64x64
-Dimensions: Overworld, Nether</text>
+Dimensions: Overworld, Nether, Moon, Mars, Asteroids, End Asteroids</text>
     </page>
     <page>
     <text x="55" y="-5" bold="true">Regular Ores</text>
     <text x="20" y="5" bold="true">Distribution Information</text>
     <text x="0" y="30" italic="true" underline="true">Cassiterite:</text>
-    <text x="0" y="45" wrap="200">Height(Y): 80 - 120
+    <text x="0" y="45" wrap="200">Height(Y): 40 - 120
 Vein Size: max 64x64
-Dimensions: Overworld, End</text>
+Dimensions: Overworld, End, Moon, Mars, Asteriods, End Asteroids</text>
     <text x="0" y="80" italic="true" underline="true">Tetradehrite:</text>
     <text x="0" y="95" wrap="200">Height(Y): 80 - 120
 Vein Size: max 64x64
-Dimensions: Overworld, Nether</text>
+Dimensions: Overworld, Nether, Moon, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="130" italic="true" underline="true">NetherQuartz:</text>
     <text x="0" y="145" wrap="200">Height(Y): 40 - 80
 Vein Size: max 64x64
@@ -151,15 +209,15 @@ Dimensions: Nether</text>
     <text x="0" y="30" italic="true" underline="true">Sulfur:</text>
     <text x="0" y="45" wrap="200">Height(Y): 5 - 20
 Vein Size: max 64x64
-Dimensions: Overworld, Nether</text>
+Dimensions: Nether, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="80" italic="true" underline="true">Copper:</text>
     <text x="0" y="95" wrap="200">Height(Y): 10 - 30
 Vein Size: max 64x64
-Dimensions: Overworld, Nether</text>
+Dimensions: Overworld, Nether, Moon, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="130" italic="true" underline="true">Bauxite:</text>
     <text x="0" y="145" wrap="200">Height(Y): 50 - 90
 Vein Size: max 64x64
-Dimensions: Overworld</text>
+Dimensions: Overworld, Moon, Mars, Asteroids, End Asteroids</text>
     </page>
     <page>
     <text x="55" y="-5" bold="true">Regular Ores</text>
@@ -167,94 +225,102 @@ Dimensions: Overworld</text>
     <text x="0" y="30" italic="true" underline="true">Salts:</text>
     <text x="0" y="45" wrap="200">Height(Y): 50 - 60
 Vein Size: max 64x64
-Dimensions: Overworld</text>
+Dimensions: Overworld, Moon, Mars</text>
     <text x="0" y="80" italic="true" underline="true">Redstone:</text>
     <text x="0" y="95" wrap="200">Height(Y): 10 - 40
 Vein Size: max 64x64
-Dimensions: Overworld, Nether</text>
+Dimensions: Overworld, Nether, Moon, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="130" italic="true" underline="true">Nickel:</text>
     <text x="0" y="145" wrap="200">Height(Y): 10 - 40
 Vein Size: max 48x48
-Dimensions: Overworld, Nether, End</text>
+Dimensions: Overworld, Nether, End, Moon, Mars, Asteroids, End Asteroids</text>
     </page>
     <page>
     <text x="55" y="-5" bold="true">Regular Ores</text>
     <text x="20" y="5" bold="true">Distribution Information</text>
     <text x="0" y="30" italic="true" underline="true">Platinum:</text>
     <text x="0" y="45" wrap="200">Height(Y): 40 - 50
-Vein Size: max 64x64
-Dimensions: Overworld, End</text>
+Vein Size: max 48x48
+Dimensions: Overworld, End, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="80" italic="true" underline="true">PitchBlende:</text>
     <text x="0" y="95" wrap="200">Height(Y): 10 - 40
-Vein Size: max 64x64
-Dimensions: Overworld</text>
+Vein Size: max 48x48
+Dimensions: Overworld, Moon, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="130" italic="true" underline="true">Plutonium:</text>
     <text x="0" y="145" wrap="200">Height(Y): 20 - 30
-Vein Size: max 64x64
-Dimensions: Overworld</text>
+Vein Size: max 48x48
+Dimensions: Overworld, Moon, Mars, Asteroids, End Asteroids</text>
     </page>
     <page>
     <text x="55" y="-5" bold="true">Regular Ores</text>
     <text x="20" y="5" bold="true">Distribution Information</text>
     <text x="0" y="30" italic="true" underline="true">Molybdenum:</text>
     <text x="0" y="45" wrap="200">Height(Y): 20 - 50
-Vein Size: max 64x64
-Dimensions: Overworld, End</text>
+Vein Size: max 48x48
+Dimensions: Overworld, End, Moon, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="80" italic="true" underline="true">Tungstate:</text>
     <text x="0" y="95" wrap="200">Height(Y): 20 - 50
-Vein Size: max 64x64
-Dimensions: Overworld, End</text>
+Vein Size: max 48x48
+Dimensions: Overworld, End, Moon, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="130" italic="true" underline="true">Sapphire:</text>
     <text x="0" y="145" wrap="200">Height(Y): 10 - 40
-Vein Size: max 64x64
-Dimensions: Overworld</text>
+Vein Size: max 48x48
+Dimensions: Overworld, Moon, Mars, Asteroids, End Asteroids</text>
     </page>
     <page>
     <text x="55" y="-5" bold="true">Regular Ores</text>
     <text x="20" y="5" bold="true">Distribution Information</text>
     <text x="0" y="30" italic="true" underline="true">Manganese:</text>
     <text x="0" y="45" wrap="200">Height(Y): 20 - 30
-Vein Size: max 64x64
-Dimensions: Overworld, End</text>
+Vein Size: max 48x48
+Dimensions: Overworld, End, Moon, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="80" italic="true" underline="true">Quartz:</text>
     <text x="0" y="95" wrap="200">Height(Y): 40 - 80
-Vein Size: max 64x64
-Dimensions: Overworld</text>
+Vein Size: max 48x48
+Dimensions: Overworld, Moon, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="130" italic="true" underline="true">Diamond:</text>
     <text x="0" y="145" wrap="200">Height(Y): 5 - 20
-Vein Size: max 64x64
-Dimensions: Overworld</text>
+Vein Size: max 48x48
+Dimensions: Overworld, Moon, Mars, Asteroids, End Asteroids</text>
     </page>
     <page>
     <text x="55" y="-5" bold="true">Regular Ores</text>
     <text x="20" y="5" bold="true">Distribution Information</text>
     <text x="0" y="30" italic="true" underline="true">Olivine:</text>
     <text x="0" y="45" wrap="200">Height(Y): 10 - 40
-Vein Size: max 64x64
-Dimensions: Overworld, End</text>
+Vein Size: max 48x48
+Dimensions: Overworld, End, Moon, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="80" italic="true" underline="true">Apatite:</text>
     <text x="0" y="95" wrap="200">Height(Y): 40 - 60
-Vein Size: max 64x64
+Vein Size: max 48x48
 Dimensions: Overworld</text>
     <text x="0" y="130" italic="true" underline="true">Galena:</text>
     <text x="0" y="145" wrap="200">Height(Y): 30 - 60
-Vein Size: max 64x64
-Dimensions: Overworld</text>
+Vein Size: max 48x48
+Dimensions: Overworld, Moon, Mars, Asteroids, End Asteroids</text>
     </page>
     <page>
     <text x="55" y="-5" bold="true">Regular Ores</text>
     <text x="20" y="5" bold="true">Distribution Information</text>
     <text x="0" y="30" italic="true" underline="true">Lapis:</text>
     <text x="0" y="45" wrap="200">Height(Y): 20 - 50
-Vein Size: max 64x64
-Dimensions: Overworld, End</text>
+Vein Size: max 48x48
+Dimensions: Overworld, End, Moon, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="80" italic="true" underline="true">Beryllium:</text>
     <text x="0" y="95" wrap="200">Height(Y): 5 - 30
-Vein Size: max 64x64
-Dimensions: Overworld, End</text>
+Vein Size: max 48x48
+Dimensions: Overworld, End, Moon, Mars, Asteroids, End Asteroids</text>
     <text x="0" y="130" italic="true" underline="true">Soapstone:</text>
     <text x="0" y="145" wrap="200">Height(Y): 10 - 40
-Vein Size: max 64x64
-Dimensions: Overworld, Nether, End</text>
+Vein Size: max 48x48
+Dimensions: Overworld, Moon, Mars</text>
+    </page>
+    <page>
+    <text x="55" y="-5" bold="true">Regular Ores</text>
+    <text x="20" y="5" bold="true">Distribution Information</text>
+    <text x="0" y="30" italic="true" underline="true">Monazite:</text>
+    <text x="0" y="45" wrap="200">Height(Y): 20 - 40
+Vein Size: max 48x48
+Dimensions: Overworld, Moon, Mars, Asteroids, End Asteroids</text>
     </page>
 </book>
