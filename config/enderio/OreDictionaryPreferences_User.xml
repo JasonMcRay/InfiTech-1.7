@@ -1,0 +1,47 @@
+<!-- 
+Entries in this file take precedence over the values in the core file
+ -->
+<OreDictionaryPreferences>
+
+  <preference oreDictionary="dustCoal">
+    <itemstack modID="IC2" itemName="itemDust" itemMeta="2" />
+    <itemStack modID="ThermalFoundation" itemName="material" itemMeta="2" />
+    <itemStack modID="EnderIO" itemName="itemPowderIngot" itemMeta="0" />
+  </preference>
+  
+  <preference oreDictionary="dustIron">
+    <itemStack modID="IC2" itemName="itemDust" itemMeta="5" />
+    <itemStack modID="ThermalFoundation" itemName="material" itemMeta="0" />
+    <itemStack modID="EnderIO" itemName="itemPowderIngot" itemMeta="1" />
+  </preference>
+  
+  <preference oreDictionary="dustGold">
+    <itemStack modID="IC2" itemName="itemDust" itemMeta="4" />
+    <itemStack modID="ThermalFoundation" itemName="material" itemMeta="1" />
+    <itemStack modID="EnderIO" itemName="itemPowderIngot" itemMeta="2" />
+  </preference>
+  
+  <preference oreDictionary="dustCopper">
+    <itemStack modID="IC2" itemName="itemDust" itemMeta="3" />
+    <itemStack modID="ThermalFoundation" itemName="material" itemMeta="32" />
+    <itemStack modID="EnderIO" itemName="itemPowderIngot" itemMeta="3" />
+  </preference>
+  
+  <preference oreDictionary="dustTin">
+    <itemStack modID="IC2" itemName="itemDust" itemMeta="7" />
+    <itemStack modID="ThermalFoundation" itemName="material" itemMeta="33" />
+    <itemStack modID="EnderIO" itemName="itemPowderIngot" itemMeta="4" />
+  </preference>
+  
+  <preference oreDictionary="dustSulfur">
+    <itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="2022" />
+    <itemStack modID="ThermalFoundation" itemName="material" itemMeta="16" />
+  </preference>
+  
+  <preference oreDictionary="ingotBronze">
+    <itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11300" />
+    <itemStack modID="ThermalFoundation" itemName="material" itemMeta="73" />
+    <itemStack modID="TConstruct" itemName="materials" itemMeta="13" />    
+  </preference>
+  
+</OreDictionaryPreferences>
