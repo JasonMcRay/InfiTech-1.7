@@ -21,12 +21,16 @@ Updated Mods:
 - WailaPlugins to 0.0.1-10
 - Yampst-InfiTech 2 to 2.0.4
 
+Config Changes:
+- 1x Blaze Rod = 1x Blaze Powder
+- 1x Blaze Rod + Mortar = 2x Blaze Powder
+
 Fixes:
 - Dynamism Tablet crash
 
 Currently unable to update Forestry to latest version, since it crashes with latest Thaumic Tinkerer. Fix for TT is not available because TT dev has been moved to latest Thaumcraft (Beta). So in short, waiting for Thaumcraft public update
 
-2.0.3
+2.0.3 - Not released
 
 Updated Mods:
 - Automagy to 0.16
