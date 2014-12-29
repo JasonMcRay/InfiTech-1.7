@@ -108,6 +108,7 @@ var blockAluminium = <ore:blockAluminium>;
 var blockAluminiumGC = <GalacticraftCore:tile.gcBlockCore:11>;
 var blockMeteoricIron = <GalacticraftCore:tile.gcBlockCore:12>;
 var blockDesh = <GalacticraftMars:tile.mars:8>;
+var plateDesh = <ore:plateDesh>;
 
 # Items/blocks removal
 recipes.remove(blockCopperGC);
@@ -164,7 +165,7 @@ recipes.addShaped(plateNailedT2, [
 	[null, boltTungsten, boltTungsten]]);
 recipes.addShaped(plateNailedT3, [
 	[null, boltTungstenSteel, boltTungstenSteel],
-	[hammer, plateHeavyDutyT2, compressedDesh],
+	[hammer, plateHeavyDutyT2, plateDesh],
 	[null, boltTungstenSteel, boltTungstenSteel]]);
     
 # Recipe Changes
