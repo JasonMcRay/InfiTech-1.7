@@ -126,9 +126,9 @@ recipes.addShaped(machineChassis, [
 	[ironBars, plateSteel, ironBars]]);
 recipes.remove(wrenchYeta);
 recipes.addShaped(wrenchYeta, [
-    [ingotElectricalSteel, null, ingotElectricalSteel],
-    [null, GTGearStone, null],
-    [null, ingotElectricalSteel, null]]);
+    [ingotIron, null, ingotIron],
+    [dustSilicon, GTGearStone, dustSilicon],
+    [null, ingotIron, null]]);
 
 # GT/IC2 Integration
 //BlastFurnace.addRecipe([output1, output2], input1, input2, durationTicks, euPerTick, temperature);
