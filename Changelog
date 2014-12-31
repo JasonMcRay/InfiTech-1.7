@@ -44,8 +44,28 @@ Config Changes/Fixes:
 
 Note: There are few items, that will be removed when you update from 2.0.6 to 2.0.7. It doesnt necesary mean they are gone from game. But already placed crafted ones will be 100% gone.
 List of them is here:
-
-
+- chisel:present
+- chisel:tile.autoChisel
+- chisel:tile.autoChisel
+- chisel:present
+- ihl:chargerEjectorItem
+- ihl:ironWorkbenchItem
+- ihl:IHLDriverItem
+- ihl:glassBoxItem
+- appliedenergistics2:item.ToolNetherQuartzSpade
+- appliedenergistics2:item.ToolEraser
+- appliedenergistics2:item.ToolDebugCard
+- appliedenergistics2:item.ToolMeteoritePlacer
+- appliedenergistics2:item.ToolNetherQuartzSword
+- appliedenergistics2:item.ToolCertusQuartzSword
+- appliedenergistics2:item.ToolReplicatorCard
+- appliedenergistics2:item.ToolNetherQuartzHoe
+- appliedenergistics2:item.ToolCertusQuartzAxe
+- appliedenergistics2:item.ToolCertusQuartzPickaxe
+- appliedenergistics2:item.ToolCertusQuartzHoe
+- appliedenergistics2:item.ToolCertusQuartzSpade
+- appliedenergistics2:item.ToolNetherQuartzPickaxe
+- appliedenergistics2:item.ToolNetherQuartzAxe
 
 2.0.6
 
