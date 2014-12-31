@@ -64,10 +64,16 @@ var alloyVibrant = <EnderIO:itemAlloy:2>;
 var controllerZLogic = <EnderIO:itemFrankenSkull:1>;
 var hoeElectrum = <gregtech:gt.metatool.01:8>.withTag({"GT.ToolStats": {SecondaryMaterial: "Wood", MaxDamage: 6400 as long, PrimaryMaterial: "Electrum"}});
 var hoeElectrical = <IC2:itemToolHoe:*>;
+var smallPileDarkAshes = <gregtech:gt.metaitem.01:1816>;
+var dustObsidian = <IC2:itemDust:11>;
+var ingotDarkSteel = <EnderIO:itemAlloy:6>;
+var dustSilicon = <gregtech:gt.metaitem.01:2020>;
+
 
 # Items/Blocks Removal
 recipes.remove(EIGearBasic);
 NEI.hide(EIGearBasic);
+<ore:itemSilicon>.remove(EISilicon);
 
 # Recipe Tweaks
 recipes.remove(travelAnchor);
@@ -119,16 +125,17 @@ recipes.addShaped(machineChassis, [
 	[ironBars, plateSteel, ironBars]]);
 recipes.remove(wrenchYeta);
 recipes.addShaped(wrenchYeta, [
-    [ingotElectricalSteel, null, ingotElectricalSteel],
-    [null, GTGearStone, null],
-    [null, ingotElectricalSteel, null]]);
+    [ingotIron, null, ingotIron],
+    [dustSilicon, GTGearStone, dustSilicon],
+    [null, ingotIron, null]]);
 
-    
 # GT/IC2 Integration
+//BlastFurnace.addRecipe([output1, output2], input1, input2, durationTicks, euPerTick, temperature);
 recipes.remove(vibrantCrystal);
 ChemicalReactor.addRecipe(vibrantCrystal, nuggetVibrant * 8, emerald, 400);
 recipes.remove(pulsatingCrystal);
 ChemicalReactor.addRecipe(pulsatingCrystal, nuggetPulsating * 8, diamond, 400);
+BlastFurnace.addRecipe(ingotDarkSteel, ingotElectricalSteel, dustObsidian, 4000, 480, 2000);
 
 # Specialities
 NEI.addEntry(vibrantCrystal);

@@ -27,14 +27,14 @@ ore dictionary.
 
 <AlloySmelterRecipes>
 <recipeGroup name="EnderIO">
-    <recipe name="Dark Steel" energyCost="20000">
+    <recipe name="Dark Steel" />
+    <recipe name="Redstone Alloy" energyCost="10000">
       <input>
-        <itemStack modID="minecraft" itemName="iron_ingot"/>         
-        <itemStack oreDictionary="dustCoal" /> <!--  coal dust -->
-        <itemStack modID="minecraft" itemName="obsidian"/>
+        <itemStack modID="minecraft" itemName="redstone" />
+        <itemStack oreDictionary="itemSilicon" /> <!-- Silicon -->
       </input>
       <output>
-        <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="6" exp="0.5"/> 
+        <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="3" exp="0.5" />
       </output>
     </recipe>
 </recipeGroup>
@@ -120,6 +120,25 @@ ore dictionary.
       </input>
       <output>
         <itemStack modID="minecraft" itemName="coal" itemMeta="1"/>
+      </output>
+    </recipe>
+    <recipe name="Charcoal from 2 Logs" energyCost="14000">
+      <input>
+        <itemStack oreDictionary="logWood"/>
+        <itemStack oreDictionary="logWood"/>
+      </input>
+      <output>
+        <itemStack modID="minecraft" itemName="coal" itemMeta="1" number="2"/>
+      </output>
+    </recipe>
+    <recipe name="Charcoal from 3 Logs" energyCost="21000">
+      <input>
+        <itemStack oreDictionary="logWood"/>
+        <itemStack oreDictionary="logWood"/>
+        <itemStack oreDictionary="logWood"/>
+      </input>
+      <output>
+        <itemStack modID="minecraft" itemName="coal" itemMeta="1" number="3"/>
       </output>
     </recipe>
 </recipeGroup>
