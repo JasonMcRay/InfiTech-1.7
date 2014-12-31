@@ -108,7 +108,6 @@ var blockAluminium = <ore:blockAluminium>;
 var blockAluminiumGC = <GalacticraftCore:tile.gcBlockCore:11>;
 var blockMeteoricIron = <GalacticraftCore:tile.gcBlockCore:12>;
 var blockDesh = <GalacticraftMars:tile.mars:8>;
-var plateDesh = <ore:plateDesh>;
 
 # Items/blocks removal
 recipes.remove(blockCopperGC);
@@ -153,6 +152,16 @@ recipes.remove(titaniumPickaxe);
 NEI.hide(titaniumPickaxe);
 recipes.remove(titaniumSword);
 NEI.hide(titaniumSword);
+recipes.remove(deshHoe);
+NEI.hide(deshHoe);
+recipes.remove(deshAxe);
+NEI.hide(deshAxe);
+recipes.remove(deshSword);
+NEI.hide(deshSword);
+recipes.remove(deshShovel);
+NEI.hide(deshShovel);
+recipes.remove(deshPickaxe);
+NEI.hide(deshPickaxe);
 
 # Recipe Adding
 recipes.addShaped(plateNailed, [
@@ -169,31 +178,6 @@ recipes.addShaped(plateNailedT3, [
 	[null, boltTungstenSteel, boltTungstenSteel]]);
     
 # Recipe Changes
-recipes.remove(deshHoe);
-recipes.addShaped(deshHoe, [
-	[plateDesh, ingotDesh, hammer],
-	[file, stickDesh, null],
-	[null, stickDesh, null]]);
-recipes.remove(deshAxe);
-recipes.addShaped(deshAxe, [
-	[plateDesh, ingotDesh, hammer],
-	[plateDesh, stickDesh, null],
-	[file, stickDesh, null]]);
-recipes.remove(deshSword);
-recipes.addShaped(deshSword, [
-	[null, plateDesh, null],
-	[file, plateDesh, hammer],
-	[null, stickDesh]]);
-recipes.remove(deshShovel);
-recipes.addShaped(deshShovel, [
-	[file, plateDesh, hammer],
-	[null, stickDesh, null],
-	[null, stickDesh, null]]);
-recipes.remove(deshPickaxe);
-recipes.addShaped(deshPickaxe, [
-	[plateDesh, ingotDesh, ingotDesh],
-	[file, stickDesh, hammer],
-	[null, stickDesh, null]]);
 recipes.remove(canisterTin);
 recipes.addShaped(canisterTin, [
 	[plateTin, null, plateTin],
