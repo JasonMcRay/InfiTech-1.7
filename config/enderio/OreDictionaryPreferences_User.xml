@@ -3,7 +3,7 @@ Entries in this file take precedence over the values in the core file
  -->
 <OreDictionaryPreferences>
 
-  <<!-- Dusts -->
+  <!-- Dusts -->
 
   <preference oreDictionary="dustCoal">
     <itemStack modID="IC2" itemName="itemDust" itemMeta="2" />
@@ -106,7 +106,7 @@ Entries in this file take precedence over the values in the core file
     <itemStack modID="TConstruct" itemName="materials" itemMeta="11" />    
   </preference>
   
-  <preference oreDictionary="ingotAluminuim">
+  <preference oreDictionary="ingotAluminium">
     <itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11019" />
     <itemStack modID="TConstruct" itemName="materials" itemMeta="11" />    
   </preference>

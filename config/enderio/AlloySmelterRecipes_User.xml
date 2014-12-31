@@ -39,6 +39,8 @@ ore dictionary.
     </recipe>
 </recipeGroup>
 
+<recipeGroup name="Thermal Expansion" enabled="false"/>
+
 <recipeGroup name="GregTech">
   	<recipe name="Bronze" energyCost="7500">
 	  <input>
