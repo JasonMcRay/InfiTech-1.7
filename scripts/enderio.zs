@@ -74,6 +74,7 @@ var dustSilicon = <gregtech:gt.metaitem.01:2020>;
 recipes.remove(EIGearBasic);
 NEI.hide(EIGearBasic);
 <ore:itemSilicon>.remove(EISilicon);
+furnace.remove(<*>, EISilicon);
 
 # Recipe Tweaks
 recipes.remove(travelAnchor);
@@ -140,7 +141,7 @@ BlastFurnace.addRecipe(ingotDarkSteel, ingotElectricalSteel, dustObsidian, 4000,
 # Specialities
 NEI.addEntry(vibrantCrystal);
 NEI.addEntry(pulsatingCrystal);
-NEI.addEntry(EISilicon);
+NEI.hide(EISilicon);
 
 # Add recipe to craft enderman head between EnderIO and HEE
 recipes.addShapeless(EIOHead, [HEEHead]);
