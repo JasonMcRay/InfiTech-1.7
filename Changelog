@@ -9,7 +9,7 @@ Updated Mods:
 - Chisel to 2.2.1
 - Computronics to 2.2.1
 - CustomOreGen to 1.2.17
-- EnderIO to 2.2.6.316
+- EnderIO to 2.2.6.317
 - Extra Cells to 2.2.23b43
 - Galacticraft to 3.0.6.250
 - GregTech to 5.07.05
@@ -41,6 +41,10 @@ Config Changes/Fixes:
 - Dark Steel is only craftable in Blast Furnace
 - You can now use 1, 2 or all 3 slots for smelting Wood into Charcoal inside eIO Alloy Smelter. Energy and time is still same overall.
 - Changed Yeta Wrench recipe to be craftable before you will have Blast Furnace.
+
+Note: There are few items, that will be removed when you update from 2.0.6 to 2.0.7. It doesnt necesary mean they are gone from game. But already placed crafted ones will be 100% gone.
+List of them is here:
+
 
 
 2.0.6
