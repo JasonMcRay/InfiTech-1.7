@@ -1,3 +1,48 @@
+2.0.7
+
+Updated Mods:
+- AppleCore to 1.0.2
+- Applied Energistics 2 to RV2 beta 6
+- AsieLib to 0.3.8
+- Binnie Mods to pre1
+- Carpenter's Blocks to 3.3.4.1
+- Chisel to 2.2.1
+- Computronics to 2.2.1
+- CustomOreGen to 1.2.17
+- EnderIO to 2.2.6.316
+- Extra Cells to 2.2.23b43
+- Galacticraft to 3.0.6.250
+- GregTech to 5.07.05
+- HungerOverhaul to beta 4
+- IHL Tools and Machines to 0.524
+- Malisis Doors to 1.3.3
+- Minechem to 5.0.5.350
+- OpenBlocks to 1.3.529
+- OpenModsLib to 0.6.283
+- PFAA to 1.5.1-49
+- PneumaticCraft to 1.5.1-49
+- RefinedRelocationt o 1.0.7c
+- SGCraft to 1.9.0
+- SpiceOfLife to 1.2.3
+- ttCore to 0.1.0-53
+- WailaHarvestability to 1.1.1
+- Yampst-Infitech 2 to 2.0.7
+
+Config Changes/Fixes:
+- Conversion ratios for PneumaticCraft (1EU = 8RF)
+- Fixed crafting of T3 Nailed Plates
+- Every harvest of crops will yield 1 seed (to help those poor Golem farmers with replanting, since they can't be asked to simply right-click the crop)
+- Fixed Typos in EnderIo oredict preferences
+- Disabled all TE smelting recipes in eIO
+- Desh Tools recipes from galacticraft are gone. They are all replaced by GT Meta Tools
+- Fixed Jabba Structural upgrades not using oreDictionary properly (its temporary fix with the Minetweaker, script will be changed when it will be "fixed" in Jabba)
+- EnderIO silicon is no longer obtainable
+- Processing Redstone Ore in SAG Mill will give 1x Silicon dust (25%)
+- Dark Steel is only craftable in Blast Furnace
+- You can now use 1, 2 or all 3 slots for smelting Wood into Charcoal inside eIO Alloy Smelter. Energy and time is still same overall.
+- Changed Yeta Wrench recipe to be craftable before you will have Blast Furnace.
+
+
 2.0.6
 
 Updated Mods:
