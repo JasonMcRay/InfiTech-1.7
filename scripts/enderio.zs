@@ -68,6 +68,13 @@ var smallPileDarkAshes = <gregtech:gt.metaitem.01:1816>;
 var dustObsidian = <IC2:itemDust:11>;
 var ingotDarkSteel = <EnderIO:itemAlloy:6>;
 var dustSilicon = <gregtech:gt.metaitem.01:2020>;
+var conduitFluid = <EnderIO:itemLiquidConduit>;
+var glass = <ore:blockGlass>;
+var gravel = <minecraft:gravel>;
+var sand = <minecraft:sand>;
+var clay = <minecraft:clay_ball>;
+var binderComposite = <EnderIO:itemMaterial:2>;
+
 
 
 # Items/Blocks Removal
@@ -129,6 +136,16 @@ recipes.addShaped(wrenchYeta, [
     [ingotIron, null, ingotIron],
     [dustSilicon, GTGearStone, dustSilicon],
     [null, ingotIron, null]]);
+recipes.remove(conduitFluid);
+recipes.addShaped(conduitFluid * 4, [
+    [conduitBinder, conduitBinder, conduitBinder],
+    [glass, glass, glass],
+    [conduitBinder, conduitBinder, conduitBinder]]);
+recipes.remove(binderComposite);
+recipes.addShaped(binderComposite * 4, [
+    [gravel, gravel, gravel],
+    [sand, clay, sand],
+    [gravel, gravel, gravel]]);
 
 # GT/IC2 Integration
 //BlastFurnace.addRecipe([output1, output2], input1, input2, durationTicks, euPerTick, temperature);
