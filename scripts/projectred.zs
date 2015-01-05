@@ -41,6 +41,10 @@ var drawPlate = <ProjRed|Core:projectred.core.drawplate>;
 var wireIron = <gregtech:gt.blockmachines:1300>;
 var wireCopper = <gregtech:gt.blockmachines:1360>;
 var wireGold = <gregtech:gt.blockmachines:1420>;
+var wireFineIron = <ore:wireFineIron>;
+var wireFineCopper = <ore:wireFineCopper>;
+var wireFineGold = <ore:wireFineGold>;
+var ingotIron = <ore:ingotIron>;
 
 # Items/Blocks Removal
 recipes.remove(PRaxePeridot);
@@ -94,8 +98,17 @@ NEI.hide(drawPlate);
 
 # Recipe Tweaks
 recipes.remove(coilIron);
-Wiremill.addRecipe(coilIron, wireIron * 2, 100, 4);
+recipes.addShaped(coilIron, [
+    [wireFineIron, wireFineIron, wireFineIron],
+    [wireFineIron, ingotIron, wireFineIron],
+    [wireFineIron, wireFineIron, wireFineIron]]);
 recipes.remove(coilCopper);
-Wiremill.addRecipe(coilCopper, wireCopper * 2, 100, 4);
+recipes.addShaped(coilCopper, [
+    [wireFineCopper, wireFineCopper, wireFineCopper],
+    [wireFineCopper, ingotIron, wireFineCopper],
+    [wireFineCopper, wireFineCopper, wireFineCopper]]);
 recipes.remove(coilGold);
-Wiremill.addRecipe(coilGold, wireGold * 2, 100, 4);
+recipes.addShaped(coilGold, [
+    [wireFineGold, wireFineGold, wireFineGold],
+    [wireFineGold, ingotIron, wireFineGold],
+    [wireFineGold, wireFineGold, wireFineGold]]);
