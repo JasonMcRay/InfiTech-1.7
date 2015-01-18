@@ -108,13 +108,14 @@ var blockAluminium = <ore:blockAluminium>;
 var blockAluminiumGC = <GalacticraftCore:tile.gcBlockCore:11>;
 var blockMeteoricIron = <GalacticraftCore:tile.gcBlockCore:12>;
 var blockDesh = <GalacticraftMars:tile.mars:8>;
+var pumpElectricLV = <gregtech:gt.metaitem.01:32610>;
+var glass = <ore:glass>;
+var craftingFurnace = <ore:craftingFurnace>;
 
 # Items/blocks removal
 recipes.remove(blockCopperGC);
 recipes.remove(blockTinGC);
 recipes.remove(blockAluminiumGC);
-recipes.remove(GCRefinery);
-NEI.hide(GCRefinery);
 recipes.remove(GCElectricCompressor);
 NEI.hide(GCElectricCompressor);
 recipes.remove(GCCircuitFabricator);
@@ -178,6 +179,11 @@ recipes.addShaped(plateNailedT3, [
 	[null, boltTungstenSteel, boltTungstenSteel]]);
     
 # Recipe Changes
+recipes.remove(GCRefinery);
+recipes.addShaped(GCRefinery, [
+    [canisterCopper, glass, canisterCopper],
+    [pumpElectricLV, craftingFurnace, pumpElectricLV],
+    [compressedSteel, glass, compressedSteel]]);
 recipes.remove(canisterTin);
 recipes.addShaped(canisterTin, [
 	[plateTin, null, plateTin],
