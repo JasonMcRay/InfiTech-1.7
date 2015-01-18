@@ -1,25 +1,26 @@
 import mods.minechem.Decomposer;
 import mods.minechem.Synthesiser;
 import mods.minechem.Fuels;
+import mods.gregtech.Assembler;
 
-# Elemente
-var elementH = <minechem:minechemElement:0>;
-var elementC = <minechem:minechemElement:5>;
-var elementO = <minechem:minechemElement:7>;
-var elementFe = <minechem:minechemElement:25>;
-var elementAl = <minechem:minechemElement:12>;
-var elementSi = <minechem:minechemElement:13>;
-var elementMg = <minechem:minechemElement:11>;
-var elementTi = <minechem:minechemElement:21>;
-var elementPb = <minechem:minechemElement:81>;
-var elementZn = <minechem:minechemElement:29>;
-var elementNa = <minechem:minechemElement:10>;
-var elementEs = <minechem:minechemElement:98>;
-var elementBe = <minechem:minechemElement:3>;
-var elementW = <minechem:minechemElement:73>;
-var elementCr = <minechem:minechemElement:23>;
-var elementTc = <minechem:minechemElement:42>;
-var elementNi = <minechem:minechemElement:27>;
+# Elements
+var elementH = <minechem:minechemElement:1>;
+var elementC = <minechem:minechemElement:6>;
+var elementO = <minechem:minechemElement:8>;
+var elementFe = <minechem:minechemElement:26>;
+var elementAl = <minechem:minechemElement:13>;
+var elementSi = <minechem:minechemElement:14>;
+var elementMg = <minechem:minechemElement:12>;
+var elementTi = <minechem:minechemElement:22>;
+var elementPb = <minechem:minechemElement:82>;
+var elementZn = <minechem:minechemElement:30>;
+var elementNa = <minechem:minechemElement:11>;
+var elementEs = <minechem:minechemElement:99>;
+var elementBe = <minechem:minechemElement:4>;
+var elementW = <minechem:minechemElement:74>;
+var elementCr = <minechem:minechemElement:24>;
+var elementTc = <minechem:minechemElement:43>;
+var elementNi = <minechem:minechemElement:28>;
 var elementUut = <minechem:minechemElement:113>;
 var elementCn = <minechem:minechemElement:112>;
 var elementNo = <minechem:minechemElement:102>;
@@ -160,12 +161,17 @@ var robotarmMV = <gregtech:gt.metaitem.01:32651>;
 var robotarmHV = <gregtech:gt.metaitem.01:32652>;
 var casingMachineHV = <gregtech:gt.blockcasings:3>;
 var casingMachineMV = <gregtech:gt.blockcasings:2>;
-var elementPB = <minechem:minechemElement:81>;
+var elementPB = <minechem:minechemElement:82>;
 var microscope = <minechem:tile.opticalMicroscope>;
 var decomposer = <minechem:tile.chemicalDecomposer>;
 var synthesizer = <minechem:tile.chemicalSynthesizer>;
 var fusionwall = <minechem:tile.fusionWall>;
 var tungstenplating = <minechem:tile.fusionWall:1>;
+var blueprintFusionChamber = <minechem:minechemBlueprint>;
+var blueprintFissionChamber = <minechem:minechemBlueprint:1>;
+var plateDiamond = <gregtech:gt.metaitem.01:17500>;
+var BCBlueprint = <BuildCraft|Builders:blueprintItem>;
+var diamond = <minecraft:diamond>;
 
 # Lense
 recipes.remove(lensConcave);
@@ -219,3 +225,8 @@ recipes.addShaped(fusionwall * 4, [
   [plateLead, elementPB, plateLead],
   [plateLead, elementPB, plateLead]
 ]);
+
+recipes.remove(blueprintFusionChamber);
+Assembler.addRecipe(blueprintFusionChamber, BCBlueprint, plateDiamond * 9, 400, 1024);
+recipes.remove(blueprintFissionChamber);
+Assembler.addRecipe(blueprintFissionChamber, BCBlueprint, diamond, 400, 1024);
