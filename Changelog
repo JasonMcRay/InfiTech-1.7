@@ -1,3 +1,41 @@
+2.1.0 - No longer Beta - we are Stable
+
+Updated Mods:
+Automagy to 0.18
+Binnie Mods to 2.0-pre4
+Biomes'o'plenty to 2.1.0.1057
+CodeChickenCore to 1.0.4.35
+EnderIO to 2.2.6.323
+ExtraCells to 2.2.40b66
+Galacticraft to 3.0.7.255
+Gendustry to 1.4.4.52
+HEE to 1.7
+Nuclear Control to 2.1.2a
+Immibis Core to 59.0.6
+Malisis Core to 0.10.5
+Malisis Doors to 1.4.2
+OpenBlocks to 1.3-544
+OpenComputers to 1.4.5.28
+OpenModsLib to 0.6-294
+ProjectZulu to 1.4a
+SecretRoomsMod to 4.7.1.379
+SuperCraftingFrame to 1.7.10.2
+Thaumcraft to 4.2.3.2
+Thaumic Energistics to 0.8.8.4b-rv2
+Thaumic Tinkerer to 2.5-440
+ttCore to 0.1.0-56
+WAILAPlugins to 0.0.1-11
+Yampst-Infitech 2 to 2.1.0
+
+Config changes/fixes:
+Journeymap Webserver is disabled to get rid of the lag (can still be enabled manually in-game)
+Did quite extensive Minechem Overhaul with lots of fixes and lots of tweaks.
+Fixed crafting of IHL Ace. it now needs Lapis plates instead of Lazurite.
+Added back the GC Refinery, due to unique ability to fill partially filled GC Canisters
+Fixed crash when looking recipes for Liquid DNA if Binnie mods and Gendustry are both enabled.
+Disabled GC Helium, because its registered by GT.
+Disabled Diamond dust decomposing.
+
 2.0.9
 
 Updated Mods:
