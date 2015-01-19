@@ -31,6 +31,7 @@ Removed mods:
 - Enchiridion (compatibility issues)
 
 Config changes/fixes:
+- Disabled decomposition of any GT dusts (it was yielding only Cellulose). Can be hardcoded with minetweaker, if someone will want to make the scripts, feel free to do so.
 - Did quite extensive Minechem Overhaul with lots of fixes and lots of tweaks.
 - Fixed crafting of IHL Ace. it now needs Lapis plates instead of Lazurite.
 - Added back the GC Refinery, due to unique ability to fill partially filled GC Canisters
