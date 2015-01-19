@@ -31,7 +31,6 @@ Removed mods:
 - Enchiridion (compatibility issues)
 
 Config changes/fixes:
-- Journeymap Webserver is disabled to get rid of the lag (can still be enabled manually in-game)
 - Did quite extensive Minechem Overhaul with lots of fixes and lots of tweaks.
 - Fixed crafting of IHL Ace. it now needs Lapis plates instead of Lazurite.
 - Added back the GC Refinery, due to unique ability to fill partially filled GC Canisters
