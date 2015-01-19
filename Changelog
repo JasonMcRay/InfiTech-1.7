@@ -27,6 +27,9 @@ Updated Mods:
 - WAILAPlugins to 0.0.1-11
 - Yampst-Infitech 2 to 2.1.0
 
+Removed mods:
+- Enchiridion (compatibility issues)
+
 Config changes/fixes:
 - Journeymap Webserver is disabled to get rid of the lag (can still be enabled manually in-game)
 - Did quite extensive Minechem Overhaul with lots of fixes and lots of tweaks.
@@ -35,6 +38,9 @@ Config changes/fixes:
 - Fixed crash when looking recipes for Liquid DNA if Binnie mods and Gendustry are both enabled.
 - Disabled GC Helium, because its registered by GT.
 - Disabled Diamond dust decomposing.
+
+List of items missing in update 2.0.9(10) => 2.1.0:
+- enchiridion:*
 
 2.0.9
 
