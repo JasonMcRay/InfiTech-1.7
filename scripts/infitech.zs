@@ -29,7 +29,6 @@ var GCoreDesh = <GalacticraftMars:tile.mars:2>;
 var nuggetSteel = <ore:nuggetSteel>;
 var nuggetIron = <ore:nuggetIron>;
 var RCNuggetSteel = <Railcraft:nugget:1>;
-var GTOreGenGuide = <Enchiridion:items>.withTag({booksid:"GT_OreSpawn"});
 var book = <minecraft:book>;
 var inkSac = <minecraft:dye>;
 var stone = <ore:stone>;
@@ -95,12 +94,6 @@ blockMarble.add(marblePrRed);
 # Extras
 furnace.remove(nuggetSteel, nuggetIron);
 nuggetSteel.remove(RCNuggetSteel);
-recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreIron]);
-recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreCopper]);
-recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreTin]);
-recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreLead]);
-recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreGold]);
-recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreSilver]);
 recipes.remove(furnace3d);
 recipes.addShapeless(furnace3d, [<minecraft:furnace>]);
 recipes.addShaped(chisel, [
