@@ -1,3 +1,32 @@
+2.1.1
+
+Updated Mods:
+- Binnie Mods to 2.0-pre5
+- Buildcraft to 6.3.3
+- Carpenter's Blocks to 3.3.4.4
+- Chisel 2 to 2.3.5.31
+- ChiselFacades to 2.10
+- EnderIO to 2.2.7.329
+- EnetBridge to 1.6
+- ExtraCells to 2.2.47b73
+- Galacticraft to 3.0.8.258
+- Immibis Core to 59.0.7
+- IC2 to 2.2.666
+- MalisisDoors to 1.4.3
+- NEI Integration to 1.0.5
+- OpenComputers to 1.4.6.30
+- OpenModsLib to 0.6-296
+- PneumaticCraft to 1.5.3
+- RandomThings to 2.2.4
+- ttCOre to 0.1.0-60
+- WailaPlugins to 0.0.1-12
+- Yampst-InfiTech 2 to 2.1.1
+
+Config Changes/Fixes
+- Fixed infitech.zs script file by removing Enchiridion entries from it.
+- Fixed occasional Crash with Malisis Doors on dedicated servers
+- Fixed Carpenter's Blocks not keeping information with NBT registered items/blocks
+
 2.1.0 - No longer Beta - we are Stable
 
 Updated Mods:
