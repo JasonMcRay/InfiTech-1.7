@@ -1,0 +1,16 @@
+{"data":
+	[
+		{
+            "seed":"minecraft:wheat_seeds",
+            "block":"minecraft:wheat"
+        },
+        {
+            "seed":"minecraft:carrot",
+            "block":"minecraft:carrots"
+        },
+        {
+            "seed":"minecraft:potato",
+            "block":"minecraft:potatoes"
+        }
+	]
+}
