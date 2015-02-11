@@ -1,3 +1,44 @@
+2.1.2
+
+Updated Mods:
+- Apple Core to 1.1.0
+- AsieLib to 0.3.9
+- Automagy to 0.19.1
+- BOP to 2.1.0.1062
+- Carpenter's Blocks to 3.3.5
+- EnderIO to 2.2.8.345
+- ExtraCells to 2.2.53b82
+- Galacticraft to 3.0.8.261
+- Minechem to 5.0.5.378
+- NEIIntegration to 1.0.6
+- OpenBlocks to 1.3-553
+- OpenComputers to 1.4.8.33
+- OpenModsLib to 0.6-306
+- ProjectRed to 4.5.10.61
+- ProjectZulu to 1.4b4
+- Thaumcraft to 4.2.3.4
+- ThaumicTinkerer to 2.5.466
+- WailaPlugins to 0.0.1-13
+- Waila Harvestability to 1.1.2
+- Yampst-InfiTech 2 to 2.1.2
+- AE2 to rv2.beta.8
+- BDLib to 1.6.139
+- Buildcraft to 6.3.6
+- Forestry to 3.4.0.7
+- Gendustry to 1.4.4.54
+- IC2 to 2.2.673
+- LogisticsPipes to 0.8.3.100
+- ThaumicEnergistics to 0.8.9.0b-rv2
+- ttCore to 0.1.0-61
+- SecretRoomsMod to 4.7.1.398
+
+Config changes/fixes:
+- Added chisel Limestone and Marble into Digger's Backpack.
+- Fixed crash with Secret Rooms button
+- Fixed crash with PZ bugs
+- PZ bugs no longer spawning when breaking grass/leaves
+- Few minor bug fixes
+
 2.1.1
 
 Updated Mods:
