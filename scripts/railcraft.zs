@@ -9,13 +9,13 @@ import mods.ic2.Compressor;
 import mods.gregtech.Boxing;
 
 # Aliases
-var brickAbyssal = <Railcraft:tile.railcraft.brick.abyssal>;
-var dispenserCart = <Railcraft:tile.railcraft.machine.gamma:8>;
-var dispenserTrain = <Railcraft:tile.railcraft.machine.gamma:9>;
-var engineSteamCommercial = <Railcraft:tile.railcraft.machine.beta:8>;
-var engineSteamIndustrial = <Railcraft:tile.railcraft.machine.beta:9>;
-var fireboxLiquid = <Railcraft:tile.railcraft.machine.beta:6>;
-var fireboxSolid = <Railcraft:tile.railcraft.machine.beta:5>;
+var brickAbyssal = <Railcraft:brick.abyssal>;
+var dispenserCart = <Railcraft:machine.gamma:8>;
+var dispenserTrain = <Railcraft:machine.gamma:9>;
+var engineSteamCommercial = <Railcraft:machine.beta:8>;
+var engineSteamIndustrial = <Railcraft:machine.beta:9>;
+var fireboxLiquid = <Railcraft:machine.beta:6>;
+var fireboxSolid = <Railcraft:machine.beta:5>;
 var railAdvanced = <Railcraft:part.rail:1>;
 var railHS = <Railcraft:part.rail:3>;
 var railReinforced = <Railcraft:part.rail:4>;
@@ -27,7 +27,7 @@ var RCGearSteel = <Railcraft:part.gear:2>;
 var RCNuggetSteel = <Railcraft:nugget:1>;
 var RCplateIron = <Railcraft:part.plate>;
 var RCplateSteel = <Railcraft:part.plate:1>;
-var trackCoupler = <Railcraft:tile.railcraft.track>.withTag({track:"railcraft:track.coupler"});
+var trackCoupler = <Railcraft:track>.withTag({track:"railcraft:track.coupler"});
 var woodenRailbed = <Railcraft:part.railbed>;
 var nuggetGold = <minecraft:gold_nugget>;
 var GTGearStone = <gregtech:gt.metaitem.02:31299>;
@@ -48,28 +48,29 @@ var furnaceHighPressure = <gregtech:gt.blockmachines:104>;
 var crowbar = <ore:craftingToolCrowbar>;
 var stickSteel = <ore:stickSteel>;
 var stoneBricks = <minecraft:stonebrick>;
-var wallStoneBrick = <Railcraft:tile.railcraft.wall.alpha:5>;
-var chestMetals = <Railcraft:tile.railcraft.machine.beta:12>;
+var wallStoneBrick = <Railcraft:wall.alpha:5>;
+var chestMetals = <Railcraft:machine.beta:12>;
 var anvil = <minecraft:anvil>;
 var locomotiveERlectric = <Railcraft:cart.loco.electric>;
 var cart = <minecraft:minecart>;
 var redstoneLamp = <minecraft:redstone_lamp>;
-var feederUnitElectric = <Railcraft:tile.railcraft.machine.epsilon>;
-var tankWallIron = <Railcraft:tile.railcraft.machine.beta>;
-var tankWallSteel = <Railcraft:tile.railcraft.machine.beta:13>;
+var feederUnitElectric = <Railcraft:machine.epsilon>;
+var tankWallIron = <Railcraft:machine.beta>;
+var tankWallSteel = <Railcraft:machine.beta:13>;
 var RCPlateTin = <Railcraft:part.plate:2>;
-var forceTrackEmitter = <Railcraft:tile.railcraft.machine.epsilon:3>;
+var forceTrackEmitter = <Railcraft:machine.epsilon:3>;
 var plateTin = <ore:plateTin>;
 var ingotCopper = <ore:ingotCopper>;
 var pressurePlateStone = <minecraft:stone_pressure_plate>;
 var blockDiamond = <ore:blockDiamond>;
-var detectorEnergy = <Railcraft:tile.railcraft.detector:10>;
+var detectorEnergy = <Railcraft:detector:10>;
 var RCPlateCopper = <Railcraft:part.plate:3>;
-var fluxTransformer = <Railcraft:tile.railcraft.machine.epsilon:4>;
+var fluxTransformer = <Railcraft:machine.epsilon:4>;
 var plateCopper = <ore:plateCopper>;
 var ingotGold = <ore:ingotGold>;
 var blockRedstone = <ore:blockRedstone>;
 var RCGearIron = <Railcraft:part.gear:1>;
+var railElectric = <Railcraft:part.rail:5>;
 
 # Items/Blocks Removal
 recipes.remove(RCPlateTin);
@@ -82,6 +83,12 @@ recipes.remove(RCGearSteel);
 NEI.hide(RCGearSteel);
 recipes.remove(RCGearIron);
 NEI.hide(RCGearIron);
+
+recipes.remove(railStandard);
+recipes.remove(railAdvanced);
+recipes.remove(railHS);
+recipes.remove(railReinforced);
+recipes.remove(railElectric);
 
 # Recipe Tweaks
 recipes.remove(fluxTransformer);
@@ -119,18 +126,6 @@ recipes.addShaped(engineSteamCommercial, [
 	[plateIron, plateIron, plateIron],
 	[null, glass, null],
 	[GTGearIron, piston, GTGearIron]]);
-recipes.remove(railStandard);
-recipes.remove(railAdvanced);
-recipes.addShaped(railAdvanced * 8, [
-	[railStandard, redstone, stickGold],
-	[railStandard, redstone, stickGold],
-	[railStandard, redstone, stickGold]]);
-recipes.remove(railHS);
-recipes.addShaped(railHS, [
-	[stickSteel, blazePowder, stickGold],
-	[stickSteel, blazePowder, stickGold],
-	[stickSteel, blazePowder, stickGold]]);
-recipes.remove(railReinforced);
 recipes.remove(fireboxSolid);
 recipes.addShaped(fireboxSolid, [
 	[brickAbyssal, brickAbyssal, brickAbyssal],
@@ -146,11 +141,6 @@ recipes.addShaped(dispenserTrain, [
 	[redstone, crowbar, redstone],
 	[crowbar, dispenserCart, crowbar],
 	[redstone, crowbar, redstone]]);
-recipes.remove(trackCoupler);
-recipes.addShaped(trackCoupler, [
-	[railAdvanced, crowbar, railAdvanced],
-	[railAdvanced, woodenRailbed, railAdvanced],
-	[railAdvanced, crowbar, railAdvanced]]);
 recipes.removeShaped(tankWallIron, [
     [RCplateIron, RCplateIron],
     [RCplateIron, RCplateIron]]);
