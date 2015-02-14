@@ -1,3 +1,46 @@
+2.1.3
+
+Forge updated to 10.13.2.1263
+
+Updated Mods:
+- Automagy to 10.19.3
+- Bdlib to 1.6.2.41
+- Binnie Mods to 2.0-pre6b
+- BOP to 2.1.0.1067
+- Computronics to 1.4.1
+- CustomStuff2 to 0.11.15
+- EnderIO to 2.2.8.350
+- Galacticraft to 3.0.8.264
+- Gendustry to 1.4.5.56
+- IHL to 0.527
+- IC2 to 2.2.676
+- Minechem to 5.0.5.384
+- NEIAddons to 1.12.4.15
+- OpenBlocks to 1.3-564
+- OpenModsLib to 0.6-315
+- PneumaticCraft to 1.5.6-59
+- ProjectRed to 4.5.11.62
+- Railcraft to 9.5.0.0
+- RefinedRelocation to 1.0.7f
+- SRM to 4.7.1.404
+- SuperCraftingFrame to 1.7.10.3
+- ttCore to 0.1.0-66
+- Waila to 1.5.9
+- Yampst-InfiTech 2 to 2.1.3
+
+New Mods:
+- Fastcraft
+- GemBlocksForGreg
+- Somnia (disabled per default)
+
+Config changes/fixes:
+- Fixed: Refined Relocation crash when trying to attach BC pipe to Relocator pipe
+- A lot of recipes from Railcraft needed to be hardcoded, because of compatibility. Some recipes might be broken (report ASAP please)
+- Fixed: a lot of mod related issues. Not gonna list them, check changelogs for mods.
+
+List of items missing in update 2.1.2 => 2.1.3:
+- A lot from IHL (around 73)
+
 2.1.2
 
 Updated Mods:
