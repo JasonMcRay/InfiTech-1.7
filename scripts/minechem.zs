@@ -34,6 +34,9 @@ var moleculeSiliconDioxide = <minechem:minechemMolecule:7>;
 val moleculeCucurbitacin = <minechem:minechemMolecule:40>;
 val moleculeKeratin = <minechem:minechemMolecule:146>;
 val moleculeCarbonNanotubes = <minechem:minechemMolecule:69>;
+val moleculePantothenicAcid = <minechem:minechemMolecule:174>;
+val moleculeCucurbitacin = <minechem:minechemMolecule:40>;
+val moleculeAsparticAcid = <minechem:minechemMolecule:41>;
 
 # Items
 var bucketWater = <minecraft:water_bucket>;
@@ -62,8 +65,16 @@ var minecraftSoulSand = <minecraft:soul_sand>;
 var minecraftNetherrack = <minecraft:netherrack>;
 var minecraftNetherbrick = <minecraft:nether_brick>;
 var minecraftNetherstar = <minecraft:nether_star>;
+var minecraftWatermelonItem = <minecraft:melon>;
 
+# Pantothenic Acid
 
+Chemicals.addMolecule("Pantothenic Acid",174,"solid",[elementC*9, elementH*17, elementN, elementO*5]);
+Synthesiser.removeRecipe(minecraftWatermelonItem);
+Decomposer.removeRecipe(minecraftWatermelonItem);
+Synthesiser.addRecipe([moleculePantothenicAcid, moleculeWater, moleculeCucurbitacin, moleculeAsparticAcid], minecraftWatermelonItem, false, 2500);
+Decomposer.addRecipe(minecraftWatermelonItem, 1,[[moleculePantothenicAcid, moleculeWater, moleculeCucurbitacin, moleculeAsparticAcid]]);
+Chemicals.addPotionEffect(moleculePantothenicAcid,"strength",30,1);
 
 # Wasser
 Synthesiser.removeRecipe(bucketWater);
