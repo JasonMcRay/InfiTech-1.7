@@ -78,6 +78,8 @@ var itemSalt = <ore:itemSalt>;
 var dustSaltGT = <gregtech:gt.metaitem.01:2817>;
 var blockMarble = <ore:blockMarble>;
 var marblePrRed = <ProjRed|Exploration:projectred.exploration.stone>;
+var GTOreGenGuide = <Enchiridion2:book>.withTag({identifier: "GregTech_Ore_Guide"});
+
 
 # Ore Dictionary stuff
 craftingFurnace.add(furnace3d);
@@ -94,6 +96,13 @@ blockMarble.add(marblePrRed);
 # Extras
 furnace.remove(nuggetSteel, nuggetIron);
 nuggetSteel.remove(RCNuggetSteel);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreIron]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreCopper]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreTin]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreLead]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreGold]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreSilver]);
+
 recipes.remove(furnace3d);
 recipes.addShapeless(furnace3d, [<minecraft:furnace>]);
 recipes.addShaped(chisel, [

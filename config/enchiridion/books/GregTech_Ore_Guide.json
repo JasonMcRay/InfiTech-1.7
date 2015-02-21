@@ -5867,7 +5867,7 @@
     "en_US": "GregTech Ore Guide"
   },
   "uniqueName": "GregTech_Ore_Guide",
-  "color": 16777215,
+  "color": 16711935,
   "showBackground": true,
   "showArrows": true,
   "showNumber": true,
