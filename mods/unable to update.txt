@@ -1,0 +1,4 @@
+IC2
+IHL
+COFHCore
+RedstoneArsenal
