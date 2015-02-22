@@ -74,6 +74,8 @@ var gravel = <minecraft:gravel>;
 var sand = <minecraft:sand>;
 var clay = <minecraft:clay_ball>;
 var binderComposite = <EnderIO:itemMaterial:2>;
+var crystalEnder = <EnderIO:itemMaterial:8>;
+var enderResonator = <EnderIO:itemFrankenSkull:3>;
 
 
 
@@ -84,6 +86,12 @@ NEI.hide(EIGearBasic);
 furnace.remove(<*>, EISilicon);
 
 # Recipe Tweaks
+recipes.remove(dimTransceiver);
+recipes.addShaped(dimTransceiver, [
+	[ingotDarkSteel, enderResonator, ingotDarkSteel],
+	[capacitorBank, crystalEnder, pumpElectricMV],
+	[ingotDarkSteel, capacitorOctadic, ingotDarkSteel]]);
+recipes.addShapeless(dimTransceiver, [dimTransceiverOld]);
 recipes.remove(travelAnchor);
 recipes.addShaped(travelAnchor, [
 	[ingotElectricalSteel, conduitBinder, ingotElectricalSteel],
@@ -114,8 +122,6 @@ recipes.addShaped(farmStation, [
 	[ingotElectricalSteel, hoeElectrical, ingotElectricalSteel],
 	[ingotElectricalSteel, machineChassis, ingotElectricalSteel],
 	[pulsatingCrystal, controllerZLogic, pulsatingCrystal]]);
-recipes.remove(dimTransceiver);
-NEI.hide(dimTransceiver);
 recipes.remove(chestVacuum);
 recipes.addShaped(chestVacuum, [
 	[plateIron, plateIron, plateIron],
@@ -153,7 +159,7 @@ recipes.remove(vibrantCrystal);
 ChemicalReactor.addRecipe(vibrantCrystal, nuggetVibrant * 8, emerald, 400);
 recipes.remove(pulsatingCrystal);
 ChemicalReactor.addRecipe(pulsatingCrystal, nuggetPulsating * 8, diamond, 400);
-BlastFurnace.addRecipe(ingotDarkSteel, ingotElectricalSteel, dustObsidian, 4000, 480, 2000);
+BlastFurnace.addRecipe(ingotDarkSteel, ingotElectricalSteel, dustObsidian, 4000, 360, 2000);
 
 # Specialities
 NEI.addEntry(vibrantCrystal);
