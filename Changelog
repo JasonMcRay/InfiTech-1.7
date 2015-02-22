@@ -1,3 +1,45 @@
+2.1.4
+
+Updated Mods:
+- 3D Furnace to 1.4
+- Bdlib to 1.6.4.49
+- Buildcraft to 6.3.7
+- Chisel 2 to 2.3.7.34
+- Computronics to 1.4.2
+- EnderIO to 2.2.8.351
+- ExtraCells to 2.2.55b85
+- Galacticraft to 3.0.8.267
+- Gendustry to 1.4.7.64
+- Jabba to 1.2.1
+- LogisticsPipes to 0.8.3.101
+- Minechem to 5.0.5.387
+- NEIAddons to 1.12.4.16
+- NEIIntegration to 1.0.7
+- OpenBlocks to 1.3-566
+- Open Computers to 1.5.0.6
+- PneumaticCraft to 1.6.1-62
+- ProjectRed to 4.5.12.64
+- SRM to 4.7.1.409
+- SGCraft to 1.9.1
+- Thaumcraft to 4.2.3.5
+- ThaumicTinkerer to 2.5-469
+- ttCore to 0.1.0-67
+- Yampst-InfiTech 2 to 2.14
+
+New Mods:
+- Enchiridion 2
+
+Removed Mods:
+-ChiselFacades (due to being redundant, BC is adding facades for chisel on its own)
+
+Config changes/fixes:
+- Added a GT oregen guide book back (GregTech Ore Guide)
+- Enabled Dimensional Transceivers
+- Enabled Ender Rails
+
+List of items missing in update 2.1.3 => 2.1.4:
+- chisel:chest* (32 entries)
+
 2.1.3
 
 Forge updated to 10.13.2.1263
