@@ -1,7 +1,9 @@
 import mods.gregtech.ChemicalReactor;
 import mods.gregtech.Assembler;
 import mods.gregtech.Canner;
+import mods.ic2.Compressor
 
+# Aliases
 var GTGearDiamond = <gregtech:gt.metaitem.02:31500>;
 var GTGearGold = <gregtech:gt.metaitem.02:31086>;
 var plateDiamond = <gregtech:gt.metaitem.01:17500>;
@@ -28,7 +30,11 @@ var nuclearFuelEnrichedUranium = <IC2:itemUran>;
 var nuclearFuelMOX = <IC2:itemMOX>;
 var fuelRodEmpty = <IC2:itemFuelRod>;
 var circuitAdvanced = <ore:circuitAdvanced>;
+var plateLazurite = <gregtech:gt.metaitem.01:17524>;
+var dustLazurite = <gregtech:gt.metaitem.01:2524>;
 
+# Fixes and Tweaks
+Compressor.addRecipe(plateLazurite, dustLazurite);
 
 # Diamond Gear
 Assembler.addRecipe(GTGearDiamond, GTGearGold, plateDiamond, 1600, 2);
