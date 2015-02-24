@@ -1,7 +1,7 @@
 import mods.gregtech.ChemicalReactor;
 import mods.gregtech.Assembler;
 import mods.gregtech.Canner;
-import mods.ic2.Compressor
+import mods.ic2.Compressor;
 
 # Aliases
 var GTGearDiamond = <gregtech:gt.metaitem.02:31500>;
