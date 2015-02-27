@@ -23,7 +23,7 @@ var alloySmelter = <EnderIO:blockAlloySmelter>;
 var farmStation = <EnderIO:blockFarmStation>;
 var dimTransceiverOld = <EnderIO:blockHyperCube>;
 var dimTransceiver = <EnderIO:blockTransceiver>;
-var capacitorBank = <EnderIO:blockCapacitorBank>;
+var capacitorBankVibrant = <EnderIO:blockCapBank:3>;
 var capacitorOctadic = <EnderIO:itemBasicCapacitor:2>;
 var EISilicon = <EnderIO:itemMaterial>;
 var chestVacuum = <EnderIO:blockVacuumChest>;
@@ -77,8 +77,6 @@ var binderComposite = <EnderIO:itemMaterial:2>;
 var crystalEnder = <EnderIO:itemMaterial:8>;
 var enderResonator = <EnderIO:itemFrankenSkull:3>;
 
-
-
 # Items/Blocks Removal
 recipes.remove(EIGearBasic);
 NEI.hide(EIGearBasic);
@@ -89,7 +87,7 @@ furnace.remove(<*>, EISilicon);
 recipes.remove(dimTransceiver);
 recipes.addShaped(dimTransceiver, [
 	[ingotDarkSteel, enderResonator, ingotDarkSteel],
-	[capacitorBank, crystalEnder, pumpElectricMV],
+	[capacitorBankVibrant, crystalEnder, pumpElectricMV],
 	[ingotDarkSteel, capacitorOctadic, ingotDarkSteel]]);
 recipes.addShapeless(dimTransceiver, [dimTransceiverOld]);
 recipes.remove(travelAnchor);
