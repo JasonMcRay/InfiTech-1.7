@@ -51,6 +51,7 @@ Config Changes/fixes:
 - Galacticraft energy conversion machines will run less efficiently than in PneumaticCraft, balancing.
 - Hopefully fixed items dissapearing when broken graves (I still recommend rather than breaking them, just Right Click them with empty hand - It will put the items to exactly same slots as you have them when died (except armor))
 - Disabled, removed Spellbinding cloth to stop the duplication issue.
+- Full integration of minechem/gregtech - DUSTS! Thanks Xavion
 
 List of items missing in update 2.1.4 => 2.1.5:
 HardcoreEnderExpansion:soul_charm
