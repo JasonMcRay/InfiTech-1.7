@@ -1,2 +1,3 @@
-COFHCore
-RedstoneArsenal
+COFHCore - Forge
+RedstoneArsenal - Forge
+AE2 - Forge
