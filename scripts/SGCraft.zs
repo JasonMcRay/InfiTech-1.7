@@ -91,10 +91,10 @@ recipes.addShaped(capacitorLarge, [
     [plateChrome, plateChrome, plateChrome],
     [ingotRubber, ingotRubber, ingotRubber],
     [plateChrome, plateChrome, plateChrome]]);
-recipes.remove(blockNaqAlloy);
-Compressor.addRecipe(blockNaqAlloy, ingotNaqAlloySG * 9);
-Compressor.addRecipe(blockNaqAlloy, ingotNaqAlloyGT * 9);
-recipes.addShapeless(ingotNaqAlloyGT * 9, [blockNaqAlloy]);
+//recipes.remove(blockNaqAlloy);
+//Compressor.addRecipe(blockNaqAlloy, ingotNaqAlloySG * 9);
+//Compressor.addRecipe(blockNaqAlloy, ingotNaqAlloyGT * 9);
+//recipes.addShapeless(ingotNaqAlloyGT * 9, [blockNaqAlloy]);
 recipes.remove(stargatePowerIC2);
 recipes.addShaped(stargatePowerIC2, [
     [capacitorLarge, wireOsmium8x, capacitorLarge],

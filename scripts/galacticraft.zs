@@ -212,10 +212,10 @@ recipes.addShaped(titaniumLeggings, [
 	[compressedTitanium, compressedTitanium, compressedTitanium],
 	[compressedTitanium, hammer, compressedTitanium],
 	[compressedTitanium, null, compressedTitanium]]);
-recipes.remove(blockMeteoricIron);
-Compressor.addRecipe(blockMeteoricIron, GCingotMeteoricIron * 9);
-recipes.remove(blockDesh);
-Compressor.addRecipe(blockDesh, GCingotDesh * 9);
+//recipes.remove(blockMeteoricIron);
+//Compressor.addRecipe(blockMeteoricIron, GCingotMeteoricIron * 9);
+//recipes.remove(blockDesh);
+//Compressor.addRecipe(blockDesh, GCingotDesh * 9);
     
 # GT/IC2 Integration    
 Macerator.addRecipe(rawMeteoricIron * 2, meteorFallen);
