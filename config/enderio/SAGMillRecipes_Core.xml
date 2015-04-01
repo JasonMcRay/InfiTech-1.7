@@ -936,94 +936,6 @@ addOreDictionaryTooltips=true
         <itemStack modID="minecraft" itemName="dye" itemMeta="15" number="24" />
       </output>
     </recipe>
-	
-    <recipe name="RubyOre" energyCost="2400">
-      <input>
-        <itemStack oreDictionary="oreRuby" />
-      </input>
-      <output>
-        <itemStack oreDictionary="gemRuby" number="2"/>
-        <itemStack oreDictionary="gemRuby" number="1" chance="0.5" />
-        <itemStack modID="minecraft" itemName="cobblestone" chance="0.15" />
-      </output>
-    </recipe>
-
-    <recipe name="PeridotOre" energyCost="2400">
-      <input>
-        <itemStack oreDictionary="orePeridot" />
-      </input>
-      <output>
-        <itemStack oreDictionary="gemPeridot" number="2"/>
-        <itemStack oreDictionary="gemPeridot" number="1" chance="0.5" />
-        <itemStack modID="minecraft" itemName="cobblestone" chance="0.15" />
-      </output>
-    </recipe>
-    
-    <recipe name="TopazOre" energyCost="2400">
-      <input>
-        <itemStack oreDictionary="oreTopaz" />
-      </input>
-      <output>
-        <itemStack oreDictionary="gemTopaz" number="2"/>
-        <itemStack oreDictionary="gemTopaz" number="1" chance="0.5" />
-        <itemStack modID="minecraft" itemName="cobblestone" chance="0.15" />
-      </output>
-    </recipe>
-    
-    <recipe name="TanzaniteOre" energyCost="2400">
-      <input>
-        <itemStack oreDictionary="oreTanzanite" />
-      </input>
-      <output>
-        <itemStack oreDictionary="gemTanzanite" number="2"/>
-        <itemStack oreDictionary="gemTanzanite" number="1" chance="0.5" />
-        <itemStack modID="minecraft" itemName="cobblestone" chance="0.15" />
-      </output>
-    </recipe>
-    
-    <recipe name="MalachiteOre" energyCost="2400">
-      <input>
-        <itemStack oreDictionary="oreMalachite" />
-      </input>
-      <output>
-        <itemStack oreDictionary="gemMalachite" number="2"/>
-        <itemStack oreDictionary="gemMalachite" number="1" chance="0.5" />
-        <itemStack modID="minecraft" itemName="cobblestone" chance="0.15" />
-      </output>
-    </recipe>
-    
-    <recipe name="SapphireOre" energyCost="2400">
-      <input>
-        <itemStack oreDictionary="oreSapphire" />
-      </input>
-      <output>
-        <itemStack oreDictionary="gemSapphire" number="2"/>
-        <itemStack oreDictionary="gemSapphire" number="1" chance="0.5" />
-        <itemStack modID="minecraft" itemName="cobblestone" chance="0.15" />
-      </output>
-    </recipe>
-
-    <recipe name="AmberOre" energyCost="2400">
-      <input>
-        <itemStack oreDictionary="oreAmber" />
-      </input>
-      <output>
-        <itemStack oreDictionary="gemAmber" number="2"/>
-        <itemStack oreDictionary="gemAmber" number="1" chance="0.5" />
-        <itemStack modID="minecraft" itemName="cobblestone" chance="0.15" />
-      </output>
-    </recipe>
-    
-    <recipe name="AmethystOre" energyCost="2400">
-      <input>
-        <itemStack modID="BiomesOPlenty" itemName="gemOre" />
-      </input>
-      <output>
-        <itemStack modID="BiomesOPlenty" itemName="gems" number="2"/>
-        <itemStack modID="BiomesOPlenty" itemName="gems" number="1" chance="0.5" />
-        <itemStack modID="minecraft" itemName="end_stone" chance="0.15" />
-      </output>
-    </recipe>
   </recipeGroup>
 
   <recipeGroup name="Metallurgy">
@@ -1882,6 +1794,65 @@ addOreDictionaryTooltips=true
       </input>
       <output>
         <itemStack oreDictionary="dustOsmium" number="9" />
+      </output>
+    </recipe>
+  </recipeGroup>
+
+  <recipeGroup name="Engineer's Toolbox">
+
+    <!-- Metals -->
+    <recipe name="NickelOre" energyCost="3600">
+      <input>
+        <itemStack oreDictionary="oreNickel" />
+      </input>
+      <output>
+        <itemStack oreDictionary="dustNickel" number="2" />
+        <itemStack oreDictionary="dustIron" number="1" chance="0.05" />
+      </output>
+    </recipe>
+    <recipe name="AluminumOre" energyCost="3600">
+      <input>
+        <itemStack oreDictionary="oreAluminum" />
+      </input>
+      <output>
+        <itemStack oreDictionary="dustAluminum" number="2" />
+      </output>
+    </recipe>
+
+    <!-- Alloys and Ingots -->
+    <recipe name="NickelIngot" energyCost="2400">
+      <input>
+        <itemStack oreDictionary="ingotNickel" />
+      </input>
+      <output>
+        <itemStack oreDictionary="dustNickel" number="1" />
+      </output>
+    </recipe>
+    <recipe name="AluminumIngot" energyCost="2400">
+      <input>
+        <itemStack oreDictionary="ingotAluminum" />
+      </input>
+      <output>
+        <itemStack oreDictionary="dustAluminum" number="1" />
+      </output>
+    </recipe>
+
+
+    <!-- Blocks -->
+    <recipe name="NickelBlock" energyCost="3600">
+      <input>
+        <itemStack oreDictionary="blockNickel" />
+      </input>
+      <output>
+        <itemStack oreDictionary="dustNickel" number="9" />
+      </output>
+    </recipe>
+    <recipe name="AluminumBlock" energyCost="3600">
+      <input>
+        <itemStack oreDictionary="blockAluminum" />
+      </input>
+      <output>
+        <itemStack oreDictionary="dustAluminum" number="9" />
       </output>
     </recipe>
   </recipeGroup>
