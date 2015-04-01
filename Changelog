@@ -1,3 +1,30 @@
+2.1.8
+
+Updated Mods:
+- Automagy to 0.22.1
+- BDLib to 1.7.0.69
+- Buildcraft to 6.4.6
+- BuildcraftCompat to 6.4.2
+- EnderIO to 2.2.8.366
+- EnderZoo to 1.0.10.25
+- Fastcraft to 1.21
+- Galacticraft to 3.0.11.309
+- Gendustry to 1.4.9.75
+- IC2 to 2.2.706
+- LogisticsPipes to 0.8.3.114
+- Malisis Core to 0.11.3
+- Malisis Doors to 1.5.1
+- OpenComputers to 1.5.5.12
+- PneumaticCraft to 1.6.4-66
+- Thaumic Tinkerer to 2.5-478
+- Yampst to 2.1.8
+
+Config changes/tweaks:
+- Turned off SecretRoomsMod integration with MalisisDoors to fix trapdoor crashes
+- Fixed Graves not storing items
+- More Bug Fixes
+
+
 2.1.7
 
 Updated Mods:
