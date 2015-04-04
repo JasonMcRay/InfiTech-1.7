@@ -1,3 +1,24 @@
+2.1.9
+
+Updated mods:
+- BDLib to 1.7.0.70
+- Big Reactors to 0.4.3A
+- Buildcraft to 6.4.7
+- EnderIO to 2.2.8.367
+- Extra Utilities to 1.2.3
+- Gendustry to 1.4.9.76
+- IC2 to 2.2.710
+- Logistic Pipes to 0.8.3.115
+- Refined Relocation to 1.0.8
+- Thaumic Tinkerer to 2.5-480
+
+Config changes/fixes:
+- Dupe bug with Spellbinding cloth is officialy gone
+- Fixed huge TPS issues with dimensions
+- Fixed most of the reusable tools which were used as a part of a recipe from getting consumed, no matter the tool damage (GT Tools for example)
+- Fixed Big Reactors power production properly
+- Few minor bug fixes
+
 2.1.8
 
 Updated Mods:
