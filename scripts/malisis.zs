@@ -15,6 +15,11 @@ var blockGlass = <ore:blockGlass>;
 var doorWoodenGlass = <malisisdoors:item.wood_sliding_door>;
 var doorShoji = <malisisdoors:item.shoji_door>;
 var paper = <minecraft:paper>;
+var ffController = <malisisdoors:item.forcefieldItem>;
+
+# Item/Block Removal
+recipes.remove(ffController);
+NEI.hide(ffController);
 
 # Recipes Tweaks
 recipes.remove(doorWoodenGlass);

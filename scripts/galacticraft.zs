@@ -71,9 +71,9 @@ var titaniumChestplate = <GalacticraftMars:item.titanium_chestplate>;
 var compressedTitanium = <GalacticraftMars:item.itemBasicAsteroids:6>;
 var GCoreDesh = <GalacticraftMars:tile.mars:2>;
 var shardTitanium = <GalacticraftMars:item.itemBasicAsteroids:4>;
-var plateNailed = <infitech:plateNailed>;
-var plateNailedT2 = <infitech:plateNailed:1>;
-var plateNailedT3 = <infitech:plateNailed:2>;
+var plateNailed = <InfinityCore:plateNailed>;
+var plateNailedT2 = <InfinityCore:plateNailed:1>;
+var plateNailedT3 = <InfinityCore:plateNailed:2>;
 var boltStainlessSteel = <gregtech:gt.metaitem.01:26306>;
 var hammer = <ore:craftingToolHardHammer>;
 var boltTungsten = <gregtech:gt.metaitem.01:26081>;
@@ -81,7 +81,6 @@ var boltTungstenSteel = <gregtech:gt.metaitem.01:26316>;
 var stickDesh = <ore:stickDesh>;
 var file = <ore:craftingToolFile>;
 var ingotDesh = <ore:ingotDesh>;
-var plateDesh = <ore:plateDesh>;
 var plateCopper = <ore:plateCopper>;
 var plateTin = <ore:plateTin>;
 var tinyPileDarkAshes = <gregtech:gt.metaitem.01:816>;
@@ -142,7 +141,6 @@ NEI.hide(heavyDutySword);
 recipes.remove(heavyDutyShovel);
 NEI.hide(heavyDutyShovel);
 recipes.remove(GCstickDesh);
-NEI.hide(GCstickDesh);
 recipes.remove(titaniumShovel);
 NEI.hide(titaniumShovel);
 recipes.remove(titaniumAxe);
@@ -175,7 +173,7 @@ recipes.addShaped(plateNailedT2, [
 	[null, boltTungsten, boltTungsten]]);
 recipes.addShaped(plateNailedT3, [
 	[null, boltTungstenSteel, boltTungstenSteel],
-	[hammer, plateHeavyDutyT2, plateDesh],
+	[hammer, plateHeavyDutyT2, compressedDesh],
 	[null, boltTungstenSteel, boltTungstenSteel]]);
     
 # Recipe Changes

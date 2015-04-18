@@ -1,3 +1,2 @@
-COFHCore - Forge
-RedstoneArsenal - Forge
-AE2 - Forge
+Forge 1355+ - GregTech
+ExtraUtilities - Forge

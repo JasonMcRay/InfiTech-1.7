@@ -1,3 +1,70 @@
+2.2.0
+Forge updated to: 10.13.2.1352
+
+Updated mods:
+- CodeChickenLib to 1.1.3.134
+- MrTJPCore to 1.0.5.12
+- AE2 to rv2-beta-28
+- AsieLib to 0.3.13
+- Automagy to 0.22.2
+- BDLib to 1.7.1.71
+- Bibliocraft to 1.10.3
+- BoP to 2.1.0.1237
+- Buildcraft to 6.4.11
+- Carpenter's Blocks to 3.3.6
+- Chisel 2 to 2.3.10.37
+- CoFHCore to 3.0.2-262
+- Computronics to 1.4.6
+- Enchiridion to 2.0f
+- EnderZoo to 1.0.11.27
+- Forestry to 3.5.3.11
+- Galacticraft to 3.0.11.319
+- Gendustry to 1.4.10.77
+- HardcoreEnderExpansion to 1.8
+- Nuclear Control to 2.2.1a-Yolo
+- IHL to 0.540
+- Logistics Pipes to 0.8.3.117
+- Magic Bees to 2.2.2
+- Malisis Core to 0.11.4
+- Malisis Doors to 1.6
+- Minechem to 5.0.5.395
+- NEI Integration to 1.0.8
+- OpenBlocks to 1.4.1-601
+- Open Computers to 1.5.7.14
+- OpenEye to 0.6-145
+- OpenModsLib to 0.7.1-342
+- Pam's Harvestcraft to 1.7.10h
+- PneumaticCraft to 1.6.7-67
+- ProjectRed to 4.5.16.77
+- Redstone Arsenal to 1.1.0-80
+- Refined Relocation to 1.0.8a
+- SGCraft to 1.9.3
+- Thaumic Energistics to 0.8.9.3a-rv2
+- Thaumic Tinkerer to 2.5-485
+- ttCore to 0.1.1-75
+- Yampst-InfiTech 2 to 2.2.0
+
+New Mods:
+- Infinity Core
+
+Removed mods:
+- CustomStuff 2
+- Craftguide
+- UpdateCheckerMod
+- Version Checker
+
+Config Changes/fixes:
+- IC2 crops can be planted again
+- [Buildcraft] fake plaer UUID is now outputed to server logs
+- Galacticraft desh armor needs Desh Plates only
+- Fixed ore dictionary issue with Compressed Desh and Compressed Meteoric Iron
+- Fixed crash when listing GT OreGen book
+- All existing Nailed Plates are removed from game
+- New Nailed Plates are introduced
+- Capes (for patrons) - NYI
+- Quite a lot mod related bug fixes
+
+
 2.1.9
 
 Updated mods:
