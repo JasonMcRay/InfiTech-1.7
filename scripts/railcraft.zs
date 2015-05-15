@@ -7,6 +7,7 @@ import mods.gregtech.BlastFurnace;
 import mods.ic2.Macerator;
 import mods.ic2.Compressor;
 import mods.gregtech.Boxing;
+import mods.gregtech.AssemblerLiq;
 
 # Aliases
 var brickAbyssal = <Railcraft:brick.abyssal>;
@@ -71,6 +72,16 @@ var ingotGold = <ore:ingotGold>;
 var blockRedstone = <ore:blockRedstone>;
 var RCGearIron = <Railcraft:part.gear:1>;
 var railElectric = <Railcraft:part.rail:5>;
+var benchEngraving = <Railcraft:machine.epsilon:5>;
+var pickaxeDiamond = <minecraft:diamond_pickaxe>;
+var book = <minecraft:book>;
+var craftingTable = <minecraft:crafting_table>;
+var rebar = <Railcraft:part.rebar>;
+var frameWireSupport = <Railcraft:frame>;
+var wireElectricShunting = <Railcraft:machine.delta>;
+var itemIngotLead = <gregtech:gt.metaitem.01:11089>;
+var paper = <minecraft:paper>;
+var moltenCopper = <liquid:molten.copper>;
 
 # Items/Blocks Removal
 recipes.remove(RCPlateTin);
@@ -89,8 +100,19 @@ recipes.remove(railAdvanced);
 recipes.remove(railHS);
 recipes.remove(railReinforced);
 recipes.remove(railElectric);
+recipes.remove(rebar);
 
 # Recipe Tweaks
+recipes.remove(frameWireSupport);
+recipes.addShaped(frameWireSupport, [
+	[plateIron, plateIron, plateIron],
+	[rebar, null, rebar],
+	[rebar, rebar, rebar]]);
+recipes.remove(benchEngraving);
+recipes.addShaped(benchEngraving, [
+	[pickaxeDiamond, plateSteel, book],
+	[plateSteel, craftingTable, plateSteel],
+	[piston, plateSteel, piston]]);
 recipes.remove(fluxTransformer);
 recipes.addShaped(fluxTransformer * 2, [
     [plateCopper, ingotGold, plateCopper],
@@ -153,3 +175,7 @@ recipes.removeShaped(wallStoneBrick);
 recipes.addShaped(wallStoneBrick * 6, [
     [stoneBricks, stoneBricks, stoneBricks],
     [stoneBricks, stoneBricks, stoneBricks]]);
+	
+# GT Integration
+//AssemblerLiq.addRecipe(output, input1, input2, liquid, durationTicks, euPerTick);
+AssemblerLiq.addRecipe(wireElectricShunting * 8, itemIngotLead * 4, paper * 4, moltenCopper * 1296, 200, 32);

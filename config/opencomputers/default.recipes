@@ -11,6 +11,41 @@ texturePicker {
           [dyeBlue, "oc:analyzer", dyePurple]
           [dyeYellow, dyeMagenta, dyeWhite]]
 }
+manual {
+  type: shapeless
+  input: [book, "oc:circuitChip1"]
+}
+wrench {
+  input: [[ingotIron, "", ingotIron]
+          ["", "oc:circuitChip2", ""],
+          ["", ingotIron, ""]]
+}
+lootDisks: [
+  {
+    name: OpenOS
+    type: shapeless
+    input: ["oc:floppy", "oc:manual"]
+  },
+  {
+    name: OPPM
+    type: shapeless
+    input: ["oc:floppy", "oc:materialInterweb"]
+  }
+]
+luaBios {
+  type: shapeless
+  input: ["oc:eeprom", "oc:manual"]
+}
+generic: [
+  {
+    result: {block="minecraft:end_stone"}
+    input: [[enderPearl, sandstone, enderPearl]
+            [sandstone, blockCoal, sandstone]
+            [enderPearl, sandstone, enderPearl]]
+    output: 4
+  }
+]
+
 droneCase1 {
   input: [[{block="minecraft:end_stone"}, compass, {block="minecraft:end_stone"}]
           ["oc:circuitChip1", "oc:microcontrollerCase1", "oc:circuitChip1"]
@@ -112,14 +147,6 @@ hdd3 {
   input: [["oc:circuitChip3", "oc:materialDisk", diamond]
           ["oc:materialCircuitBoardPrinted", "oc:materialDisk", craftingPiston]
           ["oc:circuitChip3", "oc:materialDisk", diamond]]
-}
-openOS {
-  type: shapeless
-  input: ["oc:floppy", book]
-}
-luaBios {
-  type: shapeless
-  input: ["oc:eeprom", book]
 }
 graphicsCard1 {
   input: [["oc:circuitChip1", "oc:materialALU", "oc:ram1"]
@@ -224,14 +251,24 @@ generatorUpgrade {
           ["oc:circuitChip1", craftingPiston, "oc:circuitChip1"]
           [ingotIron, "oc:materialCircuitBoardPrinted", ingotIron]]
 }
+hoverUpgrade1 {
+  input: [[feather, "oc:circuitChip1", feather]
+          [nuggetIron, leather, nuggetIron]
+          [feather, "oc:materialCircuitBoardPrinted", feather]]
+}
+hoverUpgrade2 {
+  input: [[end_stone, "oc:circuitChip2", end_stone]
+          [nuggetGold, ingotIron, nuggetGold]
+          [end_stone, "oc:materialCircuitBoardPrinted", end_stone]]
+}
 inventoryUpgrade {
   input: [[plankWood, hopper, plankWood]
-          [dispenser, chest, craftingPiston]
+          [dropper, chest, craftingPiston]
           [plankWood, "oc:circuitChip1", plankWood]]
 }
 inventoryControllerUpgrade {
   input: [[ingotGold, "oc:analyzer", ingotGold]
-          [dispenser, "oc:circuitChip2", craftingPiston]
+          [dropper, "oc:circuitChip2", craftingPiston]
           [ingotGold, "oc:materialCircuitBoardPrinted", ingotGold]]
 }
 leashUpgrade {
@@ -313,6 +350,8 @@ nuggetIron {
   input: ingotIron
   output: 9
 }
+cuttingWire = false
+acid = false
 ingotIron {
   input: [[nuggetIron, nuggetIron, nuggetIron],
           [nuggetIron, nuggetIron, nuggetIron],
@@ -423,6 +462,7 @@ rawCircuitBoard {
   type: shapeless
   input: [nuggetGold, clay, dyeGreen]
 }
+circuitBoard = false
 printedCircuitBoard {
   type: furnace
   input: "oc:materialCircuitBoardRaw"
@@ -568,6 +608,11 @@ screen3 {
   input: [[obsidian, yellowDust, obsidian]
           [yellowDust, "oc:circuitChip3", glass]
           [obsidian, yellowDust, obsidian]]
+}
+waypoint {
+  input: [[ingotIron, "oc:circuitChip1", ingotIron]
+          ["oc:materialTransistor", "oc:materialInterweb", "oc:materialTransistor"],
+          [ingotIron, "oc:materialCircuitBoardPrinted", ingotIron]]
 }
 
 appengTunnel {

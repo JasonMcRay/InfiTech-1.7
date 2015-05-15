@@ -34,7 +34,6 @@ var plateLazurite = <gregtech:gt.metaitem.01:17524>;
 var dustLazurite = <gregtech:gt.metaitem.01:2524>;
 
 # Fixes and Tweaks
-Compressor.addRecipe(plateLazurite, dustLazurite);
 
 # Diamond Gear
 Assembler.addRecipe(GTGearDiamond, GTGearGold, plateDiamond, 1600, 2);

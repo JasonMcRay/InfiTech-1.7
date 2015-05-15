@@ -94,8 +94,6 @@ oreSalt.remove(dustSaltPHC);
 blockMarble.add(marblePrRed);
 
 # Extras
-furnace.remove(nuggetSteel, nuggetIron);
-nuggetSteel.remove(RCNuggetSteel);
 recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreIron]);
 recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreCopper]);
 recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreTin]);
