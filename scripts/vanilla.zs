@@ -1,14 +1,5 @@
-import mods.nei.NEI;
-import mods.gregtech.ChemicalReactor;
-import mods.gregtech.Wiremill;
-import mods.gregtech.Assembler;
-import mods.gregtech.ImplosionCompressor;
-import mods.gregtech.BlastFurnace;
-import mods.ic2.Macerator;
-import mods.ic2.Compressor;
-import mods.gregtech.Boxing;
-
 # Aliases
+var potionHealing = <ore:potionHealing>;
 var chestWood = <minecraft:chest>;
 var chestEnder = <minecraft:ender_chest>;
 var plateObsidian = <ore:plateObsidian>;
@@ -25,7 +16,10 @@ var blazeRod = <minecraft:blaze_rod>;
 var saw = <ore:craftingToolSaw>;
 var logWood = <ore:logWood>;
 
-# Ore Dictionary
+# OreDictionary
+potionHealing.add(<minecraft:potion:8197>);
+potionHealing.add(<minecraft:potion:8261>);
+potionHealing.add(<minecraft:potion:8229>);
 gemNetherQuartz.add(<appliedenergistics2:item.ItemMultiMaterial:11>);
 
 # Recipes Tweaks
@@ -46,6 +40,7 @@ recipes.addShaped(chestWood * 4, [
     [logWood, logWood, logWood],
     [logWood, saw, logWood],
     [logWood, logWood, logWood]]);
+	
 # Recipe Fixes
 recipes.remove(sensorDaylight);
 recipes.addShaped(sensorDaylight, [

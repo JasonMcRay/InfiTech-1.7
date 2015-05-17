@@ -1,147 +1,32 @@
-<!-- 
+<!--
 Custom recipes that will not be over written by Ender IO are added here.
 Examples of recipes can be found in AlloySmelterRecipes_Core.xml and general format
 documentation in SAGMillRecipes_Core/User.
 
-As well as adding custom recipes the operation of the Alloy Smelter as a vanilla furnace 
+As well as adding custom recipes the operation of the Alloy Smelter as a vanilla furnace
 can be controlled. It can be disabled completely by simply adding this line:
 
-  <vanillaFurnaceRecipes enabled="false"/>    
+  <vanillaFurnaceRecipes enabled="false"/>
 
 It is also possible to selectively disable vanilla furnace recipes.
 The following example disables the smelting of iron ingots, ender pearls and any form of iron ore registered in the
 ore dictionary.
 
-  <vanillaFurnaceRecipes>    
+  <vanillaFurnaceRecipes>
     <exclude>
-      <itemStack itemID="265" /> 
-      <itemStack itemID="368" /> 
-      <itemStack oreDictionary="oreIron" />  
+      <itemStack modID="minecraft" itemName="iron_ingot" />
+      <itemStack modID="minecraft" itemName="ender_pearl" />
+      <itemStack oreDictionary="oreIron" />
     </exclude>
 
   </vanillaFurnaceRecipes>
-  
+
   Add this line to disbale the creation of TE alloys using the Alloy Smelter.
   <recipeGroup name="Thermal Expansion" enabled="false"/>
 -->
 
 <AlloySmelterRecipes>
-<recipeGroup name="EnderIO">
-    <recipe name="Dark Steel" />
-    <recipe name="Redstone Alloy" energyCost="10000">
-      <input>
-        <itemStack modID="minecraft" itemName="redstone" />
-        <itemStack oreDictionary="itemSilicon" /> <!-- Silicon -->
-      </input>
-      <output>
-        <itemStack modID="EnderIO" itemName="itemAlloy" itemMeta="3" exp="0.5" />
-      </output>
-    </recipe>
-</recipeGroup>
-
-<recipeGroup name="Thermal Expansion" enabled="false"/>
-
-<recipeGroup name="GregTech">
-  	<recipe name="Bronze" energyCost="7500">
-	  <input>
-		<itemStack oreDictionary="ingotCopper" number="3"/> <!-- Copper Ingot -->
-		<itemStack oreDictionary="ingotTin"/> <!-- Tin Ingot -->
-	  </input>
-	  <output>
-		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11300" number="4" exp="0.25"/> <!-- Bronze Ingot -->
-	  </output>
-	</recipe>
-
-	<recipe name="Brass" energyCost="10000">
-	  <input>
-		<itemStack oreDictionary="ingotCopper" number="3"/> <!-- Copper Ingot -->
-		<itemStack oreDictionary="ingotZinc"/> <!-- Zinc Ingot -->
-	  </input>
-	  <output>
-		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11301" number="4" exp="0.25"/> <!-- Brass Ingot -->
-	  </output>
-	</recipe>
-
-	<recipe name="Cupronickel" energyCost="5000">
-	  <input>
-		<itemStack oreDictionary="ingotCopper"/> <!-- Copper Ingot -->
-		<itemStack oreDictionary="ingotNickel"/> <!-- Nickel Ingot -->
-	  </input>
-	  <output>
-		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11310" number="2" exp="0.25"/> <!-- Cupronickel Ingot -->
-	  </output>
-	</recipe>
-
-	<recipe name="SolderingAlloy" energyCost="25000">
-	  <input>
-		<itemStack oreDictionary="ingotTin" number="9"/> <!-- Tin Ingot -->
-		<itemStack oreDictionary="ingotAntimony"/> <!-- Antimony Ingot -->
-	  </input>
-	  <output>
-		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11314" number="10" exp="0.5"/> <!-- Soldering Alloy Ingot -->
-	  </output>
-	</recipe>
-
-	<recipe name="BatteryAlloy" energyCost="12500">
-	  <input>
-		<itemStack oreDictionary="ingotLead" number="4"/> <!-- Lead Ingot -->
-		<itemStack oreDictionary="ingotAntimony"/> <!-- Antimony Ingot -->
-	   </input>
-	  <output>
-		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11315" number="5" exp="0.3"/> <!-- Battery Alloy Ingot -->
-	  </output>
-	</recipe>
-
-	<recipe name="Magnalium" energyCost="7500">
-	  <input>
-		<itemStack oreDictionary="ingotMagnesium"/> <!-- Magnesium Ingot -->
-		<itemStack oreDictionary="ingotAluminium" number="2"/> <!-- Aluminium Ingot -->
-	  </input>
-	  <output>
-		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11313" number="3" exp="0.25"/> <!-- Magnalium Ingot -->
-	  </output>
-	</recipe>
-
-	<recipe name="RedAlloy" energyCost="2500">
-	  <input>
-		<itemStack oreDictionary="ingotCopper"/> <!-- Copper Ingot -->
-		<itemStack oreDictionary="dustRedstone" number="4"/> <!-- Redstone -->
-	  </input>
-	  <output>
-		<itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="11308"/> <!-- Red Alloy Ingot-->
-	  </output>
-	</recipe>
-</recipeGroup>
-
-<recipeGroup name="infitech">
-    <recipe name="Charcoal" energyCost="7000">
-      <input>
-        <itemStack oreDictionary="logWood"/>
-      </input>
-      <output>
-        <itemStack modID="minecraft" itemName="coal" itemMeta="1"/>
-      </output>
-    </recipe>
-    <recipe name="Charcoal from 2 Logs" energyCost="14000">
-      <input>
-        <itemStack oreDictionary="logWood"/>
-        <itemStack oreDictionary="logWood"/>
-      </input>
-      <output>
-        <itemStack modID="minecraft" itemName="coal" itemMeta="1" number="2"/>
-      </output>
-    </recipe>
-    <recipe name="Charcoal from 3 Logs" energyCost="21000">
-      <input>
-        <itemStack oreDictionary="logWood"/>
-        <itemStack oreDictionary="logWood"/>
-        <itemStack oreDictionary="logWood"/>
-      </input>
-      <output>
-        <itemStack modID="minecraft" itemName="coal" itemMeta="1" number="3"/>
-      </output>
-    </recipe>
-</recipeGroup>
-
-</AlloySmelterRecipes>  
-
+  <recipeGroup name="EnderIO" enabled="false"/>
+  <recipeGroup name="Thermal Expansion" enabled="false"/>
+  <vanillaFurnaceRecipes enabled="false"/>
+</AlloySmelterRecipes>

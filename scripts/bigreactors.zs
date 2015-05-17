@@ -33,7 +33,7 @@ var itemTurbineRotorBlade = <BigReactors:BRTurbineRotorPart:1>;
 recipes.remove(itemFuelRodYellorium);
 recipes.addShaped(itemFuelRodYellorium, [
 	[plateSteel, ingotGraphite, plateSteel],
-	[plateTungstenSteel, ingotYellorium, plateTungstenSteel],
+	[plateStainlessSteel, ingotYellorium, plateStainlessSteel],
 	[plateSteel, ingotGraphite, plateSteel]]);
 	
 # Reactor Casing

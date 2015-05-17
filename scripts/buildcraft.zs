@@ -1,12 +1,7 @@
 import mods.nei.NEI;
-import mods.gregtech.ChemicalReactor;
-import mods.gregtech.Wiremill;
-import mods.gregtech.Assembler;
-import mods.gregtech.ImplosionCompressor;
-import mods.gregtech.BlastFurnace;
-import mods.ic2.Macerator;
-import mods.ic2.Compressor;
-import mods.gregtech.Boxing;
+import mods.gregtech.FormingPress;
+import mods.gregtech.PrecisionLaser;
+import mods.buildcraft.AssemblyTable;
 
 # Aliases
 var BCGearWood = <BuildCraft|Core:woodenGearItem>;
@@ -97,9 +92,31 @@ var pipeStripesTransportRed = <BuildCraft|Transport:item.buildcraftPipe.pipeitem
 var stainedGlassRed = <minecraft:stained_glass:14>;
 var pipeStripesTransportBlack = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:16>;
 var stainedGlassBlack = <minecraft:stained_glass:15>;
+var chipsetEmerald = <BuildCraft|Silicon:redstoneChipset:7>;
+var plateEmerald = <gregtech:gt.metaitem.01:17501>;
+var crystalRedstone = <BuildCraft|Silicon:redstoneCrystal>;
+var blockRedstone = <minecraft:redstone_block>;
+var lenseRedGarnet = <gregtech:gt.metaitem.01:24527>;
+var lenseRuby = <gregtech:gt.metaitem.01:24502>;
+var lenseRuby2 = <gregtech:gt.metaitem.01:24512>;
+var lenseIgnis = <gregtech:gt.metaitem.01:24541>;
+var lenseJasper = <gregtech:gt.metaitem.01:24511>;
+var chipsetGold = <BuildCraft|Silicon:redstoneChipset:2>;
+var chipsetDiamond = <BuildCraft|Silicon:redstoneChipset:3>;
+var chipsetPulsating = <BuildCraft|Silicon:redstoneChipset:4>;
+var chipsetQuartz = <BuildCraft|Silicon:redstoneChipset:5>;
+var chipsetRedstoneComp = <BuildCraft|Silicon:redstoneChipset:6>;
+var chipsetIron = <BuildCraft|Silicon:redstoneChipset:1>;
+var pipeWireRed = <BuildCraft|Transport:pipeWire>;
+var pipeWireBlue = <BuildCraft|Transport:pipeWire:1>;
+var pipeWireGreen = <BuildCraft|Transport:pipeWire:2>;
+var pipeWireYellow = <BuildCraft|Transport:pipeWire:3>;
+var pipePlug = <BuildCraft|Transport:pipePlug>;
 
 
 # Items/Blocks Removal
+recipes.remove(BCRefinery);
+NEI.hide(BCRefinery);
 recipes.remove(BCGearWood);
 NEI.hide(BCGearWood);
 recipes.remove(BCGearStone);
@@ -112,69 +129,6 @@ recipes.remove(BCGearDiamond);
 NEI.hide(BCGearDiamond);
 
 # Recipe Changes
-recipes.remove(pipeStripesTransportAll);
-recipes.addShaped(pipeStripesTransportWhite, [
-    [GTGearGold, stainedGlassWhite, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportOrange, [
-    [GTGearGold, stainedGlassOrange, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportMagenta, [
-    [GTGearGold, stainedGlassMagenta, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportLightBlue, [
-    [GTGearGold, stainedGlassLightBlue, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportYellow, [
-    [GTGearGold, stainedGlassYellow, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportLime, [
-    [GTGearGold, stainedGlassLime, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportPink, [
-    [GTGearGold, stainedGlassPink, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportGray, [
-    [GTGearGold, stainedGlassGray, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportLightGray, [
-    [GTGearGold, stainedGlassLightGray, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportCyan, [
-    [GTGearGold, stainedGlassCyan, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportPurple, [
-    [GTGearGold, stainedGlassPurple, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportBlue, [
-    [GTGearGold, stainedGlassBlue, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportBrown, [
-    [GTGearGold, stainedGlassBrown, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportGreen, [
-    [GTGearGold, stainedGlassGreen, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportRed, [
-    [GTGearGold, stainedGlassRed, GTGearGold]]);
-recipes.addShaped(pipeStripesTransportBlack, [
-    [GTGearGold, stainedGlassBlack, GTGearGold]]);
-recipes.remove(zonePlanner);
-recipes.addShaped(zonePlanner, [    
-    [ingotIron, redstone, ingotIron],
-    [GTGearGold, mapEmpty, GTGearGold],
-    [ingotIron, GTGearDiamond, ingotIron]]);
-recipes.remove(requester);
-recipes.addShaped(requester, [
-    [ingotIron, piston, ingotIron],
-    [GTGearIron, chestWood, GTGearIron],
-    [ingotIron, redstone, ingotIron]]);
-recipes.remove(engineRedstone);
-recipes.addShaped(engineRedstone, [
-	[plankWood, plankWood, plankWood],
-	[null, glass, null],
-	[GTGearWood, piston, GTGearWood]]);
-recipes.remove(workbenchAuto);
-recipes.addShaped(workbenchAuto, [
-	[null, GTGearWood, null],
-	[GTGearWood, craftingTable, GTGearWood],
-	[null, GTGearWood, null]]);
-recipes.remove(BCWrench);
-recipes.addShaped(BCWrench, [
-	[ingotIron, null, ingotIron],
-	[null, GTGearStone, null],
-	[null, ingotIron, null]]);
-recipes.remove(engineStirling);
-recipes.addShaped(engineStirling, [
-	[cobblestone, cobblestone, cobblestone],
-	[null, glass, null],
-	[GTGearStone, piston, GTGearStone]]);
 recipes.remove(chute);
 recipes.addShaped(chute, [
 	[plateIron, chestWood, plateIron],
@@ -184,55 +138,27 @@ recipes.addShaped(chute, [
 	[plateIron, chestWood, plateIron],
 	[plateIron, GTGearStone, plateIron],
 	[null, plateIron, hammer]]);
-recipes.remove(engineCombustion);
-recipes.addShaped(engineCombustion, [
-	[ingotIron, ingotIron, ingotIron],
-	[null, glass, null],
-	[GTGearIron, piston, GTGearIron]]);
-recipes.remove(miningWell);
-recipes.addShaped(miningWell, [
-	[ingotIron, redstone, ingotIron],
-	[ingotIron, GTGearIron, ingotIron],
-	[ingotIron, pickaxeIron, ingotIron]]);
-recipes.remove(floodGate);
-recipes.addShaped(floodGate, [
-	[ingotIron, GTGearIron, ingotIron],
-	[ironBars, BCTank, ironBars],
-	[ingotIron, ironBars, ingotIron]]);
-recipes.remove(filler);
-recipes.addShaped(filler, [
-	[dyeBlack, landMark, dyeBlack],
-	[dyeYellow, craftingTable, dyeYellow],
-	[GTGearGold, chestWood, GTGearGold]]);
-recipes.remove(quarry);
-recipes.addShaped(quarry, [
-	[GTGearSteel, circuitAdvanced, GTGearSteel],
-	[GTGearGold, GTGearSteel, GTGearGold],
-	[GTGearDiamond, drillDiamond, GTGearDiamond]]);
-recipes.remove(pipeStripesTransport);
-recipes.addShaped(pipeStripesTransport, [
-	[GTGearGold, glass, GTGearGold]]);
-recipes.remove(builder);
-recipes.addShaped(builder, [
-	[dyeBlack, landMark, dyeBlack],
-	[dyeYellow, craftingTable, dyeYellow],
-	[GTGearDiamond, chestWood, GTGearDiamond]]);
-recipes.remove(architectTable);
-recipes.addShaped(architectTable, [
-	[dyeBlack, landMark, dyeBlack],
-	[dyeYellow, craftingTable, dyeYellow],
-	[GTGearDiamond, blueprint, GTGearDiamond]]);
-recipes.remove(assemblyTable);
-recipes.addShaped(assemblyTable, [
-	[obsidian, redstone, obsidian],
-	[obsidian, diamond, obsidian],
-	[obsidian, GTGearDiamond, obsidian]]);
-recipes.remove(integrationTable);
-recipes.addShaped(integrationTable, [
-	[obsidian, redstone, obsidian],
-	[obsidian, chipsetRedstone, obsidian],
-	[obsidian, GTGearDiamond, obsidian]]);
-recipes.remove(BCRefinery);
-recipes.addShaped(BCRefinery, [
-	[redstoneTorch, BCTank, redstoneTorch],
-	[BCTank, GTGearDiamond, BCTank]]);
+
+# GT Integration
+//FormingPress.addRecipe(output, input1, input2, durationTicks, euPerTick);
+//PrecisionLaser.addRecipe(output, lense, input, durationTicks, euPerTick);
+AssemblyTable.remove(crystalRedstone);
+AssemblyTable.remove(chipsetEmerald);
+AssemblyTable.remove(chipsetRedstone);
+AssemblyTable.remove(chipsetGold);
+AssemblyTable.remove(chipsetDiamond);
+AssemblyTable.remove(chipsetPulsating);
+AssemblyTable.remove(chipsetQuartz);
+AssemblyTable.remove(chipsetRedstoneComp);
+AssemblyTable.remove(chipsetIron);
+AssemblyTable.remove(pipeWireRed);
+AssemblyTable.remove(pipeWireBlue);
+AssemblyTable.remove(pipeWireGreen);
+AssemblyTable.remove(pipeWireYellow);
+AssemblyTable.remove(pipePlug);
+FormingPress.addRecipe(chipsetEmerald, chipsetRedstone, plateEmerald, 150, 480);
+PrecisionLaser.addRecipe(crystalRedstone, lenseRedGarnet, blockRedstone, 125, 480);
+PrecisionLaser.addRecipe(crystalRedstone, lenseRuby, blockRedstone, 125, 480);
+PrecisionLaser.addRecipe(crystalRedstone, lenseRuby2, blockRedstone, 125, 480);
+PrecisionLaser.addRecipe(crystalRedstone, lenseIgnis, blockRedstone, 125, 480);
+PrecisionLaser.addRecipe(crystalRedstone, lenseJasper, blockRedstone, 125, 480);

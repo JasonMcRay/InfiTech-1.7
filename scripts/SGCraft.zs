@@ -50,17 +50,17 @@ var stargateRing = <SGCraft:stargateRing>;
 var stargateChevronBlock = <SGCraft:stargateRing:1>;
 var stargateController = <SGCraft:stargateController>;
 var plateNaqAlloy = <ore:plateNaquadahAlloy>;
-var sensorIV = <gregtech:gt.metaitem.01:32694>;
-var fieldGenIV = <gregtech:gt.metaitem.01:32674>;
-var hullIV = <gregtech:gt.blockmachines:15>;
-var emitterIV = <gregtech:gt.metaitem.01:32684>;
+var sensorEV = <gregtech:gt.metaitem.01:32693>;
+var fieldGenEV = <gregtech:gt.metaitem.01:32673>;
+var hullEV = <gregtech:gt.blockmachines:14>;
 var motorEV = <gregtech:gt.metaitem.01:32603>;
 var casingEV = <gregtech:gt.blockcasings:4>;
 var conveyorEV = <gregtech:gt.metaitem.01:32633>;
 var emitterEV = <gregtech:gt.metaitem.01:32683>;
 var pistonEV = <gregtech:gt.metaitem.01:32643>;
-var wireOsmium8x = <gregtech:gt.blockmachines:1629>;
-var casingIV = <gregtech:gt.blockcasings:5>;
+var wireTungsten8x = <gregtech:gt.blockmachines:1549>;
+
+
 
 # Recipe Removal
 recipes.remove(ingotNaqAlloyGT);
@@ -68,9 +68,9 @@ recipes.remove(ingotNaqAlloyGT);
 # Recipe Tweaks
 recipes.remove(stargateBase);
 recipes.addShaped(stargateBase, [
-    [plateNaqAlloy, sensorIV, plateNaqAlloy],
-    [fieldGenIV, hullIV, fieldGenIV],
-    [emitterIV, crystalSGCore, emitterIV]]);
+    [plateNaqAlloy, sensorEV, plateNaqAlloy],
+    [fieldGenEV, hullEV, fieldGenEV],
+    [emitterEV, crystalSGCore, emitterEV]]);
 recipes.remove(stargateRing);
 recipes.addShaped(stargateRing, [
     [plateNaqAlloy, motorEV, plateNaqAlloy],
@@ -83,22 +83,22 @@ recipes.addShaped(stargateChevronBlock, [
     [motorEV, plateNaqAlloy, motorEV]]);
 recipes.remove(stargateController);
 recipes.addShaped(stargateController, [
-    [null, sensorIV, null],
-    [emitterIV, hullIV, emitterIV],
+    [null, sensorEV, null],
+    [emitterEV, hullEV, emitterEV],
     [circuitMaster, crystalSGController, circuitMaster]]);
 recipes.remove(capacitorLarge);
 recipes.addShaped(capacitorLarge, [
     [plateChrome, plateChrome, plateChrome],
     [ingotRubber, ingotRubber, ingotRubber],
     [plateChrome, plateChrome, plateChrome]]);
-//recipes.remove(blockNaqAlloy);
-//Compressor.addRecipe(blockNaqAlloy, ingotNaqAlloySG * 9);
-//Compressor.addRecipe(blockNaqAlloy, ingotNaqAlloyGT * 9);
-//recipes.addShapeless(ingotNaqAlloyGT * 9, [blockNaqAlloy]);
+recipes.remove(blockNaqAlloy);
+Compressor.addRecipe(blockNaqAlloy, ingotNaqAlloySG * 9);
+Compressor.addRecipe(blockNaqAlloy, ingotNaqAlloyGT * 9);
+recipes.addShapeless(ingotNaqAlloyGT * 9, [blockNaqAlloy]);
 recipes.remove(stargatePowerIC2);
 recipes.addShaped(stargatePowerIC2, [
-    [capacitorLarge, wireOsmium8x, capacitorLarge],
-    [wireOsmium8x, casingIV, wireOsmium8x],
+    [capacitorLarge, wireTungsten8x, capacitorLarge],
+    [wireTungsten8x, casingEV, wireTungsten8x],
     [capacitorLarge, circuitMaster, capacitorLarge]]);
 NEI.overrideName(stargatePowerIC2, "EU Stargate Power Unit");
 recipes.remove(stargatePowerRF);

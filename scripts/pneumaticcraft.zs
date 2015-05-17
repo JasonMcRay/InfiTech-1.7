@@ -1,14 +1,38 @@
+import mods.gregtech.AssemblerLiq;
+import mods.forestry.ThermionicFabricator;
 import mods.nei.NEI;
-import mods.gregtech.ChemicalReactor;
-import mods.gregtech.Wiremill;
-import mods.gregtech.Assembler;
-import mods.gregtech.ImplosionCompressor;
-import mods.gregtech.BlastFurnace;
-import mods.ic2.Macerator;
-import mods.ic2.Compressor;
-import mods.gregtech.Boxing;
 
 # Aliases
+var tubeSquid = <PneumaticCraft:plasticElectronTube>;
+var tubeFire = <PneumaticCraft:plasticElectronTube:1>;
+var tubeCreeper = <PneumaticCraft:plasticElectronTube:2>;
+var tubeSlime = <PneumaticCraft:plasticElectronTube:3>;
+var tubeRain = <PneumaticCraft:plasticElectronTube:4>;
+var tubeEnder = <PneumaticCraft:plasticElectronTube:5>;
+var tubeLightning = <PneumaticCraft:plasticElectronTube:6>;
+var tubeBurst = <PneumaticCraft:plasticElectronTube:8>;
+var tubePotion = <PneumaticCraft:plasticElectronTube:9>;
+var tubeRepulsion = <PneumaticCraft:plasticElectronTube:10>;
+var tubeHelium = <PneumaticCraft:plasticElectronTube:11>;
+var tubeChopper = <PneumaticCraft:plasticElectronTube:12>;
+var tubePropulsion = <PneumaticCraft:plasticElectronTube:14>;
+var tubeFlying = <PneumaticCraft:plasticElectronTube:15>;
+var dustRedstone = <minecraft:redstone>;
+var moltenGlass = <liquid:molten.glass>;
+var plasticSquid = <PneumaticCraft:plastic>;
+var plasticFire = <PneumaticCraft:plastic:1>;
+var plasticCreeper = <PneumaticCraft:plastic:2>;
+var plasticSlime = <PneumaticCraft:plastic:3>;
+var plasticRain = <PneumaticCraft:plastic:4>;
+var plasticEnder = <PneumaticCraft:plastic:5>;
+var plasticLightning = <PneumaticCraft:plastic:6>;
+var plasticBurst = <PneumaticCraft:plastic:8>;
+var plasticPotion = <PneumaticCraft:plastic:9>;
+var plasticRepulsion = <PneumaticCraft:plastic:10>;
+var plasticHelium = <PneumaticCraft:plastic:11>;
+var plasticChopper = <PneumaticCraft:plastic:12>;
+var plasticPropulsion = <PneumaticCraft:plastic:14>;
+var plasticFlying = <PneumaticCraft:plastic:15>;
 var gearCompressedIron = <PneumaticCraft:compressedIronGear>;
 var ingotCompressedIron = <PneumaticCraft:ingotIronCompressed>;
 var gearStone = <ore:gearStone>;
@@ -47,3 +71,33 @@ recipes.addShaped(omniHopper, [
     [ingotCompressedIron, hammer, ingotCompressedIron],
     [ingotCompressedIron, hopper, ingotCompressedIron],
     [null, ingotCompressedIron, null]]);
+
+# GT Integration
+ThermionicFabricator.removeCasts(tubeSquid);
+ThermionicFabricator.removeCasts(tubeFire);
+ThermionicFabricator.removeCasts(tubeCreeper);
+ThermionicFabricator.removeCasts(tubeSlime);
+ThermionicFabricator.removeCasts(tubeRain);
+ThermionicFabricator.removeCasts(tubeEnder);
+ThermionicFabricator.removeCasts(tubeLightning);
+ThermionicFabricator.removeCasts(tubeBurst);
+ThermionicFabricator.removeCasts(tubePotion);
+ThermionicFabricator.removeCasts(tubeRepulsion);
+ThermionicFabricator.removeCasts(tubeHelium);
+ThermionicFabricator.removeCasts(tubeChopper);
+ThermionicFabricator.removeCasts(tubePropulsion);
+ThermionicFabricator.removeCasts(tubeFlying);
+AssemblerLiq.addRecipe(tubeSquid, dustRedstone * 2, plasticSquid * 5, moltenGlass * 72, 64, 32);
+AssemblerLiq.addRecipe(tubeFire, dustRedstone * 2, plasticFire * 5, moltenGlass * 72, 64, 32);
+AssemblerLiq.addRecipe(tubeCreeper, dustRedstone * 2, plasticCreeper * 5, moltenGlass * 72, 64, 32);
+AssemblerLiq.addRecipe(tubeSlime, dustRedstone * 2, plasticSlime * 5, moltenGlass * 72, 64, 32);
+AssemblerLiq.addRecipe(tubeRain, dustRedstone * 2, plasticRain * 5, moltenGlass * 72, 64, 32);
+AssemblerLiq.addRecipe(tubeEnder, dustRedstone * 2, plasticEnder * 5, moltenGlass * 72, 64, 32);
+AssemblerLiq.addRecipe(tubeLightning, dustRedstone * 2, plasticLightning * 5, moltenGlass * 72, 64, 32);
+AssemblerLiq.addRecipe(tubeBurst, dustRedstone * 2, plasticBurst * 5, moltenGlass * 72, 64, 32);
+AssemblerLiq.addRecipe(tubePotion, dustRedstone * 2, plasticPotion * 5, moltenGlass * 72, 64, 32);
+AssemblerLiq.addRecipe(tubeRepulsion, dustRedstone * 2, plasticRepulsion * 5, moltenGlass * 72, 64, 32);
+AssemblerLiq.addRecipe(tubeHelium, dustRedstone * 2, plasticHelium * 5, moltenGlass * 72, 64, 32);
+AssemblerLiq.addRecipe(tubeChopper, dustRedstone * 2, plasticChopper * 5, moltenGlass * 72, 64, 32);
+AssemblerLiq.addRecipe(tubePropulsion, dustRedstone * 2, plasticPropulsion * 5, moltenGlass * 72, 64, 32);
+AssemblerLiq.addRecipe(tubeFlying, dustRedstone * 2, plasticFlying * 5, moltenGlass * 72, 64, 32);
