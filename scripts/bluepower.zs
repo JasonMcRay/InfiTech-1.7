@@ -16,6 +16,7 @@ var ingotBlueAlloy = <ore:ingotBlueAlloy>;
 var sortingMachine = <bluepower:sorting_machine>;
 var blockBreaker = <bluepower:block_breaker>;
 var ingotPurpleAlloy = <bluepower:purple_alloy_ingot>;
+var ingotRedAlloy = <ore:ingotRedAlloy>;
 var bouleSilicon = <bluepower:silicon_boule>;
 var coal = <minecraft:coal>;
 var sand = <minecraft:sand>;
@@ -32,6 +33,7 @@ var wireFineIronGT = <gregtech:gt.metaitem.02:19032>;
 var wireFineCopperGT = <gregtech:gt.metaitem.02:19035>;
 var wireFineIronBP = <bluepower:iron_wire>;
 var wireFineCopperBP = <bluepower:copper_wire>;
+var wireRedAlloy = <bluepower:part.wire.redalloy>;
 
 # Item/block Removal
 recipes.remove(blockBreaker);
@@ -42,6 +44,7 @@ recipes.remove(drawplate);
 NEI.hide(drawplate);
 
 # Recipe tweaks
+recipes.removeShaped(wireRedAlloy, [[ingotRedAlloy, ingotRedAlloy, ingotRedAlloy]]);
 //Assembler.addRecipe(output, input1, input2, durationTicks, euPerTick);
 recipes.remove(wireFineIronBP);
 Assembler.addRecipe(wireFineIronBP, ingotIron, wireFineIronGT * 8, 200, 8);
