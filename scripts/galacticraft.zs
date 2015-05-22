@@ -14,6 +14,11 @@ import mods.gregtech.VacuumFreezer;
 import mods.gregtech.Wiremill;
 
 // --- Variables --- #
+val cableSealableCopper = <GalacticraftCore:tile.enclosed:2>;
+val cableSealableGold = <GalacticraftCore:tile.enclosed:3>;
+val cableSealableHV = <GalacticraftCore:tile.enclosed:4>;
+val cableSealableFibre = <GalacticraftCore:tile.enclosed:5>;
+val cableSealableTin = <GalacticraftCore:tile.enclosed:6>;
 
 val CompressedAl = <ore:compressedAluminium>;
 val CompressedIron = <ore:compressedIron>;
@@ -63,7 +68,12 @@ val Wool = <ore:blockWool>;
 val String = <minecraft:string>;
 
 // --- remove Recipes ---
-
+//Sealable Cables
+recipes.remove(cableSealableCopper);
+recipes.remove(cableSealableGold);
+recipes.remove(cableSealableHV);
+recipes.remove(cableSealableFibre);
+recipes.remove(cableSealableTin);
 //Rocket Launch Pad
 recipes.remove(<GalacticraftCore:tile.landingPad>);
 //Buggy Fueling Pad

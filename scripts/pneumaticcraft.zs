@@ -52,8 +52,24 @@ var gateBasic = <BuildCraft|Transport:pipeGate>;
 var gearGold = <ore:gearGold>;
 var pipeKinesisDiamond = <BuildCraft|Transport:item.buildcraftPipe.pipepowerdiamond>;
 var furnace = <ore:craftingFurnace>;
+var generatorPneumatic = <PneumaticCraft:pneumaticGenerator>;
+var cablePlatinum = <gregtech:gt.blockmachines:1646>;
+var circuitAdvanced = <ore:circuitAdvanced>;
+var alloyAdvanced = <ore:plateAlloyAdvanced>;
+var compressorElectric = <PneumaticCraft:electricCompressor>;
+var generator = <IC2:blockGenerator>;
 
 # Recipes Tweaks
+recipes.remove(compressorElectric);
+recipes.addShaped(compressorElectric, [
+	[alloyAdvanced, circuitAdvanced, PCB],
+	[cablePlatinum, turbineRotor, tubePressureAdv],
+	[alloyAdvanced, generator, PCB]]);
+recipes.remove(generatorPneumatic);
+recipes.addShaped(generatorPneumatic, [
+	[PCB, circuitAdvanced, alloyAdvanced],
+	[tubePressureAdv, turbineRotor, cablePlatinum],
+	[PCB, circuitAdvanced, alloyAdvanced]]);
 recipes.remove(gearCompressedIron);
 recipes.addShaped(gearCompressedIron, [
     [null, ingotCompressedIron, null],

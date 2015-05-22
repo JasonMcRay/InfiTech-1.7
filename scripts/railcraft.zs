@@ -36,6 +36,11 @@ var railAdvanced = <Railcraft:part.rail:1>;
 var railHS = <Railcraft:part.rail:3>;
 var railReinforced = <Railcraft:part.rail:4>;
 var railElectric = <Railcraft:part.rail:5>;
+var upgradeLapotronLoader = <Railcraft:upgrade.lapotron>;
+var glass = <minecraft:glass>;
+var cablePlatinum = <gregtech:gt.blockmachines:1646>;
+var crystalLapotron = <IC2:itemBatLamaCrystal>;
+var circuitAdvanced = <ore:circuitAdvanced>;
 
 # Recipe tweaks
 recipes.remove(railStandard);
@@ -44,6 +49,11 @@ recipes.remove(railHS);
 recipes.remove(railReinforced);
 recipes.remove(railElectric);
 
+recipes.remove(upgradeLapotronLoader);
+recipes.addShaped(upgradeLapotronLoader, [
+	[glass, glass, glass],
+	[cablePlatinum, crystalLapotron, cablePlatinum],
+	[glass, circuitAdvanced, glass]]);
 recipes.remove(fireboxSolid);
 recipes.addShaped(fireboxSolid, [
 	[brickAbyssal, brickAbyssal, brickAbyssal],

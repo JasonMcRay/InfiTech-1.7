@@ -186,7 +186,6 @@ var minecraftSoulSand = <minecraft:soul_sand>;
 var minecraftNetherrack = <minecraft:netherrack>;
 var minecraftNetherbrick = <minecraft:nether_brick>;
 var minecraftNetherstar = <minecraft:nether_star>;
-var coconutSeed = <ProjectZulu|Core:CoconutSeed>;
 var redstone = <minecraft:redstone>;
 var enderPearl = <minecraft:ender_pearl>;
 var diamond = <minecraft:diamond>;
@@ -276,9 +275,6 @@ Decomposer.removeRecipe(moleculeSucrose);
 Decomposer.removeRecipe(moleculeBlueorgodye);
 Decomposer.removeRecipe(moleculeCucurbitacin);
 Decomposer.removeRecipe(moleculeKeratin);
-
-# Diamond fix
-Decomposer.removeRecipe(coconutSeed);
 
 # Mass Fabrication
 Decomposer.removeRecipe(minecraftStone);
