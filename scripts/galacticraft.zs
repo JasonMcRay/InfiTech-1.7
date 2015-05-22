@@ -1,4 +1,3 @@
-// Entries with INFITECH needs to be made with InfiTech mod
 // --- Mod Import ---
 
 import mods.gregtech.Assembler;
@@ -270,8 +269,8 @@ recipes.remove(<GalacticraftMars:tile.walkway>);
 recipes.removeShaped(<GalacticraftMars:tile.walkwayWire>);
 //Walk Away Pipes
 recipes.removeShaped(<GalacticraftMars:tile.walkwayOxygenPipe>);
-//Thermal Cloth - INFITECH
-//recipes.remove(<GalacticraftMars:item.itemBasicAsteroids:7>);
+//Thermal Cloth
+recipes.remove(<GalacticraftMars:item.itemBasicAsteroids:7>);
 //Atmospheric Valve
 recipes.remove(<GalacticraftMars:item.atmosphericValve>);
 //Heavy Rocket Fines
@@ -674,12 +673,6 @@ recipes.addShaped(<GalacticraftCore:item.oxygenConcentrator>, [
 [CompressedSteel, <GalacticraftCore:item.airFan>, CompressedSteel],
 [<GalacticraftCore:item.canister>, LVPump, <GalacticraftCore:item.canister>]]);
 
-//Heavy Duty Plate Tier 0 - INFITECH
-/*recipes.addShaped(<dreamcraft:item.HeavyDutyBoard>, [
-[SSteelBolt, HHammer, SSteelBolt],
-[CompressedBronze, CompressedAl, CompressedSteel],
-[SSteelBolt, Wrench, SSteelBolt]]);*/
-
 //Tier 1 Rocket Engine
 recipes.addShaped(<GalacticraftCore:item.engine>, [
 [<gregtech:gt.metaitem.01:32731>, <gregtech:gt.metaitem.01:32476>, <minecraft:stone_button>],
@@ -746,13 +739,12 @@ recipes.addShaped(<GalacticraftMars:tile.walkwayOxygenPipe> * 2, [
 [<GalacticraftCore:tile.oxygenPipe>, <GalacticraftMars:tile.mars:8>, <GalacticraftCore:tile.oxygenPipe>],
 [DeshPlate, DeshPlate, DeshPlate]]);
 
-//Thermal Cloth - INFITECH
-/*
+//Thermal Cloth
 recipes.addShaped(<GalacticraftMars:item.itemBasicAsteroids:7> , [
-[AlFoil, <dreamcraft:item.MeteoricSteelString>, AlFoil],
-[<dreamcraft:item.MeteoricSteelString>, <Thaumcraft:ItemResource:7>, <dreamcraft:item.MeteoricSteelString>],
-[AlFoil, <dreamcraft:item.MeteoricSteelString>, AlFoil]]);
-*/
+[AlFoil, <minecraft:string>, AlFoil],
+[<minecraft:string>, <Thaumcraft:ItemResource:7>, <minecraft:string>],
+[AlFoil, <minecraft:string>, AlFoil]]);
+
 //Desh Sticks
 recipes.addShapeless(<GalacticraftMars:item.null:1>, [<gregtech:gt.metaitem.01:23884>]);
 
@@ -900,15 +892,6 @@ Assembler.addRecipe(<GalacticraftMars:item.thermalPadding:2>, <GalacticraftMars:
 //Thermal Padding Boots
 Assembler.addRecipe(<GalacticraftMars:item.thermalPadding:3>, <GalacticraftMars:item.itemBasicAsteroids:7> * 4, <gregtech:gt.integrated_circuit:4> * 0, 600, 1024);
 
-//Heavy Duty Plate Tier 1.5 - INFITECH
-//AssemblerLiq.addRecipe(<dreamcraft:item.HeavyDutyBoard2>, HeavyPlating, MeteorPlate * 2, <liquid:molten.tungsten> * 576, 1200, 256);
-	
-//Heavy Duty Plate Tier 2.5 - INFITECH
-
-//AssemblerLiq.addRecipe(<dreamcraft:item.HeavyDutyBoard3>, <GalacticraftMars:item.null:3>, DeshPlate * 4, <liquid:molten.tungstensteel> * 576, 2400, 1024);
-
-
-
 //Blast Furnace Recipes
 
 //Titan Ingot
@@ -955,63 +938,11 @@ furnace.remove(<*>, <GalacticraftMars:tile.mars:2>);
 //Desh Shards
 furnace.remove(<*>, <GalacticraftMars:item.null>);
 
-// --- Implusion Compressor Recipes ---
-
-//Compressed Copper Plates
-ImplosionCompressor.addRecipe(<GalacticraftCore:item.basicItem:6>, <gregtech:gt.metaitem.01:19035>, 4);
-
-//Compressed Tin Plates
-ImplosionCompressor.addRecipe(<GalacticraftCore:item.basicItem:7>, <gregtech:gt.metaitem.01:19057>, 4);
-
-//Compressed Aluminium Plates
-ImplosionCompressor.addRecipe(<GalacticraftCore:item.basicItem:8>, <gregtech:gt.metaitem.01:19019>, 4);
-
-//Compressed Steel Plates
-ImplosionCompressor.addRecipe(<GalacticraftCore:item.basicItem:9>, <gregtech:gt.metaitem.01:19305>, 4);
-
-//Compressed Bronze Plates
-ImplosionCompressor.addRecipe(<GalacticraftCore:item.basicItem:10>, <gregtech:gt.metaitem.01:19300>, 4);
-
-//Compressed Titanium Plates
-ImplosionCompressor.addRecipe(<GalacticraftMars:item.itemBasicAsteroids:6>, <gregtech:gt.metaitem.01:19028>, 4);
-
-//Compressed Iron Plates
-ImplosionCompressor.addRecipe(<GalacticraftCore:item.basicItem:11>, <gregtech:gt.metaitem.01:19032>, 4);
-
-//Heavy Duty Plats Tier 1 - INFITECH
-//ImplosionCompressor.addRecipe([HeavyPlating, <gregtech:gt.metaitem.01:306> * 2], <dreamcraft:item.HeavyDutyBoard>, 8);
-
-//Heavy Duty Plats Tier 2 - INFITECH
-//ImplosionCompressor.addRecipe([<GalacticraftMars:item.null:3>, <gregtech:gt.metaitem.01:81> * 2], <dreamcraft:item.HeavyDutyBoard2>, 16);
-
-//Heavy Duty Plats Tier 3 - INFITECH
-//ImplosionCompressor.addRecipe([HeavyDutyPlate, <gregtech:gt.metaitem.01:316> * 2], <dreamcraft:item.HeavyDutyBoard3>, 32);
-
-//Compressed Meteoric Iron Plates
-ImplosionCompressor.addRecipe(<GalacticraftCore:item.meteoricIronIngot:1>, <gregtech:gt.metaitem.01:19340>, 4);
-
-//Compressed Desh Plates
-ImplosionCompressor.addRecipe(<GalacticraftMars:item.null:5>, <gregtech:gt.metaitem.01:19884>, 4);
-
 // --- Macerator Recipes ---
-
-//Meteoric Iron Dust
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2340> * 9, <GalacticraftCore:tile.gcBlockCore:12>);
-
-//Desh Shards
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2884>, <GalacticraftMars:item.null>);
-
-Macerator.addRecipe(<GalacticraftMars:item.null> * 2, <GalacticraftMars:tile.mars:2>);
 
 //Raw Meteoric Iron
 
 Macerator.addRecipe(<GalacticraftCore:item.meteoricIronRaw> * 2, <GalacticraftCore:tile.fallenMeteor>);
-
-//Desh Dust
-Macerator.addRecipe(<gregtech:gt.metaitem.01:2884> * 9, <GalacticraftMars:tile.mars:8>);
-
-//Titanium Shards
-Macerator.addRecipe(<GalacticraftMars:item.itemBasicAsteroids:4> * 2, <GalacticraftMars:tile.asteroidsBlock:4>);
 
 // --- Plate Bender Recipes ---
 
@@ -1034,8 +965,3 @@ oreDict.oreIlmenite.add(<GalacticraftMars:tile.asteroidsBlock:4>);
 
 //Desh to Ore Dict
 oreDict.oreDesh.add(<GalacticraftMars:tile.mars:2>);
-
-// --- Wiremill Recipes ---
-
-//Meteoric Steel String - INFITECH
-//Wiremill.addRecipe(<dreamcraft:item.MeteoricSteelString>, <gregtech:gt.metaitem.02:22341>, 600, 512);
