@@ -1,9 +1,3 @@
-# my Filter
-fastcraft.ini filter=fastcraftFilter
-IC2.ini filter=IC2Filter
-InvTweaks.cfg filter=invFilter
-splash.properties filter=splashFilter
-
 # Auto detect text files and perform LF normalization
 * text=auto
 
