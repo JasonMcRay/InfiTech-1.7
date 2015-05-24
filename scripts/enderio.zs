@@ -8,6 +8,7 @@ import mods.gregtech.ChemicalReactorLiq;
 #DARKSTEEL PLATES? STICKS AND STUFF!!!! WANT
 
 # Aliases
+var glass = <minecraft:glass>;
 var lightPowered = <EnderIO:blockElectricLight>;
 var ingotSilicon = <ore:ingotSilicon>;
 var dustSilicon = <ore:dustSilicon>;
@@ -105,6 +106,7 @@ var ingotEnderium = <gregtech:gt.metaitem.01:11321>;
 var conduitFluidEnder = <EnderIO:itemLiquidConduit:2>;
 var itemDustEmerald = <gregtech:gt.metaitem.01:2501>;
 var itemDustDiamond = <gregtech:gt.metaitem.01:2500>;
+var moltenChlorine = <liquid:chlorine>;
 
 # GT Integration
 //ChemicalReactorLiq.addRecipe(output, liquidOutput, input1, input2, liquidInput, durationTicks);
@@ -137,6 +139,7 @@ AlloySmelter.addRecipe(fusedQuartz, blockQuartz, dustGlass, 100, 16);
 ChemicalBathLiq.addRecipe(fusedQuartzEnlighten, null, null, fusedQuartz, moltenGlowstone * 576, 10000, 0, 0, 100, 8);
 ChemicalBathLiq.addRecipe(clearGlassEnlighten, null, null, clearGlass, moltenGlowstone * 576, 10000, 0, 0, 100, 4);
 ChemicalBathLiq.addRecipe(ingotConductiveIron, null, null, itemIngotIron, moltenRedstone * 144, 10000, 0, 0, 200, 8);
+ChemicalBathLiq.addRecipe(clearGlass, null, null, glass, moltenChlorine * 50, 10000, 0, 0, 400, 2);
 
 # Oredictionary
 itemSilicon.remove(EISilicon);
@@ -220,3 +223,24 @@ var HEskullEnderman = <HardcoreEnderExpansion:enderman_head>;
 
 recipes.addShapeless(EIskullEnderman, [HEskullEnderman]);
 recipes.addShapeless(HEskullEnderman, [EIskullEnderman]);
+
+# Chisel fix
+mods.chisel.Groups.removeGroup("glass");
+mods.chisel.Groups.addGroup("glass2");
+mods.chisel.Groups.addVariation("glass2", <minecraft:glass>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass2>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:1>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:2>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:3>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:4>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:5>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:6>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:7>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:8>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:9>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:10>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:11>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:12>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:13>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:14>);
+mods.chisel.Groups.addVariation("glass2", <chisel:glass:15>);

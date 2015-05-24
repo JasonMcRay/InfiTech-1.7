@@ -50,6 +50,8 @@ recipes.remove(<IC2NuclearControl:ItemUpgrade:1>);
 recipes.remove(<IC2NuclearControl:ItemTextCard>);
 //Remote RF Reactor Kit
 recipes.remove(<IC2NuclearControl:NC-BRrfsensorKit>);
+//Remote AE Monitor Kit - Needs fixing on mod side
+//recipes.remove(<IC2NuclearControl:KitAppeng>);
 
 //add recipes
 
@@ -163,3 +165,5 @@ Assembler.addRecipe(<IC2NuclearControl:ItemUpgrade>, <gregtech:gt.metaitem.01:32
 Assembler.addRecipe(<IC2NuclearControl:ItemTextCard>, <gregtech:gt.metaitem.01:32740>, <IC2:itemFreq>, 1600, 2);
 //Remote RF Reactor Kit
 Assembler.addRecipe(<IC2NuclearControl:NC-BRrfsensorKit>, <EnderIO:itemBasicCapacitor:1>, <IC2:itemFreq>, 1600, 2);
+//Remote AE Monitor Kit - Needs fixing on mod side
+//Assembler.addRecipe(<IC2NuclearControl:KitAppeng>, <appliedenergistics2:item.ItemMultiMaterial:7>, <IC2:itemFreq>, 1600, 2);
