@@ -11,16 +11,16 @@ import mods.ic2.Compressor;
 import mods.gregtech.Boxing;
 
 # Aliases
-var upgradeBSpace = <JABBA:upgradeCore:1>;
-var piston = <minecraft:piston>;
-var plateEnderium = <ore:plateEnderium>;
 var chestEnder = <minecraft:ender_chest>;
 var dolly = <JABBA:mover>;
-var wrench = <ore:craftingToolWrench>;
-var plateIron = <ore:plateIron>;
-var plankWood = <ore:plankWood>;
 var hammer = <ore:craftingToolHardHammer>;
+var piston = <minecraft:piston>;
+var plankWood = <ore:plankWood>;
+var plateEnderium = <ore:plateEnderium>;
+var plateIron = <ore:plateIron>;
 var tuningFork = <JABBA:tuningFork>;
+var upgradeBSpace = <JABBA:upgradeCore:1>;
+var wrench = <ore:craftingToolWrench>;
 
 # Recipe Tweaks
 recipes.remove(upgradeBSpace);

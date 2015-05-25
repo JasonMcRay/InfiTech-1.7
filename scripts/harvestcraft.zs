@@ -3,9 +3,9 @@
 import mods.nei.NEI;
 
 # Aliases
-var presser = <harvestcraft:presser>;
 var piston = <minecraft:piston>;
 var plateSteel = <ore:plateSteel>;
+var presser = <harvestcraft:presser>;
 var sink = <harvestcraft:sink:*>;
 
 # Blocks/Items Removal

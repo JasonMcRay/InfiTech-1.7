@@ -16,58 +16,52 @@ import mods.gregtech.VacuumFreezer;
 import mods.gregtech.Wiremill;
 
 // --- Variables --- #
-val cableSealableCopper = <GalacticraftCore:tile.enclosed:2>;
-val cableSealableGold = <GalacticraftCore:tile.enclosed:3>;
-val cableSealableHV = <GalacticraftCore:tile.enclosed:4>;
-val cableSealableFibre = <GalacticraftCore:tile.enclosed:5>;
-val cableSealableTin = <GalacticraftCore:tile.enclosed:6>;
+var AdvAlloy = <ore:plateAlloyAdvanced>;
+var AdvWafer = <ore:waferAdvanced>;
+var AirVent = <GalacticraftCore:item.airVent>;
+var AlFoil = <ore:foilAluminium>;
+var BWafer = <ore:waferBasic>;
+var cableSealableCopper = <GalacticraftCore:tile.enclosed:2>;
+var cableSealableFibre = <GalacticraftCore:tile.enclosed:5>;
+var cableSealableGold = <GalacticraftCore:tile.enclosed:3>;
+var cableSealableHV = <GalacticraftCore:tile.enclosed:4>;
+var cableSealableTin = <GalacticraftCore:tile.enclosed:6>;
+var CompressedAl = <ore:compressedAluminium>;
+var CompressedBronze = <ore:compressedBronze>;
+var CompressedCopper = <ore:compressedCopper>;
+var CompressedIron = <ore:compressedIron>;
+var CompressedSteel = <ore:compressedSteel>;
+var CompressedTi = <ore:compressedTitanium>;
+var CompressedTin = <ore:compressedTin>;
+var DeshPlate = <gregtech:gt.metaitem.01:17884>;
+var DeshRing = <ore:ringDesh>;
+var File = <ore:craftingToolFile>;
+var GCAlWire = <GalacticraftCore:tile.aluminumWire>;
+var GCHeavyAlWire = <GalacticraftCore:tile.aluminumWire:1>;
+var HeavyDutyPlate = <GalacticraftMars:item.itemBasicAsteroids>;
+var HeavyPlating = <GalacticraftCore:item.heavyPlating>;
+var HHammer = <ore:craftingToolHardHammer>;
+var IronBars = <minecraft:iron_bars>;
+var LVPump = <gregtech:gt.metaitem.01:32610>;
+var MeteorPlate = <gregtech:gt.metaitem.01:17340>;
+var MeteorScrew = <ore:screwMeteoricSteel>;
+var MVConveyor = <gregtech:gt.metaitem.01:32631>;
+var OxygenPipe = <GalacticraftCore:tile.oxygenPipe>;
+var ReinforcedGlass = <ore:glassReinforced>;
+var RubberBlock = <IC2:blockRubber>;
+var SensorLens = <GalacticraftCore:item.sensorLens>;
+var SolarPanel = <gregtech:gt.metaitem.01:32750>;
+var SSteelBolt = <ore:boltStainlessSteel>;
+var SteelPole = <GalacticraftCore:item.steelPole>;
+var SteelRotor = <gregtech:gt.metaitem.02:21305>;
+var SteelScrew = <ore:screwSteel>;
+var Stick = <ore:stickWood>;
+var String = <minecraft:string>;
+var TinDecoBlock = <GalacticraftCore:tile.gcBlockCore:4>;
+var TSteelBolt = <ore:boltTungstenSteel>;
+var Wool = <ore:blockWool>;
+var Wrench = <ore:craftingToolWrench>;
 
-val CompressedAl = <ore:compressedAluminium>;
-val CompressedIron = <ore:compressedIron>;
-val CompressedSteel = <ore:compressedSteel>;
-val CompressedBronze = <ore:compressedBronze>;
-val CompressedTin = <ore:compressedTin>;
-val CompressedCopper = <ore:compressedCopper>;
-val CompressedTi = <ore:compressedTitanium>;
-
-val BWafer = <ore:waferBasic>;
-val AdvWafer = <ore:waferAdvanced>;
-val GCAlWire = <GalacticraftCore:tile.aluminumWire>;
-val GCHeavyAlWire = <GalacticraftCore:tile.aluminumWire:1>;
-val OxygenPipe = <GalacticraftCore:tile.oxygenPipe>;
-val AirVent = <GalacticraftCore:item.airVent>;
-val HeavyPlating = <GalacticraftCore:item.heavyPlating>;
-val HeavyDutyPlate = <GalacticraftMars:item.itemBasicAsteroids>;
-val TinDecoBlock = <GalacticraftCore:tile.gcBlockCore:4>;
-val SensorLens = <GalacticraftCore:item.sensorLens>;
-val SteelPole = <GalacticraftCore:item.steelPole>;
-
-val AdvAlloy = <ore:plateAlloyAdvanced>;
-val MeteorPlate = <gregtech:gt.metaitem.01:17340>;
-val MeteorScrew = <ore:screwMeteoricSteel>;
-val SteelScrew = <ore:screwSteel>;
-val SSteelBolt = <ore:boltStainlessSteel>;
-val TSteelBolt = <ore:boltTungstenSteel>;
-val DeshPlate = <gregtech:gt.metaitem.01:17884>;
-val DeshRing = <ore:ringDesh>;
-val AlFoil = <ore:foilAluminium>;
-
-val MVConveyor = <gregtech:gt.metaitem.01:32631>;
-val SolarPanel = <gregtech:gt.metaitem.01:32750>;
-val LVPump = <gregtech:gt.metaitem.01:32610>;
-val SteelRotor = <gregtech:gt.metaitem.02:21305>;
-val RubberBlock = <IC2:blockRubber>;
-
-val ReinforcedGlass = <ore:glassReinforced>;
-
-val HHammer = <ore:craftingToolHardHammer>;
-val Wrench = <ore:craftingToolWrench>;
-val File = <ore:craftingToolFile>;
-
-val IronBars = <minecraft:iron_bars>;
-val Stick = <ore:stickWood>;
-val Wool = <ore:blockWool>;
-val String = <minecraft:string>;
 
 // --- remove Recipes ---
 //Sealable Cables

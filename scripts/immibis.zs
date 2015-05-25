@@ -2,9 +2,9 @@
 
 # Aliases
 var anchorDimensional = <DimensionalAnchors:chunkloader>;
+var enderPearl = <minecraft:ender_pearl>;
 var plateGold = <ore:plateGold>;
 var plateIron = <ore:plateIron>;
-var enderPearl = <minecraft:ender_pearl>;
 
 # Recipes Tweaks
 recipes.remove(anchorDimensional);

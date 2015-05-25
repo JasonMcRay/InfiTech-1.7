@@ -11,7 +11,6 @@ import mods.ic2.Compressor;
 import mods.gregtech.Boxing;
 
 # Aliases
-var modIronChests = <IronChest:BlockIronChest:*>;
 var chestCopper = <IronChest:BlockIronChest:3>;
 var chestCrystal = <IronChest:BlockIronChest:5>;
 var chestDiamond = <IronChest:BlockIronChest:2>;
@@ -20,6 +19,18 @@ var chestGold = <IronChest:BlockIronChest:1>;
 var chestIron = <IronChest:BlockIronChest:0>;
 var chestObsidian = <IronChest:BlockIronChest:6>;
 var chestSilver = <IronChest:BlockIronChest:4>;
+var chestWood = <minecraft:chest>;
+var dirt = <minecraft:dirt:*>;
+var glass = <minecraft:glass>;
+var modIronChests = <IronChest:BlockIronChest:*>;
+var paneGlass = <minecraft:glass_pane>;
+var plankWood = <ore:plankWood>;
+var plateCopper = <ore:plateCopper>;
+var plateDiamond = <gregtech:gt.metaitem.01:17500>;
+var plateGold = <ore:plateGold>;
+var plateIron = <ore:plateIron>;
+var plateObsidian = <ore:plateObsidian>;
+var plateSilver = <ore:plateSilver>;
 var upgCopperIron = <IronChest:copperIronUpgrade>;
 var upgCopperSilver = <IronChest:copperSilverUpgrade>;
 var upgDiamondCrystal = <IronChest:diamondCrystalUpgrade>;
@@ -29,17 +40,6 @@ var upgIronGold = <IronChest:ironGoldUpgrade>;
 var upgSilverGold = <IronChest:silverGoldUpgrade>;
 var upgWoodCopper = <IronChest:woodCopperUpgrade>;
 var upgWoodIron = <IronChest:woodIronUpgrade>;
-var paneGlass = <minecraft:glass_pane>;
-var plateSilver = <ore:plateSilver>;
-var plateGold = <ore:plateGold>;
-var plateIron = <ore:plateIron>;
-var plateDiamond = <gregtech:gt.metaitem.01:17500>;
-var plateCopper = <ore:plateCopper>;
-var plankWood = <ore:plankWood>;
-var plateObsidian = <ore:plateObsidian>;
-var chestWood = <minecraft:chest>;
-var dirt = <minecraft:dirt:*>;
-var glass = <minecraft:glass>;
 
 # Recipe Tweaks
 recipes.removeShaped(modIronChests);

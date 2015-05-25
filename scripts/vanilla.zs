@@ -1,22 +1,22 @@
 // --- Created by Jason McRay --- 
 
 # Aliases
-var potionHealing = <ore:potionHealing>;
-var chestWood = <minecraft:chest>;
+var blazePowder = <minecraft:blaze_powder>;
+var blazeRod = <minecraft:blaze_rod>;
 var chestEnder = <minecraft:ender_chest>;
-var plateObsidian = <ore:plateObsidian>;
-var ingotEnderium = <ore:ingotEnderium>;
-var teleporter = <IC2:blockMachine2>;
+var chestWood = <minecraft:chest>;
 var enderEye = <minecraft:ender_eye>;
 var enderPearl = <minecraft:ender_pearl>;
-var blazePowder = <minecraft:blaze_powder>;
-var slabWood = <ore:slabWood>;
 var gemNetherQuartz = <ore:gemNetherQuartz>;
 var glass = <ore:blockGlass>;
-var sensorDaylight = <minecraft:daylight_detector>;
-var blazeRod = <minecraft:blaze_rod>;
-var saw = <ore:craftingToolSaw>;
+var ingotEnderium = <ore:ingotEnderium>;
 var logWood = <ore:logWood>;
+var plateObsidian = <ore:plateObsidian>;
+var potionHealing = <ore:potionHealing>;
+var saw = <ore:craftingToolSaw>;
+var sensorDaylight = <minecraft:daylight_detector>;
+var slabWood = <ore:slabWood>;
+var teleporter = <IC2:blockMachine2>;
 
 # OreDictionary
 potionHealing.add(<minecraft:potion:8197>);

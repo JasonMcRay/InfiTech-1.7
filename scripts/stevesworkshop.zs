@@ -3,32 +3,32 @@
 import mods.gregtech.AssemblerLiq;
 
 # Aliases
-var upgradeSolar = <StevesWorkshop:production_table_upgrade:8>;
-var productionTable = <StevesWorkshop:production_table>;
-var plateIron = <ore:plateIron>;
-var plankWood = <ore:plankWood>;
-var upgradeBlank = <StevesWorkshop:production_table_upgrade>;
-var upgradeCrafter = <StevesWorkshop:production_table_upgrade:1>;
-var workbenchAuto = <BuildCraft|Factory:autoWorkbenchBlock>;
-var chestWood = <minecraft:chest>;
-var upgradeStorage = <StevesWorkshop:production_table_upgrade:2>;
 var blockRedstone = <ore:blockRedstone>;
-var upgradeCharger = <StevesWorkshop:production_table_upgrade:3>;
+var chestWood = <minecraft:chest>;
 var circuit10 = <gregtech:gt.integrated_circuit:10>;
-var moltenRedstone = <liquid:molten.redstone>;
-var upgradeSpeed = <StevesWorkshop:production_table_upgrade:4>;
-var itemDustLapis = <gregtech:gt.metaitem.01:2526>;
-var moltenSpeedPotion = <liquid:potion.speed>;
-var upgradeEfficiency = <StevesWorkshop:production_table_upgrade:6>;
-var upgradeLava = <StevesWorkshop:production_table_upgrade:7>;
-var genGeothermal = <IC2:blockGenerator:1>;
-var lava = <liquid:lava>;
-var upgradeTransfer = <StevesWorkshop:production_table_upgrade:9>;
 var conveyorLV = <gregtech:gt.metaitem.01:32630>;
-var moltenGold = <liquid:molten.gold>;
-var upgradeFilter = <StevesWorkshop:production_table_upgrade:10>;
+var genGeothermal = <IC2:blockGenerator:1>;
 var GTFilter = <gregtech:gt.metaitem.01:32729>;
+var itemDustLapis = <gregtech:gt.metaitem.01:2526>;
+var lava = <liquid:lava>;
+var moltenGold = <liquid:molten.gold>;
+var moltenRedstone = <liquid:molten.redstone>;
+var moltenSpeedPotion = <liquid:potion.speed>;
+var plankWood = <ore:plankWood>;
+var plateIron = <ore:plateIron>;
+var productionTable = <StevesWorkshop:production_table>;
+var upgradeBlank = <StevesWorkshop:production_table_upgrade>;
 var upgradeCapacity = <StevesWorkshop:production_table_upgrade:11>;
+var upgradeCharger = <StevesWorkshop:production_table_upgrade:3>;
+var upgradeCrafter = <StevesWorkshop:production_table_upgrade:1>;
+var upgradeEfficiency = <StevesWorkshop:production_table_upgrade:6>;
+var upgradeFilter = <StevesWorkshop:production_table_upgrade:10>;
+var upgradeLava = <StevesWorkshop:production_table_upgrade:7>;
+var upgradeSolar = <StevesWorkshop:production_table_upgrade:8>;
+var upgradeSpeed = <StevesWorkshop:production_table_upgrade:4>;
+var upgradeStorage = <StevesWorkshop:production_table_upgrade:2>;
+var upgradeTransfer = <StevesWorkshop:production_table_upgrade:9>;
+var workbenchAuto = <BuildCraft|Factory:autoWorkbenchBlock>;
 
 # Blocks/Items Removal
 recipes.remove(upgradeSolar);

@@ -3,32 +3,33 @@
 import mods.nei.NEI;
 
 # Aliases
-var vanishingFrameIron = <malisisdoors:vanishing_block:1>;
-var vanishingFrameGold = <malisisdoors:vanishing_block:2>;
-var vanishingFrameDiamond = <malisisdoors:vanishing_block:3>;
 var dustRedstone = <ore:dustRedstone>;
-var stickIron = <ore:stickIron>;
 var enderPearl = <minecraft:ender_pearl>;
-var stickGold = <ore:stickGold>;
-var stickDiamond = <ore:stickDiamond>;
-var rustyHatch = <malisisdoors:rustyHatch>;
-var plateIron = <ore:plateIron>;
-var rustyHandle = <malisisdoors:item.rustyHandle>;
-var rustyLadder = <malisisdoors:rustyLadder>;
-var wrench = <ore:craftingToolWrench>;
-var HHammer = <ore:craftingToolHardHammer>;
-var glassDoorWood = <malisisdoors:item.wood_sliding_door>;
-var plankWood = <ore:plankWood>;
+var factoryDoor = <malisisdoors:item.factory_door>;
+var ffController = <malisisdoors:item.forcefieldItem>;
 var glass = <minecraft:glass>;
 var glassDoorIron = <malisisdoors:item.iron_sliding_door>;
-var SHammer = <ore:craftingToolSoftHammer>;
+var glassDoorWood = <malisisdoors:item.wood_sliding_door>;
+var HHammer = <ore:craftingToolHardHammer>;
 var labDoor = <malisisdoors:item.laboratory_door>;
-var plateGold = <ore:plateGold>;
-var factoryDoor = <malisisdoors:item.factory_door>;
-var shojiDoor = <malisisdoors:item.shoji_door>;
 var paper = <minecraft:paper>;
+var plankWood = <ore:plankWood>;
+var plateGold = <ore:plateGold>;
+var plateIron = <ore:plateIron>;
 var ringIron = <ore:ringIron>;
-var ffController = <malisisdoors:item.forcefieldItem>;
+var rustyHandle = <malisisdoors:item.rustyHandle>;
+var rustyHatch = <malisisdoors:rustyHatch>;
+var rustyLadder = <malisisdoors:rustyLadder>;
+var SHammer = <ore:craftingToolSoftHammer>;
+var shojiDoor = <malisisdoors:item.shoji_door>;
+var stickDiamond = <ore:stickDiamond>;
+var stickGold = <ore:stickGold>;
+var stickIron = <ore:stickIron>;
+var vanishingFrameDiamond = <malisisdoors:vanishing_block:3>;
+var vanishingFrameGold = <malisisdoors:vanishing_block:2>;
+var vanishingFrameIron = <malisisdoors:vanishing_block:1>;
+var wrench = <ore:craftingToolWrench>;
+
 
 # Block/Item Removal
 recipes.remove(ffController);

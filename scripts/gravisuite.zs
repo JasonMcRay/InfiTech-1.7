@@ -1,20 +1,20 @@
 // --- Created by Pyure ---
 
 # Aliases
-var cablePlatinum = <gregtech:gt.blockmachines:1646>;
-var ingotGold = <minecraft:gold_ingot>;
-var superconductorCover = <GraviSuite:itemSimpleItem>;
-var superconductor = <GraviSuite:itemSimpleItem:1>;
-var nanoBodyArmor = <IC2:itemArmorNanoChestplate:*>;
-var carbonPlate = <IC2:itemPartCarbonPlate>;
 var advancedElectricJetpack = <GraviSuite:advJetpack:27>.withTag({charge: 0});
 var advancedElectricJetpack2 = <GraviSuite:advJetpack:*>;
-var circuitAdvanced = <ore:circuitAdvanced>;
+var advancedLappack = <GraviSuite:advLappack:*>;
 var advancedNanoChestPlate = <GraviSuite:advNanoChestPlate:27>.withTag({charge: 0});
 var advancedNanoChestPlate2 = <GraviSuite:advNanoChestPlate:*>;
-var engineBooster = <GraviSuite:itemSimpleItem:6>;
+var cablePlatinum = <gregtech:gt.blockmachines:1646>;
+var carbonPlate = <IC2:itemPartCarbonPlate>;
+var circuitAdvanced = <ore:circuitAdvanced>;
 var electricJetpack = <IC2:itemArmorJetpackElectric:*>;
-var advancedLappack = <GraviSuite:advLappack:*>;
+var engineBooster = <GraviSuite:itemSimpleItem:6>;
+var ingotGold = <minecraft:gold_ingot>;
+var nanoBodyArmor = <IC2:itemArmorNanoChestplate:*>;
+var superconductor = <GraviSuite:itemSimpleItem:1>;
+var superconductorCover = <GraviSuite:itemSimpleItem>;
 
 
 // --- Glass Fiber Recipes ---

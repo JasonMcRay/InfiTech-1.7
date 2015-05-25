@@ -9,97 +9,96 @@ import mods.forestry.ThermionicFabricator;
 import mods.nei.NEI;
 
 # Aliases
-var humus = <Forestry:soil>;
-var liquidWater = <liquid:water>;
-var crateHumus = <Forestry:cratedHumus>;
-var bogEarth = <Forestry:soil:1>;
-var unlitCandle = <Forestry:candle>;
-var waxMagic = <MagicBees:wax>;
-var mcString = <minecraft:string>;
-var silkWisp = <Forestry:craftingMaterial:2>;
 var analyzer = <Forestry:core>;
-var crateBogEarth = <Forestry:cratedBogearth>;
-var liquidSeedOil = <liquid:seedoil>;
-var engineElectrical = <Forestry:engine>;
-var enginePeat = <Forestry:engine:1>;
-var engineBiogas = <Forestry:engine:2>;
+var bcTank = <BuildCraft|Factory:tankBlock>;
 var bioGenerator = <Forestry:engine:3>;
-var engineClock = <Forestry:engine:4>;
+var blockGlass = <ore:blockGlass>;
+var bogEarth = <Forestry:soil:1>;
+var book = <minecraft:book>;
 var bottler = <Forestry:factory>;
 var carpenter = <Forestry:factory:1>;
-var plateCupronickel = <ore:plateCupronickel>;
-var bcTank = <BuildCraft|Factory:tankBlock>;
-var robotArmLV = <gregtech:gt.metaitem.01:32650>;
-var sturdyCasing = <Forestry:sturdyMachine>;
-var gearGtSmallSteel = <ore:gearGtSmallSteel>;
-var electricMotorLV = <gregtech:gt.metaitem.01:32600>;
-var plateCopper = <ore:plateCopper>;
-var centrifuge = <Forestry:factory:2>;
-var fermenter = <Forestry:factory:3>;
-var tinRotor = <gregtech:gt.metaitem.02:21057>;
-var moistener = <Forestry:factory:4>;
-var squeezer = <Forestry:factory:5>;
-var still = <Forestry:factory:6>;
-var rainMaker = <Forestry:factory:7>;
-var sensorMV = <gregtech:gt.metaitem.01:32691>;
-var electricPistonMV = <gregtech:gt.metaitem.01:32641>;
-var hardenedCasing = <Forestry:hardenedMachine>;
-var gearGtSmallAluminium = <ore:gearGtSmallAluminium>;
-var emitterMV = <gregtech:gt.metaitem.01:32681>;
-var moltenRedstone = <liquid:molten.redstone>;
-var steelScrew = <gregtech:gt.metaitem.01:27305>;
-var icCoil = <IC2:itemRecipePart>;
-var worktable = <Forestry:factory2:2>;
-var thermionicFabricator = <Forestry:factory2>;
-var rainTank = <Forestry:factory2:1>;
-var plateIron = <ore:plateIron>;
-var ringIron = <ore:ringIron>;
-var craftingToolHardHammer = <ore:craftingToolHardHammer>;
 var cauldron = <minecraft:cauldron>;
-var screwIron = <ore:screwIron>;
+var centrifuge = <Forestry:factory:2>;
+var chestWood = <minecraft:chest>;
+var compost = <Forestry:fertilizerBio>;
+var craftingTable = <minecraft:crafting_table>;
 var craftingToolSaw = <ore:craftingToolSaw>;
 var craftingToolScrewdriver = <ore:craftingToolScrewdriver>;
-var chestWood = <minecraft:chest>;
-var craftingTable = <minecraft:crafting_table>;
-var book = <minecraft:book>;
-var dustRedstone = <minecraft:redstone>;
-var moltenGlass = <liquid:molten.glass>;
-var compost = <Forestry:fertilizerBio>;
-var wheat = <minecraft:wheat>;
+var crateBogEarth = <Forestry:cratedBogearth>;
+var crateHumus = <Forestry:cratedHumus>;
 var dirtAny = <minecraft:dirt:*>;
+var dustRedstone = <minecraft:redstone>;
+var electricMotorLV = <gregtech:gt.metaitem.01:32600>;
+var electricPistonMV = <gregtech:gt.metaitem.01:32641>;
+var emitterMV = <gregtech:gt.metaitem.01:32681>;
+var engineBiogas = <Forestry:engine:2>;
+var engineClock = <Forestry:engine:4>;
+var engineElectrical = <Forestry:engine>;
+var enginePeat = <Forestry:engine:1>;
 var fAsh = <Forestry:ash>;
-var gtAsh = <gregtech:gt.metaitem.01:2815>;
-var icAsh = <IC2:itemDust2:3>;
-var impregnatedCasing = <Forestry:impregnatedCasing>;
-var pulsatingMesh = <Forestry:craftingMaterial:1>;
-var silkWoven = <Forestry:craftingMaterial:3>;
+var fermenter = <Forestry:factory:3>;
 var fGearBronze = <Forestry:gearBronze>;
-var gearBronze = <ore:gearBronze>;
 var fGearCopper = <Forestry:gearCopper>;
-var gearCopper = <ore:gearCopper>;
 var fGearTin = <Forestry:gearTin>;
+var gearBronze = <ore:gearBronze>;
+var gearCopper = <ore:gearCopper>;
+var gearGtSmallAluminium = <ore:gearGtSmallAluminium>;
+var gearGtSmallSteel = <ore:gearGtSmallSteel>;
 var gearTin = <ore:gearTin>;
-var tubeCopper = <Forestry:thermionicTubes>;
-var tubeTin = <Forestry:thermionicTubes:1>;
-var tubeBronze = <Forestry:thermionicTubes:2>;
-var tubeIron = <Forestry:thermionicTubes:3>;
-var tubeGold = <Forestry:thermionicTubes:4>;
-var tubeDiamond = <Forestry:thermionicTubes:5>;
-var tubeObsidian = <Forestry:thermionicTubes:6>;
-var tubeBlaze = <Forestry:thermionicTubes:7>;
-var tubeRubber = <Forestry:thermionicTubes:8>;
-var tubeEmerald = <Forestry:thermionicTubes:9>;
-var tubeApatine = <Forestry:thermionicTubes:10>;
-var tubeLapis = <Forestry:thermionicTubes:11>;
+var generatorBio = <Forestry:engine:3>;
+var gtAsh = <gregtech:gt.metaitem.01:2815>;
+var hardenedCasing = <Forestry:hardenedMachine>;
+var HHammer = <ore:craftingToolHardHammer>;
+var humus = <Forestry:soil>;
+var icAsh = <IC2:itemDust2:3>;
+var icCoil = <IC2:itemRecipePart>;
+var impregnatedCasing = <Forestry:impregnatedCasing>;
 var impregnatedStick = <Forestry:oakStick>;
+var liquidSeedOil = <liquid:seedoil>;
+var liquidWater = <liquid:water>;
+var mcString = <minecraft:string>;
+var moistener = <Forestry:factory:4>;
+var moltenGlass = <liquid:molten.glass>;
+var moltenRedstone = <liquid:molten.redstone>;
+var piston = <minecraft:piston>;
+var plateBronze = <ore:plateBronze>;
+var plateCopper = <ore:plateCopper>;
+var plateCupronickel = <ore:plateCupronickel>;
+var plateIron = <ore:plateIron>;
 var pulpWood = <Forestry:woodPulp>;
+var pulsatingMesh = <Forestry:craftingMaterial:1>;
+var rainMaker = <Forestry:factory:7>;
+var rainTank = <Forestry:factory2:1>;
+var ringIron = <ore:ringIron>;
+var robotArmLV = <gregtech:gt.metaitem.01:32650>;
+var screwIron = <ore:screwIron>;
+var sensorMV = <gregtech:gt.metaitem.01:32691>;
+var silkWisp = <Forestry:craftingMaterial:2>;
+var silkWoven = <Forestry:craftingMaterial:3>;
+var squeezer = <Forestry:factory:5>;
+var steelScrew = <gregtech:gt.metaitem.01:27305>;
+var still = <Forestry:factory:6>;
+var sturdyCasing = <Forestry:sturdyMachine>;
+var thermionicFabricator = <Forestry:factory2>;
+var tinRotor = <gregtech:gt.metaitem.02:21057>;
+var tubeApatine = <Forestry:thermionicTubes:10>;
+var tubeBlaze = <Forestry:thermionicTubes:7>;
+var tubeBronze = <Forestry:thermionicTubes:2>;
+var tubeCopper = <Forestry:thermionicTubes>;
+var tubeDiamond = <Forestry:thermionicTubes:5>;
+var tubeEmerald = <Forestry:thermionicTubes:9>;
+var tubeGold = <Forestry:thermionicTubes:4>;
+var tubeIron = <Forestry:thermionicTubes:3>;
+var tubeLapis = <Forestry:thermionicTubes:11>;
+var tubeObsidian = <Forestry:thermionicTubes:6>;
+var tubeRubber = <Forestry:thermionicTubes:8>;
+var tubeTin = <Forestry:thermionicTubes:1>;
+var unlitCandle = <Forestry:candle>;
+var waxMagic = <MagicBees:wax>;
+var wheat = <minecraft:wheat>;
+var worktable = <Forestry:factory2:2>;
+var wrench = <ore:craftingToolWrench>;
 
-# Item Removal for GT6
-/*
-recipes.remove(enginePeat);
-recipes.remove(engineBiogas);
-recipes.remove(bioGenerator);
-*/
 
 # Item removal
 recipes.remove(engineClock);
@@ -115,8 +114,19 @@ recipes.remove(fGearCopper);
 gearCopper.remove(fGearCopper);
 recipes.remove(fGearTin);
 gearTin.remove(fGearTin);
+recipes.remove(generatorBio);
 
 # Recipe Tweaks
+recipes.remove(enginePeat);
+recipes.addShaped(enginePeat, [
+	[plateCopper, plateCopper, plateCopper],
+	[HHammer, blockGlass, wrench],
+	[gearCopper, piston, gearCopper]]);
+recipes.remove(engineBiogas);
+recipes.addShaped(engineBiogas, [
+	[plateBronze, plateBronze, plateBronze],
+	[HHammer, blockGlass, wrench],
+	[gearBronze, piston, gearBronze]]);
 recipes.remove(carpenter);
 recipes.addShaped(carpenter, [
 	[plateCopper, bcTank, plateCopper],
@@ -142,7 +152,7 @@ Carpenter.addRecipe(300, moltenRedstone * 1000, [steelScrew, bcTank, steelScrew,
 recipes.remove(rainTank);
 recipes.addShaped(rainTank, [
 	[plateIron, ringIron, plateIron],
-	[plateIron, craftingToolHardHammer, plateIron],
+	[plateIron, HHammer, plateIron],
 	[plateIron, cauldron, plateIron]]);
 recipes.remove(worktable);
 recipes.addShaped(worktable, [
