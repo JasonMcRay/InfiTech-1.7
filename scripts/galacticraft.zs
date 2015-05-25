@@ -1,3 +1,6 @@
+// --- Created by DreamMasterXXL ---
+// --- Modified by Jason McRay ---
+
 // --- Mod Import ---
 
 import mods.gregtech.Assembler;

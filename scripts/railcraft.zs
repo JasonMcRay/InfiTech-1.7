@@ -1,3 +1,5 @@
+// --- Created by Jason McRay --- 
+
 # Aliases
 var backpackTrack = <Railcraft:backpack.trackman.t1>;
 var backpackTrackT2 = <Railcraft:backpack.trackman.t2>;

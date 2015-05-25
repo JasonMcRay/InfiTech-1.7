@@ -1,3 +1,5 @@
+// --- Created by Jason McRay --- 
+
 # Aliases
 var potionHealing = <ore:potionHealing>;
 var chestWood = <minecraft:chest>;

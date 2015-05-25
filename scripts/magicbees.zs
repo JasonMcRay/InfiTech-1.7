@@ -1,3 +1,5 @@
+// --- Created by Jason McRay --- 
+
 # Aliases
 var backpackThaumaturge = <MagicBees:backpack.thaumaturgeT1>;
 var backpackThaumaturgeT2 = <MagicBees:backpack.thaumaturgeT2>;

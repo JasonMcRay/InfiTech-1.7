@@ -1,4 +1,4 @@
-# Big thanks to Xavion who provided this for us.
+// --- Created by Xavion --- 
 
 import mods.minechem.Decomposer;
 import mods.minechem.Synthesiser;

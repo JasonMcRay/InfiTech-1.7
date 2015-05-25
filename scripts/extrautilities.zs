@@ -1,3 +1,5 @@
+// --- Created by Jason McRay --- 
+
 import mods.gregtech.ChemicalBathLiq;
 import mods.ic2.Compressor;
 import mods.gregtech.Boxing;

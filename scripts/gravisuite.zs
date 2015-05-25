@@ -1,3 +1,5 @@
+// --- Created by Pyure ---
+
 # Aliases
 var cablePlatinum = <gregtech:gt.blockmachines:1646>;
 var ingotGold = <minecraft:gold_ingot>;

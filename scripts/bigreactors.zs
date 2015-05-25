@@ -1,3 +1,6 @@
+// --- Created by Pyure ---
+// --- Modified by Jason McRay ---
+
 # Aliases we're using as read-only (not changing)
 var plateSteel = <ore:plateSteel>;
 var plateStainlessSteel = <ore:plateStainlessSteel>;

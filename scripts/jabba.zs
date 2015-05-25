@@ -1,3 +1,5 @@
+// --- Created by Jason McRay --- 
+
 import mods.nei.NEI;
 import mods.gregtech.ChemicalReactor;
 import mods.gregtech.Wiremill;

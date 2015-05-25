@@ -1,3 +1,6 @@
+// --- Created by DreamMasterXXL --- 
+// --- Few scripts added by Jason McRay ---
+
 import mods.gregtech.Assembler;
 
 //remove Recipes

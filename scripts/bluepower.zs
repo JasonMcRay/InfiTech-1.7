@@ -1,3 +1,5 @@
+// --- Created by Jason McRay ---
+
 import mods.gregtech.AlloySmelter;
 import mods.gregtech.Assembler;
 import mods.nei.NEI;

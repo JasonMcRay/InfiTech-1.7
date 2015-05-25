@@ -1,3 +1,6 @@
+// --- Created by Jason McRay ---
+// --- Few scripts created by DreamMasterXXL ---
+
 import mods.gregtech.AssemblerLiq;
 import mods.gregtech.Assembler;
 import mods.gregtech.Mixer;

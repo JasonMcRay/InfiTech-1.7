@@ -1,4 +1,4 @@
-# Thanks to BeyondReality Team for making this script. I just renamed direct entries with aliases
+// --- Created by BeyondReality Team --- 
 
 # Aliases
 var dust = <ore:dustDiamond>;

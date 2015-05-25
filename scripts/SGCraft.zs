@@ -1,3 +1,5 @@
+// --- Created by Jason McRay --- 
+
 # Gregs SGCraft
 import mods.gregtech.ChemicalReactor;
 import mods.gregtech.Assembler;

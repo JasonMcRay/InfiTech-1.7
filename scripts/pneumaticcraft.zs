@@ -1,3 +1,5 @@
+// --- Created by Jason McRay --- 
+
 import mods.gregtech.AssemblerLiq;
 import mods.forestry.ThermionicFabricator;
 import mods.nei.NEI;

@@ -1,3 +1,5 @@
+// --- Created by Jason McRay --- 
+
 # Aliases
 var anchorDimensional = <DimensionalAnchors:chunkloader>;
 var plateGold = <ore:plateGold>;

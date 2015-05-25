@@ -1,3 +1,5 @@
+// --- Created by Jason McRay ---
+
 import mods.nei.NEI;
 import mods.gregtech.AlloySmelter;
 import mods.gregtech.ChemicalBathLiq;
