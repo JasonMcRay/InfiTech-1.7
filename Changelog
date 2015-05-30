@@ -1,2 +1,86 @@
 v3.0.0
-YAY
+
+Mod Updates:
+- Applied Energistics 2 -> rv2 stable 3
+- AsieLib -> 0.4.1
+- BdLib -> 1.8.0.86
+- BiblioWoods[EXBL] -> 1.4
+- BuildCraft -> 6.4.16
+- Computronics -> 1.5.1
+- Dimensional Anchor -> 59.0.3
+- ExtraBiomesXL -> 3.16.2
+- ExtraCells -> 2.2.71
+- ExtraUtilities -> 1.2.5
+- GalactiCraft -> 3.0.12.339
+- Gendustry -> 1.4.11.89
+- GregTech -> 5.08.18
+- GTTweaker -> 0.7.0
+- NuclearControl 2 -> 2.2.5a
+- Industrial Craft 2 -> 2.2.726
+- LogisticsPipes -> 0.8.3.122
+- Malisis Core -> 0.12.2
+- Malisis Doors -> 1.8.1
+- Minechem -> 5.0.5.398
+- NEIAddons -> 1.12.8.31
+- OpenBlocks -> 1.4.3-639
+- OpenComputers -> 1.5.12.26
+- OpenModsLib -> 0.7.3-366
+- PneumaticCraft -> 1.7.0
+- ThaumicEnergistics -> 0.8.10.5
+- ThaumicTinkerer -> 2.5.503
+
+Mod Additions:
+- BluePower
+- FastLeaveDecay
+- QmunityLib
+
+Mod Removals:
+- 3D Furnace
+- ArmorStatusHUD
+- StatusEffectHUD
+- IHL
+- InfinityCore
+- ProjectRed
+- Random Things
+- Refined Relocation
+- SecretRoomsMod
+- Supercrafting Frame
+
+Changes:
+- Some items moved from BC machines into GT machines
+- Disabled Alloy Smelter.
+- AE recipes massively overhauled
+- AE Meteors no longer spawn.
+- AE Presses are now crafted in Laser Engraver with Lense + Compressed Iron Block
+- In-World crafting of Pure Crystals and Fluix Crystals is no longer available.
+- AE version of Certus Quartz no longer generates.
+- P2P energy tunels no longer exists
+- AE power usage is bit lower
+- Saws can now be placed on BiblioCraft Tool Racks
+- Disabled ExU Wood and Iron Spikes
+- Disabled ExU Transfer Pipes/Nodes
+- Ender Quarry Upgrades now crafted inside QED
+- Galacticraft recipes massively overhauled
+- Solar Panels (Galacticraft) generates bit more power on Space Stations
+- Rockets use slightly more fuel
+- Gravisuite relocator is disabled
+- IC2 Cables are disabled
+- Moved Uninifation a little bit
+- Disabled OpenBlocks Fan
+- Enabled OpenBlocks Graves
+- Disabled Chisel concrete (you have GT ones)
+- Transceviers energy transfer loss lowered to 75%
+- Lowered upkeep cost of Transceivers from 150 to 50RF
+- Enderminies can spawn anywhere anytime (previously they only spawned on Grass and in dark)
+- ExtrabiomesXL biome IDs shifted - This is the part which mainly mains the old v2 worlds not compatible.
+- Growthcraft fishtraps are slower
+- Harvestcraft salt no longer generates.
+- Railcraft poor ores no longer generates.
+- All RF production (except Big Reactors) is disabled
+- All RF power transportation is disabled
+- GregTech wires are now capable of powering RF machines. Conversion ratio: 1EU=3,6RF; 1RF=0,2EU
+- Fixed exploit with getting eIO Clear Glass with chisel. Now requires propper crafting
+- Forestry recipes massively overhauled
+- NuclearControl 2 recipes massively overhauled
+- Forestry/Railcraft bags made bit more expensive
+- StevesWorshop items greggified
