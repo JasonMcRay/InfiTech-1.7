@@ -1,31 +1,34 @@
+// --- Created by Pyure ---
+// --- Modified by Jason McRay ---
+
 # Aliases we're using as read-only (not changing)
-var plateSteel = <ore:plateSteel>;
-var plateStainlessSteel = <ore:plateStainlessSteel>;
-var plateTungstenSteel = <ore:plateTungstenSteel>;
-var glass = <minecraft:glass>;
-var itemDiamond = <minecraft:diamond>;
-var gearDiamond = <ore:gearDiamond>;
-var itemPiston = <ore:craftingPiston>;
-var dustRedstone = <ore:dustRedstone>;
-var itemQuartzNether = <ore:craftingQuartz>;
 var bucketEmpty = <ore:bucketEmpty>;
+var dustRedstone = <ore:dustRedstone>;
+var gearDiamond = <ore:gearDiamond>;
+var glass = <minecraft:glass>;
+var ingotCyanite = <ore:ingotCyanite>;
 var ingotGraphite = <ore:ingotGraphite>;
 var ingotYellorium = <ore:ingotYellorium>;
-var ingotCyanite = <ore:ingotCyanite>;
+var itemDiamond = <minecraft:diamond>;
+var itemPiston = <ore:craftingPiston>;
+var itemQuartzNether = <ore:craftingQuartz>;
+var plateStainlessSteel = <ore:plateStainlessSteel>;
+var plateSteel = <ore:plateSteel>;
+var plateTungstenSteel = <ore:plateTungstenSteel>;
 
 # BigReactors recipes we're changing
 var itemFuelRodYellorium = <BigReactors:YelloriumFuelRod>;
-var itemReactorCasing = <BigReactors:BRReactorPart>;
-var itemReactorGlass = <BigReactors:BRMultiblockGlass>;
-var itemReactorController = <BigReactors:BRReactorPart:1>;
-var itemReprocessorCyanite = <BigReactors:BRDevice>;
-var itemTurbineHousing = <BigReactors:BRTurbinePart>;
-var itemTurbineGlass = <BigReactors:BRMultiblockGlass:1>;
-var itemTurbineController = <BigReactors:BRTurbinePart:1>;
 var itemPortTurbineFluid = <BigReactors:BRTurbinePart:3>;
+var itemReactorCasing = <BigReactors:BRReactorPart>;
+var itemReactorController = <BigReactors:BRReactorPart:1>;
+var itemReactorGlass = <BigReactors:BRMultiblockGlass>;
+var itemReprocessorCyanite = <BigReactors:BRDevice>;
+var itemTurbineController = <BigReactors:BRTurbinePart:1>;
+var itemTurbineGlass = <BigReactors:BRMultiblockGlass:1>;
+var itemTurbineHousing = <BigReactors:BRTurbinePart>;
 var itemTurbineRotorBearing = <BigReactors:BRTurbinePart:4>;
-var itemTurbineRotorShaft = <BigReactors:BRTurbineRotorPart>;
 var itemTurbineRotorBlade = <BigReactors:BRTurbineRotorPart:1>;
+var itemTurbineRotorShaft = <BigReactors:BRTurbineRotorPart>;
 
 ###############################
 
@@ -33,7 +36,7 @@ var itemTurbineRotorBlade = <BigReactors:BRTurbineRotorPart:1>;
 recipes.remove(itemFuelRodYellorium);
 recipes.addShaped(itemFuelRodYellorium, [
 	[plateSteel, ingotGraphite, plateSteel],
-	[plateTungstenSteel, ingotYellorium, plateTungstenSteel],
+	[plateStainlessSteel, ingotYellorium, plateStainlessSteel],
 	[plateSteel, ingotGraphite, plateSteel]]);
 	
 # Reactor Casing

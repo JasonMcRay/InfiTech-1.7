@@ -24,6 +24,10 @@ OpenComputersMod*.*
 options.txt
 optionsof.txt
 usernamecache.json
+mods/ic2/EJML-core-0.26.jar
+config/MapWriterBlockColourOverrides.txt
+config/MapWriterBlockColours.txt
+mods/carpentersblocks/CarpentersBlocksCachedResources.zip
 
 # Windows image file caches
 Thumbs.db

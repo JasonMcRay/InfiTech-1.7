@@ -1,6 +1,0 @@
-#Custom Ore Generation $version Config Options
-#Mon Sep 29 08:15:06 PDT 2014
-GregtechGenOres=true
-GeologicaGenRocks=true
-GeologicaGenOres=true
-GeologicaGenPetroleum=true

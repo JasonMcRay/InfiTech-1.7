@@ -1,40 +1,41 @@
-# Thanks to BeyondReality Team for making this script. I just renamed direct entries with aliases
+// --- Created by BeyondReality Team --- 
 
 # Aliases
-var dust = <ore:dustDiamond>;
-var tin = <ore:ingotTin>;
-var dustDiamond = <ore:dustDiamond>;
-var ingotTin = <ore:ingotTin>;
-var plateAluminium = <ore:plateAluminium>;
-var gearAluminium = <ore:gearAluminium>;
-var pipeSmallBronze = <gregtech:gt.blockmachines:5121>;
-var hullMachineHV = <gregtech:gt.blockmachines:13>;
-var ingotAluminium = <ore:ingotAluminium>;
-var dropHoneyRed = <gendustry:HoneyDrop:11>;
-var royalJelly = <Forestry:royalJelly>;
-var uranium238 = <IC2:itemUran238>;
-var mutagen = <gendustry:HoneyComb:141>;
-var capsuleWaxBiomass = <Forestry:waxCapsuleBiomass>;
-var frameUpgrade = <gendustry:UpgradeFrame>;
-var ingotGold = <ore:ingotGold>;
-var blockRedstone = <ore:blockRedstone>;
-var frameCobalt = <gregtech:gt.blockmachines:4129>;
-var modulePower = <gendustry:PowerModule>;
-var chipNAND = <gregtech:gt.metaitem.01:32700>;
-var tankMutagen = <gendustry:MutagenTank>;
-var glassPane = <ore:paneGlass>;
-var beeReceptacle = <gendustry:BeeReceptacle>;
-var pressurePlateLightWeighted = <minecraft:light_weighted_pressure_plate>;
-var mutagenProducer = <gendustry:MutagenProducer>;
 var apiaryIndustrial = <gendustry:IndustrialApiary>;
-var swarmer = <Forestry:alveary:2>;
-var processorGenetics = <gendustry:GeneticsProcessor>;
-var imprinter = <gendustry:Imprinter>;
-var liquifier = <gendustry:Liquifier>;
+var beeReceptacle = <gendustry:BeeReceptacle>;
+var blockRedstone = <ore:blockRedstone>;
+var capsuleWaxBiomass = <Forestry:waxCapsuleBiomass>;
+var chipNAND = <gregtech:gt.metaitem.01:32700>;
+var dropHoneyRed = <gendustry:HoneyDrop:11>;
+var dust = <ore:dustDiamond>;
+var dustDiamond = <ore:dustDiamond>;
 var extractor = <gendustry:Extractor>;
-var transposer = <gendustry:Transposer>;
-var replicator = <gendustry:Replicator>;
+var frameCobalt = <gregtech:gt.blockmachines:4129>;
+var frameUpgrade = <gendustry:UpgradeFrame>;
+var gearAluminium = <ore:gearAluminium>;
+var glassPane = <ore:paneGlass>;
+var hullMachineHV = <gregtech:gt.blockmachines:13>;
+var imprinter = <gendustry:Imprinter>;
+var ingotAluminium = <ore:ingotAluminium>;
+var ingotGold = <ore:ingotGold>;
+var ingotTin = <ore:ingotTin>;
+var liquifier = <gendustry:Liquifier>;
+var modulePower = <gendustry:PowerModule>;
+var mutagen = <gendustry:HoneyComb:141>;
+var mutagenProducer = <gendustry:MutagenProducer>;
 var mutatron = <gendustry:Mutatron>;
+var pipeSmallBronze = <gregtech:gt.blockmachines:5121>;
+var plateAluminium = <ore:plateAluminium>;
+var pressurePlateLightWeighted = <minecraft:light_weighted_pressure_plate>;
+var processorGenetics = <gendustry:GeneticsProcessor>;
+var replicator = <gendustry:Replicator>;
+var royalJelly = <Forestry:royalJelly>;
+var swarmer = <Forestry:alveary:2>;
+var tankMutagen = <gendustry:MutagenTank>;
+var tin = <ore:ingotTin>;
+var transposer = <gendustry:Transposer>;
+var uranium238 = <IC2:itemUran238>;
+
 
 # Recipes Tweaks
 recipes.addShaped(dropHoneyRed, [

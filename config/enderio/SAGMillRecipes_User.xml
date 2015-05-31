@@ -17,21 +17,22 @@ To disable individual recipes, simply provide an invalid recipe for them:
 
 To change an existing recipe, just add the recipe to this file using the same recipe group and recipe name as
 found in the core file.
- 
+
 -->
 
 <SAGMillRecipes>
+
 <!-- Disables all recipes in the group 'Vanilla'
-<recipeGroup name="Vanilla" enabled="false"/> 
+<recipeGroup name="Vanilla" enabled="false"/>
 -->
 
-<!-- Uncomment this block to change the default TE obsidian -> dust recipe to the railcraft recipe.  
+<!-- Uncomment this block to change the default TE obsidian -> dust recipe to the railcraft recipe.
   <recipeGroup name="Thermal Expansion">
-  
+
     <recipe name="Obsidian" energyCost="400">
       <input>
-        <itemStack itemID="49" />
-      </input>      
+        <itemStack modID="minecraft" itemName="obsidian" />
+      </input>
       <output>
         <itemStack modID="Railcraft" itemName="tile.railcraft.cube" itemMeta="4" number="1" />
       </output>
@@ -42,175 +43,95 @@ found in the core file.
         <itemStack oreDictionary="dustObsidian" number="1" chance="0.025" />
       </output>
     </recipe>
-    
-</recipeGroup> 
+
+</recipeGroup>
 -->
 
-<!-- Disables the glass recipes in the group 'Vanilla' 
-<recipeGroup name="Vanilla"> 
-  <recipe name="Glass"/> 
+<!-- Disables the glass recipes in the group 'Vanilla'
+<recipeGroup name="Vanilla">
+  <recipe name="Glass"/>
 </recipeGroup>
 -->
 
 
-<!-- Modify a core recipe defination, in this case, make glass give diamonds. 
+<!-- Modify a core recipe defination, in this case, make glass give diamonds.
 <recipeGroup name="Vanilla">
-  <recipe name="Glass" energyCost="120"> 
+  <recipe name="Glass" energyCost="120">
       <input>
-        <itemStack itemID="20" />
+        <itemStack modID="minecraft" itemName="glass" />
       </input>
       <output>
-        <itemStack itemID="264" />
+        <itemStack modID="minecraft" itemName="diamond" />
       </output>
     </recipe>
 </recipeGroup>
 -->
 
-<!-- Adding a new recipe to a new group 
+<!-- Adding a new recipe to a new group
 <recipeGroup name="CrazyPantsGroup">
-  <recipe name="SolarToGlass" energyCost="120"> 
+  <recipe name="SolarToGlass" energyCost="120">
       <input>
         <itemStack modID="EnderIO" itemName="enderIO:blockSolarPanel"/>
       </input>
       <output>
-        <itemStack itemID="20" />
+        <itemStack modID="minecraft" itemName="glass" />
       </output>
     </recipe>
 </recipeGroup>
 -->
+
+<!-- Adding a new grinding ball
+  <grindingBalls>
+    <grindingBall id="Diamond" grindingMultiplier="1.5" chanceMultiplier="2" powerMultiplier="0.5" durationRF="50000">
+      <itemStack modID="minecraft" itemName="diamond"/>
+    </grindingBall>
+  </grindingBalls>
+  -->
+
+<!-- - Removing an existing grinding ball:
+  <grindingBalls>
+    <grindingBall id="Flint" remove="true" />
+  </grindingBalls>
+ -->
+
+ <!-- - Modifiying the excludes list: (removing glowstone, adding sand)
+  <grindingBalls>
+    <excludes>
+      <itemStack modID="minecraft" itemName="glowstone" remove="true" />
+      <itemStack modID="minecraft" itemName="sand" />
+    </excludes>
+  </grindingBalls>
+ -->
+ 
+  <recipeGroup name="EnderIO">
+    <!-- Removing the ways of obtaining EnderIO Silicon from sand -->
+    <recipe name="Silicon" />
+    <recipe name="SiliconRedSand" />
+  </recipeGroup>
   
-<recipeGroup name="Vanilla">
-  <recipe name="ClayBlock" energyCost="2400">     
+  <recipeGroup name="Vanilla">
+  <!-- Removing the ways of obtaining EnderIO Silicon from Clay and Redstone -->
+    <recipe name="ClayBlock" energyCost="2400">
       <input>
-        <itemStack modID="minecraft" itemName="clay" />        
+        <itemStack modID="minecraft" itemName="clay" />
       </input>
-      <output>      
+      <output>
         <itemStack modID="minecraft" itemName="clay_ball" number="2" />
-        <itemStack modID="minecraft" itemName="clay_ball" number="1" chance="0.1" />      
+        <itemStack modID="minecraft" itemName="clay_ball" number="1" chance="0.1" />
       </output>
     </recipe>
-	
-  <recipe name="RedstoneOre" energyCost="3000">
+    <recipe name="RedstoneOre" energyCost="3000">
       <input>
-        <itemStack oreDictionary="oreRedstone" />        
+        <itemStack oreDictionary="oreRedstone" />
       </input>
       <output>
-        <itemStack modID="minecraft" itemName="redstone" number="8"/>
-        <itemStack modID="minecraft" itemName="redstone" number="1" chance="0.2"/>        
-        <itemStack modID="minecraft" itemName="cobblestone" chance="0.15"/>
-        <itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="2020" chance="0.25" />
+        <itemStack modID="minecraft" itemName="redstone" number="8" />
+        <itemStack modID="minecraft" itemName="redstone" number="1" chance="0.2" />
+        <itemStack modID="minecraft" itemName="cobblestone" chance="0.15" />
       </output>
     </recipe>
-  
-  <recipe name="LapisLazuliOre" energyCost="3000">
-      <input>      
-        <itemStack oreDictionary="oreLapis" />        
-      </input>
-      <output>
-        <itemStack modID="minecraft" itemName="dye" itemMeta="4" number="8" />
-        <itemStack modID="minecraft" itemName="dye" itemMeta="4" number="1" chance="0.2" />        
-        <itemStack modID="minecraft" itemName="cobblestone" chance="0.15"/>
-      </output>
-    </recipe>
-</recipeGroup>
-
-<recipeGroup name="EnderIO">
-  <recipe name="Silicon" />
-  <recipe name="SiliconRedSand" />
-</recipeGroup>
-
-<recipeGroup name="GregTech">
-  <recipe name="Nether Redstone Ore" energyCost="3000">
-      <input>
-        <itemStack oreDictionary="oreNetherrackRedstone" />
-      </input>
-      <output>
-        <itemStack modID="minecraft" itemName="redstone" number="8"/>
-        <itemStack modID="minecraft" itemName="redstone" number="1" chance="0.2"/>        
-        <itemStack modID="minecraft" itemName="netherrack" chance="0.15"/>
-        <itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="2020" chance="0.25" />
-      </output>
-    </recipe>
-    
-  <recipe name="End Redstone Ore" energyCost="3000">
-      <input>
-        <itemStack oreDictionary="oreEndstoneRedstone" />
-      </input>
-      <output>
-        <itemStack modID="minecraft" itemName="redstone" number="8"/>
-        <itemStack modID="minecraft" itemName="redstone" number="1" chance="0.2"/>        
-        <itemStack modID="minecraft" itemName="end_stone" chance="0.15"/>
-        <itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="2020" chance="0.25" />
-      </output>
-    </recipe>
-    
-  <recipe name="Black Granite Redstone Ore" energyCost="3000">
-      <input>
-        <itemStack oreDictionary="oreBlackgraniteRedstone" />
-      </input>
-      <output>
-        <itemStack modID="minecraft" itemName="redstone" number="8"/>
-        <itemStack modID="minecraft" itemName="redstone" number="1" chance="0.2"/>        
-        <itemStack modID="gregtech" itemName="gt.blockgranites" itemMeta="1" chance="0.15"/>
-        <itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="2020" chance="0.25" />
-      </output>
-    </recipe>
-    
-  <recipe name="Red Granite Redstone Ore" energyCost="3000">
-      <input>
-        <itemStack oreDictionary="oreRedgraniteRedstone" />
-      </input>
-      <output>
-        <itemStack modID="minecraft" itemName="redstone" number="8"/>
-        <itemStack modID="minecraft" itemName="redstone" number="1" chance="0.2"/>        
-        <itemStack modID="gregtech" itemName="gt.blockgranites" itemMeta="9" chance="0.15"/>
-        <itemStack modID="gregtech" itemName="gt.metaitem.01" itemMeta="2020" chance="0.25" />
-      </output>
-    </recipe>
-
-  <recipe name="Nether Lapis Ore" energyCost="3000">
-      <input>
-        <itemStack oreDictionary="oreNetherrackLapis" />
-      </input>
-      <output>
-        <itemStack modID="minecraft" itemName="dye" itemMeta="4" number="8"/>
-        <itemStack modID="minecraft" itemName="dye" itemMeta="4" number="1" chance="0.2"/>        
-        <itemStack modID="minecraft" itemName="netherrack" chance="0.15"/>
-      </output>
-    </recipe>
-    
-  <recipe name="End Lapis Ore" energyCost="3000">
-      <input>
-        <itemStack oreDictionary="oreEndstoneLapis" />
-      </input>
-      <output>
-        <itemStack modID="minecraft" itemName="dye" itemMeta="4" number="8"/>
-        <itemStack modID="minecraft" itemName="dye" itemMeta="4" number="1" chance="0.2"/>        
-        <itemStack modID="minecraft" itemName="end_stone" chance="0.15"/>
-      </output>
-    </recipe>
-    
-  <recipe name="Black Granite Lapis Ore" energyCost="3000">
-      <input>
-        <itemStack oreDictionary="oreBlackgraniteLapis" />
-      </input>
-      <output>
-        <itemStack modID="minecraft" itemName="dye" itemMeta="4" number="8"/>
-        <itemStack modID="minecraft" itemName="dye" itemMeta="4" number="1" chance="0.2"/>        
-        <itemStack modID="gregtech" itemName="gt.blockgranites" itemMeta="1" chance="0.15"/>
-      </output>
-    </recipe>
-    
-  <recipe name="Red Granite Lapis Ore" energyCost="3000">
-      <input>
-        <itemStack oreDictionary="oreRedgraniteLapis" />
-      </input>
-      <output>
-        <itemStack modID="minecraft" itemName="dye" itemMeta="4" number="8"/>
-        <itemStack modID="minecraft" itemName="dye" itemMeta="4" number="1" chance="0.2"/>        
-        <itemStack modID="gregtech" itemName="gt.blockgranites" itemMeta="9" chance="0.15"/>
-      </output>
-    </recipe>
-</recipeGroup>
+  </recipeGroup>
 
 </SAGMillRecipes>
+  
+
