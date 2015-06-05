@@ -1,5 +1,5 @@
 v3.0.0
-Forge updated: 10.13.3.1428
+Forge updated: 10.13.3.1420
 
 Mod Updates:
 - Applied Energistics 2 -> rv2 stable 4
@@ -39,6 +39,8 @@ Mod Updates:
 
 Disabled Mods:
 - Extra Cells 2
+- Opis
+- MobiusCore
 
 Mod Additions:
 - BluePower
