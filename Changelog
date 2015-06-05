@@ -1,11 +1,11 @@
 v3.0.0
-Forge updated: 10.13.3.1420
+Forge updated: 10.13.3.1428
 
 Mod Updates:
-- Applied Energistics 2 -> rv2 stable 3
-- Automagy -> 0.24
+- Applied Energistics 2 -> rv2 stable 4
+- Automagy -> 0.24.1
 - AsieLib -> 0.4.1
-- BdLib -> 1.8.1.87
+- BdLib -> 1.8.2.90
 - BiblioWoods[EXBL] -> 1.4
 - BuildCraft -> 6.4.16
 - CodeChickenCore -> 1.0.7.46
@@ -13,26 +13,28 @@ Mod Updates:
 - Dimensional Anchor -> 59.0.3
 - ExtraBiomesXL -> 3.16.2
 - ExtraUtilities -> 1.2.5
-- GalactiCraft -> 3.0.12.339
-- Gendustry -> 1.4.11.89
+- GalactiCraft -> 3.0.12.340
+- Gendustry -> 1.4.12.92
 - GregTech -> 5.08.18
 - GTTweaker -> 0.7.0
 - Hardcore Ender Expansion -> 1.8.1
 - NuclearControl 2 -> 2.2.5a
-- Industrial Craft 2 -> 2.2.727
+- Industrial Craft 2 -> 2.2.730
 - InfinityCore -> 1.1
-- LogisticsPipes -> 0.8.3.122
+- LogisticsPipes -> 0.8.3.123
 - Malisis Core -> 0.12.2
 - Malisis Doors -> 1.8.1
 - Minechem -> 5.0.5.398
+- ModTweaker -> 0.8.2
 - NEI -> 1.0.5.110
-- NEIAddons -> 1.12.8.31
-- OpenBlocks -> 1.4.3-639
+- NEIAddons -> 1.12.9.32
+- OpenBlocks -> 1.4.3-644
 - OpenComputers -> 1.5.12.26
-- OpenModsLib -> 0.7.3-366
+- OpenModsLib -> 0.7.3-368
+- Pam's Harvestcraft -> 1.7.10i
 - PneumaticCraft -> 1.7.0
 - ThaumicEnergistics -> 0.8.10.5
-- ThaumicTinkerer -> 2.5.503
+- ThaumicTinkerer -> 2.5.506
 - Translocator -> 1.1.2.15
 
 Disabled Mods:
@@ -49,7 +51,6 @@ Mod Removals:
 - ArmorStatusHUD
 - StatusEffectHUD
 - IHL
-- InfinityCore (temporarily)
 - ProjectRed
 - Random Things
 - Refined Relocation
@@ -57,6 +58,7 @@ Mod Removals:
 - Supercrafting Frame
 
 Changes:
+- Astro Miner!
 - ExtraCells got disabled due to Infinite Liquid exploit. Will be re-enabled when its fixed. Enable EC on your own risk (and if you do, please DON'T report this issue https://github.com/JasonMcRay/InfiTech-1.7/issues/181)
 - Some items moved from BC machines into GT machines
 - Disabled Alloy Smelter.
