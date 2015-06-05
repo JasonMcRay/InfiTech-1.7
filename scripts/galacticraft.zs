@@ -801,11 +801,17 @@ recipes.addShaped(<GalacticraftMars:tile.marsMachine:4>, [
 [<GalacticraftMars:item.null:3>, <minecraft:bed>, <GalacticraftMars:item.null:3>],
 [HeavyDutyPlate, <minecraft:clock>, HeavyDutyPlate]]);
 
-//Terraformer
+/*Terraformer - ExtraCells
 recipes.addShaped(<GalacticraftMars:tile.marsMachine>, [
 [CompressedTi, <GalacticraftCore:item.oxygenConcentrator>, CompressedTi],
 [DeshPlate, <IC2:blockMachine:15>, DeshPlate],
-[<gregtech:gt.metaitem.01:32602>, <extracells:certustank>, <gregtech:gt.metaitem.01:32612>]]);
+[<gregtech:gt.metaitem.01:32602>, <extracells:certustank>, <gregtech:gt.metaitem.01:32612>]]);*/
+
+//Terraformer - Non ExtraCells
+recipes.addShaped(<GalacticraftMars:tile.marsMachine>, [
+[CompressedTi, <GalacticraftCore:item.oxygenConcentrator>, CompressedTi],
+[DeshPlate, <IC2:blockMachine:15>, DeshPlate],
+[<gregtech:gt.metaitem.01:32602>, <EnderIO:blockReservoir>, <gregtech:gt.metaitem.01:32612>]]);
 
 //Launch Controller
 recipes.addShaped(<GalacticraftMars:tile.marsMachine:8>, [

@@ -12,7 +12,6 @@ Mod Updates:
 - Computronics -> 1.5.1
 - Dimensional Anchor -> 59.0.3
 - ExtraBiomesXL -> 3.16.2
-- ExtraCells -> 2.2.71
 - ExtraUtilities -> 1.2.5
 - GalactiCraft -> 3.0.12.339
 - Gendustry -> 1.4.11.89
@@ -36,6 +35,9 @@ Mod Updates:
 - ThaumicTinkerer -> 2.5.503
 - Translocator -> 1.1.2.15
 
+Disabled Mods:
+- Extra Cells 2
+
 Mod Additions:
 - BluePower
 - FastLeaveDecay
@@ -55,6 +57,7 @@ Mod Removals:
 - Supercrafting Frame
 
 Changes:
+- ExtraCells got disabled due to Infinite Liquid exploit. Will be re-enabled when its fixed. Enable EC on your own risk (and if you do, please DON'T report this issue https://github.com/JasonMcRay/InfiTech-1.7/issues/181)
 - Some items moved from BC machines into GT machines
 - Disabled Alloy Smelter.
 - AE recipes massively overhauled
