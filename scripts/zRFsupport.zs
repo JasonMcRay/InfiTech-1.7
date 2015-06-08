@@ -1,4 +1,4 @@
-import mods.nei.NEI;
+/*import mods.nei.NEI;
 
 # --- Buildcraft ---
 # Generators 
@@ -141,3 +141,4 @@ recipes.addShaped(solarPanelAdv, [
 # --- Logistics Pipes ---
 // Will be done directly in configs when its implemented.
 
+*/
