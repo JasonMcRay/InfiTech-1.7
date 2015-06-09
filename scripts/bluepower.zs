@@ -36,6 +36,10 @@ var wireFineCopperGT = <gregtech:gt.metaitem.02:19035>;
 var wireFineIronBP = <bluepower:iron_wire>;
 var wireFineIronGT = <gregtech:gt.metaitem.02:19032>;
 var wireRedAlloy = <bluepower:part.wire.redalloy>;
+var stickWood = <ore:stickWood>;
+var rodStone = <ore:rodStone>;
+var gemAmethyst = <ore:gemAmethyst>;
+var sawAmethyst = <bluepower:amethyst_saw>;
 
 
 # Item/block Removal
@@ -47,6 +51,10 @@ recipes.remove(drawplate);
 NEI.hide(drawplate);
 
 # Recipe tweaks
+recipes.remove(sawAmethyst);
+recipes.addShaped(sawAmethyst, [
+	[stickWood, rodStone, rodStone],
+	[stickWood, gemAmethyst, rodStone]]);
 recipes.removeShaped(wireRedAlloy, [[ingotRedAlloy, ingotRedAlloy, ingotRedAlloy]]);
 //Assembler.addRecipe(output, input1, input2, durationTicks, euPerTick);
 recipes.remove(wireFineIronBP);
