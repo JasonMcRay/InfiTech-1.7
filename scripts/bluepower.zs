@@ -17,10 +17,11 @@ var dustTeslatite = <bluepower:teslatite_dust>;
 var glass = <minecraft:glass>;
 var glassReinforcedSapphire = <bluepower:reinforced_sapphire_glass>;
 var glassSapphire = <bluepower:sapphire_glass>;
-var ingotBlueAlloy = <ore:ingotBlueAlloy>;
+var ingotBlueAlloy = <bluepower:blue_alloy_ingot>;
 var ingotIron = <minecraft:iron_ingot>;
 var ingotPurpleAlloy = <bluepower:purple_alloy_ingot>;
 var ingotRedAlloy = <ore:ingotRedAlloy>;
+var ingotSilver = <gregtech:gt.metaitem.01:11054>;
 var ingotZinc = <gregtech:gt.metaitem.01:11036>;
 var itemGemSapphire = <gregtech:gt.metaitem.01:8503>;
 var obsidian = <minecraft:obsidian>;
@@ -36,6 +37,10 @@ var wireFineCopperGT = <gregtech:gt.metaitem.02:19035>;
 var wireFineIronBP = <bluepower:iron_wire>;
 var wireFineIronGT = <gregtech:gt.metaitem.02:19032>;
 var wireRedAlloy = <bluepower:part.wire.redalloy>;
+var stickWood = <ore:stickWood>;
+var rodStone = <ore:rodStone>;
+var gemAmethyst = <ore:gemAmethyst>;
+var sawAmethyst = <bluepower:amethyst_saw>;
 
 
 # Item/block Removal
@@ -47,6 +52,10 @@ recipes.remove(drawplate);
 NEI.hide(drawplate);
 
 # Recipe tweaks
+recipes.remove(sawAmethyst);
+recipes.addShaped(sawAmethyst, [
+	[stickWood, rodStone, rodStone],
+	[stickWood, gemAmethyst, rodStone]]);
 recipes.removeShaped(wireRedAlloy, [[ingotRedAlloy, ingotRedAlloy, ingotRedAlloy]]);
 //Assembler.addRecipe(output, input1, input2, durationTicks, euPerTick);
 recipes.remove(wireFineIronBP);
@@ -60,3 +69,4 @@ AlloySmelter.addRecipe(bouleSilicon, coal * 8, sand * 8, 100, 8);
 AlloySmelter.addRecipe(waferBlueDoped, waferSilicon, dustTeslatite * 4, 100, 8);
 AlloySmelter.addRecipe(waferRedDoped, waferSilicon, dustRedstone * 4, 100, 8);
 AlloySmelter.addRecipe(bpPlateZinc * 4, ingotZinc, ingotIron * 2, 200, 16);
+AlloySmelter.addRecipe(ingotBlueAlloy, dustTeslatite * 4, ingotSilver, 100, 8);

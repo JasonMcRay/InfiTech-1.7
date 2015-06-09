@@ -14,6 +14,7 @@ var ballDarkSteel = <EnderIO:itemMaterial:7>;
 var barsDarkSteel = <EnderIO:blockDarkIronBars>;
 var barsIron = <minecraft:iron_bars>;
 var batteryHullSmall = <gregtech:gt.metaitem.01:32500>;
+var BCWrench = <BuildCraft|Core:wrenchItem>;
 var blazePowder = <minecraft:blaze_powder>;
 var blockGlass = <ore:blockGlass>;
 var blockGlowstone = <minecraft:glowstone>;
@@ -25,12 +26,15 @@ var capacitorDualLayer = <EnderIO:itemBasicCapacitor:1>;
 var capacitorOctadic = <EnderIO:itemBasicCapacitor:2>;
 var clearGlass = <EnderIO:blockFusedQuartz:1>;
 var clearGlassEnlighten = <EnderIO:blockFusedQuartz:3>;
+var comparator = <minecraft:comparator>;
 var conduitBinder = <EnderIO:itemMaterial:1>;
+var conduitEnergy = <EnderIO:itemPowerConduit>;
 var conduitFluid = <EnderIO:itemLiquidConduit>;
 var conduitFluidEnder = <EnderIO:itemLiquidConduit:2>;
 var conduitFluidPressurized = <EnderIO:itemLiquidConduit:1>;
 var conduitInsulatedRedstone = <EnderIO:itemRedstoneConduit:2>;
 var conduitRedstone = <EnderIO:itemRedstoneConduit>;
+var conduitRedstoneInsulated = <EnderIO:itemRedstoneConduit:2>;
 var craftingGrinder = <ore:craftingGrinder>;
 var crystalEnder = <EnderIO:itemMaterial:8>;
 var crystalPulsating = <EnderIO:itemMaterial:5>;
@@ -57,11 +61,13 @@ var gearStone = <ore:gearStone>;
 var generatorCombustion = <EnderIO:blockCombustionGenerator>;
 var generatorStirling = <EnderIO:blockStirlingGenerator>;
 var glass = <minecraft:glass>;
+var glassPane = <minecraft:glass_pane>;
 var gliderWing = <EnderIO:itemGliderWing>;
 var gliderWings = <EnderIO:itemGliderWing:1>;
 var GTDustCoal = <gregtech:gt.metaitem.01:2535>;
 var HHammer = <ore:craftingToolHardHammer>;
 var chargerWireless = <EnderIO:blockWirelessCharger>;
+var chest = <minecraft:chest>;
 var IC2DustCoal = <IC2:itemDust:2>;
 var iDiamond = <IC2:itemPartIndustrialDiamond>;
 var ingotConductiveIron = <EnderIO:itemAlloy:4>;
@@ -73,7 +79,9 @@ var ingotPulsatingIron = <EnderIO:itemAlloy:5>;
 var ingotRedAlloy = <ore:ingotRedAlloy>;
 var ingotSilicon = <ore:ingotSilicon>;
 var ingotSoularium = <EnderIO:itemAlloy:7>;
+var ingotSteel = <ore:ingotSteel>;
 var ingotVibrantAlloy = <EnderIO:itemAlloy:2>;
+var itemBuffer = <EnderIO:blockBuffer>;
 var itemDustDiamond = <gregtech:gt.metaitem.01:2500>;
 var itemDustEmerald = <gregtech:gt.metaitem.01:2501>;
 var itemDustEnderium = <gregtech:gt.metaitem.01:2321>;
@@ -90,7 +98,7 @@ var killerJoe = <EnderIO:blockKillerJoe>;
 var leather = <minecraft:leather>;
 var lightPowered = <EnderIO:blockElectricLight>;
 var machineHullLV = <gregtech:gt.blockmachines:11>;
-var machineChassi = <EnderIO:itemMachinePart>;
+var machineChassis = <EnderIO:itemMachinePart>;
 var moltenBlaze = <liquid:molten.blaze>;
 var moltenEnderiumBase = <liquid:molten.enderiumbase>;
 var moltenEnergeticAlloy = <liquid:molten.energeticalloy>;
@@ -105,11 +113,15 @@ var motorMV = <gregtech:gt.metaitem.01:32601>;
 var netherQuartz = <minecraft:quartz>;
 var obsidian = <minecraft:obsidian>;
 var obsidianReinforced = <EnderIO:blockReinforcedObsidian>;
+var paintingMachine = <EnderIO:blockPainter>;
 var piston = <minecraft:piston>;
 var pistonMV = <gregtech:gt.metaitem.01:32641>;
 var plateDarkSteel = <ore:plateDarkSteel>;
 var plateIron = <ore:plateIron>;
+var plateSilicon = <ore:plateSilicon>;
+var plateSteel = <ore:plateSteel>;
 var pressurePlateDarkSteel = <EnderIO:blockDarkSteelPressurePlate>;
+var probeConduit = <EnderIO:itemConduitProbe>;
 var pulsatingCrystal = <EnderIO:itemMaterial:5>;
 var pumpElectricMV = <gregtech:gt.metaitem.01:32611>;
 var reservoir = <EnderIO:blockReservoir>;
@@ -211,11 +223,26 @@ recipes.remove(alloySmelter);
 NEI.hide(alloySmelter);
 
 # Recipe Tweaks
+recipes.remove(probeConduit);
+recipes.addShaped(probeConduit, [
+	[ingotSteel, conduitEnergy, ingotSteel],
+	[glassPane, comparator, glassPane],
+	[plateSilicon, conduitRedstoneInsulated, plateSilicon]]);
+recipes.remove(itemBuffer);
+recipes.addShaped(itemBuffer, [
+	[itemIngotIron, ingotSteel, itemIngotIron],
+	[ingotSteel, chest, ingotSteel],
+	[itemIngotIron, ingotSteel, itemIngotIron]]);
+recipes.remove(paintingMachine);
+recipes.addShaped(paintingMachine, [
+	[netherQuartz, netherQuartz, netherQuartz],
+	[plateSteel, diamond, plateSteel],
+	[plateSteel, machineChassis, plateSteel]]);
 recipes.remove(wrenchYeta);
 recipes.addShaped(wrenchYeta, [
-    [ingotElectricalSteel, null, ingotElectricalSteel],
-    [null, gearStone, null],
-    [null, ingotElectricalSteel, null]]);
+    [ingotPulsatingIron, null, ingotPulsatingIron],
+    [null, BCWrench, null],
+    [null, ingotPulsatingIron, null]]);
 recipes.remove(conduitFluidEnder);
 recipes.addShaped(conduitFluidEnder * 4, [
     [conduitBinder, conduitBinder, conduitBinder],
@@ -255,18 +282,18 @@ recipes.addShaped(tankFluid, [
 recipes.remove(sagMill);
 recipes.addShaped(sagMill, [
     [ingotElectricalSteel, craftingGrinder, ingotElectricalSteel],
-    [flint, machineChassi, flint],
+    [flint, machineChassis, flint],
     [pistonMV, capacitorDualLayer, motorMV]]);
 recipes.remove(generatorCombustion);
 recipes.addShaped(generatorCombustion, [
     [ingotElectricalSteel, ingotElectricalSteel, ingotElectricalSteel],
-    [tankFluid, machineChassi, tankFluid],
+    [tankFluid, machineChassis, tankFluid],
     [gearIron, piston, gearIron]]);
 recipes.remove(generatorStirling);
 recipes.addShaped(generatorStirling, [
     [stoneBricks, stoneBricks, stoneBricks],
     [stoneBricks, furnace, stoneBricks],
-    [gearStone, machineChassi, gearStone]]);
+    [gearStone, machineChassis, gearStone]]);
 recipes.remove(conduitInsulatedRedstone);
 recipes.addShaped(conduitInsulatedRedstone * 4, [
     [conduitBinder, conduitBinder, conduitBinder],
