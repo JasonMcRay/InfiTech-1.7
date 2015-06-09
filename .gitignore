@@ -1,34 +1,3 @@
-# Minecraft files
-asm/
-backups/
-blueprints/
-coremods/
-crash-reports/
-CustomDISkins/
-journeymap/
-liteconfig/
-logs/
-reports/
-resourcepacks/
-saves/
-screenshots/
-TCNodeTracker/
-texturepacks/
-1213309934
-GregTech.cfg
-GregTech.lang
-icon.png
-minetweaker.log
-nicknames.json
-OpenComputersMod*.*
-options.txt
-optionsof.txt
-usernamecache.json
-mods/ic2/EJML-core-0.26.jar
-config/MapWriterBlockColourOverrides.txt
-config/MapWriterBlockColours.txt
-mods/carpentersblocks/CarpentersBlocksCachedResources.zip
-
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -72,6 +41,37 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Minecraft files
+asm/
+backups/
+blueprints/
+coremods/
+crash-reports/
+CustomDISkins/
+journeymap/
+liteconfig/
+logs/
+reports/
+resourcepacks/
+saves/
+screenshots/
+TCNodeTracker/
+texturepacks/
+1213309934
+GregTech.cfg
+GregTech.lang
+icon.png
+minetweaker.log
+nicknames.json
+OpenComputersMod*.*
+options.txt
+optionsof.txt
+usernamecache.json
+mods/ic2/EJML-core-0.26.jar
+config/MapWriterBlockColourOverrides.txt
+config/MapWriterBlockColours.txt
+mods/carpentersblocks/CarpentersBlocksCachedResources.zip
 config/YAMPST.nbt
 config/DIAdvancedCompatibility.cfg
 config/HardcoreEnderExpansion.clientsave.cfg
