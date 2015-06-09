@@ -1,3 +1,39 @@
+v3.0.1
+Forge Updated: 10.13.3.1428
+
+Mod Updates:
+- Applied Energistics 2 -> rv2 stable 5
+- Automagy -> 0.24.2
+- Buildcraft -> 6.4.17
+- Extra Utilities -> 1.2.6
+- Forestry -> 3.5.7.16
+- Galacticraft -> 3.0.12.341
+- GregTech -> 5.08.19
+- Industrial Craft 2 -> 2.2.733
+
+Changes:
+- Lowered Bluepower volcano spawn chance
+- Brought back RF Generators and RF Cables
+- Disabled direct ability to power GT machines with RF (powering some RF machines with GTEU still possible)
+- Lowered energy costs for Forestry machines from 4x to 3x
+- Disabled BP Amethyst Generation
+- Boosted Small Amethyst Ore generation
+- Amethyst Saw craftable with any Amethyst Gem
+- Removed not working eIO Enchanter recipes
+- Changed Haste and Repair costs in enchanter (Haste = Hyper Nitor, Repair = Anvil)
+- Changed Yeta Wrench recipe to be available in early game
+- Changed Painting Machine recipe to use regular steel instead of electrical
+- Changed Item Buffer recipe to use regular steel instead of electrical
+- Changed Conduit Probe recipe to use regular steel instead of electrical
+- Added Blue Alloy recipe into Alloy Smelter (Teslatite + Silver)
+- Added Buildcraft Lenses and Filters into Lathe (Lenses) and Forming Press (Filters)
+- Removed Lenses and Filters from BC Assembly Table
+- Fixed crash when tally box (no lens) is pointed at certain invalid targets.
+- Updated FMP support in Extra Utilities to FMP version 1.2.0
+- Enderlillies can be planted on water (wha?)
+- Improved Bounding and Collision boxes of IC2 Iron Fences
+
+
 v3.0.0
 Forge updated: 10.13.3.1420
 
