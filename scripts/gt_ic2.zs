@@ -3,6 +3,7 @@
 import mods.gregtech.Canner;
 import mods.gregtech.ArcFurnace;
 import mods.gregtech.PlasmaArcFurnace;
+import mods.ic2.SemiFluidGenerator;
 
 # Aliases
 var dustThorium = <gregtech:gt.metaitem.01:2096>;
@@ -42,6 +43,9 @@ Canner.addRecipe(fuelRodUranium, uraniumEnriched, fuelRodEmpty, 200, 2);
 Canner.addRecipe(fuelRodMOX, MOX, fuelRodEmpty, 200, 2);
 recipes.remove(fuelRodThorium);
 Canner.addRecipe(fuelRodThorium, dustThorium, fuelRodEmpty, 200, 2);
+
+# Specials
+SemiFluidGenerator.addFluid(<liquid:creosote> * 20, 8);
 
 # Charcoal
 var charcoal = <minecraft:coal:1>;
