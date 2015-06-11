@@ -45,7 +45,7 @@ recipes.remove(fuelRodThorium);
 Canner.addRecipe(fuelRodThorium, dustThorium, fuelRodEmpty, 200, 2);
 
 # Specials
-SemiFluidGenerator.addFluid(<liquid:creosote> * 20, 8);
+SemiFluidGenerator.addFluid(<liquid:creosote> * 53, 8);
 
 # Charcoal
 var charcoal = <minecraft:coal:1>;
