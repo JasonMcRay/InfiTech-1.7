@@ -12,8 +12,21 @@ var fuelRodThorium = <gregtech:gt.Thoriumcell>;
 var fuelRodUranium = <IC2:reactorUraniumSimple>;
 var MOX = <IC2:itemMOX>;
 var uraniumEnriched = <IC2:itemUran>;
+var cropHarvester = <IC2:blockMachine3:7>;
+var robotArmHV = <gregtech:gt.metaitem.01:32652>;
+var circuitEnergyFlow = <gregtech:gt.metaitem.01:32706>;
+var pistonElectricHV = <gregtech:gt.metaitem.01:32642>;
+var machineHullHV = <gregtech:gt.blockmachines:13>;
+var sensorHV = <gregtech:gt.metaitem.01:32692>;
+var cableElectrum4x = <gregtech:gt.blockmachines:1448>;
+var moduleConveyorHV = <gregtech:gt.metaitem.01:32632>;
 
 # Recipe Tweaks
+recipes.remove(cropHarvester);
+recipes.addShaped(cropHarvester, [
+    [robotArmHV, circuitEnergyFlow, robotArmHV],
+    [pistonElectricHV, machineHullHV, sensorHV],
+    [cableElectrum4x, moduleConveyorHV, cableElectrum4x]]);
 //Canner.addRecipe(output, input1, input2, durationTicks, euPerTick);
 Canner.addRecipe(fuelRodUranium, uraniumEnriched, fuelRodEmpty, 200, 2);
 Canner.addRecipe(fuelRodMOX, MOX, fuelRodEmpty, 200, 2);
