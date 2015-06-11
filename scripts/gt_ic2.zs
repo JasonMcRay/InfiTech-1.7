@@ -20,8 +20,18 @@ var machineHullHV = <gregtech:gt.blockmachines:13>;
 var sensorHV = <gregtech:gt.metaitem.01:32692>;
 var cableElectrum4x = <gregtech:gt.blockmachines:1448>;
 var moduleConveyorHV = <gregtech:gt.metaitem.01:32632>;
+var reBatteryAdv = <IC2:itemAdvBat>;
+var cableCopperAnnealed1x = <gregtech:gt.blockmachines:1386>;
+var itemCasingBronze = <IC2:itemCasing:2>;
+var dustSulfur = <ore:dustSulfur>;
+var dustLead = <ore:dustLead>;
 
 # Recipe Tweaks
+recipes.remove(reBatteryAdv);
+recipes.addShaped(reBatteryAdv, [
+	[cableCopperAnnealed1x, itemCasingBronze, cableCopperAnnealed1x],
+	[itemCasingBronze, dustSulfur, itemCasingBronze],
+	[itemCasingBronze, dustLead, itemCasingBronze]]);
 recipes.remove(cropHarvester);
 recipes.addShaped(cropHarvester, [
     [robotArmHV, circuitEnergyFlow, robotArmHV],
