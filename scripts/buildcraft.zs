@@ -209,6 +209,9 @@ recipes.addShaped(chute, [
 	[plateIron, GTGearStone, plateIron],
 	[null, plateIron, HHammer]]);
 
+# Specials
+quarry.addTooltip(format.red(format.bold("WARNING! One time use only. Upgrade to Ender Quarry!")));
+	
 # GT Integration
 //FormingPress.addRecipe(output, input1, input2, durationTicks, euPerTick);
 //PrecisionLaser.addRecipe(output, lense, input, durationTicks, euPerTick);
