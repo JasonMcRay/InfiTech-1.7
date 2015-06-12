@@ -25,6 +25,56 @@
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.7.0">
     <equipment>
+		<gregtechTools>
+			<sword id="gregtech:gt.metatool.01" damage="0"/>
+			<pick id="gregtech:gt.metatool.01" damage="2"/>
+			<shovel id="gregtech:gt.metatool.01" damage="4"/>
+			<axe id="gregtech:gt.metatool.01" damage="6"/>
+			<hoe id="gregtech:gt.metatool.01" damage="8"/>
+			<saw id="gregtech:gt.metatool.01" damage="10"/>
+			<hhammer id="gregtech:gt.metatool.01" damage="12"/>
+			<shammer id="gregtech:gt.metatool.01" damage="14"/>
+			<wrench id="gregtech:gt.metatool.01" damage="16"/>
+			<file id="gregtech:gt.metatool.01" damage="18"/>
+			<crowbar id="gregtech:gt.metatool.01" damage="20"/>
+			<screwdriver id="gregtech:gt.metatool.01" damage="22"/>
+			<mortar id="gregtech:gt.metatool.01" damage="24"/>
+			<wcutter id="gregtech:gt.metatool.01" damage="26"/>
+			<scoop id="gregtech:gt.metatool.01" damage="28"/>
+			<bcutter id="gregtech:gt.metatool.01" damage="30"/>
+			<universalspade id="gregtech:gt.metatool.01" damage="32"/>
+			<knife id="gregtech:gt.metatool.01" damage="34"/>
+			<butcher id="gregtech:gt.metatool.01" damage="36"/>
+			<sense id="gregtech:gt.metatool.01" damage="40"/>
+			<plow id="gregtech:gt.metatool.01" damage="42"/>
+			<plunger id="gregtech:gt.metatool.01" damage="44"/>
+			<rollingpin id="gregtech:gt.metatool.01" damage="46"/>
+			<drills>
+				<drilllv id="gregtech:gt.metatool.01" damage="100"/>
+				<drillmv id="gregtech:gt.metatool.01" damage="102"/>
+				<drillhv id="gregtech:gt.metatool.01" damage="104"/>
+			</drills>
+			<chainsaws>
+				<chainsawlv id="gregtech:gt.metatool.01" damage="110"/>
+				<chainsawmv id="gregtech:gt.metatool.01" damage="112"/>
+				<chainsawhv id="gregtech:gt.metatool.01" damage="114"/>
+			</chainsaws>
+			<wrenches>
+				<wrenchlv id="gregtech:gt.metatool.01" damage="120"/>
+				<wrenchmv id="gregtech:gt.metatool.01" damage="122"/>
+				<wrenchhv id="gregtech:gt.metatool.01" damage="124"/>
+			</wrenches>
+			<jackhammer id="gregtech:gt.metatool.01" damage="130"/>
+			<buzzsaw id="gregtech:gt.metatool.01" damage="140"/>
+			<screwdriverlv id="gregtech:gt.metatool.01" damage="150"/>
+			<solderingironlv id="gregtech:gt.metatool.01" damage="160"/>
+			<turbines>
+				<turbinesmall id="gregtech:gt.metatool.01" damage="170"/>
+				<turbine id="gregtech:gt.metatool.01" damage="172"/>
+				<turbinelarge id="gregtech:gt.metatool.01" damage="174"/>
+				<turbinehuge id="gregtech:gt.metatool.01" damage="176"/>
+			</turbines>
+		</gregtechTools>
         <weapon>
             <sword>
                 <ironSword id="iron_sword"/>
