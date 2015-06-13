@@ -1,3 +1,49 @@
+v3.1.0
+Mod Updates:
+- Applied Energistics 2 -> rv2 stable 6
+- AsieLib -> 0.4.2
+- BDlib -> 1.8.2.92
+- BuildCraft -> 7.0.9
+- BuildCraft Compat -> 7.0.8
+- Computronics -> 1.5.4
+- Enchiridion -> 2.0.2
+- Gendustry -> 1.4.13.94
+- Industrial Craft 2 -> 2.2.736
+- LogisticsPipes -> 0.9.1.15
+- Malisis Core -> 0.12.3
+- OpenBlocks -> 1.4.3-645
+- OpenModsLib -> 0.7.3
+- PneumaticCraft -> 1.8.1-83
+- ttCore -> 0.1.1-77
+
+New Mods:
+- In-Game Wiki
+
+Changes:
+- BC Kinesis pipes have loss per distance traveled
+- Crop Growth is at vanilla speed
+- Milking timeout lowered
+- Sugercane is no longer biome dependant
+- Food restores 75% of vanilla amount
+- Healing occures with mmin 10 hunger
+- Lowered damge taken on starve to 2
+- Crop harvester recipe changed. HV Age
+- Advanced RE-Battery requires Annealed Copper instead of Regular Copper cable
+- Cresote can be processed in SemiFluid Gen for little power. 1000L = 3000EU @ 8EU/t
+- Wooden button is again craftable in the crafting grid (Thanks @Timeslice42)
+- EnderIO conduits crafting output boosted to 6.
+- Disabled IC2 Wire Cutter
+- Disabled chiseling Stone and Cobblestone into Mossy.
+- Slightly Changed recipe for Diamond and Obsidian Chisel
+- Disabled BuildCraft Quarry crafting
+- Already made BC Quarries can be used only once. Or they can be "upgraded" into Ender Quarry.
+- Peopper automatic replacement of GregTech tools in hotbar.
+- Kinesis Pipes are now lossy over distance
+- PneumaticCraft plants no longer spawns.
+- PneumaticCraft Oil is now used. It will generate in newly generated chunks only.
+- For more information on PneumaticCraft check In-game Wiki. (You might need to resolve keybind conflict)
+- Fixed not being able to craft GT OreGen Book
+
 v3.0.1
 Mod Updates:
 - Applied Energistics 2 -> rv2 stable 5
