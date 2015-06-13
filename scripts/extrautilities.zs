@@ -45,7 +45,7 @@ var sandCompressed2 = <ExtraUtilities:cobblestone_compressed:15>;
 var schematic3x3 = <gregtech:gt.metaitem.01:32497>;
 var enderQuarry = <ExtraUtilities:enderQuarry>;
 var enderPump = <ExtraUtilities:enderThermicPump>;
-var BCQuarry = <BuildCraft|Factory:machineBlock>;
+var BCQuarry = <BuildCraft|Builders:machineBlock>;
 var enderCore = <ExtraUtilities:decorativeBlock1:11>;
 
 
