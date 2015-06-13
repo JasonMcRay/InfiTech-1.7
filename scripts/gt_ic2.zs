@@ -26,6 +26,16 @@ var cableCopperAnnealed1x = <gregtech:gt.blockmachines:1386>;
 var itemCasingBronze = <IC2:itemCasing:2>;
 var dustSulfur = <ore:dustSulfur>;
 var dustLead = <ore:dustLead>;
+var GTOreGenGuide = <Enchiridion2:book>.withTag({identifier: "GregTech_Ore_Guide"});
+var book = <minecraft:book>;
+var inkSac = <minecraft:dye>;
+var stone = <minecraft:stone>;
+var oreIron = <ore:oreIron>;
+var oreCopper = <ore:oreCopper>;
+var oreTin = <ore:oreTin>;
+var oreLead = <ore:oreLead>;
+var oreGold = <ore:oreGold>;
+var oreSilver = <ore:oreSilver>;
 
 # Recipe Tweaks
 recipes.remove(reBatteryAdv);
@@ -45,6 +55,12 @@ recipes.remove(fuelRodThorium);
 Canner.addRecipe(fuelRodThorium, dustThorium, fuelRodEmpty, 200, 2);
 
 # Specials
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreIron]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreCopper]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreTin]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreLead]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreGold]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreSilver]);
 SemiFluidGenerator.addFluid(<liquid:creosote> * 53, 8);
 
 # Charcoal
