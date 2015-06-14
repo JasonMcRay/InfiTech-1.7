@@ -19,6 +19,8 @@ var saw = <ore:craftingToolSaw>;
 var sensorDaylight = <minecraft:daylight_detector>;
 var slabWood = <ore:slabWood>;
 var teleporter = <IC2:blockMachine2>;
+var slabOak = <minecraft:wooden_slab>;
+var plankOak = <minecraft:planks>;
 
 # OreDictionary
 potionHealing.add(<minecraft:potion:8197>);
@@ -44,6 +46,9 @@ recipes.addShaped(chestWood * 4, [
     [logWood, logWood, logWood],
     [logWood, saw, logWood],
     [logWood, logWood, logWood]]);
+recipes.remove(slabOak);
+recipes.addShaped(slabOak * 2, [
+	[saw, plankOak]]);
 	
 # Recipe Fixes
 recipes.remove(sensorDaylight);
