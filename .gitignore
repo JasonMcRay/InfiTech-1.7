@@ -85,5 +85,6 @@ CameraStudio_log.txt
 servers.dat
 config/NEI/client.cfg
 CameraStudio_log.txt.lck
-mods/VersionChecker-1.1.8.jar
+mods/VersionChecker*.jar
 config/VersionChecker.cfg
+serverstuff/*
