@@ -36,6 +36,7 @@ var oreTin = <ore:oreTin>;
 var oreLead = <ore:oreLead>;
 var oreGold = <ore:oreGold>;
 var oreSilver = <ore:oreSilver>;
+var oreCoal = <ore:oreCoal>;
 
 # Recipe Tweaks
 recipes.remove(reBatteryAdv);
@@ -61,6 +62,7 @@ recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreTin]);
 recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreLead]);
 recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreGold]);
 recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreSilver]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreCoal]);
 SemiFluidGenerator.addFluid(<liquid:creosote> * 53, 8);
 
 # Charcoal
