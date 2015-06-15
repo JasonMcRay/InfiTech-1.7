@@ -37,6 +37,8 @@ var oreLead = <ore:oreLead>;
 var oreGold = <ore:oreGold>;
 var oreSilver = <ore:oreSilver>;
 var oreCoal = <ore:oreCoal>;
+var ingotSteel = <gregtech:gt.metaitem.01:11305>;
+var nuggetSteel = <gregtech:gt.metaitem.01:9305>;
 
 # Recipe Tweaks
 recipes.remove(reBatteryAdv);
@@ -49,6 +51,8 @@ recipes.addShaped(cropHarvester, [
     [robotArmHV, circuitEnergyFlow, robotArmHV],
     [pistonElectricHV, machineHullHV, sensorHV],
     [cableElectrum4x, moduleConveyorHV, cableElectrum4x]]);
+recipes.addShapeless(nuggetSteel * 9, [ingotSteel]);
+
 //Canner.addRecipe(output, input1, input2, durationTicks, euPerTick);
 Canner.addRecipe(fuelRodUranium, uraniumEnriched, fuelRodEmpty, 200, 2);
 Canner.addRecipe(fuelRodMOX, MOX, fuelRodEmpty, 200, 2);
