@@ -34,7 +34,6 @@ recipes.addShaped(chestEnder, [
 	[plateObsidian, plateObsidian, plateObsidian],
 	[ingotEnderium, teleporter, ingotEnderium],
 	[plateObsidian, plateObsidian, plateObsidian]]);
-recipes.removeShapeless(enderEye, [enderPearl, blazePowder]);
 recipes.removeShapeless(blazePowder, [blazeRod]);
 recipes.addShapeless(blazePowder, [blazeRod]);
 recipes.remove(chestWood * 4);
