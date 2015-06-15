@@ -1,6 +1,6 @@
 v3.1.0
 Mod Updates:
-- Applied Energistics 2 -> rv2 stable 6
+- Applied Energistics 2 -> rv2 stable 8
 - AsieLib -> 0.4.2
 - BDlib -> 1.8.2.92
 - BuildCraft -> 7.0.9
@@ -13,6 +13,7 @@ Mod Updates:
 - Malisis Core -> 0.12.3
 - OpenBlocks -> 1.4.3-645
 - OpenModsLib -> 0.7.3
+- OpenComputers -> 1.5.13.27-pre.1
 - PneumaticCraft -> 1.8.1-83
 - ttCore -> 0.1.1-77
 
@@ -43,6 +44,15 @@ Changes:
 - PneumaticCraft Oil is now used. It will generate in newly generated chunks only.
 - For more information on PneumaticCraft check In-game Wiki. (You might need to resolve keybind conflict)
 - Fixed not being able to craft GT OreGen Book
+- Disabled Bluepower Marble Generation
+- Added extra recipe for GT OreGen Book with Coal Ore Block
+- Since all other wooden slabs are made only with Saw+Plank by default, for some reason Oak was not aware of this.
+- Fixed Nugget Unification
+- Disabled Bluepower Amethyst Tools (GT Versions still available)
+- Fixed crash occuring on Servers only when opening GT OreGen Book
+- Fixed crafting of Steel Nuggets
+- EnderEye can now be crafted in vanilla style (just crafting table)
+- Added Blue Alloy and Purple Alloy recipes for GT Alloy Smelter
 
 v3.0.1
 Mod Updates:
