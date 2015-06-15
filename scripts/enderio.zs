@@ -244,17 +244,17 @@ recipes.addShaped(wrenchYeta, [
     [null, BCWrench, null],
     [null, ingotPulsatingIron, null]]);
 recipes.remove(conduitFluidEnder);
-recipes.addShaped(conduitFluidEnder * 4, [
+recipes.addShaped(conduitFluidEnder * 6, [
     [conduitBinder, conduitBinder, conduitBinder],
     [fusedQuartz, ingotEnderium, fusedQuartz],
     [conduitBinder, conduitBinder, conduitBinder]]);
 recipes.remove(conduitFluidPressurized);
-recipes.addShaped(conduitFluidPressurized * 4, [
+recipes.addShaped(conduitFluidPressurized * 6, [
     [conduitBinder, conduitBinder, conduitBinder],
     [fusedQuartz, ingotVibrantAlloy, fusedQuartz],
     [conduitBinder, conduitBinder, conduitBinder]]);
 recipes.remove(conduitFluid);
-recipes.addShaped(conduitFluid * 4, [
+recipes.addShaped(conduitFluid * 6, [
     [conduitBinder, conduitBinder, conduitBinder],
     [fusedQuartz, fusedQuartz, fusedQuartz],
     [conduitBinder, conduitBinder, conduitBinder]]);
@@ -295,12 +295,12 @@ recipes.addShaped(generatorStirling, [
     [stoneBricks, furnace, stoneBricks],
     [gearStone, machineChassis, gearStone]]);
 recipes.remove(conduitInsulatedRedstone);
-recipes.addShaped(conduitInsulatedRedstone * 4, [
+recipes.addShaped(conduitInsulatedRedstone * 6, [
     [conduitBinder, conduitBinder, conduitBinder],
     [ingotRedAlloy, ingotRedAlloy, ingotRedAlloy],
     [conduitBinder, conduitBinder, conduitBinder]]);
 recipes.remove(conduitRedstone);
-recipes.addShaped(conduitRedstone * 4, [
+recipes.addShaped(conduitRedstone * 6, [
     [ingotRedAlloy, ingotRedAlloy, ingotRedAlloy]]);
     
 # Specialties

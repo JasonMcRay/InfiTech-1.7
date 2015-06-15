@@ -43,6 +43,10 @@ var sand = <minecraft:sand>;
 var sandCompressed = <ExtraUtilities:cobblestone_compressed:14>;
 var sandCompressed2 = <ExtraUtilities:cobblestone_compressed:15>;
 var schematic3x3 = <gregtech:gt.metaitem.01:32497>;
+var enderQuarry = <ExtraUtilities:enderQuarry>;
+var enderPump = <ExtraUtilities:enderThermicPump>;
+var BCQuarry = <BuildCraft|Builders:machineBlock>;
+var enderCore = <ExtraUtilities:decorativeBlock1:11>;
 
 
 # ---Recipe tweaks---
@@ -56,12 +60,14 @@ recipes.addShaped(bedrockiumDrum, [
 	[ingotBedrockium, ringSteel, ingotBedrockium],
 	[ingotBedrockium, cauldron, ingotBedrockium],
 	[ingotBedrockium, pressurePlateWeightedLight, ingotBedrockium]]);
-
 recipes.remove(filingCabinet);
 recipes.addShaped(filingCabinet, [
     [plateSteel, chestIron, plateSteel],
     [plateSteel, chestIron, plateSteel],
     [plateSteel, chestIron, plateSteel]]);
+recipes.addShaped(enderQuarry, [
+	[enderPump, BCQuarry, enderCore]]);
+	
 
 # ---GT Integration---
 //ChemicalBathLiq.addRecipe(outpu1, output2, output3, input, liquidInput, chance1, chance2, chance3, durationTicks, euPerTick);

@@ -7,34 +7,24 @@ import mods.buildcraft.AssemblyTable;
 import mods.gregtech.Lathe;
 
 # Aliases
-var architectTable = <BuildCraft|Builders:architectBlock>;
-var assemblyTable = <BuildCraft|Silicon:laserTableBlock>;
 var barsIron = <minecraft:iron_bars>;
 var BCGearDiamond = <BuildCraft|Core:diamondGearItem>;
 var BCGearGold = <BuildCraft|Core:goldGearItem>;
 var BCGearIron = <BuildCraft|Core:ironGearItem>;
 var BCGearStone = <BuildCraft|Core:stoneGearItem>;
 var BCGearWood = <BuildCraft|Core:woodenGearItem>;
+var bcPump = <BuildCraft|Factory:pumpBlock>;
 var BCRefinery = <BuildCraft|Factory:refineryBlock>;
-var BCTank = <BuildCraft|Factory:tankBlock>;
-var BCWrench = <BuildCraft|Core:wrenchItem>;
+var bcTank = <BuildCraft|Factory:tankBlock>;
 var blockGlass = <ore:blockGlass>;
 var blockRedstone = <minecraft:redstone_block>;
-var blueprint = <BuildCraft|Builders:blueprintItem>;
-var builder = <BuildCraft|Builders:builderBlock>;
-var circuitAdvanced = <ore:circuitAdvanced>;
-var cobblestone = <ore:cobblestone>;
-var craftingTable = <minecraft:crafting_table>;
+var bucket = <minecraft:bucket>;
 var crystalRedstone = <BuildCraft|Silicon:redstoneCrystal>;
-var diamond = <minecraft:diamond>;
-var drillDiamond = <IC2:itemToolDDrill:*>;
+var dustRedstone = <ore:dustRedstone>;
 var dustSmallGlass = <gregtech:gt.metaitem.01:1890>;
-var dyeBlack = <ore:dyeBlack>;
-var dyeYellow = <ore:dyeYellow>;
-var engineCombustion = <BuildCraft|Energy:engineBlock:2>;
-var engineRedstone = <BuildCraft|Energy:engineBlock>;
-var engineStirling = <BuildCraft|Energy:engineBlock:1>;
-var filler = <BuildCraft|Builders:fillerBlock>;
+var engineCombustion = <BuildCraft|Core:engineBlock:2>;
+var engineRedstone = <BuildCraft|Core:engineBlock>;
+var engineStirling = <BuildCraft|Core:engineBlock:1>;
 var filterBlack = <BuildCraft|Transport:pipeLens:16>;
 var filterBlue = <BuildCraft|Transport:pipeLens:20>;
 var filterBrown = <BuildCraft|Transport:pipeLens:19>;
@@ -51,8 +41,8 @@ var filterPurple = <BuildCraft|Transport:pipeLens:21>;
 var filterRed = <BuildCraft|Transport:pipeLens:17>;
 var filterWhite = <BuildCraft|Transport:pipeLens:31>;
 var filterYellow = <BuildCraft|Transport:pipeLens:27>;
-var floodGate = <BuildCraft|Factory:floodGateBlock>;
-var gateBasic = <BuildCraft|Transport:pipeGate>;
+var gearIron = <ore:gearIron>;
+var gearStone = <ore:gearStone>;
 var gearWIron = <ore:gearWroughtIron>;
 var gearWood = <ore:gearWood>;
 var glass = <minecraft:glass>;
@@ -72,14 +62,9 @@ var glassPurple = <minecraft:stained_glass:10>;
 var glassRed = <minecraft:stained_glass:14>;
 var glassWhite = <minecraft:stained_glass>;
 var glassYellow = <minecraft:stained_glass:4>;
-var GTGearDiamond = <gregtech:gt.metaitem.02:31500>;
-var GTGearGold = <gregtech:gt.metaitem.02:31086>;
-var GTGearIron = <gregtech:gt.metaitem.02:31032>;
-var GTGearSteel = <gregtech:gt.metaitem.02:31305>;
-var GTGearStone = <gregtech:gt.metaitem.02:31299>;
-var GTGearWood = <gregtech:gt.metaitem.02:31809>;
 var HHammer = <ore:craftingToolHardHammer>;
-var chestWood = <minecraft:chest>;
+var hopper = <minecraft:hopper>;
+var chest = <minecraft:chest>;
 var chipsetDiamond = <BuildCraft|Silicon:redstoneChipset:3>;
 var chipsetEmerald = <BuildCraft|Silicon:redstoneChipset:7>;
 var chipsetGold = <BuildCraft|Silicon:redstoneChipset:2>;
@@ -89,10 +74,6 @@ var chipsetQuartz = <BuildCraft|Silicon:redstoneChipset:5>;
 var chipsetRedstone = <BuildCraft|Silicon:redstoneChipset>;
 var chipsetRedstoneComp = <BuildCraft|Silicon:redstoneChipset:6>;
 var chute = <BuildCraft|Factory:blockHopper>;
-var ingotIron = <minecraft:iron_ingot>;
-var integrationTable = <BuildCraft|Silicon:laserTableBlock:2>;
-var ironBars = <minecraft:iron_bars>;
-var landMark = <BuildCraft|Builders:markerBlock>;
 var lensBlack = <BuildCraft|Transport:pipeLens>;
 var lensBlue = <BuildCraft|Transport:pipeLens:4>;
 var lensBrown = <BuildCraft|Transport:pipeLens:3>;
@@ -114,65 +95,24 @@ var lensPurple = <BuildCraft|Transport:pipeLens:5>;
 var lensRed = <BuildCraft|Transport:pipeLens:1>;
 var lensWhite = <BuildCraft|Transport:pipeLens:15>;
 var lensYellow = <BuildCraft|Transport:pipeLens:11>;
-var mapEmpty = <minecraft:map>;
 var miningWell = <BuildCraft|Factory:miningWellBlock>;
-var obsidian = <minecraft:obsidian>;
-var pickaxeIron = <minecraft:iron_pickaxe>;
-var pipeKinesisDiamond = <BuildCraft|Transport:item.buildcraftPipe.pipepowerdiamond>;
+var pickaxeSteel = <Railcraft:tool.steel.pickaxe>;
 var pipePlug = <BuildCraft|Transport:pipePlug>;
-var pipeStripesTransport = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes>;
-var pipeStripesTransportAll = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:*>;
-var pipeStripesTransportBlack = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:16>;
-var pipeStripesTransportBlue = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:12>;
-var pipeStripesTransportBrown = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:13>;
-var pipeStripesTransportCyan = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:10>;
-var pipeStripesTransportGray = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:8>;
-var pipeStripesTransportGreen = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:14>;
-var pipeStripesTransportLightBlue = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:4>;
-var pipeStripesTransportLightGray = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:9>;
-var pipeStripesTransportLime = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:6>;
-var pipeStripesTransportMagenta = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:3>;
-var pipeStripesTransportOrange = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:2>;
-var pipeStripesTransportPink = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:7>;
-var pipeStripesTransportPurple = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:11>;
-var pipeStripesTransportRed = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:15>;
-var pipeStripesTransportWhite = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:1>;
-var pipeStripesTransportYellow = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:5>;
 var pipeWireBlue = <BuildCraft|Transport:pipeWire:1>;
 var pipeWireGreen = <BuildCraft|Transport:pipeWire:2>;
 var pipeWireRed = <BuildCraft|Transport:pipeWire>;
 var pipeWireYellow = <BuildCraft|Transport:pipeWire:3>;
 var piston = <minecraft:piston>;
-var plankWood = <ore:plankWood>;
 var plateEmerald = <gregtech:gt.metaitem.01:17501>;
 var plateIron = <ore:plateIron>;
+var plateSteel = <ore:plateSteel>;
 var plateWIron = <ore:plateWroughtIron>;
 var plateWood = <ore:plateWood>;
-var quarry = <BuildCraft|Factory:machineBlock>;
-var redstone = <ore:dustRedstone>;
-var redstoneTorch = <minecraft:redstone_torch>;
-var requester = <BuildCraft|Silicon:requester>;
+var quarry = <BuildCraft|Builders:machineBlock>;
 var saw = <ore:craftingToolSaw>;
 var SHammer = <ore:craftingToolSoftHammer>;
-var stainedGlassBlack = <minecraft:stained_glass:15>;
-var stainedGlassBlue = <minecraft:stained_glass:11>;
-var stainedGlassBrown = <minecraft:stained_glass:12>;
-var stainedGlassCyan = <minecraft:stained_glass:9>;
-var stainedGlassGray = <minecraft:stained_glass:7>;
-var stainedGlassGreen = <minecraft:stained_glass:13>;
-var stainedGlassLightBlue = <minecraft:stained_glass:3>;
-var stainedGlassLightGray = <minecraft:stained_glass:8>;
-var stainedGlassLime = <minecraft:stained_glass:5>;
-var stainedGlassMagenta = <minecraft:stained_glass:2>;
-var stainedGlassOrange = <minecraft:stained_glass:1>;
-var stainedGlassPink = <minecraft:stained_glass:6>;
-var stainedGlassPurple = <minecraft:stained_glass:10>;
-var stainedGlassRed = <minecraft:stained_glass:14>;
-var stainedGlassWhite = <minecraft:stained_glass>;
-var stainedGlassYellow = <minecraft:stained_glass:4>;
-var workbenchAuto = <BuildCraft|Factory:autoWorkbenchBlock>;
+var stoneCobble = <ore:stoneCobble>;
 var wrench = <ore:craftingToolWrench>;
-var zonePlanner = <BuildCraft|Silicon:zonePlan>;
 
 # Items/Blocks Removal
 recipes.remove(BCRefinery);
@@ -194,6 +134,11 @@ recipes.addShaped(engineRedstone, [
 	[plateWood, plateWood, plateWood],
 	[SHammer, blockGlass, saw],
 	[gearWood, piston, gearWood]]);
+recipes.remove(engineStirling);
+recipes.addShaped(engineStirling, [
+	[stoneCobble, stoneCobble, stoneCobble],
+	[HHammer, blockGlass, wrench],
+	[gearStone, piston, gearStone]]);
 recipes.remove(engineCombustion);
 recipes.addShaped(engineCombustion, [
 	[plateWIron, plateWIron, plateWIron],
@@ -201,13 +146,23 @@ recipes.addShaped(engineCombustion, [
 	[gearWIron, piston, gearWIron]]);
 recipes.remove(chute);
 recipes.addShaped(chute, [
-	[plateIron, chestWood, plateIron],
-	[plateIron, GTGearStone, plateIron],
-	[HHammer, plateIron, null]]);
-recipes.addShaped(chute, [
-	[plateIron, chestWood, plateIron],
-	[plateIron, GTGearStone, plateIron],
-	[null, plateIron, HHammer]]);
+	[plateIron, chest, plateIron],
+	[null, gearIron, null]]);
+recipes.addShapeless(chute, [hopper, gearStone]);
+recipes.remove(miningWell);
+recipes.addShaped(miningWell, [
+	[plateSteel, dustRedstone, plateSteel],
+	[plateIron, gearIron, plateIron],
+	[plateIron, pickaxeSteel, plateIron]]);
+recipes.remove(bcPump);
+recipes.addShaped(bcPump, [
+	[plateSteel, dustRedstone, plateSteel],
+	[plateIron, gearIron, plateIron],
+	[bcTank, bucket, bcTank]]);
+
+# Specials
+recipes.remove(quarry);
+quarry.addTooltip(format.red(format.bold("WARNING! One time use only. Upgrade to Ender Quarry!")));
 
 # GT Integration
 //FormingPress.addRecipe(output, input1, input2, durationTicks, euPerTick);

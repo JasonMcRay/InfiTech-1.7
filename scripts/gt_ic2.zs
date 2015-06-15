@@ -3,6 +3,7 @@
 import mods.gregtech.Canner;
 import mods.gregtech.ArcFurnace;
 import mods.gregtech.PlasmaArcFurnace;
+import mods.ic2.SemiFluidGenerator;
 
 # Aliases
 var dustThorium = <gregtech:gt.metaitem.01:2096>;
@@ -12,13 +13,57 @@ var fuelRodThorium = <gregtech:gt.Thoriumcell>;
 var fuelRodUranium = <IC2:reactorUraniumSimple>;
 var MOX = <IC2:itemMOX>;
 var uraniumEnriched = <IC2:itemUran>;
+var cropHarvester = <IC2:blockMachine3:7>;
+var robotArmHV = <gregtech:gt.metaitem.01:32652>;
+var circuitEnergyFlow = <gregtech:gt.metaitem.01:32706>;
+var pistonElectricHV = <gregtech:gt.metaitem.01:32642>;
+var machineHullHV = <gregtech:gt.blockmachines:13>;
+var sensorHV = <gregtech:gt.metaitem.01:32692>;
+var cableElectrum4x = <gregtech:gt.blockmachines:1448>;
+var moduleConveyorHV = <gregtech:gt.metaitem.01:32632>;
+var reBatteryAdv = <IC2:itemAdvBat>;
+var cableCopperAnnealed1x = <gregtech:gt.blockmachines:1386>;
+var itemCasingBronze = <IC2:itemCasing:2>;
+var dustSulfur = <ore:dustSulfur>;
+var dustLead = <ore:dustLead>;
+var GTOreGenGuide = <Enchiridion2:book>.withTag({identifier: "GregTech_Ore_Guide"});
+var book = <minecraft:book>;
+var inkSac = <minecraft:dye>;
+var stone = <minecraft:stone>;
+var oreIron = <ore:oreIron>;
+var oreCopper = <ore:oreCopper>;
+var oreTin = <ore:oreTin>;
+var oreLead = <ore:oreLead>;
+var oreGold = <ore:oreGold>;
+var oreSilver = <ore:oreSilver>;
+var oreCoal = <ore:oreCoal>;
 
 # Recipe Tweaks
+recipes.remove(reBatteryAdv);
+recipes.addShaped(reBatteryAdv, [
+	[cableCopperAnnealed1x, itemCasingBronze, cableCopperAnnealed1x],
+	[itemCasingBronze, dustSulfur, itemCasingBronze],
+	[itemCasingBronze, dustLead, itemCasingBronze]]);
+recipes.remove(cropHarvester);
+recipes.addShaped(cropHarvester, [
+    [robotArmHV, circuitEnergyFlow, robotArmHV],
+    [pistonElectricHV, machineHullHV, sensorHV],
+    [cableElectrum4x, moduleConveyorHV, cableElectrum4x]]);
 //Canner.addRecipe(output, input1, input2, durationTicks, euPerTick);
 Canner.addRecipe(fuelRodUranium, uraniumEnriched, fuelRodEmpty, 200, 2);
 Canner.addRecipe(fuelRodMOX, MOX, fuelRodEmpty, 200, 2);
 recipes.remove(fuelRodThorium);
 Canner.addRecipe(fuelRodThorium, dustThorium, fuelRodEmpty, 200, 2);
+
+# Specials
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreIron]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreCopper]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreTin]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreLead]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreGold]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreSilver]);
+recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreCoal]);
+SemiFluidGenerator.addFluid(<liquid:creosote> * 53, 8);
 
 # Charcoal
 var charcoal = <minecraft:coal:1>;

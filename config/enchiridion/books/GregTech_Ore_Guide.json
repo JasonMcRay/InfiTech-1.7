@@ -4021,7 +4021,7 @@
         {
           "type": "FeatureItem",
           "properties": {
-            "item": "minechem:tile.oreUranium",
+            "item": "gregtech:gt.blockores 98",
             "xPos": 138,
             "yPos": 27,
             "width": 32.0,
@@ -5863,9 +5863,6 @@
       "pageName": "Mining Tool Levels"
     }
   ],
-  "displayNames": {
-    "en_US": "GregTech Ore Guide"
-  },
   "uniqueName": "GregTech_Ore_Guide",
   "color": 16711935,
   "showBackground": true,
@@ -5876,5 +5873,8 @@
   "iconColorisePass1": false,
   "iconColorisePass2": false,
   "iconColorPass1": 0,
-  "iconColorPass2": 0
+  "iconColorPass2": 0,
+  "language": "en_US",
+  "displayName": "GregTech Ore Guide",
+  "displayInCreative": true
 }

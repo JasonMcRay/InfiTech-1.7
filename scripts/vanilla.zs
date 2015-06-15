@@ -3,6 +3,7 @@
 # Aliases
 var blazePowder = <minecraft:blaze_powder>;
 var blazeRod = <minecraft:blaze_rod>;
+var buttonWood = <minecraft:wooden_button>;
 var chestEnder = <minecraft:ender_chest>;
 var chestWood = <minecraft:chest>;
 var enderEye = <minecraft:ender_eye>;
@@ -11,12 +12,15 @@ var gemNetherQuartz = <ore:gemNetherQuartz>;
 var glass = <ore:blockGlass>;
 var ingotEnderium = <ore:ingotEnderium>;
 var logWood = <ore:logWood>;
+var plankWood = <ore:plankWood>;
 var plateObsidian = <ore:plateObsidian>;
 var potionHealing = <ore:potionHealing>;
 var saw = <ore:craftingToolSaw>;
 var sensorDaylight = <minecraft:daylight_detector>;
 var slabWood = <ore:slabWood>;
 var teleporter = <IC2:blockMachine2>;
+var slabOak = <minecraft:wooden_slab>;
+var plankOak = <minecraft:planks>;
 
 # OreDictionary
 potionHealing.add(<minecraft:potion:8197>);
@@ -42,6 +46,9 @@ recipes.addShaped(chestWood * 4, [
     [logWood, logWood, logWood],
     [logWood, saw, logWood],
     [logWood, logWood, logWood]]);
+recipes.remove(slabOak);
+recipes.addShaped(slabOak * 2, [
+	[saw, plankOak]]);
 	
 # Recipe Fixes
 recipes.remove(sensorDaylight);
@@ -49,3 +56,4 @@ recipes.addShaped(sensorDaylight, [
     [glass, glass, glass],
     [gemNetherQuartz, gemNetherQuartz, gemNetherQuartz],
     [slabWood, slabWood, slabWood]]);
+recipes.addShapeless(buttonWood, [plankWood]);

@@ -41,6 +41,11 @@ var stickWood = <ore:stickWood>;
 var rodStone = <ore:rodStone>;
 var gemAmethyst = <ore:gemAmethyst>;
 var sawAmethyst = <bluepower:amethyst_saw>;
+var axeAmethyst = <bluepower:amethyst_axe>;
+var swordAmethyst = <bluepower:amethyst_sword>;
+var pickaxeAmethyst = <bluepower:amethyst_pickaxe>;
+var shovelAmethyst = <bluepower:amethyst_shovel>;
+var hoeAmethyst = <bluepower:amethyst_hoe>;
 
 
 # Item/block Removal
@@ -50,6 +55,16 @@ recipes.remove(alloyFurnace);
 NEI.hide(alloyFurnace);
 recipes.remove(drawplate);
 NEI.hide(drawplate);
+recipes.remove(axeAmethyst);
+NEI.hide(axeAmethyst);
+recipes.remove(swordAmethyst);
+NEI.hide(swordAmethyst);
+recipes.remove(pickaxeAmethyst);
+NEI.hide(pickaxeAmethyst);
+recipes.remove(shovelAmethyst);
+NEI.hide(shovelAmethyst);
+recipes.remove(hoeAmethyst);
+NEI.hide(hoeAmethyst);
 
 # Recipe tweaks
 recipes.remove(sawAmethyst);
