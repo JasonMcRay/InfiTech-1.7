@@ -16,7 +16,7 @@ var ingotSteel = <gregtech:gt.metaitem.01:11305>
 var nuggetSteel = <gregtech:gt.metaitem.01:9305>
 
 # Recipe Tweaks
-recipes.addShapeless(nuggetSteel * 9, ingotSteel);
+recipes.addShapeless(nuggetSteel * 9, [ingotSteel]);
 //Canner.addRecipe(output, input1, input2, durationTicks, euPerTick);
 Canner.addRecipe(fuelRodUranium, uraniumEnriched, fuelRodEmpty, 200, 2);
 Canner.addRecipe(fuelRodMOX, MOX, fuelRodEmpty, 200, 2);
