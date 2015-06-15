@@ -14,6 +14,7 @@ var coal = <minecraft:coal>;
 var drawplate = <bluepower:diamond_drawplate>;
 var dustRedstone = <minecraft:redstone>;
 var dustTeslatite = <bluepower:teslatite_dust>;
+var dustTeslatiteInfused = <bluepower:infused_teslatite_dust>;
 var glass = <minecraft:glass>;
 var glassReinforcedSapphire = <bluepower:reinforced_sapphire_glass>;
 var glassSapphire = <bluepower:sapphire_glass>;
@@ -46,6 +47,9 @@ var swordAmethyst = <bluepower:amethyst_sword>;
 var pickaxeAmethyst = <bluepower:amethyst_pickaxe>;
 var shovelAmethyst = <bluepower:amethyst_shovel>;
 var hoeAmethyst = <bluepower:amethyst_hoe>;
+var gtIngotRedAlloy = <gregtech:gt.metaitem.01:11308>;
+var dustSilver = <gregtech:gt.metaitem.01:2054>;
+var ingotGold = <minecraft:gold_ingot>;
 
 
 # Item/block Removal
@@ -84,4 +88,7 @@ AlloySmelter.addRecipe(bouleSilicon, coal * 8, sand * 8, 100, 8);
 AlloySmelter.addRecipe(waferBlueDoped, waferSilicon, dustTeslatite * 4, 100, 8);
 AlloySmelter.addRecipe(waferRedDoped, waferSilicon, dustRedstone * 4, 100, 8);
 AlloySmelter.addRecipe(bpPlateZinc * 4, ingotZinc, ingotIron * 2, 200, 16);
-AlloySmelter.addRecipe(ingotBlueAlloy, dustTeslatite * 4, ingotSilver, 100, 8);
+AlloySmelter.addRecipe(ingotBlueAlloy, dustTeslatite * 4, ingotSilver, 50, 16);
+AlloySmelter.addRecipe(ingotBlueAlloy, dustTeslatite * 4, dustSilver, 50, 16);
+AlloySmelter.addRecipe(ingotPurpleAlloy, ingotBlueAlloy, gtIngotRedAlloy, 50, 16);
+AlloySmelter.addRecipe(ingotPurpleAlloy, ingotGold, dustTeslatiteInfused * 8, 50, 16);
