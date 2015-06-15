@@ -37,7 +37,7 @@ var oreLead = <ore:oreLead>;
 var oreGold = <ore:oreGold>;
 var oreSilver = <ore:oreSilver>;
 var oreCoal = <ore:oreCoal>;
-var ingotSteel = <gregtech:gt.metaitem.01:11305>;
+var ingotSteel = <ore:ingotSteel>;
 var nuggetSteel = <gregtech:gt.metaitem.01:9305>;
 
 # Recipe Tweaks
