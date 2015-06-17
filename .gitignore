@@ -88,3 +88,4 @@ CameraStudio_log.txt.lck
 mods/VersionChecker*.jar
 config/VersionChecker.cfg
 serverstuff/*
+sync.sh
