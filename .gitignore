@@ -89,3 +89,4 @@ mods/VersionChecker*.jar
 config/VersionChecker.cfg
 serverstuff/*
 sync.sh
+dumps/
