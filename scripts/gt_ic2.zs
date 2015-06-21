@@ -6,39 +6,71 @@ import mods.gregtech.PlasmaArcFurnace;
 import mods.ic2.SemiFluidGenerator;
 
 # Aliases
+var book = <minecraft:book>;
+var cableCopperAnnealed1x = <gregtech:gt.blockmachines:1386>;
+var cableElectrum4x = <gregtech:gt.blockmachines:1448>;
+var cableGold2x = <ore:cableGt02Gold>;
+var circuitAdvanced = <ore:circuitAdvanced>;
+var circuitEnergyFlow = <gregtech:gt.metaitem.01:32706>;
+var coil = <IC2:itemRecipePart>;
+var craftingGenerator = <ore:craftingGenerator>;
+var cropHarvester = <IC2:blockMachine3:7>;
+var dustLead = <ore:dustLead>;
+var dustSulfur = <ore:dustSulfur>;
 var dustThorium = <gregtech:gt.metaitem.01:2096>;
 var fuelRodEmpty = <IC2:itemFuelRod>;
 var fuelRodMOX = <IC2:reactorMOXSimple>;
 var fuelRodThorium = <gregtech:gt.Thoriumcell>;
 var fuelRodUranium = <IC2:reactorUraniumSimple>;
-var MOX = <IC2:itemMOX>;
-var uraniumEnriched = <IC2:itemUran>;
-var cropHarvester = <IC2:blockMachine3:7>;
-var robotArmHV = <gregtech:gt.metaitem.01:32652>;
-var circuitEnergyFlow = <gregtech:gt.metaitem.01:32706>;
-var pistonElectricHV = <gregtech:gt.metaitem.01:32642>;
-var machineHullHV = <gregtech:gt.blockmachines:13>;
-var sensorHV = <gregtech:gt.metaitem.01:32692>;
-var cableElectrum4x = <gregtech:gt.blockmachines:1448>;
-var moduleConveyorHV = <gregtech:gt.metaitem.01:32632>;
-var reBatteryAdv = <IC2:itemAdvBat>;
-var cableCopperAnnealed1x = <gregtech:gt.blockmachines:1386>;
-var itemCasingBronze = <IC2:itemCasing:2>;
-var dustSulfur = <ore:dustSulfur>;
-var dustLead = <ore:dustLead>;
+var genKinWind = <IC2:blockKineticGenerator>;
 var GTOreGenGuide = <Enchiridion2:book>.withTag({identifier: "GregTech_Ore_Guide"});
-var book = <minecraft:book>;
-var inkSac = <minecraft:dye>;
-var stone = <minecraft:stone>;
-var oreIron = <ore:oreIron>;
-var oreCopper = <ore:oreCopper>;
-var oreTin = <ore:oreTin>;
-var oreLead = <ore:oreLead>;
-var oreGold = <ore:oreGold>;
-var oreSilver = <ore:oreSilver>;
-var oreCoal = <ore:oreCoal>;
+var HHammer = <ore:craftingToolHardHammer>;
 var ingotSteel = <ore:ingotSteel>;
+var inkSac = <minecraft:dye>;
+var itemCasingBronze = <IC2:itemCasing:2>;
+var machineHullHV = <gregtech:gt.blockmachines:13>;
+var moduleConveyorHV = <gregtech:gt.metaitem.01:32632>;
+var motorElectricHV = <gregtech:gt.metaitem.01:32602>;
+var MOX = <IC2:itemMOX>;
 var nuggetSteel = <gregtech:gt.metaitem.01:9305>;
+var oreCoal = <ore:oreCoal>;
+var oreCopper = <ore:oreCopper>;
+var oreGold = <ore:oreGold>;
+var oreIron = <ore:oreIron>;
+var oreLead = <ore:oreLead>;
+var oreSilver = <ore:oreSilver>;
+var oreTin = <ore:oreTin>;
+var pistonElectricHV = <gregtech:gt.metaitem.01:32642>;
+var plateCarbon = <ore:plateAlloyCarbon>;
+var plateIron = <ore:plateIron>;
+var plateSteel = <ore:plateSteel>;
+var plateTungstenSteel = <ore:plateTungstenSteel>;
+var plateWood = <ore:plateWood>;
+var reBatteryAdv = <IC2:itemAdvBat>;
+var ringIridium = <ore:ringIridium>;
+var ringIron = <ore:ringIron>;
+var ringSteel = <ore:ringSteel>;
+var ringTungstenSteel = <ore:ringTungstenSteel>;
+var ringWood = <ore:ringWood>;
+var robotArmHV = <gregtech:gt.metaitem.01:32652>;
+var rotorBladeCarbon = <IC2:itemRecipePart:9>;
+var rotorBladeIron = <IC2:itemRecipePart:8>;
+var rotorBladeSteel = <IC2:itemRecipePart:10>;
+var rotorBladeWood = <IC2:itemRecipePart:7>;
+var rotorCarbon = <IC2:itemwcarbonrotor>;
+var rotorIron = <IC2:itemironrotor>;
+var rotorSteel = <IC2:itemsteelrotor>;
+var rotorWood = <IC2:itemwoodrotor>;
+var Screwdriver = <ore:craftingToolScrewdriver>;
+var screwIridium = <ore:screwIridium>;
+var screwIron = <ore:screwIron>;
+var sensorHV = <gregtech:gt.metaitem.01:32692>;
+var shaftIron = <IC2:itemRecipePart:11>;
+var shaftSteel = <IC2:itemRecipePart:12>;
+var stickIron = <ore:stickIron>;
+var stone = <minecraft:stone>;
+var uraniumEnriched = <IC2:itemUran>;
+var Wrench = <ore:craftingToolWrench>;
 
 # Recipe Tweaks
 recipes.remove(reBatteryAdv);
@@ -52,8 +84,52 @@ recipes.addShaped(cropHarvester, [
     [pistonElectricHV, machineHullHV, sensorHV],
     [cableElectrum4x, moduleConveyorHV, cableElectrum4x]]);
 recipes.addShapeless(nuggetSteel * 9, [ingotSteel]);
-
-//Canner.addRecipe(output, input1, input2, durationTicks, euPerTick);
+recipes.remove(genKinWind);
+recipes.addShaped(genKinWind, [
+	[plateTungstenSteel, circuitAdvanced, plateTungstenSteel],
+	[cableGold2x, craftingGenerator, cableGold2x],
+	[motorElectricHV, coil, motorElectricHV]]);
+recipes.remove(rotorBladeWood);
+recipes.addShaped(rotorBladeWood, [
+	[plateWood, plateWood, plateWood],
+	[plateWood, ringWood, plateWood],
+	[plateWood, plateWood, plateWood]]);
+recipes.remove(rotorWood);
+recipes.addShaped(rotorWood, [
+	[stickIron, rotorBladeWood, HHammer],
+	[rotorBladeWood, ringIron, rotorBladeWood],
+	[Screwdriver, rotorBladeWood, screwIron]]);
+recipes.remove(rotorBladeIron);
+recipes.addShaped(rotorBladeIron, [
+	[plateIron, plateIron, plateIron],
+	[plateIron, ringSteel, plateIron],
+	[plateIron, plateIron, plateIron]]);
+recipes.remove(rotorIron);
+recipes.addShaped(rotorIron, [
+	[shaftIron, rotorBladeIron, HHammer],
+	[rotorBladeIron, ringSteel, rotorBladeIron],
+	[Wrench, rotorBladeIron, shaftIron]]);
+recipes.remove(rotorBladeSteel);
+recipes.addShaped(rotorBladeSteel, [
+	[plateSteel, plateSteel, plateSteel],
+	[plateSteel, ringTungstenSteel, plateSteel],
+	[plateSteel, plateSteel, plateSteel]]);
+recipes.remove(rotorSteel);
+recipes.addShaped(rotorSteel, [
+	[shaftSteel, rotorBladeSteel, HHammer],
+	[rotorBladeSteel, ringTungstenSteel, rotorBladeSteel],
+	[Wrench, rotorBladeSteel, shaftSteel]]);
+recipes.remove(rotorBladeCarbon);
+recipes.addShaped(rotorBladeCarbon, [
+	[plateCarbon, plateCarbon, plateCarbon],
+	[plateCarbon, ringIridium, plateCarbon],
+	[plateCarbon, plateCarbon, plateCarbon]]);
+recipes.remove(rotorCarbon);
+recipes.addShaped(rotorCarbon, [
+	[screwIridium, rotorBladeCarbon, HHammer],
+	[rotorBladeCarbon, rotorSteel, rotorBladeCarbon],
+	[Wrench, rotorBladeCarbon, screwIridium]]);
+	
 Canner.addRecipe(fuelRodUranium, uraniumEnriched, fuelRodEmpty, 200, 2);
 Canner.addRecipe(fuelRodMOX, MOX, fuelRodEmpty, 200, 2);
 recipes.remove(fuelRodThorium);
