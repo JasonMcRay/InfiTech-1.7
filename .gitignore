@@ -90,3 +90,4 @@ config/VersionChecker.cfg
 serverstuff/*
 sync.sh
 dumps/
+NEI/client.cfg
