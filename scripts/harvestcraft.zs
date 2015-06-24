@@ -7,6 +7,7 @@ var piston = <minecraft:piston>;
 var plateSteel = <ore:plateSteel>;
 var presser = <harvestcraft:presser>;
 var sink = <harvestcraft:sink:*>;
+var waterFresh = <harvestcraft:freshwaterItem>;
 
 # Blocks/Items Removal
 recipes.remove(sink);
@@ -18,3 +19,6 @@ recipes.addShaped(presser, [
 	[plateSteel, piston, plateSteel],
 	[plateSteel, null, plateSteel],
 	[plateSteel, piston, plateSteel]]);
+
+# Temp Fixes
+recipes.remove(waterFresh);

@@ -1,3 +1,34 @@
+v3.1.1
+Mod Updates:
+- Applied Energistics 2 -> rv2 stable 9
+- Automagy -> 0.25
+- BDlib -> 1.9.0.93
+- BluePower -> 0.2.947
+- BuildCraft -> 7.0.12
+- ExtraCells 2 -> 2.2.73b129 (disabled)
+- Galacticraft -> 3.0.12.345
+- Gendustry -> 1.5.0.101
+- NEI Addons -> 1.12.10.33
+- Not Enough Items -> 1.0.5.111
+- OpenBlocks -> 1.4.3-646
+- OpenModsLib -> 0.7.3-374
+- PneumaticCraft -> 1.8.2-84
+- Yampst -> 3.1.0
+
+Changes:
+- Disabled version checking for all mods (I think)
+- Disabled uranium as Big Reactor Fuel
+- Disabled Fresh Water crafting until exploit with PneumaticCraft is fixed
+- Changed recipe for Kinetic Wind Generators, Rotor Bladeds and Rotors
+- Lowered PneumaticCraft and Galacticraft oil generation
+- Slightly raised BuildCraft oil generation
+- Harvestcraft foods can be planted without the need of turning them into seeds.
+- Removed seed drops from crops
+- New Buildcraft filler parameters: Hollow for Cylinders, Center for Pyramids and Direction for Stairs
+- BuildCraft mining robots now work with GregTech ores
+- Fixed maceration of Cobblestone -> Sand and Stone -> Stone Dust
+- Fixed recipe for IC2 Pulling Upgrade
+
 v3.1.0
 Mod Updates:
 - Applied Energistics 2 -> rv2 stable 8
