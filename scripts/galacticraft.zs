@@ -61,7 +61,8 @@ var TinDecoBlock = <GalacticraftCore:tile.gcBlockCore:4>;
 var TSteelBolt = <ore:boltTungstenSteel>;
 var Wool = <ore:blockWool>;
 var Wrench = <ore:craftingToolWrench>;
-
+var CompressedMeteoricIron = <ore:compressedMeteoricIron>;
+var CompressedDesh = <ore:compressedDesh>;
 
 // --- remove Recipes ---
 //Sealable Cables
@@ -320,6 +321,7 @@ recipes.remove(<GalacticraftMars:item.deshSpade>);
 //Desh Sword
 recipes.remove(<GalacticraftMars:item.deshSword>);
 
+
 // --- add Recipes ---
 
 //Rocket Launch Pad
@@ -522,15 +524,15 @@ recipes.addShaped(<GalacticraftCore:item.oxygenTankLightFull:900>, [
 
 //Medium Oxygen Tank
 recipes.addShaped(<GalacticraftCore:item.oxygenTankMedFull:1800>, [
-[CompressedSteel, OxygenPipe,CompressedSteel],
-[CompressedSteel, <gregtech:gt.metaitem.01:32405>, CompressedSteel],
-[CompressedSteel, CompressedSteel, CompressedSteel]]);
+[CompressedMeteoricIron, OxygenPipe,CompressedMeteoricIron],
+[CompressedMeteoricIron, <gregtech:gt.metaitem.01:32405>, CompressedMeteoricIron],
+[CompressedMeteoricIron, CompressedMeteoricIron, CompressedMeteoricIron]]);
 
 //Heavy Oxygen Tank
 recipes.addShaped(<GalacticraftCore:item.oxygenTankHeavyFull:2700>, [
-[DeshPlate, OxygenPipe,DeshPlate],
-[DeshPlate, <gregtech:gt.metaitem.01:32406>, DeshPlate],
-[DeshPlate, DeshPlate, DeshPlate]]);
+[CompressedDesh, OxygenPipe,CompressedDesh],
+[CompressedDesh, <gregtech:gt.metaitem.01:32406>, CompressedDesh],
+[CompressedDesh, CompressedDesh, CompressedDesh]]);
 
 //Sensor Lens
 recipes.addShaped(SensorLens, [
