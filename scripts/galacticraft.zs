@@ -345,13 +345,13 @@ recipes.addShaped(<GalacticraftCore:tile.oxygenCollector>, [
 //Oxygen Compressor
 recipes.addShaped(<GalacticraftCore:tile.oxygenCompressor>, [
 [CompressedAl, <GalacticraftCore:item.oxygenConcentrator>, CompressedAl],
-[<gregtech:gt.metaitem.01:32641>, <GalacticraftCore:item.oilCanisterPartial:1001>, <gregtech:gt.metaitem.01:32601>],
+[<gregtech:gt.metaitem.01:32641>, <GalacticraftCore:item.oilCanisterPartial:1001>.noReturn(), <gregtech:gt.metaitem.01:32601>],
 [CompressedSteel, CompressedBronze, CompressedSteel]]);
 
 //Oxygen Decompressor
 recipes.addShaped(<GalacticraftCore:tile.oxygenCompressor:4>, [
 [CompressedAl, <GalacticraftCore:item.oxygenConcentrator>, CompressedAl],
-[<gregtech:gt.metaitem.01:32600>, <GalacticraftCore:item.oilCanisterPartial:1001>, <GalacticraftCore:item.airFan>],
+[<gregtech:gt.metaitem.01:32600>, <GalacticraftCore:item.oilCanisterPartial:1001>.noReturn(), <GalacticraftCore:item.airFan>],
 [CompressedSteel, CompressedBronze, CompressedSteel]]);
 
 //Oxygen Storage Module
@@ -467,7 +467,7 @@ recipes.addShaped(<GalacticraftCore:tile.machineTiered:8>, [
 //Spin Truster
 recipes.addShaped(<GalacticraftCore:tile.spinThruster>, [
 [CompressedTi, CompressedTi, CompressedTi],
-[<GalacticraftCore:item.fuelCanisterPartial:1>, AdvWafer, <GalacticraftCore:item.fuelCanisterPartial:1>],
+[<GalacticraftCore:item.fuelCanisterPartial:1>.noReturn(), AdvWafer, <GalacticraftCore:item.fuelCanisterPartial:1>.noReturn()],
 [<GalacticraftCore:item.engine>, HeavyPlating, <GalacticraftCore:item.engine>]]);
 
 //Display Screen
@@ -681,7 +681,7 @@ recipes.addShaped(<GalacticraftCore:item.engine>, [
 //Tier 1 Booster
 recipes.addShaped(<GalacticraftCore:item.engine:1>, [
 [MeteorPlate, MeteorPlate, MeteorPlate],
-[HeavyPlating, <GalacticraftCore:item.fuelCanisterPartial:1>, HeavyPlating],
+[HeavyPlating, <GalacticraftCore:item.fuelCanisterPartial:1>.noReturn(), HeavyPlating],
 [HeavyPlating, AirVent, HeavyPlating]]);
 
 //Nose Cone
@@ -693,7 +693,7 @@ recipes.addShaped(<GalacticraftCore:item.noseCone>, [
 //Oil Extractor
 recipes.addShaped(<GalacticraftCore:item.oilExtractor>, [
 [<ore:pipeTinySteel>, null, null],
-[null, <GalacticraftCore:item.oilCanisterPartial:1001>, CompressedBronze],
+[null, <GalacticraftCore:item.oilCanisterPartial:1001>.noReturn(), CompressedBronze],
 [<minecraft:stone_button>, CompressedBronze, CompressedBronze]]);
 
 //Buggy Wheel
