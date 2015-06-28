@@ -93,3 +93,4 @@ sync.sh
 dumps/
 NEI/client.cfg
 videos/
+config/OpenEye.json
