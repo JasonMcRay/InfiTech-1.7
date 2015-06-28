@@ -255,8 +255,6 @@ recipes.remove(<GalacticraftMars:tile.mars:8>);
 recipes.remove(<gregtech:gt.metaitem.01:11884>);
 //Desh Stick
 recipes.remove(<GalacticraftMars:item.null:1>);
-//Gas Liquifier
-recipes.remove(<GalacticraftMars:tile.marsMachineT2>);
 //Methan Synthezizerezizer
 recipes.remove(<GalacticraftMars:tile.marsMachineT2:4>);
 //Water Electrolyzer
