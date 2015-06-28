@@ -9,15 +9,18 @@ import mods.ic2.SemiFluidGenerator;
 var book = <minecraft:book>;
 var cableCopperAnnealed1x = <gregtech:gt.blockmachines:1386>;
 var cableElectrum4x = <gregtech:gt.blockmachines:1448>;
+var cableGold1x = <ore:cableGt01Gold>;
 var cableGold2x = <ore:cableGt02Gold>;
 var circuitAdvanced = <ore:circuitAdvanced>;
 var circuitEnergyFlow = <gregtech:gt.metaitem.01:32706>;
 var coil = <IC2:itemRecipePart>;
 var craftingGenerator = <ore:craftingGenerator>;
 var cropHarvester = <IC2:blockMachine3:7>;
+var dustGlowstone = <ore:dustGlowstone>;
 var dustLead = <ore:dustLead>;
 var dustSulfur = <ore:dustSulfur>;
 var dustThorium = <gregtech:gt.metaitem.01:2096>;
+var energyCrystal = <IC2:itemBatCrystal:*>;
 var fuelRodEmpty = <IC2:itemFuelRod>;
 var fuelRodMOX = <IC2:reactorMOXSimple>;
 var fuelRodThorium = <gregtech:gt.Thoriumcell>;
@@ -28,11 +31,13 @@ var HHammer = <ore:craftingToolHardHammer>;
 var ingotSteel = <ore:ingotSteel>;
 var inkSac = <minecraft:dye>;
 var itemCasingBronze = <IC2:itemCasing:2>;
+var itemCasingGold = <IC2:itemCasing:3>;
 var machineHullHV = <gregtech:gt.blockmachines:13>;
 var moduleConveyorHV = <gregtech:gt.metaitem.01:32632>;
 var motorElectricHV = <gregtech:gt.metaitem.01:32602>;
 var MOX = <IC2:itemMOX>;
 var nuggetSteel = <gregtech:gt.metaitem.01:9305>;
+var ODScanner = <IC2:itemScanner:*>;
 var oreCoal = <ore:oreCoal>;
 var oreCopper = <ore:oreCopper>;
 var oreGold = <ore:oreGold>;
@@ -40,6 +45,7 @@ var oreIron = <ore:oreIron>;
 var oreLead = <ore:oreLead>;
 var oreSilver = <ore:oreSilver>;
 var oreTin = <ore:oreTin>;
+var OVScanner = <IC2:itemScannerAdv>;
 var pistonElectricHV = <gregtech:gt.metaitem.01:32642>;
 var plateCarbon = <ore:plateAlloyCarbon>;
 var plateIron = <ore:plateIron>;
@@ -71,6 +77,13 @@ var stickIron = <ore:stickIron>;
 var stone = <minecraft:stone>;
 var uraniumEnriched = <IC2:itemUran>;
 var Wrench = <ore:craftingToolWrench>;
+
+# Recipe Fixes
+recipes.remove(OVScanner);
+recipes.addShaped(OVScanner, [
+	[itemCasingGold, energyCrystal, itemCasingGold],
+	[dustGlowstone, circuitAdvanced, dustGlowstone],
+	[cableGold1x, ODScanner, cableGold1x]]);
 
 # Recipe Tweaks
 recipes.remove(reBatteryAdv);
