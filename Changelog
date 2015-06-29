@@ -1,3 +1,38 @@
+v3.1.2
+Mod Updates:
+- Chisel 2 -> 2.3.10.38
+- Computronics -> 1.5.5
+- FastLeafDecay -> 1.1
+- GTTweaker -> 0.7.2
+- Galacticraft -> 3.0.12.345
+- Hardcore Ender Expansion -> 1.8.2
+- NEI Integration -> 1.0.11
+- Open Computers -> 1.5.13.28
+- PneumaticCraft -> 1.9.1-86
+- Thaumic Tinkerer -> 2.5-507
+- BDLib -> 1.9.0.94
+- Forestry -> 3.6.2.19
+- Gendustry -> 1.5.1.106
+- GregTech -> 5.08.22
+- IndustrialCraft 2 -> 2.2.739
+- Malisis Core -> 0.12.4
+- ttCore -> 0.1.1-78
+
+Changes:
+- Fixed TPS issues caused by FLD + Thaumcraft compatibility
+- Fixed double unification problem with some items (most notably nuggets)
+- Fixed Solar Boilers heating during night
+- Changed recipe for Medium Oxygen Tank to require Compressed Meteoric Iron
+- Changed recipe for Heavy Oxygen Tank to require Compressed Desh
+- Recipes requiring Galacticraft fuel cannister should no longer return the canister back
+- Re-enabled Gas Liquefer to enable conversion from GT Oxygen into Galacticraft oxygen
+- OV Scanned is craftable again
+- Etching acid no longer can be obtained with Fresh Water. Now it accepts only Bucket of Water
+- Re-Enabled Fresh Water crafting
+- Fixed crash when looking up recipes in NEI for bees
+- Added all Chisel Panes as oxygen sealeable blocks
+- Made Naq slightly more rare
+
 v3.1.1
 Mod Updates:
 - Applied Energistics 2 -> rv2 stable 9
