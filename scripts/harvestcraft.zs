@@ -19,6 +19,3 @@ recipes.addShaped(presser, [
 	[plateSteel, piston, plateSteel],
 	[plateSteel, null, plateSteel],
 	[plateSteel, piston, plateSteel]]);
-
-# Temp Fixes
-recipes.remove(waterFresh);
