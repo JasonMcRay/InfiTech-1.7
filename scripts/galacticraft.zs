@@ -61,7 +61,8 @@ var TinDecoBlock = <GalacticraftCore:tile.gcBlockCore:4>;
 var TSteelBolt = <ore:boltTungstenSteel>;
 var Wool = <ore:blockWool>;
 var Wrench = <ore:craftingToolWrench>;
-
+var CompressedMeteoricIron = <ore:compressedMeteoricIron>;
+var CompressedDesh = <ore:compressedDesh>;
 
 // --- remove Recipes ---
 //Sealable Cables
@@ -254,8 +255,6 @@ recipes.remove(<GalacticraftMars:tile.mars:8>);
 recipes.remove(<gregtech:gt.metaitem.01:11884>);
 //Desh Stick
 recipes.remove(<GalacticraftMars:item.null:1>);
-//Gas Liquifier
-recipes.remove(<GalacticraftMars:tile.marsMachineT2>);
 //Methan Synthezizerezizer
 recipes.remove(<GalacticraftMars:tile.marsMachineT2:4>);
 //Water Electrolyzer
@@ -320,6 +319,7 @@ recipes.remove(<GalacticraftMars:item.deshSpade>);
 //Desh Sword
 recipes.remove(<GalacticraftMars:item.deshSword>);
 
+
 // --- add Recipes ---
 
 //Rocket Launch Pad
@@ -343,13 +343,13 @@ recipes.addShaped(<GalacticraftCore:tile.oxygenCollector>, [
 //Oxygen Compressor
 recipes.addShaped(<GalacticraftCore:tile.oxygenCompressor>, [
 [CompressedAl, <GalacticraftCore:item.oxygenConcentrator>, CompressedAl],
-[<gregtech:gt.metaitem.01:32641>, <GalacticraftCore:item.oilCanisterPartial:1001>, <gregtech:gt.metaitem.01:32601>],
+[<gregtech:gt.metaitem.01:32641>, <GalacticraftCore:item.oilCanisterPartial:1001>.noReturn(), <gregtech:gt.metaitem.01:32601>],
 [CompressedSteel, CompressedBronze, CompressedSteel]]);
 
 //Oxygen Decompressor
 recipes.addShaped(<GalacticraftCore:tile.oxygenCompressor:4>, [
 [CompressedAl, <GalacticraftCore:item.oxygenConcentrator>, CompressedAl],
-[<gregtech:gt.metaitem.01:32600>, <GalacticraftCore:item.oilCanisterPartial:1001>, <GalacticraftCore:item.airFan>],
+[<gregtech:gt.metaitem.01:32600>, <GalacticraftCore:item.oilCanisterPartial:1001>.noReturn(), <GalacticraftCore:item.airFan>],
 [CompressedSteel, CompressedBronze, CompressedSteel]]);
 
 //Oxygen Storage Module
@@ -465,7 +465,7 @@ recipes.addShaped(<GalacticraftCore:tile.machineTiered:8>, [
 //Spin Truster
 recipes.addShaped(<GalacticraftCore:tile.spinThruster>, [
 [CompressedTi, CompressedTi, CompressedTi],
-[<GalacticraftCore:item.fuelCanisterPartial:1>, AdvWafer, <GalacticraftCore:item.fuelCanisterPartial:1>],
+[<GalacticraftCore:item.fuelCanisterPartial:1>.noReturn(), AdvWafer, <GalacticraftCore:item.fuelCanisterPartial:1>.noReturn()],
 [<GalacticraftCore:item.engine>, HeavyPlating, <GalacticraftCore:item.engine>]]);
 
 //Display Screen
@@ -522,15 +522,15 @@ recipes.addShaped(<GalacticraftCore:item.oxygenTankLightFull:900>, [
 
 //Medium Oxygen Tank
 recipes.addShaped(<GalacticraftCore:item.oxygenTankMedFull:1800>, [
-[CompressedSteel, OxygenPipe,CompressedSteel],
-[CompressedSteel, <gregtech:gt.metaitem.01:32405>, CompressedSteel],
-[CompressedSteel, CompressedSteel, CompressedSteel]]);
+[CompressedMeteoricIron, OxygenPipe,CompressedMeteoricIron],
+[CompressedMeteoricIron, <gregtech:gt.metaitem.01:32405>, CompressedMeteoricIron],
+[CompressedMeteoricIron, CompressedMeteoricIron, CompressedMeteoricIron]]);
 
 //Heavy Oxygen Tank
 recipes.addShaped(<GalacticraftCore:item.oxygenTankHeavyFull:2700>, [
-[DeshPlate, OxygenPipe,DeshPlate],
-[DeshPlate, <gregtech:gt.metaitem.01:32406>, DeshPlate],
-[DeshPlate, DeshPlate, DeshPlate]]);
+[CompressedDesh, OxygenPipe,CompressedDesh],
+[CompressedDesh, <gregtech:gt.metaitem.01:32406>, CompressedDesh],
+[CompressedDesh, CompressedDesh, CompressedDesh]]);
 
 //Sensor Lens
 recipes.addShaped(SensorLens, [
@@ -679,7 +679,7 @@ recipes.addShaped(<GalacticraftCore:item.engine>, [
 //Tier 1 Booster
 recipes.addShaped(<GalacticraftCore:item.engine:1>, [
 [MeteorPlate, MeteorPlate, MeteorPlate],
-[HeavyPlating, <GalacticraftCore:item.fuelCanisterPartial:1>, HeavyPlating],
+[HeavyPlating, <GalacticraftCore:item.fuelCanisterPartial:1>.noReturn(), HeavyPlating],
 [HeavyPlating, AirVent, HeavyPlating]]);
 
 //Nose Cone
@@ -691,7 +691,7 @@ recipes.addShaped(<GalacticraftCore:item.noseCone>, [
 //Oil Extractor
 recipes.addShaped(<GalacticraftCore:item.oilExtractor>, [
 [<ore:pipeTinySteel>, null, null],
-[null, <GalacticraftCore:item.oilCanisterPartial:1001>, CompressedBronze],
+[null, <GalacticraftCore:item.oilCanisterPartial:1001>.noReturn(), CompressedBronze],
 [<minecraft:stone_button>, CompressedBronze, CompressedBronze]]);
 
 //Buggy Wheel
