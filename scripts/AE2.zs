@@ -1080,7 +1080,7 @@ PrecisionLaser.addRecipe(pressCalculation, lensOpal * 0, blockCompressedIron, 12
 PrecisionLaser.addRecipe(pressCalculation, lensSapphire * 0, blockCompressedIron, 12000, 120);
 PrecisionLaser.addRecipe(pressCalculation, lensAqua * 0, blockCompressedIron, 12000, 120);
 PrecisionLaser.addRecipe(pressCalculation, lensBlueTopaz * 0, blockCompressedIron, 12000, 120);
-
+/*
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:15>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:13>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:14>);
@@ -1092,7 +1092,7 @@ Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:20>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:22>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:23>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:24>);
-
+*/
 // --- Renaming Stuff ---
 
 NEI.overrideName(UStorageHousing, "Universal Storage Housing");

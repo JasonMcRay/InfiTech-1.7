@@ -939,7 +939,7 @@ furnace.remove(<*>, <GalacticraftMars:item.itemBasicAsteroids:4>);
 //Desh Ore
 furnace.remove(<*>, <GalacticraftMars:tile.mars:2>);
 //Desh Shards
-furnace.remove(<*>, <GalacticraftMars:item.null>);
+//furnace.remove(<*>, <GalacticraftMars:item.null>);
 
 // --- Macerator Recipes ---
 
