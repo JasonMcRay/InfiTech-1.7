@@ -13,11 +13,12 @@ Mod Updates:
 - BDLib -> 1.9.0.94
 - Forestry -> 3.6.2.19
 - Gendustry -> 1.5.1.106
-- GregTech -> 5.08.22
-- IndustrialCraft 2 -> 2.2.740
+- GregTech -> 5.08.23
+- IndustrialCraft 2 -> 2.2.742
 - Malisis Core -> 0.12.4
 - Malsis Doors -> 1.9.1
 - ttCore -> 0.1.1-78
+- BuildCraft -> 7.0.13
 
 Changes:
 - Fixed TPS issues caused by FLD + Thaumcraft compatibility
@@ -33,6 +34,8 @@ Changes:
 - Fixed crash when looking up recipes in NEI for bees
 - Added all Chisel Panes as oxygen sealeable blocks
 - Made Naq slightly more rare
+- Changed Graphite processing
+- Removed AE2 inscriber recipes from showing in NEI
 
 v3.1.1
 Mod Updates:
