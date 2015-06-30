@@ -36,6 +36,8 @@ Changes:
 - Made Naq slightly more rare
 - Changed Graphite processing
 - Removed AE2 inscriber recipes from showing in NEI
+- Fixed Stardust Ore block crashing the game (affected worlds should load fine)
+- Fixed IC2 Transformer outputting wrong voltage
 
 v3.1.1
 Mod Updates:
