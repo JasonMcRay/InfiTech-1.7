@@ -73,6 +73,7 @@ var HVMachineHull = <gregtech:gt.blockmachines:12>;
 var Illuminated = <appliedenergistics2:item.ItemMultiPart:180>;
 var Interface = <appliedenergistics2:item.ItemMultiPart:440>;
 var InterfaceTerminal = <appliedenergistics2:item.ItemMultiPart:480>;
+var inscriber = <appliedenergistics2:tile.BlockInscriber>;
 var IronRod = <ore:stickIron>;
 var ITNT = <IC2:blockITNT>;
 var lensAer = <gregtech:gt.metaitem.01:24540>;
@@ -101,7 +102,9 @@ var NQuartzScrew = <ore:screwNetherQuartz>;
 var ObsidianChest = <IronChest:BlockIronChest:6>;
 var Pattern = <appliedenergistics2:item.ItemMultiMaterial:52>;
 var PatternTerminal = <appliedenergistics2:item.ItemMultiPart:340>;
+var pistonSticky = <minecraft:sticky_piston>;
 var PlatinumCable = <ore:cableGt04Platinum>;
+var plateSteel = <ore:plateSteel>;
 var pressCalculation = <appliedenergistics2:item.ItemMultiMaterial:13>;
 var pressEngineering = <appliedenergistics2:item.ItemMultiMaterial:14>;
 var pressLogic = <appliedenergistics2:item.ItemMultiMaterial:15>;
@@ -145,6 +148,8 @@ var WirelessTerminal = <appliedenergistics2:item.ToolWirelessTerminal>;
 
 // --- Blocks ---
 
+// --- Inscriber ---
+recipes.remove(inscriber);
 
 // --- Fluix Block
 recipes.remove(FluixBlock);
@@ -336,9 +341,6 @@ recipes.remove(<appliedenergistics2:item.ItemMultiPart:180>);
 // --- ME Toggle Bus
 recipes.remove(<appliedenergistics2:item.ItemMultiPart:80>);
 
-// --- Quartz Cutting Knife
-recipes.remove(<appliedenergistics2:item.ToolCertusQuartzCuttingKnife>);
-
 // --- Quartz Wrench
 recipes.remove(<appliedenergistics2:item.ToolCertusQuartzWrench>);
 
@@ -368,9 +370,6 @@ recipes.remove(<appliedenergistics2:item.ItemCrystalSeed:600>);
 
 // --- Fluix Seed
 recipes.remove(<appliedenergistics2:item.ItemCrystalSeed:1200>);
-
-// --- Nether Quartz Knife
-recipes.remove(<appliedenergistics2:item.ToolNetherQuartzCuttingKnife>);
 
 // --- Nether Quartz Wrench
 recipes.remove(<appliedenergistics2:item.ToolNetherQuartzWrench>);
@@ -434,6 +433,11 @@ recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:34>);
 
 // --- Blocks ---
 
+// --- Inscriber
+recipes.addShaped(inscriber, [
+[plateSteel, pistonSticky, plateSteel],
+[PureFluixCrystal, null, plateSteel],
+[plateSteel, pistonSticky, plateSteel]]);
 
 // --- ME Controller
 recipes.addShaped(MEController, [
@@ -1080,7 +1084,7 @@ PrecisionLaser.addRecipe(pressCalculation, lensOpal * 0, blockCompressedIron, 12
 PrecisionLaser.addRecipe(pressCalculation, lensSapphire * 0, blockCompressedIron, 12000, 120);
 PrecisionLaser.addRecipe(pressCalculation, lensAqua * 0, blockCompressedIron, 12000, 120);
 PrecisionLaser.addRecipe(pressCalculation, lensBlueTopaz * 0, blockCompressedIron, 12000, 120);
-/*
+
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:15>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:13>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:14>);
@@ -1092,7 +1096,7 @@ Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:20>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:22>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:23>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:24>);
-*/
+
 // --- Renaming Stuff ---
 
 NEI.overrideName(UStorageHousing, "Universal Storage Housing");
