@@ -278,8 +278,6 @@ recipes.removeShaped(<GalacticraftMars:item.itemBasicAsteroids:2>, [
 recipes.remove(<GalacticraftMars:item.itemBasicAsteroids:1>);
 //Heavy Nose Cone
 recipes.remove(<GalacticraftMars:item.heavyNoseCone>);
-//Fluid Manipulator
-recipes.remove(<GalacticraftMars:item.null:6>);
 //Red Core
 recipes.remove(<GalacticraftMars:item.itemBasicAsteroids:8>);
 //Energy Beam Reflector
