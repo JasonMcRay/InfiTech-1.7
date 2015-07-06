@@ -63,6 +63,7 @@ var Wool = <ore:blockWool>;
 var Wrench = <ore:craftingToolWrench>;
 var CompressedMeteoricIron = <ore:compressedMeteoricIron>;
 var CompressedDesh = <ore:compressedDesh>;
+var plateTin = <ore:plateTin>;
 
 // --- remove Recipes ---
 //Sealable Cables
@@ -399,15 +400,15 @@ recipes.addShaped(<GalacticraftCore:tile.rocketWorkbench>, [
 [<ore:circuitMaster>, <ore:cableGt04Aluminium>, <ore:circuitElite>]]);
 
 //Tin Decoration Block
-recipes.addShaped(TinDecoBlock * 4, [
-[HHammer, CompressedTin, null],
-[CompressedTin, <ore:stone>, CompressedTin],
-[null, CompressedTin, Wrench]]);
+recipes.addShaped(TinDecoBlock * 5, [
+[HHammer, plateTin, null],
+[plateTin, <ore:stone>, plateTin],
+[null, plateTin, Wrench]]);
 
-recipes.addShaped(<GalacticraftCore:tile.gcBlockCore:3> * 4, [
-[null, CompressedTin, HHammer],
-[CompressedTin, <ore:stone>, CompressedTin],
-[Wrench, CompressedTin, null]]);
+recipes.addShaped(<GalacticraftCore:tile.gcBlockCore:3> * 5, [
+[null, plateTin, HHammer],
+[plateTin, <ore:stone>, plateTin],
+[Wrench, plateTin, null]]);
 
 //Air Lock Frame
 recipes.addShaped(<GalacticraftCore:tile.airLockFrame> * 4, [
