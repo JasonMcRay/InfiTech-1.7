@@ -1,3 +1,35 @@
+v3.1.3
+Mod Updates:
+- Aroma1997Core -> 1.0.2.14
+- Automagy -> 0.26
+- BluePower -> 0.2.954
+- Chisel 2 -> 2.4.1.40
+- CoFHCore -> 3.0.3B2-294
+- Galacticraft -> 3.0.12.350
+- In-game Wiki -> 1.1.4-20
+- ModTweaker -> 0.8.4_dev1
+- Redstone Arsenal -> 1.1.1B1-85
+- Applied Energistics 2 -> rv2 stable 10
+- Gendustry -> 1.5.2.107
+- Industrial Craft 2 -> 2.2.745
+- JourneyMap -> 5.1.0
+- MagicBees -> 2.3.2
+- NEIAddons -> 1.12.10.34
+- Thaumic Energistics -> 0.8.10.7
+
+Changes:
+- Unrefined Desh can now be processed
+- Enabled AE2 Inscriber. It can be only used for imprinting names with Name Press
+- Enabled AE2 Cutting Knives. It can be only used for creating Name Press
+- Fixed few forestry related scripts
+- Enabled crafting of Fluid Manipulator
+- Made Tin Deco blocks cheaper. they are flippin Decoration blocks!!!
+- Fixes connected textures of Conduit Facades to Normal chisel blocks
+- ExU Still needs this to be fixed
+- Workaround for few charged certus issues. They do not unify so there are two versions of same item. You can interchange both versions as Shapeless recipe.
+- Certus Wrench now craftable with Certus Quartz instead of Charged Certus.
+- Fixed Crash with NEI (appeng.integration.modules.NEIHelpers.NEIInscriberRecipeHandler.loadCraftingRecipes)
+
 v3.1.2
 Mod Updates:
 - Chisel 2 -> 2.3.10.38

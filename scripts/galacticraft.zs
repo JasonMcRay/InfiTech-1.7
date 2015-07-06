@@ -63,6 +63,7 @@ var Wool = <ore:blockWool>;
 var Wrench = <ore:craftingToolWrench>;
 var CompressedMeteoricIron = <ore:compressedMeteoricIron>;
 var CompressedDesh = <ore:compressedDesh>;
+var plateTin = <ore:plateTin>;
 
 // --- remove Recipes ---
 //Sealable Cables
@@ -278,8 +279,6 @@ recipes.removeShaped(<GalacticraftMars:item.itemBasicAsteroids:2>, [
 recipes.remove(<GalacticraftMars:item.itemBasicAsteroids:1>);
 //Heavy Nose Cone
 recipes.remove(<GalacticraftMars:item.heavyNoseCone>);
-//Fluid Manipulator
-recipes.remove(<GalacticraftMars:item.null:6>);
 //Red Core
 recipes.remove(<GalacticraftMars:item.itemBasicAsteroids:8>);
 //Energy Beam Reflector
@@ -401,15 +400,15 @@ recipes.addShaped(<GalacticraftCore:tile.rocketWorkbench>, [
 [<ore:circuitMaster>, <ore:cableGt04Aluminium>, <ore:circuitElite>]]);
 
 //Tin Decoration Block
-recipes.addShaped(TinDecoBlock * 4, [
-[HHammer, CompressedTin, null],
-[CompressedTin, <ore:stone>, CompressedTin],
-[null, CompressedTin, Wrench]]);
+recipes.addShaped(TinDecoBlock * 5, [
+[HHammer, plateTin, null],
+[plateTin, <ore:stone>, plateTin],
+[null, plateTin, Wrench]]);
 
-recipes.addShaped(<GalacticraftCore:tile.gcBlockCore:3> * 4, [
-[null, CompressedTin, HHammer],
-[CompressedTin, <ore:stone>, CompressedTin],
-[Wrench, CompressedTin, null]]);
+recipes.addShaped(<GalacticraftCore:tile.gcBlockCore:3> * 5, [
+[null, plateTin, HHammer],
+[plateTin, <ore:stone>, plateTin],
+[Wrench, plateTin, null]]);
 
 //Air Lock Frame
 recipes.addShaped(<GalacticraftCore:tile.airLockFrame> * 4, [
@@ -939,7 +938,7 @@ furnace.remove(<*>, <GalacticraftMars:item.itemBasicAsteroids:4>);
 //Desh Ore
 furnace.remove(<*>, <GalacticraftMars:tile.mars:2>);
 //Desh Shards
-furnace.remove(<*>, <GalacticraftMars:item.null>);
+//furnace.remove(<*>, <GalacticraftMars:item.null>);
 
 // --- Macerator Recipes ---
 

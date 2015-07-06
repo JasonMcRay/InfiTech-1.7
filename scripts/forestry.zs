@@ -165,16 +165,11 @@ recipes.addShaped(worktable, [
 //AssemblerLiq.addRecipe(output, input1, input2, liquid, durationTicks, euPerTick);
 recipes.remove(humus);
 Carpenter.removeRecipe(humus);
-Carpenter.removeRecipe(humus);
 Carpenter.addRecipe(5, null, [crateHumus, null, null, null, null, null, null, null, null], null, humus * 9);
 recipes.remove(bogEarth);
 Carpenter.removeRecipe(bogEarth);
-Carpenter.removeRecipe(bogEarth);
 Carpenter.addRecipe(5, null, [crateBogEarth, null, null, null, null, null, null, null, null], null, bogEarth * 9);
 recipes.remove(unlitCandle);
-Carpenter.removeRecipe(unlitCandle);
-Carpenter.removeRecipe(unlitCandle);
-Carpenter.removeRecipe(unlitCandle);
 Carpenter.removeRecipe(unlitCandle);
 AssemblerLiq.addRecipe(unlitCandle * 8, waxMagic * 2, silkWisp, liquidWater * 200, 16, 8);
 AssemblerLiq.addRecipe(unlitCandle * 24, waxMagic * 6, mcString, liquidWater * 600, 64, 8);

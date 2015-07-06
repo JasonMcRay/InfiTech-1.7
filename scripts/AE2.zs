@@ -62,6 +62,8 @@ var FluixDust = <appliedenergistics2:item.ItemMultiMaterial:8>;
 var FluixGlassCable = <appliedenergistics2:item.ItemMultiPart:16>;
 var FluixPearl = <appliedenergistics2:item.ItemMultiMaterial:9>;
 var FormationCore = <appliedenergistics2:item.ItemMultiMaterial:43>;
+var gemCertusQuartz = <ore:gemCertusQuartz>;
+var gemChargedCertusQuartz = <ore:gemChargedCertusQuartz>;
 var GlassPlate = <ore:plateGlass>;
 var GlowstoneDust = <ore:dustGlowstone>;
 var GlowstoneGlass = <ExtraUtilities:decorativeBlock2:7>;
@@ -73,6 +75,7 @@ var HVMachineHull = <gregtech:gt.blockmachines:12>;
 var Illuminated = <appliedenergistics2:item.ItemMultiPart:180>;
 var Interface = <appliedenergistics2:item.ItemMultiPart:440>;
 var InterfaceTerminal = <appliedenergistics2:item.ItemMultiPart:480>;
+var inscriber = <appliedenergistics2:tile.BlockInscriber>;
 var IronRod = <ore:stickIron>;
 var ITNT = <IC2:blockITNT>;
 var lensAer = <gregtech:gt.metaitem.01:24540>;
@@ -101,7 +104,9 @@ var NQuartzScrew = <ore:screwNetherQuartz>;
 var ObsidianChest = <IronChest:BlockIronChest:6>;
 var Pattern = <appliedenergistics2:item.ItemMultiMaterial:52>;
 var PatternTerminal = <appliedenergistics2:item.ItemMultiPart:340>;
+var pistonSticky = <minecraft:sticky_piston>;
 var PlatinumCable = <ore:cableGt04Platinum>;
+var plateSteel = <ore:plateSteel>;
 var pressCalculation = <appliedenergistics2:item.ItemMultiMaterial:13>;
 var pressEngineering = <appliedenergistics2:item.ItemMultiMaterial:14>;
 var pressLogic = <appliedenergistics2:item.ItemMultiMaterial:15>;
@@ -145,6 +150,8 @@ var WirelessTerminal = <appliedenergistics2:item.ToolWirelessTerminal>;
 
 // --- Blocks ---
 
+// --- Inscriber ---
+recipes.remove(inscriber);
 
 // --- Fluix Block
 recipes.remove(FluixBlock);
@@ -336,9 +343,6 @@ recipes.remove(<appliedenergistics2:item.ItemMultiPart:180>);
 // --- ME Toggle Bus
 recipes.remove(<appliedenergistics2:item.ItemMultiPart:80>);
 
-// --- Quartz Cutting Knife
-recipes.remove(<appliedenergistics2:item.ToolCertusQuartzCuttingKnife>);
-
 // --- Quartz Wrench
 recipes.remove(<appliedenergistics2:item.ToolCertusQuartzWrench>);
 
@@ -368,9 +372,6 @@ recipes.remove(<appliedenergistics2:item.ItemCrystalSeed:600>);
 
 // --- Fluix Seed
 recipes.remove(<appliedenergistics2:item.ItemCrystalSeed:1200>);
-
-// --- Nether Quartz Knife
-recipes.remove(<appliedenergistics2:item.ToolNetherQuartzCuttingKnife>);
 
 // --- Nether Quartz Wrench
 recipes.remove(<appliedenergistics2:item.ToolNetherQuartzWrench>);
@@ -434,6 +435,11 @@ recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:34>);
 
 // --- Blocks ---
 
+// --- Inscriber
+recipes.addShaped(inscriber, [
+[plateSteel, pistonSticky, plateSteel],
+[PureFluixCrystal, null, plateSteel],
+[plateSteel, pistonSticky, plateSteel]]);
 
 // --- ME Controller
 recipes.addShaped(MEController, [
@@ -691,7 +697,7 @@ recipes.addShaped(Pattern, [
 [AlPlate, AlPlate, AlPlate]]);
   
 // --- Capacity Card
-recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:27>, [<appliedenergistics2:item.ItemMultiMaterial:25>, <appliedenergistics2:item.ItemMultiMaterial:35>, <appliedenergistics2:item.ItemMultiMaterial:35>, <appliedenergistics2:item.ItemMultiMaterial:1>]);
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:27>, [<appliedenergistics2:item.ItemMultiMaterial:25>, <appliedenergistics2:item.ItemMultiMaterial:35>, <appliedenergistics2:item.ItemMultiMaterial:35>, gemChargedCertusQuartz]);
 
 // --- Crafting Card
 recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:53>, [<appliedenergistics2:item.ItemMultiMaterial:25>, <appliedenergistics2:item.ItemMultiMaterial:35>, <appliedenergistics2:item.ItemMultiMaterial:35>, <ore:craftingWorkBench>]);
@@ -790,9 +796,9 @@ recipes.addShapeless(<appliedenergistics2:item.ItemMultiPart:80>, [<appliedenerg
  
 // --- Quartz Wrench
 recipes.addShaped(<appliedenergistics2:item.ToolCertusQuartzWrench>, [
-[<appliedenergistics2:item.ItemMultiMaterial:1>, <ore:craftingToolWrench>, <appliedenergistics2:item.ItemMultiMaterial:1>],
-[<appliedenergistics2:item.ItemMultiMaterial:1>, <appliedenergistics2:item.ItemMultiMaterial:1>, <appliedenergistics2:item.ItemMultiMaterial:1>],
-[null, <appliedenergistics2:item.ItemMultiMaterial:1>, null]]);
+[gemCertusQuartz, <ore:craftingToolWrench>, gemCertusQuartz],
+[gemCertusQuartz, gemCertusQuartz, gemCertusQuartz],
+[null, gemCertusQuartz, null]]);
 
 // --- Nether Quartz Wrench
 recipes.addShaped(<appliedenergistics2:item.ToolNetherQuartzWrench>, [
@@ -814,8 +820,8 @@ recipes.addShaped(<appliedenergistics2:item.ToolMemoryCard>, [
 
 // --- Charged Stuff
 recipes.addShaped(<appliedenergistics2:item.ToolChargedStaff>, [
-[<appliedenergistics2:item.ItemMultiMaterial:1>, <appliedenergistics2:item.ItemMultiMaterial:1>, null],
-[<appliedenergistics2:item.ItemMultiMaterial:1>, <Thaumcraft:FocusShock>, null],
+[gemChargedCertusQuartz, gemChargedCertusQuartz, null],
+[gemChargedCertusQuartz, <Thaumcraft:FocusShock>, null],
 [null, null, <ore:stickThaumium>]]);
 
 // --- Entropy Manipulator
@@ -1092,6 +1098,13 @@ Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:20>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:22>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:23>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:24>);
+
+// --- Temp Fix for Charged Certus Quartz
+<ore:gemChargedCertusQuartz>.add(<appliedenergistics2:item.ItemMultiMaterial:1>);
+<ore:itemCertusQuartz>.add(<gregtech:gt.metaitem.01:8517>);
+<ore:craftingQuartz>.add(<gregtech:gt.metaitem.01:8517>);
+recipes.addShapeless(<gregtech:gt.metaitem.01:8517>, [<appliedenergistics2:item.ItemMultiMaterial:1>]);
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:1>, [<gregtech:gt.metaitem.01:8517>]);
 
 // --- Renaming Stuff ---
 
