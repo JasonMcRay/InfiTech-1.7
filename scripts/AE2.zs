@@ -1030,9 +1030,9 @@ Centrifuge.addRecipe([TinyTNT, TinyTNT], ITNT, 0, 600);
 ChemicalReactor.addRecipe(<gregtech:gt.metaitem.01:2517>, <gregtech:gt.metaitem.01:2516> , <minecraft:redstone>, 600);
 
 // --- Charged Certus Quartz Dust
-ChemicalReactorLiq.addRecipe(<appliedenergistics2:item.ItemMultiMaterial:1> * 3, <liquid:water> * 1000, <gregtech:gt.metaitem.01:2517> * 3, <gregtech:gt.metaitem.01:2017>, null, 900);
+ChemicalReactorLiq.addRecipe(<appliedenergistics2:item.ItemMultiMaterial:1> * 3, null, <gregtech:gt.metaitem.01:2517> * 3, <gregtech:gt.metaitem.01:2017>, <liquid:water> * 1000, 900);
 // -
-ChemicalReactorLiq.addRecipe(<appliedenergistics2:item.ItemMultiMaterial:1> * 3, <liquid:ic2distilledwater> * 1000, <gregtech:gt.metaitem.01:2517> * 3, <gregtech:gt.metaitem.01:2017>, null, 700);
+ChemicalReactorLiq.addRecipe(<appliedenergistics2:item.ItemMultiMaterial:1> * 3, null, <gregtech:gt.metaitem.01:2517> * 3, <gregtech:gt.metaitem.01:2017>, <liquid:ic2distilledwater> * 1000, 700);
 
 
 // --- Compressor Recipes ---
