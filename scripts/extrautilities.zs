@@ -47,9 +47,18 @@ var enderQuarry = <ExtraUtilities:enderQuarry>;
 var enderPump = <ExtraUtilities:enderThermicPump>;
 var BCQuarry = <BuildCraft|Builders:machineBlock>;
 var enderCore = <ExtraUtilities:decorativeBlock1:11>;
+var blockEmerald = <ore:blockEmerald>;
+var plankWood = <ore:plankWood>;
+var tradingPost = <ExtraUtilities:trading_post>;
+var jukebox = <minecraft:jukebox>;
 
 
 # ---Recipe tweaks---
+recipes.remove(tradingPost);
+recipes.addShaped(tradingPost, [
+    [plankWood, blockEmerald, plankWood],
+    [plankWood, jukebox, plankWood],
+    [plankWood, plankWood, plankWood]]);
 recipes.remove(ironDrum);
 recipes.addShaped(ironDrum, [
 	[plateSteel, ringIron, plateSteel],
