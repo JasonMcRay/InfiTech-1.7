@@ -101,6 +101,7 @@ var NANDChip = <gregtech:gt.metaitem.01:32700>;
 var NQuartzPlate = <gregtech:gt.metaitem.01:17522>;
 var NQuartzRod = <ore:stickNetherQuartz>;
 var NQuartzScrew = <ore:screwNetherQuartz>;
+var NetherQBlock = <minecraft:quartz_block>;
 var ObsidianChest = <IronChest:BlockIronChest:6>;
 var Pattern = <appliedenergistics2:item.ItemMultiMaterial:52>;
 var PatternTerminal = <appliedenergistics2:item.ItemMultiPart:340>;
@@ -113,6 +114,7 @@ var pressLogic = <appliedenergistics2:item.ItemMultiMaterial:15>;
 var pressSilicon = <appliedenergistics2:item.ItemMultiMaterial:19>;
 var PureCertusQCrystal = <appliedenergistics2:item.ItemMultiMaterial:10>;
 var PureFluixCrystal = <appliedenergistics2:item.ItemMultiMaterial:12>;
+var PureNetherQCrystal = <appliedenergistics2:item.ItemMultiMaterial:11>;
 var QuartzFiber = <appliedenergistics2:item.ItemMultiPart:140>;
 var QuartzFixture = <appliedenergistics2:tile.BlockQuartzTorch>;
 var QuartzGlass = <appliedenergistics2:tile.BlockQuartzGlass>;
@@ -375,6 +377,9 @@ recipes.remove(<appliedenergistics2:item.ItemCrystalSeed:1200>);
 
 // --- Nether Quartz Wrench
 recipes.remove(<appliedenergistics2:item.ToolNetherQuartzWrench>);
+
+// --- Nether Quartz Block
+recipes.remove(NetherQBlock);
 
 
 // --- Cells ---
@@ -1038,12 +1043,7 @@ ChemicalReactorLiq.addRecipe(<appliedenergistics2:item.ItemMultiMaterial:1> * 3,
 // --- Compressor Recipes ---
 
 // --- Fluix Block ---
-Compressor.addRecipe(FluixBlock, PureFluixCrystal * 9);
-// -
 Compressor.addRecipe(FluixBlock, FluixCrystal * 4);
-// -
-Compressor.addRecipe(CertusQBlock, PureCertusQCrystal * 9);
-
 
 
 // --- Macerator Recipes ---
@@ -1098,13 +1098,6 @@ Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:20>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:22>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:23>);
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:24>);
-
-// --- Temp Fix for Charged Certus Quartz
-<ore:gemChargedCertusQuartz>.add(<appliedenergistics2:item.ItemMultiMaterial:1>);
-<ore:itemCertusQuartz>.add(<gregtech:gt.metaitem.01:8517>);
-<ore:craftingQuartz>.add(<gregtech:gt.metaitem.01:8517>);
-recipes.addShapeless(<gregtech:gt.metaitem.01:8517>, [<appliedenergistics2:item.ItemMultiMaterial:1>]);
-recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:1>, [<gregtech:gt.metaitem.01:8517>]);
 
 // --- Renaming Stuff ---
 
