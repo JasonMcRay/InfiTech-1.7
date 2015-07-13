@@ -24,6 +24,9 @@ var wrench = <ore:craftingToolWrench>;
 var hammerBarrel = <JABBA:hammer>;
 var ingotIron = <ore:ingotIron>;
 var stickWood = <ore:stickWood>;
+var upgradeStorage9x = <JABBA:upgradeCore:5>;
+var upgradeStorage27x = <JABBA:upgradeCore:6>;
+var betterBarrel = <JABBA:barrel>;
 
 # Recipe Tweaks
 recipes.remove(hammerBarrel);
@@ -42,3 +45,7 @@ recipes.addShaped(dolly, [
 	[null, wrench, plateIron],
 	[HHammer, plankWood, plateIron],
 	[plateIron, plateIron, plateIron]]);
+recipes.addShaped(upgradeStorage9x * 2, [
+    [plateEnderium, piston, plateEnderium],
+    [plateEnderium, betterBarrel, plateEnderium],
+    [plateEnderium, piston, plateEnderium]]);
