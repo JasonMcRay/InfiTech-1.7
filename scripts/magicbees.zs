@@ -6,6 +6,7 @@ var backpackThaumaturgeT2 = <MagicBees:backpack.thaumaturgeT2>;
 
 # Recipe tweaks
 recipes.remove(backpackThaumaturge);
+recipes.addShapeless(backpackThaumaturge, [backpackThaumaturge]);
 recipes.addShaped(backpackThaumaturge, [
 	[<harvestcraft:wovencottonItem>, <Thaumcraft:ItemResource:6>, <harvestcraft:wovencottonItem>],
 	[<harvestcraft:hardenedleatherItem>, <Thaumcraft:ItemResource:6>, <harvestcraft:hardenedleatherItem>],

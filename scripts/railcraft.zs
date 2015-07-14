@@ -92,6 +92,7 @@ recipes.addShaped(fluxTransformer * 2, [
     [ingotGold, blockRedstone, ingotGold],
     [plateCopper, ingotGold, plateCopper]]);
 recipes.remove(backpackTrack);
+recipes.addShapeless(backpackTrack, [backpackTrack]);
 recipes.addShaped(backpackTrack, [
 	[<harvestcraft:wovencottonItem>, <minecraft:rail>, <harvestcraft:wovencottonItem>],
 	[<harvestcraft:hardenedleatherItem>, <minecraft:rail>, <harvestcraft:hardenedleatherItem>],
@@ -99,6 +100,7 @@ recipes.addShaped(backpackTrack, [
 mods.forestry.Carpenter.removeRecipe(backpackTrackT2);
 mods.forestry.Carpenter.addRecipe(600, <liquid:seedoil> * 5000, [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],backpackTrack, backpackTrackT2);
 recipes.remove(backpackIceman);
+recipes.addShapeless(backpackIceman, [backpackIceman]);
 recipes.addShaped(backpackIceman, [
 	[<harvestcraft:wovencottonItem>, <minecraft:snow>, <harvestcraft:wovencottonItem>],
 	[<harvestcraft:hardenedleatherItem>, <minecraft:snow>, <harvestcraft:hardenedleatherItem>],
@@ -106,6 +108,7 @@ recipes.addShaped(backpackIceman, [
 mods.forestry.Carpenter.removeRecipe(backpackIcemanT2);
 mods.forestry.Carpenter.addRecipe(600, <liquid:seedoil> * 5000, [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],backpackIceman, backpackIcemanT2);
 recipes.remove(backpackApothecary);
+recipes.addShapeless(backpackApothecary, [backpackApothecary]);
 recipes.addShaped(backpackApothecary, [
 	[<harvestcraft:wovencottonItem>, <ore:potionHealing>, <harvestcraft:wovencottonItem>],
 	[<harvestcraft:hardenedleatherItem>, <ore:potionHealing>, <harvestcraft:hardenedleatherItem>],
