@@ -44,6 +44,12 @@ Changes:
 - Moved gravisuite to bottom left under chat
 - EnderQuarry speed upgrades craftable
 - Added Pump upgrade to QED crafting
+- FMP support in BC Builder
+- Fixed lag with Construction Markers
+- Fixed few Thaumcraft compatibility researches
+- Added AE2 pure quartz compressing recipes
+- Fixed triggering chunk update when item is collected via Vacuum Hoppers (slight TPS improvement)
+- Bows with Infinity enchant no longer needs an arrow present.
 
 Removed blocks/items in update v3.1.3 -> v3.1.4
 - PneumaticCraft:universalActuator
