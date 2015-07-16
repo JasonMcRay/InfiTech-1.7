@@ -50,6 +50,7 @@ Changes:
 - Added AE2 pure quartz compressing recipes
 - Fixed triggering chunk update when item is collected via Vacuum Hoppers (slight TPS improvement)
 - Bows with Infinity enchant no longer needs an arrow present.
+- Dimensional anchor is now crafted with Pulsating Crystal, instead of Ender Pearl.
 
 Removed blocks/items in update v3.1.3 -> v3.1.4
 - PneumaticCraft:universalActuator
