@@ -1,3 +1,60 @@
+v3.1.4
+Forge updated: 10.13.4.1490
+Mod Updates:
+- CoFHCore -> 3.0.3B4-302
+- OpenBlocks -> 1.4.3-647
+- OpenComputers -> 1.5.14.30
+- OpenModsLib -> 0.7.3-376
+- PneumaticCraft -> 1.9.3-90
+- Waila Plugins -> 0.1.0-16
+- BuildCraft -> 7.0.16
+- BuildcraftCompat -> 7.0.9
+- FOrestry -> 3.6.3.20
+- Gendustry -> 1.6.0.108
+- GregTech -> 5.08.24
+- IndustrialCraft 2 -> 2.2.748
+- MalisisCore -> 0.12.5
+- MalisisDoors -> 1.9.3
+- NEIAddons -> 1.12.11.36
+
+New Mods:
+- EnderCore
+- Thaumcraft NEI Plugin
+
+Removed Mods:
+- ttCore (replaced by EnderCore)
+- Java7Checker (redundant)
+
+Changes:
+- Fixed incorrectly placed explosion sounds
+- Fixed Chemical Reactor Certus Quartz crafting (it now requires water, instead of outputting it)
+- Added bunch more Glasses as Sealeable blocks to Oxygen Sealer
+- Vanishing frames no longer become unstable
+- Moved oxygen indicator default position to bottom right
+- Raised number of total upgrades/tiers to 11
+- Changed recipes for Structural upgrades
+- Added alternative recipe for x9 Storage Upgrade
+- Fixed trading post crafting with Thaumcraft tree planks
+- Hardcoded Magical Wood recipe. Now accepts only Crafted Enchanted Books (minecraft:enchanted_book)
+- Rehauled Stargate energy costs
+- Removed seed recipes from Assembler and moved them into Chemical Reactor
+- To be able to use "used" Forestry Backpacks in crafting of 45 slot versions, you need to put them first into crafting table to reset them. They will loose all stored data (content)!
+- Redesigned Chunkloader fuel usages (both RC and Immibis)
+- Disabled CFM welcome message
+- Moved gravisuite to bottom left under chat
+- EnderQuarry speed upgrades craftable
+- Added Pump upgrade to QED crafting
+- FMP support in BC Builder
+- Fixed lag with Construction Markers
+- Fixed few Thaumcraft compatibility researches
+- Added AE2 pure quartz compressing recipes
+- Fixed triggering chunk update when item is collected via Vacuum Hoppers (slight TPS improvement)
+- Bows with Infinity enchant no longer needs an arrow present.
+- Dimensional anchor is now crafted with Pulsating Crystal, instead of Ender Pearl.
+
+Removed blocks/items in update v3.1.3 -> v3.1.4
+- PneumaticCraft:universalActuator
+
 v3.1.3
 Mod Updates:
 - Aroma1997Core -> 1.0.2.14

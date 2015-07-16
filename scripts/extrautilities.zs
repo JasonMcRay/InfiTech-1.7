@@ -47,9 +47,27 @@ var enderQuarry = <ExtraUtilities:enderQuarry>;
 var enderPump = <ExtraUtilities:enderThermicPump>;
 var BCQuarry = <BuildCraft|Builders:machineBlock>;
 var enderCore = <ExtraUtilities:decorativeBlock1:11>;
+var blockEmerald = <ore:blockEmerald>;
+var plankWood = <ore:plankWood>;
+var tradingPost = <ExtraUtilities:trading_post>;
+var jukebox = <minecraft:jukebox>;
+var magicalWood = <ExtraUtilities:decorativeBlock1:8>;
+var ingotGold = <ore:ingotGold>;
+var bookEnchanted = <ore:bookEnchanted>;
+var bookshelf = <minecraft:bookshelf>;
 
 
 # ---Recipe tweaks---
+recipes.remove(magicalWood);
+recipes.addShaped(magicalWood, [
+    [ingotGold, bookEnchanted, ingotGold],
+    [bookEnchanted, bookshelf, bookEnchanted],
+    [ingotGold, bookEnchanted, ingotGold]]);
+recipes.remove(tradingPost);
+recipes.addShaped(tradingPost, [
+    [plankWood, blockEmerald, plankWood],
+    [plankWood, jukebox, plankWood],
+    [plankWood, plankWood, plankWood]]);
 recipes.remove(ironDrum);
 recipes.addShaped(ironDrum, [
 	[plateSteel, ringIron, plateSteel],
