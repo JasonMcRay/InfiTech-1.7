@@ -63,7 +63,6 @@ var FluixGlassCable = <appliedenergistics2:item.ItemMultiPart:16>;
 var FluixPearl = <appliedenergistics2:item.ItemMultiMaterial:9>;
 var FormationCore = <appliedenergistics2:item.ItemMultiMaterial:43>;
 var gemCertusQuartz = <ore:gemCertusQuartz>;
-var gemChargedCertusQuartz = <ore:gemChargedCertusQuartz>;
 var GlassPlate = <ore:plateGlass>;
 var GlowstoneDust = <ore:dustGlowstone>;
 var GlowstoneGlass = <ExtraUtilities:decorativeBlock2:7>;
@@ -702,7 +701,7 @@ recipes.addShaped(Pattern, [
 [AlPlate, AlPlate, AlPlate]]);
   
 // --- Capacity Card
-recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:27>, [<appliedenergistics2:item.ItemMultiMaterial:25>, <appliedenergistics2:item.ItemMultiMaterial:35>, <appliedenergistics2:item.ItemMultiMaterial:35>, gemChargedCertusQuartz]);
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:27>, [<appliedenergistics2:item.ItemMultiMaterial:25>, <appliedenergistics2:item.ItemMultiMaterial:35>, <appliedenergistics2:item.ItemMultiMaterial:35>, CCertusQuartz]);
 
 // --- Crafting Card
 recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:53>, [<appliedenergistics2:item.ItemMultiMaterial:25>, <appliedenergistics2:item.ItemMultiMaterial:35>, <appliedenergistics2:item.ItemMultiMaterial:35>, <ore:craftingWorkBench>]);
@@ -825,8 +824,8 @@ recipes.addShaped(<appliedenergistics2:item.ToolMemoryCard>, [
 
 // --- Charged Stuff
 recipes.addShaped(<appliedenergistics2:item.ToolChargedStaff>, [
-[gemChargedCertusQuartz, gemChargedCertusQuartz, null],
-[gemChargedCertusQuartz, <Thaumcraft:FocusShock>, null],
+[CCertusQuartz, CCertusQuartz, null],
+[CCertusQuartz, <Thaumcraft:FocusShock>, null],
 [null, null, <ore:stickThaumium>]]);
 
 // --- Entropy Manipulator
@@ -1029,15 +1028,6 @@ Centrifuge.addRecipe([TinyTNT, TinyTNT], ITNT, 0, 600);
 
 
 // --- Chemical Reactor Recipes ---
-
-
-// --- Charged Certus Quartz Dust
-ChemicalReactor.addRecipe(<gregtech:gt.metaitem.01:2517>, <gregtech:gt.metaitem.01:2516> , <minecraft:redstone>, 600);
-
-// --- Charged Certus Quartz Dust
-ChemicalReactorLiq.addRecipe(<appliedenergistics2:item.ItemMultiMaterial:1> * 3, null, <gregtech:gt.metaitem.01:2517> * 3, <gregtech:gt.metaitem.01:2017>, <liquid:water> * 1000, 900);
-// -
-ChemicalReactorLiq.addRecipe(<appliedenergistics2:item.ItemMultiMaterial:1> * 3, null, <gregtech:gt.metaitem.01:2517> * 3, <gregtech:gt.metaitem.01:2017>, <liquid:ic2distilledwater> * 1000, 700);
 
 // --- Seeds
 ChemicalReactor.addRecipe(<appliedenergistics2:item.ItemCrystalSeed> * 2, <gregtech:gt.metaitem.01:2516>, <minecraft:sand>, 100);
