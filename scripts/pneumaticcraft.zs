@@ -23,6 +23,7 @@ var hammer = <ore:craftingToolHardHammer>;
 var hopper = <minecraft:hopper>;
 var ingotCompressedIron = <PneumaticCraft:ingotIronCompressed>;
 var ingotEnderium = <ore:ingotEnderium>;
+var logicDrone = <PneumaticCraft:logisticDrone>;
 var moltenGlass = <liquid:molten.glass>;
 var omniHopper = <PneumaticCraft:omnidirectionalHopper>;
 var PCB = <PneumaticCraft:printedCircuitBoard>;
@@ -79,10 +80,15 @@ recipes.addShaped(gearCompressedIron, [
     [null, ingotCompressedIron, null]]);
 recipes.remove(aerialInterface);
 NEI.hide(aerialInterface);
-recipes.remove(drone);
+recipes.removeShaped(drone);
 recipes.addShaped(drone, [
     [turbineRotor, stickStainlessSteel, turbineRotor],
     [stickStainlessSteel, PCB, stickStainlessSteel],
+    [turbineRotor, stickStainlessSteel, turbineRotor]]);
+recipes.removeShaped(logicDrone);
+recipes.addShaped(logicDrone, [
+    [turbineRotor, stickStainlessSteel, turbineRotor],
+    [stickStainlessSteel, dustRedstone, stickStainlessSteel],
     [turbineRotor, stickStainlessSteel, turbineRotor]]);
 recipes.remove(omniHopper);
 recipes.addShaped(omniHopper, [
