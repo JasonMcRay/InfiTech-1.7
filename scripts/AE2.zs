@@ -519,6 +519,7 @@ recipes.addShaped(<appliedenergistics2:tile.BlockInterface>, [
 [AlPlate, GlassPlate, AlPlate],
 [<appliedenergistics2:item.ItemMultiMaterial:44>, <gregtech:gt.blockcasings:2>, <appliedenergistics2:item.ItemMultiMaterial:43>],
 [AlPlate, GlassPlate, AlPlate]]);
+recipes.addShapeless(<appliedenergistics2:tile.BlockInterface>, [Interface]);
 
 // --- Cell Workbench
 recipes.addShaped(<appliedenergistics2:tile.BlockCellWorkbench>, [
