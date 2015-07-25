@@ -61,6 +61,12 @@ var tubeRepulsion = <PneumaticCraft:plasticElectronTube:10>;
 var tubeSlime = <PneumaticCraft:plasticElectronTube:3>;
 var tubeSquid = <PneumaticCraft:plasticElectronTube>;
 var turbineRotor = <PneumaticCraft:turbineRotor>;
+var pressureChamberPart = <PneumaticCraft:pressureChamberWall:*>;
+var sensorMV = <gregtech:gt.metaitem.01:32691>;
+var emitterMV = <gregtech:gt.metaitem.01:32681>;
+var enderResonator = <EnderIO:itemFrankenSkull:3>;
+var beamCore = <GalacticraftMars:item.itemBasicAsteroids:8>;
+
 
 # Recipes Tweaks
 recipes.remove(compressorElectric);
@@ -79,7 +85,10 @@ recipes.addShaped(gearCompressedIron, [
     [ingotCompressedIron, gearStone, ingotCompressedIron],
     [null, ingotCompressedIron, null]]);
 recipes.remove(aerialInterface);
-NEI.hide(aerialInterface);
+recipes.addShaped(aerialInterface, [
+    [pressureChamberPart, beamCore, pressureChamberPart],
+    [sensorMV, enderResonator, emitterMV],
+    [pressureChamberPart, tubePressureAdv, pressureChamberPart]]);
 recipes.removeShaped(drone);
 recipes.addShaped(drone, [
     [turbineRotor, stickStainlessSteel, turbineRotor],
