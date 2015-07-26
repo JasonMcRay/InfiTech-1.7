@@ -1,3 +1,45 @@
+v3.1.5
+Mod Updates:
+- Automagy -> 0.26.2
+- BDLib -> 1.9.1.97
+- BuildCraft -> 7.0.17
+- Carpenter's Blocks -> 3.3.7
+- CoFHCore -> 3.0.3-303
+- Computronics -> 1.5.6
+- EnderCore -> 0.0.1.13
+- ExtraCells -> 2.2.73b132 (still disabled)
+- Gendustry -> 1.6.0.109
+- GregTech -> 5.08.25
+- IGW Mod -> 1.1.7-26
+- Industrial Craft 2 -> 2.2.751
+- LogisticsPipes -> 0.9.2.19
+- MagicBees -> 2.3.3
+- ModTweaker 2 -> 0.9.1
+- OpenBlocks -> 1.4.3-648
+- OpenModsLib -> 0.7.3-378
+- PneumaticCraft -> 1.9.10-98
+- Redstone Arsenal -> 1.1.1-89
+- TcNodeTracker -> 1.1.2
+- Thaumic Energistics -> 0.8.10.8
+
+Changes:
+- Fixed IC2 machines GUI being not accessible
+- Removed GT Version of Charged Certus Quartz (was causing inconsistency, already existing Charged Certus Quartz Crystals still in game, but they have no use and no texture)
+- Removed 8x plastic + dye = 8x plastic with the color of the dye, as this was temporary while the Plastic Mixer was changed.
+- Fixed crash on Oil worldgen with GregTech
+- Yellorite Ingot in SAGmill give Yellorite Dust, instead of Uranium Dust
+- Changed recipe for Logistic Drone
+- Drones can be now painted
+- Lowered cost of x-dim StarGate connection
+- Fixed logistics pipes Firewall NPE
+- Fixed cobblestone into sand with Steam Macerators
+- Fixed PneumaticCraft Door Base Camouflage with Chisel 2 blocks
+- Changed JABBA Barrel colors throughout the tiers
+- Enabled Aerial Interface, tiered to MV
+- Boosted Dim Trans energy teleportation
+- Fixed cover interface not being craftable shapelessly into block version
+
+
 v3.1.4
 Forge updated: 10.13.4.1490
 Mod Updates:

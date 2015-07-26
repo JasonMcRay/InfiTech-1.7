@@ -23,6 +23,7 @@ var hammer = <ore:craftingToolHardHammer>;
 var hopper = <minecraft:hopper>;
 var ingotCompressedIron = <PneumaticCraft:ingotIronCompressed>;
 var ingotEnderium = <ore:ingotEnderium>;
+var logicDrone = <PneumaticCraft:logisticDrone>;
 var moltenGlass = <liquid:molten.glass>;
 var omniHopper = <PneumaticCraft:omnidirectionalHopper>;
 var PCB = <PneumaticCraft:printedCircuitBoard>;
@@ -60,6 +61,12 @@ var tubeRepulsion = <PneumaticCraft:plasticElectronTube:10>;
 var tubeSlime = <PneumaticCraft:plasticElectronTube:3>;
 var tubeSquid = <PneumaticCraft:plasticElectronTube>;
 var turbineRotor = <PneumaticCraft:turbineRotor>;
+var pressureChamberPart = <PneumaticCraft:pressureChamberWall:*>;
+var sensorMV = <gregtech:gt.metaitem.01:32691>;
+var emitterMV = <gregtech:gt.metaitem.01:32681>;
+var enderResonator = <EnderIO:itemFrankenSkull:3>;
+var beamCore = <GalacticraftMars:item.itemBasicAsteroids:8>;
+
 
 # Recipes Tweaks
 recipes.remove(compressorElectric);
@@ -78,11 +85,19 @@ recipes.addShaped(gearCompressedIron, [
     [ingotCompressedIron, gearStone, ingotCompressedIron],
     [null, ingotCompressedIron, null]]);
 recipes.remove(aerialInterface);
-NEI.hide(aerialInterface);
-recipes.remove(drone);
+recipes.addShaped(aerialInterface, [
+    [pressureChamberPart, beamCore, pressureChamberPart],
+    [sensorMV, enderResonator, emitterMV],
+    [pressureChamberPart, tubePressureAdv, pressureChamberPart]]);
+recipes.removeShaped(drone);
 recipes.addShaped(drone, [
     [turbineRotor, stickStainlessSteel, turbineRotor],
     [stickStainlessSteel, PCB, stickStainlessSteel],
+    [turbineRotor, stickStainlessSteel, turbineRotor]]);
+recipes.removeShaped(logicDrone);
+recipes.addShaped(logicDrone, [
+    [turbineRotor, stickStainlessSteel, turbineRotor],
+    [stickStainlessSteel, dustRedstone, stickStainlessSteel],
     [turbineRotor, stickStainlessSteel, turbineRotor]]);
 recipes.remove(omniHopper);
 recipes.addShaped(omniHopper, [
