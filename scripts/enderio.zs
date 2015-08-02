@@ -4,6 +4,7 @@ import mods.nei.NEI;
 import mods.gregtech.AlloySmelter;
 import mods.gregtech.ChemicalBathLiq;
 import mods.gregtech.AssemblerLiq;
+import mods.gregtech.Assembler;
 import mods.gregtech.Autoclave;
 import mods.gregtech.BlastFurnace;
 import mods.gregtech.ChemicalReactorLiq;
@@ -81,6 +82,7 @@ var ingotSilicon = <ore:ingotSilicon>;
 var ingotSoularium = <EnderIO:itemAlloy:7>;
 var ingotSteel = <ore:ingotSteel>;
 var ingotVibrantAlloy = <EnderIO:itemAlloy:2>;
+var integratedCircuit3 = <gregtech:gt.integrated_circuit:3>;
 var itemBuffer = <EnderIO:blockBuffer>;
 var itemDustDiamond = <gregtech:gt.metaitem.01:2500>;
 var itemDustEmerald = <gregtech:gt.metaitem.01:2501>;
@@ -93,6 +95,7 @@ var itemIngotDarkSteel = <EnderIO:itemAlloy:6>;
 var itemIngotGold = <minecraft:gold_ingot>;
 var itemIngotIron = <minecraft:iron_ingot>;
 var itemIngotSteel = <gregtech:gt.metaitem.01:11305>;
+var itemRodDarkSteel = <gregtech:gt.metaitem.01:23364>;
 var itemSilicon = <ore:itemSilicon>;
 var killerJoe = <EnderIO:blockKillerJoe>;
 var leather = <minecraft:leather>;
@@ -173,10 +176,12 @@ recipes.addShaped(travelStaff, [
 	[null, ingotDarkSteel, null],
 	[ingotDarkSteel, null, null]]);
 recipes.remove(barsDarkSteel);
-recipes.addShaped(barsDarkSteel * 16, [	
+recipes.addShaped(barsDarkSteel * 8, [	
 	[null, wrench, null],
 	[rodDarkSteel, rodDarkSteel, rodDarkSteel],
 	[rodDarkSteel, rodDarkSteel, rodDarkSteel]]);
+//Assembler.addRecipe(output, input1, input2, durationTicks, euPerTick);
+Assembler.addRecipe(barsDarkSteel, itemRodDarkSteel * 3, integratedCircuit3 * 0, 300, 4);
 recipes.remove(pressurePlateDarkSteel);
 recipes.addShaped(pressurePlateDarkSteel, [
 	[plateDarkSteel, plateDarkSteel, HHammer]]);
