@@ -1,5 +1,7 @@
 // --- Created by Pyure ---
 
+import minetweaker.game.IGame;
+
 # Aliases
 var advancedElectricJetpack = <GraviSuite:advJetpack:27>.withTag({charge: 0});
 var advancedElectricJetpack2 = <GraviSuite:advJetpack:*>;
@@ -35,3 +37,15 @@ recipes.addShaped(advancedNanoChestPlate, [
 		[carbonPlate, advancedElectricJetpack2, carbonPlate],
 		[carbonPlate, nanoBodyArmor, carbonPlate],
 		[cablePlatinum, circuitAdvanced, cablePlatinum]]);
+
+// --- Localization Fixes ---
+game.setLocalization("itemSuperConductorCover.name", "Superconductor Cover");
+game.setLocalization("itemSuperConductor.name", "Superconductor");
+game.setLocalization("itemCoolingCore.name", "Cooling Core");
+game.setLocalization("itemGravitationEngine.name", "Gravitation Engine");
+game.setLocalization("itemMagnetron.name", "Magnetron");
+game.setLocalization("itemVajraCore.name", "Vajra Core");
+game.setLocalization("itemEngineBoost.name", "Engine Booster");
+game.setLocalization("item.sonicLauncher.name", "Sonic Launcher");
+game.setLocalization("RelocatorPortal.name", "Relocator Portal");
+
