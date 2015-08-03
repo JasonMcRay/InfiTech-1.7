@@ -117,7 +117,6 @@ var moltenPhasedGold = <liquid:molten.phasedgold>;
 var moltenPulsatingIron = <liquid:molten.pulsatingiron>;
 var moltenRedstone = <liquid:molten.redstone>;
 var moltenTin = <liquid:molten.tin>;
-var moltenVibrantAlloy = <liquid:molten.vibrantalloy>;
 var motorMV = <gregtech:gt.metaitem.01:32601>;
 var netherQuartz = <minecraft:quartz>;
 var nuggetEnderium = <ore:nuggetEnderium>;
@@ -204,7 +203,7 @@ ChemicalReactorLiq.addRecipe(itemDustEnderium, null, itemDustEnderPearl, null, m
 ChemicalReactorLiq.addRecipe(null, moltenEnderiumBase * 576, itemDustSilver, itemDustPlatinum, moltenTin * 288, 100);
 //Autoclave.addRecipe(output, input, liquid, chance, durationTicks, euPerTick);
 recipes.remove(crystalVibrant);
-Autoclave.addRecipe(crystalVibrant, itemDustEmerald, moltenVibrantAlloy * 128, 10000, 1000, 24);
+Autoclave.addRecipe(crystalVibrant, itemDustEmerald, moltenPhasedGold * 128, 10000, 1000, 24);
 recipes.remove(crystalPulsating);
 Autoclave.addRecipe(crystalPulsating, itemDustDiamond, moltenPulsatingIron * 128, 10000, 1000, 24);
 //AssemblerLiq.addRecipe(output, input1, input2, liquid, durationTicks, euPerTick);
