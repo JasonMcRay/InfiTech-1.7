@@ -130,6 +130,130 @@ found in the core file.
         <itemStack modID="minecraft" itemName="cobblestone" chance="0.15" />
       </output>
     </recipe>
+    <recipe name="DiamondOre" energyCost="3000" >
+      <input>
+        <itemStack oreDictionary="oreDiamond" />
+      </input>
+      <output>
+        <itemStack oreDictionary="crushedDiamond" number="2" />
+        <itemStack oreDictionary="gemChippedDiamond" chance="0.25" />
+      </output>
+    </recipe>
+    <recipe name="EmeraldOre" energyCost="3000" >
+      <input>
+        <itemStack oreDictionary="oreEmerald" />
+      </input>
+      <output>
+        <itemStack oreDictionary="crushedEmerald" number="2" />
+        <itemStack oreDictionary="gemChippedEmerald" number="1" chance="0.25" />
+      </output>
+    </recipe>
+    <recipe name="LapisLazuliOre" energyCost="3000" >
+      <input>
+        <itemStack oreDictionary="oreLapis" />
+      </input>
+      <output>
+        <itemStack oreDictionary="crushedLapis" number="12" />
+        <itemStack oreDictionary="gemLazurite" number="1" chance="0.2" />
+        <itemStack modID="minecraft" itemName="cobblestone" chance="0.15" />
+      </output>
+    </recipe>
+    <recipe name="Quartz Ore" energyCost="7200" >
+      <input>
+        <itemStack oreDictionary="oreQuartz" />
+      </input>
+      <output>
+        <itemStack oreDictionary="crushedNetherQuartz" number="4" />
+        <itemStack oreDictionary="dustNetherrack" chance="0.1" />
+      </output>
+    </recipe>
+  </recipeGroup>
+  
+  <recipeGroup name="Applied Energistics 2" >
+    <recipe name="CertusQuartzOre" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="oreCertusQuartz" />
+      </input>
+      <output>
+        <itemStack oreDictionary="crushedCertusQuartz" number="4" />
+        <itemStack oreDictionary="dustCertusQuartz" chance="0.1" />
+      </output>
+    </recipe>
+  </recipeGroup>
+  
+  <recipeGroup name="Biomes O' Plenty" >
+  <recipe name="RubyOre" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="oreRuby" />
+      </input>
+      <output>
+        <itemStack oreDictionary="crushedRuby" number="2" />
+        <itemStack oreDictionary="gemChippedRuby" number="1" chance="0.25" />
+      </output>
+    </recipe>
+    <recipe name="PeridotOre" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="orePeridot" />
+      </input>
+      <output>
+        <itemStack oreDictionary="crushedPeridot" number="2" />
+        <itemStack oreDictionary="gemChippedPeridot" number="1" chance="0.25" />
+      </output>
+    </recipe>
+    <recipe name="TopazOre" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="oreTopaz" />
+      </input>
+      <output>
+        <itemStack oreDictionary="crushedTopaz" number="2" />
+        <itemStack oreDictionary="gemChippedTopaz" number="1" chance="0.25" />
+      </output>
+    </recipe>
+    <recipe name="TanzaniteOre" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="oreTanzanite" />
+      </input>
+      <output>
+        <itemStack oreDictionary="crushedTanzanite" number="2" />
+        <itemStack oreDictionary="gemChippedTanzanite" number="1" chance="0.25" />
+      </output>
+    </recipe>
+    <recipe name="MalachiteOre" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="oreMalachite" />
+      </input>
+      <output>
+        <itemStack oreDictionary="crushedMalachite" number="2" />
+        <itemStack oreDictionary="gemChippedMalachite" number="1" chance="0.25" />
+      </output>
+    </recipe>
+    <recipe name="SapphireOre" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="oreSapphire" />
+      </input>
+      <output>
+        <itemStack oreDictionary="crushedSapphire" number="2" />
+        <itemStack oreDictionary="gemChippedSapphire" number="1" chance="0.25" />
+      </output>
+    </recipe>
+    <recipe name="AmberOre" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="oreAmber" />
+      </input>
+      <output>
+        <itemStack oreDictionary="crushedAmber" number="2" />
+        <itemStack oreDictionary="gemChippedAmber" number="1" chance="0.25" />
+      </output>
+    </recipe>
+    <recipe name="AmethystOre" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="oreAmethyst" />
+      </input>
+      <output>
+        <itemStack oreDictionary="crushedAmethyst" number="2" />
+        <itemStack oreDictionary="gemChippedAmethyst" number="1" chance="0.25" />
+      </output>
+    </recipe>
   </recipeGroup>
   
   <recipeGroup name="BigReactors">
