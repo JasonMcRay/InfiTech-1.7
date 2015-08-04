@@ -31,6 +31,8 @@ var dustRedstone = <minecraft:redstone>;
 var electricMotorLV = <gregtech:gt.metaitem.01:32600>;
 var electricPistonMV = <gregtech:gt.metaitem.01:32641>;
 var emitterMV = <gregtech:gt.metaitem.01:32681>;
+var enderEye = <minecraft:ender_eye>;
+var endStone = <minecraft:end_stone>;
 var engineBiogas = <Forestry:engine:2>;
 var engineClock = <Forestry:engine:4>;
 var engineElectrical = <Forestry:engine>;
@@ -87,6 +89,7 @@ var tubeBronze = <Forestry:thermionicTubes:2>;
 var tubeCopper = <Forestry:thermionicTubes>;
 var tubeDiamond = <Forestry:thermionicTubes:5>;
 var tubeEmerald = <Forestry:thermionicTubes:9>;
+var tubeEnder = <Forestry:thermionicTubes:12>;
 var tubeGold = <Forestry:thermionicTubes:4>;
 var tubeIron = <Forestry:thermionicTubes:3>;
 var tubeLapis = <Forestry:thermionicTubes:11>;
@@ -148,7 +151,7 @@ recipes.addShaped(rainMaker, [
 	[electricPistonMV, hardenedCasing, electricPistonMV],
 	[gearGtSmallAluminium, emitterMV, gearGtSmallAluminium]]);
 recipes.remove(thermionicFabricator);
-Carpenter.addRecipe(300, moltenRedstone * 1000, [steelScrew, bcTank, steelScrew, icCoil, sturdyCasing, icCoil, steelScrew, electricMotorLV, steelScrew], worktable, thermionicFabricator);
+Carpenter.addRecipe(300, moltenRedstone * 1008, [steelScrew, bcTank, steelScrew, icCoil, sturdyCasing, icCoil, steelScrew, electricMotorLV, steelScrew], worktable, thermionicFabricator);
 recipes.remove(rainTank);
 recipes.addShaped(rainTank, [
 	[plateIron, ringIron, plateIron],
@@ -270,10 +273,12 @@ ThermionicFabricator.removeCasts(tubeRubber);
 ThermionicFabricator.removeCasts(tubeEmerald);
 ThermionicFabricator.removeCasts(tubeApatine);
 ThermionicFabricator.removeCasts(tubeLapis);
+ThermionicFabricator.removeCasts(tubeEnder);
 mods.forestry.Carpenter.removeRecipe(impregnatedStick);
 mods.forestry.Carpenter.removeRecipe(pulpWood);
 recipes.remove(<Forestry:canEmpty>);
 Assembler.addRecipe(<Forestry:canEmpty>, <gregtech:gt.metaitem.01:17057> * 2, <minecraft:glass_pane>, 120, 8);
+AssemblerLiq.addRecipe(tubeEnder * 4, enderEye * 2, endStone * 5, moltenGlass * 72, 64, 32);
 
 // --- Backs ---
 recipes.remove(<Forestry:adventurerBag>);
