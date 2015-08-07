@@ -1,3 +1,38 @@
+v3.1.6
+Mod Updates:
+- Automagy -> 0.26.3
+- BiblioCraft -> 1.10.5
+- EnderCore -> 0.0.1.14
+- OpenBlocks -> 1.4.4-652
+- OpenModsLib -> 0.8-382
+- Pam's Harvestcraft -> 1.7.10j
+- PneumaticCraft -> 1.9.13-101
+- BDLib -> 1.9.2.100
+- BuildCraft -> 7.0.19
+- BuildCraft Compat -> 7.0.10
+- GregTech -> 5.08.26
+- LogisticsPipes -> 0.9.2.23
+- NEIAddons -> 1.12.12.37
+- Thaumic Energistics -> 0.8.10.10
+
+New Mods:
+- X.A.C.T.
+
+Changes/fixes:
+- Removed remaining recipe in Wiremill for Quartz Fiber still looking for GT Changed Certus Quartz
+- Enabled vacuum hopper with changed recipe
+- Moved Ender Tubes from Thermionic Fabricator into Assembler
+- Thermionic Fabricator recipe requires 1008mB of molten redstone (instead of 1000mB)
+- Added recipe for eIO Dark Steel Bars into Assembler
+- Changed ammount of bars given per hand-crafting from 16 to 8
+- Conduit Binder now requires Fluid Soldifier => Wet Concrete + Mold (Ball)
+- Removed crafting of Binder Composites.
+- Added option to extract Wet Concrete from already crafted Binder Composites. 1:1 ratio
+- Fixed localization of some Gravisuite crafting parts
+- Changed recipe for Vibrant Crystal to require Phased Gold. Molten Vibrant Alloy will be most likely removed on GT side completely since these two are totally the same fluid.
+- Fluid Conduits recipe changed, massively. They are now in-line with GT Pipes.
+- Increased Extraction and I/O Rates of Pressurized and EnderFluid Conduits. Pressurized is now 120mB/t with max of 480 passthrough. EnderFluid is 300mB/t with max of 1200 passthrough.
+
 v3.1.5
 Mod Updates:
 - Automagy -> 0.26.2
