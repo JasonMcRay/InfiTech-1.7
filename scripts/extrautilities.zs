@@ -55,6 +55,12 @@ var magicalWood = <ExtraUtilities:decorativeBlock1:8>;
 var ingotGold = <ore:ingotGold>;
 var bookEnchanted = <ore:bookEnchanted>;
 var bookshelf = <minecraft:bookshelf>;
+var enderReceiver = <ExtraUtilities:nodeUpgrade:6>;
+var enderTransmitter = <ExtraUtilities:nodeUpgrade:5>;
+
+# -- Block/item Removal
+recipes.remove(enderReceiver);
+recipes.remove(enderTransmitter);
 
 
 # ---Recipe tweaks---
