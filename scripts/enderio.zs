@@ -151,6 +151,10 @@ var travelAnchor = <EnderIO:blockTravelAnchor>;
 var travelStaff = <EnderIO:itemTravelStaff:16>;
 var wrench = <ore:craftingToolWrench>;
 var wrenchYeta = <EnderIO:itemYetaWrench>;
+var MEConduit = <EnderIO:itemMEConduit>;
+var MEConduitDense = <EnderIO:itemMEConduit:1>;
+var MECable = <appliedenergistics2:item.ItemMultiPart:16>;
+var MECableDense = <appliedenergistics2:item.ItemMultiPart:76>;
 
 # Recipe fixes
 recipes.remove(ballDarkSteel);
@@ -327,6 +331,16 @@ recipes.addShaped(conduitItem * 2, [
     [pipeMediumElectrum, nuggetPulsatingIron, pipeMediumElectrum],
     [null, conduitBinder, null]]);
 FluidExtractor.addRecipe(null, binderComposite, moltenConcrete * 36, 10000, 24, 24);
+recipes.remove(MEConduit);
+recipes.addShaped(MEConduit * 3, [
+    [conduitBinder, conduitBinder, conduitBinder],
+    [MECable, MECable, MECable],
+    [conduitBinder, conduitBinder, conduitBinder]]);
+recipes.remove(MEConduitDense);
+recipes.addShaped(MEConduitDense * 3, [
+    [conduitBinder, conduitBinder, conduitBinder],
+    [MECableDense, MECableDense, MECableDense],
+    [conduitBinder, conduitBinder, conduitBinder]]);
     
 # Specialties
 var EIskullEnderman = <EnderIO:blockEndermanSkull>;
