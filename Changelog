@@ -1,3 +1,27 @@
+v3.1.6.1
+Mod Updates:
+- BluePower -> 0.2.962
+- EnderZoo -> 1.0.13.30
+- NEIIntegration -> 1.0.12
+- PneumaticCraft -> 1.9.15-104
+- BuildCraft -> 7.0.20
+- BuildCraft Compat -> 7.0.11
+- IndustrialCraft 2 -> 2.2.760
+- LogisticsPipes -> 0.9.2.31
+- MalisisCore -> 0.12.7
+- MalisisDoors -> 1.9.4
+
+New Mods:
+- Technomagi (currently disabled, can be enabled but will cause huge rendering spams in logs)
+
+Changes:
+- Removed Thermionic Tube requirement inside Gearbox, Hatch, Valve and Controller recipes. Also changed requirement of Steel Gears to Small Steal Gears.
+- Transfer nodes and pipes enabled, but recipes still doesnt show for some reason. Might have missed something or its broken :(
+- Concussion Creepers no longer TP players to void
+- Fixed crash with Toggle Latch
+- Changed recipes for ME Conduits.
+- Added cleaning process to clear colored ME cables back to non colored ones inside Chemical Bath + Chlorine.
+
 v3.1.6
 Beta Specific:
 - EnderIO -> 2.3.0.406_beta
