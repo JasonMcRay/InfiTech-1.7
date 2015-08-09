@@ -21,6 +21,7 @@ Changes:
 - Fixed crash with Toggle Latch
 - Changed recipes for ME Conduits.
 - Added cleaning process to clear colored ME cables back to non colored ones inside Chemical Bath + Chlorine.
+- Fixed crash with IC2 Fluid Regulator
 
 v3.1.6
 Beta Specific:
