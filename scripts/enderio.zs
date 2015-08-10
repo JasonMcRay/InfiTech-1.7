@@ -326,7 +326,7 @@ recipes.remove(binderComposite);
 furnace.remove(conduitBinder);
 FluidSolidifier.addRecipe(conduitBinder, moldBall * 0, moltenConcrete * 36, 128, 4);
 recipes.remove(conduitItem);
-recipes.addShaped(conduitItem * 2, [
+recipes.addShaped(conduitItem * 6, [
     [null, conduitBinder, null],
     [pipeMediumElectrum, nuggetPulsatingIron, pipeMediumElectrum],
     [null, conduitBinder, null]]);
