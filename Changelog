@@ -1,3 +1,23 @@
+v3.1.6.2
+Mod Updates:
+- Bibliocraft -> 1.10.6
+- EnderCore -> 0.0.1.17_alpha
+- EnderIO -> 2.3.0.407
+- EnderZoo -> 1.0.14.31
+- PneumaticCraft -> 1.10.4-117
+- Railcraft -> 9.7.0.0
+- IndustrialCraft 2 -> 2.2.761
+- LogisticsPipes -> 0.9.2.33
+
+New Mods:
+- INpureCore
+
+Changes:
+- Raised ammount of Item Conduits per craft (2 -> 6), since the crafting recipe uses Medium Pipes and not small ones. keeping it in line with other Conduit recipes (fluid)
+- Lowered Chance that Dire Slime will be spawned (65% -> 20%)
+- Massively culled NEI entries (around 200 pages are gone)
+
+
 v3.1.6.1
 Mod Updates:
 - BluePower -> 0.2.962
