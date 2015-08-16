@@ -1,3 +1,33 @@
+v3.1.7b
+Mod Updates:
+- EnderZoo -> 1.0.15.32
+- Galacticraft -> 3.0.12.357
+- HardcoreEnderExpansion -> 1.8.3
+- ModTweaker 2 -> 0.9.2
+- OpenComputers -> 1.5.15.31
+- PneumaticCraft -> 1.10.5-118
+- BDLib -> 1.9.2.102
+- Gendustry -> 1.6.0.118
+- GregTech -> 5.08.27
+- IndustrialCraft 2 -> 2.2.763
+
+Changes:
+- Large Turbine and Large Heat Exchanger overhaul
+- Bronze Dust and Advanced Circuit Achievements now use OreDict
+- Fixed Molten VibrantAlloy and Molten PulsatingIron recipes
+- Added tooltips for auto-outpud guid buttons
+- NEI Support for UUMatter Recipes
+- Fixed nether quartz duplication with Lathe.
+- Also some items now cant be crafted using Pure Nether Quartz due to this.
+- Transfer Node and pipe recipes added and tiered. Nodes require QED crafting.
+- Dimension transceiver energy cost raised from stupidly low to reasonable high in comparison to other teleportation methods.
+- Lowered Transceiver cost for teleporting direct fluids to 100RF/t. To save evergy you should first put the liquid into some sort of Fluid Container, and then transfer that.
+- Disabled Dire Slimes until their spawning work properly with GT shovels.
+- Fixed Ender Dragon destroying protected blocks
+- Fixed HEE Curses not getting used when placed on blocks
+- Fixed Nutrient biome bonus being always 0 for IC2 crops
+- Fixed fueling of Tier 3 Rockets
+
 v3.1.6.2
 Mod Updates:
 - Bibliocraft -> 1.10.6
