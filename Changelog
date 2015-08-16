@@ -1,15 +1,29 @@
-v3.1.7b
+v3.1.7
 Mod Updates:
+- BDLib -> 1.9.2.102
+- Bibliocraft -> 1.10.6
+- BluePower -> 0.2.962
+- BuildCraft -> 7.0.20
+- BuildCraft Compat -> 7.0.11
+- EnderCore -> 0.0.1.17_alpha
+- EnderIO -> 2.3.0.407
 - EnderZoo -> 1.0.15.32
 - Galacticraft -> 3.0.12.357
-- HardcoreEnderExpansion -> 1.8.3
-- ModTweaker 2 -> 0.9.2
-- OpenComputers -> 1.5.15.31
-- PneumaticCraft -> 1.10.5-118
-- BDLib -> 1.9.2.102
 - Gendustry -> 1.6.0.118
 - GregTech -> 5.08.27
+- HardcoreEnderExpansion -> 1.8.3
 - IndustrialCraft 2 -> 2.2.763
+- LogisticsPipes -> 0.9.2.33
+- MalisisCore -> 0.12.7
+- MalisisDoors -> 1.9.4
+- ModTweaker 2 -> 0.9.2
+- NEIIntegration -> 1.0.12
+- OpenComputers -> 1.5.15.31
+- PneumaticCraft -> 1.10.5-118
+- Railcraft -> 9.7.0.0
+
+New Mods:
+- INpureCore
 
 Changes:
 - Large Turbine and Large Heat Exchanger overhaul
@@ -19,6 +33,7 @@ Changes:
 - NEI Support for UUMatter Recipes
 - Fixed nether quartz duplication with Lathe.
 - Also some items now cant be crafted using Pure Nether Quartz due to this.
+- Transfer nodes and pipes enabled
 - Transfer Node and pipe recipes added and tiered. Nodes require QED crafting.
 - Dimension transceiver energy cost raised from stupidly low to reasonable high in comparison to other teleportation methods.
 - Lowered Transceiver cost for teleporting direct fluids to 100RF/t. To save evergy you should first put the liquid into some sort of Fluid Container, and then transfer that.
@@ -27,58 +42,17 @@ Changes:
 - Fixed HEE Curses not getting used when placed on blocks
 - Fixed Nutrient biome bonus being always 0 for IC2 crops
 - Fixed fueling of Tier 3 Rockets
-
-v3.1.6.2
-Mod Updates:
-- Bibliocraft -> 1.10.6
-- EnderCore -> 0.0.1.17_alpha
-- EnderIO -> 2.3.0.407
-- EnderZoo -> 1.0.14.31
-- PneumaticCraft -> 1.10.4-117
-- Railcraft -> 9.7.0.0
-- IndustrialCraft 2 -> 2.2.761
-- LogisticsPipes -> 0.9.2.33
-
-New Mods:
-- INpureCore
-
-Changes:
 - Raised ammount of Item Conduits per craft (2 -> 6), since the crafting recipe uses Medium Pipes and not small ones. keeping it in line with other Conduit recipes (fluid)
-- Lowered Chance that Dire Slime will be spawned (65% -> 20%)
-- Massively culled NEI entries (around 200 pages are gone)
-
-
-v3.1.6.1
-Mod Updates:
-- BluePower -> 0.2.962
-- EnderZoo -> 1.0.13.30
-- NEIIntegration -> 1.0.12
-- PneumaticCraft -> 1.9.15-104
-- BuildCraft -> 7.0.20
-- BuildCraft Compat -> 7.0.11
-- IndustrialCraft 2 -> 2.2.760
-- LogisticsPipes -> 0.9.2.31
-- MalisisCore -> 0.12.7
-- MalisisDoors -> 1.9.4
-
-New Mods:
-- Technomagi (currently disabled, can be enabled but will cause huge rendering spams in logs)
-
-Changes:
+- Massively culled NEI entries
 - Removed Thermionic Tube requirement inside Gearbox, Hatch, Valve and Controller recipes. Also changed requirement of Steel Gears to Small Steal Gears.
-- Transfer nodes and pipes enabled, but recipes still doesnt show for some reason. Might have missed something or its broken :(
 - Concussion Creepers no longer TP players to void
 - Fixed crash with Toggle Latch
 - Changed recipes for ME Conduits.
 - Added cleaning process to clear colored ME cables back to non colored ones inside Chemical Bath + Chlorine.
 - Fixed crash with IC2 Fluid Regulator
-
-v3.1.6
-Beta Specific:
-- EnderIO -> 2.3.0.406_beta
-- EnderCOre -> 0.0.1.15_alpha
 - SAG Mill is better for processing Gem Ores if you want more gem dusts
 
+v3.1.6
 Mod Updates:
 - Automagy -> 0.26.3
 - BiblioCraft -> 1.10.5
