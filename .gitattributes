@@ -16,3 +16,4 @@
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
 Changelog merge=ours
+README.md merge=ours
