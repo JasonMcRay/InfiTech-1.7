@@ -113,7 +113,7 @@ var moltenEnderiumBase = <liquid:molten.enderiumbase>;
 var moltenEnergeticAlloy = <liquid:molten.energeticalloy>;
 var moltenGlowstone = <liquid:molten.glowstone>;
 var moltenChlorine = <liquid:chlorine>;
-var moltenPhasedGold = <liquid:molten.phasedgold>;
+var moltenVibrantAlloy = <liquid:molten.vibrantalloy>;
 var moltenPulsatingIron = <liquid:molten.pulsatingiron>;
 var moltenRedstone = <liquid:molten.redstone>;
 var moltenTin = <liquid:molten.tin>;
@@ -207,7 +207,7 @@ ChemicalReactorLiq.addRecipe(itemDustEnderium, null, itemDustEnderPearl, null, m
 ChemicalReactorLiq.addRecipe(null, moltenEnderiumBase * 576, itemDustSilver, itemDustPlatinum, moltenTin * 288, 100);
 //Autoclave.addRecipe(output, input, liquid, chance, durationTicks, euPerTick);
 recipes.remove(crystalVibrant);
-Autoclave.addRecipe(crystalVibrant, itemDustEmerald, moltenPhasedGold * 128, 10000, 1000, 24);
+Autoclave.addRecipe(crystalVibrant, itemDustEmerald, moltenVibrantAlloy * 128, 10000, 1000, 24);
 recipes.remove(crystalPulsating);
 Autoclave.addRecipe(crystalPulsating, itemDustDiamond, moltenPulsatingIron * 128, 10000, 1000, 24);
 //AssemblerLiq.addRecipe(output, input1, input2, liquid, durationTicks, euPerTick);
@@ -218,7 +218,7 @@ AssemblerLiq.addRecipe(capacitorDualLayer, capacitorBasic * 2, GTDustCoal, molte
 AssemblerLiq.addRecipe(capacitorDualLayer, capacitorBasic * 2, IC2DustCoal, moltenEnergeticAlloy * 864, 50, 40);
 AssemblerLiq.addRecipe(capacitorDualLayer, capacitorBasic * 2, eIODustCoal, moltenEnergeticAlloy * 864, 50, 40);
 recipes.remove(capacitorOctadic);
-AssemblerLiq.addRecipe(capacitorOctadic, capacitorDualLayer * 2, blockGlowstone, moltenPhasedGold * 864, 50, 40);
+AssemblerLiq.addRecipe(capacitorOctadic, capacitorDualLayer * 2, blockGlowstone, moltenVibrantAlloy * 864, 50, 40);
 //AlloySmelter.addRecipe(output, input1, input2, durationTicks, euPerTick);
 AlloySmelter.addRecipe(ingotEnergeticAlloy, itemIngotGold, blazePowder, 100, 16);
 AlloySmelter.addRecipe(ingotVibrantAlloy, ingotEnergeticAlloy, enderPearl, 100, 16);
