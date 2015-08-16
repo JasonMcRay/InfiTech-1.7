@@ -5,8 +5,12 @@ import mods.ic2.Compressor;
 import mods.gregtech.Boxing;
 
 # Aliases
+var BCQuarry = <BuildCraft|Builders:machineBlock>;
 var bedrockiumDrum = <ExtraUtilities:drum:1>;
 var blockBedrockium = <ExtraUtilities:block_bedrockium>;
+var blockEmerald = <ore:blockEmerald>;
+var bookEnchanted = <ore:bookEnchanted>;
+var bookshelf = <minecraft:bookshelf>;
 var cauldron = <minecraft:cauldron>;
 var chestIron = <IronChest:BlockIronChest>;
 var cobblestone = <minecraft:cobblestone>;
@@ -18,22 +22,38 @@ var cobblestoneCompressed5 = <ExtraUtilities:cobblestone_compressed:4>;
 var cobblestoneCompressed6 = <ExtraUtilities:cobblestone_compressed:5>;
 var cobblestoneCompressed7 = <ExtraUtilities:cobblestone_compressed:6>;
 var cobblestoneCompressed8 = <ExtraUtilities:cobblestone_compressed:7>;
+var conduitBinder = <EnderIO:itemMaterial:1>;
 var dirt = <minecraft:dirt>;
 var dirtCompressed = <ExtraUtilities:cobblestone_compressed:8>;
 var dirtCompressed2 = <ExtraUtilities:cobblestone_compressed:9>;
 var dirtCompressed3 = <ExtraUtilities:cobblestone_compressed:10>;
 var dirtCompressed4 = <ExtraUtilities:cobblestone_compressed:11>;
+var dustRedstone = <ore:dustRedstone>;
+var enderCore = <ExtraUtilities:decorativeBlock1:11>;
 var enderInfusedObsidian = <ExtraUtilities:decorativeBlock1:1>;
 var enderPearl = <minecraft:ender_pearl>;
+var enderPump = <ExtraUtilities:enderThermicPump>;
+var enderQuarry = <ExtraUtilities:enderQuarry>;
+var enderReceiver = <ExtraUtilities:nodeUpgrade:6>;
+var enderTransmitter = <ExtraUtilities:nodeUpgrade:5>;
 var EUCompressedAny = <ExtraUtilities:cobblestone_compressed:*>;
 var filingCabinet = <ExtraUtilities:filing>;
 var gravel = <minecraft:gravel>;
 var gravelCompressed = <ExtraUtilities:cobblestone_compressed:12>;
 var gravelCompressed2 = <ExtraUtilities:cobblestone_compressed:13>;
 var ingotBedrockium = <ExtraUtilities:bedrockiumIngot>;
+var ingotGold = <ore:ingotGold>;
 var ironDrum = <ExtraUtilities:drum>;
+var jukebox = <minecraft:jukebox>;
+var magicalWood = <ExtraUtilities:decorativeBlock1:8>;
 var moltenEnderium = <liquid:molten.enderium>;
+var nodeEnergy = <ExtraUtilities:extractor_base:12>;
+var nodeHyperEnergy = <ExtraUtilities:extractor_base:13>;
 var obsidian = <minecraft:obsidian>;
+var pipeMediumElectrum = <ore:pipeMediumElectrum>;
+var pipeSmallSteel = <ore:pipeSmallSteel>;
+var pipeTransfer = <ExtraUtilities:pipes>;
+var plankWood = <ore:plankWood>;
 var plateSteel = <ore:plateSteel>;
 var pressurePlateWeightedHeavy = <minecraft:heavy_weighted_pressure_plate>;
 var pressurePlateWeightedLight = <minecraft:light_weighted_pressure_plate>;
@@ -43,24 +63,13 @@ var sand = <minecraft:sand>;
 var sandCompressed = <ExtraUtilities:cobblestone_compressed:14>;
 var sandCompressed2 = <ExtraUtilities:cobblestone_compressed:15>;
 var schematic3x3 = <gregtech:gt.metaitem.01:32497>;
-var enderQuarry = <ExtraUtilities:enderQuarry>;
-var enderPump = <ExtraUtilities:enderThermicPump>;
-var BCQuarry = <BuildCraft|Builders:machineBlock>;
-var enderCore = <ExtraUtilities:decorativeBlock1:11>;
-var blockEmerald = <ore:blockEmerald>;
-var plankWood = <ore:plankWood>;
 var tradingPost = <ExtraUtilities:trading_post>;
-var jukebox = <minecraft:jukebox>;
-var magicalWood = <ExtraUtilities:decorativeBlock1:8>;
-var ingotGold = <ore:ingotGold>;
-var bookEnchanted = <ore:bookEnchanted>;
-var bookshelf = <minecraft:bookshelf>;
-var enderReceiver = <ExtraUtilities:nodeUpgrade:6>;
-var enderTransmitter = <ExtraUtilities:nodeUpgrade:5>;
 
 # -- Block/item Removal
 recipes.remove(enderReceiver);
 recipes.remove(enderTransmitter);
+recipes.remove(nodeEnergy);
+recipes.remove(nodeHyperEnergy);
 
 
 # ---Recipe tweaks---
@@ -91,8 +100,12 @@ recipes.addShaped(filingCabinet, [
     [plateSteel, chestIron, plateSteel]]);
 recipes.addShaped(enderQuarry, [
 	[enderPump, BCQuarry, enderCore]]);
+recipes.remove(pipeTransfer);
+recipes.addShaped(pipeTransfer * 2, [
+    [conduitBinder, pipeSmallSteel, conduitBinder],
+    [pipeMediumElectrum, dustRedstone, pipeMediumElectrum],
+    [conduitBinder, pipeSmallSteel, conduitBinder]]);
 	
-
 # ---GT Integration---
 //ChemicalBathLiq.addRecipe(outpu1, output2, output3, input, liquidInput, chance1, chance2, chance3, durationTicks, euPerTick);
 recipes.remove(enderInfusedObsidian);
