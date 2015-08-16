@@ -26,7 +26,7 @@ var plankOak = <minecraft:planks>;
 potionHealing.add(<minecraft:potion:8197>);
 potionHealing.add(<minecraft:potion:8261>);
 potionHealing.add(<minecraft:potion:8229>);
-gemNetherQuartz.add(<appliedenergistics2:item.ItemMultiMaterial:11>);
+//gemNetherQuartz.add(<appliedenergistics2:item.ItemMultiMaterial:11>);
 
 # Recipes Tweaks
 recipes.remove(chestEnder);
