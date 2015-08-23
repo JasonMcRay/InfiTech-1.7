@@ -967,3 +967,6 @@ oreDict.oreIlmenite.add(<GalacticraftMars:tile.asteroidsBlock:4>);
 
 //Desh to Ore Dict
 oreDict.oreDesh.add(<GalacticraftMars:tile.mars:2>);
+
+//Raw Silicon tio Ore Dict
+oreDict.dustSilicon.add(<GalacticraftCore:item.basicItem:2>);
