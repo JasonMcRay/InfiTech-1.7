@@ -720,19 +720,19 @@ recipes.addShaped(<GalacticraftCore:item.basicItem:19>, [
 //Walk way
 recipes.addShaped(<GalacticraftMars:tile.walkway> * 2, [
 [DeshPlate, DeshPlate, DeshPlate],
-[null, <GalacticraftMars:tile.mars:8>, null],
+[null, <ore:blockDesh>, null],
 [DeshPlate, DeshPlate, DeshPlate]]);
 
 // Walk way Aluminum
 recipes.addShaped(<GalacticraftMars:tile.walkwayWire> * 2, [
 [DeshPlate, DeshPlate, DeshPlate],
-[<GalacticraftCore:tile.aluminumWire:1>, <GalacticraftMars:tile.mars:8>, <GalacticraftCore:tile.aluminumWire:1>],
+[<GalacticraftCore:tile.aluminumWire:1>, <ore:blockDesh>, <GalacticraftCore:tile.aluminumWire:1>],
 [DeshPlate, DeshPlate, DeshPlate]]);
 
 // Walk way Oxygen
 recipes.addShaped(<GalacticraftMars:tile.walkwayOxygenPipe> * 2, [
 [DeshPlate, DeshPlate, DeshPlate],
-[<GalacticraftCore:tile.oxygenPipe>, <GalacticraftMars:tile.mars:8>, <GalacticraftCore:tile.oxygenPipe>],
+[<GalacticraftCore:tile.oxygenPipe>, <ore:blockDesh>, <GalacticraftCore:tile.oxygenPipe>],
 [DeshPlate, DeshPlate, DeshPlate]]);
 
 //Thermal Cloth
@@ -775,7 +775,7 @@ recipes.addShaped(<GalacticraftMars:item.itemBasicAsteroids:8>, [
 recipes.addShaped(<GalacticraftMars:tile.beamReflector>, [
 [DeshRing, <GalacticraftMars:item.itemBasicAsteroids:8>, DeshRing],
 [null, <ore:stickDesh>, null],
-[DeshPlate, <GalacticraftMars:tile.mars:8>, DeshPlate]]);
+[DeshPlate, <ore:blockDesh>, DeshPlate]]);
 
 //Energy Beam Receiver
 recipes.addShaped(<GalacticraftMars:tile.beamReceiver>, [
@@ -907,14 +907,6 @@ Canner.addRecipe(<GalacticraftCore:item.basicItem:16>, <minecraft:carrot> * 8, <
 Canner.addRecipe(<GalacticraftCore:item.basicItem:17>,<minecraft:melon> * 8, <GalacticraftCore:item.canister>, 800, 1);
 Canner.addRecipe(<GalacticraftCore:item.basicItem:18>, <minecraft:potato> * 16, <GalacticraftCore:item.canister>, 800, 1);
 
-// --- Compressor Recipes ---
-
-//Solid Meteoric Iron
-Compressor.addRecipe(<GalacticraftCore:tile.gcBlockCore:12>, <gregtech:gt.metaitem.01:11340> * 9);
-
-//Desh Block
-Compressor.addRecipe(<GalacticraftMars:tile.mars:8>, <gregtech:gt.metaitem.01:11884> * 9);
-
 //Extruder Recipes
 
 //Oxygen Pipe
@@ -970,3 +962,9 @@ oreDict.oreDesh.add(<GalacticraftMars:tile.mars:2>);
 
 //Raw Silicon tio Ore Dict
 oreDict.dustSilicon.add(<GalacticraftCore:item.basicItem:2>);
+
+//Desh Block to Ore Dict
+oreDict.blockDesh.add(<GalacticraftMars:tile.mars:8>);
+
+//Meteoric Iron Block to Ore Dict
+oreDict.blockMeteoricIron.add(<GalacticraftCore:tile.gcBlockCore:12>);

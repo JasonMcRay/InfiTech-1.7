@@ -91,9 +91,6 @@ recipes.addShaped(capacitorLarge, [
     [plateChrome, plateChrome, plateChrome],
     [ingotRubber, ingotRubber, ingotRubber],
     [plateChrome, plateChrome, plateChrome]]);
-recipes.remove(blockNaqAlloy);
-Compressor.addRecipe(blockNaqAlloy, ingotNaqAlloySG * 9);
-Compressor.addRecipe(blockNaqAlloy, ingotNaqAlloyGT * 9);
 recipes.addShapeless(ingotNaqAlloyGT * 9, [blockNaqAlloy]);
 recipes.remove(stargatePowerIC2);
 recipes.addShaped(stargatePowerIC2, [
@@ -119,3 +116,6 @@ ChemicalReactor.addRecipe(dustNaqAlloy, dustNaquadah, dustIron, 12000);
 # Assembler.addRecipe(crystalSGCore, lapotronChip, lensOpal, 6000, 32);
 # Assembler.addRecipe(crystalSGCore, lapotronChip, lensBlueTopaz, 6000, 32);
 # Assembler.addRecipe(crystalSGCore, lapotronChip, lensAqua, 6000, 32);
+
+//Naq Alloy Block to Oredict
+oreDict.blockNaquadahAlloy.add(blockNaqAlloy);
