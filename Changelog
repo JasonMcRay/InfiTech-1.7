@@ -1,3 +1,29 @@
+v3.1.7.1
+Mod Updates:
+- CodeChickenCore -> 1.0.7.47
+- EnderCore -> 0.1.0.19_beta
+- PneumaticCraft -> 1.11.0-120
+- Thaumic Tinkerer -> 2.5-508
+- BuildCraft -> 7.0.21
+- GregTech -> 5.09.01
+- Industrial Craft 2 -> 2.2.765
+- Malisis Core -> 0.12.8
+
+Changes:
+- Removed few recipe script entries, since they are now native to GT
+- Raw Silicon made Ore dicted to Silicon Dust (silicon ore is spawning in GC Dimensions)
+- Naquadah is generating only in Asteroid (galacticraft) dimension
+- Plutonium ore generation completely disabled
+- Uranium 235 ore generation added
+- Regenerated WorldGeneration.cfg file, so if you will find any inconsistencies with OreGen Guide, let me know, Thanks you.
+- New GT Alloys
+- Rubber creation has been changed.
+- Changed crafting of cables. (Copper Cables crafting is missing "early recipe", known and reported)
+- Raised efficiency of Generators
+- Fixed bug with Advanced Miner not charging
+- Vanilla Furnaces can be powered by conencting heat source (PneumaticCraft)
+
+
 v3.1.7b
 Mod Updates:
 - EnderZoo -> 1.0.15.32
