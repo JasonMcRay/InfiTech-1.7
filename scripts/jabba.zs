@@ -1,15 +1,5 @@
 // --- Created by Jason McRay --- 
 
-import mods.nei.NEI;
-import mods.gregtech.ChemicalReactor;
-import mods.gregtech.Wiremill;
-import mods.gregtech.Assembler;
-import mods.gregtech.ImplosionCompressor;
-import mods.gregtech.BlastFurnace;
-import mods.ic2.Macerator;
-import mods.ic2.Compressor;
-import mods.gregtech.Boxing;
-
 # Aliases
 var chestEnder = <minecraft:ender_chest>;
 var dolly = <JABBA:mover>;

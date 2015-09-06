@@ -1,4 +1,5 @@
-import mods.gregtech.AssemblerLiq;
+// --- Created by Jason McRay --- 
+
 import mods.gregtech.Assembler;
 
 # Aliases
@@ -28,7 +29,7 @@ recipes.addShaped(recipeChip * 4, [
     [ingotIron, redstone],
     [nuggetGold, nuggetGold]]);
 recipes.remove(xactPad);
-//AssemblerLiq.addRecipe(output, input1, input2, liquid, durationTicks, euPerTick);
-AssemblerLiq.addRecipe(xactPad, recipeChip, craftingCover, moltenTin * 144, 800, 16);
-AssemblerLiq.addRecipe(xactPad, recipeChip, craftingCover, moltenLead * 288, 800, 16);
-AssemblerLiq.addRecipe(xactPad, recipeChip, craftingCover, moltenSolderingAlloy * 72, 800, 16);
+//Assembler.addRecipe(output, input1, input2, liquid, durationTicks, euPerTick);
+Assembler.addRecipe(xactPad, recipeChip, craftingCover, moltenTin * 144, 800, 16);
+Assembler.addRecipe(xactPad, recipeChip, craftingCover, moltenLead * 288, 800, 16);
+Assembler.addRecipe(xactPad, recipeChip, craftingCover, moltenSolderingAlloy * 72, 800, 16);

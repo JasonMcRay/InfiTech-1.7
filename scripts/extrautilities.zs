@@ -1,8 +1,9 @@
 // --- Created by Jason McRay --- 
 
-import mods.gregtech.ChemicalBathLiq;
+import mods.gregtech.ChemicalBath;
 import mods.ic2.Compressor;
-import mods.gregtech.Boxing;
+import mods.gregtech.Packer;
+import mods.gregtech.Unpacker;
 
 # Aliases
 var BCQuarry = <BuildCraft|Builders:machineBlock>;
@@ -107,54 +108,54 @@ recipes.addShaped(pipeTransfer * 2, [
     [conduitBinder, pipeSmallSteel, conduitBinder]]);
 	
 # ---GT Integration---
-//ChemicalBathLiq.addRecipe(outpu1, output2, output3, input, liquidInput, chance1, chance2, chance3, durationTicks, euPerTick);
+//ChemicalBath.addRecipe(outpu1, output2, output3, input, liquidInput, chance1, chance2, chance3, durationTicks, euPerTick);
 recipes.remove(enderInfusedObsidian);
-ChemicalBathLiq.addRecipe(enderInfusedObsidian, null, null, obsidian, moltenEnderium * 36, 10000, 0, 0, 200, 8);
+ChemicalBath.addRecipe(enderInfusedObsidian, null, null, obsidian, moltenEnderium * 36, 10000, 0, 0, 200, 8);
 //Compressor.addRecipe(output, input);
 recipes.remove(blockBedrockium);
 Compressor.addRecipe(blockBedrockium, ingotBedrockium * 9);
 
 # Compressed Cobble
-//Boxing.addBoxingRecipe(output, input1, input2, durationTicks, euPerTick);
-//Boxing.addUnboxingRecipe(output1, output2, input, durationTicks, euPerTick);
+//Packer.addRecipe(output, input1, input2, durationTicks, euPerTick);
+//Unpacker.addRecipe(output1, output2, input, durationTicks, euPerTick);
 recipes.remove(EUCompressedAny);
 recipes.removeShaped(cobblestone, [[EUCompressedAny]]);
 recipes.removeShaped(dirt, [[EUCompressedAny]]);
 recipes.removeShaped(sand, [[EUCompressedAny]]);
 recipes.removeShaped(gravel, [[EUCompressedAny]]);
-Boxing.addBoxingRecipe(cobblestoneCompressed, cobblestone * 9, schematic3x3 * 0, 16, 1);
-Boxing.addBoxingRecipe(cobblestoneCompressed2, cobblestoneCompressed * 9, schematic3x3 * 0, 32, 8);
-Boxing.addBoxingRecipe(cobblestoneCompressed3, cobblestoneCompressed2 * 9, schematic3x3 * 0, 64, 16);
-Boxing.addBoxingRecipe(cobblestoneCompressed4, cobblestoneCompressed3 * 9, schematic3x3 * 0, 128, 32);
-Boxing.addBoxingRecipe(cobblestoneCompressed5, cobblestoneCompressed4 * 9, schematic3x3 * 0, 256, 64);
-Boxing.addBoxingRecipe(cobblestoneCompressed6, cobblestoneCompressed5 * 9, schematic3x3 * 0, 256, 128);
-Boxing.addBoxingRecipe(cobblestoneCompressed7, cobblestoneCompressed6 * 9, schematic3x3 * 0, 256, 512);
-Boxing.addBoxingRecipe(cobblestoneCompressed8, cobblestoneCompressed7 * 9, schematic3x3 * 0, 256, 512);
-Boxing.addUnboxingRecipe(cobblestone * 9, null, cobblestoneCompressed, 16, 1);
-Boxing.addUnboxingRecipe(cobblestoneCompressed * 9, null, cobblestoneCompressed2, 32, 8);
-Boxing.addUnboxingRecipe(cobblestoneCompressed2 * 9, null, cobblestoneCompressed3, 64, 16);
-Boxing.addUnboxingRecipe(cobblestoneCompressed3 * 9, null, cobblestoneCompressed4, 128, 32);
-Boxing.addUnboxingRecipe(cobblestoneCompressed4 * 9, null, cobblestoneCompressed5, 256, 64);
-Boxing.addUnboxingRecipe(cobblestoneCompressed5 * 9, null, cobblestoneCompressed6, 256, 128);
-Boxing.addUnboxingRecipe(cobblestoneCompressed6 * 9, null, cobblestoneCompressed7, 256, 512);
-Boxing.addUnboxingRecipe(cobblestoneCompressed7 * 9, null, cobblestoneCompressed8, 256, 512);
+Packer.addRecipe(cobblestoneCompressed, cobblestone * 9, schematic3x3 * 0, 16, 1);
+Packer.addRecipe(cobblestoneCompressed2, cobblestoneCompressed * 9, schematic3x3 * 0, 32, 8);
+Packer.addRecipe(cobblestoneCompressed3, cobblestoneCompressed2 * 9, schematic3x3 * 0, 64, 16);
+Packer.addRecipe(cobblestoneCompressed4, cobblestoneCompressed3 * 9, schematic3x3 * 0, 128, 32);
+Packer.addRecipe(cobblestoneCompressed5, cobblestoneCompressed4 * 9, schematic3x3 * 0, 256, 64);
+Packer.addRecipe(cobblestoneCompressed6, cobblestoneCompressed5 * 9, schematic3x3 * 0, 256, 128);
+Packer.addRecipe(cobblestoneCompressed7, cobblestoneCompressed6 * 9, schematic3x3 * 0, 256, 512);
+Packer.addRecipe(cobblestoneCompressed8, cobblestoneCompressed7 * 9, schematic3x3 * 0, 256, 512);
+Unpacker.addRecipe(cobblestone * 9, null, cobblestoneCompressed, 16, 1);
+Unpacker.addRecipe(cobblestoneCompressed * 9, null, cobblestoneCompressed2, 32, 8);
+Unpacker.addRecipe(cobblestoneCompressed2 * 9, null, cobblestoneCompressed3, 64, 16);
+Unpacker.addRecipe(cobblestoneCompressed3 * 9, null, cobblestoneCompressed4, 128, 32);
+Unpacker.addRecipe(cobblestoneCompressed4 * 9, null, cobblestoneCompressed5, 256, 64);
+Unpacker.addRecipe(cobblestoneCompressed5 * 9, null, cobblestoneCompressed6, 256, 128);
+Unpacker.addRecipe(cobblestoneCompressed6 * 9, null, cobblestoneCompressed7, 256, 512);
+Unpacker.addRecipe(cobblestoneCompressed7 * 9, null, cobblestoneCompressed8, 256, 512);
 
 # Compressed Dirt
-Boxing.addBoxingRecipe(dirtCompressed, dirt * 9, schematic3x3 * 0, 16, 1);
-Boxing.addBoxingRecipe(dirtCompressed2, dirtCompressed * 9, schematic3x3 * 0, 32, 8);
-Boxing.addBoxingRecipe(dirtCompressed3, dirtCompressed2 * 9, schematic3x3 * 0, 64, 16);
-Boxing.addBoxingRecipe(dirtCompressed4, dirtCompressed3 * 9, schematic3x3 * 0, 128, 32);
-Boxing.addUnboxingRecipe(dirt * 9, null, dirtCompressed, 16, 1);
-Boxing.addUnboxingRecipe(dirtCompressed * 9, null, dirtCompressed2, 32, 8);
-Boxing.addUnboxingRecipe(dirtCompressed2 * 9, null, dirtCompressed3, 64, 16);
-Boxing.addUnboxingRecipe(dirtCompressed3 * 9, null, dirtCompressed4, 128, 32);
+Packer.addRecipe(dirtCompressed, dirt * 9, schematic3x3 * 0, 16, 1);
+Packer.addRecipe(dirtCompressed2, dirtCompressed * 9, schematic3x3 * 0, 32, 8);
+Packer.addRecipe(dirtCompressed3, dirtCompressed2 * 9, schematic3x3 * 0, 64, 16);
+Packer.addRecipe(dirtCompressed4, dirtCompressed3 * 9, schematic3x3 * 0, 128, 32);
+Unpacker.addRecipe(dirt * 9, null, dirtCompressed, 16, 1);
+Unpacker.addRecipe(dirtCompressed * 9, null, dirtCompressed2, 32, 8);
+Unpacker.addRecipe(dirtCompressed2 * 9, null, dirtCompressed3, 64, 16);
+Unpacker.addRecipe(dirtCompressed3 * 9, null, dirtCompressed4, 128, 32);
 
 # Compressed Gravel and Sand
-Boxing.addBoxingRecipe(gravelCompressed, gravel * 9, schematic3x3 * 0, 16, 1);
-Boxing.addBoxingRecipe(gravelCompressed2, gravelCompressed * 9, schematic3x3 * 0, 32, 8);
-Boxing.addUnboxingRecipe(gravel * 9, null, gravelCompressed, 16, 1);
-Boxing.addUnboxingRecipe(gravelCompressed * 9, null, gravelCompressed2, 32, 8);
-Boxing.addBoxingRecipe(sandCompressed, sand * 9, schematic3x3 * 0, 16, 1);
-Boxing.addBoxingRecipe(sandCompressed2, sandCompressed * 9, schematic3x3 * 0, 32, 8);
-Boxing.addUnboxingRecipe(sand * 9, null, sandCompressed, 16, 1);
-Boxing.addUnboxingRecipe(sandCompressed * 9, null, sandCompressed2, 32, 8);
+Packer.addRecipe(gravelCompressed, gravel * 9, schematic3x3 * 0, 16, 1);
+Packer.addRecipe(gravelCompressed2, gravelCompressed * 9, schematic3x3 * 0, 32, 8);
+Unpacker.addRecipe(gravel * 9, null, gravelCompressed, 16, 1);
+Unpacker.addRecipe(gravelCompressed * 9, null, gravelCompressed2, 32, 8);
+Packer.addRecipe(sandCompressed, sand * 9, schematic3x3 * 0, 16, 1);
+Packer.addRecipe(sandCompressed2, sandCompressed * 9, schematic3x3 * 0, 32, 8);
+Unpacker.addRecipe(sand * 9, null, sandCompressed, 16, 1);
+Unpacker.addRecipe(sandCompressed * 9, null, sandCompressed2, 32, 8);

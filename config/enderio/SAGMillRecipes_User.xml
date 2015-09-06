@@ -255,17 +255,6 @@ found in the core file.
       </output>
     </recipe>
   </recipeGroup>
-  
-  <recipeGroup name="BigReactors">
-    <recipe name="YelloriteIngot" energyCost="2400">
-      <input>
-        <itemStack oreDictionary="ingotYellorium" />
-      </input>
-      <output>
-        <itemStack oreDictionary="dustYellorium" number="1"/>
-      </output>
-    </recipe>
-  </recipeGroup>
 
 </SAGMillRecipes>
   

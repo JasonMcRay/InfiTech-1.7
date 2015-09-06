@@ -1,6 +1,6 @@
 // --- Created by Jason McRay --- 
 
-import mods.gregtech.AssemblerLiq;
+import mods.gregtech.Assembler;
 import mods.forestry.ThermionicFabricator;
 import mods.nei.NEI;
 
@@ -120,17 +120,17 @@ ThermionicFabricator.removeCasts(tubeHelium);
 ThermionicFabricator.removeCasts(tubeChopper);
 ThermionicFabricator.removeCasts(tubePropulsion);
 ThermionicFabricator.removeCasts(tubeFlying);
-AssemblerLiq.addRecipe(tubeSquid, dustRedstone * 2, plasticSquid * 5, moltenGlass * 72, 64, 32);
-AssemblerLiq.addRecipe(tubeFire, dustRedstone * 2, plasticFire * 5, moltenGlass * 72, 64, 32);
-AssemblerLiq.addRecipe(tubeCreeper, dustRedstone * 2, plasticCreeper * 5, moltenGlass * 72, 64, 32);
-AssemblerLiq.addRecipe(tubeSlime, dustRedstone * 2, plasticSlime * 5, moltenGlass * 72, 64, 32);
-AssemblerLiq.addRecipe(tubeRain, dustRedstone * 2, plasticRain * 5, moltenGlass * 72, 64, 32);
-AssemblerLiq.addRecipe(tubeEnder, dustRedstone * 2, plasticEnder * 5, moltenGlass * 72, 64, 32);
-AssemblerLiq.addRecipe(tubeLightning, dustRedstone * 2, plasticLightning * 5, moltenGlass * 72, 64, 32);
-AssemblerLiq.addRecipe(tubeBurst, dustRedstone * 2, plasticBurst * 5, moltenGlass * 72, 64, 32);
-AssemblerLiq.addRecipe(tubePotion, dustRedstone * 2, plasticPotion * 5, moltenGlass * 72, 64, 32);
-AssemblerLiq.addRecipe(tubeRepulsion, dustRedstone * 2, plasticRepulsion * 5, moltenGlass * 72, 64, 32);
-AssemblerLiq.addRecipe(tubeHelium, dustRedstone * 2, plasticHelium * 5, moltenGlass * 72, 64, 32);
-AssemblerLiq.addRecipe(tubeChopper, dustRedstone * 2, plasticChopper * 5, moltenGlass * 72, 64, 32);
-AssemblerLiq.addRecipe(tubePropulsion, dustRedstone * 2, plasticPropulsion * 5, moltenGlass * 72, 64, 32);
-AssemblerLiq.addRecipe(tubeFlying, dustRedstone * 2, plasticFlying * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubeSquid, dustRedstone * 2, plasticSquid * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubeFire, dustRedstone * 2, plasticFire * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubeCreeper, dustRedstone * 2, plasticCreeper * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubeSlime, dustRedstone * 2, plasticSlime * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubeRain, dustRedstone * 2, plasticRain * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubeEnder, dustRedstone * 2, plasticEnder * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubeLightning, dustRedstone * 2, plasticLightning * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubeBurst, dustRedstone * 2, plasticBurst * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubePotion, dustRedstone * 2, plasticPotion * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubeRepulsion, dustRedstone * 2, plasticRepulsion * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubeHelium, dustRedstone * 2, plasticHelium * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubeChopper, dustRedstone * 2, plasticChopper * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubePropulsion, dustRedstone * 2, plasticPropulsion * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubeFlying, dustRedstone * 2, plasticFlying * 5, moltenGlass * 72, 64, 32);
