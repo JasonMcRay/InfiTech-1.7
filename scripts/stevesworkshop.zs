@@ -1,6 +1,6 @@
 // --- Created by Jason McRay --- 
 
-import mods.gregtech.AssemblerLiq;
+import mods.gregtech.Assembler;
 
 # Aliases
 var blockRedstone = <ore:blockRedstone>;
@@ -42,20 +42,20 @@ recipes.addShaped(productionTable, [
 	[plateIron, plateIron, plateIron]]);
 	
 # GT Integration
-//AssemblerLiq.addRecipe(output, input1, input2, liquid, durationTicks, euPerTick);
+//Assembler.addRecipe(output, input1, input2, liquid, durationTicks, euPerTick);
 recipes.remove(upgradeCrafter);
-AssemblerLiq.addRecipe(upgradeCrafter, upgradeBlank, workbenchAuto, null, 128, 8);
+Assembler.addRecipe(upgradeCrafter, upgradeBlank, workbenchAuto, null, 128, 8);
 recipes.remove(upgradeStorage);
-AssemblerLiq.addRecipe(upgradeStorage, upgradeBlank, chestWood, null, 128, 8);
+Assembler.addRecipe(upgradeStorage, upgradeBlank, chestWood, null, 128, 8);
 recipes.remove(upgradeCharger);
-AssemblerLiq.addRecipe(upgradeCharger, upgradeBlank, circuit10 * 0, moltenRedstone * 1296, 212, 16);
+Assembler.addRecipe(upgradeCharger, upgradeBlank, circuit10 * 0, moltenRedstone * 1296, 212, 16);
 recipes.remove(upgradeSpeed);
-AssemblerLiq.addRecipe(upgradeSpeed, upgradeBlank, itemDustLapis * 2, moltenSpeedPotion * 250, 128, 16);
+Assembler.addRecipe(upgradeSpeed, upgradeBlank, itemDustLapis * 2, moltenSpeedPotion * 250, 128, 16);
 recipes.remove(upgradeLava);
-AssemblerLiq.addRecipe(upgradeLava, upgradeBlank, genGeothermal, lava * 1000, 128, 32);
+Assembler.addRecipe(upgradeLava, upgradeBlank, genGeothermal, lava * 1000, 128, 32);
 recipes.remove(upgradeTransfer);
-AssemblerLiq.addRecipe(upgradeTransfer, upgradeBlank, conveyorLV, moltenGold * 864, 128, 16);
+Assembler.addRecipe(upgradeTransfer, upgradeBlank, conveyorLV, moltenGold * 864, 128, 16);
 recipes.remove(upgradeFilter);
-AssemblerLiq.addRecipe(upgradeFilter, upgradeBlank, GTFilter, null, 128, 16);
+Assembler.addRecipe(upgradeFilter, upgradeBlank, GTFilter, null, 128, 16);
 recipes.remove(upgradeCapacity);
-AssemblerLiq.addRecipe(upgradeCapacity, upgradeTransfer, conveyorLV, moltenRedstone * 1296, 128, 16);
+Assembler.addRecipe(upgradeCapacity, upgradeTransfer, conveyorLV, moltenRedstone * 1296, 128, 16);

@@ -1,7 +1,6 @@
 // --- Created by Jason McRay ---
 // --- Few scripts created by DreamMasterXXL ---
 
-import mods.gregtech.AssemblerLiq;
 import mods.gregtech.Assembler;
 import mods.gregtech.Mixer;
 import mods.forestry.Carpenter;
@@ -165,7 +164,7 @@ recipes.addShaped(worktable, [
 	
 # GT Integration
 //Carpenter.addRecipe(durationTicks, fluidInput, [recipe], box(top), output);
-//AssemblerLiq.addRecipe(output, input1, input2, liquid, durationTicks, euPerTick);
+//Assembler.addRecipe(output, input1, input2, liquid, durationTicks, euPerTick);
 recipes.remove(humus);
 Carpenter.removeRecipe(humus);
 Carpenter.addRecipe(5, null, [crateHumus, null, null, null, null, null, null, null, null], null, humus * 9);
@@ -174,8 +173,8 @@ Carpenter.removeRecipe(bogEarth);
 Carpenter.addRecipe(5, null, [crateBogEarth, null, null, null, null, null, null, null, null], null, bogEarth * 9);
 recipes.remove(unlitCandle);
 Carpenter.removeRecipe(unlitCandle);
-AssemblerLiq.addRecipe(unlitCandle * 8, waxMagic * 2, silkWisp, liquidWater * 200, 16, 8);
-AssemblerLiq.addRecipe(unlitCandle * 24, waxMagic * 6, mcString, liquidWater * 600, 64, 8);
+Assembler.addRecipe(unlitCandle * 8, waxMagic * 2, silkWisp, liquidWater * 200, 16, 8);
+Assembler.addRecipe(unlitCandle * 24, waxMagic * 6, mcString, liquidWater * 600, 64, 8);
 recipes.remove(<Forestry:ffarm:*>);
 // --- Farm Block
 mods.forestry.Carpenter.addRecipe(150, <liquid:molten.redstone> * 144, [<gregtech:gt.metaitem.01:27305>, <IC2:itemCasing>, <gregtech:gt.metaitem.01:27305>, <IC2:itemCasing>, <Forestry:thermionicTubes:1>, <IC2:itemCasing>, <gregtech:gt.metaitem.01:27305>, <IC2:itemCasing>, <gregtech:gt.metaitem.01:27305>], <minecraft:stonebrick>, <Forestry:ffarm>.withTag({FarmBlock:0}));
@@ -278,7 +277,7 @@ mods.forestry.Carpenter.removeRecipe(impregnatedStick);
 mods.forestry.Carpenter.removeRecipe(pulpWood);
 recipes.remove(<Forestry:canEmpty>);
 Assembler.addRecipe(<Forestry:canEmpty>, <gregtech:gt.metaitem.01:17057> * 2, <minecraft:glass_pane>, 120, 8);
-AssemblerLiq.addRecipe(tubeEnder * 4, enderEye * 2, endStone * 5, moltenGlass * 72, 64, 32);
+Assembler.addRecipe(tubeEnder * 4, enderEye * 2, endStone * 5, moltenGlass * 72, 64, 32);
 
 // --- Backs ---
 recipes.remove(<Forestry:adventurerBag>);
