@@ -1,3 +1,42 @@
+v3.1.8.1
+Mod Updates:
+- Aroma1997Core -> 1.0.2.15
+- BDLib -> 1.9.2.104
+- BuildCraft -> 7.0.22
+- Carpenter's Blocks -> 3.3.7
+- Chisel2 -> 2.5.0.43
+- EnderCore -> 0.1.0.23
+- EnderIO -> 2.3.0.413
+- Gendustry -> 1.6.0.124
+- GTTweaker -> 1.0.1
+- IGW -> 1.1.10-30
+- Immibis Core -> 59.1.2
+- Industrial Craft 2 -> 2.2.770
+- Logistics Pipes -> 0.9.2.45
+- MagicBees -> 2.3.5
+- Malisis Core -> 0.12.9
+- Malisis Doors -> 1.9.5
+- Minetweaker -> 3.0.10
+- ModTweaker 2 -> 0.9.3
+- Not Enough Items -> 1.0.5.118
+- OpenBlocks -> 1.4.4-664
+- OpenComputers -> 1.5.17.33
+- OpenModsLib -> 0.8-393
+- PneumaticCraft -> 1.11.3-123
+- XACT -> 0.5.3b
+
+New Mods:
+- Custom Main Menu
+- Headcrumbs
+- Resource Loader
+
+Changes:
+- Fix used reactor items not being reusable in recipes, likely breaks AE patterns etc. (sorry)
+- You can now breathe indefinately under water when having an Aerial Interface connected (at a high air cost).
+- Updated multiple MT Scripts for MT 3.0.10 and GTT 1.0.1
+- Endium Block now crafted inside Compressor
+- Hardcoded correct blaze powder aspect numbers.
+
 v3.1.7.1
 Mod Updates:
 - CodeChickenCore -> 1.0.7.47
