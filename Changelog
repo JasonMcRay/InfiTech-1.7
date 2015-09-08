@@ -1,3 +1,9 @@
+v3.1.8.1 - Hotfix
+Changes/Fixes:
+- Fixed RF machines not accepting GTEU
+- Fixed RF machines exploding when fed too much GTEU
+- Fixed crash when opening Keybinds/Controls options menu
+
 v3.1.8
 Mod Updates:
 - Aroma1997Core -> 1.0.2.15
