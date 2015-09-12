@@ -3,11 +3,11 @@
     {/*
         "title":
         {
-            "image" : "infitech2:textures/gui/title/patreonwall.png",
+            "image" : "web:https://www.dropbox.com/s/kondnztbus1z6co/patreonwall2.png?raw=1",
             "posX" : 0,
             "posY" : 0,
-            "width" : 250,
-            "height" : 100,
+            "width" : 640,
+            "height" : 300,
             "alignment" : "top_left"
         }*/
     },
@@ -95,7 +95,7 @@
     {
         "background":
         {
-            "image" : "infitech2:textures/gui/background/patreonwall.png"
+            "image" : "web:https://www.dropbox.com/s/kondnztbus1z6co/patreonwall2.png?raw=1"
         }
     }
 }
