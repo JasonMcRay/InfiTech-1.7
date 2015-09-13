@@ -27,6 +27,9 @@ Changes/fixes:
 - Few more regen of GT configs (MaterialProperties.cfg and MachineStats.cfg)
 - Fixed producing of Sand with wierd meta value in SAG Mill. (Gravel is still broken)
 
+Known Issues:
+- Recipes that are changed are not visible on servers, they still work, but NEI is not showing them. Current workaround is to load Singleplayer first and then log onto server.
+
 v3.1.8.1
 Mod Updates:
 - Aroma1997Core -> 1.0.2.15
