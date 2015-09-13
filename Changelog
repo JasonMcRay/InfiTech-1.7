@@ -1,3 +1,34 @@
+v3.1.9
+Mod Updates:
+- BiblioCraft -> 1.11.0
+- Buildcraft -> 7.0.23
+- Buildcraft Compat -> 7.0.12
+- Computronics -> 1.5.7
+- CustomMainMenu -> 1.8
+- EnderCore -> 0.1.0.24
+- EnderIO -> 2.3.0.415
+- Forestry -> 3.6.6.24
+- GalacticGreg -> 0.7
+- Gendustry -> 1.6.0.125
+- IndustrialCraft 2 -> 2.2.773
+- MrCrayfishFurnitureMod -> 3.4.8
+- PneumaticCraft -> 1.11.6-126
+- XACT -> 0.5.4
+
+Changes/fixes:
+- Fixed crash when entering the Controls/Keybinds Options menu.
+- Reworked spawning of Naq ore. End: Only generates Small Naquadah Ore. Asteroid (GC): Generates full Naquadah Ore
+- Crafting Hungry Hand Mirror now accepts any thaumium nugget.
+- Changed the path for the Patreon Wall image to remote place.
+- Removed the patreon wall from resources.
+- Removed duped and deprecated entries in GT WorldGen.cfg (regenerated again)
+- Fixed handling of certain recipes in XACT Crafter.
+- Few more regen of GT configs (MaterialProperties.cfg and MachineStats.cfg)
+- Fixed producing of Sand with wierd meta value in SAG Mill. (Gravel is still broken)
+
+Known Issues:
+- Recipes that are changed are not visible on servers, they still work, but NEI is not showing them. Current workaround is to load Singleplayer first and then log onto server.
+
 v3.1.8.1 - Hotfix
 Changes/Fixes:
 - Fixed RF machines not accepting GTEU
