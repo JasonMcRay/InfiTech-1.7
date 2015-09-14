@@ -3,33 +3,38 @@
 //import mods.gregtech.AssemblerLiq;
 
 # Aliases
+//type: hull
+var woodhull 		= <StevesCarts:CartModule:37>;
+var pighull 		= <StevesCarts:CartModule:62>;
+var standardhull 	= <StevesCarts:CartModule:38>;
+var reinforcedhull 	= <StevesCarts:CartModule:39>;
+var galgadorianhull 	= <StevesCarts:CartModule:81>;
+//wheels
 var wheelswood 		= <StevesCarts:ModuleComponents>;
 var wheelsiron 		= <StevesCarts:ModuleComponents:1>;
 var wheelsreinforced	= <StevesCarts:ModuleComponents:23>;
 var wheelsgalgadorian	= <StevesCarts:ModuleComponents:82>;
 var gtwheelsiron 	= <gregtech:gt.metaitem.01:32100>;
 var gtwheelssteel 	= <gregtech:gt.metaitem.01:32101>;
-var reinforcedmetal	= <StevesCarts:ModuleComponents:22>;
-var galgadorianmetal	= <StevesCarts:ModuleComponents:47>;
+//tools
 var Wrench 		= <ore:craftingToolWrench>;
 var HHammer 		= <ore:craftingToolHardHammer>;
 var SHammer 		= <ore:craftingToolSoftHammer>;
 var screwdriver		= <ore:craftingToolScrewdriver>;
+//crafting materials
 var ringWood 		= <ore:ringWood>;
 var screwiron 		= <ore:screwAnyIron>;
 var stickWood 		= <ore:stickWood>;
-var woodhull 		= <StevesCarts:CartModule:37>;
-var pighull 		= <StevesCarts:CartModule:62>;
-var standardhull 	= <StevesCarts:CartModule:38>;
-var pork 		= <ore:listAllporkraw>;
+var pork 		= <minecraft:porkchop>;
 var plankWood		= <ore:plankWood>;
 var plateIron		= <ore:plateAnyIron>;
 var plateEuropium	= <ore:plateEuropium>;
+var reinforcedmetal	= <StevesCarts:ModuleComponents:22>;
+var galgadorianmetal	= <StevesCarts:ModuleComponents:47>;
 
 # Blocks/Items Removal
 
 # Recipe Tweaks
-recipes.remove(ringWood);
 recipes.addShaped(ringWood, [
 	[screwiron, stickWood, screwiron],
 	[stickWood, HHammer, stickWood],
@@ -55,6 +60,16 @@ recipes.addShaped(standardhull, [
 	[plateIron, HHammer, plateIron],
 	[plateIron, plateIron, plateIron],
 	[gtwheelssteel, null, gtwheelssteel]]);
+recipes.remove(reinforcedhull);
+recipes.addShaped(reinforcedhull, [
+	[reinforcedmetal, HHammer, reinforcedmetal],
+	[reinforcedmetal, reinforcedmetal, reinforcedmetal],
+	[wheelsreinforced, null, wheelsreinforced]]);
+recipes.remove(galgadorianhull);
+recipes.addShaped(galgadorianhull, [
+	[galgadorianmetal, HHammer, galgadorianmetal],
+	[galgadorianmetal, galgadorianmetal, galgadorianmetal],
+	[wheelsgalgadorian, null, wheelsgalgadorian]]);
 recipes.remove(wheelsreinforced);
 recipes.addShaped(wheelsreinforced, [
 	[null, HHammer, null],
