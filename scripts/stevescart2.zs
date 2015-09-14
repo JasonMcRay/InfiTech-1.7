@@ -1,4 +1,4 @@
-// --- Created by DarknessShadow --- TEST
+// --- Created by DarknessShadow --- TEST ---
 
 import mods.gregtech.AssemblerLiq;
 
@@ -6,19 +6,22 @@ import mods.gregtech.AssemblerLiq;
 var wheelswood = <StevesCarts:ModuleComponents>;
 var Wrench = <ore:craftingToolWrench>;
 var HHammer = <ore:craftingToolHardHammer>;
+var ringWood = <ore:ringWood>;
+var screwiron = <ore:screwAnyIron>;
 
 # Blocks/Items Removal
 
 # Recipe Tweaks
-recipes.addShaped(ore:ringWood, [
-	[HHammer, null, null],
-	[null, stickWood, null],
-	[null, null, null]]);
+recipes.addShaped(ringWood, [
+	[screwiron, stickWood, screwiron],
+	[stickWood, HHammer, stickWood],
+	[screwiron, stickWood, screwiron]]);
 recipes.remove(StevesCarts:ModuleComponents);
 recipes.addShaped(StevesCarts:ModuleComponents, [
 	[null, HHammer, null],
-	[ore:ringWood, stickWood, ore:ringWood],
+	[ringWood, stickWood, ringWood],
 	[null, Wrench, null]]);
 	
 # GT Integration
 //AssemblerLiq.addRecipe(output, input1, input2, liquid, durationTicks, euPerTick);
+// --- TEST ---
