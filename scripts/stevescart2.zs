@@ -1,6 +1,6 @@
 // --- Created by DarknessShadow --- TEST ---
 
-import mods.gregtech.AssemblerLiq;
+//import mods.gregtech.AssemblerLiq;
 
 # Aliases
 var wheelswood = <StevesCarts:ModuleComponents>;
@@ -8,6 +8,7 @@ var Wrench = <ore:craftingToolWrench>;
 var HHammer = <ore:craftingToolHardHammer>;
 var ringWood = <ore:ringWood>;
 var screwiron = <ore:screwAnyIron>;
+var stickWood = <ore:stickWood>;
 
 # Blocks/Items Removal
 
@@ -16,8 +17,8 @@ recipes.addShaped(ringWood, [
 	[screwiron, stickWood, screwiron],
 	[stickWood, HHammer, stickWood],
 	[screwiron, stickWood, screwiron]]);
-recipes.remove(StevesCarts:ModuleComponents);
-recipes.addShaped(StevesCarts:ModuleComponents, [
+recipes.remove(wheelswood);
+recipes.addShaped(wheelswood, [
 	[null, HHammer, null],
 	[ringWood, stickWood, ringWood],
 	[null, Wrench, null]]);
