@@ -3,10 +3,8 @@
 import mods.gregtech.AssemblerLiq;
 
 # Aliases
-//var blockRedstone = <ore:blockRedstone>;
 
 # Blocks/Items Removal
-//recipes.remove(upgradeSolar);
 
 # Recipe Tweaks
 	
