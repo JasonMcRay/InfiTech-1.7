@@ -977,56 +977,7 @@ recipes.addShaped(<appliedenergistics2:item.ToolBiometricCard>, [
 
 // --- Cells ---
 
-// --- Storage Cell - 1K
-recipes.addShaped(Storage1K, [
-[HHammer, CertusPlate, QuartziteScrew],
-[SteelPlate, StorageComponent1K, SteelPlate],
-[QuartziteScrew, SteelPlate, Screwdriver]]);
-// - 
-recipes.addShaped(Storage1K, [
-[Screwdriver, CertusPlate, QuartziteScrew],
-[SteelPlate, StorageComponent1K, SteelPlate],
-[QuartziteScrew, SteelPlate, HHammer]]);
-
-// --- Storage Cell - 4K
-recipes.addShaped(Storage4K, [
-[HHammer, CertusPlate, QuartziteScrew],
-[AlPlate, StorageComponent4K, AlPlate],
-[QuartziteScrew, AlPlate, Screwdriver]]);
-// - 
-recipes.addShaped(Storage4K, [
-[Screwdriver, CertusPlate, QuartziteScrew],
-[AlPlate, StorageComponent4K, AlPlate],
-[QuartziteScrew, AlPlate, HHammer]]);
-
-// --- Storage Cell - 16K
-recipes.addShaped(Storage16K, [
-[HHammer, CertusPlate, QuartziteScrew],
-[StainlessPlate, StorageComponent16K, StainlessPlate],
-[QuartziteScrew, StainlessPlate, Screwdriver]]);
-// - 
-recipes.addShaped(Storage16K, [
-[Screwdriver, CertusPlate, QuartziteScrew],
-[StainlessPlate, StorageComponent16K, StainlessPlate],
-[QuartziteScrew, StainlessPlate, HHammer]]);
-
-// --- Storage Cell - 64K
-recipes.addShaped(Storage64K, [
-[HHammer, CertusPlate, NQuartzScrew],
-[TitaniumPlate, StorageComponent64K, TitaniumPlate],
-[NQuartzScrew, TitaniumPlate, Screwdriver]]);
-// -
-recipes.addShaped(Storage64K, [
-[Screwdriver, CertusPlate, NQuartzScrew],
-[TitaniumPlate, StorageComponent64K, TitaniumPlate],
-[NQuartzScrew, TitaniumPlate, HHammer]]);
-
 // --- View Cell
-recipes.addShaped(<appliedenergistics2:item.ItemViewCell>, [
-[GlassPlate, <ore:plateRedAlloy>, GlassPlate],
-[<ore:plateRedAlloy>, <ore:gemCertusQuartz>, <ore:plateRedAlloy>],
-[AlPlate, AlPlate, AlPlate]]);
-// -
 recipes.addShapeless(<appliedenergistics2:item.ItemViewCell>, [<appliedenergistics2:item.ItemMultiMaterial:39>, <ore:gemCertusQuartz>]);
 
 // --- 1K ME Storage Cell
@@ -1046,44 +997,14 @@ recipes.addShapeless(<appliedenergistics2:item.ItemBasicStorageCell.64k>,
 [<appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:38>]);
 
 // --- 2 Spatial Storage Cell
-recipes.addShaped(<appliedenergistics2:item.ItemSpatialStorageCell.2Cubed>, [
-[HHammer, CertusPlate, QuartziteScrew],
-[SteelPlate, <appliedenergistics2:item.ItemMultiMaterial:32>, SteelPlate],
-[QuartziteScrew, AlPlate, Screwdriver]]);
-// -
-recipes.addShaped(<appliedenergistics2:item.ItemSpatialStorageCell.2Cubed>, [
-[Screwdriver, CertusPlate, QuartziteScrew],
-[SteelPlate, <appliedenergistics2:item.ItemMultiMaterial:32>, SteelPlate],
-[QuartziteScrew, AlPlate, HHammer]]);
-// -
 recipes.addShapeless(<appliedenergistics2:item.ItemSpatialStorageCell.2Cubed>, 
 [<appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:32>]);
 
 // --- 16 Spatial Storage Cell
-recipes.addShaped(<appliedenergistics2:item.ItemSpatialStorageCell.16Cubed>, [
-[HHammer, CertusPlate, QuartziteScrew],
-[SteelPlate, <appliedenergistics2:item.ItemMultiMaterial:33>, SteelPlate],
-[QuartziteScrew, AlPlate, Screwdriver]]);
-// -
-recipes.addShaped(<appliedenergistics2:item.ItemSpatialStorageCell.16Cubed>, [
-[Screwdriver, CertusPlate, QuartziteScrew],
-[SteelPlate, <appliedenergistics2:item.ItemMultiMaterial:33>, SteelPlate],
-[QuartziteScrew, AlPlate, HHammer]]);
-// -
 recipes.addShapeless(<appliedenergistics2:item.ItemSpatialStorageCell.16Cubed>, 
 [<appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:33>]);
 
 // --- 128 Spatial Storage Cell
-recipes.addShaped(<appliedenergistics2:item.ItemSpatialStorageCell.128Cubed>, [
-[HHammer, CertusPlate, QuartziteScrew],
-[SteelPlate, <appliedenergistics2:item.ItemMultiMaterial:34>, SteelPlate],
-[QuartziteScrew, AlPlate, Screwdriver]]);
-// - 
-recipes.addShaped(<appliedenergistics2:item.ItemSpatialStorageCell.128Cubed>, [
-[Screwdriver, CertusPlate, QuartziteScrew],
-[SteelPlate, <appliedenergistics2:item.ItemMultiMaterial:34>, SteelPlate],
-[QuartziteScrew, AlPlate, HHammer]]);
-// -
 recipes.addShapeless(<appliedenergistics2:item.ItemSpatialStorageCell.128Cubed>, 
 [<appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:34>]);
 
