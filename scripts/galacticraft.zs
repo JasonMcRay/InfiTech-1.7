@@ -896,7 +896,7 @@ Assembler.addRecipe(<GalacticraftMars:item.thermalPadding:3>, <GalacticraftMars:
 //Blast Furnace Recipes
 
 //Titan Ingot
-BlastFurnace.addRecipe(<gregtech:gt.metaitem.01:11028>, null, null, <GalacticraftMars:item.itemBasicAsteroids:4> * 2, null, 1500, 120, 1500);
+BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:11028>], [<GalacticraftMars:item.itemBasicAsteroids:4> * 2], 1500, 120, 1500);
 
 // --- Canner Recipes ---
 

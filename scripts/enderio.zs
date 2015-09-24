@@ -226,10 +226,10 @@ AlloySmelter.addRecipe(ingotSoularium, itemIngotGold, soulSand, 100, 16);
 AlloySmelter.addRecipe(fusedQuartz, netherQuartz * 4, dustGlass, 200, 8);
 AlloySmelter.addRecipe(fusedQuartz, blockQuartz, dustGlass, 100, 16);
 //ChemicalBath.addRecipe(outpu1, output2, output3, input, liquidInput, chance1, chance2, chance3, durationTicks, euPerTick);
-ChemicalBath.addRecipe(fusedQuartzEnlighten, null, null, fusedQuartz, moltenGlowstone * 576, 10000, 0, 0, 100, 8);
-ChemicalBath.addRecipe(clearGlassEnlighten, null, null, clearGlass, moltenGlowstone * 576, 10000, 0, 0, 100, 4);
-ChemicalBath.addRecipe(ingotConductiveIron, null, null, itemIngotIron, moltenRedstone * 144, 10000, 0, 0, 200, 8);
-ChemicalBath.addRecipe(clearGlass, null, null, glass, moltenChlorine * 50, 10000, 0, 0, 400, 2);
+ChemicalBath.addRecipe([fusedQuartzEnlighten], fusedQuartz, moltenGlowstone * 576, [10000], 100, 8);
+ChemicalBath.addRecipe([clearGlassEnlighten], clearGlass, moltenGlowstone * 576, [10000], 100, 4);
+ChemicalBath.addRecipe([ingotConductiveIron], itemIngotIron, moltenRedstone * 144, [10000], 200, 8);
+ChemicalBath.addRecipe([clearGlass], glass, moltenChlorine * 50, [10000], 400, 2);
 
 # Oredictionary
 itemSilicon.remove(EISilicon);

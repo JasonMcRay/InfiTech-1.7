@@ -236,12 +236,12 @@ mods.forestry.Carpenter.addRecipe(300, <liquid:molten.redstone> * 144, [null, <g
 mods.forestry.Carpenter.addRecipe(300, <liquid:molten.redstone> * 144, [null, <gregtech:gt.metaitem.02:20305>, null, <IC2:itemPartCircuit>, <gregtech:gt.metaitem.01:32600>, <IC2:itemPartCircuit>, null, <gregtech:gt.blockmachines:1246>, null], <Forestry:ffarm>.withTag({FarmBlock:8}), <Forestry:ffarm:5>.withTag({FarmBlock:8}));
 mods.forestry.Carpenter.addRecipe(300, <liquid:molten.redstone> * 144, [null, <gregtech:gt.metaitem.02:20305>, null, <IC2:itemPartCircuit>, <gregtech:gt.metaitem.01:32600>, <IC2:itemPartCircuit>, null, <gregtech:gt.blockmachines:1246>, null], <Forestry:ffarm>.withTag({FarmBlock:9}), <Forestry:ffarm:5>.withTag({FarmBlock:9}));
 mods.forestry.Carpenter.addRecipe(300, <liquid:molten.redstone> * 144, [null, <gregtech:gt.metaitem.02:20305>, null, <IC2:itemPartCircuit>, <gregtech:gt.metaitem.01:32600>, <IC2:itemPartCircuit>, null, <gregtech:gt.blockmachines:1246>, null], <Forestry:ffarm>.withTag({FarmBlock:10}), <Forestry:ffarm:5>.withTag({FarmBlock:10}));
-//Mixer.addRecipe(output, liquidOutput, input1, input2, input3, input4, liquidInput, durationTicks, euPerTick);
+//Mixer.addRecipe(output, liquidOutput, [input1, input2, input3, input4], liquidInput, durationTicks, euPerTick);
 recipes.remove(compost);
-Mixer.addRecipe (compost, null, wheat * 4, dirtAny, null, null, liquidWater * 100, 64, 8);
-Mixer.addRecipe (compost, null, fAsh * 4, dirtAny, null, null, liquidWater * 100, 64, 8);
-Mixer.addRecipe (compost, null, gtAsh * 4, dirtAny, null, null, liquidWater * 100, 64, 8);
-Mixer.addRecipe (compost, null, icAsh * 4, dirtAny, null, null, liquidWater * 100, 64, 8);
+Mixer.addRecipe (compost, null, [wheat * 4, dirtAny], liquidWater * 100, 64, 8);
+Mixer.addRecipe (compost, null, [fAsh * 4, dirtAny], liquidWater * 100, 64, 8);
+Mixer.addRecipe (compost, null, [gtAsh * 4, dirtAny], liquidWater * 100, 64, 8);
+Mixer.addRecipe (compost, null, [icAsh * 4, dirtAny], liquidWater * 100, 64, 8);
 recipes.remove(<Forestry:sturdyMachine>);
 recipes.addShaped(<Forestry:sturdyMachine>, [
 	[<ore:plateBronze>, <ore:screwSteel>, <ore:plateBronze>],
