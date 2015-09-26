@@ -1,3 +1,45 @@
+v3.1.10
+Mod Updates:
+- Bdlib -> 1.9.2.105
+- BiblioCraft -> v1.11.2
+- BuildCraft -> 7.0.25
+- Chisel -> Switched to Chisel-Team v2.9.1.7
+- Forestry -> 3.6.7.25
+- GTTweaker -> 1.0.7
+- IGW Mod -> 1.1.11-32
+- IndustrialCraft 2 -> 2.2.777
+- LogisticsPipes -> 0.9.2.49
+- MalisisDoors -> 1.10
+- Minetweaker -> Temporary usage of KittenEdition
+- OpenBlocks -> 1.4.4-668
+- OpenComputers -> 1.5.18.36
+- OpenMods Lib -> 0.8-396
+- PneumaticCraft -> 1.11.9-129
+- XACT -> 0.5.4b
+
+Removed Mods:
+- ExtraCells (I no longer support addition of this mod)
+- Technomagi (Doesnt look to be maintained anymore)
+
+Changes/fixes:
+- Fixed XACT Crafter not saving its inventory
+- Fixed Framed Chest Crash
+- Fixed IGW fails to look up pages
+- Fixed Cropmatron not applying water to crops
+- Performace improvements of LP on servers, causing server to slow down/halt
+- Seismic Sensor (PC) now also works for other mods Oil spawns (like Buildcraft)
+- Updated Scripts to reflect changes and fixes in Minetweaker and GTTweaker
+- Boosted forestry hives slightly (by 50%). Should affect all hives from other mods as well (magic bees).
+- Removed direct crafting of AE2 Cells (Storage, Spatial, View). The only way to craft them is by combining Universal Housing + Component.
+- Added Stardust and EndPowder to Macerator
+- Added some items to FT Adventurer Backpack.
+- Removed and changed few trades in Amadron Tablet.
+- Disabled NEI Integration with HEE as workaround for items disapearing from Crafting Table upon opening Compendium.
+- Disabled decomposition of and into GT Tools.
+- Re-added potions to NEI
+- Fixes Chisel Packed Ice not being chiselable into
+- Fixed server/client sync issue (you no longer need to start SSP first
+
 v3.1.9
 Mod Updates:
 - BiblioCraft -> 1.11.0
