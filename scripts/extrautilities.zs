@@ -110,7 +110,7 @@ recipes.addShaped(pipeTransfer * 2, [
 # ---GT Integration---
 //ChemicalBath.addRecipe(outpu1, output2, output3, input, liquidInput, chance1, chance2, chance3, durationTicks, euPerTick);
 recipes.remove(enderInfusedObsidian);
-ChemicalBath.addRecipe(enderInfusedObsidian, null, null, obsidian, moltenEnderium * 36, 10000, 0, 0, 200, 8);
+ChemicalBath.addRecipe([enderInfusedObsidian], obsidian, moltenEnderium * 36, [10000], 200, 8);
 //Compressor.addRecipe(output, input);
 recipes.remove(blockBedrockium);
 Compressor.addRecipe(blockBedrockium, ingotBedrockium * 9);

@@ -663,66 +663,66 @@ recipes.addShaped(FluixCoveredC * 3, [
 [RubberPlate, RubberPlate, RubberPlate]]);
 
 // --- Unpainting Cables ---
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCableWhite, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCableOrange, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCableMagenta, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCableLightBlue, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCableYellow, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCableLime, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCablePink, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCableGray, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCableLightGray, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCableCyan, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCablePurple, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCableBrown, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCableGreen, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCableRed, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixGlassCable, null, null, FluixGlassCableBlack, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCWhite, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCOrange, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCMagenta, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCLightBlue, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCYellow, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCLime, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCPink, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCGray, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCLightGray, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCCyan, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCPurple, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCBrown, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCGreen, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCRed, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixCoveredC, null, null, FluixCoveredCBlack, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCableWhite, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCableOrange, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCableMagenta, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCableLightBlue, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCableYellow, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCableLime, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCablePink, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCableGray, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCableLightGray, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCableCyan, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCablePurple, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCableBrown, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCableGreen, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCableRed, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixDenseCable, null, null, FluixDenseCableBlack, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCableWhite, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCableOrange, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCableMagenta, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCableLightBlue, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCableYellow, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCableLime, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCablePink, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCableGray, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCableLightGray, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCableCyan, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCablePurple, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCableBrown, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCableGreen, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCableRed, moltenChlorine * 50, 10000, 0, 0, 400, 2);
-ChemicalBath.addRecipe(FluixSmartCable, null, null, FluixSmartCableBlack, moltenChlorine * 50, 10000, 0, 0, 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCableWhite, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCableOrange, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCableMagenta, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCableLightBlue, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCableYellow, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCableLime, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCablePink, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCableGray, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCableLightGray, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCableCyan, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCablePurple, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCableBrown, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCableGreen, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCableRed, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixGlassCable], FluixGlassCableBlack, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCWhite, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCOrange, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCMagenta, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCLightBlue, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCYellow, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCLime, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCPink, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCGray, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCLightGray, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCCyan, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCPurple, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCBrown, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCGreen, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCRed, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixCoveredC], FluixCoveredCBlack, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCableWhite, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCableOrange, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCableMagenta, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCableLightBlue, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCableYellow, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCableLime, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCablePink, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCableGray, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCableLightGray, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCableCyan, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCablePurple, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCableBrown, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCableGreen, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCableRed, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixDenseCable], FluixDenseCableBlack, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableWhite, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableOrange, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableMagenta, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableLightBlue, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableYellow, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableLime, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCablePink, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableGray, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableLightGray, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableCyan, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCablePurple, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableBrown, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableGreen, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableRed, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableBlack, moltenChlorine * 50, [10000], 400, 2);
 
 // --- Annihilation Core
 recipes.addShaped(AnnihilationCore, [
@@ -977,56 +977,7 @@ recipes.addShaped(<appliedenergistics2:item.ToolBiometricCard>, [
 
 // --- Cells ---
 
-// --- Storage Cell - 1K
-recipes.addShaped(Storage1K, [
-[HHammer, CertusPlate, QuartziteScrew],
-[SteelPlate, StorageComponent1K, SteelPlate],
-[QuartziteScrew, SteelPlate, Screwdriver]]);
-// - 
-recipes.addShaped(Storage1K, [
-[Screwdriver, CertusPlate, QuartziteScrew],
-[SteelPlate, StorageComponent1K, SteelPlate],
-[QuartziteScrew, SteelPlate, HHammer]]);
-
-// --- Storage Cell - 4K
-recipes.addShaped(Storage4K, [
-[HHammer, CertusPlate, QuartziteScrew],
-[AlPlate, StorageComponent4K, AlPlate],
-[QuartziteScrew, AlPlate, Screwdriver]]);
-// - 
-recipes.addShaped(Storage4K, [
-[Screwdriver, CertusPlate, QuartziteScrew],
-[AlPlate, StorageComponent4K, AlPlate],
-[QuartziteScrew, AlPlate, HHammer]]);
-
-// --- Storage Cell - 16K
-recipes.addShaped(Storage16K, [
-[HHammer, CertusPlate, QuartziteScrew],
-[StainlessPlate, StorageComponent16K, StainlessPlate],
-[QuartziteScrew, StainlessPlate, Screwdriver]]);
-// - 
-recipes.addShaped(Storage16K, [
-[Screwdriver, CertusPlate, QuartziteScrew],
-[StainlessPlate, StorageComponent16K, StainlessPlate],
-[QuartziteScrew, StainlessPlate, HHammer]]);
-
-// --- Storage Cell - 64K
-recipes.addShaped(Storage64K, [
-[HHammer, CertusPlate, NQuartzScrew],
-[TitaniumPlate, StorageComponent64K, TitaniumPlate],
-[NQuartzScrew, TitaniumPlate, Screwdriver]]);
-// -
-recipes.addShaped(Storage64K, [
-[Screwdriver, CertusPlate, NQuartzScrew],
-[TitaniumPlate, StorageComponent64K, TitaniumPlate],
-[NQuartzScrew, TitaniumPlate, HHammer]]);
-
 // --- View Cell
-recipes.addShaped(<appliedenergistics2:item.ItemViewCell>, [
-[GlassPlate, <ore:plateRedAlloy>, GlassPlate],
-[<ore:plateRedAlloy>, <ore:gemCertusQuartz>, <ore:plateRedAlloy>],
-[AlPlate, AlPlate, AlPlate]]);
-// -
 recipes.addShapeless(<appliedenergistics2:item.ItemViewCell>, [<appliedenergistics2:item.ItemMultiMaterial:39>, <ore:gemCertusQuartz>]);
 
 // --- 1K ME Storage Cell
@@ -1046,44 +997,14 @@ recipes.addShapeless(<appliedenergistics2:item.ItemBasicStorageCell.64k>,
 [<appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:38>]);
 
 // --- 2 Spatial Storage Cell
-recipes.addShaped(<appliedenergistics2:item.ItemSpatialStorageCell.2Cubed>, [
-[HHammer, CertusPlate, QuartziteScrew],
-[SteelPlate, <appliedenergistics2:item.ItemMultiMaterial:32>, SteelPlate],
-[QuartziteScrew, AlPlate, Screwdriver]]);
-// -
-recipes.addShaped(<appliedenergistics2:item.ItemSpatialStorageCell.2Cubed>, [
-[Screwdriver, CertusPlate, QuartziteScrew],
-[SteelPlate, <appliedenergistics2:item.ItemMultiMaterial:32>, SteelPlate],
-[QuartziteScrew, AlPlate, HHammer]]);
-// -
 recipes.addShapeless(<appliedenergistics2:item.ItemSpatialStorageCell.2Cubed>, 
 [<appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:32>]);
 
 // --- 16 Spatial Storage Cell
-recipes.addShaped(<appliedenergistics2:item.ItemSpatialStorageCell.16Cubed>, [
-[HHammer, CertusPlate, QuartziteScrew],
-[SteelPlate, <appliedenergistics2:item.ItemMultiMaterial:33>, SteelPlate],
-[QuartziteScrew, AlPlate, Screwdriver]]);
-// -
-recipes.addShaped(<appliedenergistics2:item.ItemSpatialStorageCell.16Cubed>, [
-[Screwdriver, CertusPlate, QuartziteScrew],
-[SteelPlate, <appliedenergistics2:item.ItemMultiMaterial:33>, SteelPlate],
-[QuartziteScrew, AlPlate, HHammer]]);
-// -
 recipes.addShapeless(<appliedenergistics2:item.ItemSpatialStorageCell.16Cubed>, 
 [<appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:33>]);
 
 // --- 128 Spatial Storage Cell
-recipes.addShaped(<appliedenergistics2:item.ItemSpatialStorageCell.128Cubed>, [
-[HHammer, CertusPlate, QuartziteScrew],
-[SteelPlate, <appliedenergistics2:item.ItemMultiMaterial:34>, SteelPlate],
-[QuartziteScrew, AlPlate, Screwdriver]]);
-// - 
-recipes.addShaped(<appliedenergistics2:item.ItemSpatialStorageCell.128Cubed>, [
-[Screwdriver, CertusPlate, QuartziteScrew],
-[SteelPlate, <appliedenergistics2:item.ItemMultiMaterial:34>, SteelPlate],
-[QuartziteScrew, AlPlate, HHammer]]);
-// -
 recipes.addShapeless(<appliedenergistics2:item.ItemSpatialStorageCell.128Cubed>, 
 [<appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:34>]);
 
