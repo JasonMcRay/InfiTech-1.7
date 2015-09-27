@@ -28,8 +28,8 @@ var SHammer 		= <ore:craftingToolSoftHammer>;
 var screwdriver		= <ore:craftingToolScrewdriver>;
 //Blocks
 var cartassembler	= <StevesCarts:BlockCartAssembler>;
-var advdetectorrail	= <StevesCarts:BlockAdvDetector;
-var junctionrail	= <StevesCarts:BlockJunction;
+var advdetectorrail	= <StevesCarts:BlockAdvDetector>;
+var junctionrail	= <StevesCarts:BlockJunction>;
 //
 var gearWood 		= <ore:gearGtWood>;
 var screwiron 		= <ore:screwAnyIron>;
@@ -47,7 +47,7 @@ var pressureplate	= <ore:plateEuropium>;
 var reinforcedmetal	= <StevesCarts:ModuleComponents:22>;
 var galgadorianmetal	= <StevesCarts:ModuleComponents:47>;
 var simplepcb		= <StevesCarts:ModuleComponents:9>;
-var circuit		= <ore:circuitBasic>;
+var basiccircuit	= <ore:circuitBasic>;
 var advpcb		= <StevesCarts:ModuleComponents:16>;
 var advcircuit		= <ore:circuitAdvanced>;
 var pcb			= <ore:oc:materialCircuitBoardPrinted>;
@@ -64,9 +64,16 @@ var ironpane		= <StevesCarts:ModuleComponents:34>;
 var robotarmlv		= <gregtech:gt.metaitem.01:32650>;
 var conveyorlv		= <gregtech:gt.metaitem.01:32630>;
 var sensorlv		= <gregtech:gt.metaitem.01:32690>;
+var pumplv		= <gregtech:gt.metaitem.01:32610>;
+var smallsteelpipe	= <ore:pipeSmallSteel>;
+var pressurelavaboiler	= <gregtech:gt.blockmachines:102>;
 var ironfurnace		= <ore:craftingIronFurnace>;
 var battery		= <ore:batteryBasic>;
 var ducttape		= <ore:craftingDuctTape>;
+var pearlEnder		= <ore:pearlEnder>;
+var refineditemcasing	= <IC2:itemCasing:5>;
+var lavabucket		= <ore:bucketLava>;
+var geothermal		= <ore:craftingGeothermalGenerator>;
 
 # Blocks/Items Removal
 recipes.remove(junctionrail);
@@ -121,7 +128,7 @@ recipes.addShaped(chunkloader, [
 recipes.remove(simplepcb);
 recipes.addShaped(simplepcb, [
 	[plateIron, redstone, plateIron],
-	[circuit, plateGold, circuit],
+	[basiccircuit, plateGold, basiccircuit],
 	[plateIron, redstone, plateIron]]);
 recipes.remove(advpcb);
 recipes.addShaped(advpcb, [
@@ -161,7 +168,7 @@ recipes.addShaped(advdetectorrail, [
 recipes.remove(tinycoalengine);
 recipes.addShaped(tinycoalengine, [
 	[plateSteel, battery, plateSteel],
-	[plateSteel, circuit, plateSteel],
+	[plateSteel, basiccircuit, plateSteel],
 	[plateSteel, ironfurnace, plateSteel]]);
 recipes.remove(coalengine);
 recipes.addShaped(coalengine, [
@@ -170,11 +177,11 @@ recipes.addShaped(coalengine, [
 	[plateAluminium, tinycoalengine, plateAluminium]]);
 recipes.remove(thermalengine);
 recipes.addShaped(thermalengine, [
-	[plateAluminium, tinycoalengine, plateAluminium],
-	[tinycoalengine, ducttape, tinycoalengine],
-	[plateAluminium, tinycoalengine, plateAluminium]]);
+	[refineditemcasing, lavabucket, refineditemcasing],
+	[pumplv, smallsteelpipe, pumplv],
+	[refineditemcasing, pressurelavaboiler, refineditemcasing]]);
 recipes.remove(advthermalengine);
 recipes.addShaped(advthermalengine, [
-	[plateAluminium, tinycoalengine, plateAluminium],
-	[tinycoalengine, ducttape, tinycoalengine],
-	[plateAluminium, tinycoalengine, plateAluminium]]);
+	[null, thermalengine, null],
+	[thermalengine, ducttape, thermalengine],
+	[reinforcedmetal, geothermal, reinforcedmetal]]);
