@@ -1,3 +1,13 @@
+v3.1.11
+Mod Updates:
+- IndustrialCraft 2 -> 2.2.780
+- PneumaticCraft -> 1.11.11-133
+- XACT -> 0.5.4
+- Minetweaker -> Back to official 3.0.10B
+
+Changes/Fixes:
+- Fixed XACT Crafter not saving its inventory (now for real)
+
 v3.1.10
 Mod Updates:
 - Bdlib -> 1.9.2.105
