@@ -74,6 +74,10 @@ var pearlEnder		= <ore:pearlEnder>;
 var refineditemcasing	= <IC2:itemCasing:5>;
 var lavabucket		= <ore:bucketLava>;
 var geothermal		= <ore:craftingGeothermalGenerator>;
+var obsidian		= <ore:blockObsidian>;
+var platetungstensteel	= <ore:plateTungstenSteel>;
+var inddiamond		= <ore:craftingIndustrialDiamond>;
+var rawhardnener	= <StevesCarts:ModuleComponents:18>;
 
 # Blocks/Items Removal
 recipes.remove(junctionrail);
@@ -185,3 +189,8 @@ recipes.addShaped(advthermalengine, [
 	[null, thermalengine, null],
 	[thermalengine, ducttape, thermalengine],
 	[reinforcedmetal, geothermal, reinforcedmetal]]);
+recipes.remove(rawhardnener);
+recipes.addShaped(rawhardnener, [
+	[obsidian, platetungstensteel, obsidian],
+	[platetungstensteel, inddiamond, platetungstensteel],
+	[obsidian, platetungstensteel, obsidian]]);
