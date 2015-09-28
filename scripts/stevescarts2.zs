@@ -18,15 +18,15 @@ var basicsolarengine 	= <StevesCarts:CartModule:45>;
 var solarengine 	= <StevesCarts:CartModule:1>;
 var compactsolarengine 	= <StevesCarts:CartModule:56>;
 //type: Tool
-var basicfarmer 	= <StevesCarts:CartModule:14>.withTag({Data: 100 as byte});
-var galgadorianfarmer 	= <StevesCarts:CartModule:84>.withTag({Data: 100 as byte});
-var basiccutter 	= <StevesCarts:CartModule:15>.withTag({Data: 100 as byte});
-var hardendcutter 	= <StevesCarts:CartModule:79>.withTag({Data: 100 as byte});
-var galgadoriancutter 	= <StevesCarts:CartModule:80>.withTag({Data: 100 as byte});
-var irondrill	 	= <StevesCarts:CartModule:42>.withTag({Data: 100 as byte});
-var basicdrill	 	= <StevesCarts:CartModule:8>.withTag({Data: 100 as byte});
-//var hardenddrill 	= <StevesCarts:CartModule:43>.withTag({Data: 100 as byte});
-//var galgadoriandrill 	= <StevesCarts:CartModule:9>.withTag({Data: 100 as byte});
+var basicfarmer 	= <StevesCarts:CartModule:14>;
+var galgadorianfarmer 	= <StevesCarts:CartModule:84>;
+var basiccutter 	= <StevesCarts:CartModule:15>;
+var hardendcutter 	= <StevesCarts:CartModule:79>;
+var galgadoriancutter 	= <StevesCarts:CartModule:80>;
+var irondrill	 	= <StevesCarts:CartModule:42>;
+var basicdrill	 	= <StevesCarts:CartModule:8>;
+//var hardenddrill 	= <StevesCarts:CartModule:43>;
+//var galgadoriandrill 	= <StevesCarts:CartModule:9>;
 //wheels
 var wheelswood 		= <StevesCarts:ModuleComponents>;
 var wheelsiron 		= <StevesCarts:ModuleComponents:1>;
@@ -77,8 +77,8 @@ var geothermal		= <ore:craftingGeothermalGenerator>;
 var platetungstensteel	= <ore:plateTungstenSteel>;
 var inddiamond		= <ore:craftingIndustrialDiamond>;
 var diasawblade		= <ore:craftingDiamondBlade>;
-var miningdrill		= <IC2:itemToolDrill:26>.withTag{()};
-var diaminingdrill	= <IC2:itemToolDDrill:26>.withTag{()};
+var miningdrill		= <IC2:itemToolDrill:26>;
+var diaminingdrill	= <IC2:itemToolDDrill:26>;
 //railcraft
 var standardrail	= <Railcraft:part.rail>;
 var woodentie		= <Railcraft:part.tie>;
