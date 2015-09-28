@@ -14,6 +14,9 @@ var tinycoalengine 	= <StevesCarts:CartModule:44>;
 var coalengine	 	= <StevesCarts:CartModule>;
 var thermalengine 	= <StevesCarts:CartModule:69>;
 var advthermalengine 	= <StevesCarts:CartModule:70>;
+var basicsolarengine 	= <StevesCarts:CartModule:45>;
+var solarengine 	= <StevesCarts:CartModule:1>;
+var compactsolarengine 	= <StevesCarts:CartModule:56>;
 //wheels
 var wheelswood 		= <StevesCarts:ModuleComponents>;
 var wheelsiron 		= <StevesCarts:ModuleComponents:1>;
@@ -34,55 +37,66 @@ var junctionrail	= <StevesCarts:BlockJunction>;
 var upgradesolarpanel	= <StevesCarts:upgrade:19>;
 var upgradebattery	= <StevesCarts:upgrade>;
 var upgradepowercrystal	= <StevesCarts:upgrade:1>;
-//
+//gregtech + ic2
 var gearWood 		= <ore:gearGtWood>;
-var screwiron 		= <ore:screwAnyIron>;
-var stickWood 		= <ore:stickWood>;
-var pork 		= <minecraft:porkchop>;
-var plankWood		= <ore:plankWood>;
-var logWood		= <ore:logWood>;
 var plateIron		= <ore:plateAnyIron>;
 var plateAluminium	= <ore:plateAluminium>;
 var plateSteel		= <ore:plateSteel>;
 var plateGold		= <ore:plateGold>;
-var redstone		= <ore:dustRedstone>;
 var plateEuropium	= <ore:plateEuropium>;
-var pressureplate	= <ore:plateEuropium>;
-var reinforcedmetal	= <StevesCarts:ModuleComponents:22>;
-var galgadorianmetal	= <StevesCarts:ModuleComponents:47>;
-var simplepcb		= <StevesCarts:ModuleComponents:9>;
+var platestainlesssteel	= <ore:plateStainlessSteel>;
 var basiccircuit	= <ore:circuitBasic>;
-var advpcb		= <StevesCarts:ModuleComponents:16>;
 var advcircuit		= <ore:circuitAdvanced>;
-var pcb			= <ore:oc:materialCircuitBoardPrinted>;
-var worldanchor		= <Railcraft:machine.alpha>;
-var standardrail	= <Railcraft:part.rail>;
-var woodentie		= <Railcraft:part.tie>;
-var tankvalve		= <StevesCarts:ModuleComponents:60>;
-var tankpane		= <StevesCarts:ModuleComponents:61>;
-var barsIron		= <ore:barsIron>;
-var glass		= <ore:blockGlass>;
-var paneglass		= <ore:paneGlass>;
-var chestpane		= <StevesCarts:ModuleComponents:30>;
-var ironpane		= <StevesCarts:ModuleComponents:34>;
 var robotarmlv		= <gregtech:gt.metaitem.01:32650>;
 var conveyorlv		= <gregtech:gt.metaitem.01:32630>;
 var sensorlv		= <gregtech:gt.metaitem.01:32690>;
 var pumplv		= <gregtech:gt.metaitem.01:32610>;
-var smallsteelpipe	= <ore:pipeSmallSteel>;
+var pistonlv		= <gregtech:gt.metaitem.01:32640>;
+var pistonmv		= <gregtech:gt.metaitem.01:32641>;
+var pistonhv		= <gregtech:gt.metaitem.01:32642>;
+var fieldgenMV		= <gregtech:gt.metaitem.01:32671>;
 var pressurelavaboiler	= <gregtech:gt.blockmachines:102>;
+var refineditemcasing	= <IC2:itemCasing:5>;
+var smallsteelpipe	= <ore:pipeSmallSteel>;
 var ironfurnace		= <ore:craftingIronFurnace>;
 var battery		= <ore:batteryBasic>;
 var ducttape		= <ore:craftingDuctTape>;
-var pearlEnder		= <ore:pearlEnder>;
-var refineditemcasing	= <IC2:itemCasing:5>;
-var lavabucket		= <ore:bucketLava>;
 var geothermal		= <ore:craftingGeothermalGenerator>;
-var obsidian		= <ore:blockObsidian>;
 var platetungstensteel	= <ore:plateTungstenSteel>;
 var inddiamond		= <ore:craftingIndustrialDiamond>;
+//railcraft
+var standardrail	= <Railcraft:part.rail>;
+var woodentie		= <Railcraft:part.tie>;
+//var junctiontrack	= <Railcraft:track>.withTag({track: "railcraft:track..junction"});
+var worldanchor		= <Railcraft:machine.alpha>;
+//steves cart crafting
+var reinforcedmetal	= <StevesCarts:ModuleComponents:22>;
+var galgadorianmetal	= <StevesCarts:ModuleComponents:47>;
+var simplepcb		= <StevesCarts:ModuleComponents:9>;
+var advpcb		= <StevesCarts:ModuleComponents:16>;
+var tankvalve		= <StevesCarts:ModuleComponents:60>;
+var tankpane		= <StevesCarts:ModuleComponents:61>;
+var chestpane		= <StevesCarts:ModuleComponents:30>;
+var ironpane		= <StevesCarts:ModuleComponents:34>;
 var rawhardnener	= <StevesCarts:ModuleComponents:18>;
-var junctiontrack	= <Railcraft:track>.withTag({track: "railcraft:track..junction"});
+var solarpanel		= <StevesCarts:ModuleComponents:44>;
+var advsolarpanel	= <StevesCarts:ModuleComponents:58>;
+//
+var stickWood 		= <ore:stickWood>;
+var pork 		= <minecraft:porkchop>;
+var plankWood		= <ore:plankWood>;
+var logWood		= <ore:logWood>;
+var redstone		= <ore:dustRedstone>;
+var pcb			= <ore:oc:materialCircuitBoardPrinted>;
+var barsIron		= <ore:barsIron>;
+var glass		= <ore:blockGlass>;
+var paneglass		= <ore:paneGlass>;
+var pearlEnder		= <ore:pearlEnder>;
+var lavabucket		= <ore:bucketLava>;
+var obsidian		= <ore:blockObsidian>;
+var fullsolarpanel	= <GalacticraftCore:item.basicItem:1>;
+var glowstonedust	= <ore:dustGlowstone>;
+var teslatite		= <ore:dustTeslatite>;
 
 # Blocks/Items Removal
 recipes.remove(upgradesolarpanel);
@@ -90,9 +104,9 @@ recipes.remove(upgradebattery);
 recipes.remove(upgradepowercrystal);
 
 # Recipe Tweaks
-recipes.remove(junctionrail);
-recipes.addShapeless(junctiontrack, [junctionrail]);
-recipes.addShapeless(junctionrail, [junctiontrack]);
+//recipes.remove(junctionrail);
+//recipes.addShapeless(junctiontrack, [junctionrail]);
+//recipes.addShapeless(junctionrail, [junctiontrack]);
 recipes.remove(wheelswood);
 recipes.addShaped(wheelswood, [
 	[null, HHammer, null],
@@ -204,3 +218,28 @@ recipes.addShaped(rawhardnener, [
 	[obsidian, platetungstensteel, obsidian],
 	[platetungstensteel, inddiamond, platetungstensteel],
 	[obsidian, platetungstensteel, obsidian]]);
+recipes.remove(solarpanel);
+recipes.addShaped(solarpanel, [
+	[glowstonedust, teslatite, glowstonedust],
+	[teslatite, fullsolarpanel, teslatite],
+	[glowstonedust, teslatite, glowstonedust]]);
+recipes.remove(advsolarpanel);
+recipes.addShaped(advsolarpanel, [
+	[solarpanel, platestainlesssteel, solarpanel],
+	[platestainlesssteel, advpcb, platestainlesssteel],
+	[solarpanel, platestainlesssteel, solarpanel]]);
+recipes.remove(basicsolarengine);
+recipes.addShaped(basicsolarengine, [
+	[solarpanel, plateSteel, solarpanel],
+	[plateSteel, simplepcb, plateSteel],
+	[null, pistonlv, null]]);
+recipes.remove(solarengine);
+recipes.addShaped(solarengine, [
+	[plateAluminium, solarpanel, plateAluminium],
+	[solarpanel, advpcb, solarpanel],
+	[pistonmv, basicsolarengine, pistonmv]]);
+recipes.remove(compactsolarengine);
+recipes.addShaped(compactsolarengine, [
+	[advsolarpanel, platestainlesssteel, advsolarpanel],
+	[advpcb, fieldgenMV, advpcb],
+	[pistonhv, platestainlesssteel, pistonhv]]);
