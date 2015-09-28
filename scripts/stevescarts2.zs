@@ -30,6 +30,10 @@ var screwdriver		= <ore:craftingToolScrewdriver>;
 var cartassembler	= <StevesCarts:BlockCartAssembler>;
 var advdetectorrail	= <StevesCarts:BlockAdvDetector>;
 var junctionrail	= <StevesCarts:BlockJunction>;
+//Upgrade
+var upgradesolarpanel	= <StevesCarts:upgrade:19>;
+var upgradebattery	= <StevesCarts:upgrade>;
+var upgradepowercrystal	= <StevesCarts:upgrade:1>;
 //
 var gearWood 		= <ore:gearGtWood>;
 var screwiron 		= <ore:screwAnyIron>;
@@ -78,11 +82,17 @@ var obsidian		= <ore:blockObsidian>;
 var platetungstensteel	= <ore:plateTungstenSteel>;
 var inddiamond		= <ore:craftingIndustrialDiamond>;
 var rawhardnener	= <StevesCarts:ModuleComponents:18>;
+var junctiontrack	= <Railcraft:track>.withTag({track: "railcraft:track..junction"});
 
 # Blocks/Items Removal
-recipes.remove(junctionrail);
+recipes.remove(upgradesolarpanel);
+recipes.remove(upgradebattery);
+recipes.remove(upgradepowercrystal);
 
 # Recipe Tweaks
+recipes.remove(junctionrail);
+recipes.addShapeless(junctiontrack, [junctionrail]);
+recipes.addShapeless(junctionrail, [junctiontrack]);
 recipes.remove(wheelswood);
 recipes.addShaped(wheelswood, [
 	[null, HHammer, null],
