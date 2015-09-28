@@ -17,6 +17,16 @@ var advthermalengine 	= <StevesCarts:CartModule:70>;
 var basicsolarengine 	= <StevesCarts:CartModule:45>;
 var solarengine 	= <StevesCarts:CartModule:1>;
 var compactsolarengine 	= <StevesCarts:CartModule:56>;
+//type: Tool
+var basicfarmer 	= <StevesCarts:CartModule:14>.withTag({Data: 100 as byte});
+var galgadorianfarmer 	= <StevesCarts:CartModule:84>.withTag({Data: 100 as byte});
+var basiccutter 	= <StevesCarts:CartModule:15>.withTag({Data: 100 as byte});
+var hardendcutter 	= <StevesCarts:CartModule:79>.withTag({Data: 100 as byte});
+var galgadoriancutter 	= <StevesCarts:CartModule:80>.withTag({Data: 100 as byte});
+var irondrill	 	= <StevesCarts:CartModule:42>.withTag({Data: 100 as byte});
+var basicdrill	 	= <StevesCarts:CartModule:8>.withTag({Data: 100 as byte});
+//var hardenddrill 	= <StevesCarts:CartModule:43>.withTag({Data: 100 as byte});
+//var galgadoriandrill 	= <StevesCarts:CartModule:9>.withTag({Data: 100 as byte});
 //wheels
 var wheelswood 		= <StevesCarts:ModuleComponents>;
 var wheelsiron 		= <StevesCarts:ModuleComponents:1>;
@@ -43,10 +53,11 @@ var plateIron		= <ore:plateAnyIron>;
 var plateAluminium	= <ore:plateAluminium>;
 var plateSteel		= <ore:plateSteel>;
 var plateGold		= <ore:plateGold>;
-var plateEuropium	= <ore:plateEuropium>;
+var plateNeodymium	= <ore:plateNeodymium>;
 var platestainlesssteel	= <ore:plateStainlessSteel>;
 var basiccircuit	= <ore:circuitBasic>;
 var advcircuit		= <ore:circuitAdvanced>;
+var energyflowcircuit	= <gregtech:gt.metaitem.01:32706>;
 var robotarmlv		= <gregtech:gt.metaitem.01:32650>;
 var conveyorlv		= <gregtech:gt.metaitem.01:32630>;
 var sensorlv		= <gregtech:gt.metaitem.01:32690>;
@@ -55,6 +66,7 @@ var pistonlv		= <gregtech:gt.metaitem.01:32640>;
 var pistonmv		= <gregtech:gt.metaitem.01:32641>;
 var pistonhv		= <gregtech:gt.metaitem.01:32642>;
 var fieldgenMV		= <gregtech:gt.metaitem.01:32671>;
+var fieldgenEV		= <gregtech:gt.metaitem.01:32673>;
 var pressurelavaboiler	= <gregtech:gt.blockmachines:102>;
 var refineditemcasing	= <IC2:itemCasing:5>;
 var smallsteelpipe	= <ore:pipeSmallSteel>;
@@ -64,6 +76,9 @@ var ducttape		= <ore:craftingDuctTape>;
 var geothermal		= <ore:craftingGeothermalGenerator>;
 var platetungstensteel	= <ore:plateTungstenSteel>;
 var inddiamond		= <ore:craftingIndustrialDiamond>;
+var diasawblade		= <ore:craftingDiamondBlade>;
+var miningdrill		= <IC2:itemToolDrill:26>.withTag{()};
+var diaminingdrill	= <IC2:itemToolDDrill:26>.withTag{()};
 //railcraft
 var standardrail	= <Railcraft:part.rail>;
 var woodentie		= <Railcraft:part.tie>;
@@ -81,6 +96,11 @@ var ironpane		= <StevesCarts:ModuleComponents:34>;
 var rawhardnener	= <StevesCarts:ModuleComponents:18>;
 var solarpanel		= <StevesCarts:ModuleComponents:44>;
 var advsolarpanel	= <StevesCarts:ModuleComponents:58>;
+var galgadoreye		= <StevesCarts:ModuleComponents:45>;
+var sawblade		= <StevesCarts:ModuleComponents:15>;
+var hardendsawblade	= <StevesCarts:ModuleComponents:80>;
+var galgadoriansawblade	= <StevesCarts:ModuleComponents:81>;
+var woodcuttingcore	= <StevesCarts:ModuleComponents:17>;
 //
 var stickWood 		= <ore:stickWood>;
 var pork 		= <minecraft:porkchop>;
@@ -97,6 +117,7 @@ var obsidian		= <ore:blockObsidian>;
 var fullsolarpanel	= <GalacticraftCore:item.basicItem:1>;
 var glowstonedust	= <ore:dustGlowstone>;
 var teslatite		= <ore:dustTeslatite>;
+var diamond		= <ore:gemDiamond>;
 
 # Blocks/Items Removal
 recipes.remove(upgradesolarpanel);
@@ -243,3 +264,58 @@ recipes.addShaped(compactsolarengine, [
 	[advsolarpanel, platestainlesssteel, advsolarpanel],
 	[advpcb, fieldgenMV, advpcb],
 	[pistonhv, platestainlesssteel, pistonhv]]);
+recipes.remove(galgadoreye);
+recipes.addShaped(galgadoreye, [
+	[plateNeodymium, energyflowcircuit, plateNeodymium],
+	[energyflowcircuit, fieldgenEV, energyflowcircuit],
+	[plateNeodymium, energyflowcircuit, plateNeodymium]]);
+recipes.remove(sawblade);
+recipes.addShaped(sawblade, [
+	[plateSteel, plateSteel, inddiamond],
+	[null, null, null],
+	[null, null, null]]);
+recipes.remove(hardendsawblade);
+recipes.addShaped(hardendsawblade, [
+	[reinforcedmetal, reinforcedmetal, sawblade],
+	[null, null, null],
+	[null, null, null]]);
+recipes.remove(galgadoriansawblade);
+recipes.addShaped(galgadoriansawblade, [
+	[galgadorianmetal, galgadorianmetal, hardendsawblade],
+	[null, null, null],
+	[null, null, null]]);
+recipes.remove(basicfarmer);
+recipes.addShaped(basicfarmer, [
+	[diamond, diamond, diamond],
+	[null, plateSteel, null],
+	[simplepcb, plateGold, simplepcb]]);
+recipes.remove(galgadorianfarmer);
+recipes.addShaped(galgadorianfarmer, [
+	[galgadorianmetal, galgadorianmetal, galgadorianmetal],
+	[null, reinforcedmetal, null],
+	[advpcb, basicfarmer, advpcb]]);
+recipes.remove(basiccutter);
+recipes.addShaped(basiccutter, [
+	[sawblade, sawblade, sawblade],
+	[sawblade, diasawblade, sawblade],
+	[simplepcb, woodcuttingcore, simplepcb]]);
+recipes.remove(hardendcutter);
+recipes.addShaped(hardendcutter, [
+	[hardendsawblade, hardendsawblade, hardendsawblade],
+	[hardendsawblade, diamond, hardendsawblade],
+	[advpcb, basiccutter, advpcb]]);
+recipes.remove(galgadoriancutter);
+recipes.addShaped(galgadoriancutter, [
+	[galgadoriansawblade, galgadoriansawblade, galgadoriansawblade],
+	[galgadoriansawblade, reinforcedmetal, galgadoriansawblade],
+	[advpcb, hardendcutter, advpcb]]);
+recipes.remove(irondrill);
+recipes.addShaped(irondrill, [
+	[plateSteel, plateSteel, null],
+	[null, plateSteel, miningdrill],
+	[plateSteel, plateSteel, null]]);
+recipes.remove(basicdrill);
+recipes.addShaped(basicdrill, [
+	[platestainlesssteel, platestainlesssteel, null],
+	[null, irondrill, diaminingdrill],
+	[platestainlesssteel, platestainlesssteel, null]]);
