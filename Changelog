@@ -1,12 +1,14 @@
-v3.1.11
+v3.1.12
 Mod Updates:
 - IndustrialCraft 2 -> 2.2.780
 - PneumaticCraft -> 1.11.11-133
 - XACT -> 0.5.4
 - Minetweaker -> Back to official 3.0.10B
+- WAILA Plugins -> 0.1.2-21
 
 Changes/Fixes:
 - Fixed XACT Crafter not saving its inventory (now for real)
+- Waila is now showing correct amount of liquid inside RC Tanks
 
 v3.1.10
 Mod Updates:
