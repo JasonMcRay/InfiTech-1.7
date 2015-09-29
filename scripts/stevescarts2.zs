@@ -27,6 +27,8 @@ var irondrill	 	= <StevesCarts:CartModule:42>;
 var basicdrill	 	= <StevesCarts:CartModule:8>;
 //var hardenddrill 	= <StevesCarts:CartModule:43>;
 //var galgadoriandrill 	= <StevesCarts:CartModule:9>;
+//type: Storage
+var advtank		= <StevesCarts:CartModule:66>;
 //wheels
 var wheelswood 		= <StevesCarts:ModuleComponents>;
 var wheelsiron 		= <StevesCarts:ModuleComponents:1>;
@@ -43,6 +45,7 @@ var screwdriver		= <ore:craftingToolScrewdriver>;
 var cartassembler	= <StevesCarts:BlockCartAssembler>;
 var advdetectorrail	= <StevesCarts:BlockAdvDetector>;
 var junctionrail	= <StevesCarts:BlockJunction>;
+var liquidmanager	= <StevesCarts:BlockLiquidManager>;
 //Upgrade
 var upgradesolarpanel	= <StevesCarts:upgrade:19>;
 var upgradebattery	= <StevesCarts:upgrade>;
@@ -55,6 +58,10 @@ var plateSteel		= <ore:plateSteel>;
 var plateGold		= <ore:plateGold>;
 var plateNeodymium	= <ore:plateNeodymium>;
 var platestainlesssteel	= <ore:plateStainlessSteel>;
+var foilenderium	= <ore:foilEnderium>;
+var foilchrome		= <ore:foilChrome>;
+var foilneodymium	= <ore:foilEuropium>;
+var foileuropium	= <ore:foilNeodymium>;
 var basiccircuit	= <ore:circuitBasic>;
 var advcircuit		= <ore:circuitAdvanced>;
 var energyflowcircuit	= <gregtech:gt.metaitem.01:32706>;
@@ -72,6 +79,7 @@ var refineditemcasing	= <IC2:itemCasing:5>;
 var smallsteelpipe	= <ore:pipeSmallSteel>;
 var ironfurnace		= <ore:craftingIronFurnace>;
 var battery		= <ore:batteryBasic>;
+var advbattery		= <ore:batteryAdvanced>;
 var ducttape		= <ore:craftingDuctTape>;
 var geothermal		= <ore:craftingGeothermalGenerator>;
 var platetungstensteel	= <ore:plateTungstenSteel>;
@@ -101,6 +109,9 @@ var sawblade		= <StevesCarts:ModuleComponents:15>;
 var hardendsawblade	= <StevesCarts:ModuleComponents:80>;
 var galgadoriansawblade	= <StevesCarts:ModuleComponents:81>;
 var woodcuttingcore	= <StevesCarts:ModuleComponents:17>;
+var dynamicpane		= <StevesCarts:ModuleComponents:37>;
+var largedynamicpane	= <StevesCarts:ModuleComponents:38>;
+var blankupgrade	= <StevesCarts:ModuleComponents:59>;
 //
 var stickWood 		= <ore:stickWood>;
 var pork 		= <minecraft:porkchop>;
@@ -118,6 +129,7 @@ var fullsolarpanel	= <GalacticraftCore:item.basicItem:1>;
 var glowstonedust	= <ore:dustGlowstone>;
 var teslatite		= <ore:dustTeslatite>;
 var diamond		= <ore:gemDiamond>;
+var treesapling		= <ore:treeSapling>;
 
 # Blocks/Items Removal
 recipes.remove(upgradesolarpanel);
@@ -226,14 +238,14 @@ recipes.addShaped(coalengine, [
 	[plateAluminium, tinycoalengine, plateAluminium]]);
 recipes.remove(thermalengine);
 recipes.addShaped(thermalengine, [
-	[refineditemcasing, lavabucket, refineditemcasing],
+	[refineditemcasing, advbattery, refineditemcasing],
 	[pumplv, smallsteelpipe, pumplv],
 	[refineditemcasing, pressurelavaboiler, refineditemcasing]]);
 recipes.remove(advthermalengine);
 recipes.addShaped(advthermalengine, [
 	[null, thermalengine, null],
 	[thermalengine, ducttape, thermalengine],
-	[reinforcedmetal, geothermal, reinforcedmetal]]);
+	[plateAluminium, geothermal, plateAluminium]]);
 recipes.remove(rawhardnener);
 recipes.addShaped(rawhardnener, [
 	[obsidian, platetungstensteel, obsidian],
@@ -266,9 +278,9 @@ recipes.addShaped(compactsolarengine, [
 	[pistonhv, platestainlesssteel, pistonhv]]);
 recipes.remove(galgadoreye);
 recipes.addShaped(galgadoreye, [
-	[plateNeodymium, energyflowcircuit, plateNeodymium],
+	[foilenderium, energyflowcircuit, foilchrome],
 	[energyflowcircuit, fieldgenEV, energyflowcircuit],
-	[plateNeodymium, energyflowcircuit, plateNeodymium]]);
+	[foilneodymium, energyflowcircuit, foileuropium]]);
 recipes.remove(sawblade);
 recipes.addShaped(sawblade, [
 	[plateSteel, plateSteel, inddiamond],
@@ -312,10 +324,30 @@ recipes.addShaped(galgadoriancutter, [
 recipes.remove(irondrill);
 recipes.addShaped(irondrill, [
 	[plateSteel, plateSteel, null],
-	[null, plateSteel, miningdrill],
+	[null, plateSteel, plateSteel],
 	[plateSteel, plateSteel, null]]);
 recipes.remove(basicdrill);
 recipes.addShaped(basicdrill, [
 	[platestainlesssteel, platestainlesssteel, null],
-	[null, irondrill, diaminingdrill],
+	[null, irondrill, miningdrill],
 	[platestainlesssteel, platestainlesssteel, null]]);
+recipes.remove(woodcuttingcore);
+recipes.addShaped(woodcuttingcore, [
+	[treesapling, treesapling, treesapling],
+	[treesapling, simplepcb, treesapling],
+	[treesapling, treesapling, treesapling]]);
+recipes.remove(largedynamicpane);
+recipes.addShaped(largedynamicpane, [
+	[null, dynamicpane, null],
+	[dynamicpane, simplepcb, dynamicpane],
+	[null, dynamicpane, null]]);
+recipes.remove(liquidmanager);
+recipes.addShaped(liquidmanager, [
+	[advtank, plateSteel, advtank],
+	[plateSteel, simplepcb, plateSteel],
+	[advtank, plateSteel, advtank]]);
+recipes.remove(blankupgrade);
+recipes.addShaped(blankupgrade, [
+	[plateSteel, plateSteel, plateSteel],
+	[plateAluminium, redstone, plateAluminium],
+	[plateSteel, advpcb, plateSteel]]);
