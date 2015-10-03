@@ -1,3 +1,36 @@
+v3.1.13
+Mod Updates:
+- Aroma1997Core -> 1.0.2.16
+- BDLib -> 1.9.3.107
+- Buildcraft -> 7.1.7
+- BuildcraftCompat -> 7.1.1
+- FastLeafDecay -> 1.3
+- Forestry -> 3.6.10.1
+- Gendustry -> 1.6.1.126
+- GregTech -> 5.08.30
+- GTTweaker -> 1.0.9
+- HardcoreEnderExpansion -> 1.8.4
+- Logistics Pipes -> 0.9.3.52
+- MagicBees -> 2.3.6
+- OpenBlocks -> 1.4.4-674
+- OpenModsLib -> 0.8-399
+- PneumaticCraft -> 1.11.14-136
+
+Changes/Fixes:
+- Allowed Multiple Dragon Eggs
+- Blocked XACT Crafter from pulling items from IC2 Safe (Thanks DaknessShadow)
+- Fixed FT worktable playing tool sounds in loop.
+- EXBL Flower Extraction support.
+- Fixed Sag-milling cobble giving weird Gravel type.
+- Added GT Endium Processing
+- Fixes Compendium not returning to previous screen (caused item loss in crafting table)
+- Not Enough Items integration no longer intercepts recipe/usage keys, only Compendium key
+- Fixed PC refinery not accepting other types of Oil than PneumaticCrafts
+- Added September Patrons characters and heads to the game. (Thank you very much for support: ShinyGardevoir, MigukNamja and Slayeruga)
+
+Known Issues:
+- FT Worktable trying to use first GT tool in the storage area, even if it is different tool. (its fixed in FT4, but cant currently update, because of other mods)
+
 v3.1.12
 Mod Updates:
 - IndustrialCraft 2 -> 2.2.780
