@@ -15,10 +15,7 @@ When reporting issues make sure to:
 * Don't report crafting issues to mod developers. Report them in here, since I am the one changing recipes. So any recipe problems (crafting and unification) report to ME!
 
 ### Pull Requests
-If you are going to make a pull request, please try to make them into DEV branch
-* Fork repo
-* On top change branch Master into branch dev
-* Make your PR
+Just make sure they work :)
 
 ### Important for using dev configs
 I made these configs available for public so you can tinker with them. WARNING! I hold no responsibility if it will break something in your world!

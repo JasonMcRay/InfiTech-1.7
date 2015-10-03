@@ -1,12 +1,47 @@
-v3.1.11
+v3.1.13
+Mod Updates:
+- Aroma1997Core -> 1.0.2.16
+- BDLib -> 1.9.3.107
+- Buildcraft -> 7.1.7
+- BuildcraftCompat -> 7.1.1
+- FastLeafDecay -> 1.3
+- Forestry -> 3.6.10.1
+- Gendustry -> 1.6.1.126
+- GregTech -> 5.08.30
+- GTTweaker -> 1.0.9
+- HardcoreEnderExpansion -> 1.8.4
+- Logistics Pipes -> 0.9.3.52
+- MagicBees -> 2.3.6
+- OpenBlocks -> 1.4.4-674
+- OpenModsLib -> 0.8-399
+- PneumaticCraft -> 1.11.14-136
+
+Changes/Fixes:
+- Allowed Multiple Dragon Eggs
+- Blocked XACT Crafter from pulling items from IC2 Safe (Thanks DaknessShadow)
+- Fixed FT worktable playing tool sounds in loop.
+- EXBL Flower Extraction support.
+- Fixed Sag-milling cobble giving weird Gravel type.
+- Added GT Endium Processing
+- Fixes Compendium not returning to previous screen (caused item loss in crafting table)
+- Not Enough Items integration no longer intercepts recipe/usage keys, only Compendium key
+- Fixed PC refinery not accepting other types of Oil than PneumaticCrafts
+- Added September Patrons characters and heads to the game. (Thank you very much for support: ShinyGardevoir, MigukNamja and Slayeruga)
+
+Known Issues:
+- FT Worktable trying to use first GT tool in the storage area, even if it is different tool. (its fixed in FT4, but cant currently update, because of other mods)
+
+v3.1.12
 Mod Updates:
 - IndustrialCraft 2 -> 2.2.780
 - PneumaticCraft -> 1.11.11-133
 - XACT -> 0.5.4
 - Minetweaker -> Back to official 3.0.10B
+- WAILA Plugins -> 0.1.2-21
 
 Changes/Fixes:
 - Fixed XACT Crafter not saving its inventory (now for real)
+- Waila is now showing correct amount of liquid inside RC Tanks
 
 v3.1.10
 Mod Updates:
@@ -29,7 +64,6 @@ Mod Updates:
 
 Removed Mods:
 - ExtraCells (I no longer support addition of this mod)
-- Technomagi (Doesnt look to be maintained anymore)
 
 Changes/fixes:
 - Fixed XACT Crafter not saving its inventory
@@ -47,8 +81,12 @@ Changes/fixes:
 - Disabled NEI Integration with HEE as workaround for items disapearing from Crafting Table upon opening Compendium.
 - Disabled decomposition of and into GT Tools.
 - Re-added potions to NEI
+- Fixed Forestry Worktable not working properly with GT Tools
 - Fixes Chisel Packed Ice not being chiselable into
 - Fixed server/client sync issue (you no longer need to start SSP first
+
+Known Issues:
+- There is a sound lopp happening with Forestry Wortable and AE2 Patters if you have GT Tools that make sounds.
 
 v3.1.9
 Mod Updates:
@@ -62,7 +100,6 @@ Mod Updates:
 - Forestry -> 3.6.6.24
 - GalacticGreg -> 0.7
 - Gendustry -> 1.6.0.125
-- GregTech -> 5.09.02
 - IndustrialCraft 2 -> 2.2.773
 - MrCrayfishFurnitureMod -> 3.4.8
 - PneumaticCraft -> 1.11.6-126
@@ -82,7 +119,13 @@ Changes/fixes:
 Known Issues:
 - Recipes that are changed are not visible on servers, they still work, but NEI is not showing them. Current workaround is to load Singleplayer first and then log onto server.
 
-v3.1.8.1
+v3.1.8.1 - Hotfix
+Changes/Fixes:
+- Fixed RF machines not accepting GTEU
+- Fixed RF machines exploding when fed too much GTEU
+- Fixed crash when opening Keybinds/Controls options menu
+
+v3.1.8
 Mod Updates:
 - Aroma1997Core -> 1.0.2.15
 - BDLib -> 1.9.2.104
@@ -92,6 +135,7 @@ Mod Updates:
 - EnderCore -> 0.1.0.23
 - EnderIO -> 2.3.0.413
 - Gendustry -> 1.6.0.124
+- GregTech -> 5.08.29
 - GTTweaker -> 1.0.1
 - IGW -> 1.1.10-30
 - Immibis Core -> 59.1.2
@@ -121,44 +165,32 @@ Changes:
 - Endium Block now crafted inside Compressor
 - Hardcoded correct blaze powder aspect numbers.
 
-v3.1.7.1
+v3.1.7
 Mod Updates:
-- CodeChickenCore -> 1.0.7.47
-- EnderCore -> 0.1.0.19_beta
-- PneumaticCraft -> 1.11.0-120
-- Thaumic Tinkerer -> 2.5-508
-- BuildCraft -> 7.0.21
-- GregTech -> 5.09.01
-- Industrial Craft 2 -> 2.2.765
-- Malisis Core -> 0.12.8
-
-Changes:
-- Removed few recipe script entries, since they are now native to GT
-- Raw Silicon made Ore dicted to Silicon Dust (silicon ore is spawning in GC Dimensions)
-- Naquadah is generating only in Asteroid (galacticraft) dimension
-- Plutonium ore generation completely disabled
-- Uranium 235 ore generation added
-- Regenerated WorldGeneration.cfg file, so if you will find any inconsistencies with OreGen Guide, let me know, Thanks you.
-- New GT Alloys
-- Rubber creation has been changed.
-- Changed crafting of cables. (Copper Cables crafting is missing "early recipe", known and reported)
-- Raised efficiency of Generators
-- Fixed bug with Advanced Miner not charging
-- Vanilla Furnaces can be powered by conencting heat source (PneumaticCraft)
-
-
-v3.1.7b
-Mod Updates:
+- BDLib -> 1.9.2.102
+- Bibliocraft -> 1.10.6
+- BluePower -> 0.2.962
+- BuildCraft -> 7.0.20
+- BuildCraft Compat -> 7.0.11
+- EnderCore -> 0.0.1.17_alpha
+- EnderIO -> 2.3.0.407
 - EnderZoo -> 1.0.15.32
 - Galacticraft -> 3.0.12.357
-- HardcoreEnderExpansion -> 1.8.3
-- ModTweaker 2 -> 0.9.2
-- OpenComputers -> 1.5.15.31
-- PneumaticCraft -> 1.10.5-118
-- BDLib -> 1.9.2.102
 - Gendustry -> 1.6.0.118
 - GregTech -> 5.08.27
+- HardcoreEnderExpansion -> 1.8.3
 - IndustrialCraft 2 -> 2.2.763
+- LogisticsPipes -> 0.9.2.33
+- MalisisCore -> 0.12.7
+- MalisisDoors -> 1.9.4
+- ModTweaker 2 -> 0.9.2
+- NEIIntegration -> 1.0.12
+- OpenComputers -> 1.5.15.31
+- PneumaticCraft -> 1.10.5-118
+- Railcraft -> 9.7.0.0
+
+New Mods:
+- INpureCore
 
 Changes:
 - Large Turbine and Large Heat Exchanger overhaul
@@ -168,6 +200,7 @@ Changes:
 - NEI Support for UUMatter Recipes
 - Fixed nether quartz duplication with Lathe.
 - Also some items now cant be crafted using Pure Nether Quartz due to this.
+- Transfer nodes and pipes enabled
 - Transfer Node and pipe recipes added and tiered. Nodes require QED crafting.
 - Dimension transceiver energy cost raised from stupidly low to reasonable high in comparison to other teleportation methods.
 - Lowered Transceiver cost for teleporting direct fluids to 100RF/t. To save evergy you should first put the liquid into some sort of Fluid Container, and then transfer that.
@@ -176,58 +209,17 @@ Changes:
 - Fixed HEE Curses not getting used when placed on blocks
 - Fixed Nutrient biome bonus being always 0 for IC2 crops
 - Fixed fueling of Tier 3 Rockets
-
-v3.1.6.2
-Mod Updates:
-- Bibliocraft -> 1.10.6
-- EnderCore -> 0.0.1.17_alpha
-- EnderIO -> 2.3.0.407
-- EnderZoo -> 1.0.14.31
-- PneumaticCraft -> 1.10.4-117
-- Railcraft -> 9.7.0.0
-- IndustrialCraft 2 -> 2.2.761
-- LogisticsPipes -> 0.9.2.33
-
-New Mods:
-- INpureCore
-
-Changes:
 - Raised ammount of Item Conduits per craft (2 -> 6), since the crafting recipe uses Medium Pipes and not small ones. keeping it in line with other Conduit recipes (fluid)
-- Lowered Chance that Dire Slime will be spawned (65% -> 20%)
-- Massively culled NEI entries (around 200 pages are gone)
-
-
-v3.1.6.1
-Mod Updates:
-- BluePower -> 0.2.962
-- EnderZoo -> 1.0.13.30
-- NEIIntegration -> 1.0.12
-- PneumaticCraft -> 1.9.15-104
-- BuildCraft -> 7.0.20
-- BuildCraft Compat -> 7.0.11
-- IndustrialCraft 2 -> 2.2.760
-- LogisticsPipes -> 0.9.2.31
-- MalisisCore -> 0.12.7
-- MalisisDoors -> 1.9.4
-
-New Mods:
-- Technomagi (currently disabled, can be enabled but will cause huge rendering spams in logs)
-
-Changes:
+- Massively culled NEI entries
 - Removed Thermionic Tube requirement inside Gearbox, Hatch, Valve and Controller recipes. Also changed requirement of Steel Gears to Small Steal Gears.
-- Transfer nodes and pipes enabled, but recipes still doesnt show for some reason. Might have missed something or its broken :(
 - Concussion Creepers no longer TP players to void
 - Fixed crash with Toggle Latch
 - Changed recipes for ME Conduits.
 - Added cleaning process to clear colored ME cables back to non colored ones inside Chemical Bath + Chlorine.
 - Fixed crash with IC2 Fluid Regulator
-
-v3.1.6
-Beta Specific:
-- EnderIO -> 2.3.0.406_beta
-- EnderCOre -> 0.0.1.15_alpha
 - SAG Mill is better for processing Gem Ores if you want more gem dusts
 
+v3.1.6
 Mod Updates:
 - Automagy -> 0.26.3
 - BiblioCraft -> 1.10.5
