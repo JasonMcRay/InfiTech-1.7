@@ -17,3 +17,8 @@
 *.RTF	 diff=astextplain
 Changelog merge=ours
 README.md merge=ours
+config\GregTech\OverpoweredStuff.cfg merge=ours
+config\GregTech\MachineStats.cfg merge=ours
+config\GregTech\MaterialProperties.cfg merge=ours
+config\GregTech\WorldGeneration.cfg merge=ours
+mods\gregtech*.jar merge=ours
