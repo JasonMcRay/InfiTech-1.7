@@ -146,7 +146,7 @@ recipes.addShaped(rotorCarbon, [
 Canner.addRecipe(fuelRodUranium, uraniumEnriched, fuelRodEmpty, 200, 2);
 Canner.addRecipe(fuelRodMOX, MOX, fuelRodEmpty, 200, 2);
 recipes.remove(fuelRodThorium);
-Canner.addRecipe(fuelRodThorium, dustThorium, fuelRodEmpty, 200, 2);
+Canner.addRecipe(fuelRodThorium, dustThorium * 3, fuelRodEmpty, 200, 2);
 
 # Specials
 recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreIron]);
