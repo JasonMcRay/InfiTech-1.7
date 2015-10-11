@@ -99,7 +99,7 @@ recipes.addShaped(filingCabinet, [
     [plateSteel, chestIron, plateSteel],
     [plateSteel, chestIron, plateSteel],
     [plateSteel, chestIron, plateSteel]]);
-recipes.addShaped(enderQuarry, [
+mods.extraUtils.QED.addShapedRecipe(enderQuarry, [
 	[enderPump, BCQuarry, enderCore]]);
 recipes.remove(pipeTransfer);
 recipes.addShaped(pipeTransfer * 2, [
