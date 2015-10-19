@@ -66,6 +66,10 @@ var sensorMV = <gregtech:gt.metaitem.01:32691>;
 var emitterMV = <gregtech:gt.metaitem.01:32681>;
 var enderResonator = <EnderIO:itemFrankenSkull:3>;
 var beamCore = <GalacticraftMars:item.itemBasicAsteroids:8>;
+var lapis = <ore:gemLapis>;
+var sugar = <ore:dustSugar>;
+var speedUpgrade = <PneumaticCraft:machineUpgrade:5>;
+var lubricant = <ore:cellLubricant>;
 
 
 # Recipes Tweaks
@@ -104,6 +108,11 @@ recipes.addShaped(omniHopper, [
     [ingotCompressedIron, hammer, ingotCompressedIron],
     [ingotCompressedIron, hopper, ingotCompressedIron],
     [null, ingotCompressedIron, null]]);
+recipes.remove(speedUpgrade);
+recipes.addShaped(speedUpgrade, [
+    [lapis, sugar, lapis],
+    [sugar, lubricant, sugar],
+    [lapis, sugar, lapis]]);
 
 # GT Integration
 ThermionicFabricator.removeCasts(tubeSquid);
@@ -134,3 +143,4 @@ Assembler.addRecipe(tubeHelium, dustRedstone * 2, plasticHelium * 5, moltenGlass
 Assembler.addRecipe(tubeChopper, dustRedstone * 2, plasticChopper * 5, moltenGlass * 72, 64, 32);
 Assembler.addRecipe(tubePropulsion, dustRedstone * 2, plasticPropulsion * 5, moltenGlass * 72, 64, 32);
 Assembler.addRecipe(tubeFlying, dustRedstone * 2, plasticFlying * 5, moltenGlass * 72, 64, 32);
+
