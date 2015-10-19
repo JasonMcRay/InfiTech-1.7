@@ -111,6 +111,15 @@ found in the core file.
   
   <recipeGroup name="Vanilla">
   <!-- Removing the ways of obtaining EnderIO Silicon from Clay and Redstone -->
+    <recipe name="Cobblestone" energyCost="2400" >
+      <input>
+        <itemStack modID="minecraft" itemName="cobblestone" />
+      </input>
+      <output>
+        <itemStack modID="minecraft" itemName="sand" />
+        <itemStack modID="minecraft" itemName="gravel" chance="0.1" />
+      </output>
+    </recipe>
     <recipe name="ClayBlock" energyCost="2400">
       <input>
         <itemStack modID="minecraft" itemName="clay" />
