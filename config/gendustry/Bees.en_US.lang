@@ -40,6 +40,7 @@ gendustry.bees.species.Iridium=Iridium
 gendustry.bees.species.Uranium=Uranium
 gendustry.bees.species.Plutonium=Plutonium
 gendustry.bees.species.Naquadah=Naquadah
+gendustry.bees.species.DOB=D-O-B
 
 gendustry.honeycomb.lignite.name=Lignite Comb
 gendustry.honeycomb.coal.name=Coal Comb
@@ -90,4 +91,5 @@ gendustry.honeycomb.naquadah.name=Naquadah Comb
 gendustry.honeycomb.mutagencatalyst.name=Mutagen
 gendustry.honeydrop.oildrop.name=Oil Drop
 gendustry.honeydrop.smallmutagencatalyst.name=Mutagen Catalyst
+gendustry.honeycomb.DOB.name=D-O-B Comb
 
