@@ -1,3 +1,62 @@
+v3.1.15
+Mod Updates:
+- AsieLib -> 0.4.3
+- Buildcraft -> 7.1.11
+- Buildcraft Compat -> 7.1.2
+- Chisel -> 2.9.2.8
+- Computronics -> 1.5.8
+- EnderCore -> 0.1.0.26
+- EnderIO -> 2.3.0.417
+- ExtrabiomesXL -> 3.16.3
+- Forestry -> 4.0.10.39
+- Galacticraft -> 3.0.12.376
+- Gendustry -> 1.6.2.127
+- GregTech -> 5.09.09
+- Headcrumbs -> 1.6.2
+- Industrial Craft 2 -> 2.2.785
+- Logistics Pipes -> 0.9.3.61
+- MagicBees -> 2.4.0
+- ModTweaker2 -> 0.9.4
+- NEI Addons -> 1.12.14.40
+- NEI Integration -> 1.0.13
+- NuclearControl -> 2.3.1a-Butt
+- OpenBlocks -> 1.4.4-677
+- OpenComputers -> 1.5.19.37
+- OpenModsLib -> 0.8-402
+- Pam's Harvestcraft -> 1.7.10k
+- PneumaticCraft -> 1.11.16-138
+- Thaumic Tinkerer -> 2.5-512
+- XACT -> 0.5.4c
+
+Changes/Fixes
+- Fixed forestry worktable using always 1st GT Tool instead of correct one.
+- Huge Forestry config rework and big ass update. (If something is hugely different than before, let me please know)
+- Updated ARC Furance charcoal recipes to reflect Forestry 4 changes
+- Fixed Crafting of IC2 Reactor Items
+- Thorium Rods now requires 3x Thorium Dust (instead of 1)
+- Removed already generated Galacticraft Oil Fields
+- Also disabled GC Oil Generation all together (there are already couple of diferent Oil Fields).
+- Note that if you have some GC Oil stored in tanks (it is named "fluid.oilgc" or "oilgc") it will be gone.
+- Raised bee products chances.
+- Radioactive bee now produces D-O-B Comb, which when centrifuged will give low chance of product.
+- Lowered mutation chances of Organic, Gem, Alloy and Thaumic Bee types. Raised mutation chance of Metalic and Metalic Rare bees.
+- Machine Upgrades for Squeezer and Centrifuge in form of electron tubes
+- Boost mutation chances by researching mutations in the escritoire.
+- Optimized the performance of bees
+- Fixed making Biomass from EXBL Sapplings and Honey.
+- New Ambient Thermal Controller - controlls heat in rooms in space. Works in the similiar way as Thermal Padding, but affects whole "room".
+- Fixed shift-clicking items into Harvestcraft blocks (like presser)
+- Experimental: XACT crafter grouping (multiple XACT Crafters near each other will allow you to access all of them - limited)
+- Fixed hopefully eIO Glider kicking other players from game
+- Fixed GT Type Filter crash on certain items with specific tags.
+- Fixed PneumaticCraft Speed Upgrade recipe. Now requires Lubricant Cell.
+- Fixed SAG milling cobblestone into "wierd" sand or gravel type.
+- Fixed Gravisuite recipes
+
+WARNING: There will be around 50 missing items from update 3.1.14 to this one. Reason is that Forestry changed the IDs of its Wooden Logs (to be more specific, they use now just 1 ID with different NBT tags). It will probably cause those Wooden Logs gone from your worlds. There is nothing you can do about that.
+If you will find out that this is true and your Forestry trees are missing: You can go and chop them up (before update), store the sapplings and replant them after update.
+If you will find that no Forestry Trees are missing from your world... Well then consider yourself lucky (and let me know, so I can let others know in this changelog)
+
 v3.1.14
 Changes/Fixes:
 - ExtrabiomesXL Biome Ids were changed, now its back at what it used to be at. (No more snow in deserts and stuff)

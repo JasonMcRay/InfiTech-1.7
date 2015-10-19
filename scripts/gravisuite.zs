@@ -1,4 +1,5 @@
 // --- Created by Pyure ---
+// --- Created by Jason McRay ---
 
 import minetweaker.game.IGame;
 
@@ -17,6 +18,12 @@ var ingotGold = <minecraft:gold_ingot>;
 var nanoBodyArmor = <IC2:itemArmorNanoChestplate:*>;
 var superconductor = <GraviSuite:itemSimpleItem:1>;
 var superconductorCover = <GraviSuite:itemSimpleItem>;
+var coolingCore = <GraviSuite:itemSimpleItem:2>;
+var cell60k = <IC2:reactorCoolantSix:1>;
+var advHeatExchanger = <IC2:reactorHeatSwitchDiamond:1>;
+var heatReactorPlating = <IC2:reactorPlatingHeat>;
+var plateAlloyIridium = <ore:plateAlloyIridium>;
+
 
 
 // --- Glass Fiber Recipes ---
@@ -37,6 +44,12 @@ recipes.addShaped(advancedNanoChestPlate, [
 		[carbonPlate, advancedElectricJetpack2, carbonPlate],
 		[carbonPlate, nanoBodyArmor, carbonPlate],
 		[cablePlatinum, circuitAdvanced, cablePlatinum]]);
+        
+recipes.remove(coolingCore);
+recipes.addShaped(coolingCore, [
+        [cell60k, advHeatExchanger, cell60k],
+        [heatReactorPlating, plateAlloyIridium, heatReactorPlating],
+        [cell60k, advHeatExchanger, cell60k]]);
 
 // --- Localization Fixes ---
 game.setLocalization("itemSuperConductorCover.name", "Superconductor Cover");
