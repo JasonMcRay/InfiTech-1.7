@@ -1,3 +1,10 @@
+v3.1.16 Hotfix
+Mod Updates:
+- GregTech -> 5.08.32
+
+Changes/fixes:
+- Fixed forestry processing in GT counterparts (combs, squeezing, fluid extracting, etc...)
+
 v3.1.15
 Mod Updates:
 - AsieLib -> 0.4.3
