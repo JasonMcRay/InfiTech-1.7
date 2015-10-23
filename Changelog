@@ -6,6 +6,13 @@ Changes/fixes:
 - Fixed forestry processing in GT counterparts (combs, squeezing, fluid extracting, etc...)
 - Fixed forestry backpacks not accepting items they should
 
+WARNING: There will be around 50 missing items from update 3.1.14 to this one. Reason is that Forestry changed the IDs of its Wooden Logs (to be more specific, they use now just 1 ID with different NBT tags).
+It will probably cause those Wooden Logs and other wood related items (logs, planks, slabs, fences) gone from your worlds. There is nothing you can do about that.
+
+WARNING2:
+Multiblocks (alvearies for example) will lose their inventories and may need to be broken and rebuilt.
+Forestry Stained Glass has been removed.
+
 v3.1.15
 Mod Updates:
 - AsieLib -> 0.4.3
@@ -61,9 +68,12 @@ Changes/Fixes
 - Fixed SAG milling cobblestone into "wierd" sand or gravel type.
 - Fixed Gravisuite recipes
 
-WARNING: There will be around 50 missing items from update 3.1.14 to this one. Reason is that Forestry changed the IDs of its Wooden Logs (to be more specific, they use now just 1 ID with different NBT tags). It will probably cause those Wooden Logs gone from your worlds. There is nothing you can do about that.
-If you will find out that this is true and your Forestry trees are missing: You can go and chop them up (before update), store the sapplings and replant them after update.
-If you will find that no Forestry Trees are missing from your world... Well then consider yourself lucky (and let me know, so I can let others know in this changelog)
+WARNING: There will be around 50 missing items from update 3.1.14 to this one. Reason is that Forestry changed the IDs of its Wooden Logs (to be more specific, they use now just 1 ID with different NBT tags).
+It will probably cause those Wooden Logs and other wood related items (logs, planks, slabs, fences) gone from your worlds. There is nothing you can do about that.
+
+WARNING2:
+Multiblocks (alvearies for example) will lose their inventories and may need to be broken and rebuilt.
+Forestry Stained Glass has been removed.
 
 v3.1.14
 Changes/Fixes:
