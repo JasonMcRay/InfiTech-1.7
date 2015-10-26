@@ -17,6 +17,7 @@ var stickWood = <ore:stickWood>;
 var upgradeStorage9x = <JABBA:upgradeCore:5>;
 var upgradeStorage27x = <JABBA:upgradeCore:6>;
 var betterBarrel = <JABBA:barrel>;
+var diadolly = <JABBA:moverDiamond>;
 
 # Recipe Tweaks
 recipes.remove(hammerBarrel);
@@ -39,3 +40,5 @@ recipes.addShaped(upgradeStorage9x * 2, [
     [plateEnderium, piston, plateEnderium],
     [plateEnderium, betterBarrel, plateEnderium],
     [plateEnderium, piston, plateEnderium]]);
+
+diadolly.addTooltip(format.red(format.bold("This item is DISABLED!")));

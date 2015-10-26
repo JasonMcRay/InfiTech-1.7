@@ -32,7 +32,9 @@ var workbenchAuto = <BuildCraft|Factory:autoWorkbenchBlock>;
 
 # Blocks/Items Removal
 recipes.remove(upgradeSolar);
+upgradeSolar.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(upgradeEfficiency);
+upgradeEfficiency.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # Recipe Tweaks
 recipes.remove(productionTable);

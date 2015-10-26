@@ -15,6 +15,7 @@ var itemQuartzNether = <ore:craftingQuartz>;
 var plateStainlessSteel = <ore:plateStainlessSteel>;
 var plateSteel = <ore:plateSteel>;
 var plateTungstenSteel = <ore:plateTungstenSteel>;
+var reactorPowerTap = <ore:reactorPowerTap>;
 
 # BigReactors recipes we're changing
 var itemFuelRodYellorium = <BigReactors:YelloriumFuelRod>;
@@ -107,3 +108,6 @@ recipes.addShaped(itemTurbineRotorBearing, [
 	[itemTurbineHousing, itemTurbineRotorShaft, itemTurbineHousing],
 	[itemDiamond, gearDiamond, itemDiamond],
 	[itemTurbineHousing, itemTurbineRotorShaft, itemTurbineHousing]]);
+
+# Reactor Power Tap
+reactorPowerTap.addTooltip(format.red(format.bold("This item is DISABLED!")));
