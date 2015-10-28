@@ -115,20 +115,20 @@ recipes.addShaped(speedUpgrade, [
     [lapis, sugar, lapis]]);
 
 # GT Integration
-ThermionicFabricator.removeCasts(tubeSquid);
-ThermionicFabricator.removeCasts(tubeFire);
-ThermionicFabricator.removeCasts(tubeCreeper);
-ThermionicFabricator.removeCasts(tubeSlime);
-ThermionicFabricator.removeCasts(tubeRain);
-ThermionicFabricator.removeCasts(tubeEnder);
-ThermionicFabricator.removeCasts(tubeLightning);
-ThermionicFabricator.removeCasts(tubeBurst);
-ThermionicFabricator.removeCasts(tubePotion);
-ThermionicFabricator.removeCasts(tubeRepulsion);
-ThermionicFabricator.removeCasts(tubeHelium);
-ThermionicFabricator.removeCasts(tubeChopper);
-ThermionicFabricator.removeCasts(tubePropulsion);
-ThermionicFabricator.removeCasts(tubeFlying);
+ThermionicFabricator.removeCast(tubeSquid);
+ThermionicFabricator.removeCast(tubeFire);
+ThermionicFabricator.removeCast(tubeCreeper);
+ThermionicFabricator.removeCast(tubeSlime);
+ThermionicFabricator.removeCast(tubeRain);
+ThermionicFabricator.removeCast(tubeEnder);
+ThermionicFabricator.removeCast(tubeLightning);
+ThermionicFabricator.removeCast(tubeBurst);
+ThermionicFabricator.removeCast(tubePotion);
+ThermionicFabricator.removeCast(tubeRepulsion);
+ThermionicFabricator.removeCast(tubeHelium);
+ThermionicFabricator.removeCast(tubeChopper);
+ThermionicFabricator.removeCast(tubePropulsion);
+ThermionicFabricator.removeCast(tubeFlying);
 Assembler.addRecipe(tubeSquid, dustRedstone * 2, plasticSquid * 5, moltenGlass * 72, 64, 32);
 Assembler.addRecipe(tubeFire, dustRedstone * 2, plasticFire * 5, moltenGlass * 72, 64, 32);
 Assembler.addRecipe(tubeCreeper, dustRedstone * 2, plasticCreeper * 5, moltenGlass * 72, 64, 32);
