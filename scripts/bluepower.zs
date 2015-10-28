@@ -86,7 +86,7 @@ recipes.removeShapeless(itemGemSapphire);
 recipes.removeShapeless(dustSapphire);
 
 recipes.removeShapeless(gemRuby);
-recipes.removeShapeless(dustRuby;
+recipes.removeShapeless(dustRuby);
 
 recipes.remove(sawAmethyst);
 recipes.addShaped(sawAmethyst, [
