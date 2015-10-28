@@ -43,6 +43,12 @@ var railStandard = <Railcraft:part.rail>;
 var trackDisposal = <Railcraft:track:2264>.withTag({track: "railcraft:track.disposal"});
 var upgradeLapotronLoader = <Railcraft:upgrade.lapotron>;
 var woodenTie = <Railcraft:part.tie>;
+var steamoven = <Railcraft:machine.alpha:3>;
+
+# Block/item Removal
+
+recipes.remove(steamoven);
+steamoven.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # Recipe tweaks
 recipes.remove(railStandard);
