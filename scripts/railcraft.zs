@@ -1,5 +1,7 @@
 // --- Created by Jason McRay --- 
 
+import mods.forestry.Carpenter;
+
 # Aliases
 var backpackApothecary = <Railcraft:backpack.apothecary.t1>;
 var backpackApothecaryT2 = <Railcraft:backpack.apothecary.t2>;
@@ -91,27 +93,34 @@ recipes.addShaped(fluxTransformer * 2, [
     [plateCopper, ingotGold, plateCopper],
     [ingotGold, blockRedstone, ingotGold],
     [plateCopper, ingotGold, plateCopper]]);
+// --- Backs ---
 recipes.remove(backpackTrack);
 recipes.addShapeless(backpackTrack, [backpackTrack]);
 recipes.addShaped(backpackTrack, [
 	[<harvestcraft:wovencottonItem>, <minecraft:rail>, <harvestcraft:wovencottonItem>],
 	[<harvestcraft:hardenedleatherItem>, <minecraft:rail>, <harvestcraft:hardenedleatherItem>],
 	[<harvestcraft:hardenedleatherItem>, <harvestcraft:hardenedleatherItem>, <harvestcraft:hardenedleatherItem>]]);
-mods.forestry.Carpenter.removeRecipe(backpackTrackT2);
-mods.forestry.Carpenter.addRecipe(600, <liquid:seedoil> * 5000, [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],backpackTrack, backpackTrackT2);
+Carpenter.removeRecipe(backpackTrackT2);
+Carpenter.addRecipe(backpackTrackT2, [[<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
+                                      [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
+                                      [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>]], <liquid:seedoil> * 5000, 600, backpackTrack);
 recipes.remove(backpackIceman);
 recipes.addShapeless(backpackIceman, [backpackIceman]);
 recipes.addShaped(backpackIceman, [
 	[<harvestcraft:wovencottonItem>, <minecraft:snow>, <harvestcraft:wovencottonItem>],
 	[<harvestcraft:hardenedleatherItem>, <minecraft:snow>, <harvestcraft:hardenedleatherItem>],
 	[<harvestcraft:hardenedleatherItem>, <harvestcraft:hardenedleatherItem>, <harvestcraft:hardenedleatherItem>]]);
-mods.forestry.Carpenter.removeRecipe(backpackIcemanT2);
-mods.forestry.Carpenter.addRecipe(600, <liquid:seedoil> * 5000, [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],backpackIceman, backpackIcemanT2);
+Carpenter.removeRecipe(backpackIcemanT2);
+Carpenter.addRecipe(backpackIcemanT2, [[<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
+                                       [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
+                                       [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>]], <liquid:seedoil> * 5000, 600, backpackIceman);
 recipes.remove(backpackApothecary);
 recipes.addShapeless(backpackApothecary, [backpackApothecary]);
 recipes.addShaped(backpackApothecary, [
 	[<harvestcraft:wovencottonItem>, <ore:potionHealing>, <harvestcraft:wovencottonItem>],
 	[<harvestcraft:hardenedleatherItem>, <ore:potionHealing>, <harvestcraft:hardenedleatherItem>],
 	[<harvestcraft:hardenedleatherItem>, <harvestcraft:hardenedleatherItem>, <harvestcraft:hardenedleatherItem>]]);
-mods.forestry.Carpenter.removeRecipe(backpackApothecaryT2);
-mods.forestry.Carpenter.addRecipe(600, <liquid:seedoil> * 5000, [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],backpackApothecary, backpackApothecaryT2);
+Carpenter.removeRecipe(backpackApothecaryT2);
+Carpenter.addRecipe(backpackApothecaryT2, [[<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
+                                           [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
+                                           [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>]], <liquid:seedoil> * 5000, 600, backpackApothecary);
