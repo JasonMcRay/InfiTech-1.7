@@ -3,6 +3,7 @@
 
 import mods.ic2.Compressor;
 import mods.ic2.Macerator;
+import mods.gregtech.ArcFurnace;
 
 
 # Aliases
@@ -103,6 +104,7 @@ var inddiamond		= <ore:craftingIndustrialDiamond>;
 var diasawblade		= <ore:craftingDiamondBlade>;
 var miningdrill		= <IC2:itemToolDrill:26>;
 var diaminingdrill	= <IC2:itemToolDDrill:26>;
+var oxygen		= <liquid:oxygen>;
 
 //railcraft
 var standardrail	= <Railcraft:part.rail>;
@@ -432,17 +434,17 @@ recipes.addShaped(blankupgrade, [
 recipes.remove(reinforcedmetalblock); 
 recipes.remove(reinforcedmetal);
 Compressor.addRecipe(reinforcedmetalblock, reinforcedmetal * 9);
-furnace.addRecipe(reinforcedmetal * 9, reinforcedmetalblock);
+ArcFurnace.addRecipe([reinforcedmetal * 9], reinforcedmetalblock, oxygen * 1000, [10000], 1000, 30);
 Macerator.addRecipe(stabilizedmetal * 9, reinforcedmetalblock);
 
 recipes.remove(galgadorianblock1);
 recipes.remove(galgadorianmetal);
 Compressor.addRecipe(galgadorianblock1, galgadorianmetal * 9); 
-furnace.addRecipe(galgadorianmetal * 9, galgadorianblock1);
+ArcFurnace.addRecipe([galgadorianmetal * 9], galgadorianblock1, oxygen * 1500, [10000], 1500, 120);
 Macerator.addRecipe(lumpofgalgador * 9, galgadorianblock1);
 
 recipes.remove(galgadorianblock2);
 recipes.remove(galgadorianmetal2);
 Compressor.addRecipe(galgadorianblock2, galgadorianmetal2 * 9); 
-furnace.addRecipe(galgadorianmetal2 * 9, galgadorianblock2);
+ArcFurnace.addRecipe([galgadorianmetal2 * 9], galgadorianblock2, oxygen * 2000, [10000], 2000, 250);
 Macerator.addRecipe(largelumpofgalgador * 9, galgadorianblock2);
