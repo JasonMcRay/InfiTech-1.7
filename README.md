@@ -4,7 +4,6 @@ InfiTech - GregTech focused FTB modpack for Minecraft 1.7
 
 
 * FTB Thread: http://bit.ly/infitech2
-* FTB Pack code beta: 17infitechbeta
 * FTB Pack code: 17infitech
 
 ### Issue Reporting
