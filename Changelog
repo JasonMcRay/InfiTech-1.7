@@ -1,3 +1,7 @@
+v3.1.17 Criitical Hotfix
+- Fixed FTB Launcher not distributing IC2.ini config file, making new chunks in your worlds contain IC2 ores, even when they are disabled.
+- With that opportunity released evil Gatsu. (Thank you for patronage)
+
 v3.1.16 Hotfix
 Mod Updates:
 - GregTech -> 5.08.32
