@@ -1,6 +1,8 @@
 // --- Created by Jason McRay --- 
 
 import mods.forestry.Carpenter;
+import mods.nei.NEI;
+import mods.gregtech.Mixer;
 
 # Aliases
 var backpackApothecary = <Railcraft:backpack.apothecary.t1>;
@@ -45,6 +47,11 @@ var railStandard = <Railcraft:part.rail>;
 var trackDisposal = <Railcraft:track:2264>.withTag({track: "railcraft:track.disposal"});
 var upgradeLapotronLoader = <Railcraft:upgrade.lapotron>;
 var woodenTie = <Railcraft:part.tie>;
+var cokeOven = <Railcraft:machine.alpha:7>;
+var dustClay = <gregtech:gt.metaitem.01:2805>;
+var sand = <minecraft:sand>;
+var water = <liquid:water>;
+var wetCokeBrick = <Railcraft:brick.sandy>;
 
 # Recipe tweaks
 recipes.remove(railStandard);
@@ -52,6 +59,8 @@ recipes.remove(railAdvanced);
 recipes.remove(railHS);
 recipes.remove(railReinforced);
 recipes.remove(railElectric);
+// Remove all Rock Crusher recipes
+mods.railcraft.RockCrusher.removeRecipe(<*>);
 
 recipes.remove(upgradeLapotronLoader);
 recipes.addShaped(upgradeLapotronLoader, [
@@ -124,3 +133,19 @@ Carpenter.removeRecipe(backpackApothecaryT2);
 Carpenter.addRecipe(backpackApothecaryT2, [[<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
                                            [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
                                            [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>]], <liquid:seedoil> * 5000, 600, backpackApothecary);
+
+// Coke Oven to LV age
+NEI.overrideName(wetCokeBrick, "Wet Coke Oven Brick");
+wetCokeBrick.displayName = "Wet Coke Oven Brick";
+
+recipes.remove(wetCokeBrick);
+mods.chisel.Groups.removeVariation(wetCokeBrick);
+Mixer.addRecipe(wetCokeBrick, null, [dustClay * 4, sand * 5], water * 100, 20, 16);
+
+recipes.remove(cokeOven);
+furnace.addRecipe(cokeOven, wetCokeBrick);
+
+recipes.remove(<Railcraft:stair>);
+recipes.remove(<Railcraft:wall.alpha:1>);
+recipes.remove(<Railcraft:slab>);
+// Possible to make Wet Brick non placeable (Block Properties mod)
