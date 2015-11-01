@@ -436,7 +436,7 @@ Carpenter.addRecipe(<Forestry:adventurerBagT2>, [[<Forestry:craftingMaterial:3>,
                                                  [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>]], <liquid:seedoil> * 5000, 600, <Forestry:adventurerBag>);
 // --- Apiarist's Backpack
 recipes.addShaped(<Forestry:apiaristBag>, [
-	[<harvestcraft:wovencottonItem>, <Forestry:apiculture:1>, <harvestcraft:wovencottonItem>],
+	[<harvestcraft:wovencottonItem>, <Forestry:apicultureChest>, <harvestcraft:wovencottonItem>],
 	[<harvestcraft:hardenedleatherItem>, <harvestcraft:wovencottonItem>, <harvestcraft:hardenedleatherItem>],
 	[<harvestcraft:hardenedleatherItem>, <harvestcraft:hardenedleatherItem>, <harvestcraft:hardenedleatherItem>]]);
 // --- Lepidopterist's Backpack
