@@ -25,6 +25,8 @@ var ingotRedAlloy = <ore:ingotRedAlloy>;
 var ingotSilver = <gregtech:gt.metaitem.01:11054>;
 var ingotZinc = <gregtech:gt.metaitem.01:11036>;
 var itemGemSapphire = <gregtech:gt.metaitem.01:8503>;
+var dustSapphire = <ore:dustSapphire>;
+var blockSapphire = <ore:blockSapphire>;
 var obsidian = <minecraft:obsidian>;
 var plateIron = <ore:plateIron>;
 var sand = <minecraft:sand>;
@@ -41,6 +43,8 @@ var wireRedAlloy = <bluepower:part.wire.redalloy>;
 var stickWood = <ore:stickWood>;
 var rodStone = <ore:rodStone>;
 var gemAmethyst = <ore:gemAmethyst>;
+var dustAmethyst = <ore:dustAmethyst>;
+var blockAmethyst = <ore:blockAmethyst>;
 var sawAmethyst = <bluepower:amethyst_saw>;
 var axeAmethyst = <bluepower:amethyst_axe>;
 var swordAmethyst = <bluepower:amethyst_sword>;
@@ -50,6 +54,9 @@ var hoeAmethyst = <bluepower:amethyst_hoe>;
 var gtIngotRedAlloy = <gregtech:gt.metaitem.01:11308>;
 var dustSilver = <gregtech:gt.metaitem.01:2054>;
 var ingotGold = <minecraft:gold_ingot>;
+var gemRuby = <ore:gemRuby>;
+var dustRuby = <ore:dustRuby>;
+var blockRuby = <ore:blockRuby>;
 
 
 # Item/block Removal
@@ -71,6 +78,16 @@ recipes.remove(hoeAmethyst);
 NEI.hide(hoeAmethyst);
 
 # Recipe tweaks
+
+recipes.removeShapeless(gemAmethyst);
+recipes.removeShapeless(dustAmethyst);
+
+recipes.removeShapeless(itemGemSapphire);
+recipes.removeShapeless(dustSapphire);
+
+recipes.removeShapeless(gemRuby);
+recipes.removeShapeless(dustRuby);
+
 recipes.remove(sawAmethyst);
 recipes.addShaped(sawAmethyst, [
 	[stickWood, rodStone, rodStone],

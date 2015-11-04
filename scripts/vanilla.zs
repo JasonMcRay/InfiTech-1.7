@@ -21,6 +21,10 @@ var slabWood = <ore:slabWood>;
 var teleporter = <IC2:blockMachine2>;
 var slabOak = <minecraft:wooden_slab>;
 var plankOak = <minecraft:planks>;
+var lapis	= <ore:gemLapis>;
+var dustLapis	= <ore:dustLapis>;
+var coal	= <ore:gemCoal>;
+var dustCoal	= <ore:dustCoal>;
 
 # OreDictionary
 potionHealing.add(<minecraft:potion:8197>);
@@ -48,6 +52,10 @@ recipes.addShaped(chestWood * 4, [
 recipes.remove(slabOak);
 recipes.addShaped(slabOak * 2, [
 	[saw, plankOak]]);
+recipes.removeShapeless(lapis);
+recipes.removeShapeless(dustLapis);
+recipes.removeShapeless(coal);
+recipes.removeShapeless(dustCoal);
 	
 # Recipe Fixes
 recipes.remove(sensorDaylight);
