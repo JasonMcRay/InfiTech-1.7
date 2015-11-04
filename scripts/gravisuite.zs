@@ -50,6 +50,12 @@ recipes.addShaped(coolingCore, [
         [cell60k, advHeatExchanger, cell60k],
         [heatReactorPlating, plateAlloyIridium, heatReactorPlating],
         [cell60k, advHeatExchanger, cell60k]]);
+        
+recipes.remove(engineBooster);
+recipes.addShaped(engineBooster, [  
+        [<minecraft:glowstone_dust>, <IC2:itemPartAlloy>, <minecraft:glowstone_dust>],
+        [<ore:circuitAdvanced>, <IC2:upgradeModule>, <ore:circuitAdvanced>],
+        [<IC2:itemPartAlloy>, <IC2:reactorVentDiamond:1>, <IC2:itemPartAlloy>]]);
 
 // --- Localization Fixes ---
 game.setLocalization("itemSuperConductorCover.name", "Superconductor Cover");
