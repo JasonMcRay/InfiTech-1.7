@@ -1,4 +1,5 @@
 // --- Created by Jason McRay ---
+// --- InfiTech2 script for BluePower ---
 
 import mods.gregtech.AlloySmelter;
 import mods.gregtech.Assembler;

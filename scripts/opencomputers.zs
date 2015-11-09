@@ -1,4 +1,5 @@
 // --- Created by DarknessShadow ---
+// --- InfiTech2 script for OpenComputers ---
 
 import mods.ic2.Compressor;
 import mods.ic2.Macerator;

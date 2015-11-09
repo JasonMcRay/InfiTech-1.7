@@ -1,4 +1,5 @@
 // --- Created by DarknessShadow ---
+// --- InfiTech2 script for Thaumic Tinkerer ---
 
 import mods.ic2.Compressor;
 

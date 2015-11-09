@@ -1,6 +1,7 @@
 // -- Created by Jason McRay --
 // -- Created by adamsonich --
 // -- Modified by DarknessShadow --
+// -- InfiTech2 script for Hardcore Ender Expansion --
 
 import mods.ic2.Compressor;
 import mods.ic2.Macerator;

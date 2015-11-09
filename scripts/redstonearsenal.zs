@@ -1,4 +1,5 @@
 // --- Created by DarknessShadow ---
+// --- InfiTech2 script for Redstone Arsenal ---
 
 # Aliases
 

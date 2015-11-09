@@ -1,5 +1,6 @@
 // --- Created by Jason McRay --- 
 // --- Modified by DarknessShadow ---
+// --- InfiTech2 script for Thaumcraft ---
 
 import mods.thaumcraft.Arcane;
 import mods.ic2.Compressor;
