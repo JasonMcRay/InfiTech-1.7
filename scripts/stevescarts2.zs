@@ -1,4 +1,5 @@
 // --- Created by DarknessShadow ---
+// Infitech2 script for Steve's Carts 2
 
 
 import mods.ic2.Compressor;
