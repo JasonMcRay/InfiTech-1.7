@@ -342,11 +342,6 @@ recipes.addShaped(MEConduitDense * 3, [
     [conduitBinder, conduitBinder, conduitBinder]]);
     
 # Specialties
-var EIskullEnderman = <EnderIO:blockEndermanSkull>;
-var HEskullEnderman = <HardcoreEnderExpansion:enderman_head>;
-
-recipes.addShapeless(EIskullEnderman, [HEskullEnderman]);
-recipes.addShapeless(HEskullEnderman, [EIskullEnderman]);
 NEI.overrideName(barsDarkSteel, "Dark Steel Bars");
 
 # Chisel exploit fix
