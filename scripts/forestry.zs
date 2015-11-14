@@ -104,19 +104,40 @@ var wrench = <ore:craftingToolWrench>;
 
 # Item removal
 recipes.remove(engineClock);
+engineClock.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 recipes.remove(analyzer);
+analyzer.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 recipes.remove(engineElectrical);
+engineElectrical.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 recipes.remove(bottler);
+bottler.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 recipes.remove(centrifuge);
+centrifuge.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 recipes.remove(squeezer);
+squeezer.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 recipes.remove(still);
+still.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 recipes.remove(fGearBronze);
 gearBronze.remove(fGearBronze);
+fGearBronze.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 recipes.remove(fGearCopper);
 gearCopper.remove(fGearCopper);
+fGearCopper.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 recipes.remove(fGearTin);
 gearTin.remove(fGearTin);
+fGearTin.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 recipes.remove(generatorBio);
+generatorBio.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # Recipe Tweaks
 recipes.remove(enginePeat);

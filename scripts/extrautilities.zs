@@ -68,9 +68,17 @@ var tradingPost = <ExtraUtilities:trading_post>;
 
 # -- Block/item Removal
 recipes.remove(enderReceiver);
+enderReceiver.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 recipes.remove(enderTransmitter);
+enderTransmitter.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 recipes.remove(nodeEnergy);
+nodeEnergy.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 recipes.remove(nodeHyperEnergy);
+nodeHyperEnergy.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 
 
 # ---Recipe tweaks---
