@@ -69,6 +69,8 @@ recipes.remove(shovelAmethyst);
 NEI.hide(shovelAmethyst);
 recipes.remove(hoeAmethyst);
 NEI.hide(hoeAmethyst);
+recipes.remove(<bluepower:auto_project_table>);
+<bluepower:auto_project_table>.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # Recipe tweaks
 recipes.remove(sawAmethyst);
