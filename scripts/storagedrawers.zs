@@ -2,9 +2,9 @@
 
 # Aliases
 var drawerController = <StorageDrawers:controller>;
-var sensorMV = <gregtech:gt.metaitem.01:32691>;
-var robotarmMV = <gregtech:gt.metaitem.01:32651>;
-var conveyorMV = <gregtech:gt.metaitem.01:32631>;
+var sensorHV = <gregtech:gt.metaitem.01:32692>;
+var robotarmHV = <gregtech:gt.metaitem.01:32652>;
+var conveyorHV = <gregtech:gt.metaitem.01:32632>;
 var drawerBasic = <ore:drawerBasic>;
 var comparator = <minecraft:comparator>;
 var plateIron = <ore:plateIron>;
@@ -13,5 +13,5 @@ var plateIron = <ore:plateIron>;
 recipes.remove(drawerController);
 recipes.addShaped(drawerController, [
     [plateIron, plateIron, plateIron],
-    [comparator, sensorMV, comparator],
-    [robotarmMV, drawerBasic, conveyorMV]]);
+    [comparator, sensorHV, comparator],
+    [robotarmHV, drawerBasic, conveyorHV]]);

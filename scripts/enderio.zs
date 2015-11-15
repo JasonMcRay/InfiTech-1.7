@@ -206,9 +206,9 @@ ChemicalReactor.addRecipe(itemDustEnderium, null, itemDustEnderPearl, null, molt
 ChemicalReactor.addRecipe(null, moltenEnderiumBase * 576, itemDustSilver, itemDustPlatinum, moltenTin * 288, 100);
 //Autoclave.addRecipe(output, input, liquid, chance, durationTicks, euPerTick);
 recipes.remove(crystalVibrant);
-Autoclave.addRecipe(crystalVibrant, itemDustEmerald, moltenVibrantAlloy * 128, 10000, 1000, 24);
+Autoclave.addRecipe(crystalVibrant, itemDustEmerald, moltenVibrantAlloy * 128, 8500, 1000, 24);
 recipes.remove(crystalPulsating);
-Autoclave.addRecipe(crystalPulsating, itemDustDiamond, moltenPulsatingIron * 128, 10000, 1000, 24);
+Autoclave.addRecipe(crystalPulsating, itemDustDiamond, moltenPulsatingIron * 128, 8500, 1000, 24);
 //Assembler.addRecipe(output, input1, input2, liquid, durationTicks, euPerTick);
 recipes.remove(capacitorBasic);
 Assembler.addRecipe(capacitorBasic, batteryHullSmall, itemIngotGold * 4, moltenRedstone * 288, 64, 8);
@@ -323,7 +323,7 @@ recipes.addShaped(conduitRedstone * 6, [
     [ingotRedAlloy, ingotRedAlloy, ingotRedAlloy]]);
 recipes.remove(binderComposite);
 furnace.remove(conduitBinder);
-FluidSolidifier.addRecipe(conduitBinder, moldBall * 0, moltenConcrete * 36, 128, 4);
+FluidSolidifier.addRecipe(conduitBinder, moldBall * 0, moltenConcrete * 36, 20, 4);
 recipes.remove(conduitItem);
 recipes.addShaped(conduitItem * 6, [
     [null, conduitBinder, null],
