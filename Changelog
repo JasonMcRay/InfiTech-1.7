@@ -57,6 +57,7 @@ Changes/fixes:
 
 Known Issues:
 - Double clicking an item in AutoWorbench MK II (when that item is also present in the crafting area) causes client to crash. (http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1281065-immibiss-mods-now-with-85-7-less-version-numbers?page=114#c2294)
+- When JM minimap is not present on the screen your logs gets spammed with GL ERROR 1281 thingie. (https://github.com/RS485/LogisticsPipes/issues/845)
 
 Missing Items:
 - malisisdoors:curtain
