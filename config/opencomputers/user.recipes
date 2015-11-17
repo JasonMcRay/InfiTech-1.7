@@ -12,3 +12,10 @@ include file("gregtech.recipes")
 # default.recipes file to get an idea how recipes have to be structured. You'll
 # want to define your recipes after all includes, to avoid those overwriting
 # your recipes.
+
+chamelium {
+    input: [[{item=gravel, subID=0}, redstone, {item=gravel, subID=0}],
+            [redstone, {item=coal, subID=1}, redstone],
+            [{item=gravel, subID=0}, water_bucket, {item=gravel, subID=0}]]
+    output: 16
+}
