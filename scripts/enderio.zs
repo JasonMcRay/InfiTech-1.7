@@ -121,6 +121,8 @@ var netherQuartz = <minecraft:quartz>;
 var nuggetEnderium = <ore:nuggetEnderium>;
 var nuggetVibrantAlloy = <ore:nuggetVibrantAlloy>;
 var nuggetPulsatingIron = <ore:nuggetPulsatingIron>;
+var OCCable = <OpenComputers:cable>;
+var OCConduit = <EnderIO:itemOCConduit>;
 var obsidian = <minecraft:obsidian>;
 var obsidianReinforced = <EnderIO:blockReinforcedObsidian>;
 var paintingMachine = <EnderIO:blockPainter>;
@@ -340,10 +342,26 @@ recipes.addShaped(MEConduitDense * 3, [
     [conduitBinder, conduitBinder, conduitBinder],
     [MECableDense, MECableDense, MECableDense],
     [conduitBinder, conduitBinder, conduitBinder]]);
+recipes.remove(OCConduit);
+recipes.addShaped(OCConduit * 3, [
+    [conduitBinder, conduitBinder, conduitBinder],
+    [OCCable, OCCable, OCCable],
+    [conduitBinder, conduitBinder, conduitBinder]]);
     
 # Specialties
 NEI.overrideName(barsDarkSteel, "Dark Steel Bars");
-
+// Cleaned doubled recipe
+recipes.removeShaped(<EnderIO:itemAlloy:2>);
+recipes.addShaped(<EnderIO:itemAlloy:2>, [
+    [nuggetVibrantAlloy, nuggetVibrantAlloy, nuggetVibrantAlloy],
+    [nuggetVibrantAlloy, nuggetVibrantAlloy, nuggetVibrantAlloy],
+    [nuggetVibrantAlloy, nuggetVibrantAlloy, nuggetVibrantAlloy]]);
+recipes.removeShaped(<EnderIO:itemAlloy:5>);
+recipes.addShaped(<EnderIO:itemAlloy:5>, [
+    [nuggetPulsatingIron, nuggetPulsatingIron, nuggetPulsatingIron],
+    [nuggetPulsatingIron, nuggetPulsatingIron, nuggetPulsatingIron],
+    [nuggetPulsatingIron, nuggetPulsatingIron, nuggetPulsatingIron]]);
+    
 # Chisel exploit fix
 mods.chisel.Groups.removeGroup("glass");
 mods.chisel.Groups.addGroup("glass2");
