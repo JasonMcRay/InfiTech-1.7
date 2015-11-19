@@ -21,3 +21,4 @@ recipes.addShaped(chiselObsidian, [
 
 # Chiseling fixes
 <ore:cobblestone>.remove(<minecraft:mossy_cobblestone>);
+<ore:chest>.remove(<minecraft:ender_chest>);
