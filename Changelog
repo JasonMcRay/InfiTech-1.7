@@ -1,3 +1,18 @@
+v3.1.19
+Mod Updates:
+- EnderIO - > 2.3.0.420
+- JourneyMap -> 5.1.1
+
+Mod Downgrade:
+- Forestry -> 4.1.0.45
+
+Changes/Fixes:
+- [NEW] EnderIO: OpenComputer Conduits
+- [CHANGE] StorageDrawers rendering set to fancy. It will render GT Items on labels, but can cause FPS drops. Change it back to fast if you need to.
+- [FIX] Fixed Chiseling Ender Chest
+- [FIX] Fixed Chamelium recipe
+- [FIX/WORKAROUND] Combs are again processable in GT Centrifuge
+
 v3.1.18
 Mod Updates:
 - AsieLib -> 0.4.4
