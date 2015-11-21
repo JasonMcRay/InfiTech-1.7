@@ -1,5 +1,5 @@
 // --- Created by DarknessShadow ---
-// Infitech2 script for Steve's Carts 2
+// --- InfiTech2 script for Steve's Carts 2 ---
 
 
 import mods.ic2.Compressor;
@@ -10,151 +10,151 @@ import mods.gregtech.ArcFurnace;
 # Aliases
 
 //type: hull
-var woodhull 		= <StevesCarts:CartModule:37>;
-var pighull 		= <StevesCarts:CartModule:62>;
-var standardhull 	= <StevesCarts:CartModule:38>;
-var reinforcedhull 	= <StevesCarts:CartModule:39>;
-var galgadorianhull 	= <StevesCarts:CartModule:81>;
+var woodhull 			= <StevesCarts:CartModule:37>;
+var pighull 			= <StevesCarts:CartModule:62>;
+var standardhull 		= <StevesCarts:CartModule:38>;
+var reinforcedhull 		= <StevesCarts:CartModule:39>;
+var galgadorianhull 		= <StevesCarts:CartModule:81>;
 
 //type: Addon
-var chunkloader 	= <StevesCarts:CartModule:49>;
+var chunkloader 		= <StevesCarts:CartModule:49>;
 
 //type: Engine
-var tinycoalengine 	= <StevesCarts:CartModule:44>;
-var coalengine	 	= <StevesCarts:CartModule>;
-var thermalengine 	= <StevesCarts:CartModule:69>;
-var advthermalengine 	= <StevesCarts:CartModule:70>;
-var basicsolarengine 	= <StevesCarts:CartModule:45>;
-var solarengine 	= <StevesCarts:CartModule:1>;
-var compactsolarengine 	= <StevesCarts:CartModule:56>;
+var tinycoalengine 		= <StevesCarts:CartModule:44>;
+var coalengine	 		= <StevesCarts:CartModule>;
+var thermalengine 		= <StevesCarts:CartModule:69>;
+var advthermalengine 		= <StevesCarts:CartModule:70>;
+var basicsolarengine 		= <StevesCarts:CartModule:45>;
+var solarengine 		= <StevesCarts:CartModule:1>;
+var compactsolarengine		= <StevesCarts:CartModule:56>;
 
 //type: Tool
-var basicfarmer 	= <StevesCarts:CartModule:14>;
-var galgadorianfarmer 	= <StevesCarts:CartModule:84>;
-var basiccutter 	= <StevesCarts:CartModule:15>;
-var hardendcutter 	= <StevesCarts:CartModule:79>;
-var galgadoriancutter 	= <StevesCarts:CartModule:80>;
-var irondrill	 	= <StevesCarts:CartModule:42>;
-var basicdrill	 	= <StevesCarts:CartModule:8>;
+var basicfarmer 		= <StevesCarts:CartModule:14>;
+var galgadorianfarmer 		= <StevesCarts:CartModule:84>;
+var basiccutter 		= <StevesCarts:CartModule:15>;
+var hardendcutter 		= <StevesCarts:CartModule:79>;
+var galgadoriancutter 		= <StevesCarts:CartModule:80>;
+var irondrill	 		= <StevesCarts:CartModule:42>;
+var basicdrill	 		= <StevesCarts:CartModule:8>;
 
 //type: Storage
-var advtank		= <StevesCarts:CartModule:66>;
+var advtank			= <StevesCarts:CartModule:66>;
 
 //wheels
-var wheelswood 		= <StevesCarts:ModuleComponents>;
-var wheelsiron 		= <StevesCarts:ModuleComponents:1>;
-var wheelsreinforced	= <StevesCarts:ModuleComponents:23>;
-var wheelsgalgadorian	= <StevesCarts:ModuleComponents:82>;
-var gtwheelsiron 	= <gregtech:gt.metaitem.01:32100>;
-var gtwheelssteel 	= <gregtech:gt.metaitem.01:32101>;
+var wheelswood			= <StevesCarts:ModuleComponents>;
+var wheelsiron			= <StevesCarts:ModuleComponents:1>;
+var wheelsreinforced		= <StevesCarts:ModuleComponents:23>;
+var wheelsgalgadorian		= <StevesCarts:ModuleComponents:82>;
+var gtwheelsiron 		= <gregtech:gt.metaitem.01:32100>;
+var gtwheelssteel 		= <gregtech:gt.metaitem.01:32101>;
 
 //tools
-var Wrench 		= <ore:craftingToolWrench>;
-var HHammer 		= <ore:craftingToolHardHammer>;
-var SHammer 		= <ore:craftingToolSoftHammer>;
-var screwdriver		= <ore:craftingToolScrewdriver>;
+var Wrench 			= <ore:craftingToolWrench>;
+var HHammer 			= <ore:craftingToolHardHammer>;
+var SHammer 			= <ore:craftingToolSoftHammer>;
+var screwdriver 		= <ore:craftingToolScrewdriver>;
 
 //Blocks
-var cartassembler	= <StevesCarts:BlockCartAssembler>;
-var advdetectorrail	= <StevesCarts:BlockAdvDetector>;
-var junctionrail	= <StevesCarts:BlockJunction>;
-var liquidmanager	= <StevesCarts:BlockLiquidManager>;
+var cartassembler		= <StevesCarts:BlockCartAssembler>;
+var advdetectorrail		= <StevesCarts:BlockAdvDetector>;
+var junctionrail		= <StevesCarts:BlockJunction>;
+var liquidmanager		= <StevesCarts:BlockLiquidManager>;
 var reinforcedmetalblock	= <StevesCarts:BlockMetalStorage>;
-var galgadorianblock1	= <StevesCarts:BlockMetalStorage:1>;
-var galgadorianblock2	= <StevesCarts:BlockMetalStorage:2>;
+var galgadorianblock1		= <StevesCarts:BlockMetalStorage:1>;
+var galgadorianblock2		= <StevesCarts:BlockMetalStorage:2>;
 
 //Upgrade
-var upgradesolarpanel	= <StevesCarts:upgrade:19>;
-var upgradebattery	= <StevesCarts:upgrade>;
-var upgradepowercrystal	= <StevesCarts:upgrade:1>;
+var upgradesolarpanel		= <StevesCarts:upgrade:19>;
+var upgradebattery		= <StevesCarts:upgrade>;
+var upgradepowercrystal 	= <StevesCarts:upgrade:1>;
 
 //gregtech + ic2
-var gearWood 		= <ore:gearGtWood>;
-var plateIron		= <ore:plateAnyIron>;
-var plateAluminium	= <ore:plateAluminium>;
-var plateSteel		= <ore:plateSteel>;
-var plateGold		= <ore:plateGold>;
-var plateNeodymium	= <ore:plateNeodymium>;
-var platestainlesssteel	= <ore:plateStainlessSteel>;
-var foilenderium	= <ore:foilEnderium>;
-var foilchrome		= <ore:foilChrome>;
-var foilneodymium	= <ore:foilEuropium>;
-var foileuropium	= <ore:foilNeodymium>;
-var basiccircuit	= <ore:circuitBasic>;
-var advcircuit		= <ore:circuitAdvanced>;
-var energyflowcircuit	= <gregtech:gt.metaitem.01:32706>;
-var robotarmlv		= <gregtech:gt.metaitem.01:32650>;
-var conveyorlv		= <gregtech:gt.metaitem.01:32630>;
-var sensorlv		= <gregtech:gt.metaitem.01:32690>;
-var pumplv		= <gregtech:gt.metaitem.01:32610>;
-var pistonlv		= <gregtech:gt.metaitem.01:32640>;
-var pistonmv		= <gregtech:gt.metaitem.01:32641>;
-var pistonhv		= <gregtech:gt.metaitem.01:32642>;
-var fieldgenMV		= <gregtech:gt.metaitem.01:32671>;
-var fieldgenEV		= <gregtech:gt.metaitem.01:32673>;
-var pressurelavaboiler	= <gregtech:gt.blockmachines:102>;
-var refineditemcasing	= <IC2:itemCasing:5>;
-var smallsteelpipe	= <ore:pipeSmallSteel>;
-var ironfurnace		= <ore:craftingIronFurnace>;
-var battery		= <ore:batteryBasic>;
-var advbattery		= <ore:batteryAdvanced>;
-var ducttape		= <ore:craftingDuctTape>;
-var geothermal		= <ore:craftingGeothermalGenerator>;
-var platetungstensteel	= <ore:plateTungstenSteel>;
-var inddiamond		= <ore:craftingIndustrialDiamond>;
-var diasawblade		= <ore:craftingDiamondBlade>;
-var miningdrill		= <IC2:itemToolDrill:26>;
-var diaminingdrill	= <IC2:itemToolDDrill:26>;
-var oxygen		= <liquid:oxygen>;
+var gearWood 			= <ore:gearGtWood>;
+var plateIron			= <ore:plateAnyIron>;
+var plateAluminium		= <ore:plateAluminium>;
+var plateSteel			= <ore:plateSteel>;
+var plateGold			= <ore:plateGold>;
+var plateNeodymium		= <ore:plateNeodymium>;
+var platestainlesssteel 	= <ore:plateStainlessSteel>;
+var foilenderium		= <ore:foilEnderium>;
+var foilchrome			= <ore:foilChrome>;
+var foilneodymium		= <ore:foilEuropium>;
+var foileuropium		= <ore:foilNeodymium>;
+var basiccircuit		= <ore:circuitBasic>;
+var advcircuit			= <ore:circuitAdvanced>;
+var energyflowcircuit		= <gregtech:gt.metaitem.01:32706>;
+var robotarmlv			= <gregtech:gt.metaitem.01:32650>;
+var conveyorlv			= <gregtech:gt.metaitem.01:32630>;
+var sensorlv			= <gregtech:gt.metaitem.01:32690>;
+var pumplv			= <gregtech:gt.metaitem.01:32610>;
+var pistonlv			= <gregtech:gt.metaitem.01:32640>;
+var pistonmv			= <gregtech:gt.metaitem.01:32641>;
+var pistonhv			= <gregtech:gt.metaitem.01:32642>;
+var fieldgenMV			= <gregtech:gt.metaitem.01:32671>;
+var fieldgenEV			= <gregtech:gt.metaitem.01:32673>;
+var pressurelavaboiler		= <gregtech:gt.blockmachines:102>;
+var refineditemcasing		= <IC2:itemCasing:5>;
+var smallsteelpipe		= <ore:pipeSmallSteel>;
+var ironfurnace 		= <ore:craftingIronFurnace>;
+var battery			= <ore:batteryBasic>;
+var advbattery			= <ore:batteryAdvanced>;
+var ducttape			= <ore:craftingDuctTape>;
+var geothermal			= <ore:craftingGeothermalGenerator>;
+var platetungstensteel		= <ore:plateTungstenSteel>;
+var inddiamond			= <ore:craftingIndustrialDiamond>;
+var diasawblade 		= <ore:craftingDiamondBlade>;
+var miningdrill 		= <IC2:itemToolDrill:26>;
+var diaminingdrill		= <IC2:itemToolDDrill:26>;
+var oxygen			= <liquid:oxygen>;
 
 //railcraft
-var standardrail	= <Railcraft:part.rail>;
-var woodentie		= <Railcraft:part.tie>;
-var worldanchor		= <Railcraft:machine.alpha>;
+var standardrail		= <Railcraft:part.rail>;
+var woodentie			= <Railcraft:part.tie>;
+var worldanchor 		= <Railcraft:machine.alpha>;
 
 //steves cart crafting
-var stabilizedmetal	= <StevesCarts:ModuleComponents:21>;
-var reinforcedmetal	= <StevesCarts:ModuleComponents:22>;
-var lumpofgalgador	= <StevesCarts:ModuleComponents:46>;
-var galgadorianmetal	= <StevesCarts:ModuleComponents:47>;
-var largelumpofgalgador	= <StevesCarts:ModuleComponents:48>;
-var galgadorianmetal2	= <StevesCarts:ModuleComponents:49>;
-var simplepcb		= <StevesCarts:ModuleComponents:9>;
-var advpcb		= <StevesCarts:ModuleComponents:16>;
-var tankvalve		= <StevesCarts:ModuleComponents:60>;
-var tankpane		= <StevesCarts:ModuleComponents:61>;
-var chestpane		= <StevesCarts:ModuleComponents:30>;
-var ironpane		= <StevesCarts:ModuleComponents:34>;
-var rawhardnener	= <StevesCarts:ModuleComponents:18>;
-var solarpanel		= <StevesCarts:ModuleComponents:44>;
-var advsolarpanel	= <StevesCarts:ModuleComponents:58>;
-var galgadoreye		= <StevesCarts:ModuleComponents:45>;
-var sawblade		= <StevesCarts:ModuleComponents:15>;
-var hardendsawblade	= <StevesCarts:ModuleComponents:80>;
-var galgadoriansawblade	= <StevesCarts:ModuleComponents:81>;
-var woodcuttingcore	= <StevesCarts:ModuleComponents:17>;
-var dynamicpane		= <StevesCarts:ModuleComponents:37>;
-var largedynamicpane	= <StevesCarts:ModuleComponents:38>;
-var blankupgrade	= <StevesCarts:ModuleComponents:59>;
+var stabilizedmetal		= <StevesCarts:ModuleComponents:21>;
+var reinforcedmetal		= <StevesCarts:ModuleComponents:22>;
+var lumpofgalgador		= <StevesCarts:ModuleComponents:46>;
+var galgadorianmetal 		= <StevesCarts:ModuleComponents:47>;
+var largelumpofgalgador 	= <StevesCarts:ModuleComponents:48>;
+var galgadorianmetal2 		= <StevesCarts:ModuleComponents:49>;
+var simplepcb			= <StevesCarts:ModuleComponents:9>;
+var advpcb			= <StevesCarts:ModuleComponents:16>;
+var tankvalve			= <StevesCarts:ModuleComponents:60>;
+var tankpane 			= <StevesCarts:ModuleComponents:61>;
+var chestpane			= <StevesCarts:ModuleComponents:30>;
+var ironpane			= <StevesCarts:ModuleComponents:34>;
+var rawhardnener		= <StevesCarts:ModuleComponents:18>;
+var solarpanel			= <StevesCarts:ModuleComponents:44>;
+var advsolarpanel		= <StevesCarts:ModuleComponents:58>;
+var galgadoreye 		= <StevesCarts:ModuleComponents:45>;
+var sawblade			= <StevesCarts:ModuleComponents:15>;
+var hardendsawblade		= <StevesCarts:ModuleComponents:80>;
+var galgadoriansawblade 	= <StevesCarts:ModuleComponents:81>;
+var woodcuttingcore		= <StevesCarts:ModuleComponents:17>;
+var dynamicpane 		= <StevesCarts:ModuleComponents:37>;
+var largedynamicpane		= <StevesCarts:ModuleComponents:38>;
+var blankupgrade		= <StevesCarts:ModuleComponents:59>;
 
 //
-var stickWood 		= <ore:stickWood>;
-var pork 		= <minecraft:porkchop>;
-var plankWood		= <ore:plankWood>;
-var logWood		= <ore:logWood>;
-var redstone		= <ore:dustRedstone>;
-var pcb			= <ore:oc:materialCircuitBoardPrinted>;
-var barsIron		= <ore:barsIron>;
-var glass		= <ore:blockGlass>;
-var paneglass		= <ore:paneGlass>;
-var pearlEnder		= <ore:pearlEnder>;
-var lavabucket		= <ore:bucketLava>;
-var obsidian		= <ore:blockObsidian>;
-var fullsolarpanel	= <GalacticraftCore:item.basicItem:1>;
-var glowstonedust	= <ore:dustGlowstone>;
-var teslatite		= <ore:dustTeslatite>;
-var diamond		= <ore:gemDiamond>;
-var treesapling		= <ore:treeSapling>;
+var stickWood 			= <ore:stickWood>;
+var pork 			= <minecraft:porkchop>;
+var plankWood			= <ore:plankWood>;
+var logWood			= <ore:logWood>;
+var redstone			= <ore:dustRedstone>;
+var pcb 			= <ore:oc:materialCircuitBoardPrinted>;
+var barsIron			= <ore:barsIron>;
+var glass			= <ore:blockGlass>;
+var paneglass			= <ore:paneGlass>;
+var pearlEnder			= <ore:pearlEnder>;
+var lavabucket			= <ore:bucketLava>;
+var obsidian			= <ore:blockObsidian>;
+var fullsolarpanel		= <GalacticraftCore:item.basicItem:1>;
+var glowstonedust		= <ore:dustGlowstone>;
+var teslatite			= <ore:dustTeslatite>;
+var diamond			= <ore:gemDiamond>;
+var treesapling 		= <ore:treeSapling>;
 
 
 # Blocks/Items Removal
