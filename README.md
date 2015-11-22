@@ -19,6 +19,6 @@ Just make sure they work :)
 ### Important for using dev configs
 I made these configs available for public so you can tinker with them. WARNING! I hold no responsibility if it will break something in your world!
 
-The DEV version was tested with Forge 1490.
+The DEV version was tested with Forge 1558.
 
 Also note that sometimes there is not only config files update, but sometimes the mods are updated as well, which means that develeopment configs will not work properly if you also don't update required mod. I will try to remember to note it in commit description.
