@@ -19,3 +19,18 @@ chamelium {
             [{item=gravel, subID=0}, water_bucket, {item=gravel, subID=0}]]
     output: 16
 }
+case2 {
+  input: [[screwStainlessSteel , "oc:materialCircuitBoardPrinted", craftingToolWrench]
+          [{item="ic2.reactorVentGold", subID=1}, "oc:case1", {item="ic2.reactorVentGold", subID=1}]
+          [screwStainlessSteel, "oc:circuitChip2", craftingToolScrewdriver]]
+}
+case3 {
+  input: [[screwTitanium , "oc:materialCircuitBoardPrinted", craftingToolWrench]
+          [{item="ic2.reactorVentDiamond", subID=1}, "oc:case2", {item="ic2.reactorVentDiamond", subID=1}]
+          [screwTitanium, "oc:circuitChip3", craftingToolScrewdriver]]
+}
+serverRack {
+  input: [[craftingToolScrewdriver, "oc:wlanCard", craftingToolWrench]
+          [{item="ic2.reactorVentDiamond", subID=1}, chest, {item="ic2.reactorVentDiamond", subID=1}]
+          ["oc:relay", "oc:materialCircuitBoardPrinted","oc:powerDistributor"]]
+}
