@@ -84,14 +84,12 @@ mods/CameraStudioV2.1710(mc1.7.10).zip
 mods/camerastudio/*
 CameraStudio_log.txt
 servers.dat
-config/NEI/client.cfg
 CameraStudio_log.txt.lck
 mods/VersionChecker*.jar
 config/VersionChecker.cfg
 serverstuff/*
 sync.sh
 dumps/
-NEI/client.cfg
 videos/
 config/OpenEye.json
 mods/OptiFine_1.7.10_HD_U_C1.jar
