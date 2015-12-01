@@ -1,3 +1,38 @@
+v3.1.21
+Mod Updates:
+- AromaBackup -> 0.0.0.6
+- Automagy -> 0.27
+- EnderIO -> 2.3.0.421
+- JourneyMap -> 5.1.3b1
+- MalisisCore -> 0.14.0
+- MalisisDoors -> 1.13.0
+- Nuclear Control 2 -> 2.3.3a-Exist
+- Pam's Harvestcraft -> 1.7.10La
+- Storage Drawers -> 1.7.2
+
+Changes/Fixes:
+- [NEW] Added Medieval door
+- [NEW] BackupRecovery GUI (accessible from your World Selection)
+- [NEW] Can whitelist/blacklist dimensions from backup
+- [NEW] JourneyMap support for large resource packs like Sphax BDCraft 64/128/256/512
+- [NEW] New Yeta Wrench overlay
+- [CHANGE] Changed item render type for Storage Drawers back to fast.
+- [CHANGE] Drawer Controller has limited range of 6 blocks (radius)
+- [CHANGE] Changed Search For Item In Nearby Inventories default keybind from [t] to [*]
+- [CHANGE] Gregified AE Monitor Kit
+- [TEMPORARY CHANGE] Disabled Harvestcraft NEI Handler
+- [FIX/WORKAROUND] Removed anyIron and anyCopper tags from Wrought, Pig iron and Annealed copper (ingots, dusts, nuggets) to fix unification exploit.
+- [FIX] Crash with fence gates on dedicated servers
+- [FIX] Fixed wrong animation direction for fence gate
+- [FIX] Disabled auto-smelt working together with fortune to fix multiply exploits
+- [FIX] Fixed Computer Case (T2 and T3) and Server Rack to use correct heat vents (with meta :1)
+- [FIX] Fixed crafting of Portable Information Panel
+- [FIX] Fixes cross-mod issue with Applied Energistics 2 and Nuclear Control 2
+- [FIX] Fixed rendering of Gregtech items on fast setting
+- [FIX] Journeymap causes FPS drop every 30 seconds due to disk contention with Minecraft file updates
+- [FIX] Removed recipe for Candleberry > Cotton.
+- [PATREON] Added November Patrons
+
 v3.1.20
 Forge updated to 10.13.4.1558
 Mod Updates:
