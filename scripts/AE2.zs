@@ -753,12 +753,6 @@ recipes.addShaped(WirelessReceiver, [
 [null, EnderEyeRod, null],
 [CertusPlate, AdvCircuit, CertusPlate]]);
 
-// --- Illuminated Panel
-recipes.addShaped(Illuminated, [
-[CertusRod, QuartzGlass, CertusRod],
-[QuartzGlass, GlowstoneGlass, QuartzGlass],
-[CertusRod, QuartzGlass, CertusRod]]);
-
 // --- Terminal
 recipes.addShaped(Terminal, [
 [NQuartzRod, QuartziteScrew, NQuartzRod],
