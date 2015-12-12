@@ -212,6 +212,12 @@ var VibrantQGlass =<appliedenergistics2:tile.BlockQuartzLamp>;
 var WirelessReceiver = <appliedenergistics2:item.ItemMultiMaterial:41>;
 var WirelessTerminal = <appliedenergistics2:item.ToolWirelessTerminal>;
 
+// --- OreDictionary Fix ---
+
+<ore:itemCertusQuartz>.remove(PureNetherQCrystal);
+<ore:itemCertusQuartz>.add(PureCertusQCrystal);
+<ore:itemNetherQuartz>.remove(PureCertusQCrystal);
+<ore:itemNetherQuartz>.add(PureNetherQCrystal);
 
 // --- Removing Recipes ---
 
