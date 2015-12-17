@@ -1,0 +1,213 @@
+{
+  "book": [
+    {
+      "features": [
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockmachines 1155",
+            "xPos": 47,
+            "yPos": 48,
+            "width": 147.0,
+            "height": 147.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Charcoal Pit",
+            "wrap": 0,
+            "size": 2.5,
+            "color": "FF555555",
+            "xPos": 39,
+            "yPos": 17,
+            "width": 192.0,
+            "height": 20.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Charcoal Pit is the only early way of turning any logs underneath it into Charcoal. It produces Brittle Charcoal which when mined will drop 1-2 pieces of charcoal.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 220,
+            "yPos": 20,
+            "width": 187.0,
+            "height": 179.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Layer 1 - Bottom",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 104.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Must be made out of Bricks. Can be maximum of 11x11 area.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 179.0,
+            "height": 21.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Charcoal_Pit/CharcoalPitL2.png",
+            "xPos": 232,
+            "yPos": 58,
+            "width": 155.0,
+            "height": 128.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Charcoal_Pit/CharcoalPitL1.png",
+            "xPos": 35,
+            "yPos": 58,
+            "width": 155.0,
+            "height": 128.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Layer 2 - Middle",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 222,
+            "yPos": 18,
+            "width": 143.0,
+            "height": 12.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "On top of the Bricks you place Wooden Logs. These logs can be maximum 11x5x11 area.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
+            "width": 179.0,
+            "height": 17.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Layer 3 - Top",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 104.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "On top of the logs you must place the Charcoal Pit Controller block",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 179.0,
+            "height": 21.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Charcoal_Pit/CharcoalPitL3.png",
+            "xPos": 35,
+            "yPos": 58,
+            "width": 155.0,
+            "height": 128.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Finalized",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 222,
+            "yPos": 18,
+            "width": 143.0,
+            "height": 12.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Lastly cover whole pit in dirt or grass. If you have everything correct, the Controller block will start animating. After few minutes the Logs will convert into Brittle Charcoal, which can then be mined. The bigger the pit is, the longer it will take. When the Controller stops animating, the process is done.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
+            "width": 179.0,
+            "height": 70.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Charcoal_Pit/CharcoalPitCompleted.png",
+            "xPos": 248,
+            "yPos": 113,
+            "width": 121.0,
+            "height": 83.0
+          }
+        }
+      ],
+      "pageName": ""
+    }
+  ],
+  "uniqueName": "GUIDE_Charcoal_Pit",
+  "color": 2763306,
+  "showBackground": true,
+  "showArrows": true,
+  "showNumber": true,
+  "iconPass1": "",
+  "iconPass2": "",
+  "iconColorisePass1": false,
+  "iconColorisePass2": false,
+  "iconColorPass1": 0,
+  "iconColorPass2": 0,
+  "language": "en_US",
+  "displayName": "[GUIDE] Charcoal Pit",
+  "displayInCreative": true
+}

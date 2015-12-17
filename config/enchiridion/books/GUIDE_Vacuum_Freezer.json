@@ -1,0 +1,267 @@
+{
+  "book": [
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Vacuum Freezer",
+            "wrap": 0,
+            "size": 2.2000003,
+            "color": "FF555555",
+            "xPos": 25,
+            "yPos": 17,
+            "width": 215.0,
+            "height": 13.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Vacuum Freezer is a machine used to freeze various liquids or Hot Ingots that comes from Blast Furnace.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 220,
+            "yPos": 20,
+            "width": 185.0,
+            "height": 78.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Vacuum_Freezer/VFMain.png",
+            "xPos": 43,
+            "yPos": 48,
+            "width": 140.0,
+            "height": 140.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Layer 1 - Bottom",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 104.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Made primarily from Frost Proof Machine Casings in 3x3 pattern.\nAny Frost Proof Machine Casing can be replaced by following:\n1 Input Bus\n1 Output Bus\n1 Energy Hatch (MV is minimum as recipes reqiore 120EU/t)\n1 Maintenance Hatch",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 179.0,
+            "height": 77.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Layer 2 - Controller Layer",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 222,
+            "yPos": 18,
+            "width": 165.0,
+            "height": 11.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Controller block in front middle\n7 Frost Proof Machine Casings\nHollow middle.\nAgain any Frost Proof Machine Casing can be replaced",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
+            "width": 179.0,
+            "height": 45.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Vacuum_Freezer/VF_1.png",
+            "xPos": 57,
+            "yPos": 121,
+            "width": 111.0,
+            "height": 78.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Vacuum_Freezer/VF_2.png",
+            "xPos": 236,
+            "yPos": 89,
+            "width": 150.0,
+            "height": 103.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Layer 3 - Top",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 112.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Made from 9 Frost Proof Machine Casings. Casings can be again replaced with buses or hatches.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 177.0,
+            "height": 82.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Finalized",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 222,
+            "yPos": 18,
+            "width": 90.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Finished Vacuum Freezer must have at least 16 Frost Proof Machine Casings.\nMaintenance must be performed before first start of machine.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
+            "width": 182.0,
+            "height": 44.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Vacuum_Freezer/VF_3.png",
+            "xPos": 36,
+            "yPos": 76,
+            "width": 153.0,
+            "height": 113.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Vacuum_Freezer/VFMain.png",
+            "xPos": 255,
+            "yPos": 81,
+            "width": 116.0,
+            "height": 117.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Maintenance",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 70.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Maintenance is done by using tools in the Maintenance Hatch. To use a tool in maintenance, move it up to the single inventory slot in the Hatch\u0027s GUI, left click once, and return the tool to your inventory. Note: The Maintenance Hatch will not accept interaction from fake players; all maintenance must be done by hand.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 180.0,
+            "height": 91.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Vacuum_Freezer/Maintenance_Problems.png",
+            "xPos": 47,
+            "yPos": 135,
+            "width": 133.0,
+            "height": 55.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Machines can operate without having fixed all problems, however every active problem decreases the machine\u0027s energy efficiency by 10%. At least one problem must be fixed for a machine to be activated.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
+            "width": 180.0,
+            "height": 60.0
+          }
+        }
+      ],
+      "pageName": ""
+    }
+  ],
+  "uniqueName": "GUIDE_Vacuum_Freezer",
+  "color": 4751019,
+  "showBackground": true,
+  "showArrows": true,
+  "showNumber": true,
+  "iconPass1": "",
+  "iconPass2": "",
+  "iconColorisePass1": false,
+  "iconColorisePass2": false,
+  "iconColorPass1": 0,
+  "iconColorPass2": 0,
+  "language": "en_US",
+  "displayName": "[GUIDE] Vacuum Freezer",
+  "displayInCreative": true
+}
