@@ -1,3 +1,39 @@
+v3.1.22
+Forge updated to 10.13.4.1566
+Mod Updates:
+- AsieLib -> 0.4.5
+- Chisel -> 2.9.4.10
+- Computronics -> 1.6.0
+- ModTweaker2 -> 0.9.5
+- OpenComputers -> 1.5.20.38
+- PneumaticCraft -> 1.12.1.144
+- BDLib -> 1.9.4.109
+- Buildcraft -> 7.1.14
+- Buildcraft Compat -> 7.1.3
+- Forestry -> 4.2.3.51
+- Gendustry -> 1.6.4.133
+- GregTech -> 5.08.33
+- Industrial Craft 2 -> 2.2.806
+- JourneyMap -> 5.1.3
+- LogisticsPipes -> 0.9.3.70
+
+Changes/Fixes:
+- [NEW] Added GregTech Multiblock Guide Books (contains also 5.09 multiblock guide books)
+- [NEW] Industrial Biomass can be used as fuel in SemiFluid Generator (same value as Creosote)
+- [CHANGE] Forced Universal Housing name change to be recognized by other mods
+- [CHANGE] Removed crafting of forestry Scoop
+- [CHANGE] Changed crafting of Scoopator to require GT scoop
+- [CHANGE] Renamed Biomass (from IC2) to Industrial Biomass
+- [CHANGE] Mutagen can be crafted in autoclave, less Mutagen Catalysts. More Industrial Biomass
+- [CHANGE] Removed easier crafting recipe for Illuminated Panel (AE2)
+- [CHANGE/FIX] Force-swapped OreDict entries for Pure Nether and Pure Certus Quartz.
+- [FIX] Fixes crash with OC's adapter
+- [FIX] Fixed wand cap exploit (TC)
+- [FIX] Fixed spawning of unnamed oreblocks within Naquadah Veins
+- [FIX] Disabled Storage Drawers Unification with AE2 combined (certus quartz, nether quartz).
+- [WORKAROUND] Added Electrical Tools to their oredictionary
+- [PATREON] Added December Patrons
+
 v3.1.21
 Mod Updates:
 - AromaBackup -> 0.0.0.6
