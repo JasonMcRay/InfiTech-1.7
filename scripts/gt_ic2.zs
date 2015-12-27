@@ -4,9 +4,9 @@ import mods.gregtech.Canner;
 import mods.gregtech.ArcFurnace;
 import mods.gregtech.PlasmaArcFurnace;
 import mods.ic2.SemiFluidGenerator;
+import mods.gregtech.Printer;
 
 # Aliases
-var book = <minecraft:book>;
 var cableCopperAnnealed1x = <gregtech:gt.blockmachines:1386>;
 var cableElectrum4x = <gregtech:gt.blockmachines:1448>;
 var cableGold1x = <ore:cableGt01Gold>;
@@ -26,10 +26,8 @@ var fuelRodMOX = <IC2:reactorMOXSimple:1>;
 var fuelRodThorium = <gregtech:gt.Thoriumcell>;
 var fuelRodUranium = <IC2:reactorUraniumSimple:1>;
 var genKinWind = <IC2:blockKineticGenerator>;
-var GTOreGenGuide = <Enchiridion2:book>.withTag({identifier: "GregTech_Ore_Guide"});
 var HHammer = <ore:craftingToolHardHammer>;
 var ingotSteel = <ore:ingotSteel>;
-var inkSac = <minecraft:dye>;
 var itemCasingBronze = <IC2:itemCasing:2>;
 var itemCasingGold = <IC2:itemCasing:3>;
 var machineHullHV = <gregtech:gt.blockmachines:13>;
@@ -38,13 +36,6 @@ var motorElectricHV = <gregtech:gt.metaitem.01:32602>;
 var MOX = <IC2:itemMOX>;
 var nuggetSteel = <gregtech:gt.metaitem.01:9305>;
 var ODScanner = <IC2:itemScanner:*>;
-var oreCoal = <ore:oreCoal>;
-var oreCopper = <ore:oreCopper>;
-var oreGold = <ore:oreGold>;
-var oreIron = <ore:oreIron>;
-var oreLead = <ore:oreLead>;
-var oreSilver = <ore:oreSilver>;
-var oreTin = <ore:oreTin>;
 var OVScanner = <IC2:itemScannerAdv>;
 var pistonElectricHV = <gregtech:gt.metaitem.01:32642>;
 var plateCarbon = <ore:plateAlloyCarbon>;
@@ -74,9 +65,22 @@ var sensorHV = <gregtech:gt.metaitem.01:32692>;
 var shaftIron = <IC2:itemRecipePart:11>;
 var shaftSteel = <IC2:itemRecipePart:12>;
 var stickIron = <ore:stickIron>;
-var stone = <minecraft:stone>;
 var uraniumEnriched = <IC2:itemUran>;
 var Wrench = <ore:craftingToolWrench>;
+
+# Electrical Tools Oredictionary Stuff
+<ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:101>);
+<ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:103>);
+<ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:105>);
+<ore:craftingToolSaw>.add(<gregtech:gt.metatool.01:111>);
+<ore:craftingToolSaw>.add(<gregtech:gt.metatool.01:113>);
+<ore:craftingToolSaw>.add(<gregtech:gt.metatool.01:115>);
+<ore:craftingToolSaw>.add(<gregtech:gt.metatool.01:141>);
+<ore:craftingToolWrench>.add(<gregtech:gt.metatool.01:121>);
+<ore:craftingToolWrench>.add(<gregtech:gt.metatool.01:123>);
+<ore:craftingToolWrench>.add(<gregtech:gt.metatool.01:125>);
+<ore:craftingToolScrewdriver>.add(<gregtech:gt.metatool.01:151>);
+<ore:craftingToolSolderingIron>.add(<gregtech:gt.metatool.01:161>);
 
 # Recipe Fixes
 recipes.remove(OVScanner);
@@ -149,16 +153,11 @@ recipes.remove(fuelRodThorium);
 Canner.addRecipe(fuelRodThorium, dustThorium * 3, fuelRodEmpty, 200, 2);
 
 # Specials
-recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreIron]);
-recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreCopper]);
-recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreTin]);
-recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreLead]);
-recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreGold]);
-recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreSilver]);
-recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, oreCoal]);
 SemiFluidGenerator.addFluid(<liquid:creosote> * 53, 8);
+SemiFluidGenerator.addFluid(<liquid:ic2biomass> * 53, 8);
 
-// Fixing JABBA unification exploits
+# -- Fixing JABBA unification exploits --
+
 // Iron/PigIron/WroughtIron
 <ore:ingotAnyIron>.remove(<gregtech:gt.metaitem.01:11304>);             // Wrought Iron Ingot
 <ore:ingotAnyIron>.remove(<gregtech:gt.metaitem.01:11307>);             // Pig Iron Ingot
@@ -181,6 +180,7 @@ SemiFluidGenerator.addFluid(<liquid:creosote> * 53, 8);
 <ore:dustTinyAnyIron>.remove(<gregtech:gt.metaitem.01:307>);            // Pig Iron Dust (Tiny)
 <ore:nuggetAnyIron>.remove(<gregtech:gt.metaitem.01:9304>);             // Wrought Iron Nugget
 <ore:nuggetAnyIron>.remove(<gregtech:gt.metaitem.01:9307>);             // Pig Iron Nugget
+
 // Copper/AnnealedCopper    
 <ore:ingotAnyCopper>.remove(<gregtech:gt.metaitem.01:11345>);           // Annealed Copper Ingot
 <ore:ingotDoubleAnyCopper>.remove(<gregtech:gt.metaitem.01:13345>);     // Annealed Copper Ingot (Double)

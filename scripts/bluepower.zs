@@ -58,6 +58,8 @@ var ingotGold = <minecraft:gold_ingot>;
 var gemRuby = <ore:gemRuby>;
 var dustRuby = <ore:dustRuby>;
 var blockRuby = <ore:blockRuby>;
+var BPScrewdriver = <bluepower:screwdriver>;
+var screwdriver = <ore:craftingToolScrewdriver>;
 
 
 # Item/block Removal
@@ -95,6 +97,8 @@ recipes.remove(sawAmethyst);
 recipes.addShaped(sawAmethyst, [
 	[stickWood, rodStone, rodStone],
 	[stickWood, gemAmethyst, rodStone]]);
+recipes.remove(BPScrewdriver);
+recipes.addShapeless(BPScrewdriver, [screwdriver.noReturn()]);
 recipes.removeShaped(wireRedAlloy, [[ingotRedAlloy, ingotRedAlloy, ingotRedAlloy]]);
 //Assembler.addRecipe(output, input1, input2, durationTicks, euPerTick);
 recipes.remove(wireFineIronBP);

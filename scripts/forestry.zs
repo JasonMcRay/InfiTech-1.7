@@ -73,6 +73,7 @@ var rainTank = <Forestry:factory2:1>;
 var ringIron = <ore:ringIron>;
 var robotArmLV = <gregtech:gt.metaitem.01:32650>;
 var screwIron = <ore:screwIron>;
+var scoopFT = <Forestry:scoop>;
 var sensorMV = <gregtech:gt.metaitem.01:32691>;
 var silkWisp = <Forestry:craftingMaterial:2>;
 var silkWoven = <Forestry:craftingMaterial:3>;
@@ -100,7 +101,6 @@ var waxMagic = <MagicBees:wax>;
 var wheat = <minecraft:wheat>;
 var worktable = <Forestry:factory2:2>;
 var wrench = <ore:craftingToolWrench>;
-
 
 # Item removal
 recipes.remove(engineClock);
@@ -138,6 +138,9 @@ fGearTin.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 recipes.remove(generatorBio);
 generatorBio.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
+recipes.remove(scoopFT);
+NEI.hide(scoopFT);
 
 # Recipe Tweaks
 recipes.remove(enginePeat);

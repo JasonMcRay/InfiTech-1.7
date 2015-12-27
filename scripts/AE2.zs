@@ -212,6 +212,12 @@ var VibrantQGlass =<appliedenergistics2:tile.BlockQuartzLamp>;
 var WirelessReceiver = <appliedenergistics2:item.ItemMultiMaterial:41>;
 var WirelessTerminal = <appliedenergistics2:item.ToolWirelessTerminal>;
 
+// --- OreDictionary Fix ---
+
+<ore:itemCertusQuartz>.remove(PureNetherQCrystal);
+<ore:itemCertusQuartz>.add(PureCertusQCrystal);
+<ore:itemNetherQuartz>.remove(PureCertusQCrystal);
+<ore:itemNetherQuartz>.add(PureNetherQCrystal);
 
 // --- Removing Recipes ---
 
@@ -753,12 +759,6 @@ recipes.addShaped(WirelessReceiver, [
 [null, EnderEyeRod, null],
 [CertusPlate, AdvCircuit, CertusPlate]]);
 
-// --- Illuminated Panel
-recipes.addShaped(Illuminated, [
-[CertusRod, QuartzGlass, CertusRod],
-[QuartzGlass, GlowstoneGlass, QuartzGlass],
-[CertusRod, QuartzGlass, CertusRod]]);
-
 // --- Terminal
 recipes.addShaped(Terminal, [
 [NQuartzRod, QuartziteScrew, NQuartzRod],
@@ -1150,3 +1150,4 @@ Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:24>);
 // --- Renaming Stuff ---
 
 NEI.overrideName(UStorageHousing, "Universal Storage Housing");
+UStorageHousing.displayName = "Universal Storage Housing";

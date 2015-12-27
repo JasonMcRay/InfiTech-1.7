@@ -1,13 +1,15 @@
 // --- Created by BeyondReality Team --- 
 
+import mods.gregtech.Autoclave;
+
 # Aliases
 var apiaryIndustrial = <gendustry:IndustrialApiary>;
 var beeReceptacle = <gendustry:BeeReceptacle>;
 var blockRedstone = <ore:blockRedstone>;
 var capsuleWaxBiomass = <Forestry:waxCapsuleBiomass>;
 var chipNAND = <gregtech:gt.metaitem.01:32700>;
+var diamond = <minecraft:diamond>;
 var dropHoneyRed = <gendustry:HoneyDrop:11>;
-var dust = <ore:dustDiamond>;
 var dustDiamond = <ore:dustDiamond>;
 var extractor = <gendustry:Extractor>;
 var frameCobalt = <gregtech:gt.blockmachines:4129>;
@@ -30,14 +32,22 @@ var pressurePlateLightWeighted = <minecraft:light_weighted_pressure_plate>;
 var processorGenetics = <gendustry:GeneticsProcessor>;
 var replicator = <gendustry:Replicator>;
 var royalJelly = <Forestry:royalJelly>;
+var scoop = <ore:craftingToolScoop>;
+var scoopator = <gendustry:IndustrialScoop:100>;
 var swarmer = <Forestry:alveary:2>;
 var tankMutagen = <gendustry:MutagenTank>;
 var tin = <ore:ingotTin>;
 var transposer = <gendustry:Transposer>;
 var uranium238 = <IC2:itemUran238>;
+var biomass = <liquid:ic2biomass>;
 
 
 # Recipes Tweaks
+recipes.remove(scoopator);
+recipes.addShaped(scoopator, [
+    [null, null, scoop.noReturn()],
+    [null, diamond, null],
+    [modulePower, null, null]]);
 recipes.addShaped(dropHoneyRed, [
     [royalJelly, royalJelly, royalJelly],
     [royalJelly, uranium238, royalJelly],
@@ -45,7 +55,8 @@ recipes.addShaped(dropHoneyRed, [
 recipes.addShaped(mutagen, [
     [dropHoneyRed, dropHoneyRed, dropHoneyRed],
     [dropHoneyRed, capsuleWaxBiomass, dropHoneyRed],
-    [dropHoneyRed, dropHoneyRed, dropHoneyRed]]);							
+    [dropHoneyRed, dropHoneyRed, dropHoneyRed]]);
+Autoclave.addRecipe(mutagen, dropHoneyRed * 6, biomass * 3000, 10000, 300, 24);
 recipes.remove(frameUpgrade);
 recipes.addShaped(frameUpgrade, [
     [ingotAluminium, ingotGold, ingotAluminium],
