@@ -68,6 +68,20 @@ var stickIron = <ore:stickIron>;
 var uraniumEnriched = <IC2:itemUran>;
 var Wrench = <ore:craftingToolWrench>;
 
+# Electrical Tools Oredictionary Stuff
+<ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:101>);
+<ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:103>);
+<ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:105>);
+<ore:craftingToolSaw>.add(<gregtech:gt.metatool.01:111>);
+<ore:craftingToolSaw>.add(<gregtech:gt.metatool.01:113>);
+<ore:craftingToolSaw>.add(<gregtech:gt.metatool.01:115>);
+<ore:craftingToolSaw>.add(<gregtech:gt.metatool.01:141>);
+<ore:craftingToolWrench>.add(<gregtech:gt.metatool.01:121>);
+<ore:craftingToolWrench>.add(<gregtech:gt.metatool.01:123>);
+<ore:craftingToolWrench>.add(<gregtech:gt.metatool.01:125>);
+<ore:craftingToolScrewdriver>.add(<gregtech:gt.metatool.01:151>);
+<ore:craftingToolSolderingIron>.add(<gregtech:gt.metatool.01:161>);
+
 # Recipe Fixes
 recipes.remove(OVScanner);
 recipes.addShaped(OVScanner, [
@@ -140,6 +154,7 @@ Canner.addRecipe(fuelRodThorium, dustThorium * 3, fuelRodEmpty, 200, 2);
 
 # Specials
 SemiFluidGenerator.addFluid(<liquid:creosote> * 53, 8);
+SemiFluidGenerator.addFluid(<liquid:ic2biomass> * 53, 8);
 
 # -- Fixing JABBA unification exploits --
 

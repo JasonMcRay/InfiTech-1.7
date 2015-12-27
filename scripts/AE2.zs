@@ -1150,3 +1150,4 @@ Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:24>);
 // --- Renaming Stuff ---
 
 NEI.overrideName(UStorageHousing, "Universal Storage Housing");
+UStorageHousing.displayName = "Universal Storage Housing";
