@@ -1,3 +1,177 @@
+v3.1.22(23)
+Forge updated to 10.13.4.1566
+Mod Updates:
+- AsieLib -> 0.4.5
+- Chisel -> 2.9.4.10
+- Computronics -> 1.6.0
+- ModTweaker2 -> 0.9.5
+- OpenComputers -> 1.5.20.38
+- PneumaticCraft -> 1.12.1.144
+- BDLib -> 1.9.4.109
+- Buildcraft -> 7.1.14
+- Buildcraft Compat -> 7.1.3
+- Forestry -> 4.2.3.51
+- Gendustry -> 1.6.4.133
+- GregTech -> 5.08.33
+- Industrial Craft 2 -> 2.2.806
+- JourneyMap -> 5.1.3
+- LogisticsPipes -> 0.9.3.70
+
+Changes/Fixes:
+- [NEW] Added GregTech Multiblock Guide Books (contains also 5.09 multiblock guide books)
+- [NEW] Industrial Biomass can be used as fuel in SemiFluid Generator (same value as Creosote)
+- [CHANGE] Forced Universal Housing name change to be recognized by other mods
+- [CHANGE] Removed crafting of forestry Scoop
+- [CHANGE] Changed crafting of Scoopator to require GT scoop
+- [CHANGE] Renamed Biomass (from IC2) to Industrial Biomass
+- [CHANGE] Mutagen can be crafted in autoclave, less Mutagen Catalysts. More Industrial Biomass
+- [CHANGE] Removed easier crafting recipe for Illuminated Panel (AE2)
+- [CHANGE/FIX] Force-swapped OreDict entries for Pure Nether and Pure Certus Quartz.
+- [FIX] Fixes crash with OC's adapter
+- [FIX] Fixed wand cap exploit (TC)
+- [FIX] Fixed spawning of unnamed oreblocks within Naquadah Veins
+- [FIX] Disabled Storage Drawers Unification with AE2 combined (certus quartz, nether quartz).
+- [WORKAROUND] Added Electrical Tools to their oredictionary
+- [PATREON] Added December Patrons
+
+v3.1.21
+Mod Updates:
+- AromaBackup -> 0.0.0.6
+- Automagy -> 0.27
+- EnderIO -> 2.3.0.421
+- JourneyMap -> 5.1.3b1
+- MalisisCore -> 0.14.0
+- MalisisDoors -> 1.13.0
+- Nuclear Control 2 -> 2.3.3a-Exist
+- Pam's Harvestcraft -> 1.7.10La
+- Storage Drawers -> 1.7.2
+
+Changes/Fixes:
+- [NEW] Added Medieval door
+- [NEW] BackupRecovery GUI (accessible from your World Selection)
+- [NEW] Can whitelist/blacklist dimensions from backup
+- [NEW] JourneyMap support for large resource packs like Sphax BDCraft 64/128/256/512
+- [NEW] New Yeta Wrench overlay
+- [CHANGE] Changed item render type for Storage Drawers back to fast.
+- [CHANGE] Drawer Controller has limited range of 6 blocks (radius)
+- [CHANGE] Changed Search For Item In Nearby Inventories default keybind from [t] to [*]
+- [CHANGE] Gregified AE Monitor Kit
+- [TEMPORARY CHANGE] Disabled Harvestcraft NEI Handler
+- [FIX/WORKAROUND] Removed anyIron and anyCopper tags from Wrought, Pig iron and Annealed copper (ingots, dusts, nuggets) to fix unification exploit.
+- [FIX] Crash with fence gates on dedicated servers
+- [FIX] Fixed wrong animation direction for fence gate
+- [FIX] Disabled auto-smelt working together with fortune to fix multiply exploits
+- [FIX] Fixed Computer Case (T2 and T3) and Server Rack to use correct heat vents (with meta :1)
+- [FIX] Fixed crafting of Portable Information Panel
+- [FIX] Fixes cross-mod issue with Applied Energistics 2 and Nuclear Control 2
+- [FIX] Fixed rendering of Gregtech items on fast setting
+- [FIX] Journeymap causes FPS drop every 30 seconds due to disk contention with Minecraft file updates
+- [FIX] Removed recipe for Candleberry > Cotton.
+- [PATREON] Added November Patrons
+
+v3.1.20
+Forge updated to 10.13.4.1558
+Mod Updates:
+- EnderIO - > 2.3.0.420
+- JourneyMap -> 5.1.1
+
+Mod Downgrade:
+- Forestry -> 4.0.11.40
+
+Changes/Fixes:
+- [NEW] EnderIO: OpenComputer Conduits
+- [CHANGE] StorageDrawers rendering set to fancy. It will render GT Items on labels, but can cause FPS drops. Change it back to fast if you need to.
+- [FIX] Fixed Chiseling Ender Chest
+- [FIX] Fixed Chamelium recipe
+- [FIX/WORKAROUND] Combs are again processable in GT Centrifuge
+
+v3.1.18
+Mod Updates:
+- AsieLib -> 0.4.4
+- Bibliocraft -> 1.11.4
+- Buildcraft -> 7.1.13
+- Chisel -> 2.9.3.9
+- Computronics -> 1.5.9
+- CustomMainMenu -> 1.9.2
+- EnderCore -> 0.2.0.31
+- EnderIO -> 2.3.0.419
+- Extra Utilities -> 1.2.12
+- Forestry -> 4.1.1.46
+- Galacticraft -> 3.0.12.404
+- Gendustry -> 1.6.3.128
+- Industrial Craft 2 -> 2.2.793
+- JourneyMap -> 5.1.1rc1
+- LogisticsPipes -> 0.9.3.69
+- MalisisCore -> 0.13.1
+- MalisisDoors -> 1.12.0
+- Nuclear Control 2 -> 2.3.2a
+- OpenBlocks -> 1.4.4 (downgrade to stable)
+- OpenModsLib -> 0.8 (downgrade to stable)
+- OpenEye -> 0.6 (downgrade to stable)
+- PneumaticCraft -> 1.11.19-141
+- Railcraft -> 9.8.0.0
+- Thaumic Tinkerer -> 2.5-513
+- WailaPlugins -> 0.2.0-23
+- WailHarvestability -> 1.1.5
+
+New mods:
+- Storage Drawers
+- TubeStuff (only for Online Player Detector and AutoWorkbench MK II)
+- Wawla
+
+Changes/fixes:
+- [NEW] New Trash cans (Energy and Fluid)
+- [NEW] Added tooltip to some disabled items (thanks @DarknessShadow)
+- [NEW] Added Tank Switch button to the Fluid Canning Machine GUI
+- [NEW] Added NEI "Search For Item In Nearby Inventories" button (Default 'T').
+- [NEW] Switch on eIO Powered Lights when they get wireless power, too.
+- [CHANGE] Overhauled Amadron Trades, instead of Emeralds it uses GT Ancient Coins
+- [CHANGE] Disabled GC energy conversion. GC machines can accept any energy, but will only output RF.
+- [CHANGE] Disabled eIO and HEE Enderman skull interchanging
+- [CHANGE] Disabled crafting of Auto Project Table from Blue power (due to huge cause of lag). I recommend removing them and replacing them with BC or TS versions.
+- [CHANGE] Disabled Auto Refill (was causing too much problems and it was annoying in some cases)
+- [CHANGE] Changed speed of solidifying Wet Concrete into Conduit Binder
+- [CHANGE] Autoclaving of Pulsating/Vibrant Crystals now has 85% chance of success
+- [FIX/WORKAROUND] Made ExU Drums to not stack no matter what. Solves issue with duping.
+- [FIX/WORKAROUND] Hardcoded Localization for Steves Workshop items
+- [FIX] Fixed Fluid Canner NEI handler crashes.
+- [FIX] Fixed few missing textures for He, CO2, Argon fluids/gases
+- [FIX] Fixed Engine Booster recipe
+- [FIX] Fixed Digger backpack not accepting items
+- [FIX] Fixed block recipes (thanks @DarknessShadow)
+- [FIX] Fix Vacuum Chest shift-clicking
+- [RECOMMENDATION] I recommend that you double-check your BC gate setups after this update.
+
+Known Issues:
+- Double clicking an item in AutoWorbench MK II (when that item is also present in the crafting area) causes client to crash. (http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1281065-immibiss-mods-now-with-85-7-less-version-numbers?page=114#c2294)
+- When JM minimap is not present on the screen your logs gets spammed with GL ERROR 1281 thingie. (https://github.com/RS485/LogisticsPipes/issues/845)
+- Crafting recipes that have a filled Cell in them are broken in Steves Worshop production Table. Other crafting tables are fine. (https://github.com/Vswe/Production/issues/36)
+
+Missing Items:
+- malisisdoors:curtain
+- malisisdoors:item.curtain
+- OpenBlocks:elevator_rotating
+- OpenBlocks:builder_guide
+
+v3.1.17 Criitical Hotfix
+- Fixed FTB Launcher not distributing IC2.ini config file, making new chunks in your worlds contain IC2 ores, even when they are disabled.
+- With that opportunity released evil Gatsu. (Thank you for patronage)
+
+v3.1.16 Hotfix
+Mod Updates:
+- GregTech -> 5.08.32
+
+Changes/fixes:
+- Fixed forestry processing in GT counterparts (combs, squeezing, fluid extracting, etc...)
+- Fixed forestry backpacks not accepting items they should
+
+WARNING: There will be around 50 missing items from update 3.1.14 to this one. Reason is that Forestry changed the IDs of its Wooden Logs (to be more specific, they use now just 1 ID with different NBT tags).
+It will probably cause those Wooden Logs and other wood related items (logs, planks, slabs, fences) gone from your worlds. There is nothing you can do about that.
+
+WARNING2:
+Multiblocks (alvearies or farms for example) will lose their inventories and may need to be broken and rebuilt.
+Forestry Stained Glass has been removed.
+
 v3.1.15
 Mod Updates:
 - AsieLib -> 0.4.3
@@ -11,7 +185,7 @@ Mod Updates:
 - Forestry -> 4.0.10.39
 - Galacticraft -> 3.0.12.376
 - Gendustry -> 1.6.2.127
-- GregTech -> 5.09.09
+- GregTech -> 5.08.31
 - Headcrumbs -> 1.6.2
 - Industrial Craft 2 -> 2.2.785
 - Logistics Pipes -> 0.9.3.61
@@ -53,9 +227,12 @@ Changes/Fixes
 - Fixed SAG milling cobblestone into "wierd" sand or gravel type.
 - Fixed Gravisuite recipes
 
-WARNING: There will be around 50 missing items from update 3.1.14 to this one. Reason is that Forestry changed the IDs of its Wooden Logs (to be more specific, they use now just 1 ID with different NBT tags). It will probably cause those Wooden Logs gone from your worlds. There is nothing you can do about that.
-If you will find out that this is true and your Forestry trees are missing: You can go and chop them up (before update), store the sapplings and replant them after update.
-If you will find that no Forestry Trees are missing from your world... Well then consider yourself lucky (and let me know, so I can let others know in this changelog)
+WARNING: There will be around 50 missing items from update 3.1.14 to this one. Reason is that Forestry changed the IDs of its Wooden Logs (to be more specific, they use now just 1 ID with different NBT tags).
+It will probably cause those Wooden Logs and other wood related items (logs, planks, slabs, fences) gone from your worlds. There is nothing you can do about that.
+
+WARNING2:
+Multiblocks (alvearies or farms for example) will lose their inventories and may need to be broken and rebuilt.
+Forestry Stained Glass has been removed.
 
 v3.1.14
 Changes/Fixes:
