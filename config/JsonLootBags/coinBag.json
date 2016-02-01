@@ -1,0 +1,38 @@
+{
+    "itemname": "Coin Bag",
+    "color": [
+    205,
+    127,
+    50
+    ],
+    "invSlotsMin": 36,
+    "invSlotsMax": 36,
+    "amountOfItemsMin": 1,
+    "amountOfItemsMax": 1,
+    "rarity": "Uncommon",
+    "items":
+    [
+        {
+            "min": 2,
+            "max": 7,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32000
+            }    
+        },
+        {
+            "min": 1,
+            "max": 1,
+            "weight": 5,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32001
+            }
+        }
+    ]
+}

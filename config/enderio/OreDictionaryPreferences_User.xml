@@ -1,0 +1,15 @@
+<!-- 
+Entries in this file take precedence over the values in the core file
+ -->
+<OreDictionaryPreferences>
+  <preference oreDictionary="dustObsidian" >
+    <itemStack modID="ThermalFoundation" itemName="material" itemMeta="4" />
+    <itemStack modID="EnderIO" itemName="itemPowderIngot" itemMeta="8" />
+  </preference>
+  <preference oreDictionary="sand" >
+    <itemStack modID="minecraft" itemName="sand" itemMeta="0" />
+  </preference>
+  <preference oreDictionary="gravel" >
+    <itemStack modID="minecraft" itemName="gravel" itemMeta="0" />
+  </preference>
+</OreDictionaryPreferences>

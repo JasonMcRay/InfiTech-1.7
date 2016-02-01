@@ -1,0 +1,9 @@
+<SpawnConfig>
+<!-- Enabling this section will stop all slime spawns
+  <entry id="Slime" mobName="Slime" creatureType="monster" rate="80" remove="true">
+    <biomeFilter type="any">
+      <biome type="BASE_LAND_TYPES" />
+    </biomeFilter>
+  </entry>
+ --> 
+</SpawnConfig>

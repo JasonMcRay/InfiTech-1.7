@@ -1,0 +1,234 @@
+{
+  "book": [
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Large Turbines",
+            "wrap": 0,
+            "size": 2.3000002,
+            "color": "FF555555",
+            "xPos": 25,
+            "yPos": 17,
+            "width": 215.0,
+            "height": 13.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Large Turbine is a multiblock generator producing large amounts of EU. They come in 4 variants, Steam, High Pressure, Gas and Plasma. The amount of Steam/Gas/Plasma used depends on the Turbine build in. It slowly speeds up, so it should be used for constant Energy supply.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 220,
+            "yPos": 20,
+            "width": 182.0,
+            "height": 45.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Large_Turbine/LTMain.png",
+            "xPos": 33,
+            "yPos": 57,
+            "width": 167.0,
+            "height": 142.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Frame",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 104.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Frame is 3x4x3 build from Turbine Casings. The inside of the Frame is empty.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 179.0,
+            "height": 77.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Finished Frame",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 222,
+            "yPos": 18,
+            "width": 165.0,
+            "height": 11.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Front center is Turbine Controller (Plasma, Steam, Gas, High Pressure).\nBack center needs Dynamo Hatch.\nSides must have:\n- 1 or more Input Hatches\n- 1 Output Hatch (only for Steam and High Pressure Turbine)\n- 1 Maintenance Hatch\n- 1 Muffler Hatch (only for Gas Turbine)\n- Remaining spots on sides Turbine Casings.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
+            "width": 182.0,
+            "height": 109.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Large_Turbine/LTFrame.png",
+            "xPos": 49,
+            "yPos": 79,
+            "width": 126.0,
+            "height": 120.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Large_Turbine/LTMain.png",
+            "xPos": 277,
+            "yPos": 136,
+            "width": 76.0,
+            "height": 66.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Maintenance",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 70.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Maintenance is done by using tools in the Maintenance Hatch. To use a tool in maintenance, move it up to the single inventory slot in the Hatch\u0027s GUI, left click once, and return the tool to your inventory. Note: The Maintenance Hatch will not accept interaction from fake players; all maintenance must be done by hand.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 180.0,
+            "height": 91.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Large_Turbine/Maintenance_Problems.png",
+            "xPos": 47,
+            "yPos": 135,
+            "width": 133.0,
+            "height": 55.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Machines can operate without having fixed all problems, however every active problem decreases the machine\u0027s energy efficiency by 10%. At least one problem must be fixed for a machine to be activated.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
+            "width": 180.0,
+            "height": 60.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Usage",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 50.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "The main Turbine block changes the fluids the turbine can run with.\n\n- Large Steam Turbine runs with Steam\n- Large High Pressure Turbine runs with Superheated Steam\n- Large Gas Turbine runs with Methane, Hydrogen and Biogas\n- Large Plasma Generator runs with all types of plasmas generated in the Fusion Reactor",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 177.0,
+            "height": 165.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "The Large Turbine also requires a turbine rotor. Turbine rotors vary greatly in size and material and contribute efficiency, durability and optimal flow modifiers to the running of the turbine.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
+            "width": 179.0,
+            "height": 56.0
+          }
+        }
+      ],
+      "pageName": ""
+    }
+  ],
+  "uniqueName": "GUIDE_Large_Turbine",
+  "color": 16777067,
+  "showBackground": true,
+  "showArrows": true,
+  "showNumber": true,
+  "iconPass1": "",
+  "iconPass2": "",
+  "iconColorisePass1": false,
+  "iconColorisePass2": false,
+  "iconColorPass1": 0,
+  "iconColorPass2": 0,
+  "language": "en_US",
+  "displayName": "[GUIDE] Large Turbines",
+  "displayInCreative": true
+}

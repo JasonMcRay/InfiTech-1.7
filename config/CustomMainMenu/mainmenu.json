@@ -1,0 +1,256 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "infitech2:textures/gui/title/Infitech2Logo.png",
+            "hoverImage" : "infitech2:textures/gui/title/Infitech2LogoHover.png",
+            "posX" : -125,
+            "posY" : 15,
+            "width" : 250,
+            "height" : 100,
+            "alignment" : "top_center"
+        }
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : -102,
+            "posY" : 48,
+            "width" : 100,
+            "height" : 20,
+            "texture" : "infitech2:textures/gui/images/button.png",
+            "imageWidth" : 500,
+            "imageHeight" : 125,
+            "normalTextColor" : 65280,
+            "hoverTextColor" : 65280,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : 2,
+            "posY" : 48,
+            "width" : 100,
+            "height" : 20,
+            "texture" : "infitech2:textures/gui/images/button.png",
+            "imageWidth" : 500,
+            "imageHeight" : 125,
+            "normalTextColor" : 65280,
+            "hoverTextColor" : 65280,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+        
+        "mods":
+        {
+            "text" : "Mods",
+            "posX" : -102,
+            "posY" : 92,
+            "width" : 204,
+            "height" : 20,
+            "texture" : "infitech2:textures/gui/images/buttonlong.png",
+            "imageWidth" : 1000,
+            "imageHeight" : 125,
+            "normalTextColor" : 65280,
+            "hoverTextColor" : 65280,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+        
+        "Issue Tracker":
+        {
+            "text" : "Issue Tracker",
+            "posX" : -102,
+            "posY" : 70,
+            "width" : 100,
+            "height" : 20,
+            "texture" : "infitech2:textures/gui/images/button.png",
+            "imageWidth" : 500,
+            "imageHeight" : 125,
+            "normalTextColor" : 65280,
+            "hoverTextColor" : 65280,
+            "action" :
+            {
+                "type" : "openLink",
+                "link" : "https://github.com/JasonMcRay/InfiTech-1.7/issues"
+            }
+        },
+        
+        "Forum Link":
+        {
+            "text" : "Forum",
+            "posX" : 2,
+            "posY" : 70,
+            "width" : 100,
+            "height" : 20,
+            "texture" : "infitech2:textures/gui/images/button.png",
+            "imageWidth" : 500,
+            "imageHeight" : 125,
+            "normalTextColor" : 65280,
+            "hoverTextColor" : 65280,
+            "action" :
+            {
+                "type" : "openLink",
+                "link" : "http://bit.ly/infitech2"
+            }
+        },
+        "options":
+        {
+            "text" : "menu.options",
+            "posX" : -102,
+            "posY" : 132,
+            "width" : 100,
+            "height" : 20,
+            "texture" : "infitech2:textures/gui/images/button.png",
+            "imageWidth" : 500,
+            "imageHeight" : 125,
+            "normalTextColor" : 65280,
+            "hoverTextColor" : 65280,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : 2,
+            "posY" : 132,
+            "width" : 100,
+            "height" : 20,
+            "texture" : "infitech2:textures/gui/images/button.png",
+            "imageWidth" : 500,
+            "imageHeight" : 125,
+            "normalTextColor" : 65280,
+            "hoverTextColor" : 16711680,
+            "hoverText" : "No, don't go!",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+        
+        "language":
+        {
+            "text" : "",
+            "posX" : -128,
+            "posY" : 132,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "infitech2:textures/gui/images/buttonlang.png",
+            "imageWidth" : 100,
+            "imageHeight" : 100,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        },
+        
+        "patreon wall":
+        {
+            "text" : "",
+            "posX" : -100,
+            "posY" : 155,
+            "width" : 200,
+            "height" : 20,
+            "texture" : "infitech2:textures/gui/images/buttonlongpatreon.png",
+            "imageWidth" : 1000,
+            "imageHeight" : 125,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "custom.patreon"
+            }
+        },
+        
+        "refresh":
+        {
+            "text" : "",
+            "posX" : -154,
+            "posY" : 132,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "refresh"
+            }
+        }
+    },
+    
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "Copyright Mojang AB. Do not distribute!",
+            "posX" : -197,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        },
+        
+        "fml":
+        {
+            "text" : "",
+            "posX" : 2,
+            "posY" : -50,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        }
+    },
+    
+    "other":
+    {
+        "splash-text":
+        {
+            "posX" : 90,
+            "posY" : 90,
+            "color" : -256,
+            "alignment" : "top_center",
+            "file" : "texts/splashes.txt"
+        },
+                
+        "background":
+        {
+            "image" : "",
+            "slideshow": 
+            {
+                "images" :
+                [
+                    "infitech2:textures/gui/background/menubg_0.png",
+                    "infitech2:textures/gui/background/menubg_1.png",
+                    "infitech2:textures/gui/background/menubg_2.png",
+                    "infitech2:textures/gui/background/menubg_3.png",
+                    "infitech2:textures/gui/background/menubg_4.png",
+                    "infitech2:textures/gui/background/menubg_5.png",
+                    "infitech2:textures/gui/background/menubg_6.png",
+                    "infitech2:textures/gui/background/menubg_7.png",
+                    "infitech2:textures/gui/background/menubg_8.png",
+                    "infitech2:textures/gui/background/menubg_9.png",
+                    "infitech2:textures/gui/background/menubg_10.png"                    
+                ],
+                "displayDuration" : 120,
+                "fadeDuration" : 40,
+                "shuffle" : true
+            }
+        }
+    }
+}

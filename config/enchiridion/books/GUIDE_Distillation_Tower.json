@@ -1,0 +1,267 @@
+{
+  "book": [
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Distillation Tower",
+            "wrap": 0,
+            "size": 2.1000004,
+            "color": "FF555555",
+            "xPos": 25,
+            "yPos": 17,
+            "width": 215.0,
+            "height": 13.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Distillation Tower is a multiblock Machine used for distilling huge amounts of fluids. It is an advanced version of the Distillery, able to output all products at the same time and with higher energy efficiency.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 220,
+            "yPos": 20,
+            "width": 185.0,
+            "height": 78.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Distillation_Tower/DTMain.png",
+            "xPos": 63,
+            "yPos": 35,
+            "width": 103.0,
+            "height": 176.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Layer 1 - Controller Layer",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 168.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Distillation_Tower/DT_1.png",
+            "xPos": 50,
+            "yPos": 105,
+            "width": 127.0,
+            "height": 101.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Controller block in the side-middle\n1 Input Hatch\n1 Output Bus\nRest is filled with Clean Stainless Steel Machine Casings",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 179.0,
+            "height": 77.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Layer 2 - 5 - Output Rings",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 222,
+            "yPos": 18,
+            "width": 165.0,
+            "height": 11.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Made from 7 Clean Stainless Steel Machine Casings\n1 Output Hatch\nHollow middle",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
+            "width": 183.0,
+            "height": 36.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Distillation_Tower/DT_2.png",
+            "xPos": 242,
+            "yPos": 89,
+            "width": 146.0,
+            "height": 101.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Layer 6 - Top",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 112.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Distillation_Tower/DT_3.png",
+            "xPos": 37,
+            "yPos": 71,
+            "width": 157.0,
+            "height": 106.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Made from 8 Stainless Steel Machine Casings and 1 Output Hatch.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 180.0,
+            "height": 55.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Finalized",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 222,
+            "yPos": 18,
+            "width": 90.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Finished machine also must have Maintenance hatch (Anywhere)\nEnergy Hatch (Anywhere)\nMaintenance must be performed before the start of machine.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
+            "width": 182.0,
+            "height": 44.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Distillation_Tower/DTMain.png",
+            "xPos": 270,
+            "yPos": 76,
+            "width": 89.0,
+            "height": 129.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Maintenance",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 70.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Maintenance is done by using tools in the Maintenance Hatch. To use a tool in maintenance, move it up to the single inventory slot in the Hatch\u0027s GUI, left click once, and return the tool to your inventory. Note: The Maintenance Hatch will not accept interaction from fake players; all maintenance must be done by hand.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 180.0,
+            "height": 91.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Distillation_Tower/Maintenance_Problems.png",
+            "xPos": 47,
+            "yPos": 135,
+            "width": 133.0,
+            "height": 55.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Machines can operate without having fixed all problems, however every active problem decreases the machine\u0027s energy efficiency by 10%. At least one problem must be fixed for a machine to be activated.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
+            "width": 180.0,
+            "height": 60.0
+          }
+        }
+      ],
+      "pageName": ""
+    }
+  ],
+  "uniqueName": "GUIDE_Distillation_Tower",
+  "color": 10071229,
+  "showBackground": true,
+  "showArrows": true,
+  "showNumber": true,
+  "iconPass1": "",
+  "iconPass2": "",
+  "iconColorisePass1": false,
+  "iconColorisePass2": false,
+  "iconColorPass1": 0,
+  "iconColorPass2": 0,
+  "language": "en_US",
+  "displayName": "[GUIDE] Distillation Tower",
+  "displayInCreative": true
+}

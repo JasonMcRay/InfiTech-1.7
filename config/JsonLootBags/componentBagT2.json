@@ -1,0 +1,192 @@
+{
+    "itemname": "Component Bag",
+    "color": [
+    255,
+    255,
+    255
+    ],
+    "invSlotsMin": 36,
+    "invSlotsMax": 36,
+    "amountOfItemsMin": 1,
+    "amountOfItemsMax": 2,
+    "rarity": "Common",
+    "items":
+    [
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32680
+            }
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32690
+            }
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32650
+            }
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32600
+            }    
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32610
+            }
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32640
+            }
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32630
+            }
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.02",
+                "stacksize": 1,
+                "damage": 21057
+            }
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 100,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32601
+            }    
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 100,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32611
+            }
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 100,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32641
+            }
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 100,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 21300
+            }
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 100,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32681
+            }
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 100,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32691
+            }
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 100,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 32631
+            }
+        },
+        {
+            "min": 3,
+            "max": 8,
+            "weight": 100,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.02",
+                "stacksize": 1,
+                "damage": 32651
+            }
+        }
+    ]
+}

@@ -1,0 +1,5921 @@
+{
+  "book": [
+    {
+      "features": [
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GregTech_Ore_Guide/420x200Splash.png",
+            "xPos": 23,
+            "yPos": 16,
+            "width": 185.0,
+            "height": 98.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Using this book is simple and little interactive. In the next few pages you will find list of ores (Small Ores and Ore Veins). You can click on the ore you are looking for and it will take you to propper page. The page will list information about the ore. Height is in what Y level can the ore spawn. Mining Tool Level means the required level of your pickaxe to be able to mine that ore. And Dimensions lists where the ore can spawn.",
+            "wrap": 0,
+            "size": 0.79999995,
+            "color": "FF555555",
+            "xPos": 23,
+            "yPos": 125,
+            "width": 182.0,
+            "height": 87.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "On the Ore Veins pages there is one extra info and these are Layers. Primary, Secondary, Inbetween and Around. The upper 2-4 levels of a vein will be almost all \u0027Primary\u0027 ore, the lower 2-4 levels will be almost all \u0027Secondary\u0027 ore, and the middle 2-4 levels will be mostly \u0027Inbetween\u0027 ore. \u0027Around\u0027 ore appears randomly interspersed throughout the vein. In total, a vein will contain roughly equal portions of Primary and Secondary ore, slightly less Inbetween ore, and notably less Around ore.",
+            "wrap": 0,
+            "size": 0.9,
+            "color": "FF555555",
+            "xPos": 219,
+            "yPos": 15,
+            "width": 192.0,
+            "height": 66.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "SO1",
+            "texture": "",
+            "xPos": 222,
+            "yPos": 158,
+            "width": 150.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Ore Veins List 1",
+            "texture": "",
+            "xPos": 222,
+            "yPos": 141,
+            "width": 102.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 222,
+            "yPos": 173,
+            "width": 147.0,
+            "height": 11.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Mining Tool Levels",
+            "texture": "",
+            "xPos": 221,
+            "yPos": 189,
+            "width": 146.0,
+            "height": 10.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Small Ores List 1",
+            "texture": "",
+            "xPos": 222,
+            "yPos": 125,
+            "width": 102.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]1) Small Ores List\n\n2) Ore Veins List\n\n3) Small Ores Description\n\n4) Ore Veins Description\n\n5) Pickaxe Mining Levels[/b]",
+            "wrap": 0,
+            "size": 0.9,
+            "color": "FF555555",
+            "xPos": 221,
+            "yPos": 127,
+            "width": 163.0,
+            "height": 80.0
+          }
+        }
+      ],
+      "pageName": "Menu"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Small Ores[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 78,
+            "yPos": 13,
+            "width": 133.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16504",
+            "xPos": 138,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16514",
+            "xPos": 38,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16089",
+            "xPos": 232,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16505",
+            "xPos": 327,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16509",
+            "xPos": 38,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16510",
+            "xPos": 327,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16035",
+            "xPos": 138,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16500",
+            "xPos": 138,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16535",
+            "xPos": 38,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16501",
+            "xPos": 138,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16086",
+            "xPos": 138,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16513",
+            "xPos": 38,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16511",
+            "xPos": 232,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16526",
+            "xPos": 232,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16032",
+            "xPos": 232,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Small Ores[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 277,
+            "yPos": 12,
+            "width": 141.0,
+            "height": 6.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16084",
+            "xPos": 232,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16034",
+            "xPos": 327,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16522",
+            "xPos": 327,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16324",
+            "xPos": 327,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Iron",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 72,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Lapis",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 141,
+            "width": 30.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Jasper",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 106,
+            "width": 38.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Blue Topaz",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 137,
+            "width": 46.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Gold",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 141,
+            "width": 37.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Emerald",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 107,
+            "width": 25.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Coal",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 175,
+            "width": 27.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Bismuth",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 106,
+            "width": 28.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Diamond",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 72,
+            "width": 36.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Copper",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 39,
+            "width": 33.0,
+            "height": 10.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Opal",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 175,
+            "width": 39.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Amethyst",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 72,
+            "width": 25.0,
+            "height": 11.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Olivine",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 141,
+            "width": 21.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Lead",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 175,
+            "width": 30.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Green Sapphire",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 170,
+            "width": 43.0,
+            "height": 17.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Amber",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 38,
+            "width": 34.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Naquadah",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 359,
+            "yPos": 40,
+            "width": 37.0,
+            "height": 6.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Nether Quartz",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 359,
+            "yPos": 67,
+            "width": 38.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Nickel",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 106,
+            "width": 31.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Iridium",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 38,
+            "width": 35.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16090",
+            "xPos": 38,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "SO1",
+            "texture": "",
+            "xPos": 35,
+            "yPos": 27,
+            "width": 176.0,
+            "height": 166.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "small olivine",
+            "texture": "",
+            "xPos": 215,
+            "yPos": 27,
+            "width": 191.0,
+            "height": 166.0
+          }
+        }
+      ],
+      "pageName": "Small Ores List 1"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Small Ores[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 78,
+            "yPos": 13,
+            "width": 142.0,
+            "height": 11.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16503",
+            "xPos": 138,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16085",
+            "xPos": 38,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16527",
+            "xPos": 38,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16810",
+            "xPos": 38,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16502",
+            "xPos": 38,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16836",
+            "xPos": 38,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16036",
+            "xPos": 232,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16054",
+            "xPos": 138,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16022",
+            "xPos": 138,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16057",
+            "xPos": 232,
+            "yPos": 130,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16507",
+            "xPos": 232,
+            "yPos": 95,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16528",
+            "xPos": 232,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Platinum",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 39,
+            "width": 38.0,
+            "height": 6.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Red Garnet",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 73,
+            "width": 44.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Redstone",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 106,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Ruby",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 141,
+            "width": 45.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Saltpeter",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 175,
+            "width": 44.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Sapphire",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 38,
+            "width": 26.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Silver",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 72,
+            "width": 31.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Sulfur",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 107,
+            "width": 48.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Tin",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 266,
+            "yPos": 143,
+            "width": 16.0,
+            "height": 6.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Topaz",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 107,
+            "width": 30.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Yellow Garnet",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 34,
+            "width": 33.0,
+            "height": 17.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Zinc",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 73,
+            "width": 20.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Tanzanite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 169,
+            "yPos": 140,
+            "width": 34.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Small Ores[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 277,
+            "yPos": 12,
+            "width": 136.0,
+            "height": 23.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16508",
+            "xPos": 138,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Platinumsmall sapp",
+            "texture": "",
+            "xPos": 38,
+            "yPos": 27,
+            "width": 173.0,
+            "height": 168.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "SO4",
+            "texture": "",
+            "xPos": 215,
+            "yPos": 27,
+            "width": 85.0,
+            "height": 134.0
+          }
+        }
+      ],
+      "pageName": "Small Ores List 2"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 88,
+            "yPos": 12,
+            "width": 129.0,
+            "height": 16.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 288,
+            "yPos": 13,
+            "width": 126.0,
+            "height": 15.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 820",
+            "xPos": 38,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 19",
+            "xPos": 38,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 530",
+            "xPos": 38,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 917",
+            "xPos": 38,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 904",
+            "xPos": 38,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 905",
+            "xPos": 138,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 822",
+            "xPos": 138,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 927",
+            "xPos": 138,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 8",
+            "xPos": 138,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 930",
+            "xPos": 138,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 823",
+            "xPos": 232,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 824",
+            "xPos": 232,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 516",
+            "xPos": 232,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 855",
+            "xPos": 232,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 826",
+            "xPos": 232,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 535",
+            "xPos": 327,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 827",
+            "xPos": 327,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 35",
+            "xPos": 327,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 500",
+            "xPos": 327,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 501",
+            "xPos": 327,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Almandine",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 38,
+            "width": 48.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Aluminium",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 72,
+            "width": 47.0,
+            "height": 11.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Apatite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 107,
+            "width": 35.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Banded Iron",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 137,
+            "width": 34.0,
+            "height": 14.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Barite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 175,
+            "width": 29.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Bastnasite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 37,
+            "width": 51.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Bauxite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 72,
+            "width": 36.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Bentonite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 106,
+            "width": 45.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Beryllium",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 141,
+            "width": 43.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Brown Limonite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 170,
+            "width": 36.0,
+            "height": 17.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Calcite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 39,
+            "width": 34.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Cassiterite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 73,
+            "width": 52.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Certus Quartz",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 102,
+            "width": 36.0,
+            "height": 16.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Chalcopyrite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 140,
+            "width": 61.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Cinnabar",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 175,
+            "width": 43.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Coal",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 39,
+            "width": 23.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Cobaltite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 73,
+            "width": 46.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Copper",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 108,
+            "width": 35.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Diamond",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 141,
+            "width": 37.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Emerald",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 176,
+            "width": 40.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 27,
+            "width": 94.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 60,
+            "width": 94.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 94,
+            "width": 94.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 128,
+            "width": 94.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 161,
+            "width": 94.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 27,
+            "width": 85.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 60,
+            "width": 85.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 94,
+            "width": 85.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 128,
+            "width": 85.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 161,
+            "width": 85.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 27,
+            "width": 89.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 60,
+            "width": 89.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 94,
+            "width": 89.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 128,
+            "width": 89.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 161,
+            "width": 89.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 27,
+            "width": 80.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 60,
+            "width": 80.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 94,
+            "width": 80.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 128,
+            "width": 80.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 161,
+            "width": 80.0,
+            "height": 30.0
+          }
+        }
+      ],
+      "pageName": "Ore Veins List 1"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 88,
+            "yPos": 12,
+            "width": 129.0,
+            "height": 16.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 288,
+            "yPos": 13,
+            "width": 126.0,
+            "height": 15.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 326",
+            "xPos": 38,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 830",
+            "xPos": 38,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 906",
+            "xPos": 38,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 933",
+            "xPos": 38,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 86",
+            "xPos": 38,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 865",
+            "xPos": 138,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 831",
+            "xPos": 138,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 918",
+            "xPos": 138,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 84",
+            "xPos": 138,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 32",
+            "xPos": 138,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 526",
+            "xPos": 232,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 524",
+            "xPos": 232,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 89",
+            "xPos": 232,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 907",
+            "xPos": 232,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 538",
+            "xPos": 232,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 6",
+            "xPos": 327,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 908",
+            "xPos": 327,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 870",
+            "xPos": 327,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 871",
+            "xPos": 327,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 31",
+            "xPos": 327,
+            "yPos": 163,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Enriched Naquadah",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 35,
+            "width": 49.0,
+            "height": 17.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Galena",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 71,
+            "width": 31.0,
+            "height": 10.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Garnierite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 105,
+            "width": 48.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Glauconite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 142,
+            "width": 49.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Gold",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 176,
+            "width": 22.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Graphite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 37,
+            "width": 43.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Grossular",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 73,
+            "width": 50.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Ilmenite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 107,
+            "width": 36.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Iridium",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 141,
+            "width": 32.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Iron",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 175,
+            "width": 22.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Lapis",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 37,
+            "width": 25.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Lazurite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 73,
+            "width": 41.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Lead",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 107,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Lepidolite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 141,
+            "width": 45.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Lignite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 176,
+            "width": 32.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Lithium",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 38,
+            "width": 32.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Magnesite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 73,
+            "width": 50.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Magnetite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 107,
+            "width": 45.0,
+            "height": 6.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Malachite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 140,
+            "width": 45.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Manganese",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 174,
+            "width": 53.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 27,
+            "width": 94.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "2OV2",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 60,
+            "width": 94.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "2OV4",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 94,
+            "width": 94.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "2IV4",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 128,
+            "width": 94.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 161,
+            "width": 94.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 27,
+            "width": 85.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 60,
+            "width": 85.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 94,
+            "width": 85.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 128,
+            "width": 85.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 161,
+            "width": 85.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 27,
+            "width": 89.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 60,
+            "width": 89.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 94,
+            "width": 89.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 128,
+            "width": 89.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 161,
+            "width": 89.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV6",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 27,
+            "width": 80.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 60,
+            "width": 80.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 94,
+            "width": 80.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 128,
+            "width": 80.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 161,
+            "width": 80.0,
+            "height": 30.0
+          }
+        }
+      ],
+      "pageName": "Ore Veins List 2"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 88,
+            "yPos": 12,
+            "width": 129.0,
+            "height": 16.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 288,
+            "yPos": 13,
+            "width": 126.0,
+            "height": 15.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 504",
+            "xPos": 38,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 942",
+            "xPos": 38,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 48",
+            "xPos": 38,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 520",
+            "xPos": 38,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 324",
+            "xPos": 38,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 67",
+            "xPos": 138,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 522",
+            "xPos": 138,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 34",
+            "xPos": 138,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 505",
+            "xPos": 138,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 52",
+            "xPos": 138,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 909",
+            "xPos": 232,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 833",
+            "xPos": 232,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 534",
+            "xPos": 232,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 873",
+            "xPos": 232,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 85",
+            "xPos": 232,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 100",
+            "xPos": 327,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 883",
+            "xPos": 327,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 855",
+            "xPos": 327,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 943",
+            "xPos": 327,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 835",
+            "xPos": 327,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Green Sapphire",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 34,
+            "width": 43.0,
+            "height": 16.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Molybdenite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 73,
+            "width": 57.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Molybdenum",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 106,
+            "width": 58.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Monazite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 141,
+            "width": 43.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Naquadah",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 175,
+            "width": 47.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Neodymium",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 38,
+            "width": 52.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Nether Quartz",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 69,
+            "width": 34.0,
+            "height": 17.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Nickel",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 106,
+            "width": 27.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Olivine",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 141,
+            "width": 30.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Palladium",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 174,
+            "width": 42.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Pentlandite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 39,
+            "width": 54.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Phosphate",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 72,
+            "width": 51.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Phosphorus",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 105,
+            "width": 61.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Pitchblende",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 140,
+            "width": 56.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Platinum",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 174,
+            "width": 40.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Plutonium",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 39,
+            "width": 44.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Powellite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 72,
+            "width": 50.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Pyrite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 106,
+            "width": 31.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Pyrolusite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 140,
+            "width": 51.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Pyrope",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 175,
+            "width": 35.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 27,
+            "width": 94.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 60,
+            "width": 94.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "2OV3",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 94,
+            "width": 94.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "2OV3",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 128,
+            "width": 94.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 161,
+            "width": 94.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 27,
+            "width": 85.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 60,
+            "width": 85.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 94,
+            "width": 85.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 128,
+            "width": 85.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 161,
+            "width": 85.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 27,
+            "width": 89.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 60,
+            "width": 89.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 94,
+            "width": 89.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 128,
+            "width": 89.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 161,
+            "width": 89.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 27,
+            "width": 80.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 60,
+            "width": 80.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 94,
+            "width": 80.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 128,
+            "width": 80.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 161,
+            "width": 80.0,
+            "height": 30.0
+          }
+        }
+      ],
+      "pageName": "Ore Veins List 3"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 88,
+            "yPos": 12,
+            "width": 129.0,
+            "height": 16.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 288,
+            "yPos": 13,
+            "width": 126.0,
+            "height": 15.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 516",
+            "xPos": 38,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 523",
+            "xPos": 38,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 810",
+            "xPos": 38,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 944",
+            "xPos": 38,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 502",
+            "xPos": 38,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 944",
+            "xPos": 138,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 503",
+            "xPos": 138,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 910",
+            "xPos": 138,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 828",
+            "xPos": 138,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 54",
+            "xPos": 138,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Quartz",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 39,
+            "width": 34.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Quartzite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 73,
+            "width": 45.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Redstone",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 106,
+            "width": 46.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Rock Salt",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 137,
+            "width": 22.0,
+            "height": 15.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Ruby",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 175,
+            "width": 25.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Salt",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 39,
+            "width": 20.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Sapphire",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 73,
+            "width": 43.0,
+            "height": 6.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Scheelite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 107,
+            "width": 44.0,
+            "height": 6.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Sheldonite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 141,
+            "width": 50.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Silver",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 175,
+            "width": 28.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 877",
+            "xPos": 232,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 525",
+            "xPos": 232,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 838",
+            "xPos": 232,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 839",
+            "xPos": 232,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 920",
+            "xPos": 232,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 945",
+            "xPos": 327,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 22",
+            "xPos": 327,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 902",
+            "xPos": 327,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 921",
+            "xPos": 327,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 840",
+            "xPos": 327,
+            "yPos": 162,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Soapstone",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 39,
+            "width": 53.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Sodalite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 73,
+            "width": 40.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Spessartine",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 106,
+            "width": 64.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Sphalerite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 140,
+            "width": 50.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Spodumene",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 262,
+            "yPos": 174,
+            "width": 52.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Stibnite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 38,
+            "width": 38.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Sulfur",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 73,
+            "width": 31.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Talc",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 107,
+            "width": 19.0,
+            "height": 6.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Tantalite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 140,
+            "width": 46.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Tetrahedrite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 358,
+            "yPos": 175,
+            "width": 66.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 27,
+            "width": 94.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 60,
+            "width": 94.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 94,
+            "width": 94.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 128,
+            "width": 94.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 161,
+            "width": 94.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 27,
+            "width": 85.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 60,
+            "width": 85.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV6",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 94,
+            "width": 85.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 128,
+            "width": 85.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 161,
+            "width": 85.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 27,
+            "width": 89.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 60,
+            "width": 89.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 94,
+            "width": 89.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 128,
+            "width": 89.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 234,
+            "yPos": 161,
+            "width": 89.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 27,
+            "width": 80.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 60,
+            "width": 80.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 94,
+            "width": 80.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 128,
+            "width": 80.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV5",
+            "texture": "",
+            "xPos": 331,
+            "yPos": 161,
+            "width": 80.0,
+            "height": 30.0
+          }
+        }
+      ],
+      "pageName": "Ore Veins List 4"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 88,
+            "yPos": 12,
+            "width": 129.0,
+            "height": 16.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 96",
+            "xPos": 38,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 57",
+            "xPos": 38,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 841",
+            "xPos": 38,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 922",
+            "xPos": 38,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 98",
+            "xPos": 138,
+            "yPos": 27,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 923",
+            "xPos": 138,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 882",
+            "xPos": 138,
+            "yPos": 94,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 931",
+            "xPos": 138,
+            "yPos": 128,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Thorium",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 38,
+            "width": 40.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Tin",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 73,
+            "width": 16.0,
+            "height": 6.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Tungstate",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 108,
+            "width": 50.0,
+            "height": 6.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Uraninite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 68,
+            "yPos": 141,
+            "width": 43.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Uranium",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 39,
+            "width": 38.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Vanadium Magnetite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 68,
+            "width": 47.0,
+            "height": 17.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Wulfenite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 107,
+            "width": 46.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Yellow Limonite",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 168,
+            "yPos": 136,
+            "width": 39.0,
+            "height": 17.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 27,
+            "width": 94.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV1",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 60,
+            "width": 94.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV6",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 94,
+            "width": 94.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 39,
+            "yPos": 128,
+            "width": 94.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV4",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 27,
+            "width": 85.0,
+            "height": 29.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 60,
+            "width": 85.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV3",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 94,
+            "width": 85.0,
+            "height": 30.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "OV2",
+            "texture": "",
+            "xPos": 141,
+            "yPos": 128,
+            "width": 85.0,
+            "height": 29.0
+          }
+        }
+      ],
+      "pageName": "Ore Veins List 5"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Small Ores[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 77,
+            "yPos": 13,
+            "width": 131.0,
+            "height": 13.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Amber:[/b]\n[i]Height(Y):[/i] 5 - 250\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N\n\n[b]Amethyst:[/b]\n[i]Height(Y):[/i] 5 - 250\n[i]Mining Tool Level:[/i] 2\n[i]Dimensions:[/i] OW, N\n\n[b]Bismuth:[/b]\n[i]Height(Y):[/i] 80 - 120\n[i]Mining Tool Level:[/i] 0\n[i]Dimensions:[/i] OW, N, MN, MS\n\n[b]Blue Topaz:[/b]\n[i]Height(Y):[/i] 5 - 250\n[i]Mining Tool Level:[/i] 2\n[i]Dimensions:[/i] OW, N\n\n[b]Coal:[/b]\n[i]Height(Y):[/i] 60 - 100\n[i]Mining Tool Level:[/i] 0\n[i]Dimensions:[/i] OW",
+            "wrap": 0,
+            "size": 0.79999995,
+            "color": "FF555555",
+            "xPos": 28,
+            "yPos": 26,
+            "width": 107.0,
+            "height": 167.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Copper:[/b]\n[i]Height(Y):[/i] 60 - 120\n[i]Mining Tool Level:[/i] 0\n[i]Dimensions:[/i] OW, N, E, MN, MS\n\n[b]Diamond:[/b]\n[i]Height(Y):[/i] 5 - 10\n[i]Mining Tool Level:[/i] 2\n[i]Dimensions:[/i] OW, N, MN, MS\n\n[b]Emerald:[/b]\n[i]Height(Y):[/i] 5 - 250\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N\n\n[b]Gold:[/b]\n[i]Height(Y):[/i] 20 - 40\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N, E, MN, MS\n\n[b]Green Sapphire:[/b]\n[i]Height(Y):[/i] 5 - 250\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N",
+            "wrap": 0,
+            "size": 0.79999995,
+            "color": "FF555555",
+            "xPos": 225,
+            "yPos": 26,
+            "width": 118.0,
+            "height": 169.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Small Ores[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 277,
+            "yPos": 12,
+            "width": 144.0,
+            "height": 13.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "OW-Overworld; N-Nether; E-End; MN-Moon; MS-Mars",
+            "wrap": 0,
+            "size": 0.9,
+            "color": "FFFF00FF",
+            "xPos": 95,
+            "yPos": 204,
+            "width": 280.0,
+            "height": 6.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16501",
+            "xPos": 353,
+            "yPos": 96,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16500",
+            "xPos": 353,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16035",
+            "xPos": 353,
+            "yPos": 25,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16086",
+            "xPos": 354,
+            "yPos": 133,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16504",
+            "xPos": 353,
+            "yPos": 168,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16514",
+            "xPos": 154,
+            "yPos": 24,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16509",
+            "xPos": 154,
+            "yPos": 61,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16090",
+            "xPos": 153,
+            "yPos": 97,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16513",
+            "xPos": 154,
+            "yPos": 133,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16535",
+            "xPos": 154,
+            "yPos": 169,
+            "width": 32.0,
+            "height": 32.0
+          }
+        }
+      ],
+      "pageName": "SO1"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Small Ores[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 77,
+            "yPos": 13,
+            "width": 146.0,
+            "height": 11.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Small Ores[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 277,
+            "yPos": 12,
+            "width": 140.0,
+            "height": 13.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Iridium:[/b]\n[i]Height(Y):[/i] 20 - 40\n[i]Mining Tool Level:[/i] 3\n[i]Dimensions:[/i] E, MS\n\n[b]Iron:[/b]\n[i]Height(Y):[/i] 40 - 80\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N, E, MN, MS\n\n[b]Jasper:[/b]\n[i]Height(Y):[/i] 5 - 250\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N\n\n[b]Lapis:[/b]\n[i]Height(Y):[/i] 20 - 40\n[i]Mining Tool Level:[/i] 0\n[i]Dimensions:[/i] OW, MN\n\n[b]Lead:[/b]\n[i]Height(Y):[/i] 40 - 80\n[i]Mining Tool Level:[/i] 0\n[i]Dimensions:[/i] OW, N, E, MN, MS",
+            "wrap": 0,
+            "size": 0.79999995,
+            "color": "FF555555",
+            "xPos": 28,
+            "yPos": 26,
+            "width": 132.0,
+            "height": 166.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Naquadah:[/b]\n[i]Height(Y):[/i] 10 - 60\n[i]Mining Tool Level:[/i] 4\n[i]Dimensions:[/i] E\n\n[b]Nether Quartz:[/b]\n[i]Height(Y):[/i] 30 - 120\n[i]Mining Tool Level:[/i] 0\n[i]Dimensions:[/i] N\n\n[b]Nickel:[/b]\n[i]Height(Y):[/i] 20 - 40\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N, E, MN, MS\n\n[b]Olivine:[/b]\n[i]Height(Y):[/i] 5 - 250\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N\n\n[b]Opal:[/b]\n[i]Height(Y):[/i] 5 - 250\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N\n\n",
+            "wrap": 0,
+            "size": 0.79999995,
+            "color": "FF555555",
+            "xPos": 225,
+            "yPos": 26,
+            "width": 127.0,
+            "height": 162.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "OW-Overworld; N-Nether; E-End; MN-Moon; MS-Mars",
+            "wrap": 0,
+            "size": 0.9,
+            "color": "FFFF00FF",
+            "xPos": 95,
+            "yPos": 204,
+            "width": 280.0,
+            "height": 6.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16324",
+            "xPos": 353,
+            "yPos": 25,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16522",
+            "xPos": 353,
+            "yPos": 61,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16034",
+            "xPos": 354,
+            "yPos": 96,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16505",
+            "xPos": 353,
+            "yPos": 133,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16510",
+            "xPos": 354,
+            "yPos": 168,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16084",
+            "xPos": 154,
+            "yPos": 24,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16032",
+            "xPos": 153,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16511",
+            "xPos": 154,
+            "yPos": 97,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16526",
+            "xPos": 154,
+            "yPos": 133,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16089",
+            "xPos": 153,
+            "yPos": 169,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        }
+      ],
+      "pageName": "SO2"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Small Ores[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 78,
+            "yPos": 13,
+            "width": 132.0,
+            "height": 15.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Small Ores[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 277,
+            "yPos": 12,
+            "width": 148.0,
+            "height": 18.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "OW-Overworld; N-Nether; E-End; MN-Moon; MS-Mars",
+            "wrap": 0,
+            "size": 0.9,
+            "color": "FFFF00FF",
+            "xPos": 95,
+            "yPos": 204,
+            "width": 280.0,
+            "height": 6.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Platinum:[/b]\n[i]Height(Y):[/i] 20 - 40\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] E, MS\n\n[b]Red Garnet:[/b]\n[i]Height(Y):[/i] 5 - 250\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N\n\n[b]Redstone:[/b]\n[i]Height(Y):[/i] 5 - 20\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N, MN, MS\n\n[b]Ruby:[/b]\n[i]Height(Y):[/i] 5 - 250\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N\n\n[b]Saltpeter:[/b]\n[i]Height(Y):[/i] 10 - 60\n[i]Mining Tool Level:[/i] 0\n[i]Dimensions:[/i] N\n\n",
+            "wrap": 0,
+            "size": 0.79999995,
+            "color": "FF555555",
+            "xPos": 28,
+            "yPos": 26,
+            "width": 124.0,
+            "height": 169.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Sapphire:[/b]\n[i]Height(Y):[/i] 5 - 250\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N\n\n[b]Silver:[/b]\n[i]Height(Y):[/i] 20 - 40\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N, E, MN, MS\n\n[b]Sulfur:[/b]\n[i]Height(Y):[/i] 10 - 60\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] N\n\n[b]Sulfur:[/b]\n[i]Height(Y):[/i] 5 - 15\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW\n\n[b]Tanzanite:[/b]\n[i]Height(Y):[/i] 5 - 250\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N\n\n",
+            "wrap": 0,
+            "size": 0.79999995,
+            "color": "FF555555",
+            "xPos": 225,
+            "yPos": 26,
+            "width": 124.0,
+            "height": 168.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16503",
+            "xPos": 354,
+            "yPos": 25,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16054",
+            "xPos": 354,
+            "yPos": 61,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16022",
+            "xPos": 353,
+            "yPos": 97,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16022",
+            "xPos": 354,
+            "yPos": 133,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16508",
+            "xPos": 353,
+            "yPos": 169,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16085",
+            "xPos": 154,
+            "yPos": 24,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16527",
+            "xPos": 153,
+            "yPos": 60,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16810",
+            "xPos": 154,
+            "yPos": 97,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16512",
+            "xPos": 153,
+            "yPos": 133,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16836",
+            "xPos": 153,
+            "yPos": 169,
+            "width": 32.0,
+            "height": 32.0
+          }
+        }
+      ],
+      "pageName": "SO3"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Small Ores[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 77,
+            "yPos": 13,
+            "width": 143.0,
+            "height": 16.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Tin:[/b]\n[i]Height(Y):[/i] 60 - 120\n[i]Mining Tool Level:[/i] 0\n[i]Dimensions:[/i] OW, N, E, MN, MS\n\n[b]Topaz:[/b]\n[i]Height(Y):[/i] 5 - 250\n[i]Mining Tool Level:[/i] 2\n[i]Dimensions:[/i] OW, N\n\n[b]Yellow Garnet:[/b]\n[i]Height(Y):[/i] 5 - 250\n[i]Mining Tool Level:[/i] 1\n[i]Dimensions:[/i] OW, N\n\n[b]Zinc:[/b]\n[i]Height(Y):[/i] 30 - 60\n[i]Mining Tool Level:[/i] 0\n[i]Dimensions:[/i] OW, N, E, MN, MS",
+            "wrap": 0,
+            "size": 0.79999995,
+            "color": "FF555555",
+            "xPos": 28,
+            "yPos": 26,
+            "width": 125.0,
+            "height": 138.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "OW-Overworld; N-Nether; E-End; MN-Moon; MS-Mars",
+            "wrap": 0,
+            "size": 0.9,
+            "color": "FFFF00FF",
+            "xPos": 95,
+            "yPos": 204,
+            "width": 280.0,
+            "height": 6.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16057",
+            "xPos": 154,
+            "yPos": 25,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16507",
+            "xPos": 154,
+            "yPos": 61,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16528",
+            "xPos": 154,
+            "yPos": 97,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 16036",
+            "xPos": 153,
+            "yPos": 134,
+            "width": 32.0,
+            "height": 32.0
+          }
+        }
+      ],
+      "pageName": "SO4"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 88,
+            "yPos": 12,
+            "width": 114.0,
+            "height": 12.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 288,
+            "yPos": 13,
+            "width": 126.0,
+            "height": 15.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "OW-Overworld; N-Nether; E-End; EA-End Asteroids; MN-Moon; MS-Mars; AS-Asteroids",
+            "wrap": 0,
+            "size": 0.9,
+            "color": "FFFF00FF",
+            "xPos": 28,
+            "yPos": 193,
+            "width": 390.0,
+            "height": 5.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Cassiterite[/b]\n[i]Height(Y):[/i] 40 - 120\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, E, EA, MN, MS, AS\n[i]Primary:[/i] Tin (1)\n[i]Secondary:[/i] Tin (1)\n[i]Inbetween:[/i] Cassiterite (1)\n[i]Around:[/i] Tin (1)\n\n[b]Coal[/b]\n[i]Height(Y):[/i] 50 - 80\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW\n[i]Primary:[/i] Coal (1)\n[i]Secondary:[/i] Coal (1)\n[i]Inbetween:[/i] Coal (1)\n[i]Around:[/i] Lignite Coal (0)\n\n[b]Copper[/b]\n[i]Height(Y):[/i] 10 - 30\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, N, MN, MS\n[i]Primary:[/i] Chalcopyrite (1)\n[i]Secondary:[/i] Iron (2)\n[i]Inbetween:[/i] Pyrite (1)\n[i]Around:[/i] Copper (1)",
+            "wrap": 0,
+            "size": 0.6999999,
+            "color": "FF555555",
+            "xPos": 219,
+            "yPos": 26,
+            "width": 113.0,
+            "height": 158.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 822",
+            "xPos": 150,
+            "yPos": 93,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Apatite[/b]\n[i]Height(Y):[/i] 40 - 60\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW\n[i]Primary:[/i] Apatite (2)\n[i]Secondary:[/i] Apatite (2)\n[i]Inbetween:[/i] Phosphorus (2)\n[i]Around:[/i] Phosphate (1)\n\n[b]Bauxite[/b]\n[i]Height(Y):[/i] 50 - 90\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, MN, MS, AS\n[i]Primary:[/i] Bauxite (1)\n[i]Secondary:[/i] Bauxite (1)\n[i]Inbetween:[/i] Aluminium (2)\n[i]Around:[/i] Ilmenite (3)\n\n[b]Beryllium[/b]\n[i]Height(Y):[/i] 5 - 30\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, E, EA, MN, MS, AS\n[i]Primary:[/i] Beryllium (2)\n[i]Secondary:[/i] Beryllium (2)\n[i]Inbetween:[/i] Emerald (2)\n[i]Around:[/i] Thorium (2)",
+            "wrap": 0,
+            "size": 0.6999999,
+            "color": "FF555555",
+            "xPos": 24,
+            "yPos": 26,
+            "width": 120.0,
+            "height": 160.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 530",
+            "xPos": 150,
+            "yPos": 37,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 8",
+            "xPos": 150,
+            "yPos": 149,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 824",
+            "xPos": 355,
+            "yPos": 37,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 535",
+            "xPos": 355,
+            "yPos": 93,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 35",
+            "xPos": 355,
+            "yPos": 149,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        }
+      ],
+      "pageName": "OV1"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 88,
+            "yPos": 12,
+            "width": 129.0,
+            "height": 16.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 288,
+            "yPos": 13,
+            "width": 126.0,
+            "height": 15.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "OW-Overworld; N-Nether; E-End; EA-End Asteroids; MN-Moon; MS-Mars; AS-Asteroids",
+            "wrap": 0,
+            "size": 0.9,
+            "color": "FFFF00FF",
+            "xPos": 28,
+            "yPos": 193,
+            "width": 390.0,
+            "height": 5.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Diamond[/b]\n[i]Height(Y):[/i] 5 - 20\n[i]Mining tool level:[/i] 3 \n[i]Dimensions:[/i] OW, MN, MS, AS\n[i]Primary:[/i] Graphite (2)\n[i]Secondary:[/i] Graphite (2)\n[i]Inbetween:[/i] Diamond (3)\n[i]Around:[/i] Coal (1)\n\n[b]Galena[/b]\n[i]Height(Y):[/i] 30 - 60\n[i]Mining tool level:[/i] 3\n[i]Dimensions:[/i] OW, MN, MS, AS\n[i]Primary:[/i] Galena (3)\n[i]Secondary:[/i] Galena (3)\n[i]Inbetween:[/i] Silver (2)\n[i]Around:[/i] Lead (1)\n\n[b]Gold[/b]\n[i]Height(Y):[/i] 60 - 80\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, MN, MS, AS\n[i]Primary:[/i] Magnetite (2)\n[i]Secondary:[/i] Magnetite (2)\n[i]Inbetween:[/i] Vanadium Magnetite (2)\n[i]Around:[/i] Gold (2)",
+            "wrap": 0,
+            "size": 0.6999999,
+            "color": "FF555555",
+            "xPos": 24,
+            "yPos": 26,
+            "width": 141.0,
+            "height": 161.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Iron[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, N, MN, MS\n[i]Primary:[/i] Brown Limonite (1)\n[i]Secondary:[/i] Yellow Limonite (2)\n[i]Inbetween:[/i] Banded Iron (2)\n[i]Around:[/i] Malachite (2)\n\n[b]Lapis[/b]\n[i]Height(Y):[/i] 20 - 50\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, E, EA, MN, MS, AS\n[i]Primary:[/i] Lazurite (1)\n[i]Secondary:[/i] Sodalite (1)\n[i]Inbetween:[/i] Lapis (1)\n[i]Around:[/i] Calcite (1)\n\n[b]Lignite Coal[/b]\n[i]Height(Y):[/i] 50 - 130\n[i]Mining tool level:[/i]\n[i]Dimensions:[/i] OW\n[i]Primary:[/i] Lignite Coal (0)\n[i]Secondary:[/i] Lignite Coal (0)\n[i]Inbetween:[/i] Lignite Coal (0)\n[i]Around:[/i] Coal (1)",
+            "wrap": 0,
+            "size": 0.6999999,
+            "color": "FF555555",
+            "xPos": 219,
+            "yPos": 26,
+            "width": 130.0,
+            "height": 158.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 500",
+            "xPos": 150,
+            "yPos": 37,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 830",
+            "xPos": 150,
+            "yPos": 93,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 86",
+            "xPos": 150,
+            "yPos": 149,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 32",
+            "xPos": 355,
+            "yPos": 37,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 526",
+            "xPos": 355,
+            "yPos": 93,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 538",
+            "xPos": 355,
+            "yPos": 149,
+            "width": 32.0,
+            "height": 32.0
+          }
+        }
+      ],
+      "pageName": "OV2"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 88,
+            "yPos": 12,
+            "width": 129.0,
+            "height": 16.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 288,
+            "yPos": 13,
+            "width": 126.0,
+            "height": 15.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "OW-Overworld; N-Nether; E-End; EA-End Asteroids; MN-Moon; MS-Mars; AS-Asteroids",
+            "wrap": 0,
+            "size": 0.9,
+            "color": "FFFF00FF",
+            "xPos": 28,
+            "yPos": 193,
+            "width": 390.0,
+            "height": 5.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Magnetite (2)[/b]\n[i]Height(Y):[/i] 50 - 120\n[i]Mining tool level: 2[/i]\n[i]Dimensions:[/i] OW, N, MN, MS\n[i]Primary:[/i] Magnetite (2)\n[i]Secondary:[/i] Magnetite (2)\n[i]Inbetween:[/i] Iron (2)\n[i]Around:[/i] Vanadium Magnetite (2)\n\n[b]Manganese[/b]\n[i]Height(Y):[/i] 20 - 30\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, E, EA, MN, AS\n[i]Primary:[/i] Grossular (1)\n[i]Secondary:[/i] Spessartine (2)\n[i]Inbetween:[/i] Pyrolusite (2)\n[i]Around:[/i] Tantalite (3)\n\n[b]Molybdenum[/b]\n[i]Height(Y):[/i] 20 - 50\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, E, EA, MN, MS, AS\n[i]Primary:[/i] Wulfenite (3)\n[i]Secondary:[/i] Molybdenite (2)\n[i]Inbetween:[/i] Molybdenum (2)\n[i]Around:[/i] Powellite (2)",
+            "wrap": 0,
+            "size": 0.6999999,
+            "color": "FF555555",
+            "xPos": 24,
+            "yPos": 26,
+            "width": 120.0,
+            "height": 160.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Monazite[/b]\n[i]Height(Y):[/i] 20 - 40\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, MN, MS, AS\n[i]Primary:[/i] Bastnasite (2)\n[i]Secondary:[/i] Bastnasite (2)\n[i]Inbetween:[/i] Monazite (1)\n[i]Around:[/i] Neodymium (2)\n\n[b]Naquadah[/b]\n[i]Height(Y):[/i] 10 - 60\n[i]Mining tool level:[/i] 4\n[i]Dimensions:[/i] E, EA, MS, AS\n[i]Primary:[/i] Naquadah (4)\n[i]Secondary:[/i] Naquadah (4)\n[i]Inbetween:[/i] Naquadah (4)\n[i]Around:[/i] Enriched Naquadah (4)\n\n[b]Nether Quartz[/b]\n[i]Height(Y):[/i] 40 - 80\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] N\n[i]Primary:[/i] Nether Quartz (1)\n[i]Secondary:[/i] Nether Quartz (1)\n[i]Inbetween:[/i] Nether Quartz (1)\n[i]Around:[/i] Nether Quartz (1)",
+            "wrap": 0,
+            "size": 0.6999999,
+            "color": "FF555555",
+            "xPos": 219,
+            "yPos": 26,
+            "width": 134.0,
+            "height": 159.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 870",
+            "xPos": 150,
+            "yPos": 37,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 31",
+            "xPos": 150,
+            "yPos": 93,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 48",
+            "xPos": 150,
+            "yPos": 149,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 520",
+            "xPos": 355,
+            "yPos": 37,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 324",
+            "xPos": 355,
+            "yPos": 93,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 522",
+            "xPos": 355,
+            "yPos": 149,
+            "width": 32.0,
+            "height": 32.0
+          }
+        }
+      ],
+      "pageName": "OV3"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 88,
+            "yPos": 12,
+            "width": 129.0,
+            "height": 16.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 288,
+            "yPos": 13,
+            "width": 126.0,
+            "height": 15.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "OW-Overworld; N-Nether; E-End; EA-End Asteroids; MN-Moon; MS-Mars; AS-Asteroids",
+            "wrap": 0,
+            "size": 0.9,
+            "color": "FFFF00FF",
+            "xPos": 28,
+            "yPos": 193,
+            "width": 390.0,
+            "height": 5.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Nickel[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, N, E, EA, MN, MS, AS\n[i]Primary:[/i] Garnierite (3)\n[i]Secondary:[/i] Nickel (2)\n[i]Inbetween:[/i] Cobaltite (1)\n[i]Around:[/i] Pentlandite (2)\n\n[b]Olivine[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, E, EA, MN, MS, AS\n[i]Primary:[/i] Bentonite (2)\n[i]Secondary:[/i] Magnesite (2)\n[i]Inbetween:[/i] Olivine (2)\n[i]Around:[/i] Glauconite (2)\n\n[b]Pitchblende[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 3\n[i]Dimensions:[/i] OW, MN, MS, AS\n[i]Primary:[/i] Pitchblende (3)\n[i]Secondary:[/i] Pitchblende (3)\n[i]Inbetween:[/i] Uraninite (3)\n[i]Around:[/i] Uraninite (3)",
+            "wrap": 0,
+            "size": 0.6999999,
+            "color": "FF555555",
+            "xPos": 24,
+            "yPos": 26,
+            "width": 120.0,
+            "height": 160.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Platinum[/b]\n[i]Height(Y):[/i] 40 - 50\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, E, EA, MS, AS\n[i]Primary:[/i] Sheldonite (1)\n[i]Secondary:[/i] Palladium (2)\n[i]Inbetween:[/i] Platinum (2)\n[i]Around:[/i] Iridium (4)\n\n[b]Uranium[/b]\n[i]Height(Y):[/i] 20 - 30\n[i]Mining tool level:[/i] 3\n[i]Dimensions:[/i] OW, EA, MN, MS, AS\n[i]Primary:[/i] Uraninite (3)\n[i]Secondary:[/i] Uraninite (3)\n[i]Inbetween:[/i] Uranium (3)\n[i]Around:[/i] Uranium (3)\n\n[b]Quartz[/b]\n[i]Height(Y):[/i] 40 - 80\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, EA, MN, MS, AS\n[i]Primary:[/i] Quartzite (1)\n[i]Secondary:[/i] Barite (2)\n[i]Inbetween:[/i] Certus Quartz (1)\n[i]Around:[/i] Certus Quartz (1)",
+            "wrap": 0,
+            "size": 0.6999999,
+            "color": "FF555555",
+            "xPos": 219,
+            "yPos": 26,
+            "width": 128.0,
+            "height": 159.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 34",
+            "xPos": 150,
+            "yPos": 37,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 505",
+            "xPos": 150,
+            "yPos": 93,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 873",
+            "xPos": 150,
+            "yPos": 149,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 85",
+            "xPos": 355,
+            "yPos": 37,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 100",
+            "xPos": 355,
+            "yPos": 93,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 516",
+            "xPos": 355,
+            "yPos": 149,
+            "width": 32.0,
+            "height": 32.0
+          }
+        }
+      ],
+      "pageName": "OV4"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 88,
+            "yPos": 12,
+            "width": 129.0,
+            "height": 16.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 288,
+            "yPos": 13,
+            "width": 126.0,
+            "height": 15.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "OW-Overworld; N-Nether; E-End; EA-End Asteroids; MN-Moon; MS-Mars; AS-Asteroids",
+            "wrap": 0,
+            "size": 0.9,
+            "color": "FFFF00FF",
+            "xPos": 28,
+            "yPos": 193,
+            "width": 390.0,
+            "height": 5.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Redstone[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, N, MN, MS, AS\n[i]Primary:[/i] Redstone (2)\n[i]Secondary:[/i] Redstone (2)\n[i]Inbetween:[/i] Ruby (2)\n[i]Around:[/i] Cinnabar (1)\n\n[b]Salts[/b]\n[i]Height(Y):[/i] 50 - 60\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, MN\n[i]Primary:[/i] Rock Salt (1)\n[i]Secondary:[/i] Salt (1)\n[i]Inbetween:[/i] Lepidolite (2)\n[i]Around:[/i] Spodumene (2)\n\n[b]Sapphire[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, MN, MS, AS\n[i]Primary:[/i] Almandine (1)\n[i]Secondary:[/i] Pyrope (2)\n[i]Inbetween:[/i] Sapphire (2)\n[i]Around:[/i] Green Sapphire (2)",
+            "wrap": 0,
+            "size": 0.6999999,
+            "color": "FF555555",
+            "xPos": 24,
+            "yPos": 26,
+            "width": 120.0,
+            "height": 160.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Soapstone[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, MN, MS\n[i]Primary:[/i] Soapstone (1)\n[i]Secondary:[/i] Talc (2)\n[i]Inbetween:[/i] Glauconite (2)\n[i]Around:[/i] Pentlandite (2)\n\n[b]Sulfur[/b]\n[i]Height(Y):[/i] 5 - 20\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] N, MS\n[i]Primary:[/i] Sulfur (2)\n[i]Secondary:[/i] Sulfur (2)\n[i]Inbetween:[/i] Pyrite (1)\n[i]Around:[/i] Sphalerite (1)\n\n[b]Tetrahedrite[/b]\n[i]Height(Y):[/i] 80 - 120\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, N, MN, MS, AS\n[i]Primary:[/i] Tetrahedrite (2)\n[i]Secondary:[/i] Tetrahedrite (2)\n[i]Inbetween:[/i] Copper (1)\n[i]Around:[/i] Stibnite (2)",
+            "wrap": 0,
+            "size": 0.6999999,
+            "color": "FF555555",
+            "xPos": 219,
+            "yPos": 26,
+            "width": 113.0,
+            "height": 158.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 810",
+            "xPos": 150,
+            "yPos": 37,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 944",
+            "xPos": 150,
+            "yPos": 93,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 503",
+            "xPos": 150,
+            "yPos": 149,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 877",
+            "xPos": 355,
+            "yPos": 37,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 22",
+            "xPos": 355,
+            "yPos": 93,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 840",
+            "xPos": 355,
+            "yPos": 149,
+            "width": 32.0,
+            "height": 32.0
+          }
+        }
+      ],
+      "pageName": "OV5"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Ore Veins[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 88,
+            "yPos": 12,
+            "width": 129.0,
+            "height": 16.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "OW-Overworld; N-Nether; E-End; EA-End Asteroids; MN-Moon; MS-Mars; AS-Asteroids",
+            "wrap": 0,
+            "size": 0.9,
+            "color": "FFFF00FF",
+            "xPos": 28,
+            "yPos": 193,
+            "width": 390.0,
+            "height": 5.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Tungstate[/b]\n[i]Height(Y):[/i] 20 - 50\n[i]Mining tool level:[/i] 3\n[i]Dimensions:[/i] OW, E, EA, MN, MS, AS\n[i]Primary:[/i] Scheelite (3)\n[i]Secondary:[/i] Scheelite (3)\n[i]Inbetween:[/i] Tungstate (3)\n[i]Around:[/i] Lithium (2)\n\n[b]Oilsands[/b]\n[i]Height(Y):[/i] 50 - 80\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW\n[i]Primary:[/i] Oilsands (1)\n[i]Secondary:[/i] Oilsands (1)\n[i]Inbetween:[/i] Oilsands (1)\n[i]Around:[/i] Oilsands (1)",
+            "wrap": 0,
+            "size": 0.6999999,
+            "color": "FF555555",
+            "xPos": 24,
+            "yPos": 26,
+            "width": 120.0,
+            "height": 160.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 841",
+            "xPos": 150,
+            "yPos": 37,
+            "width": 32.0,
+            "height": 32.0
+          }
+        }
+      ],
+      "pageName": "OV6"
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u]HOME[/u]",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 24.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "Menu",
+            "texture": "",
+            "xPos": 201,
+            "yPos": 14,
+            "width": 23.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Mining Tool Levels[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 35,
+            "yPos": 17,
+            "width": 201.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u][b]Level 0:[/b][/u]\nPlastic, Rubber, Sealed Wood, Wood\n\n[u][b]Level 1:[/b][/u]\nBismuth, Blaze, Brass, Certus Quartz, Cupronickel, Flint, Graphene, Lead, Nether Quartz, Stone\n\n[u][b]Level 2:[/b][/u]\nAluminium, Astral Silver, Beryllium, Bismuth Bronze, Black Bronze, Black Steel, Blue Steel, Bronze, Carbon, Cobalt Brass, Damascus Steel, Deep Iron, Electrum, Emerald, Gold, Graphite, Green Sapphire, Invar, Iron, Iron Wood, Kanthal, Magnalium, Magnetic Iron, Magnetic Neodymium, Magnetic Steel, Manganese, Meteoric Iron, Meteoric Steel, Midasium, Molybdenum, Neodymium, Nichrome, Nickel, Olivine, Opal, Palladium, Pig Iron, Platinum, Red Garnet, Red Steel, Rose Gold, Ruby, Sapphire, Shadow Iron, Shadow Steel, Silver, Stainless Steel, Steel, Sterling Silver, Tanzanite, Thorium, Wrought Iron, Yellow Garnet",
+            "wrap": 0,
+            "size": 0.79999995,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 28,
+            "width": 182.0,
+            "height": 171.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[b]Mining Tool Levels[/b]",
+            "wrap": 0,
+            "size": 1.5000001,
+            "color": "FF555555",
+            "xPos": 233,
+            "yPos": 17,
+            "width": 197.0,
+            "height": 11.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "[u][b]Level 3:[/b][/u]\nAer, Amethyst, Aqua, Black Granite, Blue Topaz, Chrome, Cobalt, Dark Iron, Diamond, Enderium, Fiery Blood, Fire Stone, Fluxed Electrum, Force, HSLA Steel, Ignis, Infused Gold, Mithril, Ordo, Plutonium-241, Plutonium-244, Red Granite, Steel Leaf, Terra, Thaumium, Titanium, Topaz, Tungsten, Ultimet, Uranium-235, Uranium-238, Vinteum\n\n[u][b]Level 4:[/b][/u]\nDuranium, Enriched Naquadah, Iridium, Naquadah, Naquadria, Nether Star, Osmiridium, Osmium, Perditio, Tritanium, Tungsten Steel\n\n[u][b]Level 5:[/b][/u]\nAdamantium, Naquadah Alloy\n\n[u][b]Level 6:[/b][/u]\nNeutronium",
+            "wrap": 0,
+            "size": 0.79999995,
+            "color": "FF555555",
+            "xPos": 225,
+            "yPos": 30,
+            "width": 154.0,
+            "height": 154.0
+          }
+        }
+      ],
+      "pageName": "Mining Tool Levels"
+    },
+    {
+      "features": [],
+      "pageName": ""
+    },
+    {
+      "features": [],
+      "pageName": ""
+    }
+  ],
+  "uniqueName": "GregTech_Ore_Guide",
+  "color": 16711935,
+  "showBackground": true,
+  "showArrows": true,
+  "showNumber": true,
+  "iconPass1": "",
+  "iconPass2": "",
+  "iconColorisePass1": false,
+  "iconColorisePass2": false,
+  "iconColorPass1": 0,
+  "iconColorPass2": 0,
+  "language": "en_US",
+  "displayName": "[GUIDE] GT Ore Generation",
+  "displayInCreative": true
+}

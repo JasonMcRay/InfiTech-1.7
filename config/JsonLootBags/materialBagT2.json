@@ -1,0 +1,80 @@
+{
+    "itemname": "Material Bag",
+    "color": [
+    175,
+    238,
+    238
+    ],
+    "invSlotsMin": 36,
+    "invSlotsMax": 36,
+    "amountOfItemsMin": 1,
+    "amountOfItemsMax": 3,
+    "rarity": "Rare",
+    "items":
+    [
+        {
+            "min": 8,
+            "max": 32,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "minecraft:iron_ingot",
+                "stacksize": 1
+            }    
+        },
+        {
+            "min": 8,
+            "max": 32,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 11057
+            }
+        },
+        {
+            "min": 8,
+            "max": 32,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 11035
+            }
+        },
+        {
+            "min": 8,
+            "max": 32,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 11305
+            }
+        },
+        {
+            "min": 8,
+            "max": 32,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "minecraft:gold_ingot",
+                "stacksize": 1
+            }
+        },
+        {
+            "min": 8,
+            "max": 32,
+            "weight": 50,
+            "itemstack":
+            {
+                "item": "gregtech:gt.metaitem.01",
+                "stacksize": 1,
+                "damage": 11034
+            }
+        }
+    ]
+}

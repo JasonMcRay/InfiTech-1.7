@@ -1,0 +1,717 @@
+v3.1.15
+Mod Updates:
+- AsieLib -> 0.4.3
+- Buildcraft -> 7.1.11
+- Buildcraft Compat -> 7.1.2
+- Chisel -> 2.9.2.8
+- Computronics -> 1.5.8
+- EnderCore -> 0.1.0.26
+- EnderIO -> 2.3.0.417
+- ExtrabiomesXL -> 3.16.3
+- Forestry -> 4.0.10.39
+- Galacticraft -> 3.0.12.376
+- Gendustry -> 1.6.2.127
+- GregTech -> 5.09.09
+- Headcrumbs -> 1.6.2
+- Industrial Craft 2 -> 2.2.785
+- Logistics Pipes -> 0.9.3.61
+- MagicBees -> 2.4.0
+- ModTweaker2 -> 0.9.4
+- NEI Addons -> 1.12.14.40
+- NEI Integration -> 1.0.13
+- NuclearControl -> 2.3.1a-Butt
+- OpenBlocks -> 1.4.4-677
+- OpenComputers -> 1.5.19.37
+- OpenModsLib -> 0.8-402
+- Pam's Harvestcraft -> 1.7.10k
+- PneumaticCraft -> 1.11.16-138
+- Thaumic Tinkerer -> 2.5-512
+- XACT -> 0.5.4c
+
+Changes/Fixes
+- Fixed forestry worktable using always 1st GT Tool instead of correct one.
+- Huge Forestry config rework and big ass update. (If something is hugely different than before, let me please know)
+- Updated ARC Furance charcoal recipes to reflect Forestry 4 changes
+- Fixed Crafting of IC2 Reactor Items
+- Thorium Rods now requires 3x Thorium Dust (instead of 1)
+- Removed already generated Galacticraft Oil Fields
+- Also disabled GC Oil Generation all together (there are already couple of diferent Oil Fields).
+- Note that if you have some GC Oil stored in tanks (it is named "fluid.oilgc" or "oilgc") it will be gone.
+- Raised bee products chances.
+- Radioactive bee now produces D-O-B Comb, which when centrifuged will give low chance of product.
+- Lowered mutation chances of Organic, Gem, Alloy and Thaumic Bee types. Raised mutation chance of Metalic and Metalic Rare bees.
+- Machine Upgrades for Squeezer and Centrifuge in form of electron tubes
+- Boost mutation chances by researching mutations in the escritoire.
+- Optimized the performance of bees
+- Fixed making Biomass from EXBL Sapplings and Honey.
+- New Ambient Thermal Controller - controlls heat in rooms in space. Works in the similiar way as Thermal Padding, but affects whole "room".
+- Fixed shift-clicking items into Harvestcraft blocks (like presser)
+- Experimental: XACT crafter grouping (multiple XACT Crafters near each other will allow you to access all of them - limited)
+- Fixed hopefully eIO Glider kicking other players from game
+- Fixed GT Type Filter crash on certain items with specific tags.
+- Fixed PneumaticCraft Speed Upgrade recipe. Now requires Lubricant Cell.
+- Fixed SAG milling cobblestone into "wierd" sand or gravel type.
+- Fixed Gravisuite recipes
+
+WARNING: There will be around 50 missing items from update 3.1.14 to this one. Reason is that Forestry changed the IDs of its Wooden Logs (to be more specific, they use now just 1 ID with different NBT tags). It will probably cause those Wooden Logs gone from your worlds. There is nothing you can do about that.
+If you will find out that this is true and your Forestry trees are missing: You can go and chop them up (before update), store the sapplings and replant them after update.
+If you will find that no Forestry Trees are missing from your world... Well then consider yourself lucky (and let me know, so I can let others know in this changelog)
+
+v3.1.14
+Changes/Fixes:
+- ExtrabiomesXL Biome Ids were changed, now its back at what it used to be at. (No more snow in deserts and stuff)
+
+v3.1.13
+Mod Updates:
+- Aroma1997Core -> 1.0.2.16
+- BDLib -> 1.9.3.107
+- Buildcraft -> 7.1.8
+- BuildcraftCompat -> 7.1.1
+- FastLeafDecay -> 1.3
+- Forestry -> 3.6.10.1
+- Gendustry -> 1.6.1.126
+- GregTech -> 5.08.30
+- GTTweaker -> 1.0.9
+- HardcoreEnderExpansion -> 1.8.4
+- Logistics Pipes -> 0.9.3.52
+- MagicBees -> 2.3.6
+- OpenBlocks -> 1.4.4-674
+- OpenModsLib -> 0.8-399
+- PneumaticCraft -> 1.11.14-136
+
+Changes/Fixes:
+- Allowed Multiple Dragon Eggs
+- Blocked XACT Crafter from pulling items from IC2 Safe (Thanks DaknessShadow)
+- Fixed FT worktable playing tool sounds in loop.
+- EXBL Flower Extraction support.
+- Fixed Sag-milling cobble giving weird Gravel type.
+- Added GT Endium Processing
+- Fixes Compendium not returning to previous screen (caused item loss in crafting table)
+- Not Enough Items integration no longer intercepts recipe/usage keys, only Compendium key
+- Fixed PC refinery not accepting other types of Oil than PneumaticCrafts
+- Added September Patrons characters and heads to the game. (Thank you very much for support: ShinyGardevoir, MigukNamja and Slayeruga)
+
+Known Issues:
+- FT Worktable trying to use first GT tool in the storage area, even if it is different tool. (its fixed in FT4, but cant currently update, because of other mods)
+
+v3.1.12
+Mod Updates:
+- IndustrialCraft 2 -> 2.2.780
+- PneumaticCraft -> 1.11.11-133
+- XACT -> 0.5.4
+- Minetweaker -> Back to official 3.0.10B
+- WAILA Plugins -> 0.1.2-21
+
+Changes/Fixes:
+- Fixed XACT Crafter not saving its inventory (now for real)
+- Waila is now showing correct amount of liquid inside RC Tanks
+
+v3.1.10
+Mod Updates:
+- Bdlib -> 1.9.2.105
+- BiblioCraft -> v1.11.2
+- BuildCraft -> 7.0.25
+- Chisel -> Switched to Chisel-Team v2.9.1.7
+- Forestry -> 3.6.7.25
+- GTTweaker -> 1.0.7
+- IGW Mod -> 1.1.11-32
+- IndustrialCraft 2 -> 2.2.777
+- LogisticsPipes -> 0.9.2.49
+- MalisisDoors -> 1.10
+- Minetweaker -> Temporary usage of KittenEdition
+- OpenBlocks -> 1.4.4-668
+- OpenComputers -> 1.5.18.36
+- OpenMods Lib -> 0.8-396
+- PneumaticCraft -> 1.11.9-129
+- XACT -> 0.5.4b
+
+Removed Mods:
+- ExtraCells (I no longer support addition of this mod)
+
+Changes/fixes:
+- Fixed XACT Crafter not saving its inventory
+- Fixed Framed Chest Crash
+- Fixed IGW fails to look up pages
+- Fixed Cropmatron not applying water to crops
+- Performace improvements of LP on servers, causing server to slow down/halt
+- Seismic Sensor (PC) now also works for other mods Oil spawns (like Buildcraft)
+- Updated Scripts to reflect changes and fixes in Minetweaker and GTTweaker
+- Boosted forestry hives slightly (by 50%). Should affect all hives from other mods as well (magic bees).
+- Removed direct crafting of AE2 Cells (Storage, Spatial, View). The only way to craft them is by combining Universal Housing + Component.
+- Added Stardust and EndPowder to Macerator
+- Added some items to FT Adventurer Backpack.
+- Removed and changed few trades in Amadron Tablet.
+- Disabled NEI Integration with HEE as workaround for items disapearing from Crafting Table upon opening Compendium.
+- Disabled decomposition of and into GT Tools.
+- Re-added potions to NEI
+- Fixed Forestry Worktable not working properly with GT Tools
+- Fixes Chisel Packed Ice not being chiselable into
+- Fixed server/client sync issue (you no longer need to start SSP first
+
+Known Issues:
+- There is a sound lopp happening with Forestry Wortable and AE2 Patters if you have GT Tools that make sounds.
+
+v3.1.9
+Mod Updates:
+- BiblioCraft -> 1.11.0
+- Buildcraft -> 7.0.23
+- Buildcraft Compat -> 7.0.12
+- Computronics -> 1.5.7
+- CustomMainMenu -> 1.8
+- EnderCore -> 0.1.0.24
+- EnderIO -> 2.3.0.415
+- Forestry -> 3.6.6.24
+- GalacticGreg -> 0.7
+- Gendustry -> 1.6.0.125
+- IndustrialCraft 2 -> 2.2.773
+- MrCrayfishFurnitureMod -> 3.4.8
+- PneumaticCraft -> 1.11.6-126
+- XACT -> 0.5.4
+
+Changes/fixes:
+- Fixed crash when entering the Controls/Keybinds Options menu.
+- Reworked spawning of Naq ore. End: Only generates Small Naquadah Ore. Asteroid (GC): Generates full Naquadah Ore
+- Crafting Hungry Hand Mirror now accepts any thaumium nugget.
+- Changed the path for the Patreon Wall image to remote place.
+- Removed the patreon wall from resources.
+- Removed duped and deprecated entries in GT WorldGen.cfg (regenerated again)
+- Fixed handling of certain recipes in XACT Crafter.
+- Few more regen of GT configs (MaterialProperties.cfg and MachineStats.cfg)
+- Fixed producing of Sand with wierd meta value in SAG Mill. (Gravel is still broken)
+
+Known Issues:
+- Recipes that are changed are not visible on servers, they still work, but NEI is not showing them. Current workaround is to load Singleplayer first and then log onto server.
+
+v3.1.8.1 - Hotfix
+Changes/Fixes:
+- Fixed RF machines not accepting GTEU
+- Fixed RF machines exploding when fed too much GTEU
+- Fixed crash when opening Keybinds/Controls options menu
+
+v3.1.8
+Mod Updates:
+- Aroma1997Core -> 1.0.2.15
+- BDLib -> 1.9.2.104
+- BuildCraft -> 7.0.22
+- Carpenter's Blocks -> 3.3.7
+- Chisel2 -> 2.5.0.43
+- EnderCore -> 0.1.0.23
+- EnderIO -> 2.3.0.413
+- Gendustry -> 1.6.0.124
+- GregTech -> 5.08.29
+- GTTweaker -> 1.0.1
+- IGW -> 1.1.10-30
+- Immibis Core -> 59.1.2
+- Industrial Craft 2 -> 2.2.770
+- Logistics Pipes -> 0.9.2.45
+- MagicBees -> 2.3.5
+- Malisis Core -> 0.12.9
+- Malisis Doors -> 1.9.5
+- Minetweaker -> 3.0.10
+- ModTweaker 2 -> 0.9.3
+- Not Enough Items -> 1.0.5.118
+- OpenBlocks -> 1.4.4-664
+- OpenComputers -> 1.5.17.33
+- OpenModsLib -> 0.8-393
+- PneumaticCraft -> 1.11.3-123
+- XACT -> 0.5.3b
+
+New Mods:
+- Custom Main Menu
+- Headcrumbs
+- Resource Loader
+
+Changes:
+- Fix used reactor items not being reusable in recipes, likely breaks AE patterns etc. (sorry)
+- You can now breathe indefinately under water when having an Aerial Interface connected (at a high air cost).
+- Updated multiple MT Scripts for MT 3.0.10 and GTT 1.0.1
+- Endium Block now crafted inside Compressor
+- Hardcoded correct blaze powder aspect numbers.
+
+v3.1.7
+Mod Updates:
+- BDLib -> 1.9.2.102
+- Bibliocraft -> 1.10.6
+- BluePower -> 0.2.962
+- BuildCraft -> 7.0.20
+- BuildCraft Compat -> 7.0.11
+- EnderCore -> 0.0.1.17_alpha
+- EnderIO -> 2.3.0.407
+- EnderZoo -> 1.0.15.32
+- Galacticraft -> 3.0.12.357
+- Gendustry -> 1.6.0.118
+- GregTech -> 5.08.27
+- HardcoreEnderExpansion -> 1.8.3
+- IndustrialCraft 2 -> 2.2.763
+- LogisticsPipes -> 0.9.2.33
+- MalisisCore -> 0.12.7
+- MalisisDoors -> 1.9.4
+- ModTweaker 2 -> 0.9.2
+- NEIIntegration -> 1.0.12
+- OpenComputers -> 1.5.15.31
+- PneumaticCraft -> 1.10.5-118
+- Railcraft -> 9.7.0.0
+
+New Mods:
+- INpureCore
+
+Changes:
+- Large Turbine and Large Heat Exchanger overhaul
+- Bronze Dust and Advanced Circuit Achievements now use OreDict
+- Fixed Molten VibrantAlloy and Molten PulsatingIron recipes
+- Added tooltips for auto-outpud guid buttons
+- NEI Support for UUMatter Recipes
+- Fixed nether quartz duplication with Lathe.
+- Also some items now cant be crafted using Pure Nether Quartz due to this.
+- Transfer nodes and pipes enabled
+- Transfer Node and pipe recipes added and tiered. Nodes require QED crafting.
+- Dimension transceiver energy cost raised from stupidly low to reasonable high in comparison to other teleportation methods.
+- Lowered Transceiver cost for teleporting direct fluids to 100RF/t. To save evergy you should first put the liquid into some sort of Fluid Container, and then transfer that.
+- Disabled Dire Slimes until their spawning work properly with GT shovels.
+- Fixed Ender Dragon destroying protected blocks
+- Fixed HEE Curses not getting used when placed on blocks
+- Fixed Nutrient biome bonus being always 0 for IC2 crops
+- Fixed fueling of Tier 3 Rockets
+- Raised ammount of Item Conduits per craft (2 -> 6), since the crafting recipe uses Medium Pipes and not small ones. keeping it in line with other Conduit recipes (fluid)
+- Massively culled NEI entries
+- Removed Thermionic Tube requirement inside Gearbox, Hatch, Valve and Controller recipes. Also changed requirement of Steel Gears to Small Steal Gears.
+- Concussion Creepers no longer TP players to void
+- Fixed crash with Toggle Latch
+- Changed recipes for ME Conduits.
+- Added cleaning process to clear colored ME cables back to non colored ones inside Chemical Bath + Chlorine.
+- Fixed crash with IC2 Fluid Regulator
+- SAG Mill is better for processing Gem Ores if you want more gem dusts
+
+v3.1.6
+Mod Updates:
+- Automagy -> 0.26.3
+- BiblioCraft -> 1.10.5
+- EnderCore -> 0.0.1.14
+- OpenBlocks -> 1.4.4-652
+- OpenModsLib -> 0.8-382
+- Pam's Harvestcraft -> 1.7.10j
+- PneumaticCraft -> 1.9.13-101
+- BDLib -> 1.9.2.100
+- BuildCraft -> 7.0.19
+- BuildCraft Compat -> 7.0.10
+- GregTech -> 5.08.26
+- LogisticsPipes -> 0.9.2.23
+- NEIAddons -> 1.12.12.37
+- Thaumic Energistics -> 0.8.10.10
+
+New Mods:
+- X.A.C.T.
+
+Changes/fixes:
+- Removed remaining recipe in Wiremill for Quartz Fiber still looking for GT Changed Certus Quartz
+- Enabled vacuum hopper with changed recipe
+- Moved Ender Tubes from Thermionic Fabricator into Assembler
+- Thermionic Fabricator recipe requires 1008mB of molten redstone (instead of 1000mB)
+- Added recipe for eIO Dark Steel Bars into Assembler
+- Changed ammount of bars given per hand-crafting from 16 to 8
+- Conduit Binder now requires Fluid Soldifier => Wet Concrete + Mold (Ball)
+- Removed crafting of Binder Composites.
+- Added option to extract Wet Concrete from already crafted Binder Composites. 1:1 ratio
+- Fixed localization of some Gravisuite crafting parts
+- Changed recipe for Vibrant Crystal to require Phased Gold. Molten Vibrant Alloy will be most likely removed on GT side completely since these two are totally the same fluid.
+- Fluid Conduits recipe changed, massively. They are now in-line with GT Pipes.
+- Increased Extraction and I/O Rates of Pressurized and EnderFluid Conduits. Pressurized is now 120mB/t with max of 480 passthrough. EnderFluid is 300mB/t with max of 1200 passthrough.
+
+v3.1.5
+Mod Updates:
+- Automagy -> 0.26.2
+- BDLib -> 1.9.1.97
+- BuildCraft -> 7.0.17
+- Carpenter's Blocks -> 3.3.7
+- CoFHCore -> 3.0.3-303
+- Computronics -> 1.5.6
+- EnderCore -> 0.0.1.13
+- ExtraCells -> 2.2.73b132 (still disabled)
+- Gendustry -> 1.6.0.109
+- GregTech -> 5.08.25
+- IGW Mod -> 1.1.7-26
+- Industrial Craft 2 -> 2.2.751
+- LogisticsPipes -> 0.9.2.19
+- MagicBees -> 2.3.3
+- ModTweaker 2 -> 0.9.1
+- OpenBlocks -> 1.4.3-648
+- OpenModsLib -> 0.7.3-378
+- PneumaticCraft -> 1.9.10-98
+- Redstone Arsenal -> 1.1.1-89
+- TcNodeTracker -> 1.1.2
+- Thaumic Energistics -> 0.8.10.8
+
+Changes:
+- Fixed IC2 machines GUI being not accessible
+- Removed GT Version of Charged Certus Quartz (was causing inconsistency, already existing Charged Certus Quartz Crystals still in game, but they have no use and no texture)
+- Removed 8x plastic + dye = 8x plastic with the color of the dye, as this was temporary while the Plastic Mixer was changed.
+- Fixed crash on Oil worldgen with GregTech
+- Yellorite Ingot in SAGmill give Yellorite Dust, instead of Uranium Dust
+- Changed recipe for Logistic Drone
+- Drones can be now painted
+- Lowered cost of x-dim StarGate connection
+- Fixed logistics pipes Firewall NPE
+- Fixed cobblestone into sand with Steam Macerators
+- Fixed PneumaticCraft Door Base Camouflage with Chisel 2 blocks
+- Changed JABBA Barrel colors throughout the tiers
+- Enabled Aerial Interface, tiered to MV
+- Boosted Dim Trans energy teleportation
+- Fixed cover interface not being craftable shapelessly into block version
+
+
+v3.1.4
+Forge updated: 10.13.4.1490
+Mod Updates:
+- CoFHCore -> 3.0.3B4-302
+- OpenBlocks -> 1.4.3-647
+- OpenComputers -> 1.5.14.30
+- OpenModsLib -> 0.7.3-376
+- PneumaticCraft -> 1.9.3-90
+- Waila Plugins -> 0.1.0-16
+- BuildCraft -> 7.0.16
+- BuildcraftCompat -> 7.0.9
+- FOrestry -> 3.6.3.20
+- Gendustry -> 1.6.0.108
+- GregTech -> 5.08.24
+- IndustrialCraft 2 -> 2.2.748
+- MalisisCore -> 0.12.5
+- MalisisDoors -> 1.9.3
+- NEIAddons -> 1.12.11.36
+
+New Mods:
+- EnderCore
+- Thaumcraft NEI Plugin
+
+Removed Mods:
+- ttCore (replaced by EnderCore)
+- Java7Checker (redundant)
+
+Changes:
+- Fixed incorrectly placed explosion sounds
+- Fixed Chemical Reactor Certus Quartz crafting (it now requires water, instead of outputting it)
+- Added bunch more Glasses as Sealeable blocks to Oxygen Sealer
+- Vanishing frames no longer become unstable
+- Moved oxygen indicator default position to bottom right
+- Raised number of total upgrades/tiers to 11
+- Changed recipes for Structural upgrades
+- Added alternative recipe for x9 Storage Upgrade
+- Fixed trading post crafting with Thaumcraft tree planks
+- Hardcoded Magical Wood recipe. Now accepts only Crafted Enchanted Books (minecraft:enchanted_book)
+- Rehauled Stargate energy costs
+- Removed seed recipes from Assembler and moved them into Chemical Reactor
+- To be able to use "used" Forestry Backpacks in crafting of 45 slot versions, you need to put them first into crafting table to reset them. They will loose all stored data (content)!
+- Redesigned Chunkloader fuel usages (both RC and Immibis)
+- Disabled CFM welcome message
+- Moved gravisuite to bottom left under chat
+- EnderQuarry speed upgrades craftable
+- Added Pump upgrade to QED crafting
+- FMP support in BC Builder
+- Fixed lag with Construction Markers
+- Fixed few Thaumcraft compatibility researches
+- Added AE2 pure quartz compressing recipes
+- Fixed triggering chunk update when item is collected via Vacuum Hoppers (slight TPS improvement)
+- Bows with Infinity enchant no longer needs an arrow present.
+- Dimensional anchor is now crafted with Pulsating Crystal, instead of Ender Pearl.
+
+Removed blocks/items in update v3.1.3 -> v3.1.4
+- PneumaticCraft:universalActuator
+
+v3.1.3
+Mod Updates:
+- Aroma1997Core -> 1.0.2.14
+- Automagy -> 0.26
+- BluePower -> 0.2.954
+- Chisel 2 -> 2.4.1.40
+- CoFHCore -> 3.0.3B2-294
+- Galacticraft -> 3.0.12.350
+- In-game Wiki -> 1.1.4-20
+- ModTweaker -> 0.8.4_dev1
+- Redstone Arsenal -> 1.1.1B1-85
+- Applied Energistics 2 -> rv2 stable 10
+- Gendustry -> 1.5.2.107
+- Industrial Craft 2 -> 2.2.745
+- JourneyMap -> 5.1.0
+- MagicBees -> 2.3.2
+- NEIAddons -> 1.12.10.34
+- Thaumic Energistics -> 0.8.10.7
+
+Changes:
+- Unrefined Desh can now be processed
+- Enabled AE2 Inscriber. It can be only used for imprinting names with Name Press
+- Enabled AE2 Cutting Knives. It can be only used for creating Name Press
+- Fixed few forestry related scripts
+- Enabled crafting of Fluid Manipulator
+- Made Tin Deco blocks cheaper. they are flippin Decoration blocks!!!
+- Fixes connected textures of Conduit Facades to Normal chisel blocks
+- ExU Still needs this to be fixed
+- Workaround for few charged certus issues. They do not unify so there are two versions of same item. You can interchange both versions as Shapeless recipe.
+- Certus Wrench now craftable with Certus Quartz instead of Charged Certus.
+- Fixed Crash with NEI (appeng.integration.modules.NEIHelpers.NEIInscriberRecipeHandler.loadCraftingRecipes)
+
+v3.1.2
+Mod Updates:
+- Chisel 2 -> 2.3.10.38
+- Computronics -> 1.5.5
+- FastLeafDecay -> 1.1
+- GTTweaker -> 0.7.2
+- Galacticraft -> 3.0.12.345
+- Hardcore Ender Expansion -> 1.8.2
+- NEI Integration -> 1.0.11
+- Open Computers -> 1.5.13.28
+- PneumaticCraft -> 1.9.1-86
+- Thaumic Tinkerer -> 2.5-507
+- BDLib -> 1.9.0.94
+- Forestry -> 3.6.2.19
+- Gendustry -> 1.5.1.106
+- GregTech -> 5.08.23
+- IndustrialCraft 2 -> 2.2.742
+- Malisis Core -> 0.12.4
+- Malsis Doors -> 1.9.1
+- ttCore -> 0.1.1-78
+- BuildCraft -> 7.0.13
+
+Changes:
+- Fixed TPS issues caused by FLD + Thaumcraft compatibility
+- Fixed double unification problem with some items (most notably nuggets)
+- Fixed Solar Boilers heating during night
+- Changed recipe for Medium Oxygen Tank to require Compressed Meteoric Iron
+- Changed recipe for Heavy Oxygen Tank to require Compressed Desh
+- Recipes requiring Galacticraft fuel cannister should no longer return the canister back
+- Re-enabled Gas Liquefer to enable conversion from GT Oxygen into Galacticraft oxygen
+- OV Scanned is craftable again
+- Etching acid no longer can be obtained with Fresh Water. Now it accepts only Bucket of Water
+- Re-Enabled Fresh Water crafting
+- Fixed crash when looking up recipes in NEI for bees
+- Added all Chisel Panes as oxygen sealeable blocks
+- Made Naq slightly more rare
+- Changed Graphite processing
+- Removed AE2 inscriber recipes from showing in NEI
+- Fixed Stardust Ore block crashing the game (affected worlds should load fine)
+- Fixed IC2 Transformer outputting wrong voltage
+
+v3.1.1
+Mod Updates:
+- Applied Energistics 2 -> rv2 stable 9
+- Automagy -> 0.25
+- BDlib -> 1.9.0.93
+- BluePower -> 0.2.947
+- BuildCraft -> 7.0.12
+- ExtraCells 2 -> 2.2.73b129 (disabled)
+- Galacticraft -> 3.0.12.345
+- Gendustry -> 1.5.0.101
+- GregTech -> 5.08.20
+- NEI Addons -> 1.12.10.33
+- Not Enough Items -> 1.0.5.111
+- OpenBlocks -> 1.4.3-646
+- OpenModsLib -> 0.7.3-374
+- PneumaticCraft -> 1.8.2-84
+- Yampst -> 3.1.0
+
+Changes:
+- Disabled version checking for all mods (I think)
+- Disabled uranium as Big Reactor Fuel
+- Disabled Fresh Water crafting until exploit with PneumaticCraft is fixed
+- Changed recipe for Kinetic Wind Generators, Rotor Bladeds and Rotors
+- Lowered PneumaticCraft and Galacticraft oil generation
+- Slightly raised BuildCraft oil generation
+- Harvestcraft foods can be planted without the need of turning them into seeds.
+- Removed seed drops from crops
+- New Buildcraft filler parameters: Hollow for Cylinders, Center for Pyramids and Direction for Stairs
+- BuildCraft mining robots now work with GregTech ores
+- Fixed maceration of Cobblestone -> Sand and Stone -> Stone Dust
+- Fixed recipe for IC2 Pulling Upgrade
+
+v3.1.0
+Mod Updates:
+- Applied Energistics 2 -> rv2 stable 8
+- AsieLib -> 0.4.2
+- BDlib -> 1.8.2.92
+- BuildCraft -> 7.0.9
+- BuildCraft Compat -> 7.0.8
+- Computronics -> 1.5.4
+- Enchiridion -> 2.0.2
+- Gendustry -> 1.4.13.94
+- Industrial Craft 2 -> 2.2.736
+- LogisticsPipes -> 0.9.1.15
+- Malisis Core -> 0.12.3
+- OpenBlocks -> 1.4.3-645
+- OpenModsLib -> 0.7.3
+- OpenComputers -> 1.5.13.27-pre.1
+- PneumaticCraft -> 1.8.1-83
+- ttCore -> 0.1.1-77
+
+New Mods:
+- In-Game Wiki
+
+Changes:
+- BC Kinesis pipes have loss per distance traveled
+- Crop Growth is at vanilla speed
+- Milking timeout lowered
+- Sugercane is no longer biome dependant
+- Food restores 75% of vanilla amount
+- Healing occures with mmin 10 hunger
+- Lowered damge taken on starve to 2
+- Crop harvester recipe changed. HV Age
+- Advanced RE-Battery requires Annealed Copper instead of Regular Copper cable
+- Cresote can be processed in SemiFluid Gen for little power. 1000L = 3000EU @ 8EU/t
+- Wooden button is again craftable in the crafting grid (Thanks @Timeslice42)
+- EnderIO conduits crafting output boosted to 6.
+- Disabled IC2 Wire Cutter
+- Disabled chiseling Stone and Cobblestone into Mossy.
+- Slightly Changed recipe for Diamond and Obsidian Chisel
+- Disabled BuildCraft Quarry crafting
+- Already made BC Quarries can be used only once. Or they can be "upgraded" into Ender Quarry.
+- Peopper automatic replacement of GregTech tools in hotbar.
+- Kinesis Pipes are now lossy over distance
+- PneumaticCraft plants no longer spawns.
+- PneumaticCraft Oil is now used. It will generate in newly generated chunks only.
+- For more information on PneumaticCraft check In-game Wiki. (You might need to resolve keybind conflict)
+- Fixed not being able to craft GT OreGen Book
+- Disabled Bluepower Marble Generation
+- Added extra recipe for GT OreGen Book with Coal Ore Block
+- Since all other wooden slabs are made only with Saw+Plank by default, for some reason Oak was not aware of this.
+- Fixed Nugget Unification
+- Disabled Bluepower Amethyst Tools (GT Versions still available)
+- Fixed crash occuring on Servers only when opening GT OreGen Book
+- Fixed crafting of Steel Nuggets
+- EnderEye can now be crafted in vanilla style (just crafting table)
+- Added Blue Alloy and Purple Alloy recipes for GT Alloy Smelter
+
+v3.0.1
+Mod Updates:
+- Applied Energistics 2 -> rv2 stable 5
+- Automagy -> 0.24.2
+- Buildcraft -> 6.4.17
+- Extra Utilities -> 1.2.6
+- Forestry -> 3.5.7.16
+- Galacticraft -> 3.0.12.341
+- GregTech -> 5.08.19
+- Industrial Craft 2 -> 2.2.733
+
+Changes:
+- Lowered Bluepower volcano spawn chance
+- Brought back RF Generators and RF Cables
+- Disabled direct ability to power GT machines with RF (powering some RF machines with GTEU still possible)
+- Lowered energy costs for Forestry machines from 4x to 3x
+- Disabled BP Amethyst Generation
+- Boosted Small Amethyst Ore generation
+- Amethyst Saw craftable with any Amethyst Gem
+- Removed not working eIO Enchanter recipes
+- Changed Haste and Repair costs in enchanter (Haste = Hyper Nitor, Repair = Anvil)
+- Changed Yeta Wrench recipe to be available in early game
+- Changed Painting Machine recipe to use regular steel instead of electrical
+- Changed Item Buffer recipe to use regular steel instead of electrical
+- Changed Conduit Probe recipe to use regular steel instead of electrical
+- Added Blue Alloy recipe into Alloy Smelter (Teslatite + Silver)
+- Added Buildcraft Lenses and Filters into Lathe (Lenses) and Forming Press (Filters)
+- Removed Lenses and Filters from BC Assembly Table
+- Fixed crash when tally box (no lens) is pointed at certain invalid targets.
+- Updated FMP support in Extra Utilities to FMP version 1.2.0
+- Enderlillies can be planted on water (wha?)
+- Improved Bounding and Collision boxes of IC2 Iron Fences
+
+
+v3.0.0
+Forge updated: 10.13.3.1420
+
+Mod Updates:
+- Applied Energistics 2 -> rv2 stable 4
+- Automagy -> 0.24.1
+- AsieLib -> 0.4.1
+- BdLib -> 1.8.2.90
+- BiblioWoods[EXBL] -> 1.4
+- BuildCraft -> 6.4.16
+- CodeChickenCore -> 1.0.7.46
+- Computronics -> 1.5.1
+- Dimensional Anchor -> 59.0.3
+- ExtraBiomesXL -> 3.16.2
+- ExtraUtilities -> 1.2.5
+- GalactiCraft -> 3.0.12.340
+- Gendustry -> 1.4.12.92
+- GregTech -> 5.08.18
+- GTTweaker -> 0.7.0
+- Hardcore Ender Expansion -> 1.8.1
+- NuclearControl 2 -> 2.2.5a
+- Industrial Craft 2 -> 2.2.730
+- InfinityCore -> 1.1
+- LogisticsPipes -> 0.8.3.123
+- Malisis Core -> 0.12.2
+- Malisis Doors -> 1.8.1
+- Minechem -> 5.0.5.398
+- ModTweaker -> 0.8.2
+- NEI -> 1.0.5.110
+- NEIAddons -> 1.12.9.32
+- OpenBlocks -> 1.4.3-644
+- OpenComputers -> 1.5.12.26
+- OpenModsLib -> 0.7.3-368
+- Pam's Harvestcraft -> 1.7.10i
+- PneumaticCraft -> 1.7.0
+- ThaumicEnergistics -> 0.8.10.5
+- ThaumicTinkerer -> 2.5.506
+- Translocator -> 1.1.2.15
+
+Disabled Mods:
+- Extra Cells 2
+- Opis
+- MobiusCore
+
+Mod Additions:
+- BluePower
+- FastLeaveDecay
+- QmunityLib
+- TC Node Tracker
+
+Mod Removals:
+- 3D Furnace
+- ArmorStatusHUD
+- StatusEffectHUD
+- IHL
+- ProjectRed
+- Random Things
+- Refined Relocation
+- SecretRoomsMod
+- Supercrafting Frame
+
+Changes:
+- Astro Miner!
+- ExtraCells got disabled due to Infinite Liquid exploit. Will be re-enabled when its fixed. Enable EC on your own risk (and if you do, please DON'T report this issue https://github.com/JasonMcRay/InfiTech-1.7/issues/181)
+- Some items moved from BC machines into GT machines
+- Disabled Alloy Smelter.
+- AE recipes massively overhauled
+- AE Meteors no longer spawn.
+- AE Presses are now crafted in Laser Engraver with Lense + Compressed Iron Block
+- In-World crafting of Pure Crystals and Fluix Crystals is no longer available.
+- AE version of Certus Quartz no longer generates.
+- P2P energy tunels no longer exists
+- AE power usage is bit lower
+- Saws can now be placed on BiblioCraft Tool Racks
+- Disabled ExU Wood and Iron Spikes
+- Disabled ExU Transfer Pipes/Nodes
+- Ender Quarry Upgrades now crafted inside QED
+- Galacticraft recipes massively overhauled
+- Solar Panels (Galacticraft) generates bit more power on Space Stations
+- Rockets use slightly more fuel
+- Gravisuite relocator is disabled
+- IC2 Cables are disabled
+- Moved Unification a little bit
+- Disabled OpenBlocks Fan
+- Enabled OpenBlocks Graves
+- Disabled Chisel concrete (you have GT ones)
+- Transceviers energy transfer loss lowered to 75%
+- Lowered upkeep cost of Transceivers from 150 to 50RF
+- EnderIO Dark Steel tools, weapons and armor are now crafted in GregTech way (plates, hammer, file)
+- Added Thaumcraft enchantements to EnderIO enchanter
+- Enderminies can spawn anywhere anytime (previously they only spawned on Grass and in dark)
+- ExtrabiomesXL biome IDs shifted - This is the part which mainly makes the old v2 worlds not compatible.
+- Growthcraft fishtraps are slower
+- Harvestcraft salt no longer generates.
+- Railcraft poor ores no longer generates.
+- All RF production is disabled (except Big Reactors) 
+- All RF power transportation is disabled (this means Conduits, Kinesis pipes and similiar)
+- GregTech wires are now capable of powering RF machines. Conversion ratio: 1EU=3,6RF; 1RF=0,2EU
+- Fixed exploit with getting eIO Clear Glass with chisel. Now requires propper crafting
+- Forestry recipes massively overhauled
+- NuclearControl 2 recipes massively overhauled
+- Forestry/Railcraft bags made bit more expensive
+- StevesWorshop items greggified
+- Capes given to testers

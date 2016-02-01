@@ -1,0 +1,15 @@
+<VatRecipes>
+  <recipeGroup name="InfiTech">
+    <recipe name="Enderium Base Fluid" energyCost="10000">
+      <input>
+        <itemStack oreDictionary="dustSilver" slot="0" multiplier="1"/>
+        <itemStack oreDictionary="dustPlatinum" slot="1" multiplier="0.288"/>
+        
+        <fluidStack name="molten.tin" multiplier="2"/>
+      </input>
+      <output>
+        <fluidStack name="molten.enderiumbase"/>
+      </output>
+    </recipe>
+  </recipeGroup>
+</VatRecipes>  

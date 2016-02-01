@@ -1,0 +1,321 @@
+{
+  "book": [
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Fusion Reactor",
+            "wrap": 0,
+            "size": 2.3000002,
+            "color": "FF555555",
+            "xPos": 25,
+            "yPos": 17,
+            "width": 215.0,
+            "height": 13.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Fusion Reactor is expensive high-end multiblock machine used for Fusing two liquids together creating Plasmas, which then can be used for making energy or making expensive materials.\n\nMK I:\n- LuV Machine Casings\n- Superconducting Coils\n- LuV Hatches\n\nMK II:\n- Fusion Casings\n- Fusion Coils\n- ZPM Hatches\n\nMK III:\n- Fusion Casings MK II\n- Fusion Coils\n- UV Hatches",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 220,
+            "yPos": 20,
+            "width": 184.0,
+            "height": 177.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Fusion_Reactor/FR_Main.png",
+            "xPos": 22,
+            "yPos": 58,
+            "width": 186.0,
+            "height": 114.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Layer 1 \u0026 3 - Bottom \u0026 Top",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 166.0,
+            "height": 10.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Layer 2 - Middle",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 222,
+            "yPos": 18,
+            "width": 100.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Fusion_Reactor/FR_Bottom_Top.png",
+            "xPos": 39,
+            "yPos": 57,
+            "width": 152.0,
+            "height": 144.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Made from Casings (type depends on Reactor Mark)",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 172.0,
+            "height": 14.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Fusion_Reactor/FR_Middle.png",
+            "xPos": 245,
+            "yPos": 61,
+            "width": 140.0,
+            "height": 133.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Coils surrounded by Casings on the sides. (type depends on Reactor Mark)",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
+            "width": 179.0,
+            "height": 20.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Possible Controller Positions",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 167.0,
+            "height": 7.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Possible Input Hatch Positions",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 222,
+            "yPos": 18,
+            "width": 180.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Only 1 Controller allowed",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 161.0,
+            "height": 13.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "2 Input Hatches needed up to 16 allowed (Top and Bottom layer)",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
+            "width": 177.0,
+            "height": 14.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Fusion_Reactor/FR_Controller.png",
+            "xPos": 31,
+            "yPos": 49,
+            "width": 168.0,
+            "height": 139.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Fusion_Reactor/FR_Input.png",
+            "xPos": 225,
+            "yPos": 53,
+            "width": 175.0,
+            "height": 136.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Possible Output Hatch Positions",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 177.0,
+            "height": 10.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Possible Energy Hatch Positions",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 222,
+            "yPos": 18,
+            "width": 178.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "2 Output Hatches needed up to 16 allowed",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 28,
+            "yPos": 30,
+            "width": 171.0,
+            "height": 15.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "4 Energy Hatches needed up to 16 allowed. Reactor gains 10M(MKI), 20M(MKII) or 40M(MKIII) EU storage per Energy Hatch",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
+            "width": 181.0,
+            "height": 33.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Fusion_Reactor/FR_Output.png",
+            "xPos": 32,
+            "yPos": 54,
+            "width": 166.0,
+            "height": 150.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Fusion_Reactor/FR_Energy.png",
+            "xPos": 241,
+            "yPos": 68,
+            "width": 149.0,
+            "height": 135.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Usage",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 50.0,
+            "height": 9.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "To start a fusion it needs 2 things. Fusion materials (in form of fluid in Input Hatches) and enough energy. Every fusion costs considerable amount of energy to start the fusion and after that it requires constant supply of some energy during the reaction. Check NEI for exact numbers.\n\nIn the Controller GUI you can see how much energy your reactor has stored.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 180.0,
+            "height": 117.0
+          }
+        }
+      ],
+      "pageName": ""
+    }
+  ],
+  "uniqueName": "GUIDE_Fusion_Reactor",
+  "color": 16769020,
+  "showBackground": true,
+  "showArrows": true,
+  "showNumber": true,
+  "iconPass1": "",
+  "iconPass2": "",
+  "iconColorisePass1": false,
+  "iconColorisePass2": false,
+  "iconColorPass1": 0,
+  "iconColorPass2": 0,
+  "language": "en_US",
+  "displayName": "[GUIDE] Fusion Reactor",
+  "displayInCreative": true
+}

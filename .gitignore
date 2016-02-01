@@ -1,0 +1,103 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+<<<<<<< HEAD
+=======
+
+>>>>>>> pr/215
+# Minecraft files
+asm/
+backups/
+blueprints/
+coremods/
+crash-reports/
+CustomDISkins/
+journeymap/
+liteconfig/
+logs/
+reports/
+resourcepacks/
+saves/
+screenshots/
+TCNodeTracker/
+texturepacks/
+1213309934
+GregTech.cfg
+GregTech.lang
+icon.png
+minetweaker.log
+nicknames.json
+OpenComputersMod*.*
+options.txt
+optionsof.txt
+usernamecache.json
+mods/ic2/EJML-core-0.26.jar
+config/MapWriterBlockColourOverrides.txt
+config/MapWriterBlockColours.txt
+mods/carpentersblocks/CarpentersBlocksCachedResources.zip
+config/YAMPST.nbt
+config/DIAdvancedCompatibility.cfg
+config/HardcoreEnderExpansion.clientsave.cfg
+mods/OptiFine_1.7.10_HD_U_B7.jar
+mods/CameraStudio-VR-Dependencies.zip
+mods/CameraStudioV2.1710(mc1.7.10).zip
+mods/camerastudio/*
+CameraStudio_log.txt
+servers.dat
+CameraStudio_log.txt.lck
+mods/VersionChecker*.jar
+config/VersionChecker.cfg
+serverstuff/*
+sync.sh
+dumps/
+videos/
+config/OpenEye.json
+mods/OptiFine_1.7.10_HD_U_C1.jar
+hs_err*
+usercache.json
+mods/FullscreenWindowed-1.7.10-1.2.2.jar
+config/fw.cfg
+betterfps.txt
+mods/BetterFps-1.0.1.jar
+*hqm*
+config/NEI/client.cfg
