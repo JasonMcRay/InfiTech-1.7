@@ -14,12 +14,9 @@ When reporting issues make sure to:
 * Don't report crafting issues to mod developers. Report them in here, since I am the one changing recipes. So any recipe problems (crafting and unification) report to ME!
 
 ### Pull Requests
-Make them towards Dev_alpha branch
-And make sure they work :)
+[Squash](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html) them, and make sure they works
 
 ### Important for using dev configs
 I made these configs available for public so you can tinker with them. WARNING! I hold no responsibility if it will break something in your world!
 
 The DEV version was tested with Forge 1558.
-
-Also note that sometimes there is not only config files update, but sometimes the mods are updated as well, which means that develeopment configs will not work properly if you also don't update required mod. I will try to remember to note it in commit description.
