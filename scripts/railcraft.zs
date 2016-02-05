@@ -52,6 +52,12 @@ var dustClay = <gregtech:gt.metaitem.01:2805>;
 var sand = <minecraft:sand>;
 var water = <liquid:water>;
 var wetCokeBrick = <Railcraft:brick.sandy>;
+var steamoven = <Railcraft:machine.alpha:3>;
+
+# Block/item Removal
+
+recipes.remove(steamoven);
+steamoven.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # Recipe tweaks
 recipes.remove(railStandard);
