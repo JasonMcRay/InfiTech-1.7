@@ -68,6 +68,50 @@ var stickIron = <ore:stickIron>;
 var uraniumEnriched = <IC2:itemUran>;
 var Wrench = <ore:craftingToolWrench>;
 
+var ic2solarpanel			= <IC2:blockGenerator:3>;
+var ic2ElectricFurnace			= <IC2:blockMachine:2>;
+var ic2Macerator			= <IC2:blockMachine:3>;
+var ic2Extractor			= <IC2:blockMachine:4>;
+var ic2Compressor			= <IC2:blockMachine:5>;
+var ic2Recycler 			= <IC2:blockMachine:11>;
+var ic2InductionFurnace 		= <IC2:blockMachine:13>;
+var ic2MassFab				= <IC2:blockMachine:14>;
+var ic2ThermalCentrifuge		= <IC2:blockMachine2:3>;
+var ic2MetalFormer			= <IC2:blockMachine2:4>;
+var ic2OreWashingPlant			= <IC2:blockMachine2:5>;
+var ic2PatternStorage			= <IC2:blockMachine2:6>;
+var ic2Scanner				= <IC2:blockMachine2:7>;
+var ic2Replicator			= <IC2:blockMachine2:8>;
+var ic2SolidCanningMachine		= <IC2:blockMachine2:9>;
+var ic2BlastFurnace			= <IC2:blockMachine3:1>;
+var ic2BlockCuttingMachine		= <IC2:blockMachine3:2>;
+var ic2ForgeHammer			= <IC2:itemToolForgeHammer>;
+var ic2CrystalMemoryRaw 		= <IC2:itemRecipePart:4>;
+var ic2CrystalMemory			= <IC2:itemcrystalmemory>;
+
+# Tooltip
+
+ic2solarpanel.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2ElectricFurnace.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2Macerator.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2Extractor.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2Compressor.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2Recycler.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2InductionFurnace.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2MassFab.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2ThermalCentrifuge.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2MetalFormer.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2OreWashingPlant.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2PatternStorage.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2Scanner.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2Replicator.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2SolidCanningMachine.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2BlastFurnace.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2BlockCuttingMachine.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2ForgeHammer.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2CrystalMemoryRaw.addTooltip(format.red(format.bold("This item is DISABLED!")));
+ic2CrystalMemory.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
 # Electrical Tools Oredictionary Stuff
 <ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:101>);
 <ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:103>);
