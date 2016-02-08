@@ -151,6 +151,10 @@ recipes.addShaped(rotorCarbon, [
 SemiFluidGenerator.addFluid(<liquid:creosote> * 53, 8);
 SemiFluidGenerator.addFluid(<liquid:ic2biomass> * 53, 8);
 
+# Oredictionary
+<ore:blockYellowStripes>.add(<gregtech:gt.blockcasings3>);
+<ore:blockYellowStripes>.add(<gregtech:gt.blockcasings3:1>);
+
 # -- Fixing JABBA unification exploits --
 
 // Iron/PigIron/WroughtIron
