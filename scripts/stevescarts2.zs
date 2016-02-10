@@ -438,8 +438,8 @@ recipes.addShaped(blankupgrade, [
 
 # GT Integration
 recipes.remove(galgadoreye);
-ChemicalReactor.addRecipe(galgadoreye, null, endereye, ghastTear, moltenFieryBlood * 1000, 100); // Time is placeholder
-BlastFurnace.addRecipe([hotGalgadorianmetal], moltenGlowstone * 1000, [galgadoreye, stabilizedmetal], 100, 128, 2000); //Time, EU and Heat is placeholder
+ChemicalReactor.addRecipe(galgadoreye, null, endereye, ghastTear, moltenFieryBlood * 1000, 200);
+BlastFurnace.addRecipe([hotGalgadorianmetal], moltenGlowstone * 1000, [galgadoreye, stabilizedmetal], 3600, 120, 1920);
 recipes.remove(lumpofgalgador);
 VacuumFreezer.addRecipe(lumpofgalgador, hotGalgadorianmetal, 400);
 
