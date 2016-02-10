@@ -5,6 +5,9 @@
 import mods.ic2.Compressor;
 import mods.ic2.Macerator;
 import mods.gregtech.ArcFurnace;
+import mods.gregtech.BlastFurnace;
+import mods.gregtech.VacuumFreezer;
+import mods.gregtech.ChemicalReactor;
 
 
 # Aliases
@@ -155,6 +158,15 @@ var glowstonedust		= <ore:dustGlowstone>;
 var teslatite			= <ore:dustTeslatite>;
 var diamond			= <ore:gemDiamond>;
 var treesapling 		= <ore:treeSapling>;
+var endereye = <minecraft:ender_eye>;
+var ghastTear = <minecraft:ghast_tear>;
+
+// Fluids
+var moltenGlowstone = <liquid:molten.glowstone>;
+var moltenFieryBlood = <liquid:fieryblood>;
+
+// Custom Items
+var hotGalgadorianmetal = <InfinityCore:itemMaterial:12>;
 
 
 # Blocks/Items Removal
@@ -339,12 +351,6 @@ recipes.addShaped(compactsolarengine, [
 	[advpcb, fieldgenMV, advpcb],
 	[pistonhv, platestainlesssteel, pistonhv]]);
 
-recipes.remove(galgadoreye);
-recipes.addShaped(galgadoreye, [
-	[foilenderium, energyflowcircuit, foilchrome],
-	[energyflowcircuit, fieldgenEV, energyflowcircuit],
-	[foilneodymium, energyflowcircuit, foileuropium]]);
-
 recipes.remove(sawblade);
 recipes.addShaped(sawblade, [
 	[plateSteel, plateSteel, inddiamond],
@@ -431,6 +437,11 @@ recipes.addShaped(blankupgrade, [
 
 
 # GT Integration
+recipes.remove(galgadoreye);
+ChemicalReactor.addRecipe(galgadoreye, null, endereye, ghastTear, moltenFieryBlood * 1000, 100); // Time is placeholder
+BlastFurnace.addRecipe([hotGalgadorianmetal], moltenGlowstone * 1000, [galgadoreye, stabilizedmetal], 100, 128, 2000); //Time, EU and Heat is placeholder
+recipes.remove(lumpofgalgador);
+VacuumFreezer.addRecipe(lumpofgalgador, hotGalgadorianmetal, 400);
 
 recipes.remove(reinforcedmetalblock); 
 recipes.remove(reinforcedmetal);
