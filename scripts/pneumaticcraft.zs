@@ -141,6 +141,7 @@ var pureNetherQuartz = <appliedenergistics2:item.ItemMultiMaterial:11>;
 var purpleLamp = <bluepower:lamppurple>;
 var quiteClearGlass = <EnderIO:blockFusedQuartz:1>;
 var rangeUpgrade = <PneumaticCraft:machineUpgrade:8>;
+var redstoneTorch = <minecraft:redstone_torch>;
 var ringCompressedIron = <ore:ringIronCompressed>;
 var robotArmHV = <gregtech:gt.metaitem.01:32652>;
 var rodCompressedIron = <InfinityCore:itemMaterial:3>;
@@ -313,7 +314,7 @@ recipes.remove(aerialInterface);
 recipes.addShaped(aerialInterface, [
     [pressureChamberPart, beamCore, pressureChamberPart],
     [sensorMV, enderResonator, emitterMV],
-    [pressureChamberPart, tubePressureAdv, pressureChamberPart]]);
+    [pressureChamberPart, pneumaticHullAdv, pressureChamberPart]]);
 recipes.remove(compressorElStatic);
 recipes.addShaped(compressorElStatic, [
     [ironBars, plasticGray, ironBars],
@@ -369,7 +370,7 @@ recipes.remove(PCRefinery);
 recipes.addShaped(PCRefinery, [
     [plateCompressedIron, blazeRod, plateCompressedIron],
     [BCTank, heatConductor, BCTank],
-    [plateCompressedIron, pneumaticHullAdv, plateCompressedIron]]);
+    [plateCompressedIron, pneumaticHull, plateCompressedIron]]);
 recipes.remove(processingPlant);
 recipes.addShaped(processingPlant, [
     [plateCompressedIron, heatVent, plateCompressedIron],
@@ -395,6 +396,11 @@ recipes.addShaped(keroseneLamp, [
     [null, plateCompressedIron, null],
     [quiteClearGlass, null, quiteClearGlass],
     [plateCompressedIron, emptyCell, plateCompressedIron]]);
+recipes.remove(gpsTool);
+recipes.addShaped(gpsTool, [
+    [null, redstoneTorch, null],
+    [plasticRed, glassPane, plasticRed],
+    [plasticRed, diamondIndustrial, plasticRed]]);
 recipes.remove(upgradeVolume);
 Assembler.addRecipe(upgradeVolume, itemPlateCompressedIron * 4, airCanister, chemicalBlueDye * 576, 160, 30);
 Assembler.addRecipe(upgradeVolume, itemPlateCompressedIron * 4, airCanister, watermixedBlueDye * 576, 160, 30);
@@ -465,7 +471,7 @@ recipes.remove(logisticFrameDefaultStorage);
 Assembler.addRecipe(logisticFrameDefaultStorage, plasticLime * 8, integratedCircuit8 * 0, null, 38, 32);
 Pressure.removeRecipe([etchingAcidBucket]);
 Mixer.addRecipe(null, etchingAcid * 50, [spiderEye, plasticGreen, rottenFlesh, gunpowder], water * 50, 60, 20);
-ChemicalBath.addRecipe([unassembledPCB], emptyPCB, etchingAcid * 100, [5000], 1200, 8);
+ChemicalBath.addRecipe([unassembledPCB], emptyPCB, etchingAcid * 100, [7000], 1200, 8);
 Pressure.removeRecipe([emptyPCBFresh]);
 
 # Oredictionary
