@@ -43,6 +43,22 @@
 //      - Ender bag requires ender rift focus
 //      - Spinning wheel requires GT parts to create
 //      - Recipe added for defunct zombie brains to proper ones
+//      - Warded Arcana requires advanced circuits instead of zombie brains
+//      - Infusion Altar requires vinteum crystal instead of ender pearl
+//      - Pedestals significantly more expensive, lathe recipe unchanged
+//      - Arcane bore base recipe added
+//      - Thaumic Energistics recipes modified to fit Applied Energistics style when applicable
+//      - Crystallizer requires autoclave
+//      - Alembic and Vis Filter require plates instead of ingots
+//      - Added extruder recipe for essentia tubes out of thaumium
+//      - Thaumic Restorer now gated to MV, requires void metal block
+//      - Primordial gear require enderium plates
+//      - Thirsty Tank requires fused quartz
+//      - Forming press recipe for gold plate to 8 gold goins
+//      - Dynamisim tablet requires use core
+//      - Fishing core no longer fish specific, requires fish nugget and fish oil
+//      - Arcane bellows now gated by kanthal
+//      - Whatever else I forgot
 //   v0.6: InfiTech Compatible Port
 //      - Removed all references to Twilight Forest or Biomes O' Plenty
 //      - Modified Feather Fall infusion enchanting to bucket of water for level 2 and rubber boots for level 3 to account for removal of TF feather
@@ -208,6 +224,7 @@ import mods.gregtech.Assembler;
 import mods.gregtech.PrecisionLaser;
 import mods.gregtech.Polarizer;
 import mods.gregtech.Lathe;
+import mods.gregtech.Extruder;
 import mods.gregtech.FormingPress;
 import mods.gregtech.Canner;
 import mods.gregtech.FluidCanner;
@@ -368,9 +385,62 @@ Research.orphanResearch("RC_Crowbar_Void");
 Research.removeResearch("RC_Crowbar_Void");
 Research.removeTab("RAILCRAFT");
 
+// Infusion Altar
+Arcane.removeRecipe(<Thaumcraft:blockStoneDevice:2>);
+Arcane.removeRecipe(<Thaumcraft:blockStoneDevice:1>);
+
+// Alchemy
+Arcane.removeRecipe(<Thaumcraft:ItemResource:8>);
+Arcane.removeRecipe(<Thaumcraft:blockMetalDevice:1>);
+Arcane.removeRecipe(<Thaumcraft:blockTube:7>);
+
+// Thaumic Restorer
+Infusion.removeRecipe(<ThaumicTinkerer:repairer>);
+
+// Dynamism Tablet
+Arcane.removeRecipe(<ThaumicTinkerer:animationTablet>);
+
+// Warded Arcana
+Arcane.removeRecipe(<Thaumcraft:blockCosmeticOpaque:2>);
+Arcane.removeRecipe(<Thaumcraft:blockWoodenDevice:2>);
+Arcane.removeRecipe(<Thaumcraft:ItemArcaneDoor>);
+
 // Witching Gadgets
 Arcane.removeRecipe(<WitchingGadgets:WG_WoodenDevice>);
 Infusion.removeRecipe(<WitchingGadgets:item.WG_Bag:2>);
+
+// Magic bees
+Arcane.removeRecipe(<MagicBees:item.thaumiumGrafter>);
+Arcane.removeRecipe(<MagicBees:item.thaumiumScoop>);
+
+// Thaumic Energistics
+Arcane.removeRecipe(<thaumicenergistics:part.base:5>);
+recipes.removeShaped(<thaumicenergistics:storage.casing>);
+recipes.removeShaped(<thaumicenergistics:storage.essentia:0>);
+recipes.removeShaped(<thaumicenergistics:storage.essentia:1>);
+recipes.removeShaped(<thaumicenergistics:storage.essentia:2>);
+recipes.removeShaped(<thaumicenergistics:storage.essentia:3>);
+Arcane.removeRecipe(<thaumicenergistics:storage.component:0>);
+Arcane.removeRecipe(<thaumicenergistics:storage.component:1>);
+Arcane.removeRecipe(<thaumicenergistics:storage.component:2>);
+Arcane.removeRecipe(<thaumicenergistics:storage.component:3>);
+recipes.removeShaped(<thaumicenergistics:thaumicenergistics.block.essentia.cell.workbench>);
+Arcane.removeRecipe(<thaumicenergistics:material:2>);
+Arcane.removeRecipe(<thaumicenergistics:part.base:4>);
+recipes.removeShaped(<thaumicenergistics:wireless.essentia.terminal>);
+
+// Automagy
+Arcane.removeRecipe(<Automagy:blockBoiler>);
+Arcane.removeRecipe(<Automagy:blockThirstyTank>);
+
+// Primordial Gear
+Infusion.removeRecipe(<WitchingGadgets:item.WG_PrimordialHelm>);
+Infusion.removeRecipe(<WitchingGadgets:item.WG_PrimordialChest>);
+Infusion.removeRecipe(<WitchingGadgets:item.WG_PrimordialLegs>);
+Infusion.removeRecipe(<WitchingGadgets:item.WG_PrimordialBoots>);
+Infusion.removeRecipe(<WitchingGadgets:item.WG_PrimordialSword>);
+Infusion.removeRecipe(<WitchingGadgets:item.WG_PrimordialHammer>);
+Infusion.removeRecipe(<WitchingGadgets:item.WG_PrimordialAxe>);
 
 // Warded Jar
 Research.moveResearch("JARLABEL", "ALCHEMY", 6, -3);
@@ -499,6 +569,11 @@ Arcane.removeRecipe(<thaumicenergistics:focus.aewrench>);
 Arcane.addShaped("thaumicenergistics.TEFOCUSWRENCH", <thaumicenergistics:focus.aewrench>, "aer 10, ignis 10", [[<appliedenergistics2:item.ToolNetherQuartzWrench>, <ore:ringSteel>, <appliedenergistics2:item.ToolCertusQuartzWrench>], [<ore:ringSteel>, <ore:crystalPureFluix>, <ore:ringSteel>], [<appliedenergistics2:item.ToolCertusQuartzWrench>, <ore:ringSteel>, <appliedenergistics2:item.ToolNetherQuartzWrench>]]);
 Research.addArcanePage("thaumicenergistics.TEFOCUSWRENCH", <thaumicenergistics:focus.aewrench>);
 
+// Crafting Focus
+Arcane.removeRecipe(<Automagy:focusCrafting>);
+Arcane.addShaped("FOCUSCRAFTING", <Automagy:focusCrafting>, "ordo 30, terra 10, perditio 5", [[<ore:craftingTableWood>, <ore:ringBeryllium>, <Thaumcraft:blockTable:15>], [<ore:ringBeryllium>, <ore:lensOlivine>, <ore:ringBeryllium>], [<StevesWorkshop:production_table>, <ore:ringBeryllium>, <BiblioCraft:BiblioWorkbench>]]);
+Research.refreshResearchRecipe("FOCUSCRAFTING");
+
 print('Foci reconfigured');
 
 // Transmutations
@@ -626,7 +701,7 @@ Arcane.addShaped("ARCANELAMP", <Thaumcraft:blockMetalDevice:7> * 2, "ignis 12, a
 
 // Arcane Bellows
 Arcane.addShaped("BELLOWS", <Thaumcraft:blockWoodenDevice>, "aer 24, ordo 24", [[dustPyrotheum, <ore:plankWood>, <ore:plankWood>], 
-                                                                                [<ore:ringKanthal>, <ore:dustInfusedAir>, <minecraft:leather>],
+                                                                                [<ore:ingotHotKanthal>, <ore:dustInfusedAir>, <minecraft:leather>],
 																				[dustPyrotheum, <ore:plankWood>, <ore:plankWood>]]);
 
 // Brain in a Jar
@@ -657,7 +732,7 @@ Arcane.addShaped("ENCHFABRIC", <Thaumcraft:ItemResource:7>, "ordo 1, perditio 1,
 Research.addPrereq("BOOTSTRAVELLER", "ADVANCEDROBES", true);
 Infusion.addRecipe("BOOTSTRAVELLER", <harvestcraft:hardenedleatherbootsItem>, [<WitchingGadgets:item.WG_Material:5>, <WitchingGadgets:item.WG_Material:5>, <OpenComputers:item:99>, <OpenComputers:item:49>, <Thaumcraft:ItemShard>, <minecraft:fish:*>], "iter 32, volatus 32", <Thaumcraft:BootsTraveller>, 1);
 
-Assembler.addRecipe([<Thaumcraft:ItemZombieBrain>], <Thaumcraft:ItemResource:5>, <liquid:fishoil> * 10, [10000], 20, 4);
+ChemicalBath.addRecipe([<Thaumcraft:ItemZombieBrain>], <Thaumcraft:ItemResource:5>, <liquid:fishoil> * 10, [10000], 20, 4);
 game.setLocalization("en_US", "item.ItemResource.5.name", "Dull Zombie Brain");
 
 print('Artifice mildly Gregged');
@@ -698,11 +773,12 @@ Infusion.addRecipe("ELEMENTALHOE", <gregtech:gt.metaitem.01:23306>, [<Thaumcraft
 
 // Arcane Bore
 Infusion.addRecipe("ARCANEBORE", <Thaumcraft:FocusExcavation>, [<minecraft:diamond_axe>, <Thaumcraft:ItemShard:0>, <Thaumcraft:ItemShard:1>, <minecraft:diamond_pickaxe>, <Thaumcraft:ItemShard:2>, <Thaumcraft:ItemShard:3>, <minecraft:diamond_shovel>, <Thaumcraft:ItemShard:4>, <Thaumcraft:ItemShard:5>], "machina 64, motus 32, perfodio 64, potentia 32, vacuos 32", <Thaumcraft:blockWoodenDevice:5>, 7);
+Arcane.addShaped("ARCANEBORE", <Thaumcraft:blockWoodenDevice:4>, "aer 25, ordo 25", [[<ore:plateThaumium>, <gregtech:gt.metaitem.01:32600>, <ore:plateThaumium>], [<ore:pipeMediumPlatinum>, <Thaumcraft:blockWoodenDevice:6>, <gregtech:gt.metaitem.01:32600>], [<ore:plateThaumium>, <Thaumcraft:blockTube:0>, <ore:plateThaumium>]]);
 Research.clearPages("ARCANEBORE");
 Research.addPage("ARCANEBORE", "tc.research_page.ARCANEBORE.1");
 Research.addInfusionPage("ARCANEBORE", <Thaumcraft:blockWoodenDevice:5>);
 Research.addPage("ARCANEBORE", "tc.research_page.ARCANEBORE.2");
-Research.addInfusionPage("ARCANEBORE", <Thaumcraft:blockWoodenDevice:4>);
+Research.addArcanePage("ARCANEBORE", <Thaumcraft:blockWoodenDevice:4>);
 Research.addPage("ARCANEBORE", "tc.research_page.ARCANEBORE.3");
 
 // Thaumostatic Harness
@@ -710,7 +786,87 @@ Slicer.addRecipe(<gregtech:gt.metaitem.01:29880> * 4, <gregtech:gt.metaitem.01:1
 Infusion.addRecipe("HOVERHARNESS", <WitchingGadgets:item.WG_AdvancedRobeChest>, [<Thaumcraft:BlockJarFilledItem>.withTag({Aspects: [{amount: 64, key: "potentia"}]}), <Thaumcraft:blockTube:1>, <gregtech:gt.metaitem.01:32610>, <Thaumcraft:ItemShard:0>, <gregtech:gt.metaitem.02:21330>, <Thaumcraft:ItemShard:0>, <gregtech:gt.metaitem.01:32610>, <Thaumcraft:blockTube:1>], "iter 32, machina 32, potentia 32, volatus 96", <Thaumcraft:HoverHarness>, 6);
 Infusion.addRecipe("HOVERGIRDLE", <Thaumcraft:ItemBaubleBlanks:2>, [<gregtech:gt.metaitem.01:29880>, <chisel:cloud>, <OpenComputers:item:100>, <gregtech:gt.metaitem.01:29880>, <chisel:cloud>, <Thaumcraft:blockCrystal:0>, <gregtech:gt.metaitem.01:29880>, <chisel:cloud>, <OpenComputers:item:100>, <gregtech:gt.metaitem.01:29880>, <chisel:cloud>, <Thaumcraft:blockCrystal:0>], "aer 48, iter 32, potentia 48, volatus 32", <Thaumcraft:ItemGirdleHover>, 8);
 
+// Infusion Altar
+Arcane.addShaped("INFUSION", <Thaumcraft:blockStoneDevice:2>, "ordo 40", [[<Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:ItemShard:*>, <Thaumcraft:blockCosmeticSolid:6>], [<Thaumcraft:ItemShard:*>, <ore:gemVinteum>, <Thaumcraft:ItemShard:*>], [<Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:ItemShard:*>, <Thaumcraft:blockCosmeticSolid:6>]]);
+Arcane.addShaped("INFUSION", <Thaumcraft:blockStoneDevice:1>, "aer 15, ordo 15, ignis 3, aqua 3, terra 3, perditio 3", [[<Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>], [null, <Thaumcraft:blockCosmeticSolid:6>, null], [<Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>]]);
+
+// Warded Arcana
+Arcane.addShaped("WARDEDARCANA", <Thaumcraft:blockCosmeticOpaque:2>, "ordo 10, aqua 5, terra 5, ignis 5", [[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<Thaumcraft:blockWoodenDevice:6>, <IC2:itemPartCircuitAdv>, <Thaumcraft:blockWoodenDevice:6>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>]]);
+Arcane.addShaped("WARDEDARCANA", <Thaumcraft:ItemArcaneDoor>, "aqua 20, ordo 10, terra 10, ignis 10", [[<ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>], [<Thaumcraft:blockWoodenDevice:6>, <IC2:itemPartCircuitAdv>, <Thaumcraft:blockWoodenDevice:6>], [<ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>]]);
+Arcane.addShaped("WARDEDARCANA", <Thaumcraft:blockWoodenDevice:2>, "aqua 20, ordo 10, terra 10, ignis 5", [[null, <IC2:itemPartCircuitAdv>, null], [<Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>]]);
+
 print('Artifice Majorly Gregged');
+
+Infusion.addRecipe("PRIMORDIALARMOR", <WitchingGadgets:WG_MetalDevice:7>, [<Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemEldritchObject:3>, <gregtech:gt.metaitem.01:18321>, <Thaumcraft:ItemHelmetFortress>, <gregtech:gt.metaitem.01:18321>, <Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>], "aer 32, aqua 32, ignis 32, terra 32, ordo 32, perditio 32, tutamen 64, praecantatio 64, metallum 128", <WitchingGadgets:item.WG_PrimordialHelm>, 10);
+Infusion.addRecipe("PRIMORDIALARMOR", <WitchingGadgets:WG_MetalDevice:7>, [<Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemEldritchObject:3>, <gregtech:gt.metaitem.01:18321>, <Thaumcraft:ItemChestplateFortress>, <gregtech:gt.metaitem.01:18321>, <Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>], "aer 32, aqua 32, ignis 32, terra 32, ordo 32, perditio 32, tutamen 64, praecantatio 64, metallum 128", <WitchingGadgets:item.WG_PrimordialChest>, 10);
+Infusion.addRecipe("PRIMORDIALARMOR", <WitchingGadgets:WG_MetalDevice:7>, [<Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemEldritchObject:3>, <gregtech:gt.metaitem.01:18321>, <Thaumcraft:ItemLeggingsFortress>, <gregtech:gt.metaitem.01:18321>, <Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>], "aer 32, aqua 32, ignis 32, terra 32, ordo 32, perditio 32, tutamen 64, praecantatio 64, metallum 128", <WitchingGadgets:item.WG_PrimordialLegs>, 10);
+Infusion.addRecipe("PRIMORDIALARMOR", <WitchingGadgets:WG_MetalDevice:7>, [<Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemEldritchObject:3>, <gregtech:gt.metaitem.01:18321>, <Thaumcraft:BootsTraveller>, <gregtech:gt.metaitem.01:18321>, <Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>], "aer 32, aqua 32, ignis 32, terra 32, ordo 32, perditio 32, tutamen 64, praecantatio 64, metallum 128", <WitchingGadgets:item.WG_PrimordialBoots>, 10);
+Infusion.addRecipe("PRIMORDIALWEAPONRY", <WitchingGadgets:WG_MetalDevice:7>, [<gregtech:gt.metaitem.01:19321>, <Thaumcraft:ItemSwordVoid>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:WandRod>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemSwordVoid>], "aer 32, aqua 32, ignis 32, terra 32, ordo 32, perditio 32, telum 64, praecantatio 64, metallum 128", <WitchingGadgets:item.WG_PrimordialSword>, 10);
+Infusion.addRecipe("PRIMORDIALWEAPONRY", <WitchingGadgets:WG_MetalDevice:7>, [<gregtech:gt.metaitem.01:19321>, <Thaumcraft:ItemPickVoid>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:WandRod>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemSwordVoid>], "aer 32, aqua 32, ignis 32, terra 32, ordo 32, perditio 32, telum 32, instrumentum 32, praecantatio 64, metallum 128", <WitchingGadgets:item.WG_PrimordialHammer>, 10);
+Infusion.addRecipe("PRIMORDIALWEAPONRY", <WitchingGadgets:WG_MetalDevice:7>, [<gregtech:gt.metaitem.01:19321>, <Thaumcraft:ItemAxeVoid>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:WandRod>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemAxeVoid>], "aer 32, aqua 32, ignis 32, terra 32, ordo 32, perditio 32, telum 32, instrumentum 32, praecantatio 64, metallum 128", <WitchingGadgets:item.WG_PrimordialAxe>, 10);
+
+print('Witching Greg');
+
+// Thaumic Restorer
+Infusion.addRecipe("REPAIRER", <WitchingGadgets:WG_MetalDevice:7>, [<OpenBlocks:autoanvil>, <gregtech:gt.metaitem.01:17300>, <gregtech:gt.metaitem.01:17305>, <gregtech:gt.metaitem.01:17086>, <gregtech:gt.metaitem.01:17346>, <IC2:itemPartIndustrialDiamond>, <chisel:ballomoss>, <harvestcraft:hardenedleatherItem>, <Thaumcraft:ItemResource:7>, <IC2:itemPartCarbonPlate>, <gregtech:gt.metaitem.01:17330>, <InfinityCore:itemMaterial:10>], "fabrico 50, instrumentum 20, ordo 15, praecantatio 20", <ThaumicTinkerer:repairer>, 8);
+
+// Dynamism Tablet
+Arcane.addShaped("ANIMATION_TABLET", <ThaumicTinkerer:animationTablet>, "aer 50, ordo 30, ignis 20", [[<ore:plateGold>, <ore:plateIron>, <ore:plateGold>], [<ore:plateIron>, <Thaumcraft:ItemGolemCore:8>, <ore:plateIron>], [null, null, null]]);
+
+print('Thaumics Tinkered');
+
+// Thaumium Grafter/Scoop
+Arcane.addShaped("MB_Grafter", <MagicBees:item.thaumiumGrafter>, "ordo 5", [[null, <ore:stickWood>, null], [<ore:craftingToolHardHammer>, <ore:stickWood>, null], [<ore:plateThaumium>, <ore:ingotThaumium>, <ore:craftingToolFile>]]);
+Arcane.addShaped("MB_Scoop", <MagicBees:item.thaumiumScoop>, "ordo 5", [[<ore:stickThaumium>, <ore:blockWool>, <ore:stickThaumium>], [<ore:stickThaumium>, <ore:stickThaumium>, <ore:stickThaumium>], [<ore:craftingToolHardHammer>, <ore:stickThaumium>, <ore:craftingToolWireCutter>]]);
+
+print('Gregorious Princess');
+
+// Arcane crafting terminal
+Arcane.addShaped("thaumicenergistics.TEARCANETERM", <thaumicenergistics:part.base:5>, "ordo 10, perditio 10, aqua 10, ignis 10, terra 10, aer 10", [[<ore:craftingToolScrewdriver>, <appliedenergistics2:item.ItemMultiPart:380>, <ore:craftingToolSoftHammer>], [<ore:screwCertusQuartz>, <Thaumcraft:blockTable:15>, <ore:screwCertusQuartz>], [<ore:plateNetherQuartz>, <appliedenergistics2:item.ItemMultiMaterial:23>, <ore:plateNetherQuartz>]]);
+
+// Essentia terminals
+Arcane.addShaped("thaumicenergistics.TEESSTERM", <thaumicenergistics:part.base:4>, "aqua 5, ordo 2, ignis 1", [[<ore:stickNetherQuartz>, <thaumicenergistics:material:0>, <ore:stickNetherQuartz>], [<ore:itemIlluminatedPanel>, <ore:circuitGood>, <Thaumcraft:ItemResource:8>], [<ore:stickNetherQuartz>, <thaumicenergistics:material:1>, <ore:stickNetherQuartz>]]);
+recipes.addShaped(<thaumicenergistics:wireless.essentia.terminal>, [[<appliedenergistics2:item.ItemMultiMaterial:41>, <thaumicenergistics:part.base:4>, <appliedenergistics2:item.ItemMultiMaterial:41>], [<ore:plateNetherQuartz>, <appliedenergistics2:item.ItemMultiMaterial:24>, <ore:plateNetherQuartz>], [<ore:plateNetherQuartz>, <appliedenergistics2:tile.BlockDenseEnergyCell>, <ore:plateNetherQuartz>]]);
+
+// Storage Component
+Arcane.addShaped("thaumicenergistics.TESTORAGE", <thaumicenergistics:storage.component:0>, "ignis 3, ordo 1", [[<Thaumcraft:ItemWispEssence>, <ore:itemCertusQuartz>, <Thaumcraft:ItemWispEssence>], [<ore:itemCertusQuartz>, <appliedenergistics2:item.ItemMultiMaterial:22>, <ore:itemCertusQuartz>], [<Thaumcraft:ItemWispEssence>, <ore:itemCertusQuartz>, <Thaumcraft:ItemWispEssence>]]);
+Arcane.addShaped("thaumicenergistics.TESTORAGE", <thaumicenergistics:storage.component:1>, "ignis 3, ordo 2", [[<ore:dustInfusedOrder>, <thaumicenergistics:storage.component:0>, <ore:dustInfusedOrder>], [<thaumicenergistics:storage.component:0>, <appliedenergistics2:item.ItemMultiMaterial:23>, <thaumicenergistics:storage.component:0>], [<ore:dustInfusedOrder>, <thaumicenergistics:storage.component:0>, <ore:dustInfusedOrder>]]);
+Arcane.addShaped("thaumicenergistics.TESTORAGE", <thaumicenergistics:storage.component:2>, "ignis 3, ordo 4", [[<Thaumcraft:ItemResource:14>, <thaumicenergistics:storage.component:1>, <Thaumcraft:ItemResource:14>], [<thaumicenergistics:storage.component:1>, <appliedenergistics2:item.ItemMultiMaterial:24>, <thaumicenergistics:storage.component:1>], [<Thaumcraft:ItemResource:14>, <thaumicenergistics:storage.component:1>, <Thaumcraft:ItemResource:14>]]);
+Arcane.addShaped("thaumicenergistics.TESTORAGE", <thaumicenergistics:storage.component:3>, "ignis 3, ordo 8", [[<ore:dustVinteum>, <thaumicenergistics:storage.component:2>, <ore:dustVinteum>], [<thaumicenergistics:storage.component:2>, <appliedenergistics2:item.ItemMultiMaterial:24>, <thaumicenergistics:storage.component:2>], [<ore:dustVinteum>, <thaumicenergistics:storage.component:2>, <ore:dustVinteum>]]);
+
+// Cell housing
+recipes.addShaped(<thaumicenergistics:storage.casing>, [[<ore:craftingToolScrewdriver>, <ore:plateCertusQuartz>, <ore:screwQuartzite>], [<ore:plateThaumium>, <Thaumcraft:blockCosmeticOpaque:2>, <ore:plateThaumium>], [<ore:screwQuartzite>, <ore:plateAluminium>, <ore:craftingToolHardHammer>]]);
+recipes.addShaped(<thaumicenergistics:storage.casing>, [[<ore:craftingToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwQuartzite>], [<ore:plateThaumium>, <Thaumcraft:blockCosmeticOpaque:2>, <ore:plateThaumium>], [<ore:screwQuartzite>, <ore:plateAluminium>, <ore:craftingToolScrewdriver>]]);
+
+// Essentia cell workbench
+recipes.addShaped(<thaumicenergistics:thaumicenergistics.block.essentia.cell.workbench>, [[<Thaumcraft:ItemResource:7>, <gregtech:gt.metaitem.01:32740>, <Thaumcraft:ItemResource:7>], [<ore:plateThaumium>, <appliedenergistics2:item.ItemMultiMaterial:23>, <ore:plateThaumium>], [<ore:plateThaumium>, <ore:plateThaumium>, <ore:plateThaumium>]]);
+
+Research.clearPages("thaumicenergistics.TESTORAGE");
+Research.addPage("thaumicenergistics.TESTORAGE", "thaumicenergistics.research_page.TESTORAGE.1");
+Research.addPage("thaumicenergistics.TESTORAGE", "thaumicenergistics.research_page.TESTORAGE.2");
+Research.addArcanePage("thaumicenergistics.TESTORAGE", <thaumicenergistics:storage.component:0>);
+Research.addArcanePage("thaumicenergistics.TESTORAGE", <thaumicenergistics:storage.component:1>);
+Research.addArcanePage("thaumicenergistics.TESTORAGE", <thaumicenergistics:storage.component:2>);
+Research.addArcanePage("thaumicenergistics.TESTORAGE", <thaumicenergistics:storage.component:3>);
+Research.addCraftingPage("thaumicenergistics.TESTORAGE", <thaumicenergistics:storage.casing>);
+Research.addCraftingPage("thaumicenergistics.TESTORAGE", <thaumicenergistics:storage.essentia>);
+Research.addCraftingPage("thaumicenergistics.TESTORAGE", <thaumicenergistics:thaumicenergistics.block.essentia.cell.workbench>);
+
+// Gearbox
+Research.clearPages("thaumicenergistics.TEIRONGEARBOX");
+Research.addPage("thaumicenergistics.TEIRONGEARBOX", "thaumicenergistics.research_page.TEIRONGEARBOX.1");
+Research.addPage("thaumicenergistics.TEIRONGEARBOX", "thaumicenergistics.research_page.TEIRONGEARBOX.2");
+Research.addArcanePage("thaumicenergistics.TEIRONGEARBOX", <thaumicenergistics:thaumicenergistics.block.gear.box>);
+
+print('GregEnergistics');
+
+// Alchemical Boiler
+Arcane.addShaped("ALCHEMYBOILER", <Automagy:blockBoiler>, "aqua 7, ignis 5", [[<ore:plateIron>, <Thaumcraft:blockMetalDevice>, <ore:plateIron>], [<ore:plateIron>, <ore:craftingFurnace>, <ore:plateIron>], [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
+
+// Thirsty Tank
+Arcane.addShaped("THIRSTYTANK", <Automagy:blockThirstyTank>, "aqua 16, ordo 4, perditio 4", [[<Thaumcraft:blockCosmeticSolid:6>, <EnderIO:blockFusedQuartz>, <Thaumcraft:blockCosmeticSolid:6>], [<EnderIO:blockFusedQuartz>, <Automagy:avaricePearl>, <EnderIO:blockFusedQuartz>], [<Thaumcraft:blockCosmeticSolid:6>, <ore:shardWater>, <Thaumcraft:blockCosmeticSolid:6>]]);
+
+print('Autogreg');
 
 // Duplicating Recipes
 Research.clearPages("ALCHEMICALDUPLICATION"); 
@@ -750,7 +906,7 @@ Infusion.addRecipe("COREALCHEMY", <Thaumcraft:ItemGolemCore:5>, [<Thaumcraft:blo
 Infusion.addRecipe("CORELUMBER", <Thaumcraft:ItemGolemCore:3>, [<Thaumcraft:ItemAxeElemental>, <gregtech:gt.metaitem.02:3335>, <gregtech:gt.metaitem.01:32652>, <gregtech:gt.metaitem.02:3339>], "arbor 16, instrumentum 16, meto 32, electrum 8", <Thaumcraft:ItemGolemCore:7>, 5);
 Infusion.addRecipe("COREUSE", <Thaumcraft:ItemGolemCore:1>, [<ExtraUtilities:glove>, <OpenComputers:item:42>, <gregtech:gt.metaitem.01:32652>, <WitchingGadgets:item.WG_ThaumiumShears>], "machina 16, instrumentum 16, humanus 32, electrum 8", <Thaumcraft:ItemGolemCore:8>, 5);
 Infusion.addRecipe("CORESORTING", <Thaumcraft:ItemGolemCore:1>, [<Thaumcraft:ItemZombieBrain>, <OpenComputers:item:29>, <gregtech:gt.metaitem.01:32729>, <OpenComputers:item:61>], "cognitio 16, vacuos 16, permutatio 32, electrum 8", <Thaumcraft:ItemGolemCore:10>, 5);
-Infusion.addRecipe("COREFISHING", <Thaumcraft:ItemGolemCore:3>, [<minecraft:fishing_rod>, <harvestcraft:calamarirawItem>, <minecraft:fish:1>, <gregtech:gt.metaitem.01:32652>, <minecraft:fish:2>, <minecraft:fish:3>], "aqua 16, bestia 16, meto 32, electrum 8", <Thaumcraft:ItemGolemCore:11>, 5);
+Infusion.addRecipe("COREFISHING", <Thaumcraft:ItemGolemCore:3>, [<minecraft:fishing_rod>, <harvestcraft:calamarirawItem>, <gregtech:gt.metaitem.01:30711>, <gregtech:gt.metaitem.01:32652>, <minecraft:fish:*>, <Thaumcraft:ItemNuggetFish>], "aqua 16, bestia 16, meto 32, electrum 8", <Thaumcraft:ItemGolemCore:11>, 5);
 
 // Golem Upgrade Recipes
 Arcane.removeRecipe(<Thaumcraft:ItemGolemUpgrade:0>);
@@ -893,14 +1049,18 @@ Arcane.addShaped("DECONSTRUCTOR", <Thaumcraft:blockTable:14>, "perditio 20, ordo
                                                                                                     [<minecraft:golden_axe>, <Thaumcraft:blockTable>, <minecraft:golden_pickaxe>]]);
 
 // Essentia piping
-// Assembler.addRecipe(<Thaumcraft:blockTube:0>, <gregtech:gt.blockmachines:5170>, <Thaumcraft:blockTube:0> * 0, <liquid:molten.thaumium> * 18, 40, 24);
-// Assembler.addRecipe(<Thaumcraft:blockTube:0> * 2, <gregtech:gt.blockmachines:5110>, <Thaumcraft:blockTube:0> * 0, <liquid:molten.thaumium> * 36, 40, 24);
-// Assembler.addRecipe(<Thaumcraft:blockTube:0> * 2, <gregtech:gt.blockmachines:5120>, <Thaumcraft:blockTube:0> * 0, <liquid:molten.thaumium> * 36, 40, 24);
-// Assembler.addRecipe(<Thaumcraft:blockTube:0> * 4, <gregtech:gt.blockmachines:5130>, <Thaumcraft:blockTube:0> * 0, <liquid:molten.thaumium> * 72, 40, 120);
-// Assembler.addRecipe(<Thaumcraft:blockTube:0> * 8, <gregtech:gt.blockmachines:5140>, <Thaumcraft:blockTube:0> * 0, <liquid:molten.thaumium> * 144, 40, 120);
-// Assembler.addRecipe(<Thaumcraft:blockTube:0> * 16, <gregtech:gt.blockmachines:5150>, <Thaumcraft:blockTube:0> * 0, <liquid:molten.thaumium> * 288, 40, 120);
-// Assembler.addRecipe(<Thaumcraft:blockTube:0> * 32, <gregtech:gt.blockmachines:5160>, <Thaumcraft:blockTube:0> * 0, <liquid:molten.thaumium> * 576, 40, 480);
-// Assembler.addRecipe(<Thaumcraft:blockTube:1>, <Thaumcraft:blockTube:0>, <gregtech:gt.metaitem.01:32730> * 0, <liquid:molten.thaumium> * 18, 20, 24);
+Extruder.addRecipe(<Thaumcraft:blockTube:0> * 2, <Thaumcraft:ItemResource:2>, <gregtech:gt.metaitem.01:32358> * 0, 4, 128);
+
+// Vis Filter
+Arcane.addShaped("DISTILESSENTIA", <Thaumcraft:ItemResource:8>, "ordo 5, aqua 5", [[<ore:plateGold>, <Thaumcraft:blockWoodenDevice:7>, <ore:plateGold>]]);
+
+// Alembic
+Arcane.addShaped("DISTILESSENTIA", <Thaumcraft:blockMetalDevice:1>, "aer 5, aqua 5", [[<Thaumcraft:ItemResource:8>, <ore:plateIron>, <ore:plateGold>], [<ore:plateIron>, <ore:bucketEmpty>, <ore:plateIron>], [<ore:plateIron>, null, <ore:plateIron>]]);
+
+// Crystallizer
+Arcane.addShaped("ESSENTIACRYSTAL", <Thaumcraft:blockTube:7>, "terra 15, aqua 5, ordo 5", [[null, <gregtech:gt.blockmachines:571>, null], [<Thaumcraft:ItemShard:6>, <Thaumcraft:blockMetalDevice:9>, <Thaumcraft:ItemShard:6>], [null, <Thaumcraft:blockTube:0>, null]]);
+
+print('Alchemical Greggery');
 
 // Copper Wand Cap
 recipes.addShaped(<Thaumcraft:WandCap:3>, [[null, <ore:roundCopper>, null], [<Thaumcraft:ItemThaumonomicon>.reuse(), <ore:ringCopper>, <ore:craftingToolHardHammer>]]);
@@ -918,16 +1078,21 @@ Arcane.addShaped("CAP_thaumium", <Thaumcraft:WandCap:6>, "ordo 10, ignis 10, aer
 Infusion.addRecipe("CAP_thaumium", <Thaumcraft:WandCap:6>, [salisMundus, salisMundus], "auram 8, potentia 16", <Thaumcraft:WandCap:2>, 3);
 
 // Voidmetal Wand Cap
-Arcane.addShaped("CAP_void", <Thaumcraft:WandCap:8> * 2, "perditio 200, ordo 200, ignis 200, terra 200, aqua 200, aer 200", [[<ore:ingotVoid>, <ore:ingotVoid>, <ore:ingotVoid>], 
-                                                                                                                             [<ore:ingotVoid>, null, <ore:ingotVoid>]]);
+Arcane.addShaped("CAP_void", <Thaumcraft:WandCap:8> * 2, "perditio 200, ordo 200, ignis 200, terra 200, aqua 200, aer 200", [[<ore:plateVoid>, <ore:plateVoid>, <ore:plateVoid>], 
+                                                                                                                             [<ore:plateVoid>, null, <ore:plateVoid>]]);
 Infusion.addRecipe("CAP_void", <Thaumcraft:WandCap:8>, [salisMundus, salisMundus, salisMundus, salisMundus], "alienis 32, auram 32, potentia 32, vacuos 32", <Thaumcraft:WandCap:7>, 9);
 
 // Greatwood Rod
 Arcane.addShaped("ROD_greatwood", <Thaumcraft:WandRod>, "perditio 25, terra 25", [[null, null, <Thaumcraft:blockMagicalLog>], 
                                                                                   [null, <ore:stickSteel>, null],
                                                                                   [<Thaumcraft:blockMagicalLog>, null, null]]);
-// Infusion.addRecipe("ROD_greatwood", <minecraft:stick>, [<Thaumcraft:ItemShard:6>, <Thaumcraft:blockMagicalLog>], "perditio 4, terra 4", <Thaumcraft:WandRod>, 1);
-// Assembler.addRecipe(<Thaumcraft:WandRod>, <Thaumcraft:blockMagicalLog> * 2, <Thaumcraft:WandRod> * 0, 360, 120);
+
+// Adjust NEI to match
+NEI.addEntry(<Thaumcraft:WandCasting:2>.withTag({cap: "copper", rod: "wood", aqua: 2500, terra: 2500, ignis: 2500, ordo: 2500, perditio: 2500, aer: 2500}));
+NEI.addEntry(<Thaumcraft:WandCasting:12>.withTag({cap: "silver", rod: "greatwood", aqua: 5000, terra: 5000, ignis: 5000, ordo: 5000, perditio: 5000, aer: 5000}));
+NEI.addEntry(<Thaumcraft:WandCasting:54>.withTag({aqua: 10000, terra: 10000, ignis: 10000, cap: "thaumium", rod: "silverwood", ordo: 10000, perditio: 10000, aer: 10000}));
+NEI.addEntry(<Thaumcraft:WandCasting:128>.withTag({aqua: 15000, terra: 15000, ignis: 15000, cap: "thaumium", rod: "silverwood", ordo: 15000, sceptre: 1 as byte, perditio: 15000, aer: 15000}));
+NEI.addEntry(<Thaumcraft:WandCasting:192>.withTag({cap: "void", rod: "primal_staff", sceptre: 1 as byte, terra: 37500, aqua: 37500, ignis: 37500, ordo: 37500, aer: 37500, perditio: 37500, AttributeModifiers: [{UUIDMost: -3801225194067177672 as long, UUIDLeast: -6586624321849018929 as long, Amount: 6.0, AttributeName: "generic.attackDamage", Operation: 0, Name: "Weapon modifier"}]}));
 
 // Obsidian Rod
 Infusion.addRecipe("ROD_obsidian", <gregtech:gt.metaitem.01:23306>, [<minecraft:obsidian>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:3>], "praecantatio 48, tenebrae 48, terra 96", <Thaumcraft:WandRod:1>, 2);
@@ -1019,7 +1184,7 @@ Research.addInfusionPage("GT_MAGICABSORB", <gregtech:gt.blockmachines:1128>);
 
 Research.addPrereq("GT_MAGICABSORB2", "GT_TRANSADAMANTIUM", true);
 Research.clearPages("GT_MAGICABSORB2");
-Research.addPage("GT_MAGICABSORB2", "tc.research_page.GT_MAGICABSORB2.1");
+Research.addPage("GT_MAGICABSORB2", "gt.research.page.1.GT_MAGICABSORB2");
 Infusion.removeRecipe(<gregtech:gt.blockmachines:1129>);
 Infusion.addRecipe("GT_MAGICABSORB2", <gregtech:gt.blockmachines:13>, [<gregtech:gt.metaitem.01:32673>, <gregtech:gt.metaitem.01:32705>, <gregtech:gt.metaitem.01:17319>, <gregtech:gt.metaitem.01:32692>, <Thaumcraft:blockStoneDevice:5>, <gregtech:gt.metaitem.01:32705>, <gregtech:gt.metaitem.01:17319>, <gregtech:gt.metaitem.01:32692>], "potentia 64, machina 128, praecantatio 64, electrum 128, instrumentum 128, vacuos 64", <gregtech:gt.blockmachines:1129>, 10);
 Infusion.removeRecipe(<gregtech:gt.blockmachines:1130>);
@@ -1074,7 +1239,7 @@ Research.refreshResearchRecipe("VISPOWER");
 // Bone Bow
 Research.clearPages("BONEBOW"); 
 Research.addPage("BONEBOW", "tc.research_page.BONEBOW.1");
-Infusion.addRecipe("BONEBOW", <gregtech:gt.metaitem.02:22028>, [<minecraft:bone>, gemVinteum, <minecraft:string>, <Thaumcraft:ItemShard:5>, <minecraft:bone>, gemVinteum, <minecraft:string>, <Thaumcraft:ItemShard:5>], "perditio 48, aer 24, telum 48, exanimis 24", <Thaumcraft:ItemBowBone>, 6);
+Infusion.addRecipe("BONEBOW", <gregtech:gt.metaitem.02:22306>, [<minecraft:bone>, gemVinteum, <minecraft:string>, <Thaumcraft:ItemShard:5>, <minecraft:bone>, gemVinteum, <minecraft:string>, <Thaumcraft:ItemShard:5>], "perditio 48, aer 24, telum 48, exanimis 24", <Thaumcraft:ItemBowBone>, 6);
 Research.addInfusionPage("BONEBOW", <Thaumcraft:ItemBowBone>);
 Research.addPrereq("BONEBOW", "INFUSION", true);
 
@@ -1680,7 +1845,7 @@ Crucible.addRecipe("GT_TRANSADAMANTIUM", <gregtech:gt.metaitem.01:319>, <ore:dus
 Research.setConcealed("GT_TRANSADAMANTIUM", true);
 game.setLocalization("en_US", "gt.metaitem.01.12319.name", "Hot Adamantium Ingot");
 // NEI.addEntry(<gregtech:gt.metaitem.01:12319>);
-BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12319>], [<gregtech:gt.metaitem.01:2319>], 2500, 1600, 3516);
+BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12319>], [<gregtech:gt.metaitem.01:2319>], 2500, 1600, 3598);
 VacuumFreezer.addRecipe(<gregtech:gt.metaitem.01:11319>, <gregtech:gt.metaitem.01:12319>, 800);
 
 // Damascus Steel
@@ -1853,9 +2018,13 @@ Crucible.addRecipe("GT_TRANSALUMINIUM", nuggetAluminium * 3, nuggetAluminium, "i
 
 // Refresh Recipes
 Research.refreshResearchRecipe("PLANTS");
+Research.refreshResearchRecipe("INFUSION");
 Research.refreshResearchRecipe("THAUMONOMICON");
 Research.refreshResearchRecipe("GOGGLES");
 Research.refreshResearchRecipe("BELLOWS");
+Research.refreshResearchRecipe("DISTILESSENTIA");
+Research.refreshResearchRecipe("ESSENTIACRYSTAL");
+Research.refreshResearchRecipe("WARDEDARCANA");
 Research.refreshResearchRecipe("HUNGRYCHEST");
 Research.refreshResearchRecipe("FOCUSPOUCH");
 Research.refreshResearchRecipe("ENCHFABRIC");
@@ -1893,5 +2062,15 @@ Research.refreshResearchRecipe("AUTOHANDMIRROR");
 Research.refreshResearchRecipe("ENCHANTER");
 Research.refreshResearchRecipe("SPINNINGWHEEL");
 Research.refreshResearchRecipe("ENDERBAG");
+Research.refreshResearchRecipe("REPAIRER");
+Research.refreshResearchRecipe("MB_Scoop");
+Research.refreshResearchRecipe("MB_Grafter");
+Research.refreshResearchRecipe("thaumicenergistics.TEARCANETERM");
+Research.refreshResearchRecipe("thaumicenergistics.TEESSTERM");
+Research.refreshResearchRecipe("ALCHEMYBOILER");
+Research.refreshResearchRecipe("THIRSTYTANK");
+Research.refreshResearchRecipe("PRIMORDIALARMOR");
+Research.refreshResearchRecipe("PRIMORDIALWEAPONRY");
+Research.refreshResearchRecipe("ANIMATION_TABLET");
 
 print("Finished Thaumcraft Changes");
