@@ -302,6 +302,11 @@ Research.addPrereq("PUREURANIUM235", "PUREIRON", false);
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2097> * 3, <gregtech:gt.metaitem.01:2097>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:12>, [10000, 5000, 500], 400, 2);
 
 <ore:listAllOreUranium238>.addAll(<ore:oreUranium238>);
+<ore:listAllOreUranium238>.add(<gregtech:gt.blockores:98>);
+<ore:listAllOreUranium238>.add(<gregtech:gt.blockores:1098>);
+<ore:listAllOreUranium238>.add(<gregtech:gt.blockores:2098>);
+<ore:listAllOreUranium238>.add(<gregtech:gt.blockores:3098>);
+<ore:listAllOreUranium238>.add(<gregtech:gt.blockores:4098>);
 <ore:listAllOreUranium238>.addAll(<ore:oreUraninite>);
 <ore:listAllOreUranium238>.add(<gregtech:gt.blockores:922>); // Uraninite
 <ore:listAllOreUranium238>.add(<gregtech:gt.blockores:1922>);
