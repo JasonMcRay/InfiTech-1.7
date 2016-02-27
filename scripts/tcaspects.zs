@@ -1,5 +1,4 @@
 // --- Created by Jason McRay ---
-// --- Modified by Xavion
 // --- Modified by DarknessShadow ---
 
 import mods.thaumcraft.Aspects;
@@ -23,3 +22,12 @@ Aspects.set(<InfinityCore:itemCluster:10>, "metallum 5, ordo 1, terra 1, radio 2
 Aspects.set(<InfinityCore:itemCluster:8>, "metallum 7, ordo 1, terra 1");
 Aspects.set(<InfinityCore:itemCluster:4>, "metallum 5, ordo 1, terra 1, instrumentum 2");
 Aspects.set(<InfinityCore:itemCluster:6>, "metallum 5, ordo 1, terra 1, magneto 4");
+
+// Harvestcraft
+Aspects.remove(<minecraft:milk_bucket>, "metallum 8");
+Aspects.remove(<minecraft:water_bucket>, "metallum 8");
+Aspects.remove(<Automagy:bucketMushroom>, "metallum 8");
+Aspects.set(<harvestcraft:skilletItem>, "fames 4, messis 1");
+Aspects.set(<harvestcraft:saucepanItem>, "fames 4, corpus 1");
+Aspects.set(<harvestcraft:cuttingboardItem>, "fames 4, ordo 1");
+Aspects.set(<harvestcraft:potItem>, "fames 4, aqua 1, ignis 1");
