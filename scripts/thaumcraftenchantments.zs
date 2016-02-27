@@ -588,6 +588,113 @@ Research.addInfusionPage("GT_ENCHANTMENTBACKSTAB", <minecraft:enchanted_book>);
 Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTBACKSTAB", true);
 
+// Lure
+Research.addResearch("GT_ENCHANTMENTLURE", "ARTIFICE", "praecantatio 4, aqua 4, meto 4", -8, 19, 4, <minecraft:carrot_on_a_stick>);
+game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTLURE", "Enchantment - Lure");
+game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTLURE", "Fastest fish fingers in the west");
+Research.addPage("GT_ENCHANTMENTLURE", "kirara.research_page.GT_ENCHANTMENTLURE.1");
+game.setLocalization("en_US", "kirara.research_page.GT_ENCHANTMENTLURE.1", "Fishing has always been a slow endeavour, change that with by using bait! Unfortunately you haven't been able to find actually find any bait but a dab of magic and \u00A79Lure\u00A70 is created, more fish and faster.");
+Research.addPrereq("GT_ENCHANTMENTLURE", "GT_ENCHANTMENTEFFICIENCY", true);
+Infusion.addRecipe("GT_ENCHANTMENTLURE", <minecraft:book>, [salisMundus, <chisel:nether_brick:3>], "auram 4, praecantatio 4, meto 4, aqua 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:62,lvl:1}]}), 1);
+Research.addInfusionPage("GT_ENCHANTMENTLURE", <minecraft:enchanted_book>);
+Infusion.removeRecipe(<minecraft:enchanted_book>);
+Infusion.addRecipe("GT_ENCHANTMENTLURE", <minecraft:book>, [salisMundus, <minecraft:fish:*>], "auram 6, praecantatio 6, meto 6, aqua 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:62,lvl:2}]}), 2);
+Research.addInfusionPage("GT_ENCHANTMENTLURE", <minecraft:enchanted_book>);
+Infusion.removeRecipe(<minecraft:enchanted_book>);
+Infusion.addRecipe("GT_ENCHANTMENTLURE", <minecraft:book>, [salisMundus, <minecraft:carrot_on_a_stick>], "auram 8, praecantatio 8, meto 8, aqua 8", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:62,lvl:3}]}), 4);
+Research.addInfusionPage("GT_ENCHANTMENTLURE", <minecraft:enchanted_book>);
+Infusion.removeRecipe(<minecraft:enchanted_book>);
+Research.setConcealed("GT_ENCHANTMENTLURE", true);
+
+// Luck of the sea
+Research.addResearch("GT_ENCHANTMENTLUCKOFTHESEA", "ARTIFICE", "praecantatio 4, aqua 4, lucrum 4", -8, 20, 4, <minecraft:emerald>);
+game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTLUCKOFTHESEA", "Enchantment - Luck of the Sea");
+game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTLUCKOFTHESEA", "X marks the spot");
+Research.addPage("GT_ENCHANTMENTLUCKOFTHESEA", "kirara.research_page.GT_ENCHANTMENTLUCKOFTHESEA.1");
+game.setLocalization("en_US", "kirara.research_page.GT_ENCHANTMENTLUCKOFTHESEA.1", "Studying your past successes with getting 110% effort you created a new wonder, a way of catching even less fish with your fishing rods. Truly a marvel to behlod, the \u00A79Luck of the Sea\u00A70 shall carry you far.");
+Research.addPrereq("GT_ENCHANTMENTLUCKOFTHESEA", "GT_ENCHANTMENTLURE", false);
+Research.addPrereq("GT_ENCHANTMENTLUCKOFTHESEA", "GT_ENCHANTMENTFORTUNE", true);
+Research.addPrereq("GT_ENCHANTMENTLUCKOFTHESEA", "GT_ENCHANTMENTLOOTING", true);
+Infusion.addRecipe("GT_ENCHANTMENTLUCKOFTHESEA", <minecraft:book>, [salisMundus, <minecraft:gold_ingot>], "auram 4, praecantatio 4, lucrum 4, aqua 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:61,lvl:1}]}), 2);
+Research.addInfusionPage("GT_ENCHANTMENTLUCKOFTHESEA", <minecraft:enchanted_book>);
+Infusion.removeRecipe(<minecraft:enchanted_book>);
+Infusion.addRecipe("GT_ENCHANTMENTLUCKOFTHESEA", <minecraft:book>, [salisMundus, <minecraft:emerald>], "auram 8, praecantatio 8, lucrum 8, aqua 8", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:61,lvl:2}]}), 4);
+Research.addInfusionPage("GT_ENCHANTMENTLUCKOFTHESEA", <minecraft:enchanted_book>);
+Infusion.removeRecipe(<minecraft:enchanted_book>);
+Infusion.addRecipe("GT_ENCHANTMENTLUCKOFTHESEA", <minecraft:book>, [salisMundus, <minecraft:diamond>], "auram 16, praecantatio 16, lucrum 16, aqua 16", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:61,lvl:3}]}), 8);
+Research.addInfusionPage("GT_ENCHANTMENTLUCKOFTHESEA", <minecraft:enchanted_book>);
+Infusion.removeRecipe(<minecraft:enchanted_book>);
+Research.setConcealed("GT_ENCHANTMENTLUCKOFTHESEA", true);
+
+// // Thaumic Tinkerer Enchantments
+// Research.addResearch("GT_TTENCHANTMENTINFUSION", "TT_CATEGORY", "praecantatio 4, cognitio 4", 5, 5, 2, <minecraft:enchanted_book>);
+// game.setLocalization("en_US", "tc.research_name.GT_TTENCHANTMENTINFUSION", "Infusion Enchantment 2.0");
+// game.setLocalization("en_US", "tc.research_text.GT_TTENCHANTMENTINFUSION", "[TT] Osmotic Archives");
+// Research.addPage("GT_TTENCHANTMENTINFUSION", "kirara.research_page.GT_TTENCHANTMENTINFUSION.1");
+// game.setLocalization("en_US", "kirara.research_page.GT_TTENCHANTMENTINFUSION.1", "With all your past successes with enchanting books it was a simple matter to adapt the process for those with osmotic enchanter. The ideasquickly present themselves, recorded on these pages, further study will be required to make sure the intricacies are known and it won't backfire but that's just a matter of time.");
+// Research.addPrereq("GT_TTENCHANTMENTINFUSION", "ENCHANTER", false);
+// Research.addPrereq("GT_TTENCHANTMENTINFUSION", "GT_INFUSIONENCHANTMENT", true);
+
+
+// // Quickdraw
+// Infusion.addRecipe("TTENCH_QUICK_DRAW", <minecraft:book>, [salisMundus, <gregtech:gt.blockmachines:1241>], "auram 4, praecantatio 4, telum 4, sensus 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:224,lvl:1}]}), 1);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
+// Infusion.addRecipe("TTENCH_QUICK_DRAW", <minecraft:book>, [salisMundus, <gregtech:gt.blockmachines:1201>], "auram 6, praecantatio 6, telum 6, sensus 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:224,lvl:2}]}), 2);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
+
+// // Disintegrate
+// Infusion.addRecipe("TTENCH_DESINTEGRATE", <minecraft:book>, [salisMundus, <chisel:smashingrock>], "auram 4, praecantatio 4, perditio 4, vacuos 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:223,lvl:1}]}), 1);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
+
+// // Shatter
+// Infusion.addRecipe("TTENCH_SHATTER", <minecraft:book>, [salisMundus, <Railcraft:cube:4>, <gregtech:gt.metaitem.02:1300>], "auram 4, praecantatio 4, instrumentum 4, perditio 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:167,lvl:1}]}), 1);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
+// Infusion.addRecipe("TTENCH_SHATTER", <minecraft:book>, [salisMundus, <Railcraft:cube:4>, <gregtech:gt.metaitem.02:1305>], "auram 6, praecantatio 6, instrumentum 6, perditio 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:167,lvl:2}]}), 2);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
+// Infusion.addRecipe("TTENCH_SHATTER", <minecraft:book>, [salisMundus, <Railcraft:cube:4>, <gregtech:gt.metaitem.02:1033>], "auram 8, praecantatio 8, instrumentum 8, perditio 8", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:167,lvl:3}]}), 4);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
+// Infusion.addRecipe("TTENCH_SHATTER", <minecraft:book>, [salisMundus, <Railcraft:cube:4>, <gregtech:gt.metaitem.02:1028>], "auram 12, praecantatio 12, instrumentum 12, perditio 12", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:167,lvl:4}]}), 6);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
+// Infusion.addRecipe("TTENCH_SHATTER", <minecraft:book>, [salisMundus, <Railcraft:cube:4>, <gregtech:gt.metaitem.02:1316>], "auram 16, praecantatio 16, instrumentum 16, perditio 16", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:167,lvl:5}]}), 8);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
+
+// // Flaming Touch
+// Infusion.addRecipe("TTENCH_AUTO_SMELT", <minecraft:book>, [salisMundus, <gregtech:gt.metaitem.01:2541>], "auram 4, praecantatio 4, perditio 4, ignis 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:222,lvl:1}]}), 1);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
+
+// // Tunnel
+// Infusion.addRecipe("TTENCH_TUNNEL", <minecraft:book>, [salisMundus, <gregtech:gt.blockmachines:5131>, <gregtech:gt.metaitem.02:1300>], "auram 4, praecantatio 4, instrumentum 4, ordo 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:172,lvl:1}]}), 1);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
+// Infusion.addRecipe("TTENCH_TUNNEL", <minecraft:book>, [salisMundus, <gregtech:gt.blockmachines:5131>, <gregtech:gt.metaitem.02:1305>], "auram 6, praecantatio 6, instrumentum 6, ordo 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:172,lvl:2}]}), 2);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
+// Infusion.addRecipe("TTENCH_TUNNEL", <minecraft:book>, [salisMundus, <gregtech:gt.blockmachines:5131>, <gregtech:gt.metaitem.02:1033>], "auram 8, praecantatio 8, instrumentum 8, ordo 8", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:172,lvl:3}]}), 4);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
+// Infusion.addRecipe("TTENCH_TUNNEL", <minecraft:book>, [salisMundus, <gregtech:gt.blockmachines:5131>, <gregtech:gt.metaitem.02:1028>], "auram 12, praecantatio 12, instrumentum 12, ordo 12", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:172,lvl:4}]}), 6);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
+// Infusion.addRecipe("TTENCH_TUNNEL", <minecraft:book>, [salisMundus, <gregtech:gt.blockmachines:5131>, <gregtech:gt.metaitem.02:1316>], "auram 16, praecantatio 16, instrumentum 16, ordo 16", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:172,lvl:5}]}), 8);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>); 
+
+// // Vampirism
+// Infusion.addRecipe("TTENCH_VAMPIRISM", <minecraft:book>, [salisMundus, <WitchingGadgets:item.WG_Material:6>], "auram 4, praecantatio 4, telum 4, fames 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:225,lvl:1}]}), 1);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
+// Infusion.addRecipe("TTENCH_VAMPIRISM", <minecraft:book>, [salisMundus, <headcrumbs:head:46>], "auram 6, praecantatio 6, telum 6, fames 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:225,lvl:2}]}), 2);
+// Research.addInfusionPage("GT_TTENCHANTMENTINFUSION", <minecraft:enchanted_book>);
+// Infusion.removeRecipe(<minecraft:enchanted_book>);
 
 // Actually adding the recipes
 Infusion.addRecipe("GT_INFUSIONENCHANTMENT", <minecraft:book>, [salisMundus, <Thaumcraft:ItemShard>], "auram 4, praecantatio 4, aqua 4, aer 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:5,lvl:1}]}), 1);
@@ -686,6 +793,29 @@ Infusion.addRecipe("GT_ENCHANTMENTBACKSTAB", <minecraft:book>, [salisMundus, <gr
 Infusion.addRecipe("GT_ENCHANTMENTBACKSTAB", <minecraft:book>, [salisMundus, <gregtech:gt.metaitem.02:32>, <ExtraUtilities:decorativeBlock2:10>], "auram 8, praecantatio 8, telum 8, tenebrae 8", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:69,lvl:3}]}), 4);
 Infusion.addRecipe("GT_ENCHANTMENTBACKSTAB", <minecraft:book>, [salisMundus, <gregtech:gt.metaitem.02:32>, <bluepower:sapphire_glass>], "auram 12, praecantatio 12, telum 12, tenebrae 12", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:69,lvl:4}]}), 6);
 Infusion.addRecipe("GT_ENCHANTMENTBACKSTAB", <minecraft:book>, [salisMundus, <gregtech:gt.metaitem.02:32>, <minecraft:potion:8270>], "auram 16, praecantatio 16, telum 16, tenebrae 16", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:69,lvl:5}]}), 8);
+Infusion.addRecipe("GT_ENCHANTMENTLURE", <minecraft:book>, [salisMundus, <chisel:nether_brick:3>], "auram 4, praecantatio 4, meto 4, aqua 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:62,lvl:1}]}), 1);
+Infusion.addRecipe("GT_ENCHANTMENTLURE", <minecraft:book>, [salisMundus, <minecraft:fish:*>], "auram 6, praecantatio 6, meto 6, aqua 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:62,lvl:2}]}), 2);
+Infusion.addRecipe("GT_ENCHANTMENTLURE", <minecraft:book>, [salisMundus, <minecraft:carrot_on_a_stick>], "auram 8, praecantatio 8, meto 8, aqua 8", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:62,lvl:3}]}), 4);
+Infusion.addRecipe("GT_ENCHANTMENTLUCKOFTHESEA", <minecraft:book>, [salisMundus, <minecraft:gold_ingot>], "auram 4, praecantatio 4, lucrum 4, aqua 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:61,lvl:1}]}), 2);
+Infusion.addRecipe("GT_ENCHANTMENTLUCKOFTHESEA", <minecraft:book>, [salisMundus, <minecraft:emerald>], "auram 8, praecantatio 8, lucrum 8, aqua 8", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:61,lvl:2}]}), 4);
+Infusion.addRecipe("GT_ENCHANTMENTLUCKOFTHESEA", <minecraft:book>, [salisMundus, <minecraft:diamond>], "auram 16, praecantatio 16, lucrum 16, aqua 16", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:61,lvl:3}]}), 8);
+// Infusion.addRecipe("TTENCH_QUICK_DRAW", <minecraft:book>, [salisMundus, <gregtech:gt.blockmachines:1241>], "auram 4, praecantatio 4, telum 4, sensus 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:224,lvl:1}]}), 1);
+// Infusion.addRecipe("TTENCH_QUICK_DRAW", <minecraft:book>, [salisMundus, <gregtech:gt.blockmachines:1201>], "auram 6, praecantatio 6, telum 6, sensus 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:224,lvl:2}]}), 2);
+// Infusion.addRecipe("TTENCH_DESINTEGRATE", <minecraft:book>, [salisMundus, <chisel:smashingrock>], "auram 4, praecantatio 4, perditio 4, vacuos 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:223,lvl:1}]}), 1);
+// Infusion.addRecipe("TTENCH_SHATTER", <minecraft:book>, [salisMundus, <Railcraft:cube:4>, <gregtech:gt.metaitem.02:1300>], "auram 4, praecantatio 4, instrumentum 4, perditio 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:167,lvl:1}]}), 1);
+// Infusion.addRecipe("TTENCH_SHATTER", <minecraft:book>, [salisMundus, <Railcraft:cube:4>, <gregtech:gt.metaitem.02:1305>], "auram 6, praecantatio 6, instrumentum 6, perditio 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:167,lvl:2}]}), 2);
+// Infusion.addRecipe("TTENCH_SHATTER", <minecraft:book>, [salisMundus, <Railcraft:cube:4>, <gregtech:gt.metaitem.02:1033>], "auram 8, praecantatio 8, instrumentum 8, perditio 8", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:167,lvl:3}]}), 4);
+// Infusion.addRecipe("TTENCH_SHATTER", <minecraft:book>, [salisMundus, <Railcraft:cube:4>, <gregtech:gt.metaitem.02:1028>], "auram 12, praecantatio 12, instrumentum 12, perditio 12", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:167,lvl:4}]}), 6);
+// Infusion.addRecipe("TTENCH_SHATTER", <minecraft:book>, [salisMundus, <Railcraft:cube:4>, <gregtech:gt.metaitem.02:1316>], "auram 16, praecantatio 16, instrumentum 16, perditio 16", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:167,lvl:5}]}), 8);
+// Infusion.addRecipe("TTENCH_AUTO_SMELT", <minecraft:book>, [salisMundus, <gregtech:gt.metaitem.01:2541>], "auram 4, praecantatio 4, perditio 4, ignis 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:222,lvl:1}]}), 1);
+// Infusion.addRecipe("TTENCH_TUNNEL", <minecraft:book>, [salisMundus, <gregtech:gt.blockmachines:5131>, <gregtech:gt.metaitem.02:1300>], "auram 4, praecantatio 4, instrumentum 4, ordo 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:172,lvl:1}]}), 1);
+// Infusion.addRecipe("TTENCH_TUNNEL", <minecraft:book>, [salisMundus, <gregtech:gt.blockmachines:5131>, <gregtech:gt.metaitem.02:1305>], "auram 6, praecantatio 6, instrumentum 6, ordo 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:172,lvl:2}]}), 2);
+// Infusion.addRecipe("TTENCH_TUNNEL", <minecraft:book>, [salisMundus, <gregtech:gt.blockmachines:5131>, <gregtech:gt.metaitem.02:1033>], "auram 8, praecantatio 8, instrumentum 8, ordo 8", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:172,lvl:3}]}), 4);
+// Infusion.addRecipe("TTENCH_TUNNEL", <minecraft:book>, [salisMundus, <gregtech:gt.blockmachines:5131>, <gregtech:gt.metaitem.02:1028>], "auram 12, praecantatio 12, instrumentum 12, ordo 12", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:172,lvl:4}]}), 6);
+// Infusion.addRecipe("TTENCH_TUNNEL", <minecraft:book>, [salisMundus, <gregtech:gt.blockmachines:5131>, <gregtech:gt.metaitem.02:1316>], "auram 16, praecantatio 16, instrumentum 16, ordo 16", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:172,lvl:5}]}), 8);
+// Infusion.addRecipe("TTENCH_VAMPIRISM", <minecraft:book>, [salisMundus, <WitchingGadgets:item.WG_Material:6>], "auram 4, praecantatio 4, telum 4, fames 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:225,lvl:1}]}), 1);
+// Infusion.addRecipe("TTENCH_VAMPIRISM", <minecraft:book>, [salisMundus, <headcrumbs:head:46>], "auram 6, praecantatio 6, telum 6, fames 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:225,lvl:2}]}), 2);
+
 
 print('Books enchanted');
 
@@ -703,3 +833,5 @@ Research.orphanResearch("ENCH_RIDEPROTECT");
 Research.removeResearch("ENCH_RIDEPROTECT");
 Research.orphanResearch("ENCH_UNVEILING");
 Research.removeResearch("ENCH_UNVEILING");
+Research.orphanResearch("ENCHANT_FISHING");
+Research.removeResearch("ENCHANT_FISHING");
