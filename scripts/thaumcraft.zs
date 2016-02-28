@@ -730,7 +730,7 @@ Arcane.addShaped("ENCHFABRIC", <Thaumcraft:ItemResource:7>, "ordo 1, perditio 1,
 
 // Boots of the Traveller
 Research.addPrereq("BOOTSTRAVELLER", "ADVANCEDROBES", true);
-Infusion.addRecipe("BOOTSTRAVELLER", <harvestcraft:hardenedleatherbootsItem>, [<WitchingGadgets:item.WG_Material:5>, <WitchingGadgets:item.WG_Material:5>, <OpenComputers:item:99>, <OpenComputers:item:49>, <Thaumcraft:ItemShard>, <minecraft:fish:*>], "iter 32, volatus 32", <Thaumcraft:BootsTraveller>, 1);
+Infusion.addRecipe("BOOTSTRAVELLER", <harvestcraft:hardenedleatherbootsItem>, [<WitchingGadgets:item.WG_Material:5>, <WitchingGadgets:item.WG_Material:5>, <gregtech:gt.metaitem.01:32640>, <OpenComputers:item:49>, <Thaumcraft:ItemShard>, <minecraft:fish:*>], "iter 32, volatus 32", <Thaumcraft:BootsTraveller>, 1);
 
 ChemicalBath.addRecipe([<Thaumcraft:ItemZombieBrain>], <Thaumcraft:ItemResource:5>, <liquid:fishoil> * 10, [10000], 20, 4);
 game.setLocalization("en_US", "item.ItemResource.5.name", "Dull Zombie Brain");
