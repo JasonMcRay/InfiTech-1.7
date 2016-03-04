@@ -1581,6 +1581,7 @@ game.setLocalization("en_US", "kirara.research_page.GT_PYROTHEUM.1", "The eterna
 Research.addPrereq("GT_PYROTHEUM", "NITOR", false);
 Arcane.addShapeless("GT_PYROTHEUM", dustPyrotheum * 2, "ordo 8, ignis 8", [<ore:dustRedstone>, <ore:dustSulfur>, <ore:dustCoal>, <ore:dustBlaze>]);
 furnace.setFuel(dustPyrotheum, 4000);
+Centrifuge.addRecipe([<minecraft:redstone>, <gregtech:gt.metaitem.01:2022>, <IC2:itemDust:2>, <minecraft:blaze_powder>], null, dustPyrotheum * 2, null, null, [10000, 10000, 10000, 10000], 750, 15);
 Research.addArcanePage("GT_PYROTHEUM", dustPyrotheum);
 Research.setConcealed("GT_PYROTHEUM", true);
 
