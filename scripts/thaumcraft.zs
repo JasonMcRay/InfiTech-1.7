@@ -1619,7 +1619,7 @@ Research.addPage("GT_RAREEARTH", "kirara.research_page.GT_RAREEARTH.1");
 game.setLocalization("en_US", "kirara.research_page.GT_RAREEARTH.1", "Centrifugation is only able to bring out the most abundant components of molten lava, a melange of many different valuable elements. Even allowing the lava to cool into obsidian renders much of its mass unsalvageable.<BR>Thaumaturgists can approach this matter rather differently, forcing some of the rarest metals to precipitate by sacrificing the rest. This process requires the lava be contained in a nonmetallic casing, however. Unfortunately the magical capsules devised interfere with the process somewhat.");
 Research.addPrereq("GT_RAREEARTH", "GT_FILL_LAVA_BUCKET", false);
 Research.addPrereq("GT_RAREEARTH", "GT_ADVANCEDMETALLURGY", true);
-Crucible.addRecipe("GT_RAREEARTH", <gregtech:gt.metaitem.01:891> * 3, <MagicBees:capsule.magic:2>, "ignis 3, perditio 3, terra 2, permutatio 2, lucrum 1, vitreus 2");
+Crucible.addRecipe("GT_RAREEARTH", <gregtech:gt.metaitem.01:891> * 3, <MagicBees:capsule.magic:2>, "ignis 4, perditio 4, terra 2, permutatio 2, lucrum 2, vitreus 2");
 Crucible.addRecipe("GT_RAREEARTH", <gregtech:gt.metaitem.01:1891>, <Forestry:refractoryLava>, "ignis 2, perditio 2, terra 1, permutatio 1, lucrum 1, vitreus 1");
 Research.addCruciblePage("GT_RAREEARTH", <gregtech:gt.metaitem.01:891>);
 Research.addCruciblePage("GT_RAREEARTH", <gregtech:gt.metaitem.01:1891>);
