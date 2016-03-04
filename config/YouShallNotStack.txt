@@ -2,23 +2,3 @@
 #The itemName should be the name NEI gives you, the stacksize is the maximum stacksize
 #Only define one entry line, meta is optional. Example: minecraft:iron_ingot,10
 ExtraUtilities:drum,1
-Forestry:adventurerBag,1
-Forestry:apiaristBag,1
-Forestry:minerBag,1
-Forestry:diggerBag,1
-Forestry:foresterBag,1
-Forestry:hunterBag,1
-Forestry:builderBag,1
-Forestry:lepidopteristBag,1
-Forestry:adventurerBagT2,1
-Forestry:minerBagT2,1
-Forestry:diggerBagT2,1
-Forestry:foresterBagT2,1
-Forestry:hunterBagT2,1
-Forestry:builderBagT2,1
-Railcraft:backpack.apothecary.t1,1
-Railcraft:backpack.apothecary.t2,1
-Railcraft:backpack.iceman.t1,1
-Railcraft:backpack.iceman.t2,1
-Railcraft:backpack.trackman.t1,1
-Railcraft:backpack.trackman.t2,1
