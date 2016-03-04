@@ -1188,7 +1188,7 @@ Research.addPage("GT_MAGICABSORB2", "gt.research.page.1.GT_MAGICABSORB2");
 Infusion.removeRecipe(<gregtech:gt.blockmachines:1129>);
 Infusion.addRecipe("GT_MAGICABSORB2", <gregtech:gt.blockmachines:13>, [<gregtech:gt.metaitem.01:32673>, <gregtech:gt.metaitem.01:32705>, <gregtech:gt.metaitem.01:17319>, <gregtech:gt.metaitem.01:32692>, <Thaumcraft:blockStoneDevice:5>, <gregtech:gt.metaitem.01:32705>, <gregtech:gt.metaitem.01:17319>, <gregtech:gt.metaitem.01:32692>], "potentia 64, machina 128, praecantatio 64, electrum 128, instrumentum 128, vacuos 64", <gregtech:gt.blockmachines:1129>, 10);
 Infusion.removeRecipe(<gregtech:gt.blockmachines:1130>);
-Infusion.addRecipe("GT_MAGICABSORB2", <gregtech:gt.blockmachines:14>, [<gregtech:gt.metaitem.01:32674>, <gregtech:gt.metaitem.01:32706>, <gregtech:gt.metaitem.01:22319>, <gregtech:gt.metaitem.01:32693>, <Thaumcraft:blockStoneDevice:5>, <gregtech:gt.metaitem.01:32706>, <gregtech:gt.metaitem.01:22319>, <gregtech:gt.metaitem.01:32693>], "potentia 128, machina 256, praecantatio 128, electrum 256, instrumentum 256, vacuos 128", <gregtech:gt.blockmachines:1130>, 12);
+Infusion.addRecipe("GT_MAGICABSORB2", <gregtech:gt.blockmachines:14>, [<gregtech:gt.metaitem.01:32674>, <gregtech:gt.metaitem.01:32706>, <gregtech:gt.metaitem.01:22319>, <gregtech:gt.metaitem.01:32693>, <Thaumcraft:blockStoneDevice:5>, <gregtech:gt.metaitem.01:32706>, <gregtech:gt.metaitem.01:22319>, <gregtech:gt.metaitem.01:32693>], "potentia 128, machina 256, praecantatio 128, electrum 256, instrumentum 256, vacuos 128, strontio 16, radio 32", <gregtech:gt.blockmachines:1130>, 12);
 Research.addInfusionPage("GT_MAGICABSORB2", <gregtech:gt.blockmachines:1129>);
 Research.addInfusionPage("GT_MAGICABSORB2", <gregtech:gt.blockmachines:1130>);
 
@@ -1581,6 +1581,7 @@ game.setLocalization("en_US", "kirara.research_page.GT_PYROTHEUM.1", "The eterna
 Research.addPrereq("GT_PYROTHEUM", "NITOR", false);
 Arcane.addShapeless("GT_PYROTHEUM", dustPyrotheum * 2, "ordo 8, ignis 8", [<ore:dustRedstone>, <ore:dustSulfur>, <ore:dustCoal>, <ore:dustBlaze>]);
 furnace.setFuel(dustPyrotheum, 4000);
+Centrifuge.addRecipe([<minecraft:redstone>, <gregtech:gt.metaitem.01:2022>, <IC2:itemDust:2>, <minecraft:blaze_powder>], null, dustPyrotheum * 2, null, null, [10000, 10000, 10000, 10000], 750, 15);
 Research.addArcanePage("GT_PYROTHEUM", dustPyrotheum);
 Research.setConcealed("GT_PYROTHEUM", true);
 
@@ -1618,7 +1619,7 @@ Research.addPage("GT_RAREEARTH", "kirara.research_page.GT_RAREEARTH.1");
 game.setLocalization("en_US", "kirara.research_page.GT_RAREEARTH.1", "Centrifugation is only able to bring out the most abundant components of molten lava, a melange of many different valuable elements. Even allowing the lava to cool into obsidian renders much of its mass unsalvageable.<BR>Thaumaturgists can approach this matter rather differently, forcing some of the rarest metals to precipitate by sacrificing the rest. This process requires the lava be contained in a nonmetallic casing, however. Unfortunately the magical capsules devised interfere with the process somewhat.");
 Research.addPrereq("GT_RAREEARTH", "GT_FILL_LAVA_BUCKET", false);
 Research.addPrereq("GT_RAREEARTH", "GT_ADVANCEDMETALLURGY", true);
-Crucible.addRecipe("GT_RAREEARTH", <gregtech:gt.metaitem.01:891> * 3, <MagicBees:capsule.magic:2>, "ignis 3, perditio 3, terra 2, permutatio 2, lucrum 1, vitreus 2");
+Crucible.addRecipe("GT_RAREEARTH", <gregtech:gt.metaitem.01:891> * 3, <MagicBees:capsule.magic:2>, "ignis 4, perditio 4, terra 2, permutatio 2, lucrum 2, vitreus 2");
 Crucible.addRecipe("GT_RAREEARTH", <gregtech:gt.metaitem.01:1891>, <Forestry:refractoryLava>, "ignis 2, perditio 2, terra 1, permutatio 1, lucrum 1, vitreus 1");
 Research.addCruciblePage("GT_RAREEARTH", <gregtech:gt.metaitem.01:891>);
 Research.addCruciblePage("GT_RAREEARTH", <gregtech:gt.metaitem.01:1891>);
