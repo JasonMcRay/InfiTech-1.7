@@ -55,6 +55,7 @@ var icAsh = <IC2:itemDust2:3>;
 var icCoil = <IC2:itemRecipePart>;
 var impregnatedCasing = <Forestry:impregnatedCasing>;
 var impregnatedStick = <Forestry:oakStick>;
+var ironBars = <minecraft:iron_bars>;
 var liquidSeedOil = <liquid:seedoil>;
 var liquidWater = <liquid:water>;
 var mcString = <minecraft:string>;
@@ -115,9 +116,6 @@ engineElectrical.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(bottler);
 bottler.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
-recipes.remove(centrifuge);
-centrifuge.addTooltip(format.red(format.bold("This item is DISABLED!")));
-
 recipes.remove(squeezer);
 squeezer.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
@@ -143,6 +141,11 @@ recipes.remove(scoopFT);
 NEI.hide(scoopFT);
 
 # Recipe Tweaks
+recipes.remove(centrifuge);
+recipes.addShaped(centrifuge, [
+    [plateCupronickel, electricMotorLV, plateCupronickel],
+    [ironBars, sturdyCasing, ironBars],
+    [gearGtSmallSteel, electricMotorLV, gearGtSmallSteel]]);
 recipes.remove(enginePeat);
 recipes.addShaped(enginePeat, [
 	[plateCopper, plateCopper, plateCopper],

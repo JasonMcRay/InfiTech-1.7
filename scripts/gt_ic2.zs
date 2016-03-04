@@ -20,6 +20,7 @@ var dustGlowstone = <ore:dustGlowstone>;
 var dustLead = <ore:dustLead>;
 var dustSulfur = <ore:dustSulfur>;
 var dustThorium = <gregtech:gt.metaitem.01:2096>;
+var energiumDust = <IC2:itemDust2:2>;
 var energyCrystal = <IC2:itemBatCrystal:*>;
 var fuelRodEmpty = <IC2:itemFuelRod>;
 var fuelRodMOX = <IC2:reactorMOXSimple:1>;
@@ -112,6 +113,12 @@ ic2ForgeHammer.addTooltip(format.red(format.bold("This item is DISABLED!")));
 ic2CrystalMemoryRaw.addTooltip(format.red(format.bold("This item is DISABLED!")));
 ic2CrystalMemory.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
+# Recipe removal
+recipes.remove(ic2Scanner);
+recipes.remove(ic2PatternStorage);
+recipes.remove(ic2CrystalMemoryRaw);
+recipes.remove(energiumDust);
+
 # Electrical Tools Oredictionary Stuff
 <ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:101>);
 <ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:103>);
@@ -198,6 +205,8 @@ SemiFluidGenerator.addFluid(<liquid:ic2biomass> * 53, 8);
 # Oredictionary
 <ore:blockYellowStripes>.add(<gregtech:gt.blockcasings3>);
 <ore:blockYellowStripes>.add(<gregtech:gt.blockcasings3:1>);
+<ore:craftingWireCopper>.remove(<IC2:itemCable>);
+<ore:wireCopper>.remove(<IC2:itemCable>);
 
 # -- Fixing JABBA unification exploits --
 

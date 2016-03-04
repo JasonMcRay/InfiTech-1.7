@@ -9,6 +9,11 @@ var presser = <harvestcraft:presser>;
 var sink = <harvestcraft:sink:*>;
 var waterFresh = <harvestcraft:freshwaterItem>;
 var cotton = <harvestcraft:cottonItem>;
+var saltPHC = <harvestcraft:saltItem>;
+var saltGT = <gregtech:gt.metaitem.01:2817>;
+var foodSalt = <ore:foodSalt>;
+var itemSalt = <ore:itemSalt>;
+var dustSalt = <ore:dustSalt>;
 
 # Blocks/Items Removal
 recipes.remove(sink);
@@ -24,3 +29,11 @@ recipes.addShaped(presser, [
 # Recipe Fixes
 recipes.remove(cotton);
 recipes.addShapeless(cotton * 2, [cotton, cotton]);
+
+# Oredictionary
+foodSalt.remove(saltPHC);
+itemSalt.remove(saltPHC);
+dustSalt.remove(saltPHC);
+itemSalt.remove(saltGT);
+dustSalt.remove(saltGT);
+

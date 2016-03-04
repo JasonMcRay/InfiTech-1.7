@@ -47,7 +47,7 @@ var PyroOven = <gregtech:gt.blockmachines:1159>;
 var VF = <gregtech:gt.blockmachines:1002>;
 
 // Oredictionary specialty
-var itemAnyOre = <ore:itemAnyOre>;
+var itemAnyOre = <gregtech:gt.blockores:*>;
 var oreCoal = <ore:oreCoal>;
 var oreCopper = <ore:oreCopper>;
 var oreGold = <ore:oreGold>;
@@ -63,15 +63,6 @@ var inkSac = <minecraft:dye>;
 var leather = <minecraft:leather>;
 var paper = <minecraft:paper>;
 var stone = <minecraft:stone>;
-
-# Special Oredict
-itemAnyOre.addAll(oreCoal);
-itemAnyOre.addAll(oreCopper);
-itemAnyOre.addAll(oreGold);
-itemAnyOre.addAll(oreIron);
-itemAnyOre.addAll(oreLead);
-itemAnyOre.addAll(oreSilver);
-itemAnyOre.addAll(oreTin);
 
 # Books and Guides
 //GregTech Oregen Guide
