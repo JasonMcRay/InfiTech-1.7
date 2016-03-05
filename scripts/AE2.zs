@@ -12,7 +12,6 @@ import mods.ic2.Macerator;
 import mods.nei.NEI;
 import mods.gregtech.Wiremill;
 import mods.gregtech.PrecisionLaser;
-import mods.appeng.Inscriber;
 import mods.gregtech.ChemicalBath;
 
 
@@ -1134,18 +1133,6 @@ PrecisionLaser.addRecipe(pressCalculation, lensOpal * 0, blockCompressedIron, 12
 PrecisionLaser.addRecipe(pressCalculation, lensSapphire * 0, blockCompressedIron, 12000, 120);
 PrecisionLaser.addRecipe(pressCalculation, lensAqua * 0, blockCompressedIron, 12000, 120);
 PrecisionLaser.addRecipe(pressCalculation, lensBlueTopaz * 0, blockCompressedIron, 12000, 120);
-
-Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:15>);
-Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:13>);
-Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:14>);
-Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:19>);
-Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:18>);
-Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:16>);
-Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:17>);
-Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:20>);
-Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:22>);
-Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:23>);
-Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:24>);
 
 // --- Renaming Stuff ---
 
