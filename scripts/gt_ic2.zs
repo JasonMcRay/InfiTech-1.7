@@ -31,6 +31,9 @@ var HHammer = <ore:craftingToolHardHammer>;
 var ingotSteel = <ore:ingotSteel>;
 var itemCasingBronze = <IC2:itemCasing:2>;
 var itemCasingGold = <IC2:itemCasing:3>;
+var itemDustSalt = <gregtech:gt.metaitem.01:2817>;
+var itemDustSmallSalt = <gregtech:gt.metaitem.01:1817>;
+var itemDustTinySalt = <gregtech:gt.metaitem.01:817>;
 var machineHullHV = <gregtech:gt.blockmachines:13>;
 var moduleConveyorHV = <gregtech:gt.metaitem.01:32632>;
 var motorElectricHV = <gregtech:gt.metaitem.01:32602>;
@@ -139,6 +142,10 @@ recipes.addShaped(OVScanner, [
 	[itemCasingGold, energyCrystal, itemCasingGold],
 	[dustGlowstone, circuitAdvanced, dustGlowstone],
 	[cableGold1x, ODScanner, cableGold1x]]);
+recipes.addShaped(itemDustSmallSalt * 4, [
+    [null, itemDustSalt]]);
+recipes.addShaped(itemDustTinySalt * 9, [
+    [itemDustSalt, null]]);
 
 # Recipe Tweaks
 recipes.remove(reBatteryAdv);

@@ -41,10 +41,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-<<<<<<< HEAD
-=======
 
->>>>>>> pr/215
 # Minecraft files
 asm/
 backups/
@@ -102,3 +99,4 @@ mods/BetterFps-1.0.1.jar
 *hqm*
 config/NEI/client.cfg
 replay*
+config/TravellersGear_inv.cfg
