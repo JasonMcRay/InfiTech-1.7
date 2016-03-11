@@ -1804,7 +1804,7 @@ harvestcraft:pamCherry, Cherry
 harvestcraft:pamcherrySapling, Cherry Sapling
 harvestcraft:pamChestnut, Chestnut
 harvestcraft:pamchestnutSapling, Chestnut Sapling
-harvestcraft:pamCinnamon, Cinnamon
+harvestcraft:pamCinnamon, Cinnamon Wood
 harvestcraft:pamcinnamonSapling, Cinnamon Sapling
 harvestcraft:pamCoconut, Coconut
 harvestcraft:pamcoconutSapling, Coconut Sapling
@@ -1822,7 +1822,7 @@ harvestcraft:pamLemon, Lemon
 harvestcraft:pamlemonSapling, Lemon Sapling
 harvestcraft:pamLime, Lime
 harvestcraft:pamlimeSapling, Lime Sapling
-harvestcraft:pamMaple, Maple
+harvestcraft:pamMaple, Maple Wood
 harvestcraft:pammapleSapling, Maple Sapling
 harvestcraft:pamMango, Mango
 harvestcraft:pammangoSapling, Mango Sapling
@@ -1834,7 +1834,7 @@ harvestcraft:pamOrange, Orange
 harvestcraft:pamorangeSapling, Orange Sapling
 harvestcraft:pamPapaya, Papaya
 harvestcraft:pampapayaSapling, Papaya Sapling
-harvestcraft:pamPaperbark, Paperbark
+harvestcraft:pamPaperbark, Paperbark Wood
 harvestcraft:pampaperbarkSapling, Paperbark Sapling
 harvestcraft:pamPeach, Peach
 harvestcraft:pampeachSapling, Peach Sapling
@@ -2100,7 +2100,7 @@ Railcraft:post:1, Stone Post
 Railcraft:post:2, Metal Post
 Railcraft:post:4, Wooden Platform
 Railcraft:post:5, Stone Platform
-Railcraft:post:6, tile.railcraft.post.metal.unpainted.platform.name
+Railcraft:post:6, Metal Platform
 Railcraft:post.metal:0, Black Metal Post
 Railcraft:post.metal:1, Red Metal Post
 Railcraft:post.metal:2, Green Metal Post
@@ -5839,6 +5839,7 @@ Automagy:blockRunedObsidian, Runed Obsidian
 Automagy:blockNetherRune:0, Runed Obsidian (Rock)
 Automagy:blockNetherRune:1, Runed Obsidian (Sea)
 Automagy:blockNetherRune:2, Runed Obsidian (Crystal)
+Automagy:blockNetherRune:3, Runed Obsidian (Light)
 Automagy:blockNetherRune:4, Runed Obsidian (Soul)
 Automagy:blockNetherRune:6, Runed Obsidian (Celerity)
 Automagy:blockNetherRuneMob:0, Runed Obsidian (Zombie)
@@ -5860,6 +5861,7 @@ Automagy:blockXPJar, Jar of Enchanter's Concentrate
 Automagy:blockThaumostaticPylon:0, Thaumostatic Pylon
 Automagy:blockThaumostaticPylon:1, Thaumostatic Controller
 Automagy:blockMirrorAlt:0, Melding Mirror
+Automagy:blockMirrorMultiDest:0, Dispersing Mirror
 Automagy:blockFluidMilk, Milk
 Automagy:blockFluidMushroom, Mushroom Soup
 Automagy:blockFluidVishroom, Vishroom Soup
@@ -6146,28 +6148,6 @@ BigReactors:BRMultiblockCreativePart:0, Reactor Creative Coolant Port
 BigReactors:BRMultiblockCreativePart:1, Turbine Creative Steam Generator
 BuildCraft|Robotics:zonePlan, Zone Planner
 BuildCraft|Robotics:requester, Requester
-CarpentersBlocks:blockCarpentersBlock, Carpenter's Block
-CarpentersBlocks:blockCarpentersBarrier, Carpenter's Barrier
-CarpentersBlocks:blockCarpentersBed, Carpenter's Bed
-CarpentersBlocks:blockCarpentersButton, Carpenter's Button
-CarpentersBlocks:blockCarpentersCollapsibleBlock, Carpenter's Collapsible Block
-CarpentersBlocks:blockCarpentersDaylightSensor, Carpenter's Daylight Sensor
-CarpentersBlocks:blockCarpentersDoor, Carpenter's Door
-CarpentersBlocks:blockCarpentersFlowerPot, Carpenter's Flower Pot
-CarpentersBlocks:blockCarpentersGarageDoor, Carpenter's Garage Door
-CarpentersBlocks:blockCarpentersGate, Carpenter's Gate
-CarpentersBlocks:blockCarpentersHatch, Carpenter's Hatch
-CarpentersBlocks:blockCarpentersLadder, Carpenter's Ladder
-CarpentersBlocks:blockCarpentersLever, Carpenter's Lever
-CarpentersBlocks:blockCarpentersPressurePlate, Carpenter's Pressure Plate
-CarpentersBlocks:blockCarpentersSafe, Carpenter's Safe
-CarpentersBlocks:blockCarpentersSlope:0, Carpenter's Wedge Slope
-CarpentersBlocks:blockCarpentersSlope:1, Carpenter's Oblique Interior Slope
-CarpentersBlocks:blockCarpentersSlope:2, Carpenter's Oblique Exterior Slope
-CarpentersBlocks:blockCarpentersSlope:3, Carpenter's Prism Slope
-CarpentersBlocks:blockCarpentersSlope:4, Carpenter's Prism Wedge Slope
-CarpentersBlocks:blockCarpentersStairs, Carpenter's Stairs
-CarpentersBlocks:blockCarpentersTorch, Carpenter's Torch
 chisel:aluminumblock:0, Block of Aluminum
 chisel:aluminumblock:1, Block of Aluminum
 chisel:aluminumblock:2, Block of Aluminum
@@ -7547,6 +7527,28 @@ chisel:woolen_clay:12, Woolen Clay
 chisel:woolen_clay:13, Woolen Clay
 chisel:woolen_clay:14, Woolen Clay
 chisel:woolen_clay:15, Woolen Clay
+CarpentersBlocks:blockCarpentersBlock, Carpenter's Block
+CarpentersBlocks:blockCarpentersBarrier, Carpenter's Barrier
+CarpentersBlocks:blockCarpentersBed, Carpenter's Bed
+CarpentersBlocks:blockCarpentersButton, Carpenter's Button
+CarpentersBlocks:blockCarpentersCollapsibleBlock, Carpenter's Collapsible Block
+CarpentersBlocks:blockCarpentersDaylightSensor, Carpenter's Daylight Sensor
+CarpentersBlocks:blockCarpentersDoor, Carpenter's Door
+CarpentersBlocks:blockCarpentersFlowerPot, Carpenter's Flower Pot
+CarpentersBlocks:blockCarpentersGarageDoor, Carpenter's Garage Door
+CarpentersBlocks:blockCarpentersGate, Carpenter's Gate
+CarpentersBlocks:blockCarpentersHatch, Carpenter's Hatch
+CarpentersBlocks:blockCarpentersLadder, Carpenter's Ladder
+CarpentersBlocks:blockCarpentersLever, Carpenter's Lever
+CarpentersBlocks:blockCarpentersPressurePlate, Carpenter's Pressure Plate
+CarpentersBlocks:blockCarpentersSafe, Carpenter's Safe
+CarpentersBlocks:blockCarpentersSlope:0, Carpenter's Wedge Slope
+CarpentersBlocks:blockCarpentersSlope:1, Carpenter's Oblique Interior Slope
+CarpentersBlocks:blockCarpentersSlope:2, Carpenter's Oblique Exterior Slope
+CarpentersBlocks:blockCarpentersSlope:3, Carpenter's Prism Slope
+CarpentersBlocks:blockCarpentersSlope:4, Carpenter's Prism Wedge Slope
+CarpentersBlocks:blockCarpentersStairs, Carpenter's Stairs
+CarpentersBlocks:blockCarpentersTorch, Carpenter's Torch
 EnderIO:blockStirlingGenerator, Stirling Generator
 EnderIO:blockCombustionGenerator, Combustion Generator
 EnderIO:blockZombieGenerator, Zombie Generator
@@ -7628,6 +7630,9 @@ EnderIO:blockNutrient_distillation, Nutrient Distillation
 EnderIO:blockHootch, Hootch
 EnderIO:blockRocket_fuel, Rocket Fuel
 EnderIO:blockFire_water, Fire Water
+EnderIO:blockLiquid_sunshine, tile.fluid.liquid_sunshine.name
+EnderIO:blockCloud_seed, tile.fluid.cloud_seed.name
+EnderIO:blockCloud_seed_concentrated, tile.fluid.cloud_seed_concentrated.name
 EnderIO:blockIngotStorage:0, Electrical Steel Block
 EnderIO:blockIngotStorage:1, Energetic Alloy Block
 EnderIO:blockIngotStorage:2, Vibrant Alloy Block
@@ -7696,7 +7701,7 @@ EnderZoo:blockConcussionCharge, Concussion Charge
 ExtraUtilities:chestMini, Mini-Chest
 ExtraUtilities:chestFull, Slightly Larger Chest
 ExtraUtilities:enderCollector, Ender Collector
-ExtraUtilities:endConstructor:0, QED (Quasar Entanglement Device)
+ExtraUtilities:endConstructor:0, QED (Quantum Enrichment Device)
 ExtraUtilities:endConstructor:2, Ender-Flux Crystal
 ExtraUtilities:endMarker, Ender-Marker
 ExtraUtilities:curtains, Blackout Curtains
@@ -8028,42 +8033,42 @@ ExtraUtilities:etherealglass:5, Dark Ethereal Glass (Inverted)
 Trajectory:moving, tile.moving.name
 RedstoneArsenal:Storage:0, Fluxed Electrum Block
 RedstoneArsenal:Storage:1, Flux Crystal Block
-ThaumicTinkerer:bedrockPortal, Bedrock Portal
-ThaumicTinkerer:fireEarth, Terra Imbued Fire
-ThaumicTinkerer:travelStairs, Paving Stair of Travel
-ThaumicTinkerer:spawner, Tablet of Necromancy
-ThaumicTinkerer:travelSlab:0, Paving Slab of Travel
-ThaumicTinkerer:travelSlabFull:0, Paving Slab of Travel
-ThaumicTinkerer:fireAir, Aer Imbued Fire
-ThaumicTinkerer:fireChaos, Perditio Imbued Fire
-ThaumicTinkerer:gaseousLight, tile.gaseousLight.name
-ThaumicTinkerer:fireFire, Ignis Imbued Fire
-ThaumicTinkerer:platform, Ethereal Platform
-ThaumicTinkerer:gaseousShadow, tile.gaseousShadow.name
-ThaumicTinkerer:funnel, Essentia Funnel
-ThaumicTinkerer:darkQuartzSlab:0, Smokey Quartz Slab
-ThaumicTinkerer:darkQuartzSlabFull:0, Smokey Quartz Slab
-ThaumicTinkerer:dislocator, Transvector Dislocator
-ThaumicTinkerer:nitorGas, tile.nitorGas.name
 ThaumicTinkerer:animationTablet, Dynamism Tablet
-ThaumicTinkerer:enchanter, Osmotic Enchanter
-ThaumicTinkerer:interface, Transvector Interface
-ThaumicTinkerer:infusedFarmland, tile.infusedFarmland.name
-ThaumicTinkerer:Levitational Locomotive Relay, Levitational Locomotive Relay
-ThaumicTinkerer:repairer, Thaumic Restorer
-ThaumicTinkerer:magnet:0, Kinetic Attractor
-ThaumicTinkerer:magnet:1, Corporeal Attractor
-ThaumicTinkerer:forcefield, Forcefield
+ThaumicTinkerer:spawner, Tablet of Necromancy
+ThaumicTinkerer:nitorGas, tile.nitorGas.name
+ThaumicTinkerer:funnel, Essentia Funnel
+ThaumicTinkerer:travelStairs, Paving Stair of Travel
 ThaumicTinkerer:darkQuartz:0, Block of Smokey Quartz
 ThaumicTinkerer:darkQuartz:1, Chiseled Smokey Quartz Block
 ThaumicTinkerer:darkQuartz:2, Pillar Smokey Quartz Block
-ThaumicTinkerer:fireOrder, Ordo Imbued Fire
-ThaumicTinkerer:fireWater, Aqua Imbued Fire
-ThaumicTinkerer:infusedGrainBlock, tile.infusedGrainBlock.name
 ThaumicTinkerer:wardSlab:0, tile.wardSlab.name
 ThaumicTinkerer:wardSlabFull:0, tile.wardSlab.name
 ThaumicTinkerer:darkQuartzStairs, Smokey Quartz Stairs
+ThaumicTinkerer:fireFire, Ignis Imbued Fire
+ThaumicTinkerer:forcefield, Forcefield
+ThaumicTinkerer:fireChaos, Perditio Imbued Fire
+ThaumicTinkerer:fireAir, Aer Imbued Fire
+ThaumicTinkerer:infusedGrainBlock, tile.infusedGrainBlock.name
+ThaumicTinkerer:darkQuartzSlab:0, Smokey Quartz Slab
+ThaumicTinkerer:darkQuartzSlabFull:0, Smokey Quartz Slab
+ThaumicTinkerer:travelSlab:0, Paving Slab of Travel
+ThaumicTinkerer:travelSlabFull:0, Paving Slab of Travel
+ThaumicTinkerer:fireWater, Aqua Imbued Fire
+ThaumicTinkerer:fireEarth, Terra Imbued Fire
+ThaumicTinkerer:Levitational Locomotive Relay, Levitational Locomotive Relay
+ThaumicTinkerer:gaseousShadow, tile.gaseousShadow.name
+ThaumicTinkerer:enchanter, Osmotic Enchanter
+ThaumicTinkerer:gaseousLight, tile.gaseousLight.name
+ThaumicTinkerer:infusedFarmland, tile.infusedFarmland.name
+ThaumicTinkerer:repairer, Thaumic Restorer
+ThaumicTinkerer:interface, Transvector Interface
 ThaumicTinkerer:Levitational Locomotive, Levitational Locomotive
+ThaumicTinkerer:magnet:0, Kinetic Attractor
+ThaumicTinkerer:magnet:1, Corporeal Attractor
+ThaumicTinkerer:bedrockPortal, Bedrock Portal
+ThaumicTinkerer:fireOrder, Ordo Imbued Fire
+ThaumicTinkerer:dislocator, Transvector Dislocator
+ThaumicTinkerer:platform, Ethereal Platform
 MagicBees:magicbees.enchantedEarth, Enchanted Earth
 MagicBees:hive:0, Curious Hive
 MagicBees:hive:1, Unusual Hive
@@ -8309,6 +8314,7 @@ cfm:yellowGlow, tile.yellowGlow.name
 cfm:whiteGlass, tile.whiteGlass.name
 OpenBlocks:ladder, Jaded Ladder
 OpenBlocks:guide, Building Guide
+OpenBlocks:builder_guide, Enhanced Building Guide
 OpenBlocks:elevator:0, Elevator
 OpenBlocks:elevator:1, Elevator
 OpenBlocks:elevator:2, Elevator
@@ -8325,6 +8331,22 @@ OpenBlocks:elevator:12, Elevator
 OpenBlocks:elevator:13, Elevator
 OpenBlocks:elevator:14, Elevator
 OpenBlocks:elevator:15, Elevator
+OpenBlocks:elevator_rotating:0, Rotating Elevator
+OpenBlocks:elevator_rotating:1, Rotating Elevator
+OpenBlocks:elevator_rotating:2, Rotating Elevator
+OpenBlocks:elevator_rotating:3, Rotating Elevator
+OpenBlocks:elevator_rotating:4, Rotating Elevator
+OpenBlocks:elevator_rotating:5, Rotating Elevator
+OpenBlocks:elevator_rotating:6, Rotating Elevator
+OpenBlocks:elevator_rotating:7, Rotating Elevator
+OpenBlocks:elevator_rotating:8, Rotating Elevator
+OpenBlocks:elevator_rotating:9, Rotating Elevator
+OpenBlocks:elevator_rotating:10, Rotating Elevator
+OpenBlocks:elevator_rotating:11, Rotating Elevator
+OpenBlocks:elevator_rotating:12, Rotating Elevator
+OpenBlocks:elevator_rotating:13, Rotating Elevator
+OpenBlocks:elevator_rotating:14, Rotating Elevator
+OpenBlocks:elevator_rotating:15, Rotating Elevator
 OpenBlocks:heal, Healer
 OpenBlocks:target, Target
 OpenBlocks:grave, Grave
@@ -8373,7 +8395,7 @@ OpenBlocks:canvasglass, Glass Canvas
 OpenBlocks:projector, Height Map Projector
 OpenBlocks:drawingtable, Drawing Table
 OpenBlocks:sky:0, Sky Block
-OpenBlocks:sky:1, Inverted Sky Block
+OpenBlocks:sky:1, Sky Block
 OpenBlocks:xpshower, XP Shower
 OpenBlocks:goldenegg, Golden Egg
 OpenBlocks:scaffolding, Scaffolding
@@ -8461,6 +8483,12 @@ StorageDrawers:trim:2, Birch Trim
 StorageDrawers:trim:3, Jungle Trim
 StorageDrawers:trim:4, Acacia Trim
 StorageDrawers:trim:5, Dark Oak Trim
+StorageDrawers:framingTable, Framing Table
+StorageDrawers:fullCustom1, Framed Drawer
+StorageDrawers:fullCustom2, Framed Drawers 1x2
+StorageDrawers:fullCustom4, Framed Drawers 2x2
+StorageDrawers:halfCustom2, Framed Drawers 1x2
+StorageDrawers:halfCustom4, Framed Drawers 2x2
 thaumicenergistics:thaumicenergistics.block.essentia.provider, Essentia Provider
 thaumicenergistics:thaumicenergistics.block.infusion.provider, Infusion Provider
 thaumicenergistics:thaumicenergistics.block.gear.box, Iron Gear Box
@@ -8790,21 +8818,34 @@ appliedenergistics2:item.ItemFacade:0, Cable Facade - Block of Copper
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Block of Tin
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Block of Bronze
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Teak Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Desert Acacia Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Lime Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Chestnut Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Wenge Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Baobab Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Sequoia Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Kapok Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Ebony Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Mahogany Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Balsa Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Willow Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Walnut Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Greenheart Wood Planks
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Cherry Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Larch Wood Planks
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Tin Decoration Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Tin Decoration Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Copper Ore
@@ -9216,6 +9257,7 @@ appliedenergistics2:item.ItemFacade:0, Cable Facade - Runed Obsidian
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Runed Obsidian (Rock)
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Runed Obsidian (Sea)
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Runed Obsidian (Crystal)
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Runed Obsidian (Light)
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Runed Obsidian (Soul)
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Runed Obsidian (Celerity)
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Runed Obsidian (Zombie)
@@ -10502,11 +10544,11 @@ appliedenergistics2:item.ItemFacade:0, Cable Facade - Lapis Caelestis Nox (Black
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Redstone Clock
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Fluxed Electrum Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Flux Crystal Block
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Paving Slab of Travel
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Smokey Quartz Slab
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Block of Smokey Quartz
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Chiseled Smokey Quartz Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Pillar Smokey Quartz Block
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Smokey Quartz Slab
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Paving Slab of Travel
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Curious Hive
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Unusual Hive
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Resonating Hive
@@ -11114,6 +11156,7 @@ IC2:itemPartCarbonMesh, ic2.itemPartCarbonMesh.name
 IC2:itemPartCarbonPlate, ic2.itemPartCarbonPlate.name
 IC2:itemOreIridium, ic2.itemOreIridium.name
 IC2:itemPartIridium, ic2.itemPartIridium.name
+IC2:itemShardIridium, ic2.itemShardIridium.name
 IC2:itemTreetap, ic2.itemTreetap.name
 IC2:itemToolBronzePickaxe, ic2.itemToolBronzePickaxe.name
 IC2:itemToolBronzeAxe, ic2.itemToolBronzeAxe.name
@@ -12791,6 +12834,35 @@ harvestcraft:soysauceItem, Soy Sauce
 harvestcraft:sweetpickleItem, Sweet Pickle
 harvestcraft:veggiestripsItem, Veggie Strips
 harvestcraft:vindalooItem, Vindaloo
+harvestcraft:applesmoothieItem, Apple Smoothie
+harvestcraft:coconutsmoothieItem, Coconut Smoothie
+harvestcraft:cranberrysmoothieItem, Cranberry Smoothie
+harvestcraft:cranberryyogurtItem, Cranberry Yogurt
+harvestcraft:grapesmoothieItem, Grape Smoothie
+harvestcraft:pearsmoothieItem, Pear Smoothie
+harvestcraft:pearjellyItem, Pear Jelly
+harvestcraft:pearjellysandwichItem, Pear Jelly Sandwich
+harvestcraft:plumsmoothieItem, Plum Smoothie
+harvestcraft:plumjellyItem, Plum Jelly
+harvestcraft:plumjellysandwichItem, Plum Jelly Sandwich
+harvestcraft:honeysandwichItem, Honey Sandwich
+harvestcraft:cheeseontoastItem, Cheese on Toast
+harvestcraft:tunapotatoItem, Tuna Potato
+harvestcraft:chocolaterollItem, Chocolate Roll
+harvestcraft:jamrollItem, Jam Roll
+harvestcraft:coconutcreamItem, Coconut Cream
+harvestcraft:crackerItem, Cracker
+harvestcraft:garammasalaItem, Garam Masala
+harvestcraft:paneerItem, Paneer
+harvestcraft:deluxechickencurryItem, Deluxe Chicken Curry
+harvestcraft:gravyItem, Gravy
+harvestcraft:mangochutneyItem, Mango Chutney
+harvestcraft:marzipanItem, Marzipan
+harvestcraft:paneertikkamasalaItem, Paneer Tikka Masala
+harvestcraft:peaandhamsoupItem, Pea and Ham Soup
+harvestcraft:potatoandleeksoupItem, Potato and Leek Soup
+harvestcraft:yorkshirepuddingItem, Yorkshire Pudding
+harvestcraft:toadintheholeItem, Toad in the Hole
 Railcraft:fluid.creosote.bucket, Creosote Bucket
 Railcraft:fluid.creosote.bottle, Creosote Bottle
 Railcraft:fluid.creosote.can, Creosote Can
@@ -12849,6 +12921,7 @@ Railcraft:cart.tnt.wood:0, Wooden TNT Cart
 Railcraft:cart.work:0, Work Cart
 Railcraft:tool.surveyor:0, Signal Block Surveyor
 Railcraft:tool.signal.tuner:0, Signal Tuner
+Railcraft:tool.signal.label, Signal Label
 Railcraft:part.signal.lamp, Signal Lamp
 Railcraft:part.bleached.clay, Bleached Clay
 Railcraft:cart.bore:0, Tunnel Bore
@@ -18253,11 +18326,6 @@ BuildCraft|Robotics:robot, Robot
 BuildCraft|Robotics:robotStation, item.robotStation.name
 BuildCraft|Robotics:redstone_board, Redstone Board
 BuildCraft|Compat:item.buildcraftPipe.pipeitemspropolis:0, Apiarist's Pipe
-CarpentersBlocks:itemCarpentersHammer, Carpenter's Hammer
-CarpentersBlocks:itemCarpentersChisel, Carpenter's Chisel
-CarpentersBlocks:itemCarpentersTile, Carpenter's Tile
-CarpentersBlocks:itemCarpentersDoor, Carpenter's Door
-CarpentersBlocks:itemCarpentersBed, Carpenter's Bed
 chisel:upgrade:0, Speed Upgrade.name
 chisel:upgrade:1, Automation Upgrade.name
 chisel:upgrade:2, Stack Upgrade.name
@@ -18268,6 +18336,11 @@ chisel:diamondChisel, item.null.name
 chisel:obsidianChisel, item.null.name
 chisel:cloudinabottle, Cloud In A Bottle
 chisel:smashingrock, Smashing Rock
+CarpentersBlocks:itemCarpentersHammer, Carpenter's Hammer
+CarpentersBlocks:itemCarpentersChisel, Carpenter's Chisel
+CarpentersBlocks:itemCarpentersTile, Carpenter's Tile
+CarpentersBlocks:itemCarpentersDoor, Carpenter's Door
+CarpentersBlocks:itemCarpentersBed, Carpenter's Bed
 EnderIO:itemCoordSelector, Coordinate Selector
 EnderIO:itemFusedQuartzFrame, Fused Quartz Frame
 EnderIO:itemConduitFacade:0, Conduit Facade
@@ -18341,6 +18414,9 @@ EnderIO:bucketNutrient_distillation, Nutrient Distillation Bucket
 EnderIO:bucketHootch, Hootch Bucket
 EnderIO:bucketRocket_fuel, Rocket Fuel Bucket
 EnderIO:bucketFire_water, Fire Water Bucket
+EnderIO:bucketLiquid_sunshine, Liquid Sunshine Bucket
+EnderIO:bucketCloud_seed, item.bucketCloud_seed.name
+EnderIO:bucketCloud_seed_concentrated, item.bucketCloud_seed_concentrated.name
 EnderIO:itemYetaWrench, Yeta Wrench
 EnderIO:itemEnderface, Enderface
 EnderIO:itemTravelStaff:0, Staff of Traveling
@@ -19271,6 +19347,8 @@ OpenBlocks:infoBook, World Domination with OpenBlocks
 OpenBlocks:devnull, /dev/null
 OpenBlocks:spongeonastick, Sponge
 OpenBlocks:pedometer, Pedometer
+OpenBlocks:epicEraser, Epic Eraser
+OpenBlocks:wrench, Big Metal Bar
 SGCraft:naquadah, Naquadah
 SGCraft:naquadahIngot, Naquadah Alloy Ingot
 SGCraft:sgCoreCrystal, Stargate Core Crystal
@@ -19366,6 +19444,7 @@ StorageDrawers:upgradeCreative:0, Creative Storage Upgrade
 StorageDrawers:upgradeCreative:1, Creative Vending Upgrade
 StorageDrawers:upgradeLock, Drawer Key
 StorageDrawers:shroudKey, Concealment Key
+StorageDrawers:personalKey:0, Personal Key
 StorageDrawers:tape, Packing Tape
 thaumicenergistics:part.base:0, Essentia Import Bus
 thaumicenergistics:part.base:1, Essentia Level Emitter
@@ -20000,29 +20079,9 @@ WitchingGadgets:item.WG_CrystalFlask:0, Crystal Capsule
 WitchingGadgets:item.WG_CrystalFlask:0, Crystal Capsule
 WitchingGadgets:item.WG_CrystalFlask:0, Crystal Capsule
 WitchingGadgets:item.WG_CrystalFlask:0, Crystal Capsule
-WitchingGadgets:item.WG_Cluster:0, Native Aluminum Cluster
-WitchingGadgets:item.WG_Cluster:1, Native Cobalt Cluster
-WitchingGadgets:item.WG_Cluster:3, Native Nickel Cluster
-WitchingGadgets:item.WG_Cluster:5, Native Manganese Cluster
-WitchingGadgets:item.WG_Cluster:6, Native Zinc Cluster
-WitchingGadgets:item.WG_Cluster:7, Native Platinum Cluster
-WitchingGadgets:item.WG_Cluster:9, Native Shadowiron Cluster
-WitchingGadgets:item.WG_Cluster:11, Native Midasium Cluster
-WitchingGadgets:item.WG_Cluster:12, Native Vyroxeres Cluster
-WitchingGadgets:item.WG_Cluster:13, Native Ceruclase Cluster
-WitchingGadgets:item.WG_Cluster:16, Native Vulcanite Cluster
-WitchingGadgets:item.WG_Cluster:17, Native Sanguinite Cluster
-WitchingGadgets:item.WG_Cluster:18, Native Prometheum Cluster
-WitchingGadgets:item.WG_Cluster:19, Native Deep Iron Cluster
-WitchingGadgets:item.WG_Cluster:20, Native Infuscolium Cluster
-WitchingGadgets:item.WG_Cluster:21, Native Oureclase Cluster
-WitchingGadgets:item.WG_Cluster:22, Native Astral Silver Cluster
-WitchingGadgets:item.WG_Cluster:23, Native Carmot Cluster
-WitchingGadgets:item.WG_Cluster:24, Native Mithril Cluster
-WitchingGadgets:item.WG_Cluster:26, Native Orichalcum Cluster
-WitchingGadgets:item.WG_Cluster:27, Native Adamantium Cluster
-WitchingGadgets:item.WG_Cluster:28, Native Atlarus Cluster
-WitchingGadgets:item.WG_Cluster:29, Native Eximite Cluster
+WitchingGadgets:item.WG_CrystalFlask:0, Crystal Capsule
+WitchingGadgets:item.WG_CrystalFlask:0, Crystal Capsule
+WitchingGadgets:item.WG_CrystalFlask:0, Crystal Capsule
 ForgeMicroblock:sawStone, Stone Saw
 ForgeMicroblock:sawIron, Iron Saw
 ForgeMicroblock:sawDiamond, Diamond Saw
