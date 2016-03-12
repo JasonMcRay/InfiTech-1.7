@@ -13,6 +13,7 @@ var blockEmerald = <ore:blockEmerald>;
 var bookEnchanted = <ore:bookEnchanted>;
 var bookshelf = <minecraft:bookshelf>;
 var cauldron = <minecraft:cauldron>;
+var carpetAny = <minecraft:carpet:*>;
 var chestIron = <IronChest:BlockIronChest>;
 var cobblestone = <minecraft:cobblestone>;
 var cobblestoneCompressed = <ExtraUtilities:cobblestone_compressed>;
@@ -24,6 +25,7 @@ var cobblestoneCompressed6 = <ExtraUtilities:cobblestone_compressed:5>;
 var cobblestoneCompressed7 = <ExtraUtilities:cobblestone_compressed:6>;
 var cobblestoneCompressed8 = <ExtraUtilities:cobblestone_compressed:7>;
 var conduitBinder = <EnderIO:itemMaterial:1>;
+var curtains = <ExtraUtilities:curtains>;
 var dirt = <minecraft:dirt>;
 var dirtCompressed = <ExtraUtilities:cobblestone_compressed:8>;
 var dirtCompressed2 = <ExtraUtilities:cobblestone_compressed:9>;
@@ -112,6 +114,11 @@ recipes.addShaped(pipeTransfer * 2, [
     [conduitBinder, pipeSmallSteel, conduitBinder],
     [pipeMediumElectrum, dustRedstone, pipeMediumElectrum],
     [conduitBinder, pipeSmallSteel, conduitBinder]]);
+recipes.remove(curtains);
+recipes.addShaped(curtains * 8, [
+    [carpetAny, carpetAny],
+    [carpetAny, carpetAny],
+    [carpetAny, carpetAny]]);
 	
 # ---GT Integration---
 //ChemicalBath.addRecipe(outpu1, output2, output3, input, liquidInput, chance1, chance2, chance3, durationTicks, euPerTick);
