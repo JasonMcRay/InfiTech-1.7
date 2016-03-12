@@ -5,6 +5,7 @@ import mods.gregtech.ArcFurnace;
 import mods.gregtech.PlasmaArcFurnace;
 import mods.ic2.SemiFluidGenerator;
 import mods.gregtech.Printer;
+import mods.gregtech.CuttingSaw;
 
 # Aliases
 var cableCopperAnnealed1x = <gregtech:gt.blockmachines:1386>;
@@ -146,6 +147,10 @@ recipes.addShaped(itemDustSmallSalt * 4, [
     [null, itemDustSalt]]);
 recipes.addShaped(itemDustTinySalt * 9, [
     [itemDustSalt, null]]);
+
+# GT Processing
+CuttingSaw.addRecipe([<gregtech:gt.metaitem.01:29874> * 2], <ore:ingotPlastic>, <liquid:lubricant> * 5, 60, 8);
+CuttingSaw.addRecipe([<gregtech:gt.metaitem.01:29874> * 2], <ore:platePlastic>, <liquid:lubricant> * 5, 60, 8);
 
 # Recipe Tweaks
 recipes.remove(reBatteryAdv);

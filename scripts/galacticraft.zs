@@ -737,7 +737,7 @@ recipes.addShaped(<GalacticraftMars:tile.walkwayOxygenPipe> * 2, [
 //Thermal Cloth
 recipes.addShaped(<GalacticraftMars:item.itemBasicAsteroids:7> , [
 [AlFoil, <minecraft:string>, AlFoil],
-[<minecraft:string>, <Thaumcraft:ItemResource:7>, <minecraft:string>],
+[<minecraft:string>, <gregtech:gt.metaitem.01:29874>, <minecraft:string>],
 [AlFoil, <minecraft:string>, AlFoil]]);
 
 //Desh Sticks
