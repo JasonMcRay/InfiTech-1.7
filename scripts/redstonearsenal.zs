@@ -32,7 +32,7 @@ recipes.remove(fluxedChest);
 recipes.addShaped(fluxedChest, [
     [platingFlux, HHammer, platingFlux],
     [platingFlux, platingFlux, platingFlux],
-    [platingFlux, platingFlux platingFlux]]);
+    [platingFlux, platingFlux, platingFlux]]);
 recipes.remove(fluxedLegs);
 recipes.addShaped(fluxedLegs, [
     [platingFlux, platingFlux, platingFlux],
