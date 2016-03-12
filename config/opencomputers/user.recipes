@@ -34,3 +34,11 @@ serverRack {
           [{item="ic2.reactorVentDiamond", subID=1}, chest, {item="ic2.reactorVentDiamond", subID=1}]
           ["oc:relay", "oc:materialCircuitBoardPrinted","oc:powerDistributor"]]
 }
+
+ram1 {
+  type: gt_assembler
+  input: ["oc:circuitChip1", {item="item.printedCircuitBoard"}]
+  count: [3, 3]
+  eu: 32
+  time: 250
+}

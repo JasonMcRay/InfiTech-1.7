@@ -28,6 +28,7 @@ var fieldGenEV = <gregtech:gt.metaitem.01:32673>;
 var glowstone = <minecraft:glowstone_dust>;
 var hullEV = <gregtech:gt.blockmachines:14>;
 var ingotDarkSteel = <ore:ingotDarkSteel>;
+var ingotIron = <ore:ingotIron>;
 var ingotNaqAlloy = <ore:ingotNaquadahAlloy>;
 var ingotNaqAlloyGT = <gregtech:gt.metaitem.01:11325>;
 var ingotNaqAlloySG = <SGCraft:naquadahIngot>;
@@ -56,6 +57,7 @@ var sensorEV = <gregtech:gt.metaitem.01:32693>;
 var stargateBase = <SGCraft:stargateBase>;
 var stargateChevronBlock = <SGCraft:stargateRing:1>;
 var stargateController = <SGCraft:stargateController>;
+var stargateInterfaceOC = <SGCraft:ocInterface>;
 var stargatePowerIC2 = <SGCraft:ic2PowerUnit>;
 var stargatePowerRF = <SGCraft:rfPowerUnit>;
 var stargateRing = <SGCraft:stargateRing>;
@@ -107,6 +109,11 @@ recipes.remove(irisBlade);
 recipes.remove(irisUpgrade);
 Assembler.addRecipe(irisBlade, plateTitanium * 4, dustCarbon, 2400, 64);
 Assembler.addRecipe(irisUpgrade, irisBlade * 8, plateRedstone, 6000, 64);
+recipes.remove(stargateInterfaceOC);
+recipes.addShaped(stargateInterfaceOC, [
+    [ingotIron, ingotNaqAlloy, ingotIron],
+    [<ore:oc:cable>, <ore:oc:circuitChip1>, <ore:oc:cable>],
+    [ingotIron, <ore:oc:materialCircuitBoardPrinted>, ingotIron]]);
 
 # Recipe Creation
 ChemicalReactor.addRecipe(dustNaqAlloy, dustNaquadah, dustIron, 12000);
