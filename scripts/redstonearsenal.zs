@@ -14,10 +14,10 @@ var redstone = <minecraft:redstone>;
 var electrumDust = <ore:dustElectrum>;
 var dustElectrumFlux = <gregtech:gt.metaitem.01:2320>;
 var moltenRedstone = <liquid:molten.redstone>;
-var fluxedChest = <RedstoneArsenal:armor.plateFlux>.withTag({Energy: 0});
-var fluxedLegs = <RedstoneArsenal:armor.legsFlux>.withTag({Energy: 0});
-var fluxedHelm = <RedstoneArsenal:armor.helmetFlux>.withTag({Energy: 0});
-var fluxedBoots = <RedstoneArsenal:armor.bootsFlux>.withTag({Energy: 0});
+var fluxedChest = <RedstoneArsenal:armor.plateFlux>;
+var fluxedLegs = <RedstoneArsenal:armor.legsFlux>;
+var fluxedHelm = <RedstoneArsenal:armor.helmetFlux>;
+var fluxedBoots = <RedstoneArsenal:armor.bootsFlux>;
 var HHammer = <ore:craftingToolHardHammer>;
 
 # Recipe Tweaks
