@@ -522,7 +522,7 @@ Research.addPrereq("GT_ENCHANTMENTINVISIBLEGEAR", "GT_ENCHANTMENTPROTECTION", fa
 Infusion.addRecipe("GT_ENCHANTMENTINVISIBLEGEAR", <minecraft:book>, [salisMundus, <EnderIO:blockFusedQuartz:0>], "praecantatio 4, auram 4, tenebrae 4, vitreus 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:66,lvl:1}]}), 1);
 Research.addInfusionPage("GT_ENCHANTMENTINVISIBLEGEAR", <minecraft:enchanted_book>);
 Infusion.removeRecipe(<minecraft:enchanted_book>);
-Infusion.addRecipe("GT_ENCHANTMENTINVISIBLEGEAR", <minecraft:book>, [salisMundus, <minecraft:potion:8270>], "praecantatio 6, auram 6, tenebrae 6, vitreus 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:66,lvl:2}]}), 3);
+Infusion.addRecipe("GT_ENCHANTMENTINVISIBLEGEAR", <minecraft:book>, [salisMundus, <ExtraUtilities:decorativeBlock2:11>], "praecantatio 6, auram 6, tenebrae 6, vitreus 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:66,lvl:2}]}), 3);
 Research.addInfusionPage("GT_ENCHANTMENTINVISIBLEGEAR", <minecraft:enchanted_book>);
 Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTINVISIBLEGEAR", true);
@@ -781,7 +781,7 @@ Infusion.addRecipe("GT_ENCHANTMENTREPAIR", <minecraft:book>, [salisMundus, <mine
 Infusion.addRecipe("GT_ENCHANTMENTREPAIR", <minecraft:book>, [salisMundus, <Railcraft:anvil>], "auram 32, praecantatio 32, fabrico 32, instrumentum 32, ordo 32, lucrum 32", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:151,lvl:2}]}), 8);
 Infusion.addRecipe("GT_ENCHANTMENTRIDEPROTECT", <minecraft:book>, [salisMundus, <minecraft:piston>], "praecantatio 4, auram 4, tutamen 4, vinculum 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:70,lvl:1}]}), 1);
 Infusion.addRecipe("GT_ENCHANTMENTINVISIBLEGEAR", <minecraft:book>, [salisMundus, <EnderIO:blockFusedQuartz:0>], "praecantatio 4, auram 4, tenebrae 4, vitreus 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:66,lvl:1}]}), 1);
-Infusion.addRecipe("GT_ENCHANTMENTINVISIBLEGEAR", <minecraft:book>, [salisMundus, <minecraft:potion:8270>], "praecantatio 6, auram 6, tenebrae 6, vitreus 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:66,lvl:2}]}), 3);
+Infusion.addRecipe("GT_ENCHANTMENTINVISIBLEGEAR", <minecraft:book>, [salisMundus, <ExtraUtilities:decorativeBlock2:11>], "praecantatio 6, auram 6, tenebrae 6, vitreus 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:66,lvl:2}]}), 3);
 Infusion.addRecipe("GT_ENCHANTMENTUNVEILING", <minecraft:book>, [salisMundus, <minecraft:golden_carrot>], "praecantatio 4, auram 4, lux 4, sensus 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:67,lvl:1}]}), 1);
 Infusion.addRecipe("GT_ENCHANTMENTSTEALTH", <minecraft:book>, [salisMundus, <ExtraUtilities:curtains>], "auram 4, praecantatio 4, motus 4, tenebrae 4", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:68,lvl:1}]}), 1);
 Infusion.addRecipe("GT_ENCHANTMENTSTEALTH", <minecraft:book>, [salisMundus, <TravellersGear:simpleGear>.withTag({display: {colour: 1644825}})], "auram 6, praecantatio 6, motus 6, tenebrae 6", <minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:68,lvl:2}]}), 2);
