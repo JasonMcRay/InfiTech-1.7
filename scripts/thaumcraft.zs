@@ -1748,12 +1748,9 @@ Research.setConcealed("GT_TRANSTHAUMIUM", true);
 Research.moveResearch("GT_IRON_TO_STEEL", "ALCHEMY", 6, 7); 
 Research.clearPages("GT_IRON_TO_STEEL"); 
 Research.addPage("GT_IRON_TO_STEEL", "kirara.research_page.GT_IRON_TO_STEEL.1");
-game.setLocalization("en_US", "kirara.research_page.GT_IRON_TO_STEEL.1", "You have discovered a way of making wrought iron even harder by breaking down and reordering its components.<BR>This method can be used to create a material called steel, which is used in many non-Thaumaturgic applications. Unfortunately, this process leaves the material in dust form, requiring further processing via non-Thaumaturgical means.");
+game.setLocalization("en_US", "kirara.research_page.GT_IRON_TO_STEEL.1", "You have discovered a way of making wrought iron even harder by breaking down and reordering its components.<BR>This method can be used to create a material called steel, which is used in many non-Thaumaturgic applications.");
 Crucible.addRecipe("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:9305>, <gregtech:gt.metaitem.01:9304>, "ordo 1");
 Research.addCruciblePage("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:9305>);
-Crucible.removeRecipe(<gregtech:gt.metaitem.01:9305>);
-
-Crucible.addRecipe("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:305>, <gregtech:gt.metaitem.01:9304>, "ordo 1");
 Research.clearPrereqs("GT_IRON_TO_STEEL"); 
 Research.addPrereq("GT_IRON_TO_STEEL", "GT_TRANSIRONWROUGHT", false); 
 Warp.addToResearch("GT_IRON_TO_STEEL", 3);
