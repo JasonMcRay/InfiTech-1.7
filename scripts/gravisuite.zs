@@ -23,8 +23,14 @@ var cell60k = <IC2:reactorCoolantSix:1>;
 var advHeatExchanger = <IC2:reactorHeatSwitchDiamond:1>;
 var heatReactorPlating = <IC2:reactorPlatingHeat>;
 var plateAlloyIridium = <ore:plateAlloyIridium>;
+var gravitool = <GraviSuite:graviTool>;
+var advancedChainsaw = <GraviSuite:advChainsaw>;
+var advancedDiamondDrill = <GraviSuite:advDDrill>;
 
-
+// Recipe removal
+recipes.remove(gravitool);
+recipes.remove(advancedChainsaw);
+recipes.remove(advancedDiamondDrill);
 
 // --- Glass Fiber Recipes ---
 recipes.remove(superconductor);
@@ -58,7 +64,7 @@ recipes.addShaped(engineBooster, [
         [<IC2:itemPartAlloy>, <IC2:reactorVentDiamond:1>, <IC2:itemPartAlloy>]]);
 
 // --- Localization Fixes ---
-game.setLocalization("itemSuperConductorCover.name", "Superconductor Cover");
+/*game.setLocalization("itemSuperConductorCover.name", "Superconductor Cover");
 game.setLocalization("itemSuperConductor.name", "Superconductor");
 game.setLocalization("itemCoolingCore.name", "Cooling Core");
 game.setLocalization("itemGravitationEngine.name", "Gravitation Engine");
@@ -66,5 +72,5 @@ game.setLocalization("itemMagnetron.name", "Magnetron");
 game.setLocalization("itemVajraCore.name", "Vajra Core");
 game.setLocalization("itemEngineBoost.name", "Engine Booster");
 game.setLocalization("item.sonicLauncher.name", "Sonic Launcher");
-game.setLocalization("RelocatorPortal.name", "Relocator Portal");
+game.setLocalization("RelocatorPortal.name", "Relocator Portal");*/
 

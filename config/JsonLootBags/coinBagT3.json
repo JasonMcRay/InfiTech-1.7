@@ -20,7 +20,7 @@
             {
                 "item": "gregtech:gt.metaitem.01",
                 "stacksize": 1,
-                "damage": 32000
+                "damage": 32011
             }    
         },
         {
@@ -29,9 +29,8 @@
             "weight": 40,
             "itemstack":
             {
-                "item": "gregtech:gt.metaitem.01",
-                "stacksize": 1,
-                "damage": 32001
+                "item": "IC2:itemCoin",
+                "stacksize": 1
             }
         },
         {
@@ -42,7 +41,7 @@
             {
                 "item": "gregtech:gt.metaitem.01",
                 "stacksize": 1,
-                "damage": 32002
+                "damage": 32013
             }
         },
         {
@@ -53,7 +52,7 @@
             {
                 "item": "gregtech:gt.metaitem.01",
                 "stacksize": 1,
-                "damage": 32003
+                "damage": 32014
             }
         }
     ]

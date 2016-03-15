@@ -19,6 +19,7 @@ var fluxedLegs = <RedstoneArsenal:armor.legsFlux>;
 var fluxedHelm = <RedstoneArsenal:armor.helmetFlux>;
 var fluxedBoots = <RedstoneArsenal:armor.bootsFlux>;
 var HHammer = <ore:craftingToolHardHammer>;
+var platingFlux = <RedstoneArsenal:material:128>;
 
 # Recipe Tweaks
 
