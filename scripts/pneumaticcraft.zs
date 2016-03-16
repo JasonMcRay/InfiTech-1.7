@@ -75,9 +75,11 @@ var gogglesRevealing = <Thaumcraft:ItemGoggles>;
 var goldTurbineBlade = <gregtech:gt.metaitem.02:16086>;
 var gpsTool = <PneumaticCraft:gpsTool>;
 var heatConductor = <IC2:itemRecipePart:5>;
+var heatSink = <PneumaticCraft:>;
 var heatVent = <IC2:reactorVent:1>;
 var HHammer = <ore:craftingToolHardHammer>;
 var hopper = <minecraft:hopper>;
+var ingotAluminium = <ore:ingotAluminium>;
 var ingotCompressedIron = <PneumaticCraft:ingotIronCompressed>;
 var integratedCircuit4 = <gregtech:gt.integrated_circuit:4>;
 var integratedCircuit6 = <gregtech:gt.integrated_circuit:6>;
@@ -217,6 +219,10 @@ var itemFoilAnnealedCopper = <gregtech:gt.metaitem.01:29345>;
 var epoxyCoatedPlastic = <InfinityCore:itemMaterial:11>;
 
 # Recipe tweaks version 3
+recipes.remove(heatSink);
+recipes.addShaped(heatSink, [
+    [ironBars, ironBars, ironBars],
+    [ingotCompressedIron, ingotAluminium, ingotCompressedIron]]);
 recipes.remove(tubePressure);
 recipes.addShaped(tubePressure * 6, [
     [plateCompressedIron, wrench, plateCompressedIron],
