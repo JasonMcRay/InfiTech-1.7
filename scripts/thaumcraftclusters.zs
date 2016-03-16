@@ -115,13 +115,24 @@ Research.addCruciblePage("PURECOPPER", <Thaumcraft:ItemNugget:17>);
 Pulverizer.addRecipe([<IC2:itemDust:3> * 3, <IC2:itemDust:3>, <gregtech:gt.metaitem.01:2299>], <Thaumcraft:ItemNugget:17>, [10000, 5000, 500], 400, 2);
 
 Research.orphanResearch("PURECINNABAR");
-Research.clearPrereqs("PURECINNABAR");
-Research.addPrereq("PURECINNABAR", "PUREIRON", false);
-Research.moveResearch("PURECINNABAR", "ALCHEMY", -2, 7);
-Research.clearPages("PURECINNABAR");
-Research.addPage("PURECINNABAR", "kirara.research_page.PURECINNABAR.1");
-game.setLocalization("en_US", "kirara.research_page.PURECINNABAR.1", "Native clusters are rare concentrations of metal in its purest form. You have discovered a way to purify and concentrate normal cinnabar ore into a native cinnabar cluster.<BR>When smelted these clusters provide twice the normal amount of quicksilver, and when centrifuged provide nearly four quicksilver.");
-Research.addCruciblePage("PURECINNABAR", <Thaumcraft:ItemNugget:21>);
+Research.removeResearch("PURECINNABAR");
+Crucible.removeRecipe(<Thaumcraft:ItemNugget:21>);
+<ore:listAllOreCinnabar>.addAll(<ore:oreCinnabar>);
+<ore:listAllOreCinnabar>.add(<gregtech:gt.blockores:826>);
+<ore:listAllOreCinnabar>.add(<gregtech:gt.blockores:1826>);
+<ore:listAllOreCinnabar>.add(<gregtech:gt.blockores:2826>);
+<ore:listAllOreCinnabar>.add(<gregtech:gt.blockores:3826>);
+<ore:listAllOreCinnabar>.add(<gregtech:gt.blockores:4826>);
+Research.addResearch("GT_PURECINNABAR", "ALCHEMY", "metallum 3, ordo 2, permutatio 2, venenum 1", -2, 7, 2, <Thaumcraft:ItemNugget:21>);
+game.setLocalization("en_US", "tc.research_name.GT_PURECINNABAR", "Cinnabar Purification");
+game.setLocalization("en_US", "tc.research_text.GT_PURECINNABAR", "[GT] Purification of cinnabar into native clusters");
+Research.addPage("GT_PURECINNABAR", "kirara.research_page.GT_PURECINNABAR.1");
+game.setLocalization("en_US", "kirara.research_page.GT_PURECINNABAR.1", "Native clusters are rare concentrations of metal in its purest form. You have discovered a way to purify and concentrate normal cinnabar ore into a native cinnabar cluster.<BR>When smelted these clusters provide twice the normal amount of quicksilver, and when centrifuged provide nearly four quicksilver.");
+Crucible.addRecipe("GT_PURECINNABAR", <Thaumcraft:ItemNugget:21>, <ore:listAllOreCinnabar>, "metallum 1, ordo 1");
+Research.addCruciblePage("GT_PURECINNABAR", <Thaumcraft:ItemNugget:21>);
+Research.setSecondary("GT_PURECINNABAR", true);
+Research.addPrereq("GT_PURECINNABAR", "PUREIRON", false);
+
 Centrifuge.addRecipe([<Thaumcraft:ItemResource:3>, <gregtech:gt.metaitem.01:2299>], null, <Thaumcraft:ItemNugget:21>, null, <liquid:mercury> * 3000, [5000, 500], 800, 5);
 
 
