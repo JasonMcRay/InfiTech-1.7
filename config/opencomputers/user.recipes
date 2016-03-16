@@ -34,11 +34,20 @@ serverRack {
           [{item="ic2.reactorVentDiamond", subID=1}, chest, {item="ic2.reactorVentDiamond", subID=1}]
           ["oc:relay", "oc:materialCircuitBoardPrinted","oc:powerDistributor"]]
 }
-
 ram1 {
   type: gt_assembler
   input: ["oc:circuitChip1", {item="item.printedCircuitBoard"}]
   count: [3, 3]
   eu: 32
   time: 250
+}
+capacitor {
+  input: [["", {item="gt.metaitem.01", subID=32527}, ""]
+          [{block="gt.blockcasings", subID=1}, "oc:materialTransistor", {block="gt.blockcasings", subID=1}]
+          ["oc:materialCircuitBoardPrinted", craftingToolWrench, "oc:materialCircuitBoardPrinted"]]
+}
+powerDistributor {
+  input: [["", plateAluminium, ""]
+          [{item="gt.metaitem.01", subID=32527}, {block="gt.blockcasings", subID=2}, circuitMaster]
+          ["oc:materialCircuitBoardPrinted", plateAluminium, craftingToolWrench]]
 }
