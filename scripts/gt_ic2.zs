@@ -124,6 +124,12 @@ var teleporter              = <IC2:blockMachine2>;
 var uraniumEnriched         = <IC2:itemUran>;
 var Wrench                  = <ore:craftingToolWrench>;
 
+# seeds
+
+var redwheat		= <IC2:itemCropSeed>.onlyWithTag({owner: "IC2", name: "redwheat", scan: 4 as byte});
+var potato		= <IC2:itemCropSeed>.onlyWithTag({owner: "IC2", name: "potato", scan: 4 as byte});
+redwheat.addTooltip("source of redstone + wheat");
+potato.addTooltip("source of potato");
 
 # Tooltip
 ic2solarpanel.addTooltip(format.red(format.bold("This item is DISABLED!")));
