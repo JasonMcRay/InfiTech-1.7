@@ -45,7 +45,6 @@ var railHS = <Railcraft:part.rail:3>;
 var railReinforced = <Railcraft:part.rail:4>;
 var railStandard = <Railcraft:part.rail>;
 var trackDisposal = <Railcraft:track:2264>.withTag({track: "railcraft:track.disposal"});
-var upgradeLapotronLoader = <Railcraft:upgrade.lapotron>;
 var woodenTie = <Railcraft:part.tie>;
 var cokeOven = <Railcraft:machine.alpha:7>;
 var dustClay = <gregtech:gt.metaitem.01:2805>;
