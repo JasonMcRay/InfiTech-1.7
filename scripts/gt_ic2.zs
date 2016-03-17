@@ -126,12 +126,34 @@ var Wrench                  = <ore:craftingToolWrench>;
 
 # seeds
 
-var redwheat		= <IC2:itemCropSeed>.onlyWithTag({owner: "IC2", name: "redwheat", scan: 4 as byte});
-var potato		= <IC2:itemCropSeed>.onlyWithTag({owner: "IC2", name: "potato", scan: 4 as byte});
-redwheat.addTooltip("source of redstone + wheat");
-potato.addTooltip("source of potato");
+var stagnium		= <IC2:itemCropSeed>.onlyWithTag({name: "stagnium", scan: 4 as byte});
+var redwheat		= <IC2:itemCropSeed>.onlyWithTag({name: "redwheat", scan: 4 as byte});
+var dandelion		= <IC2:itemCropSeed>.onlyWithTag({name: "dandelion", scan: 4 as byte});
+var venomilia		= <IC2:itemCropSeed>.onlyWithTag({name: "venomilia", scan: 4 as byte});
+var potato		= <IC2:itemCropSeed>.onlyWithTag({name: "potato", scan: 4 as byte});
+var eatingplant 	= <IC2:itemCropSeed>.onlyWithTag({name: "eatingplant", scan: 4 as byte});
+var blackthorn		= <IC2:itemCropSeed>.onlyWithTag({name: "blackthorn", scan: 4 as byte});
+var weed		= <IC2:itemCropSeed>.onlyWithTag({name: "weed", scan: 4 as byte});
+var wheat		= <IC2:itemCropSeed>.onlyWithTag({name: "wheat", scan: 4 as byte});
+var carrots		= <IC2:itemCropSeed>.onlyWithTag({name: "carrots", scan: 4 as byte});
+var ferru		= <IC2:itemCropSeed>.onlyWithTag({name: "ferru", scan: 4 as byte});
+var terraWart		= <IC2:itemCropSeed>.onlyWithTag({name: "terraWart", scan: 4 as byte});
 
 # Tooltip
+
+stagnium.addTooltip("");
+redwheat.addTooltip("source of redstone + wheat");
+dandelion.addTooltip("source of dandelion yellow");
+venomilia.addTooltip("source of purple dye + grin powder");
+potato.addTooltip("source of potato");
+eatingplant.addTooltip("");
+blackthorn.addTooltip("source of ink sac");
+weed.addTooltip("source of all evil");
+wheat.addTooltip("source of wheat");
+carrots.addTooltip("source of carrots");
+ferru.addTooltip("source of iron");
+terraWart.addTooltip("source of terra wart");
+
 ic2solarpanel.addTooltip(format.red(format.bold("This item is DISABLED!")));
 ic2ElectricFurnace.addTooltip(format.red(format.bold("This item is DISABLED!")));
 ic2Macerator.addTooltip(format.red(format.bold("This item is DISABLED!")));
