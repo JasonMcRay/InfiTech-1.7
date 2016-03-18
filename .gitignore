@@ -99,5 +99,5 @@ mods/BetterFps-1.0.1.jar
 config/NEI/client.cfg
 replay*
 config/TravellersGear_inv.cfg
-config/AppliedEnergistics2\CustomRecipes.cfg
-config/AppliedEnergistics2\recipes\items.csv
+config/AppliedEnergistics2/CustomRecipes.cfg
+config/AppliedEnergistics2/recipes/items.csv

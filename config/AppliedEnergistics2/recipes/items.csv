@@ -1948,7 +1948,6 @@ harvestcraft:pamholidayCake, Holiday Cake
 harvestcraft:pampumpkincheeseCake, Pumpkin Cheese Cake
 Railcraft:fluid.creosote, Creosote
 Railcraft:fluid.steam, Steam
-Railcraft:residual.heat, Residual Heat
 Railcraft:cube:0, Block of Coal Coke
 Railcraft:cube:9, Block of Copper
 Railcraft:cube:10, Block of Tin
@@ -2171,8 +2170,6 @@ Railcraft:machine.gamma:2, Adv. Item Loader
 Railcraft:machine.gamma:3, Adv. Item Unloader
 Railcraft:machine.gamma:4, Fluid Loader
 Railcraft:machine.gamma:5, Fluid Unloader
-Railcraft:machine.gamma:6, Energy Loader
-Railcraft:machine.gamma:7, Energy Unloader
 Railcraft:machine.gamma:8, Cart Dispenser
 Railcraft:machine.gamma:9, Train Dispenser
 Railcraft:machine.epsilon:0, Electric Feeder Unit
@@ -7700,7 +7697,7 @@ EnderZoo:blockConcussionCharge, Concussion Charge
 ExtraUtilities:chestMini, Mini-Chest
 ExtraUtilities:chestFull, Slightly Larger Chest
 ExtraUtilities:enderCollector, Ender Collector
-ExtraUtilities:endConstructor:0, QED (Quail Eating Ducks)
+ExtraUtilities:endConstructor:0, QED (Quacky Ender Device)
 ExtraUtilities:endConstructor:2, Ender-Flux Crystal
 ExtraUtilities:endMarker, Ender-Marker
 ExtraUtilities:curtains, Blackout Curtains
@@ -8032,42 +8029,42 @@ ExtraUtilities:etherealglass:5, Dark Ethereal Glass (Inverted)
 Trajectory:moving, tile.moving.name
 RedstoneArsenal:Storage:0, Fluxed Electrum Block
 RedstoneArsenal:Storage:1, Flux Crystal Block
-ThaumicTinkerer:fireAir, Aer Imbued Fire
-ThaumicTinkerer:interface, Transvector Interface
-ThaumicTinkerer:infusedGrainBlock, tile.infusedGrainBlock.name
-ThaumicTinkerer:repairer, Thaumic Restorer
-ThaumicTinkerer:bedrockPortal, Bedrock Portal
-ThaumicTinkerer:forcefield, Forcefield
-ThaumicTinkerer:wardSlab:0, tile.wardSlab.name
-ThaumicTinkerer:wardSlabFull:0, tile.wardSlab.name
-ThaumicTinkerer:animationTablet, Dynamism Tablet
-ThaumicTinkerer:magnet:0, Kinetic Attractor
-ThaumicTinkerer:magnet:1, Corporeal Attractor
-ThaumicTinkerer:fireChaos, Perditio Imbued Fire
-ThaumicTinkerer:fireWater, Aqua Imbued Fire
-ThaumicTinkerer:Levitational Locomotive Relay, Levitational Locomotive Relay
 ThaumicTinkerer:darkQuartzSlab:0, Smokey Quartz Slab
 ThaumicTinkerer:darkQuartzSlabFull:0, Smokey Quartz Slab
-ThaumicTinkerer:fireEarth, Terra Imbued Fire
-ThaumicTinkerer:platform, Ethereal Platform
-ThaumicTinkerer:nitorGas, tile.nitorGas.name
-ThaumicTinkerer:travelSlab:0, Paving Slab of Travel
-ThaumicTinkerer:travelSlabFull:0, Paving Slab of Travel
-ThaumicTinkerer:darkQuartzStairs, Smokey Quartz Stairs
-ThaumicTinkerer:enchanter, Osmotic Enchanter
 ThaumicTinkerer:gaseousLight, tile.gaseousLight.name
-ThaumicTinkerer:fireOrder, Ordo Imbued Fire
 ThaumicTinkerer:fireFire, Ignis Imbued Fire
-ThaumicTinkerer:Levitational Locomotive, Levitational Locomotive
+ThaumicTinkerer:fireOrder, Ordo Imbued Fire
 ThaumicTinkerer:gaseousShadow, tile.gaseousShadow.name
-ThaumicTinkerer:funnel, Essentia Funnel
-ThaumicTinkerer:infusedFarmland, tile.infusedFarmland.name
+ThaumicTinkerer:infusedGrainBlock, tile.infusedGrainBlock.name
+ThaumicTinkerer:fireAir, Aer Imbued Fire
+ThaumicTinkerer:forcefield, Forcefield
+ThaumicTinkerer:platform, Ethereal Platform
+ThaumicTinkerer:bedrockPortal, Bedrock Portal
+ThaumicTinkerer:fireChaos, Perditio Imbued Fire
 ThaumicTinkerer:travelStairs, Paving Stair of Travel
-ThaumicTinkerer:dislocator, Transvector Dislocator
+ThaumicTinkerer:animationTablet, Dynamism Tablet
+ThaumicTinkerer:enchanter, Osmotic Enchanter
 ThaumicTinkerer:darkQuartz:0, Block of Smokey Quartz
 ThaumicTinkerer:darkQuartz:1, Chiseled Smokey Quartz Block
 ThaumicTinkerer:darkQuartz:2, Pillar Smokey Quartz Block
+ThaumicTinkerer:darkQuartzStairs, Smokey Quartz Stairs
+ThaumicTinkerer:interface, Transvector Interface
+ThaumicTinkerer:Levitational Locomotive, Levitational Locomotive
 ThaumicTinkerer:spawner, Tablet of Necromancy
+ThaumicTinkerer:travelSlab:0, Paving Slab of Travel
+ThaumicTinkerer:travelSlabFull:0, Paving Slab of Travel
+ThaumicTinkerer:infusedFarmland, tile.infusedFarmland.name
+ThaumicTinkerer:fireEarth, Terra Imbued Fire
+ThaumicTinkerer:fireWater, Aqua Imbued Fire
+ThaumicTinkerer:magnet:0, Kinetic Attractor
+ThaumicTinkerer:magnet:1, Corporeal Attractor
+ThaumicTinkerer:Levitational Locomotive Relay, Levitational Locomotive Relay
+ThaumicTinkerer:nitorGas, tile.nitorGas.name
+ThaumicTinkerer:repairer, Thaumic Restorer
+ThaumicTinkerer:funnel, Essentia Funnel
+ThaumicTinkerer:dislocator, Transvector Dislocator
+ThaumicTinkerer:wardSlab:0, tile.wardSlab.name
+ThaumicTinkerer:wardSlabFull:0, tile.wardSlab.name
 MagicBees:magicbees.enchantedEarth, Enchanted Earth
 MagicBees:hive:0, Curious Hive
 MagicBees:hive:1, Unusual Hive
@@ -10544,10 +10541,10 @@ appliedenergistics2:item.ItemFacade:0, Cable Facade - Redstone Clock
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Fluxed Electrum Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Flux Crystal Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Smokey Quartz Slab
-appliedenergistics2:item.ItemFacade:0, Cable Facade - Paving Slab of Travel
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Block of Smokey Quartz
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Chiseled Smokey Quartz Block
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Pillar Smokey Quartz Block
+appliedenergistics2:item.ItemFacade:0, Cable Facade - Paving Slab of Travel
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Curious Hive
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Unusual Hive
 appliedenergistics2:item.ItemFacade:0, Cable Facade - Resonating Hive
@@ -12933,7 +12930,6 @@ Railcraft:cart.track.layer:0, Track Layer Cart
 Railcraft:cart.track.remover:0, Track Remover Cart
 Railcraft:cart.tank:0, Tank Cart
 Railcraft:cart.cargo:0, Cargo Cart
-Railcraft:upgrade.lapotron, item.railcraft.upgrade.lapotron.name
 Railcraft:cart.energy.batbox:0, Batbox Cart
 Railcraft:cart.energy.mfe:0, MFE Cart
 Railcraft:cart.energy.cesu:0, CESU Cart
@@ -19022,6 +19018,8 @@ InfinityCore:itemMaterial:14, Sandstone Rod
 InfinityCore:itemMaterial:15, Hardened Clay Rod
 InfinityCore:itemMaterial:16, Edible Salt
 InfinityCore:droneFrame, Drone Case (Rotor)
+InfinityCore:itemDummy:0, Dummy
+InfinityCore:itemDummy:1, Dummy
 IronChest:ironGoldUpgrade, Iron to Gold Chest Upgrade
 IronChest:goldDiamondUpgrade, Gold to Diamond Chest Upgrade
 IronChest:copperSilverUpgrade, Copper to Silver Chest Upgrade
