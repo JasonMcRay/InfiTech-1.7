@@ -67,11 +67,6 @@ recipes.remove(railElectric);
 // Remove all Rock Crusher recipes
 mods.railcraft.RockCrusher.removeRecipe(<*>);
 
-recipes.remove(upgradeLapotronLoader);
-recipes.addShaped(upgradeLapotronLoader, [
-	[glass, glass, glass],
-	[cablePlatinum, crystalLapotron, cablePlatinum],
-	[glass, circuitAdvanced, glass]]);
 recipes.remove(fireboxSolid);
 recipes.addShaped(fireboxSolid, [
 	[brickAbyssal, brickAbyssal, brickAbyssal],
