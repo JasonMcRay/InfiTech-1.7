@@ -17,7 +17,7 @@ var dustSalt = <ore:dustSalt>;
 
 # Blocks/Items Removal
 recipes.remove(sink);
-NEI.hide(sink);
+sink.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # Recipe Tweaks
 recipes.remove(presser);

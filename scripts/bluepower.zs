@@ -64,21 +64,21 @@ var screwdriver = <ore:craftingToolScrewdriver>;
 
 # Item/block Removal
 recipes.remove(blockBreaker);
-NEI.hide(blockBreaker);
+blockBreaker.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(alloyFurnace);
-NEI.hide(alloyFurnace);
+alloyFurnace.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(drawplate);
-NEI.hide(drawplate);
+drawplate.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(axeAmethyst);
-NEI.hide(axeAmethyst);
+axeAmethyst.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(swordAmethyst);
-NEI.hide(swordAmethyst);
+swordAmethyst.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(pickaxeAmethyst);
-NEI.hide(pickaxeAmethyst);
+pickaxeAmethyst.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(shovelAmethyst);
-NEI.hide(shovelAmethyst);
+shovelAmethyst.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(hoeAmethyst);
-NEI.hide(hoeAmethyst);
+hoeAmethyst.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(<bluepower:auto_project_table>);
 <bluepower:auto_project_table>.addTooltip(format.red(format.bold("This item is DISABLED!")));
 

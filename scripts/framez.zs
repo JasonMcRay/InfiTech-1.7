@@ -87,21 +87,21 @@ frameCoreLinear.addTooltip(format.red("This item is DISABLED!"));
 recipes.remove(frameCoreBlink);
 frameCoreBlink.addTooltip(format.red("This item is DISABLED!"));
 recipes.remove(partFrameGold);
-NEI.hide(partFrameGold);
+partFrameGold.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(partFrameSilver);
-NEI.hide(partFrameSilver);
+partFrameSilver.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(partFrameTin);
-NEI.hide(partFrameTin);
+partFrameTin.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(partFrameIron);
-NEI.hide(partFrameIron);
+partFrameIron.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(partFrameCopper);
-NEI.hide(partFrameCopper);
+partFrameCopper.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(partFrameBronze);
-NEI.hide(partFrameBronze);
+partFrameBronze.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(partFrameWood);
-NEI.hide(partFrameWood);
+partFrameWood.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(frameRFAll);
-NEI.hide(frameRFAll);
+frameRFAll.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # Recipe Changes
 //OutputStack, InputStack1, InputStack2, InputFluid, Time in Ticks, EnergyUsage

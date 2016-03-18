@@ -239,9 +239,9 @@ itemSilicon.remove(EISilicon);
 # Item/block removal
 recipes.remove(gearBasic);
 gearStone.remove(gearBasic);
-NEI.hide(gearBasic);
+gearBasic.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(alloySmelter);
-NEI.hide(alloySmelter);
+alloySmelter.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # Recipe Tweaks
 recipes.remove(probeConduit);

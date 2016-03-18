@@ -33,7 +33,7 @@ var wrench = <ore:craftingToolWrench>;
 
 # Block/Item Removal
 recipes.remove(ffController);
-NEI.hide(ffController);
+ffController.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # Recipe Tweaks
 recipes.remove(vanishingFrameIron);

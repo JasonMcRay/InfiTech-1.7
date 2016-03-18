@@ -138,7 +138,7 @@ recipes.remove(generatorBio);
 generatorBio.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 recipes.remove(scoopFT);
-NEI.hide(scoopFT);
+scoopFT.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # Recipe Tweaks
 recipes.remove(centrifuge);
