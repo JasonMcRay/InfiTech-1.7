@@ -1,0 +1,67 @@
+{
+  "book": [
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "At the bottom of the recipe screen you may see arrows to scroll through the pages of recipes, and at the top you may see arrows to scroll through the different WAYS to craft that recipe. DO NOT FORGET TO CHECK ALL OF THESE. There may be a much easier crafting recipe than the one you\u0027re looking at. The \u0027U\u0027 and \u0027R\u0027 keys work in these screens, as well as in your inventory. If you open a crafting recipe while you have a crafting table open then you should also see a [?] button on the recipe page. Left-clicking this will place a ghost version of that recipe in the crafting grid. Shift-left-clicking will place the items in the crafting grid for you, assuming you have all of them in your inventory. This does not work for unstackable items and some other items.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 220,
+            "yPos": 15,
+            "width": 183.0,
+            "height": 176.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Your best friend in this modpack (and modded minecraft in general) is called Not Enough Items (NEI). When you have your inventory open it allows you to search through all of the items in the game, using the searchbar at the bottom. You can hit \u0027O\u0027 to toggle this on and off. Right-click the searchbar to clear it. If you hover over an item and hit \u0027R\u0027, or left-click an item in the NEI list it will show you \u0027R\u0027ecipes to craft that item. If you hover over an item and hit \u0027U\u0027, or right-click an item in the NEI list it will show you recipes that you can \u0027U\u0027se that item in. ",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 25,
+            "yPos": 15,
+            "width": 178.0,
+            "height": 178.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": " If you\u0027re having trouble finding an item you\u0027re sure is in your inventory or a chest, you can double-click on the NEI searchbar which will turn it yellow. Then anything that doesn\u0027t match what you type in the search bar will be greyed out, making what you\u0027re looking for easier to spot. Double-click the searchbar again to go back to normal mode.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 25,
+            "yPos": 20,
+            "width": 177.0,
+            "height": 112.0
+          }
+        }
+      ],
+      "pageName": ""
+    }
+  ],
+  "uniqueName": "GUIDE_NEI",
+  "color": 16711680,
+  "showBackground": true,
+  "showArrows": true,
+  "showNumber": true,
+  "iconPass1": "",
+  "iconPass2": "",
+  "iconColorisePass1": false,
+  "iconColorisePass2": false,
+  "iconColorPass1": 0,
+  "iconColorPass2": 0,
+  "language": "en_US",
+  "displayName": "How To Use NEI!",
+  "displayInCreative": true
+}
