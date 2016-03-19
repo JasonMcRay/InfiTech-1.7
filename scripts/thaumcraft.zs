@@ -709,6 +709,13 @@ Canner.addRecipe([<Thaumcraft:blockJar:0>, <Thaumcraft:ItemZombieBrain>], <Thaum
 
 // Mirrored Glass
 Assembler.addRecipe(<Thaumcraft:ItemResource:10>, <gregtech:gt.metaitem.01:17890>, <Thaumcraft:ItemNugget:5>, <liquid:molten.aluminium> * 72, 80, 2);
+Research.clearPages("BASICARTIFACE");
+Research.addPage("BASICARTIFACE", "tc.research_page.BASICARTIFACE.1");
+Research.addArcanePage("BASICARTIFACE", <Thaumcraft:ItemResource:15>);
+Research.addCraftingPage("BASICARTIFACE", <Thaumcraft:ItemBaubleBlanks:0>);
+Research.addCraftingPage("BASICARTIFACE", <Thaumcraft:ItemBaubleBlanks:1>);
+Research.addCraftingPage("BASICARTIFACE", <Thaumcraft:ItemBaubleBlanks:2>);
+
 
 // Goggles of Revealing
 Research.addPrereq("GOGGLES", "THAUMIUM", true);
