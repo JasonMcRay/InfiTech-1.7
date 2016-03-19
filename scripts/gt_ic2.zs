@@ -155,7 +155,25 @@ var shining		= <IC2:itemCropSeed>.onlyWithTag({name: "shining", scan: 4 as byte}
 var rose		= <IC2:itemCropSeed>.onlyWithTag({name: "rose", scan: 4 as byte});
 var hops		= <IC2:itemCropSeed>.onlyWithTag({name: "hops", scan: 4 as byte});
 var pumpkinq		= <IC2:itemCropSeed>.onlyWithTag({name: "pumpkin", scan: 4 as byte});
-var slimeplant		= <IC2:itemCropSeed>.onlyWithTag({name: "slimeplant", scan: 4 as byte});
+var slimeplant		= <IC2:itemCropSeed>.onlyWithTag({name: "Slimeplant", scan: 4 as byte});
+var trollplant		= <IC2:itemCropSeed>.onlyWithTag({name: "Trollplant", scan: 4 as byte});
+var enderbloom		= <IC2:itemCropSeed>.onlyWithTag({name: "Enderbloom", scan: 4 as byte});
+var milkwart		= <IC2:itemCropSeed>.onlyWithTag({name: "Milkwart", scan: 4 as byte});
+var tearstalks		= <IC2:itemCropSeed>.onlyWithTag({name: "Tearstalks", scan: 4 as byte});
+var godOfThunder	= <IC2:itemCropSeed>.onlyWithTag({name: "God of Thunder", scan: 4 as byte});
+var steeleafranks	= <IC2:itemCropSeed>.onlyWithTag({name: "Steeleafranks", scan: 4 as byte});
+var pyrolusium		= <IC2:itemCropSeed>.onlyWithTag({name: "Pyrolusium", scan: 4 as byte});
+var creeperweed 	= <IC2:itemCropSeed>.onlyWithTag({name: "Creeperweed", scan: 4 as byte});
+var titania		= <IC2:itemCropSeed>.onlyWithTag({name: "Titania", scan: 4 as byte});
+var diareed		= <IC2:itemCropSeed>.onlyWithTag({name: "Diareed", scan: 4 as byte});
+var coppon		= <IC2:itemCropSeed>.onlyWithTag({name: "Coppon", scan: 4 as byte});
+var eggplant		= <IC2:itemCropSeed>.onlyWithTag({name: "Eggplant", scan: 4 as byte});
+var meatrose		= <IC2:itemCropSeed>.onlyWithTag({name: "Meatrose", scan: 4 as byte});
+var transformium	= <IC2:itemCropSeed>.onlyWithTag({name: "Transformium", scan: 4 as byte});
+var plumbia		= <IC2:itemCropSeed>.onlyWithTag({name: "Plumbia", scan: 4 as byte});
+var fertilia		= <IC2:itemCropSeed>.onlyWithTag({name: "Fertilia", scan: 4 as byte});
+var liveroots		= <IC2:itemCropSeed>.onlyWithTag({name: "Liveroots", scan: 4 as byte});
+var corpseplant 	= <IC2:itemCropSeed>.onlyWithTag({name: "Corpseplant", scan: 4 as byte});
 
 # Tooltip
 
@@ -189,6 +207,24 @@ rose			.addTooltip("Source of rose red");
 hops			.addTooltip("Source of hops");
 pumpkin 		.addTooltip("Source of pumpkin");
 slimeplant		.addTooltip("Source of slimeball");
+//trollplant		.addTooltip("Source of ");
+enderbloom		.addTooltip("Source of ender pearl dust + ender pearl + eye of ender");
+milkwart		.addTooltip("Source of milk wart");
+tearstalks		.addTooltip("Source of ghast tear");
+//godOfThunder		.addTooltip("Source of ");
+steeleafranks		.addTooltip("Source of stealeaf + stealeaf dust");
+//pyrolusium		.addTooltip("Source of ");
+creeperweed		.addTooltip("Source of gunpowder");
+//titania		.addTooltip("Source of ");
+diareed 		.addTooltip("Source of tiny pile of diamond dust + diamond");
+coppon			.addTooltip("Source of coppon fiber");
+eggplant		.addTooltip("Source of egg + raw chicken + feather");
+meatrose		.addTooltip("Source of pink dye + raw chicken + raw beef + raw porkchop + raw fish");
+//transformium		.addTooltip("Source of ");
+plumbia 		.addTooltip("Source of plumbia leaf");
+//fertilia		.addTooltip("Source of ");
+liveroots		.addTooltip("Source of liveroot dust + liveroot");
+corpseplant		.addTooltip("Source of rotten flesh + bone meal + bone");
 
 ic2solarpanel.addTooltip(format.red(format.bold("This item is DISABLED!")));
 ic2ElectricFurnace.addTooltip(format.red(format.bold("This item is DISABLED!")));
