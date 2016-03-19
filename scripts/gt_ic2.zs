@@ -183,6 +183,24 @@ var platina 		= <IC2:itemCropSeed>.onlyWithTag({name: "Platina", scan: 4 as byte
 var blazereed	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Blazereed", scan: 4 as byte});
 var evilOre	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Evil Ore", scan: 4 as byte});
 var zomplant	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Zomplant", scan: 4 as byte});
+var tine	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Tine", scan: 4 as byte});
+var nickelback	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Nickelback", scan: 4 as byte});
+var bobsyeruncleranks 	= <IC2:itemCropSeed>.onlyWithTag({name: "Bobsyeruncleranks", scan: 4 as byte});
+var galvania	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Galvania", scan: 4 as byte});
+var oilberries	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Oilberries", scan: 4 as byte});
+var olivia	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Olivia", scan: 4 as byte});
+var argentia	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Argentia", scan: 4 as byte});
+var bauxia	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Bauxia", scan: 4 as byte});
+var brownMushrooms 	= <IC2:itemCropSeed>.onlyWithTag({name: "Brown Mushrooms", scan: 4 as byte});
+var lazulia	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Lazulia", scan: 4 as byte});
+var spidernip	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Spidernip", scan: 4 as byte});
+var indigo	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Indigo", scan: 4 as byte});
+var flax	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Flax", scan: 4 as byte});
+var redMushrooms 	= <IC2:itemCropSeed>.onlyWithTag({name: "Red Mushrooms", scan: 4 as byte});
+var withereed	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Withereed", scan: 4 as byte});
+var corium	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Corium", scan: 4 as byte});
+var sapphirum	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Sapphirum", scan: 4 as byte});
+var quantaria	 	= <IC2:itemCropSeed>.onlyWithTag({name: "Quantaria", scan: 4 as byte});
 
 # Tooltip
 
@@ -254,10 +272,35 @@ scheelinium 		.addTooltip(format.red("only grows with a Block of Tungsten undern
 starwart		.addTooltip("Source of wither skeleton skull + small pile of coal dust"); //probably netherstar(dust) need confirmation
 starwart 		.addTooltip(format.red("only grows with a Block of Nether Star underneath"));
 platina 		.addTooltip("Source of platina leaf");
-scheelinium 		.addTooltip(format.red("only grows with a Block of Platinum underneath"));
+platina 		.addTooltip(format.red("only grows with a Block of Platinum underneath"));
 blazereed		.addTooltip("Source of blaze powder + blaze rod");
 evilOre 		.addTooltip("Source of nether quartz + tiny pile of nether quartz dust + tiny pile of certus quartz dust"); //probably certus quartz need confirmation
 zomplant		.addTooltip("Source of rotten flesh");
+tine			.addTooltip("Source of tine twig");
+nickelback		.addTooltip("Source of nickelback leaf");
+nickelback 		.addTooltip(format.red("only grows with a Block of Nickel underneath"));
+bobsyeruncleranks	.addTooltip("Source of bobs-yer-uncle-berry + emerald");
+galvania		.addTooltip("Source of galvania leaf");
+galvania 		.addTooltip(format.red("only grows with a Block of Zinc underneath"));
+oilberries		.addTooltip("Source of oil berry");
+olivia			.addTooltip("Source of olivine + tiny pile of olivine dust");
+olivia			.addTooltip(format.red("only grows with a Block of Olivine underneath"));
+argentia		.addTooltip("Source of argentia leaf");
+bauxia			.addTooltip("Source of bauxia leaf");
+bauxia			.addTooltip(format.red("only grows with a Block of Aluminium underneath"));
+brownMushrooms		.addTooltip("Source of brown mushrooms");
+lazulia 		.addTooltip("Source of tiny pile of lapis dust"); //probably lapis needs confirmation
+lazulia 		.addTooltip(format.red("only grows with a Lapis Lazuli Block underneath"));
+spidernip		.addTooltip("Source of string + spider eye + cobweb");
+indigo			.addTooltip("Source of indigo blossom");
+flax			.addTooltip("Source of string");
+redMushrooms		.addTooltip("Source of red mushrooms");
+withereed		.addTooltip("Source of coal dust + coal");
+corium			.addTooltip("Source of leather");
+sapphirum		.addTooltip("Source of sapphire + tiny pile of sapphire dust");
+sapphirum 		.addTooltip(format.red("only grows with a Block of Sapphire underneath"));
+quantaria		.addTooltip("Source of quantaria leaf");
+quantaria 		.addTooltip(format.red("only grows with a Block of Iridium underneath")); //probably osmium too needs confirmation
 
 ic2solarpanel.addTooltip(format.red(format.bold("This item is DISABLED!")));
 ic2ElectricFurnace.addTooltip(format.red(format.bold("This item is DISABLED!")));
