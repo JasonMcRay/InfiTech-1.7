@@ -300,7 +300,7 @@ corium			.addTooltip("Source of leather");
 sapphirum		.addTooltip("Source of sapphire + tiny pile of sapphire dust");
 sapphirum 		.addTooltip(format.red("only grows with a Block of Sapphire underneath"));
 quantaria		.addTooltip("Source of quantaria leaf");
-quantaria 		.addTooltip(format.red("only grows with a Block of Iridium underneath")); //probably osmium too needs confirmation
+quantaria 		.addTooltip(format.red("only grows with a Block of Iridium underneath"));
 
 ic2solarpanel.addTooltip(format.red(format.bold("This item is DISABLED!")));
 ic2ElectricFurnace.addTooltip(format.red(format.bold("This item is DISABLED!")));
