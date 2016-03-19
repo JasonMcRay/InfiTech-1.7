@@ -1,0 +1,864 @@
+{
+  "name": "Shop",
+  "description": "..... but before you will be able to trade, you should learn how to pack-up things",
+  "quests": [
+    {
+      "name": "Iron Ingots",
+      "x": 19,
+      "y": 8,
+      "icon": {
+        "id": "minecraft:iron_ingot"
+      },
+      "prerequisites": [
+        "{ToolBronze Age}[Cleaning]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1032
+        }
+      ]
+    },
+    {
+      "name": "Tin Ingots",
+      "x": 19,
+      "y": 60,
+      "icon": {
+        "id": "gregtech:gt.metaitem.01",
+        "damage": 11057
+      },
+      "prerequisites": [
+        "{ToolBronze Age}[Cleaning]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1057
+        }
+      ]
+    },
+    {
+      "name": "Steel Ingots",
+      "x": 41,
+      "y": 104,
+      "icon": {
+        "id": "gregtech:gt.metaitem.01",
+        "damage": 11305
+      },
+      "prerequisites": [
+        "{Low Voltage Age}[Power of Steam]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 7
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1305
+        }
+      ]
+    },
+    {
+      "name": "Copper Ingots",
+      "x": 19,
+      "y": 34,
+      "icon": {
+        "id": "gregtech:gt.metaitem.01",
+        "damage": 11035
+      },
+      "prerequisites": [
+        "{ToolBronze Age}[Cleaning]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1035
+        }
+      ]
+    },
+    {
+      "name": "Bag of Alloys",
+      "x": 89,
+      "y": 123,
+      "icon": {
+        "id": "JsonLootBags:ItemLootBag",
+        "nbt": "{type:\"componentBagT5\"}"
+      },
+      "prerequisites": [
+        "{Low Voltage Age}[Machine Workshop]"
+      ],
+      "trigger": "QUEST_TRIGGER"
+    },
+    {
+      "name": "Aluminium Ingots",
+      "x": 17,
+      "y": 141,
+      "icon": {
+        "id": "gregtech:gt.metaitem.01",
+        "damage": 11019
+      },
+      "prerequisites": [
+        "{MediumHigh Voltage Age}[Medium Voltage]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 7
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1019
+        }
+      ]
+    },
+    {
+      "name": "Titanium Ingots",
+      "x": 40,
+      "y": 142,
+      "icon": {
+        "id": "gregtech:gt.metaitem.01",
+        "damage": 11028
+      },
+      "prerequisites": [
+        "{Extreme Voltage Age}[Extreme Voltage]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 12
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1028
+        }
+      ]
+    },
+    {
+      "name": "Tungsten Ingots",
+      "x": 29,
+      "y": 123,
+      "icon": {
+        "id": "gregtech:gt.metaitem.01",
+        "damage": 11081
+      },
+      "prerequisites": [
+        "{Extreme Voltage Age}[Let it Flow]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 12
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1081
+        }
+      ]
+    },
+    {
+      "name": "Tungstensteel Ingots",
+      "x": 18,
+      "y": 104,
+      "icon": {
+        "id": "gregtech:gt.metaitem.01",
+        "damage": 11316
+      },
+      "prerequisites": [
+        "{Insane Voltage Age}[Insane in the Membrane]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 3,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 12
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1316
+        }
+      ]
+    },
+    {
+      "name": "Gold Ingots",
+      "x": 75,
+      "y": 8,
+      "icon": {
+        "id": "minecraft:gold_ingot"
+      },
+      "prerequisites": [
+        "{MediumHigh Voltage Age}[High Voltage]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1086
+        }
+      ]
+    },
+    {
+      "name": "Nickel Ingots",
+      "x": 98,
+      "y": 8,
+      "icon": {
+        "id": "gregtech:gt.metaitem.01",
+        "damage": 11034
+      },
+      "prerequisites": [
+        "{Low Voltage Age}[Electric Blast Furnace (EBF)]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1034
+        }
+      ]
+    },
+    {
+      "name": "Lithium Ingots",
+      "x": 75,
+      "y": 34,
+      "icon": {
+        "id": "gregtech:gt.metaitem.01",
+        "damage": 11006
+      },
+      "prerequisites": [
+        "{MediumHigh Voltage Age}[Inox Steel]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1006
+        }
+      ]
+    },
+    {
+      "name": "Silver Ingots",
+      "x": 98,
+      "y": 34,
+      "icon": {
+        "id": "gregtech:gt.metaitem.01",
+        "damage": 11054
+      },
+      "prerequisites": [
+        "{Extreme Voltage Age}[Extreme Voltage]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1054
+        }
+      ]
+    },
+    {
+      "name": "Lead Ingots",
+      "x": 75,
+      "y": 60,
+      "icon": {
+        "id": "gregtech:gt.metaitem.01",
+        "damage": 11089
+      },
+      "prerequisites": [
+        "{MediumHigh Voltage Age}[High Voltage]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1089
+        }
+      ]
+    },
+    {
+      "name": "Uranium Ingots",
+      "x": 98,
+      "y": 60,
+      "icon": {
+        "id": "gregtech:gt.metaitem.01",
+        "damage": 11097
+      },
+      "prerequisites": [
+        "{Extreme Voltage Age}[Feeling Nuclear]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1098
+        }
+      ]
+    },
+    {
+      "name": "Coal",
+      "x": 206,
+      "y": 101,
+      "icon": {
+        "id": "minecraft:coal"
+      },
+      "prerequisites": [
+        "{ToolBronze Age}[Water from Sky]",
+        "{ToolBronze Age}[Eco Steam]",
+        "{ToolBronze Age}[Water from Air]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 2535,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Emeralds",
+      "x": 232,
+      "y": 12,
+      "icon": {
+        "id": "minecraft:emerald"
+      },
+      "prerequisites": [
+        "{Extreme Voltage Age}[The Rares Find]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 2,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 15
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 2501
+        }
+      ]
+    },
+    {
+      "name": "Diamonds",
+      "x": 219,
+      "y": 30,
+      "icon": {
+        "id": "minecraft:diamond"
+      },
+      "prerequisites": [
+        "{MediumHigh Voltage Age}[Lapotronium]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 2,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 15
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 2500
+        }
+      ]
+    },
+    {
+      "name": "Iridium",
+      "x": 243,
+      "y": 31,
+      "icon": {
+        "id": "IC2:itemOreIridium"
+      },
+      "prerequisites": [
+        "{Extreme Voltage Age}[Universal]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 10,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 1084
+        }
+      ]
+    },
+    {
+      "name": "Certus Quartz",
+      "x": 207,
+      "y": 49,
+      "icon": {
+        "id": "gregtech:gt.metaitem.01",
+        "damage": 8516
+      },
+      "prerequisites": [
+        "{Storage Wars}[Growing Crystals]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 7
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 2516,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Nether Quartz",
+      "x": 255,
+      "y": 50,
+      "icon": {
+        "id": "minecraft:quartz"
+      },
+      "prerequisites": [
+        "{ToolBronze Age}[Hell Lands]"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 2522,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Redstone Dusts",
+      "x": 218,
+      "y": 120,
+      "icon": {
+        "id": "minecraft:redstone"
+      },
+      "prerequisites": [
+        "{Low Voltage Age}[Material Saviour]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 810,
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "Rubies",
+      "x": 254,
+      "y": 101,
+      "icon": {
+        "id": "gregtech:gt.metaitem.01",
+        "damage": 8512
+      },
+      "prerequisites": [
+        "{Extreme Voltage Age}[Best Mining there IS]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 1,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 12
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 2502
+        }
+      ]
+    },
+    {
+      "name": "Lapis Lazuli",
+      "x": 242,
+      "y": 120,
+      "icon": {
+        "id": "minecraft:dye",
+        "damage": 4
+      },
+      "prerequisites": [
+        "{Extreme Voltage Age}[Best Mining there IS]",
+        "{Low Voltage Age}[Packing up]"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 32001
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "gregtech:gt.metaitem.03",
+          "damage": 2526,
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

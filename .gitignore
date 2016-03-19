@@ -74,7 +74,7 @@ mods/carpentersblocks/CarpentersBlocksCachedResources.zip
 config/YAMPST.nbt
 config/DIAdvancedCompatibility.cfg
 config/HardcoreEnderExpansion.clientsave.cfg
-mods/OptiFine_1.7.10_HD_U_B7.jar
+mods/OptiFine*
 mods/CameraStudio-VR-Dependencies.zip
 mods/CameraStudioV2.1710(mc1.7.10).zip
 mods/camerastudio/*
@@ -88,14 +88,12 @@ sync.sh
 dumps/
 videos/
 config/OpenEye.json
-mods/OptiFine_1.7.10_HD_U_C1.jar
 hs_err*
 usercache.json
 mods/FullscreenWindowed-1.7.10-1.2.2.jar
 config/fw.cfg
 betterfps.txt
 mods/BetterFps-1.0.1.jar
-*hqm*
 config/NEI/client.cfg
 replay*
 config/TravellersGear_inv.cfg
