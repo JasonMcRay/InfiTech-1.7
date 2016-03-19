@@ -121,8 +121,8 @@ var geothermal          = <ore:craftingGeothermalGenerator>;
 var dusttungsten        = <ore:dustTungsten>;
 var dustdiamond         = <gregtech:gt.metaitem.01:2500>;
 var diasawblade         = <ore:craftingDiamondBlade>;
-var miningdrill         = <IC2:itemToolDrill:26>;
-var diaminingdrill      = <IC2:itemToolDDrill:26>;
+var stainlesssteeltip   = <ore:toolHeadDrillStainlessSteel>;
+var tungstensteeltip    = <ore:toolHeadDrillTungstenSteel>;
 var oxygen              = <liquid:oxygen>;
 var fieryBlood          = <liquid:fieryblood>;
 var liquidGlowstone     = <liquid:molten.glowstone>;
@@ -480,13 +480,13 @@ recipes.addShaped(basicdrill, [
 recipes.remove(reinforceddrill);
 recipes.addShaped(reinforceddrill, [
     [reinforcedmetal, reinforcedmetal, null],
-    [diamondblock, basicdrill, miningdrill],
+    [diamondblock, basicdrill, stainlesssteeltip],
     [reinforcedmetal, reinforcedmetal, null]]);
 
 recipes.remove(galgadoriandrill);
 recipes.addShaped(galgadoriandrill, [
     [galgadorianmetal2, galgadorianblock2, null],
-    [diamondblock, reinforceddrill, diaminingdrill],
+    [diamondblock, reinforceddrill, tungstensteeltip],
     [galgadorianmetal2, galgadorianblock2, null]]);
 
 recipes.remove(woodcuttingcore);

@@ -210,6 +210,7 @@ var Saw = <ore:craftingToolSaw>;
 var screwdriver = <ore:craftingToolScrewdriver>;
 var SHammer = <ore:craftingToolSoftHammer>;
 var smallAnyIronGear = <ore:gearGtSmallAnyIron>;
+var stainlesssteeltip = <ore:toolHeadDrillStainlessSteel>;
 var stone = <minecraft:stone>;
 var stoneCobble = <ore:stoneCobble>;
 var stoneKinesisPipe = <BuildCraft|Transport:item.buildcraftPipe.pipepowerstone>;
@@ -298,7 +299,7 @@ recipes.remove(miningWell);
 recipes.addShaped(miningWell, [
 	[plateSteel, blockRedstone, plateSteel],
 	[plateIron, gearIron, plateIron],
-	[plateIron, miningDrill, plateIron]]);
+	[plateIron, stainlesssteeltip, plateIron]]);
 recipes.remove(autoWorkbench);
 recipes.addShaped(autoWorkbench, [
     [itemCasingIron, smallAnyIronGear, itemCasingIron],

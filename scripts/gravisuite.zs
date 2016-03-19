@@ -23,14 +23,17 @@ var cell60k = <IC2:reactorCoolantSix:1>;
 var advHeatExchanger = <IC2:reactorHeatSwitchDiamond:1>;
 var heatReactorPlating = <IC2:reactorPlatingHeat>;
 var plateAlloyIridium = <ore:plateAlloyIridium>;
-var gravitool = <GraviSuite:graviTool>;
-var advancedChainsaw = <GraviSuite:advChainsaw>;
-var advancedDiamondDrill = <GraviSuite:advDDrill>;
+var gravitool = <GraviSuite:graviTool:*>;
+var advancedChainsaw = <GraviSuite:advChainsaw:*>;
+var advancedDiamondDrill = <GraviSuite:advDDrill:*>;
 
 // Recipe removal
 recipes.remove(gravitool);
+gravitool.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(advancedChainsaw);
+advancedChainsaw.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(advancedDiamondDrill);
+advancedDiamondDrill.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 // --- Glass Fiber Recipes ---
 recipes.remove(superconductor);
