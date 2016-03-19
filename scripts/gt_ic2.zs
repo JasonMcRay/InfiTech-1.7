@@ -265,7 +265,7 @@ corpseplant		.addTooltip("Source of rotten flesh + bone meal + bone");
 reactoria		.addTooltip("Source of reactoria leaf + tiny pile of uraninite dust");
 reactoria 		.addTooltip(format.red("only grows with a Block of Uranium 238 underneath"));
 glowheat		.addTooltip("Source of tiny pile of glowstone dust");
-stargatium		.addTooltip("Source of tiny pile of endstone dust"); //probably naquadah need confirmation
+stargatium		.addTooltip("Source of tiny pile of stargatium leaf + endstone dust");
 stargatium 		.addTooltip(format.red("only grows with a Block of Naquadah underneath"));
 scheelinium		.addTooltip("Source of scheelinium leaf");
 scheelinium 		.addTooltip(format.red("only grows with a Block of Tungsten underneath"));
