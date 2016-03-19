@@ -1,3 +1,47 @@
+v3.2.0
+Mod Updates:
+- All of them
+
+Removed mods:
+- Bibliowoods Addons
+
+New Mods:
+- ASP + GS Patcher (fixes few Gravisuite issues)
+- ChickenChunks
+- Ding
+- Framez2
+- HelpFixer
+- HQM
+- IC2 NEI Plugin
+- JsonLootBags
+- MouseTweaks
+- Steves Carts
+- Trajectory 
+- Travellers Gear
+- Witching Gadgets
+
+Changes:
+- Added HQM with quests. Quests are made as a part to help new players understand GT a bit, but at the same time they give rewards which can be spent in shop (Shop will be available however in LV age)
+- Quests are still going to be added, but currently there is full quest line for all GregTech Electrical Ages and little bit on thaumcraft
+- Thaumcraft got completely overhauled
+- More balancing happend
+- RC Steam Oven has been removed
+- PneumaticCraft got overhauled slightly
+- Buildcraft overhauled
+- Couple of new metals and alloys are available
+- Added edible salt for use in food crafting recipes
+- Removed RC Steam Turbine
+- OpenComputers PCB has been removed, instead you need to use PneumaticCraft PCBs
+- PneumaticCraft PCBs are harder to craft
+- Chisel worldgen lowered
+- Disabled IC2 power storages
+- Removed IC2 Electrical tools (those that have equivalents in GT)
+- Removed Gravisuite Gravitool and Advanced Mining Drill
+- Blacklisted couple of items in HEE Instability Orb to prevent them from being obtainable
+- Disabled RC Residual Heat (that means you will not be able to track player movement with RC goggles, but it will enhance the stability and performance)
+- Added NEI Info book (ugly version) to teach new players about NEI (you know those buttons on top and bottom)
+- AND POSSIBLY PROBABLY MUCH MUCH MORE!!!!!!!!!
+
 v3.1.22(23)
 Forge updated to 10.13.4.1566
 Mod Updates:
