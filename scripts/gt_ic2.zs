@@ -338,6 +338,8 @@ recipes.remove(chainsaw);
 chainsaw.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(electricWrench);
 electricWrench.addTooltip(format.red(format.bold("This item is DISABLED!")));
+recipes.remove(miner);
+miner.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 
 # Disabling IC2 Energy Storages
@@ -363,9 +365,9 @@ recipes.addShaped(chargePadBatbox, [
 game.setLocalization("ic2.blockChargepadBatBox", "Low Voltage Charge Pad");
 recipes.remove(advancedMiner);
 recipes.addShaped(advancedMiner, [
-    [plateAlloyAdvanced, miner, plateAlloyAdvanced],
+    [plateAlloyAdvanced, circuitAdvanced, plateAlloyAdvanced],
     [batteryChargerHV, machineCasingAdvanced, teleporter],
-    [plateAlloyAdvanced, miner, plateAlloyAdvanced]]);
+    [plateAlloyAdvanced, circuitAdvanced, plateAlloyAdvanced]]);
 recipes.remove(chargePadMFE);
 recipes.addShaped(chargePadMFE, [
     [circuitAdvanced, pressurePlate, circuitAdvanced],
