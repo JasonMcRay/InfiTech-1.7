@@ -233,7 +233,7 @@ eatingplant         .addTooltip("Source of rotten flesh");
 eatingplant         .addTooltip(format.red("DANGER plant likes to eat mobs and players"));
 eggplant            .addTooltip("Source of egg + raw chicken + feather");
 enderbloom          .addTooltip("Source of ender pearl dust + ender pearl + eye of ender");
-evilOre             .addTooltip("Source of nether quartz + tiny pile of nether quartz dust + tiny pile of certus quartz dust"); //probably certus quartz need confirmation
+evilOre             .addTooltip("Source of nether quartz + tiny pile of nether quartz dust + tiny pile of certus quartz dust");
 ferru               .addTooltip("Source of iron");
 ferru               .addTooltip(format.red("only grows with a Block of Iron underneath"));
 fertilia            .addTooltip("Source of fertilizer + tiny pile of calcite dust + tiny pile of apatite dust + phosphate dust");
@@ -245,7 +245,7 @@ godOfThunder        .addTooltip("Source of thunder leaf + coal + small pile of c
 godOfThunder        .addTooltip(format.red("only grows with a Block of Thorium underneath"));
 hops                .addTooltip("Source of hops");
 indigo              .addTooltip("Source of indigo blossom");
-lazulia             .addTooltip("Source of tiny pile of lapis dust"); //probably lapis needs confirmation
+lazulia             .addTooltip("Source of tiny pile of lapis dust");
 lazulia             .addTooltip(format.red("only grows with a Lapis Lazuli Block underneath"));
 liveroots           .addTooltip("Source of liveroot dust + liveroot");
 meatrose            .addTooltip("Source of pink dye + raw chicken + raw beef + raw porkchop + raw fish");
@@ -286,7 +286,7 @@ spidernip           .addTooltip("Source of string + spider eye + cobweb");
 stagnium            .addTooltip("Source of tiny pile of tin dust");
 stargatium          .addTooltip("Source of tiny pile of stargatium leaf + endstone dust");
 stargatium          .addTooltip(format.red("only grows with a Block of Naquadah underneath"));
-starwart            .addTooltip("Source of wither skeleton skull + small pile of coal dust"); //probably netherstar(dust) need confirmation
+starwart            .addTooltip("Source of tiny pile of nether star dust + wither skeleton skull + skeleton skull + small pile of coal dust + coal");
 starwart            .addTooltip(format.red("only grows with a Block of Nether Star underneath"));
 steeleafranks       .addTooltip("Source of stealeaf + stealeaf dust");
 stickreed           .addTooltip("Source of sticky resin + sugar cane");
