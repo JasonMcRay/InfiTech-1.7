@@ -75,6 +75,7 @@ var dustObsidian = <IC2:itemDust:11>;
 var dustRedstone = <ore:dustRedstone>;
 var stoneRailbed = <Railcraft:part.railbed:1>;
 var flintAndSteel = <minecraft:flint_and_steel>;
+var emitterLV = <gregtech:gt.metaitem.01:32680>;
 var reinforcedTrackResult = <Railcraft:track>.withTag({track: "railcraft:track.reinforced"});
 var reinforcedTrackMatch = <Railcraft:track>.onlyWithTag({track: "railcraft:track.reinforced"});
 var reinforcedBoosterResult = <Railcraft:track>.withTag({track: "railcraft:track.reinforced.boost"});
@@ -185,7 +186,7 @@ recipes.addShaped(detectorEnergy, [
 recipes.remove(forceTrackEmitter);
 recipes.addShaped(forceTrackEmitter, [
     [plateTinAlloy, ingotCopper, plateTinAlloy],
-    [ingotCopper, blockDiamond, ingotCopper],
+    [ingotCopper, emitterLV, ingotCopper],
     [plateTinAlloy, ingotCopper, plateTinAlloy]]);
 recipes.remove(fluxTransformer);
 recipes.addShaped(fluxTransformer * 2, [
