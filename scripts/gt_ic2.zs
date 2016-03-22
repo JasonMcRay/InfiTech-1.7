@@ -323,6 +323,20 @@ ic2BlockCuttingMachine.addTooltip(format.red(format.bold("This item is DISABLED!
 ic2ForgeHammer      .addTooltip(format.red(format.bold("This item is DISABLED!")));
 ic2CrystalMemory    .addTooltip(format.red(format.bold("This item is DISABLED!")));
 
+# Loots
+vanilla.loot.removeChestLoot("dungeonChest", <IC2:itemShardIridium>);
+vanilla.loot.addChestLoot("dungeonChest", <IC2:itemShardIridium>.weight(20), 6, 14);
+vanilla.loot.removeChestLoot("mineshaftCorridor", <IC2:itemShardIridium>);
+vanilla.loot.addChestLoot("mineshaftCorridor", <IC2:itemShardIridium>.weight(4), 2, 5);
+vanilla.loot.removeChestLoot("strongholdCorridor", <IC2:itemShardIridium>);
+vanilla.loot.addChestLoot("strongholdCorridor", <IC2:itemShardIridium>.weight(4), 4, 14);
+vanilla.loot.removeChestLoot("strongholdCrossing", <IC2:itemShardIridium>);
+vanilla.loot.addChestLoot("strongholdCrossing", <IC2:itemShardIridium>.weight(2), 3, 7);
+vanilla.loot.removeChestLoot("villageBlacksmith", <IC2:itemShardIridium>);
+vanilla.loot.addChestLoot("villageBlacksmith", <IC2:itemShardIridium>.weight(2), 3, 7);
+vanilla.loot.removeChestLoot("dungeonChest", <IC2:itemOreIridium>);
+vanilla.loot.addChestLoot("dungeonChest", <IC2:itemOreIridium>.weight(10), 1, 2);
+
 # Recipe removal
 recipes.remove(energiumDust);
 recipes.remove(ic2Scanner);
