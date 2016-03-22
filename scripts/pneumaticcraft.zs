@@ -480,6 +480,9 @@ Mixer.addRecipe(null, etchingAcid * 50, [spiderEye, plasticGreen, rottenFlesh, g
 ChemicalBath.addRecipe([unassembledPCB], emptyPCB, etchingAcid * 100, [7000], 1200, 8);
 Pressure.removeRecipe([emptyPCBFresh]);
 
+# Special
+NEI.overrideName(<PneumaticCraft:emptyPCB>, "Empty PCB (Fully Developed)");
+
 # Oredictionary
 <ore:oc:materialCircuitBoardPrinted>.add(PCB);
 <ore:oc:materialCircuitBoardPrinted>.remove(<OpenComputers:item:32>);
