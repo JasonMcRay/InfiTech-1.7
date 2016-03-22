@@ -1,3 +1,28 @@
+v3.2.2
+Quests:
+- "Dust A Must" Moved grind stone to separate quest "Grind That"
+- "Dirty Endeavours" no longer dependand on "Ore Annoyance"
+- "Dirty Endeavours" task target changed from Limonite to Iron
+- "Cleaning" task targets changed from Redstone to Iron
+- Fixed some quests rewarding GregTech Credits, instead of Industrial ones.
+- Added new repeatable quest to Bronze Age.
+
+Changes/Fixes:
+- Since Assembly Table is disabled, BC Facades are now crafted in Crafting Table
+- Even if the game says you dont have quests enabled, you should be able to craft yourself an HQM Quest book (on updated 3.1.x  worlds)
+- Added metal post recipes and fixed reinforced tracks
+- Forcefield emitter uses emitter instead of diamond block
+- Fixed conflict for minecart/SC standard hull recipe
+- Fixed broken Pure Love research (Thanks @livingLegend)
+- Excavation focus requires Titanium to craft
+- Added Quartzite transmutation
+- Buffed entropic processing
+- Added "(Fully Developed)" to Empty PCB with 100% etching success
+- Lowered Iridium spawn chance in chests
+- Tetrahedrite is much likely to spawn (Y60-120, raised weight)
+- Added Tooltip to Charcoal Igniter and BBF about not being consumed when used in crafting of Guide books
+- Fixed Patreon names (SORRY)
+
 v3.2.1
 Quests:
 - Added new quest in Bronze Age, to teach player about the Credits and the Shop
