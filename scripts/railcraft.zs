@@ -3,6 +3,8 @@
 import mods.forestry.Carpenter;
 import mods.nei.NEI;
 import mods.gregtech.Mixer;
+import mods.gregtech.Assembler;
+import mods.gregtech.ChemicalReactor;
 
 # Aliases
 var backpackApothecary = <Railcraft:backpack.apothecary.t1>;
@@ -14,6 +16,7 @@ var backpackTrackT2 = <Railcraft:backpack.trackman.t2>;
 var benchEngraving = <Railcraft:machine.epsilon:5>;
 var blockDiamond = <ore:blockDiamond>;
 var blockRedstone = <ore:blockRedstone>;
+var blockSteel = <ore:blockSteel>;
 var book = <ore:bookEmpty>;
 var brickAbyssal = <Railcraft:brick.abyssal>;
 var bucket = <minecraft:bucket>;
@@ -55,6 +58,38 @@ var steamoven = <Railcraft:machine.alpha:3>;
 var cartBatbox = <Railcraft:cart.energy.batbox>;
 var cartCESU = <Railcraft:cart.energy.cesu>;
 var cartMFE = <Railcraft:cart.energy.mfe>;
+var metalPost = <Railcraft:post:2>;
+var metalPlatform = <Railcraft:post:6>;
+var metalPostColor = <Railcraft:post.metal:*>;
+var metalPostBlack = <Railcraft:post.metal:0>;
+var metalPostPurple = <Railcraft:post.metal:5>;
+var metalPostLightBlue = <Railcraft:post.metal:12>;
+var ironSlab = <Railcraft:slab:6>;
+var ingotSteel = <gregtech:gt.metaitem.01:11305>;
+var ingotTungsten = <gregtech:gt.metaitem.01:11081>;
+var ingotTitanium = <gregtech:gt.metaitem.01:11028>;
+var ingotIron = <minecraft:iron_ingot>;
+var ingotAluminium = <gregtech:gt.metaitem.01:11019>;
+var ingotBronze = <gregtech:gt.metaitem.01:11300>;
+var dustObsidian = <IC2:itemDust:11>;
+var dustRedstone = <ore:dustRedstone>;
+var stoneRailbed = <Railcraft:part.railbed:1>;
+var flintAndSteel = <minecraft:flint_and_steel>;
+var emitterLV = <gregtech:gt.metaitem.01:32680>;
+var reinforcedTrackResult = <Railcraft:track>.withTag({track: "railcraft:track.reinforced"});
+var reinforcedTrackMatch = <Railcraft:track>.onlyWithTag({track: "railcraft:track.reinforced"});
+var reinforcedBoosterResult = <Railcraft:track>.withTag({track: "railcraft:track.reinforced.boost"});
+var reinforcedBoosterMatch = <Railcraft:track>.onlyWithTag({track: "railcraft:track.reinforced.boost"});
+var reinforcedJunctionResult = <Railcraft:track:764>.withTag({track: "railcraft:track.reinforced.junction"});
+var reinforcedJunctionMatch = <Railcraft:track:764>.onlyWithTag({track: "railcraft:track.reinforced.junction"});
+var reinforcedSwitchResult = <Railcraft:track>.withTag({track: "railcraft:track.reinforced.switch"});
+var reinforcedSwitchMatch = <Railcraft:track>.onlyWithTag({track: "railcraft:track.reinforced.switch"});
+var reinforcedWyeResult = <Railcraft:track>.withTag({track: "railcraft:track.reinforced.wye"});
+var reinforcedWyeMatch = <Railcraft:track>.onlyWithTag({track: "railcraft:track.reinforced.wye"});
+var primingTrackResult = <Railcraft:track:8103>.withTag({track: "railcraft:track.priming"});
+var primingTrackMatch = <Railcraft:track:8103>.onlyWithTag({track: "railcraft:track.priming"});
+var launcherTrackResult = <Railcraft:track>.withTag({track: "railcraft:track.launcher"});
+var launcherTrackMatch = <Railcraft:track>.onlyWithTag({track: "railcraft:track.launcher"});
 
 # Block/item Removal
 
@@ -76,6 +111,53 @@ recipes.remove(railElectric);
 // Remove all Rock Crusher recipes
 mods.railcraft.RockCrusher.removeRecipe(<*>);
 
+Assembler.addRecipe(metalPost * 16, ingotIron * 7, <gregtech:gt.integrated_circuit:7> * 0, null, 200, 15);
+Assembler.addRecipe(metalPost * 32, ingotSteel * 7, <gregtech:gt.integrated_circuit:7> * 0, null, 400, 15);
+Assembler.addRecipe(metalPost * 12, ingotBronze * 7, <gregtech:gt.integrated_circuit:7> * 0, null, 150, 15);
+Assembler.addRecipe(metalPostBlack * 64, ingotTungsten * 7, <gregtech:gt.integrated_circuit:7> * 0, null, 800, 15);
+Assembler.addRecipe(metalPostPurple * 64, ingotTitanium * 7, <gregtech:gt.integrated_circuit:7> * 0, null, 800, 15);
+Assembler.addRecipe(metalPostLightBlue * 8, ingotAluminium * 7, <gregtech:gt.integrated_circuit:7> * 0, null, 100, 15);
+recipes.addShaped(metalPlatform * 4, [[ironSlab], [metalPostColor]]);
+
+ChemicalReactor.addRecipe(railReinforced * 2, null, railStandard * 2, dustObsidian, null, 100);
+
+
+recipes.remove(reinforcedTrackMatch);
+recipes.addShaped(reinforcedTrackResult * 32, [
+	[railReinforced, null, railReinforced],
+	[railReinforced, stoneRailbed, railReinforced],
+	[railReinforced, null, railReinforced]]);
+Assembler.addRecipe(reinforcedTrackResult * 32, stoneRailbed, railReinforced * 6, null, 400, 4);
+recipes.remove(reinforcedBoosterMatch);
+recipes.addShaped(reinforcedBoosterResult * 16, [
+	[railReinforced, null, railReinforced],
+	[railReinforced, stoneRailbed, railReinforced],
+	[railReinforced, dustRedstone, railReinforced]]);
+recipes.remove(reinforcedJunctionMatch);
+recipes.addShaped(reinforcedJunctionResult * 16, [
+	[railReinforced, railReinforced, railReinforced],
+	[railReinforced, stoneRailbed, railReinforced],
+	[railReinforced, railReinforced, railReinforced]]);
+recipes.remove(reinforcedSwitchMatch);
+recipes.addShaped(reinforcedSwitchResult * 16, [
+	[railReinforced, stoneRailbed, railReinforced],
+	[railReinforced, railReinforced, railReinforced],
+	[railReinforced, railReinforced, railReinforced]]);
+recipes.remove(reinforcedWyeMatch);
+recipes.addShaped(reinforcedWyeResult * 16, [
+	[railReinforced, railReinforced, railReinforced],
+	[railReinforced, railReinforced, stoneRailbed],
+	[railReinforced, railReinforced, railReinforced]]);
+recipes.remove(primingTrackMatch);
+recipes.addShaped(primingTrackResult * 16, [
+	[railReinforced, pressurePlateStone, railReinforced],
+	[railReinforced, stoneRailbed, railReinforced],
+	[railReinforced, flintAndSteel, railReinforced]]);
+recipes.remove(launcherTrackMatch);
+recipes.addShaped(launcherTrackResult * 2, [
+	[railReinforced, stoneRailbed, railReinforced],
+	[blockSteel, piston, blockSteel],
+	[railReinforced, stoneRailbed, railReinforced]]);
 recipes.remove(fireboxSolid);
 recipes.addShaped(fireboxSolid, [
 	[brickAbyssal, brickAbyssal, brickAbyssal],
@@ -104,7 +186,7 @@ recipes.addShaped(detectorEnergy, [
 recipes.remove(forceTrackEmitter);
 recipes.addShaped(forceTrackEmitter, [
     [plateTinAlloy, ingotCopper, plateTinAlloy],
-    [ingotCopper, blockDiamond, ingotCopper],
+    [ingotCopper, emitterLV, ingotCopper],
     [plateTinAlloy, ingotCopper, plateTinAlloy]]);
 recipes.remove(fluxTransformer);
 recipes.addShaped(fluxTransformer * 2, [
