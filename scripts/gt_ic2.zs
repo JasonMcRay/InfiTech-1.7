@@ -323,6 +323,9 @@ ic2BlockCuttingMachine.addTooltip(format.red(format.bold("This item is DISABLED!
 ic2ForgeHammer      .addTooltip(format.red(format.bold("This item is DISABLED!")));
 ic2CrystalMemory    .addTooltip(format.red(format.bold("This item is DISABLED!")));
 
+<gregtech:gt.blockmachines:1155>    .addTooltip(format.white("Does not get consumed when used to craft Guide Book"));
+<gregtech:gt.blockmachines:108>     .addTooltip(format.white("Does not get consumed when used to craft Guide Book"));
+
 # Loots
 vanilla.loot.removeChestLoot("dungeonChest", <IC2:itemShardIridium>);
 vanilla.loot.addChestLoot("dungeonChest", <IC2:itemShardIridium>.weight(20), 6, 14);
