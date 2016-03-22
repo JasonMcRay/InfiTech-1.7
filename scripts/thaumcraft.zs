@@ -828,6 +828,10 @@ Arcane.addShaped("MB_Scoop", <MagicBees:item.thaumiumScoop>, "ordo 5", [[<ore:st
 
 print('Gregorious Princess');
 
+// Quartzite Transmutation
+Crucible.addRecipe("thaumicenergistics.TECERTUSDUPE", <gregtech:gt.metaitem.01:8523> * 2, <gregtech:gt.metaitem.01:8523>, "aqua 2, vitreus 2");
+Research.addCruciblePage("thaumicenergistics.TECERTUSDUPE", <gregtech:gt.metaitem.01:8523>);
+
 // Arcane crafting terminal
 Arcane.addShaped("thaumicenergistics.TEARCANETERM", <thaumicenergistics:part.base:5>, "ordo 10, perditio 10, aqua 10, ignis 10, terra 10, aer 10", [[<ore:craftingToolScrewdriver>, <appliedenergistics2:item.ItemMultiPart:380>, <ore:craftingToolSoftHammer>], [<ore:screwCertusQuartz>, <Thaumcraft:blockTable:15>, <ore:screwCertusQuartz>], [<ore:plateNetherQuartz>, <appliedenergistics2:item.ItemMultiMaterial:23>, <ore:plateNetherQuartz>]]);
 
