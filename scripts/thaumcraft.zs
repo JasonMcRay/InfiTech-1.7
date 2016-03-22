@@ -479,7 +479,7 @@ Research.addPrereq("FOCUSEXCAVATION", "INFUSION", true);
 Research.clearPages("FOCUSEXCAVATION"); 
 Research.addPage("FOCUSEXCAVATION", "tc.research_page.FOCUSEXCAVATION.1");
 Arcane.removeRecipe(<Thaumcraft:FocusExcavation>);
-Infusion.addRecipe("FOCUSEXCAVATION", <gregtech:gt.metaitem.01:24501>, [<gregtech:gt.metaitem.01:28334>, <Thaumcraft:ItemShard:3>, <gregtech:gt.metaitem.01:28334>, <Thaumcraft:ItemPickThaumium>, <gregtech:gt.metaitem.01:28334>, <Thaumcraft:ItemShard:3>, <gregtech:gt.metaitem.01:28334>, <Thaumcraft:ItemPickThaumium>], "ordo 25, perditio 25, perfodio 10, terra 10", <Thaumcraft:FocusExcavation>, 3);
+Infusion.addRecipe("FOCUSEXCAVATION", <gregtech:gt.metaitem.01:24501>, [<gregtech:gt.metaitem.01:28028>, <Thaumcraft:ItemShard:3>, <gregtech:gt.metaitem.01:28028>, <Thaumcraft:ItemPickThaumium>, <gregtech:gt.metaitem.01:28028>, <Thaumcraft:ItemShard:3>, <gregtech:gt.metaitem.01:28028>, <Thaumcraft:ItemPickThaumium>], "ordo 25, perditio 25, perfodio 10, terra 10", <Thaumcraft:FocusExcavation>, 3);
 Research.addInfusionPage("FOCUSEXCAVATION", <Thaumcraft:FocusExcavation>);
 Research.addPrereq("FOCUSEXCAVATION", "GT_TRANSSTEELDAMASCUS", true);
 
