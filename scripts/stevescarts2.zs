@@ -21,6 +21,7 @@ var pighull             = <StevesCarts:CartModule:62>;
 var standardhull        = <StevesCarts:CartModule:38>;
 var reinforcedhull      = <StevesCarts:CartModule:39>;
 var galgadorianhull     = <StevesCarts:CartModule:81>;
+var minecart            = <minecraft:minecart>;
 
 //type: Addon
 var chunkloader         = <StevesCarts:CartModule:49>;
@@ -234,7 +235,18 @@ hardenedmesh.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 stabilizedmetal.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
+# Recipe Fix
 
+recipes.removeShaped(minecart);
+recipes.addShaped(minecart, [
+    [null, Wrench, null],
+    [plateIron, HHammer, plateIron],
+    [gtwheelsiron, plateIron, gtwheelsiron]]);
+recipes.addShaped(minecart, [
+    [null, Wrench, null],
+    [plateSteel, HHammer, plateSteel],
+    [gtwheelssteel, plateSteel, gtwheelssteel]]);
+    
 # Recipe Tweaks
 
 recipes.remove(wheelswood);
