@@ -5663,7 +5663,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "[b]Soapstone[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, MN, MS\n[i]Primary:[/i] Soapstone (1)\n[i]Secondary:[/i] Talc (2)\n[i]Inbetween:[/i] Glauconite (2)\n[i]Around:[/i] Pentlandite (2)\n\n[b]Sulfur[/b]\n[i]Height(Y):[/i] 5 - 20\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] N, MS\n[i]Primary:[/i] Sulfur (2)\n[i]Secondary:[/i] Sulfur (2)\n[i]Inbetween:[/i] Pyrite (1)\n[i]Around:[/i] Sphalerite (1)\n\n[b]Tetrahedrite[/b]\n[i]Height(Y):[/i] 80 - 120\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, N, MN, MS, AS\n[i]Primary:[/i] Tetrahedrite (2)\n[i]Secondary:[/i] Tetrahedrite (2)\n[i]Inbetween:[/i] Copper (1)\n[i]Around:[/i] Stibnite (2)",
+            "text": "[b]Soapstone[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, MN, MS\n[i]Primary:[/i] Soapstone (1)\n[i]Secondary:[/i] Talc (2)\n[i]Inbetween:[/i] Glauconite (2)\n[i]Around:[/i] Pentlandite (2)\n\n[b]Sulfur[/b]\n[i]Height(Y):[/i] 5 - 20\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] N, MS\n[i]Primary:[/i] Sulfur (2)\n[i]Secondary:[/i] Sulfur (2)\n[i]Inbetween:[/i] Pyrite (1)\n[i]Around:[/i] Sphalerite (1)\n\n[b]Tetrahedrite[/b]\n[i]Height(Y):[/i] 60 - 120\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, N, MN, MS, AS\n[i]Primary:[/i] Tetrahedrite (2)\n[i]Secondary:[/i] Tetrahedrite (2)\n[i]Inbetween:[/i] Copper (1)\n[i]Around:[/i] Stibnite (2)",
             "wrap": 0,
             "size": 0.6999999,
             "color": "FF555555",
