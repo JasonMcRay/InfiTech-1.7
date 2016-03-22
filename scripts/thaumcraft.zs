@@ -479,7 +479,7 @@ Research.addPrereq("FOCUSEXCAVATION", "INFUSION", true);
 Research.clearPages("FOCUSEXCAVATION"); 
 Research.addPage("FOCUSEXCAVATION", "tc.research_page.FOCUSEXCAVATION.1");
 Arcane.removeRecipe(<Thaumcraft:FocusExcavation>);
-Infusion.addRecipe("FOCUSEXCAVATION", <gregtech:gt.metaitem.01:24501>, [<gregtech:gt.metaitem.01:28334>, <Thaumcraft:ItemShard:3>, <gregtech:gt.metaitem.01:28334>, <Thaumcraft:ItemPickThaumium>, <gregtech:gt.metaitem.01:28334>, <Thaumcraft:ItemShard:3>, <gregtech:gt.metaitem.01:28334>, <Thaumcraft:ItemPickThaumium>], "ordo 25, perditio 25, perfodio 10, terra 10", <Thaumcraft:FocusExcavation>, 3);
+Infusion.addRecipe("FOCUSEXCAVATION", <gregtech:gt.metaitem.01:24501>, [<gregtech:gt.metaitem.01:28028>, <Thaumcraft:ItemShard:3>, <gregtech:gt.metaitem.01:28028>, <Thaumcraft:ItemPickThaumium>, <gregtech:gt.metaitem.01:28028>, <Thaumcraft:ItemShard:3>, <gregtech:gt.metaitem.01:28028>, <Thaumcraft:ItemPickThaumium>], "ordo 25, perditio 25, perfodio 10, terra 10", <Thaumcraft:FocusExcavation>, 3);
 Research.addInfusionPage("FOCUSEXCAVATION", <Thaumcraft:FocusExcavation>);
 Research.addPrereq("FOCUSEXCAVATION", "GT_TRANSSTEELDAMASCUS", true);
 
@@ -827,6 +827,10 @@ Arcane.addShaped("MB_Grafter", <MagicBees:item.thaumiumGrafter>, "ordo 5", [[nul
 Arcane.addShaped("MB_Scoop", <MagicBees:item.thaumiumScoop>, "ordo 5", [[<ore:stickThaumium>, <ore:blockWool>, <ore:stickThaumium>], [<ore:stickThaumium>, <ore:stickThaumium>, <ore:stickThaumium>], [<ore:craftingToolHardHammer>, <ore:stickThaumium>, <ore:craftingToolWireCutter>]]);
 
 print('Gregorious Princess');
+
+// Quartzite Transmutation
+Crucible.addRecipe("thaumicenergistics.TECERTUSDUPE", <gregtech:gt.metaitem.01:8523> * 2, <gregtech:gt.metaitem.01:8523>, "aqua 2, vitreus 2");
+Research.addCruciblePage("thaumicenergistics.TECERTUSDUPE", <gregtech:gt.metaitem.01:8523>);
 
 // Arcane crafting terminal
 Arcane.addShaped("thaumicenergistics.TEARCANETERM", <thaumicenergistics:part.base:5>, "ordo 10, perditio 10, aqua 10, ignis 10, terra 10, aer 10", [[<ore:craftingToolScrewdriver>, <appliedenergistics2:item.ItemMultiPart:380>, <ore:craftingToolSoftHammer>], [<ore:screwCertusQuartz>, <Thaumcraft:blockTable:15>, <ore:screwCertusQuartz>], [<ore:plateNetherQuartz>, <appliedenergistics2:item.ItemMultiMaterial:23>, <ore:plateNetherQuartz>]]);
@@ -1420,7 +1424,7 @@ Research.moveResearch("RUNICHEALING", "ARTIFICE", 10, 3);
 Research.moveResearch("RUNICKINETIC", "ARTIFICE", 8, 5);
 
 // Pure Love
-Research.addResearch("PURELOVE", "ARTIFICE", "victus 3, precantatio 3, bestia 3, tempus 3", -3, 3, 7, <ExtraUtilities:pureLove>);
+Research.addResearch("PURELOVE", "ARTIFICE", "victus 3, praecantatio 3, bestia 3, tempus 3", -3, 3, 7, <ExtraUtilities:pureLove>);
 game.setLocalization("en_US", "tc.research_name.PURELOVE", "Pure Love");
 game.setLocalization("en_US", "tc.research_text.PURELOVE", "[GT] Romance in a box");
 Research.addPage("PURELOVE", "kirara.research_page.PURELOVE.1");

@@ -1,3 +1,25 @@
+v3.2.1
+Quests:
+- Added new quest in Bronze Age, to teach player about the Credits and the Shop
+- Shop "quest line" will now open after completing the quest mentioned above
+- Fixed some typos
+- Added Description for the Magic quest line
+- "Better than collecting Food" quest - dependant also on "Handwork Tools" quest (because of the Bucket requiring plates)
+
+Changes/Fixes:
+- Fixed few recipes that wanted IC2 Drills which are disabled
+- Added few more DISABLED tooltips
+- Disabled RC Energy Carts
+- Added tooltips to Industrial Craft seeds to tell what they drop and what block they need (if they need) (thanks @DarknessShadow)
+- Lowered Buildcraft oil generation (1.2 -> 0.5)
+- Added OCEAN and DEEP OCEAN biomes to have increased oil gen
+- Removed PcCraft Oil generation
+- Fixed forestry difficulty settings
+- Disabled IC2 Miner (its unusable with IC2 Drills disabled)
+- Changed recipe for Advanced IC2 Miner
+- Fixed Scroll-wheeling items from/into inventories
+- GT Dough can be now crafted also with Fresh Water
+
 v3.2.0
 Mod Updates:
 - All of them
