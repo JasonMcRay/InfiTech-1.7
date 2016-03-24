@@ -917,7 +917,7 @@ Arcane.addShaped("COREBUTCHER", <Thaumcraft:ItemGolemCore:9>, "aqua 10, terra 10
 Infusion.addRecipe("COREALCHEMY", <Thaumcraft:ItemGolemCore:5>, [<Thaumcraft:blockJar>, <minecraft:potion:32>, <gregtech:gt.metaitem.01:32612>, <minecraft:potion:64>], "aqua 16, motus 16, praecantatio 32, electrum 8", <Thaumcraft:ItemGolemCore:6>, 5);
 Infusion.addRecipe("CORELUMBER", <Thaumcraft:ItemGolemCore:3>, [<Thaumcraft:ItemAxeElemental>, <gregtech:gt.metaitem.02:3335>, <gregtech:gt.metaitem.01:32652>, <gregtech:gt.metaitem.02:3339>], "arbor 16, instrumentum 16, meto 32, electrum 8", <Thaumcraft:ItemGolemCore:7>, 5);
 Infusion.addRecipe("COREUSE", <Thaumcraft:ItemGolemCore:1>, [<ExtraUtilities:glove>, <OpenComputers:item:42>, <gregtech:gt.metaitem.01:32652>, <WitchingGadgets:item.WG_ThaumiumShears>], "machina 16, instrumentum 16, humanus 32, electrum 8", <Thaumcraft:ItemGolemCore:8>, 5);
-Infusion.addRecipe("CORESORTING", <Thaumcraft:ItemGolemCore:1>, [<Thaumcraft:ItemZombieBrain>, <OpenComputers:item:29>, <gregtech:gt.metaitem.01:32729>, <OpenComputers:item:61>], "cognitio 16, vacuos 16, permutatio 32, electrum 8", <Thaumcraft:ItemGolemCore:10>, 5);
+Infusion.addRecipe("CORESORTING", <Thaumcraft:ItemGolemCore:1>, [<Thaumcraft:ItemZombieBrain>, <minecraft:writable_book>, <gregtech:gt.metaitem.01:32651>, <gregtech:gt.metaitem.01:32729>], "cognitio 16, vacuos 16, permutatio 32, electrum 8", <Thaumcraft:ItemGolemCore:10>, 5);
 Infusion.addRecipe("COREFISHING", <Thaumcraft:ItemGolemCore:3>, [<minecraft:fishing_rod>, <harvestcraft:calamarirawItem>, <gregtech:gt.metaitem.01:30711>, <gregtech:gt.metaitem.01:32652>, <minecraft:fish:*>, <Thaumcraft:ItemNuggetFish>], "aqua 16, bestia 16, meto 32, electrum 8", <Thaumcraft:ItemGolemCore:11>, 5);
 
 // Golem Upgrade Recipes
