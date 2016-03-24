@@ -7,7 +7,7 @@ import mods.thaumcraft.Warp;
 
 var salisMundus = <Thaumcraft:ItemResource:14>;
 
-Research.addResearch("GT_INFUSIONENCHANTMENT", "ARTIFICE", "tutamen 3, instrumentum 3, praecantatio 3, telum 3, cognitio 3", -5, 13, 4, <minecraft:enchanted_book>);
+Research.addResearch("GT_INFUSIONENCHANTMENT", "ARTIFICE", "tutamen 3, instrumentum 3, praecantatio 3, telum 3, cognitio 3", -5, 13, 3, <minecraft:enchanted_book>);
 game.setLocalization("en_US", "tc.research_name.GT_INFUSIONENCHANTMENT", "Infusion Enchantment");
 game.setLocalization("en_US", "tc.research_text.GT_INFUSIONENCHANTMENT", "Enchanting with Essentia");
 Research.addPage("GT_INFUSIONENCHANTMENT", "kirara.research_page.GT_INFUSIONENCHANTMENT.1");
@@ -31,7 +31,7 @@ Research.setConcealed("GT_INFUSIONENCHANTMENT", true);
 Research.addPrereq("RUNICARMOR", "GT_INFUSIONENCHANTMENT", false);
 
 // Efficiency
-Research.addResearch("GT_ENCHANTMENTEFFICIENCY", "ARTIFICE", "praecantatio 2, instrumentum 2, perfodio 2, meto 2", -7, 15, 6, <minecraft:iron_pickaxe>);
+Research.addResearch("GT_ENCHANTMENTEFFICIENCY", "ARTIFICE", "praecantatio 2, instrumentum 2, perfodio 2, meto 2", -7, 15, 1, <minecraft:iron_pickaxe>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTEFFICIENCY", "Enchantment - Efficiency");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTEFFICIENCY", "Fast and furious");
 Research.addPage("GT_ENCHANTMENTEFFICIENCY", "kirara.research_page.GT_ENCHANTMENTEFFICIENCY.1");
@@ -56,7 +56,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTEFFICIENCY", true);
 
 // Unbreaking
-Research.addResearch("GT_ENCHANTMENTUNBREAKING", "ARTIFICE", "praecantatio 2, instrumentum 2, fabrico 2, ordo 2", -9, 16, 6, <gregtech:gt.metaitem.01:22033>);
+Research.addResearch("GT_ENCHANTMENTUNBREAKING", "ARTIFICE", "praecantatio 2, instrumentum 2, fabrico 2, ordo 2", -9, 16, 1, <gregtech:gt.metaitem.01:22033>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTUNBREAKING", "Enchantment - Unbreaking");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTUNBREAKING", "Augmentation and reinforcement");
 Research.addPage("GT_ENCHANTMENTUNBREAKING", "kirara.research_page.GT_ENCHANTMENTUNBREAKING.1");
@@ -81,7 +81,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTUNBREAKING", true);
 
 // Fortune
-Research.addResearch("GT_ENCHANTMENTFORTUNE", "ARTIFICE", "praecantatio 2, instrumentum 2, perfodio 2, lucrum 2", -8, 17, 6, <minecraft:diamond>);
+Research.addResearch("GT_ENCHANTMENTFORTUNE", "ARTIFICE", "praecantatio 2, instrumentum 2, perfodio 2, lucrum 2", -8, 17, 1, <minecraft:diamond>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTFORTUNE", "Enchantment - Fortune");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTFORTUNE", "Mo' magic, mo' problems");
 Research.addPage("GT_ENCHANTMENTFORTUNE", "kirara.research_page.GT_ENCHANTMENTFORTUNE.1");
@@ -102,7 +102,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTFORTUNE", true);
 
 // Fire Protection
-Research.addResearch("GT_ENCHANTMENTFIREPROTECTION", "ARTIFICE", "praecantatio 2, ignis 2, tutamen 2", -8, 14, 2, <gregtech:gt.metaitem.01:17346>);
+Research.addResearch("GT_ENCHANTMENTFIREPROTECTION", "ARTIFICE", "praecantatio 2, ignis 2, tutamen 2", -8, 14, 1, <gregtech:gt.metaitem.01:17346>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTFIREPROTECTION", "Enchantment - Fire Protection");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTFIREPROTECTION", "To thwart the infernal");
 Research.addPage("GT_ENCHANTMENTFIREPROTECTION", "kirara.research_page.GT_ENCHANTMENTFIREPROTECTION.1");
@@ -124,7 +124,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTFIREPROTECTION", true);
 
 // Blast Protection
-Research.addResearch("GT_ENCHANTMENTBLASTPROTECTION", "ARTIFICE", "praecantatio 2, perditio 2, tutamen 2", -8, 13, 2, <IC2:itemPartAlloy>);
+Research.addResearch("GT_ENCHANTMENTBLASTPROTECTION", "ARTIFICE", "praecantatio 2, perditio 2, tutamen 2", -8, 13, 1, <IC2:itemPartAlloy>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTBLASTPROTECTION", "Enchantment - Blast Protection");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTBLASTPROTECTION", "To dominate the combustible");
 Research.addPage("GT_ENCHANTMENTBLASTPROTECTION", "kirara.research_page.GT_ENCHANTMENTBLASTPROTECTION.1");
@@ -146,7 +146,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTBLASTPROTECTION", true);
 
 // Projectile Protection
-Research.addResearch("GT_ENCHANTMENTPROJECTILEPROTECTION", "ARTIFICE", "praecantatio 2, volatus 2, tutamen 2", -8, 12, 2, <gregtech:gt.metaitem.01:17334>);
+Research.addResearch("GT_ENCHANTMENTPROJECTILEPROTECTION", "ARTIFICE", "praecantatio 2, volatus 2, tutamen 2", -8, 12, 1, <gregtech:gt.metaitem.01:17334>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTPROJECTILEPROTECTION", "Enchantment - Projectile Protection");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTPROJECTILEPROTECTION", "To fend off 	the cowards");
 Research.addPage("GT_ENCHANTMENTPROJECTILEPROTECTION", "kirara.research_page.GT_ENCHANTMENTPROJECTILEPROTECTION.1");
@@ -168,7 +168,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTPROJECTILEPROTECTION", true);
 
 // Protection
-Research.addResearch("GT_ENCHANTMENTPROTECTION", "ARTIFICE", "praecantatio 2, ordo 2, tutamen 2", -10, 13, 6, <gregtech:gt.metaitem.01:17362>);
+Research.addResearch("GT_ENCHANTMENTPROTECTION", "ARTIFICE", "praecantatio 2, ordo 2, tutamen 2", -10, 13, 2, <gregtech:gt.metaitem.01:17362>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTPROTECTION", "Enchantment - Protection");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTPROTECTION", "To withstand all there is");
 Research.addPage("GT_ENCHANTMENTPROTECTION", "kirara.research_page.GT_ENCHANTMENTPROTECTION.1");
@@ -192,7 +192,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTPROTECTION", true);
 
 // Feather Falling
-Research.addResearch("GT_ENCHANTMENTFEATHERFALLING", "ARTIFICE", "praecantatio 2, volatus 2, aer 2", -10, 14, 2, <IC2:itemArmorRubBoots>);
+Research.addResearch("GT_ENCHANTMENTFEATHERFALLING", "ARTIFICE", "praecantatio 2, volatus 2, aer 2", -10, 14, 1, <IC2:itemArmorRubBoots>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTFEATHERFALLING", "Enchantment - Feather Falling");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTFEATHERFALLING", "The one true avian way");
 Research.addPage("GT_ENCHANTMENTFEATHERFALLING", "kirara.research_page.GT_ENCHANTMENTFEATHERFALLING.1");
@@ -214,7 +214,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTFEATHERFALLING", true);
 
 // Thorns
-Research.addResearch("GT_ENCHANTMENTTHORNS", "ARTIFICE", "praecantatio 2, telum 2, tutamen 2", -10, 12, 2, <minecraft:cactus>);
+Research.addResearch("GT_ENCHANTMENTTHORNS", "ARTIFICE", "praecantatio 2, telum 2, tutamen 2", -10, 12, 1, <minecraft:cactus>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTTHORNS", "Enchantment - Thorns");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTTHORNS", "Vengeance shall be mine");
 Research.addPage("GT_ENCHANTMENTTHORNS", "kirara.research_page.GT_ENCHANTMENTTHORNS.1");
@@ -234,7 +234,7 @@ Research.setConcealed("GT_ENCHANTMENTTHORNS", true);
 Warp.addToResearch("GT_ENCHANTMENTTHORNS", 1);
 
 // Smite
-Research.addResearch("GT_ENCHANTMENTSMITE", "ARTIFICE", "praecantatio 2, exanimis 2, telum 2", -6, 16, 2, <minecraft:rotten_flesh>);
+Research.addResearch("GT_ENCHANTMENTSMITE", "ARTIFICE", "praecantatio 2, exanimis 2, telum 2", -6, 16, 1, <minecraft:rotten_flesh>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTSMITE", "Enchantment - Smite");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTSMITE", "Exterminating the undead");
 Research.addPage("GT_ENCHANTMENTSMITE", "kirara.research_page.GT_ENCHANTMENTSMITE.1");
@@ -259,7 +259,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTSMITE", true);
 
 // Bane of Arthropods
-Research.addResearch("GT_ENCHANTMENTBANEOFARTHROPODS", "ARTIFICE", "praecantatio 2, bestia 2, telum 2", -5, 16, 2, <minecraft:spider_eye>);
+Research.addResearch("GT_ENCHANTMENTBANEOFARTHROPODS", "ARTIFICE", "praecantatio 2, bestia 2, telum 2", -5, 16, 1, <minecraft:spider_eye>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTBANEOFARTHROPODS", "Enchantment - Bane of Arthropods");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTBANEOFARTHROPODS", "Annihilating the arachnid");
 Research.addPage("GT_ENCHANTMENTBANEOFARTHROPODS", "kirara.research_page.GT_ENCHANTMENTBANEOFARTHROPODS.1");
@@ -284,7 +284,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTBANEOFARTHROPODS", true);
 
 // Disjunction - Doesn't work somehow - Seems to work for me
-Research.addResearch("GT_ENCHANTMENTDISJUNCTION", "ARTIFICE", "praecantatio 2, alienis 2, telum 2", -4, 16, 2, <minecraft:ender_pearl>);
+Research.addResearch("GT_ENCHANTMENTDISJUNCTION", "ARTIFICE", "praecantatio 2, alienis 2, telum 2", -4, 16, 1, <minecraft:ender_pearl>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTDISJUNCTION", "Enchantment - Disjunction");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTDISJUNCTION", "Obliterating the abominable");
 Research.addPage("GT_ENCHANTMENTDISJUNCTION", "kirara.research_page.GT_ENCHANTMENTDISJUNCTION.1");
@@ -309,7 +309,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTDISJUNCTION", true);
 
 // Sharpness
-Research.addResearch("GT_ENCHANTMENTSHARPNESS", "ARTIFICE", "praecantatio 2, instrumentum 2, telum 2", -5, 18, 5, <minecraft:iron_sword>);
+Research.addResearch("GT_ENCHANTMENTSHARPNESS", "ARTIFICE", "praecantatio 2, instrumentum 2, telum 2", -5, 18, 2, <minecraft:iron_sword>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTSHARPNESS", "Enchantment - Sharpness");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTSHARPNESS", "Cleave all that stand in your way");
 Research.addPage("GT_ENCHANTMENTSHARPNESS", "kirara.research_page.GT_ENCHANTMENTSHARPNESS.1");
@@ -336,7 +336,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTSHARPNESS", true);
 
 // Power
-Research.addResearch("GT_ENCHANTMENTPOWER", "ARTIFICE", "praecantatio 2, instrumentum 2, volatus 2, telum 2", -2, 18, 5, <minecraft:bow>);
+Research.addResearch("GT_ENCHANTMENTPOWER", "ARTIFICE", "praecantatio 2, instrumentum 2, volatus 2, telum 2", -2, 18, 1, <minecraft:bow>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTPOWER", "Enchantment - Power");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTPOWER", "The arrow that shall pierce the heavens");
 Research.addPage("GT_ENCHANTMENTPOWER", "kirara.research_page.GT_ENCHANTMENTPOWER.1");
@@ -361,7 +361,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTPOWER", true);
 
 // Knockback
-Research.addResearch("GT_ENCHANTMENTKNOCKBACK", "ARTIFICE", "praecantatio 2, motus 2, telum 2", -4, 18, 2, <IC2:itemToolForgeHammer>);
+Research.addResearch("GT_ENCHANTMENTKNOCKBACK", "ARTIFICE", "praecantatio 2, motus 2, telum 2", -4, 18, 1, <IC2:itemToolForgeHammer>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTKNOCKBACK", "Enchantment - Knockback");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTKNOCKBACK", "Use the force, dude");
 Research.addPage("GT_ENCHANTMENTKNOCKBACK", "kirara.research_page.GT_ENCHANTMENTKNOCKBACK.1");
@@ -377,7 +377,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTKNOCKBACK", true);
 
 // Punch
-Research.addResearch("GT_ENCHANTMENTPUNCH", "ARTIFICE", "praecantatio 2, motus 2, volatus 2, telum 2", -2, 17, 2, <gregtech:gt.metatool.01:14>);
+Research.addResearch("GT_ENCHANTMENTPUNCH", "ARTIFICE", "praecantatio 2, motus 2, volatus 2, telum 2", -2, 17, 1, <gregtech:gt.metatool.01:14>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTPUNCH", "Enchantment - Punch");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTPUNCH", "Action at a distance");
 Research.addPage("GT_ENCHANTMENTPUNCH", "kirara.research_page.GT_ENCHANTMENTPUNCH.1");
@@ -394,7 +394,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTPUNCH", true);
 
 // Fire Aspect
-Research.addResearch("GT_ENCHANTMENTFIREASPECT", "ARTIFICE", "praecantatio 2, ignis 2, telum 2", -6, 18, 2, <minecraft:fire>);
+Research.addResearch("GT_ENCHANTMENTFIREASPECT", "ARTIFICE", "praecantatio 2, ignis 2, telum 2", -6, 18, 1, <minecraft:fire>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTFIREASPECT", "Enchantment - Fire Aspect");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTFIREASPECT", "Not quite infernal");
 Research.addPage("GT_ENCHANTMENTFIREASPECT", "kirara.research_page.GT_ENCHANTMENTFIREASPECT.1");
@@ -411,7 +411,7 @@ Research.setConcealed("GT_ENCHANTMENTFIREASPECT", true);
 Warp.addToResearch("GT_ENCHANTMENTFIREASPECT", 1);
 
 // Flame
-Research.addResearch("GT_ENCHANTMENTFLAME", "ARTIFICE", "praecantatio 2, ignis 2, volatus 2, telum 2", -2, 19, 2, <gregtech:gt.metaitem.02:25346>);
+Research.addResearch("GT_ENCHANTMENTFLAME", "ARTIFICE", "praecantatio 2, ignis 2, volatus 2, telum 2", -2, 19, 1, <gregtech:gt.metaitem.02:25346>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTFLAME", "Enchantment - Flame");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTFLAME", "Remote ignition");
 Research.addPage("GT_ENCHANTMENTFLAME", "kirara.research_page.GT_ENCHANTMENTFLAME.1");
@@ -425,7 +425,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTFLAME", true);
 
 // Infinity
-Research.addResearch("GT_ENCHANTMENTINFINITY", "ARTIFICE", "praecantatio 2, vacuos 2, alienis 2, iter 2", 0, 18, 5, <chisel:end_Stone:3>);
+Research.addResearch("GT_ENCHANTMENTINFINITY", "ARTIFICE", "praecantatio 2, vacuos 2, alienis 2, iter 2", 0, 18, 2, <chisel:end_Stone:3>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTINFINITY", "Enchantment - Infinity");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTINFINITY", "Screw the rules, I have magic");
 Research.addPage("GT_ENCHANTMENTINFINITY", "kirara.research_page.GT_ENCHANTMENTINFINITY.1");
@@ -442,7 +442,7 @@ Research.setConcealed("GT_ENCHANTMENTINFINITY", true);
 // Warp.addToResearch("GT_ENCHANTMENTINFINITY", 1);
 
 // Looting
-Research.addResearch("GT_ENCHANTMENTLOOTING", "ARTIFICE", "praecantatio 4, lucrum 4, alienis 4, iter 4, telum 4", -5, 20, 5, <Thaumcraft:ItemLootBag>);
+Research.addResearch("GT_ENCHANTMENTLOOTING", "ARTIFICE", "praecantatio 4, lucrum 4, alienis 4, iter 4, telum 4", -5, 20, 2, <Thaumcraft:ItemLootBag>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTLOOTING", "Enchantment - Looting");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTLOOTING", "What is yours shall soon be mine");
 Research.addPage("GT_ENCHANTMENTLOOTING", "kirara.research_page.GT_ENCHANTMENTLOOTING.1");
@@ -483,7 +483,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTHASTE", true);
 
 // Repair
-Research.addResearch("GT_ENCHANTMENTREPAIR", "ARTIFICE", "praecantatio 4, lucrum 4, instrumentum 4, fabrico 4, ordo 4", -10, 18, 5, <minecraft:anvil>);
+Research.addResearch("GT_ENCHANTMENTREPAIR", "ARTIFICE", "praecantatio 4, lucrum 4, instrumentum 4, fabrico 4, ordo 4", -10, 18, 2, <minecraft:anvil>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTREPAIR", "Enchantment - Repair");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTREPAIR", "It's magical!");
 Research.addPage("GT_ENCHANTMENTREPAIR", "kirara.research_page.GT_ENCHANTMENTREPAIR.1");
@@ -501,7 +501,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTREPAIR", true);
 
 // Throwoff
-Research.addResearch("GT_ENCHANTMENTRIDEPROTECT", "ARTIFICE", "praecantatio 2, tutamen 2, vinculum 2", -11, 12, 2, <minecraft:piston>);
+Research.addResearch("GT_ENCHANTMENTRIDEPROTECT", "ARTIFICE", "praecantatio 2, tutamen 2, vinculum 2", -11, 12, 1, <minecraft:piston>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTRIDEPROTECT", "Enchantment - Throwoff");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTRIDEPROTECT", "[WG] Get off meh!");
 Research.addPage("GT_ENCHANTMENTRIDEPROTECT", "kirara.research_page.GT_ENCHANTMENTRIDEPROTECT.1");
@@ -528,7 +528,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTINVISIBLEGEAR", true);
 
 // Translucency
-Research.addResearch("GT_ENCHANTMENTUNVEILING", "ARTIFICE", "praecantatio 4, lux 4, sensus 4", -11, 14, 2, <EnderIO:blockFusedQuartz:0>);
+Research.addResearch("GT_ENCHANTMENTUNVEILING", "ARTIFICE", "praecantatio 4, lux 4, sensus 4", -11, 14, 1, <EnderIO:blockFusedQuartz:0>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTUNVEILING", "Enchantment - Unveiling");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTUNVEILING", "[WG] Xray Specs");
 Research.addPage("GT_ENCHANTMENTUNVEILING", "kirara.research_page.GT_ENCHANTMENTUNVEILING.1");
@@ -540,7 +540,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTUNVEILING", true);
 
 // Stealth
-Research.addResearch("GT_ENCHANTMENTSTEALTH", "ARTIFICE", "praecantatio 4, motus 4, tenebrae 4", -12, 13, 4, <TravellersGear:simpleGear>);
+Research.addResearch("GT_ENCHANTMENTSTEALTH", "ARTIFICE", "praecantatio 4, motus 4, tenebrae 4", -12, 13, 1, <TravellersGear:simpleGear>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTSTEALTH", "Enchantment - Stealth");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTSTEALTH", "[WG] Sneaky!");
 Research.addPage("GT_ENCHANTMENTSTEALTH", "kirara.research_page.GT_ENCHANTMENTSTEALTH.1");
@@ -564,7 +564,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTSTEALTH", true);
 
 // Backstab
-Research.addResearch("GT_ENCHANTMENTBACKSTAB", "ARTIFICE", "praecantatio 4, telum 4, tenebrae 4", -4, 17, 4, <TravellersGear:simpleGear>.withTag({display: {colour: 1644825}}));
+Research.addResearch("GT_ENCHANTMENTBACKSTAB", "ARTIFICE", "praecantatio 4, telum 4, tenebrae 4", -4, 17, 1, <TravellersGear:simpleGear>.withTag({display: {colour: 1644825}}));
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTBACKSTAB", "Enchantment - Stealth");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTBACKSTAB", "[WG] Rogues do it from behind");
 Research.addPage("GT_ENCHANTMENTBACKSTAB", "kirara.research_page.GT_ENCHANTMENTBACKSTAB.1");
@@ -589,7 +589,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTBACKSTAB", true);
 
 // Lure
-Research.addResearch("GT_ENCHANTMENTLURE", "ARTIFICE", "praecantatio 4, aqua 4, meto 4", -8, 19, 4, <minecraft:carrot_on_a_stick>);
+Research.addResearch("GT_ENCHANTMENTLURE", "ARTIFICE", "praecantatio 4, aqua 4, meto 4", -8, 19, 1, <minecraft:carrot_on_a_stick>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTLURE", "Enchantment - Lure");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTLURE", "Fastest fish fingers in the west");
 Research.addPage("GT_ENCHANTMENTLURE", "kirara.research_page.GT_ENCHANTMENTLURE.1");
@@ -607,7 +607,7 @@ Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.setConcealed("GT_ENCHANTMENTLURE", true);
 
 // Luck of the sea
-Research.addResearch("GT_ENCHANTMENTLUCKOFTHESEA", "ARTIFICE", "praecantatio 4, aqua 4, lucrum 4", -8, 20, 4, <minecraft:emerald>);
+Research.addResearch("GT_ENCHANTMENTLUCKOFTHESEA", "ARTIFICE", "praecantatio 4, aqua 4, lucrum 4", -8, 20, 1, <minecraft:emerald>);
 game.setLocalization("en_US", "tc.research_name.GT_ENCHANTMENTLUCKOFTHESEA", "Enchantment - Luck of the Sea");
 game.setLocalization("en_US", "tc.research_text.GT_ENCHANTMENTLUCKOFTHESEA", "X marks the spot");
 Research.addPage("GT_ENCHANTMENTLUCKOFTHESEA", "kirara.research_page.GT_ENCHANTMENTLUCKOFTHESEA.1");
