@@ -489,6 +489,7 @@ Research.addPage("FOCUSWARDING", "tc.research_page.FOCUSWARDING.1");
 Infusion.removeRecipe(<Thaumcraft:FocusWarding>);
 Infusion.addRecipe("FOCUSWARDING", <gregtech:gt.metaitem.01:24506>, [<gregtech:gt.metaitem.01:28084>, <Thaumcraft:ItemResource:3>, <gregtech:gt.metaitem.01:28084>, <Thaumcraft:ItemShard:3>, <gregtech:gt.metaitem.01:28084>, <Thaumcraft:ItemResource:3>, <gregtech:gt.metaitem.01:28084>, <Thaumcraft:ItemShard:5>], "cognitio 10, ordo 25, terra 25, tutamen 25", <Thaumcraft:FocusWarding>, 5);
 Research.addInfusionPage("FOCUSWARDING", <Thaumcraft:FocusWarding>);
+Compressor.addRecipe(<gregtech:gt.metaitem.01:17506>, <gregtech:gt.metaitem.01:2506>);
 
 // Fire Focus
 Research.clearPages("FOCUSFIRE");
