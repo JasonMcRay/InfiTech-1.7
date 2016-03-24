@@ -394,23 +394,23 @@ ChemicalBath.addRecipe([diamondFluidPipe], diamondPipe, chemicalGreenDye * 288, 
 
 # Kinesis
 recipes.remove(woodKinesisPipe);
-Assembler.addRecipe(woodKinesisPipe, woodPipe, integratedCircuit1, moltenRedstone * 72, 40, 20);
+Assembler.addRecipe(woodKinesisPipe, woodPipe, integratedCircuit1 * 0, moltenRedstone * 72, 40, 20);
 recipes.remove(cobbleKinesisPipe);
-Assembler.addRecipe(cobbleKinesisPipe, cobblePipe, integratedCircuit1, moltenRedstone * 144, 40, 20);
+Assembler.addRecipe(cobbleKinesisPipe, cobblePipe, integratedCircuit1 * 0, moltenRedstone * 144, 40, 20);
 recipes.remove(stoneKinesisPipe);
-Assembler.addRecipe(stoneKinesisPipe, stonePipe, integratedCircuit1, moltenRedstone * 216, 40, 20);
+Assembler.addRecipe(stoneKinesisPipe, stonePipe, integratedCircuit1 * 0, moltenRedstone * 216, 40, 20);
 recipes.remove(quartzKinesisPipe);
-Assembler.addRecipe(quartzKinesisPipe, quartzPipe, integratedCircuit1, moltenRedstone * 288, 40, 20);
+Assembler.addRecipe(quartzKinesisPipe, quartzPipe, integratedCircuit1 * 0, moltenRedstone * 288, 40, 20);
 recipes.remove(ironKinesisPipe);
-Assembler.addRecipe(ironKinesisPipe, ironPipe, integratedCircuit1, moltenRedstone * 360, 40, 20);
+Assembler.addRecipe(ironKinesisPipe, ironPipe, integratedCircuit1 * 0, moltenRedstone * 360, 40, 20);
 recipes.remove(goldKinesisPipe);
-Assembler.addRecipe(goldKinesisPipe, goldPipe, integratedCircuit1, moltenRedstone * 432, 40, 20);
+Assembler.addRecipe(goldKinesisPipe, goldPipe, integratedCircuit1 * 0, moltenRedstone * 432, 40, 20);
 recipes.remove(diamondKinesisPipe);
-Assembler.addRecipe(diamondKinesisPipe, diamondPipe, integratedCircuit1, moltenRedstone * 504, 40, 20);
+Assembler.addRecipe(diamondKinesisPipe, diamondPipe, integratedCircuit1 * 0, moltenRedstone * 504, 40, 20);
 recipes.remove(emeraldKinesisPipe);
-Assembler.addRecipe(emeraldKinesisPipe, emeraldPipe, integratedCircuit1, moltenRedstone * 576, 40, 20);
+Assembler.addRecipe(emeraldKinesisPipe, emeraldPipe, integratedCircuit1 * 0, moltenRedstone * 576, 40, 20);
 recipes.remove(sandstoneKinesisPipe);
-Assembler.addRecipe(sandstoneKinesisPipe, sandstonePipe, integratedCircuit1, moltenRedstone * 648, 40, 20);
+Assembler.addRecipe(sandstoneKinesisPipe, sandstonePipe, integratedCircuit1 * 0, moltenRedstone * 648, 40, 20);
 
 // --- Assembly Table removal ---
 AssemblyTable.removeRecipe(lensClear);
