@@ -1,4 +1,5 @@
 // --- Created by Jason McRay --- 
+// --- InfiTech2 script for Malisis' Doors ---
 
 import mods.nei.NEI;
 
@@ -29,11 +30,41 @@ var vanishingFrameDiamond = <malisisdoors:vanishing_block:3>;
 var vanishingFrameGold = <malisisdoors:vanishing_block:2>;
 var vanishingFrameIron = <malisisdoors:vanishing_block:1>;
 var wrench = <ore:craftingToolWrench>;
+var trapdoor            = <ore:trapdoor>;
+var ironbars            = <minecraft:iron_bars>;
+var jadedLadder         = <OpenBlocks:ladder>;
+var ladder              = <minecraft:ladder>;
+var itemgrate           = <Thaumcraft:blockMetalDevice:5>;
+var animaltrap          = <harvestcraft:animaltrap>;
+var stick               = <minecraft:stick>;
+var chest               = <minecraft:chest>;
+var string_             = <minecraft:string>;
 
 
 # Block/Item Removal
 recipes.remove(ffController);
 ffController.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
+# Recipe Fix
+
+<ore:trapdoor>.add(<minecraft:trapdoor>);
+<ore:trapdoor>.add(<malisisdoors:trapdoor_acacia>);
+<ore:trapdoor>.add(<malisisdoors:trapdoor_birch>);
+<ore:trapdoor>.add(<malisisdoors:trapdoor_dark_oak>);
+<ore:trapdoor>.add(<malisisdoors:trapdoor_jungle>);
+<ore:trapdoor>.add(<malisisdoors:trapdoor_spruce>);
+recipes.remove(jadedLadder);
+recipes.addShapeless(jadedLadder, [ladder, trapdoor]);
+recipes.remove(itemgrate);
+recipes.addShaped(itemgrate, [
+	[ironbars, null, null],
+	[trapdoor, null, null],
+	[null, null, null]]);
+recipes.remove(animaltrap);
+recipes.addShaped(animaltrap, [
+	[stick, trapdoor, stick],
+	[string_, chest, string_],
+	[stick, string_, stick]]);
 
 # Recipe Tweaks
 recipes.remove(vanishingFrameIron);
