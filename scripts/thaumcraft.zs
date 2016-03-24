@@ -1213,7 +1213,7 @@ print('Magic Generators Unfuseable');
 Research.moveResearch("GT_CRYSTALLISATION", "ALCHEMY", -8, -2);
 
 // Naquadah
-Research.addResearch("GT_NAQUADAH", "ELDRITCH", "auram 2, radio 2, alienis 2, potentia 2, tenebrae 2, vitreus 2", -3, 0, 8, <gregtech:gt.metaitem.01:9324>);
+Research.addResearch("GT_NAQUADAH", "ELDRITCH", "auram 2, radio 2, alienis 2, potentia 2, tenebrae 2, vitreus 2, nebrisum 2", -3, 0, 1, <gregtech:gt.metaitem.01:9324>);
 game.setLocalization("en_US", "tc.research_name.GT_NAQUADAH", "Naquadah Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_NAQUADAH", "[GT] And now I understand, for I decided to learn of nothing except the void");
 Research.addPage("GT_NAQUADAH", "kirara.research_page.GT_NAQUADAH.1");
@@ -1230,7 +1230,7 @@ Research.setConcealed("GT_NAQUADAH", true);
 Warp.addToResearch("GT_NAQUADAH", 5);
 
 // Vinteum Crystal
-Research.addResearch("AM_GEMVINTEUM", "ALCHEMY", "praecantatio 2, auram 2, tenebrae 2, alienis 2, permutatio 2, vitreus 2", -11, -2, 6, gemVinteum);
+Research.addResearch("AM_GEMVINTEUM", "ALCHEMY", "praecantatio 2, auram 2, tenebrae 2, alienis 2, permutatio 2, vitreus 2", -11, -2, 2, gemVinteum);
 game.setLocalization("en_US", "tc.research_name.AM_GEMVINTEUM", "Vinteum Crystal");
 game.setLocalization("en_US", "tc.research_text.AM_GEMVINTEUM", "[AM] Not quite the philosopher's stone");
 Research.addPage("AM_GEMVINTEUM", "kirara.research_page.AM_GEMVINTEUM.1");
@@ -1303,7 +1303,7 @@ val potionJump4 = <minecraft:potion:8490>.withTag({CustomPotionEffects: [{Durati
 // val potionTravel4 = <minecraft:potion:8490>.withTag({CustomPotionEffects: [{Duration: 9600, Id: 1, Amplifier: 2}, {Duration: 9600, Id: 8, Amplifier: 3}], display: {Name: "\u00A7rPotion of Travel"}});
 
 // Thaumcraft Potions
-Research.addResearch("GT_ADVANCED_BREWING", "ALCHEMY", "fabrico 8, auram 4, praecantatio 4, aqua 4", 1, -4, 6, <minecraft:brewing_stand>);
+Research.addResearch("GT_ADVANCED_BREWING", "ALCHEMY", "fabrico 8, auram 4, praecantatio 4, aqua 4", 1, -4, 3, <minecraft:brewing_stand>);
 game.setLocalization("en_US", "tc.research_name.GT_ADVANCED_BREWING", "Advanced Brewing");
 game.setLocalization("en_US", "tc.research_text.GT_ADVANCED_BREWING", "Infusing potions with essentia");
 Research.addPage("GT_ADVANCED_BREWING", "kirara.research_page.GT_ADVANCED_BREWING.1");
@@ -1428,7 +1428,7 @@ Research.moveResearch("RUNICHEALING", "ARTIFICE", 10, 3);
 Research.moveResearch("RUNICKINETIC", "ARTIFICE", 8, 5);
 
 // Pure Love
-Research.addResearch("PURELOVE", "ARTIFICE", "victus 3, praecantatio 3, bestia 3, tempus 3", -3, 3, 7, <ExtraUtilities:pureLove>);
+Research.addResearch("PURELOVE", "ARTIFICE", "victus 3, praecantatio 3, bestia 3, tempus 3", -3, 3, 3, <ExtraUtilities:pureLove>);
 game.setLocalization("en_US", "tc.research_name.PURELOVE", "Pure Love");
 game.setLocalization("en_US", "tc.research_text.PURELOVE", "[GT] Romance in a box");
 Research.addPage("PURELOVE", "kirara.research_page.PURELOVE.1");
@@ -1438,7 +1438,7 @@ Research.addInfusionPage("PURELOVE", <ExtraUtilities:pureLove>);
 Research.addPrereq("PURELOVE", "LAMPFERTILITY", false);
 
 // Mundane Accessories
-Research.addResearch("GT_APPRENTICE_ARTIFICING", "ARTIFICE", "praecantatio 3, instrumentum 3", 3, 4, 3, <Thaumcraft:ItemBaubleBlanks:1>);
+Research.addResearch("GT_APPRENTICE_ARTIFICING", "ARTIFICE", "praecantatio 3, instrumentum 3", 3, 4, 2, <Thaumcraft:ItemBaubleBlanks:1>);
 game.setLocalization("en_US", "tc.research_name.GT_APPRENTICE_ARTIFICING", "Apprentice Artificing");
 game.setLocalization("en_US", "tc.research_text.GT_APPRENTICE_ARTIFICING", "Controlling ancient artifacts");
 Research.addPage("GT_APPRENTICE_ARTIFICING", "kirara.research_page.GT_APPRENTICE_ARTIFICING.1");
@@ -1454,7 +1454,7 @@ Research.addArcanePage("GT_APPRENTICE_ARTIFICING", <Thaumcraft:ItemBaubleBlanks:
 Research.setConcealed("GT_APPRENTICE_ARTIFICING", true);
 
 // Vis Stone
-Research.addResearch("GT_VISSTONE", "ARTIFICE", "praecantatio 3, instrumentum 3, vinculum 3", 6, 4, 3, <Thaumcraft:ItemAmuletVis>);
+Research.addResearch("GT_VISSTONE", "ARTIFICE", "praecantatio 3, instrumentum 3, vinculum 3", 6, 4, 2, <Thaumcraft:ItemAmuletVis>);
 game.setLocalization("en_US", "tc.research_name.GT_VISSTONE", "Vis Stone");
 game.setLocalization("en_US", "tc.research_text.GT_VISSTONE", "Storing vis for later use");
 Research.addPage("GT_VISSTONE", "kirara.research_page.GT_VISSTONE.1");
@@ -1468,7 +1468,7 @@ Research.setConcealed("GT_VISSTONE", true);
 Research.addPrereq("RUNICARMOR", "GT_VISSTONE", false);
 
 // Apprentice Ring of Aer
-Research.addResearch("GT_APPRENTICE_AER", "ARTIFICE", "praecantatio 3, instrumentum 1, aer 1", 2, 3, 2, <Thaumcraft:ItemBaubleBlanks:3>);
+Research.addResearch("GT_APPRENTICE_AER", "ARTIFICE", "praecantatio 3, instrumentum 1, aer 1", 2, 3, 1, <Thaumcraft:ItemBaubleBlanks:3>);
 game.setLocalization("en_US", "tc.research_name.GT_APPRENTICE_AER", "Apprentice Ring of Aer");
 game.setLocalization("en_US", "tc.research_text.GT_APPRENTICE_AER", "Imbuing an inert ring with the essence of air");
 Research.addPage("GT_APPRENTICE_AER", "kirara.research_page.GT_APPRENTICE_AER.1");
@@ -1481,7 +1481,7 @@ Research.setSecondary("GT_APPRENTICE_AER", true);
 Research.setConcealed("GT_APPRENTICE_AER", true);
 
 // Apprentice Ring of Terra
-Research.addResearch("GT_APPRENTICE_TERRA", "ARTIFICE", "praecantatio 3, instrumentum 1, terra 1", 3, 2, 2, <Thaumcraft:ItemBaubleBlanks:4>);
+Research.addResearch("GT_APPRENTICE_TERRA", "ARTIFICE", "praecantatio 3, instrumentum 1, terra 1", 3, 2, 1, <Thaumcraft:ItemBaubleBlanks:4>);
 game.setLocalization("en_US", "tc.research_name.GT_APPRENTICE_TERRA", "Apprentice Ring of Terra");
 game.setLocalization("en_US", "tc.research_text.GT_APPRENTICE_TERRA", "Imbuing an inert ring with the essence of earth");
 Research.addPage("GT_APPRENTICE_TERRA", "kirara.research_page.GT_APPRENTICE_TERRA.1");
@@ -1494,7 +1494,7 @@ Research.setSecondary("GT_APPRENTICE_TERRA", true);
 Research.setConcealed("GT_APPRENTICE_TERRA", true);
 
 // Apprentice Ring of Ignis
-Research.addResearch("GT_APPRENTICE_IGNIS", "ARTIFICE", "praecantatio 3, instrumentum 1, ignis 1", 4, 3, 2, <Thaumcraft:ItemBaubleBlanks:5>);
+Research.addResearch("GT_APPRENTICE_IGNIS", "ARTIFICE", "praecantatio 3, instrumentum 1, ignis 1", 4, 3, 1, <Thaumcraft:ItemBaubleBlanks:5>);
 game.setLocalization("en_US", "tc.research_name.GT_APPRENTICE_IGNIS", "Apprentice Ring of Ignis");
 game.setLocalization("en_US", "tc.research_text.GT_APPRENTICE_IGNIS", "Imbuing an inert ring with the essence of fire");
 Research.addPage("GT_APPRENTICE_IGNIS", "kirara.research_page.GT_APPRENTICE_IGNIS.1");
@@ -1507,7 +1507,7 @@ Research.setSecondary("GT_APPRENTICE_IGNIS", true);
 Research.setConcealed("GT_APPRENTICE_IGNIS", true);
 
 // Apprentice Ring of Aqua
-Research.addResearch("GT_APPRENTICE_AQUA", "ARTIFICE", "praecantatio 3, instrumentum 1, aqua 1", 2, 5, 2, <Thaumcraft:ItemBaubleBlanks:6>);
+Research.addResearch("GT_APPRENTICE_AQUA", "ARTIFICE", "praecantatio 3, instrumentum 1, aqua 1", 2, 5, 1, <Thaumcraft:ItemBaubleBlanks:6>);
 game.setLocalization("en_US", "tc.research_name.GT_APPRENTICE_AQUA", "Apprentice Ring of Aqua");
 game.setLocalization("en_US", "tc.research_text.GT_APPRENTICE_AQUA", "Imbuing an inert ring with the essence of water");
 Research.addPage("GT_APPRENTICE_AQUA", "kirara.research_page.GT_APPRENTICE_AQUA.1");
@@ -1520,7 +1520,7 @@ Research.setSecondary("GT_APPRENTICE_AQUA", true);
 Research.setConcealed("GT_APPRENTICE_AQUA", true);
 
 // Apprentice Ring of Ordo
-Research.addResearch("GT_APPRENTICE_ORDO", "ARTIFICE", "praecantatio 3, instrumentum 1, ordo 1", 3, 6, 2, <Thaumcraft:ItemBaubleBlanks:7>);
+Research.addResearch("GT_APPRENTICE_ORDO", "ARTIFICE", "praecantatio 3, instrumentum 1, ordo 1", 3, 6, 1, <Thaumcraft:ItemBaubleBlanks:7>);
 game.setLocalization("en_US", "tc.research_name.GT_APPRENTICE_ORDO", "Apprentice Ring of Ordo");
 game.setLocalization("en_US", "tc.research_text.GT_APPRENTICE_ORDO", "Imbuing an inert ring with the essence of order");
 Research.addPage("GT_APPRENTICE_ORDO", "kirara.research_page.GT_APPRENTICE_ORDO.1");
@@ -1533,7 +1533,7 @@ Research.setSecondary("GT_APPRENTICE_ORDO", true);
 Research.setConcealed("GT_APPRENTICE_ORDO", true);
 
 // Apprentice Ring of Perditio
-Research.addResearch("GT_APPRENTICE_PERDITIO", "ARTIFICE", "praecantatio 3, instrumentum 1, perditio 1", 4, 5, 2, <Thaumcraft:ItemBaubleBlanks:8>);
+Research.addResearch("GT_APPRENTICE_PERDITIO", "ARTIFICE", "praecantatio 3, instrumentum 1, perditio 1", 4, 5, 1, <Thaumcraft:ItemBaubleBlanks:8>);
 game.setLocalization("en_US", "tc.research_name.GT_APPRENTICE_PERDITIO", "Apprentice Ring of Perditio");
 game.setLocalization("en_US", "tc.research_text.GT_APPRENTICE_PERDITIO", "Imbuing an inert ring with the essence of entropy");
 Research.addPage("GT_APPRENTICE_PERDITIO", "kirara.research_page.GT_APPRENTICE_PERDITIO.1");
@@ -1588,7 +1588,7 @@ Research.addCruciblePage("GT_FARMLAND", <minecraft:farmland:7>);
 Research.setConcealed("GT_FARMLAND", true);
 
 // Pyrotheum
-Research.addResearch("GT_PYROTHEUM", "ALCHEMY", "ignis 2, potentia 2, ordo 2", 3, -3, 4, dustPyrotheum);
+Research.addResearch("GT_PYROTHEUM", "ALCHEMY", "ignis 2, potentia 2, ordo 2", 3, -3, 2, dustPyrotheum);
 game.setLocalization("en_US", "tc.research_name.GT_PYROTHEUM", "Pyrotheum");
 game.setLocalization("en_US", "tc.research_text.GT_PYROTHEUM", "[GT] Eternal heat - of sorts");
 Research.addPage("GT_PYROTHEUM", "kirara.research_page.GT_PYROTHEUM.1");
@@ -1615,7 +1615,7 @@ Research.addCruciblePage("GT_FILL_MILK_BUCKET", <minecraft:milk_bucket>);
 Research.setConcealed("GT_FILL_MILK_BUCKET", true);
 
 // Lava
-Research.addResearch("GT_FILL_LAVA_BUCKET", "ALCHEMY", "ignis 8, tenebrae 4, terra 6, permutatio 4", 6, 3, 4, <minecraft:lava_bucket>);
+Research.addResearch("GT_FILL_LAVA_BUCKET", "ALCHEMY", "ignis 8, tenebrae 4, terra 6, permutatio 4", 6, 3, 2, <minecraft:lava_bucket>);
 game.setLocalization("en_US", "tc.research_name.GT_FILL_LAVA_BUCKET", "Lava Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_FILL_LAVA_BUCKET", "[GT] Filling buckets with lava");
 Research.addPage("GT_FILL_LAVA_BUCKET", "kirara.research_page.GT_FILL_LAVA_BUCKET.1");
@@ -1627,7 +1627,7 @@ Research.addCruciblePage("GT_FILL_LAVA_BUCKET", <minecraft:lava_bucket>);
 Research.setConcealed("GT_FILL_LAVA_BUCKET", true);
 
 // Rare Earth
-Research.addResearch("GT_RAREEARTH", "ALCHEMY", "ignis 8, perditio 4, terra 4, permutatio 4, lucrum 4, vitreus 2", 8, 2, 4, <gregtech:gt.metaitem.01:2891>);
+Research.addResearch("GT_RAREEARTH", "ALCHEMY", "ignis 8, perditio 4, terra 4, permutatio 4, lucrum 4, vitreus 2", 8, 2, 3, <gregtech:gt.metaitem.01:2891>);
 game.setLocalization("en_US", "tc.research_name.GT_RAREEARTH", "Rare Earth Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_RAREEARTH", "[GT] Getting your money's worth");
 Research.addPage("GT_RAREEARTH", "kirara.research_page.GT_RAREEARTH.1");
@@ -1641,7 +1641,7 @@ Research.addCruciblePage("GT_RAREEARTH", <gregtech:gt.metaitem.01:1891>);
 Research.setConcealed("GT_RAREEARTH", true);
 
 // Firestone
-Research.addResearch("GT_FIRESTONE", "ALCHEMY", "ignis 8, perditio 4, potentia 6, permutatio 4", 8, 4, 6, <Railcraft:firestone.raw>);
+Research.addResearch("GT_FIRESTONE", "ALCHEMY", "ignis 8, perditio 4, potentia 6, permutatio 4", 8, 4, 3, <Railcraft:firestone.raw>);
 game.setLocalization("en_US", "tc.research_name.GT_FIRESTONE", "Firestone");
 game.setLocalization("en_US", "tc.research_text.GT_FIRESTONE", "[GT] Harnessing the power of concentrated flame");
 Research.addPage("GT_FIRESTONE", "kirara.research_page.GT_FIRESTONE.1");
@@ -1677,7 +1677,7 @@ Research.addArcanePage("CAP_silver", <Thaumcraft:WandCap:5>);
 Research.addCruciblePage("CAP_silver", <Thaumcraft:WandCap:4>);
 
 // Quarried Stone
-Research.addResearch("RC_QUARRIED_STONE", "ALCHEMY", "ordo 2, permutatio 1, terra 2", -7, -3, 2, <Railcraft:cube:7>);
+Research.addResearch("RC_QUARRIED_STONE", "ALCHEMY", "ordo 2, permutatio 1, terra 2", -7, -3, 1, <Railcraft:cube:7>);
 game.setLocalization("en_US", "tc.research_name.RC_QUARRIED_STONE", "Quarried Stone");
 game.setLocalization("en_US", "tc.research_text.RC_QUARRIED_STONE", "[RC] Stone to marble in one simple step");
 Research.addPage("RC_QUARRIED_STONE", "kirara.research_page.RC_QUARRIED_STONE.1");
@@ -1688,7 +1688,7 @@ Research.addCruciblePage("RC_QUARRIED_STONE", <Railcraft:cube:7>);
 Research.setConcealed("RC_QUARRIED_STONE", true);
 
 // Abyssal Stone
-Research.addResearch("RC_ABYSSAL_STONE", "ALCHEMY", "ordo 2, permutatio 1, terra 2", -9, -3, 2, <Railcraft:cube:6>);
+Research.addResearch("RC_ABYSSAL_STONE", "ALCHEMY", "ordo 2, permutatio 1, terra 2", -9, -3, 1, <Railcraft:cube:6>);
 game.setLocalization("en_US", "tc.research_name.RC_ABYSSAL_STONE", "Abyssal Stone");
 game.setLocalization("en_US", "tc.research_text.RC_ABYSSAL_STONE", "[RC] Stone to darker marble(?) in one simple step");
 Research.addPage("RC_ABYSSAL_STONE", "kirara.research_page.RC_ABYSSAL_STONE.1");
@@ -1700,7 +1700,7 @@ Research.setConcealed("RC_ABYSSAL_STONE", true);
 Warp.addToResearch("RC_ABYSSAL_STONE", 1);
 
 // Peat
-Research.addResearch("GT_MATURE_PEAT", "ALCHEMY", "ignis 3, aqua 1, permutatio 1, potentia 3", -7, -1, 3, <Forestry:peat>);
+Research.addResearch("GT_MATURE_PEAT", "ALCHEMY", "ignis 3, aqua 1, permutatio 1, potentia 3", -7, -1, 2, <Forestry:peat>);
 game.setLocalization("en_US", "tc.research_name.GT_MATURE_PEAT", "Alchemical Peat Formation");
 game.setLocalization("en_US", "tc.research_text.GT_MATURE_PEAT", "[GT] Technomagical peat manufacture");
 Research.addPage("GT_MATURE_PEAT", "kirara.research_page.GT_MATURE_PEAT.1");
@@ -1712,7 +1712,7 @@ Research.addCruciblePage("GT_MATURE_PEAT", <Forestry:peat>);
 Research.setConcealed("GT_MATURE_PEAT", true);
 
 // Bituminous peat
-Research.addResearch("GT_BITUMINOUS_PEAT", "ALCHEMY", "ignis 6, perditio 3, permutatio 3, terra 3, potentia 6", -9, -1, 6, <Forestry:bituminousPeat>);
+Research.addResearch("GT_BITUMINOUS_PEAT", "ALCHEMY", "ignis 6, perditio 3, permutatio 3, terra 3, potentia 6", -9, -1, 2, <Forestry:bituminousPeat>);
 game.setLocalization("en_US", "tc.research_name.GT_BITUMINOUS_PEAT", "Alchemical Peat Refining");
 game.setLocalization("en_US", "tc.research_text.GT_BITUMINOUS_PEAT", "[GT] Alchemically treated peat");
 Research.addPage("GT_BITUMINOUS_PEAT", "kirara.research_page.GT_BITUMINOUS_PEAT.1");
@@ -1724,7 +1724,7 @@ Research.setConcealed("GT_BITUMINOUS_PEAT", true);
 
 // Coal coke
 Research.moveResearch("ETHEREALBLOOM", "ALCHEMY", -2, -4); 
-Research.addResearch("GT_COAL_COKE", "ALCHEMY", "ignis 5, permutatio 5, terra 2, potentia 5", -3, -2, 5, <Railcraft:fuel.coke>);
+Research.addResearch("GT_COAL_COKE", "ALCHEMY", "ignis 5, permutatio 5, terra 2, potentia 5", -3, -2, 2, <Railcraft:fuel.coke>);
 game.setLocalization("en_US", "tc.research_name.GT_COAL_COKE", "Refining Coal");
 game.setLocalization("en_US", "tc.research_text.GT_COAL_COKE", "[GT] Alchemically refining coal");
 Research.addPage("GT_COAL_COKE", "kirara.research_page.GT_COAL_COKE.1");
@@ -1737,7 +1737,7 @@ Research.setConcealed("GT_COAL_COKE", true);
 print('Rudimentary Alchemy Complete');
 
 // Wrought Iron
-Research.addResearch("GT_TRANSIRONWROUGHT", "ALCHEMY", "metallum 3, permutatio 3, ordo 1", 4, 5, 3, <gregtech:gt.metaitem.01:9304>);
+Research.addResearch("GT_TRANSIRONWROUGHT", "ALCHEMY", "metallum 3, permutatio 3, ordo 1", 4, 5, 1, <gregtech:gt.metaitem.01:9304>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSIRONWROUGHT", "Wrought Iron Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSIRONWROUGHT", "[GT] Transforming iron to wrought iron");
 Research.addPage("GT_TRANSIRONWROUGHT", "kirara.research_page.GT_TRANSIRONWROUGHT.1");
@@ -1749,7 +1749,7 @@ Research.addCruciblePage("GT_TRANSIRONWROUGHT", <gregtech:gt.metaitem.01:9304>);
 Research.setConcealed("GT_TRANSIRONWROUGHT", true);
 
 // Thaumium
-Research.addResearch("GT_TRANSTHAUMIUM", "ALCHEMY", "metallum 3, permutatio 3, praecantatio 1", 6, 5, 3, <Thaumcraft:ItemResource:2>);
+Research.addResearch("GT_TRANSTHAUMIUM", "ALCHEMY", "metallum 3, permutatio 3, praecantatio 1", 6, 5, 2, <Thaumcraft:ItemResource:2>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSTHAUMIUM", "Thaumium Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSTHAUMIUM", "[GT] Transforming iron to thaumium");
 Research.addPage("GT_TRANSTHAUMIUM", "kirara.research_page.GT_TRANSTHAUMIUM.1");
@@ -1771,7 +1771,7 @@ Research.addPrereq("GT_IRON_TO_STEEL", "GT_TRANSIRONWROUGHT", false);
 Warp.addToResearch("GT_IRON_TO_STEEL", 3);
 
 // Steeleaf
-Research.addResearch("GT_TRANSSTEELEAF", "ALCHEMY", "metallum 3, permutatio 3, tutamen 1, lucrum 1", 8, 6, 4, <gregtech:gt.metaitem.01:9339>);
+Research.addResearch("GT_TRANSSTEELEAF", "ALCHEMY", "metallum 3, permutatio 3, tutamen 1, lucrum 1", 8, 6, 2, <gregtech:gt.metaitem.01:9339>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSSTEELEAF", "Steeleaf Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSSTEELEAF", "[GT] Mixing life with metal");
 Research.addPage("GT_TRANSSTEELEAF", "kirara.research_page.GT_TRANSSTEELEAF.1");
@@ -1783,7 +1783,7 @@ Research.addCruciblePage("GT_TRANSSTEELEAF", <gregtech:gt.metaitem.01:9339>);
 Research.setConcealed("GT_TRANSSTEELEAF", true);
 
 // Knightmetal
-Research.addResearch("GT_TRANSKNIGHTMETAL", "ALCHEMY", "metallum 3, permutatio 3, tutamen 1, lucrum 1", 10, 7, 4, <gregtech:gt.metaitem.01:9362>);
+Research.addResearch("GT_TRANSKNIGHTMETAL", "ALCHEMY", "metallum 3, permutatio 3, tutamen 1, lucrum 1", 10, 7, 2, <gregtech:gt.metaitem.01:9362>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSKNIGHTMETAL", "Knightmetal Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSKNIGHTMETAL", "[GT] Alchemically reinforced steel");
 Research.addPage("GT_TRANSKNIGHTMETAL", "kirara.research_page.GT_TRANSKNIGHTMETAL.1");
@@ -1794,7 +1794,7 @@ Research.addCruciblePage("GT_TRANSKNIGHTMETAL", <gregtech:gt.metaitem.01:9362>);
 Research.setConcealed("GT_TRANSKNIGHTMETAL", true);
 
 // Fiery Steel
-Research.addResearch("GT_TRANSFIERYSTEEL", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 10, 5, 7, <gregtech:gt.metaitem.01:9346>);
+Research.addResearch("GT_TRANSFIERYSTEEL", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 10, 5, 3, <gregtech:gt.metaitem.01:9346>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSFIERYSTEEL", "Fiery Steel Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSFIERYSTEEL", "[GT] Enriching steel with cleansing fire");
 Research.addPage("GT_TRANSFIERYSTEEL", "kirara.research_page.GT_TRANSFIERYSTEEL.1");
@@ -1808,7 +1808,7 @@ Crucible.addRecipe("GT_TRANSFIERYSTEEL", <gregtech:gt.metaitem.01:346>, <ore:nug
 Research.setConcealed("GT_TRANSFIERYSTEEL", true);
 
 // Fiery Blood
-Research.addResearch("GT_TRANSFIERYBLOOD", "ALCHEMY", "permutatio 3, victus 3, ignis 3, praecantatio 3", 10, 3, 8, <gregtech:gt.metaitem.01:30346>);
+Research.addResearch("GT_TRANSFIERYBLOOD", "ALCHEMY", "permutatio 3, victus 3, ignis 3, praecantatio 3", 10, 3, 3, <gregtech:gt.metaitem.01:30346>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSFIERYBLOOD", "Fiery Blood Infusion");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSFIERYBLOOD", "[GT] 100% iron free steel");
 Research.addPage("GT_TRANSFIERYBLOOD", "kirara.research_page.GT_TRANSFIERYBLOOD.1");
@@ -1822,7 +1822,7 @@ Warp.addToResearch("GT_TRANSFIERYBLOOD", 3);
 Warp.addToItem(<gregtech:gt.metaitem.01:30346>, 1);
 
 // Astral Silver
-Research.addResearch("GT_TRANSASTRALSILVER", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 12, 7, 4, <gregtech:gt.metaitem.01:9333>);
+Research.addResearch("GT_TRANSASTRALSILVER", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 12, 7, 2, <gregtech:gt.metaitem.01:9333>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSASTRALSILVER", "Astral Silver Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSASTRALSILVER", "[GT] Teleporters hate this");
 Research.addPage("GT_TRANSASTRALSILVER", "kirara.research_page.GT_TRANSASTRALSILVER.1");
@@ -1833,7 +1833,7 @@ Research.addCruciblePage("GT_TRANSASTRALSILVER", <gregtech:gt.metaitem.01:9333>)
 Research.setConcealed("GT_TRANSASTRALSILVER", true);
 
 // Enderium
-Research.addResearch("GT_TRANSENDERIUM", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 12, 5, 5, <gregtech:gt.metaitem.01:9321>);
+Research.addResearch("GT_TRANSENDERIUM", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 12, 5, 3, <gregtech:gt.metaitem.01:9321>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSENDERIUM", "Enderium Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSENDERIUM", "[GT] Harnessing the power of the End");
 Research.addPage("GT_TRANSENDERIUM", "kirara.research_page.GT_TRANSENDERIUM.1");
@@ -1845,7 +1845,7 @@ Research.setConcealed("GT_TRANSENDERIUM", true);
 
 
 // Adamantium
-Research.addResearch("GT_TRANSADAMANTIUM", "ALCHEMY", "metallum 3, permutatio 3, tutamen 3, praecantatio 1", 12, 3, 8, <gregtech:gt.metaitem.01:9319>);
+Research.addResearch("GT_TRANSADAMANTIUM", "ALCHEMY", "metallum 3, permutatio 3, tutamen 3, praecantatio 1, ordo 1, tempus 1, telum 1, instrumentum 1", 12, 3, 1, <gregtech:gt.metaitem.01:9319>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSADAMANTIUM", "Adamantium Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSADAMANTIUM", "[GT] Second only to the stars themselves");
 Research.addPage("GT_TRANSADAMANTIUM", "kirara.research_page.GT_TRANSADAMANTIUM.1");
@@ -1862,7 +1862,7 @@ BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12319>], [<gregtech:gt.metaitem
 VacuumFreezer.addRecipe(<gregtech:gt.metaitem.01:11319>, <gregtech:gt.metaitem.01:12319>, 800);
 
 // Damascus Steel
-Research.addResearch("GT_TRANSSTEELDAMASCUS", "ALCHEMY", "metallum 3, permutatio 3, vitreus 1, perditio 1", 13, 9, 6, <gregtech:gt.metaitem.01:9335>);
+Research.addResearch("GT_TRANSSTEELDAMASCUS", "ALCHEMY", "metallum 3, permutatio 3, vitreus 1, perditio 1", 13, 9, 2, <gregtech:gt.metaitem.01:9335>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSSTEELDAMASCUS", "Damascus Steel Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSSTEELDAMASCUS", "[GT] Refining steel even further");
 Research.addPage("GT_TRANSSTEELDAMASCUS", "kirara.research_page.GT_TRANSSTEELDAMASCUS.1");
@@ -1885,7 +1885,7 @@ Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSSTEELDAMASCUS", false);
 
 
 // Platinum
-Research.addResearch("GT_TRANSPLATINUM", "ALCHEMY", "metallum 5, nebrisum 3, permutatio 3, ordo 3, lucrum 3", 19, 15, 7, <gregtech:gt.metaitem.01:9085>);
+Research.addResearch("GT_TRANSPLATINUM", "ALCHEMY", "metallum 5, nebrisum 3, permutatio 3, ordo 3, lucrum 3", 19, 15, 2, <gregtech:gt.metaitem.01:9085>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSPLATINUM", "Platinum Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSPLATINUM", "[GT] Transformation of metals to Platinum");
 
@@ -1900,7 +1900,7 @@ Research.setConcealed("GT_TRANSPLATINUM", true);
 Warp.addToResearch("GT_TRANSPLATINUM", 1);
 
 // Iridium
-Research.addResearch("GT_TRANSIRIDIUM", "ALCHEMY", "metallum 5, machina 3, permutatio 3, tutamen 3, electrum 3", 21, 15, 7, <gregtech:gt.metaitem.01:9084>);
+Research.addResearch("GT_TRANSIRIDIUM", "ALCHEMY", "metallum 5, machina 3, permutatio 3, tutamen 3, electrum 3", 21, 15, 3, <gregtech:gt.metaitem.01:9084>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSIRIDIUM", "Iridium Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSIRIDIUM", "[GT] Transformation of metals to Iridium");
 
@@ -1916,7 +1916,7 @@ Research.setConcealed("GT_TRANSIRIDIUM", true);
 Warp.addToResearch("GT_TRANSIRIDIUM", 1);
 
 // Titanium
-Research.addResearch("GT_TRANSTITANIUM", "ALCHEMY", "metallum 5, tutamen 3, permutatio 3, ordo 3, instrumentum 3", 19, 16, 7, <gregtech:gt.metaitem.01:9028>);
+Research.addResearch("GT_TRANSTITANIUM", "ALCHEMY", "metallum 5, tutamen 3, permutatio 3, ordo 3, instrumentum 3", 19, 16, 3, <gregtech:gt.metaitem.01:9028>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSTITANIUM", "Titanium Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSTITANIUM", "[GT] Transformation of metals to Titanium");
 
@@ -1931,7 +1931,7 @@ Research.setConcealed("GT_TRANSTITANIUM", true);
 Warp.addToResearch("GT_TRANSTITANIUM", 1);
 
 // Tungsten
-Research.addResearch("GT_TRANSTUNGSTEN", "ALCHEMY", "metallum 5, tutamen 3, permutatio 3, sano 3, lux 3", 19, 17, 7, <gregtech:gt.metaitem.01:9081>);
+Research.addResearch("GT_TRANSTUNGSTEN", "ALCHEMY", "metallum 5, tutamen 3, permutatio 3, sano 3, lux 3", 19, 17, 3, <gregtech:gt.metaitem.01:9081>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSTUNGSTEN", "Tungsten Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSTUNGSTEN", "[GT] Transformation of metals to Tungsten");
 Research.addPage("GT_TRANSTUNGSTEN", "kirara.research_page.GT_TRANSTUNGSTEN.1");
@@ -1943,7 +1943,7 @@ Research.addPrereq("GT_TRANSTUNGSTEN", "GT_TRANSTITANIUM", false);
 Research.setConcealed("GT_TRANSTUNGSTEN", true);
 
 // Uranium
-Research.addResearch("GT_TRANSURANIUM", "ALCHEMY", "metallum 5, radio 3, permutatio 3, venenum 3, potentia 3", 21, 16, 7, <gregtech:gt.metaitem.01:9098>);
+Research.addResearch("GT_TRANSURANIUM", "ALCHEMY", "metallum 5, radio 3, permutatio 3, venenum 3, potentia 3", 21, 16, 3, <gregtech:gt.metaitem.01:9098>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSURANIUM", "Uranium Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSURANIUM", "[GT] Transformation of metals to Uranium");
 Research.addPage("GT_TRANSURANIUM", "kirara.research_page.GT_TRANSURANIUM.1");
@@ -1957,7 +1957,7 @@ Research.setConcealed("GT_TRANSURANIUM", true);
 Warp.addToResearch("GT_TRANSURANIUM", 5);
 
 // Chromium
-Research.addResearch("GT_TRANSCHROMIUM", "ALCHEMY", "metallum 5, machina 3, permutatio 3, nebrisum 3, lucrum 3", 19, 13, 7, <gregtech:gt.metaitem.01:9030>);
+Research.addResearch("GT_TRANSCHROMIUM", "ALCHEMY", "metallum 5, machina 3, permutatio 3, nebrisum 3, lucrum 3", 19, 13, 2, <gregtech:gt.metaitem.01:9030>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSCHROMIUM", "Chromium Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSCHROMIUM", "[GT] Transformation of metals to Chromium");
 Research.addPage("GT_TRANSCHROMIUM", "kirara.research_page.GT_TRANSCHROMIUM.1");
@@ -1971,7 +1971,7 @@ Research.addPrereq("GT_TRANSCHROMIUM", "GT_ADVANCEDMETALLURGY", false);
 Research.setConcealed("GT_TRANSCHROMIUM", true);
 
 // Manganese
-Research.addResearch("GT_TRANSMANGANESE", "ALCHEMY", "metallum 5, tenebrae 3, permutatio 3, nebrisum 3, volatus 3", 19, 12, 7, <gregtech:gt.metaitem.01:9031>);
+Research.addResearch("GT_TRANSMANGANESE", "ALCHEMY", "metallum 5, tenebrae 3, permutatio 3, nebrisum 3, volatus 3", 19, 12, 2, <gregtech:gt.metaitem.01:9031>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSMANGANESE", "Manganese Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSMANGANESE", "[GT] Transformation of metals to Manganese");
 Research.addPage("GT_TRANSMANGANESE", "kirara.research_page.GT_TRANSMANGANESE.1");
@@ -1984,7 +1984,7 @@ Research.addPrereq("GT_TRANSMANGANESE", "GT_ADVANCEDMETALLURGY", false);
 Research.setConcealed("GT_TRANSMANGANESE", true);
 
 // Stainless Steel
-Research.addResearch("GT_TRANSSTAINLESS", "ALCHEMY", "metallum 5, permutatio 3, machina 3, ordo 3, ignis 3", 21, 12, 7, <gregtech:gt.metaitem.01:9306>);
+Research.addResearch("GT_TRANSSTAINLESS", "ALCHEMY", "metallum 5, permutatio 3, machina 3, ordo 3, ignis 3", 21, 12, 3, <gregtech:gt.metaitem.01:9306>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSSTAINLESS", "Stainless Steel Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSSTAINLESS", "[GT] Transformation of metals to stainless steel");
 Research.addPage("GT_TRANSSTAINLESS", "kirara.research_page.GT_TRANSSTAINLESS.1");
