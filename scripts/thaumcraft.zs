@@ -640,6 +640,9 @@ Aspects.set(dustPyrotheum, "praecantatio 3, ignis 3, lux 1, auram 1");
 Aspects.set(<minecraft:iron_bars>, "metallum 1, fabrico 1");
 Aspects.set(<minecraft:bread>, "messis 4, fames 3");
 
+// Fix cinderpearls
+recipes.addShapeless(<minecraft:blaze_powder>, [<Thaumcraft:blockCustomPlant:3>]);
+
 // Thaumium
 Compressor.addRecipe(<Thaumcraft:blockCosmeticSolid:4>, <ore:ingotThaumium> * 9);
 recipes.addShaped(<Thaumcraft:ItemResource:2> * 16, [[<ore:crateGtIngotThaumium>, <ore:craftingToolCrowbar>, null],[null, null, null],[null, null, null]]);
