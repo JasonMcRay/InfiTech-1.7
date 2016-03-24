@@ -27,6 +27,7 @@ var coal	= <ore:gemCoal>;
 var dustCoal	= <ore:dustCoal>;
 var ironBars	= <minecraft:iron_bars>;
 var rodIron	= <ore:stickIron>;
+var Wrench	= <ore:craftingToolWrench>;
 
 # OreDictionary
 potionHealing.add(<minecraft:potion:8197>);
