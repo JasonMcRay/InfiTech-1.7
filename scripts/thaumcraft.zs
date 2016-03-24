@@ -1778,7 +1778,7 @@ Research.addPage("GT_TRANSSTEELEAF", "kirara.research_page.GT_TRANSSTEELEAF.1");
 game.setLocalization("en_US", "kirara.research_page.GT_TRANSSTEELEAF.1", "You have discovered a way of imbuing inorganic steel with praecantatio and herba essentia to create an organic alloy that has interesting magical properties.<BR>Unfortunately, this process irreversibly transmutes a significant fraction of the steel consumed in the process, rendering only one-half of the metal recoverable.");
 Research.addPrereq("GT_TRANSSTEELEAF", "GT_IRON_TO_STEEL", false);
 Research.addPrereq("GT_TRANSSTEELEAF", "GT_TRANSTHAUMIUM", false);
-Crucible.addRecipe("GT_TRANSSTEELEAF", <gregtech:gt.metaitem.01:9339>, <ore:nuggetSteel>, "praecantatio 1, herba 1, permutatio 1");
+Crucible.addRecipe("GT_TRANSSTEELEAF", <gregtech:gt.metaitem.01:9339>, <ore:nuggetSteel>, "praecantatio 1, herba 1");
 Research.addCruciblePage("GT_TRANSSTEELEAF", <gregtech:gt.metaitem.01:9339>);
 Research.setConcealed("GT_TRANSSTEELEAF", true);
 
@@ -1789,7 +1789,7 @@ game.setLocalization("en_US", "tc.research_text.GT_TRANSKNIGHTMETAL", "[GT] Alch
 Research.addPage("GT_TRANSKNIGHTMETAL", "kirara.research_page.GT_TRANSKNIGHTMETAL.1");
 game.setLocalization("en_US", "kirara.research_page.GT_TRANSKNIGHTMETAL.1", "You have discovered a way of making steel even harder by imbuing it with magic.<BR>This method creates a strange, green material that is much tougher than the base steel it originated from. Unfortunately, this process vaporizes a significant fraction of the steel consumed in the process, rendering only two-thirds of the metal recoverable.");
 Research.addPrereq("GT_TRANSKNIGHTMETAL", "GT_TRANSSTEELEAF", false);
-Crucible.addRecipe("GT_TRANSKNIGHTMETAL", <gregtech:gt.metaitem.01:9362>, <ore:nuggetSteel>, "praecantatio 1, tutamen 2, lucrum 1");
+Crucible.addRecipe("GT_TRANSKNIGHTMETAL", <gregtech:gt.metaitem.01:9362>, <ore:nuggetSteel>, "praecantatio 1, tutamen 2");
 Research.addCruciblePage("GT_TRANSKNIGHTMETAL", <gregtech:gt.metaitem.01:9362>);
 Research.setConcealed("GT_TRANSKNIGHTMETAL", true);
 
@@ -1868,7 +1868,7 @@ game.setLocalization("en_US", "tc.research_text.GT_TRANSSTEELDAMASCUS", "[GT] Re
 Research.addPage("GT_TRANSSTEELDAMASCUS", "kirara.research_page.GT_TRANSSTEELDAMASCUS.1");
 game.setLocalization("en_US", "kirara.research_page.GT_TRANSSTEELDAMASCUS.1", "You have discovered a way of making steel even harder by breaking down and crystallizing its components on an atomic level.<BR>This method can be used to refine an amazingly durable variant of steel resembling that of the legendary Damascus Steel normally only found in ancient ruins. Unfortunately, this process leaves the material in dust form, requiring further processing via non-Thaumaturgical means.");
 Research.addPrereq("GT_TRANSSTEELDAMASCUS", "GT_IRON_TO_STEEL", false);
-Crucible.addRecipe("GT_TRANSSTEELDAMASCUS", <gregtech:gt.metaitem.01:9335>, <ore:nuggetSteel>, "vitreus 1, ordo 1, machina 1");
+Crucible.addRecipe("GT_TRANSSTEELDAMASCUS", <gregtech:gt.metaitem.01:9335>, <ore:nuggetSteel>, "ordo 1, machina 1");
 Research.addCruciblePage("GT_TRANSSTEELDAMASCUS", <gregtech:gt.metaitem.01:9335>);
 Research.setConcealed("GT_TRANSSTEELDAMASCUS", true);
 
