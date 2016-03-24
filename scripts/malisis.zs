@@ -25,11 +25,32 @@ var shojiDoor = <malisisdoors:item.shoji_door>;
 var stickDiamond = <ore:stickDiamond>;
 var stickGold = <ore:stickGold>;
 var stickIron = <ore:stickIron>;
+var stickWood = <ore:stickWood>;
 var vanishingFrameDiamond = <malisisdoors:vanishing_block:3>;
 var vanishingFrameGold = <malisisdoors:vanishing_block:2>;
 var vanishingFrameIron = <malisisdoors:vanishing_block:1>;
 var wrench = <ore:craftingToolWrench>;
-
+var framingSaw = <BiblioCraft:item.FramingSaw>;
+var gateAcacia = <malisisdoors:acaciaFenceGate>;
+var gateBirch = <malisisdoors:birchFenceGate>;
+var gateJungle = <malisisdoors:jungleFenceGate>;
+var gateDarkOak = <malisisdoors:darkOakFenceGate>;
+var gateSpruce = <malisisdoors:spruceFenceGate>;
+var trapdoorAcacia = <malisisdoors:trapdoor_acacia>;
+var trapdoorBirch = <malisisdoors:trapdoor_birch>;
+var trapdoorJungle = <malisisdoors:trapdoor_jungle>;
+var trapdoorDarkOak = <malisisdoors:trapdoor_dark_oak>;
+var trapdoorSpruce = <malisisdoors:trapdoor_spruce>;
+var doorAcacia = <malisisdoors:item.door_acacia>;
+var doorBirch = <malisisdoors:item.door_birch>;
+var doorJungle = <malisisdoors:item.door_jungle>;
+var doorDarkOak = <malisisdoors:item.door_dark_oak>;
+var doorSpruce = <malisisdoors:item.door_spruce>;
+var plankSpruce = <minecraft:planks:1>;
+var plankBirch = <minecraft:planks:2>;
+var plankJungle = <minecraft:planks:3>;
+var plankAcacia = <minecraft:planks:4>;
+var plankDarkOak = <minecraft:planks:5>;
 
 # Block/Item Removal
 recipes.remove(ffController);
@@ -91,3 +112,80 @@ recipes.addShaped(rustyHandle, [
 	[null, stickIron, null],
 	[ringIron, HHammer, ringIron],
 	[null, stickIron, null]]);
+
+# Gate/Door/Trapdoor fix
+recipes.remove(gateAcacia);
+recipes.addShaped(gateAcacia, [
+	[stickWood, plankAcacia, stickWood],
+	[stickWood, plankAcacia, stickWood],
+	[null, framingSaw.reuse(), null]]);
+recipes.remove(trapdoorAcacia);
+recipes.addShaped(trapdoorAcacia, [
+	[plankAcacia, plankAcacia, plankAcacia],
+	[plankAcacia, plankAcacia, plankAcacia],
+	[null, framingSaw.reuse(), null]]);
+recipes.remove(doorAcacia);
+recipes.addShaped(doorAcacia, [
+	[plankAcacia, plankAcacia, null],
+	[plankAcacia, plankAcacia, framingSaw.reuse()],
+	[plankAcacia, plankAcacia, null]]);
+recipes.remove(gateBirch);
+recipes.addShaped(gateBirch, [
+	[stickWood, plankBirch, stickWood],
+	[stickWood, plankBirch, stickWood],
+	[null, framingSaw.reuse(), null]]);
+recipes.remove(trapdoorBirch);
+recipes.addShaped(trapdoorBirch, [
+	[plankBirch, plankBirch, plankBirch],
+	[plankBirch, plankBirch, plankBirch],
+	[null, framingSaw.reuse(), null]]);
+recipes.remove(doorBirch);
+recipes.addShaped(doorBirch, [
+	[plankBirch, plankBirch, null],
+	[plankBirch, plankBirch, framingSaw.reuse()],
+	[plankBirch, plankBirch, null]]);
+recipes.remove(gateJungle);
+recipes.addShaped(gateJungle, [
+	[stickWood, plankJungle, stickWood],
+	[stickWood, plankJungle, stickWood],
+	[null, framingSaw.reuse(), null]]);
+recipes.remove(trapdoorJungle);
+recipes.addShaped(trapdoorJungle, [
+	[plankJungle, plankJungle, plankJungle],
+	[plankJungle, plankJungle, plankJungle],
+	[null, framingSaw.reuse(), null]]);
+recipes.remove(doorJungle);
+recipes.addShaped(doorJungle, [
+	[plankJungle, plankJungle, null],
+	[plankJungle, plankJungle, framingSaw.reuse()],
+	[plankJungle, plankJungle, null]]);
+recipes.remove(gateDarkOak);
+recipes.addShaped(gateDarkOak, [
+	[stickWood, plankDarkOak, stickWood],
+	[stickWood, plankDarkOak, stickWood],
+	[null, framingSaw.reuse(), null]]);
+recipes.remove(trapdoorDarkOak);
+recipes.addShaped(trapdoorDarkOak, [
+	[plankDarkOak, plankDarkOak, plankDarkOak],
+	[plankDarkOak, plankDarkOak, plankDarkOak],
+	[null, framingSaw.reuse(), null]]);
+recipes.remove(doorDarkOak);
+recipes.addShaped(doorDarkOak, [
+	[plankDarkOak, plankDarkOak, null],
+	[plankDarkOak, plankDarkOak, framingSaw.reuse()],
+	[plankDarkOak, plankDarkOak, null]]);
+recipes.remove(gateSpruce);
+recipes.addShaped(gateSpruce, [
+	[stickWood, plankSpruce, stickWood],
+	[stickWood, plankSpruce, stickWood],
+	[null, framingSaw.reuse(), null]]);
+recipes.remove(trapdoorSpruce);
+recipes.addShaped(trapdoorSpruce, [
+	[plankSpruce, plankSpruce, plankSpruce],
+	[plankSpruce, plankSpruce, plankSpruce],
+	[null, framingSaw.reuse(), null]]);
+recipes.remove(doorSpruce);
+recipes.addShaped(doorSpruce, [
+	[plankSpruce, plankSpruce, null],
+	[plankSpruce, plankSpruce, framingSaw.reuse()],
+	[plankSpruce, plankSpruce, null]]);
