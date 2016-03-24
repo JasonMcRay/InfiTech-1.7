@@ -90,6 +90,11 @@ var primingTrackResult = <Railcraft:track:8103>.withTag({track: "railcraft:track
 var primingTrackMatch = <Railcraft:track:8103>.onlyWithTag({track: "railcraft:track.priming"});
 var launcherTrackResult = <Railcraft:track>.withTag({track: "railcraft:track.launcher"});
 var launcherTrackMatch = <Railcraft:track>.onlyWithTag({track: "railcraft:track.launcher"});
+var leadCable = <gregtech:gt.blockmachines:1226>;
+var plateIron = <ore:plateIron>;
+var shuntingWire = <Railcraft:machine.delta>;
+var wireSupportFrame = <Railcraft:frame>;
+var rebar = <Railcraft:part.rebar>;
 
 # Block/item Removal
 
@@ -111,6 +116,7 @@ recipes.remove(railElectric);
 // Remove all Rock Crusher recipes
 mods.railcraft.RockCrusher.removeRecipe(<*>);
 
+Assembler.addRecipe(shuntingWire, leadCable, <gregtech:gt.metaitem.01:11035>, null, 25, 15);
 Assembler.addRecipe(metalPost * 16, ingotIron * 7, <gregtech:gt.integrated_circuit:7> * 0, null, 200, 15);
 Assembler.addRecipe(metalPost * 32, ingotSteel * 7, <gregtech:gt.integrated_circuit:7> * 0, null, 400, 15);
 Assembler.addRecipe(metalPost * 12, ingotBronze * 7, <gregtech:gt.integrated_circuit:7> * 0, null, 150, 15);
@@ -193,6 +199,10 @@ recipes.addShaped(fluxTransformer * 2, [
     [plateCopper, ingotGold, plateCopper],
     [ingotGold, blockRedstone, ingotGold],
     [plateCopper, ingotGold, plateCopper]]);
+recipes.addShaped(wireSupportFrame * 6, [
+	[plateIron, plateIron, plateIron],
+	[rebar, null, rebar],
+	[rebar, rebar, rebar]]);
 // --- Backs ---
 recipes.remove(backpackTrack);
 recipes.addShapeless(backpackTrack, [backpackTrack]);
