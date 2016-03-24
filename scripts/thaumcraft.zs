@@ -1245,7 +1245,7 @@ Research.addPrereq("BONEBOW", "AM_GEMVINTEUM", true);
 
 // Node Transducer
 Arcane.removeRecipe(<Thaumcraft:blockStoneDevice:11>);
-Arcane.addShaped("VISPOWER", <Thaumcraft:blockStoneDevice:11>, "ignis 32, aer 32, perditio 32", [[<ore:blockRedstone>, <gregtech:gt.metaitem.01:32682>, <ore:blockRedstone>], [<gregtech:gt.metaitem.01:32718>, <Thaumcraft:blockStoneDevice:9>, <gregtech:gt.metaitem.01:32718>], [<ore:blockRedstone>, <gregtech:gt.metaitem.01:32692>, <ore:blockRedstone>]]);
+Arcane.addShaped("VISPOWER", <Thaumcraft:blockStoneDevice:11>, "ignis 32, aer 32, perditio 32", [[<ore:blockRedstone>, <gregtech:gt.metaitem.01:32682>, <ore:blockRedstone>], [<ore:dustNaquadah>, <Thaumcraft:blockStoneDevice:9>, <ore:dustNaquadah>], [<ore:blockRedstone>, <gregtech:gt.metaitem.01:32692>, <ore:blockRedstone>]]);
 Research.refreshResearchRecipe("VISPOWER");
 
 // Bone Bow
@@ -1425,7 +1425,7 @@ Research.moveResearch("RUNICHEALING", "ARTIFICE", 10, 3);
 Research.moveResearch("RUNICKINETIC", "ARTIFICE", 8, 5);
 
 // Pure Love
-Research.addResearch("PURELOVE", "ARTIFICE", "victus 3, precantatio 3, bestia 3, tempus 3", -3, 3, 7, <ExtraUtilities:pureLove>);
+Research.addResearch("PURELOVE", "ARTIFICE", "victus 3, praecantatio 3, bestia 3, tempus 3", -3, 3, 7, <ExtraUtilities:pureLove>);
 game.setLocalization("en_US", "tc.research_name.PURELOVE", "Pure Love");
 game.setLocalization("en_US", "tc.research_text.PURELOVE", "[GT] Romance in a box");
 Research.addPage("PURELOVE", "kirara.research_page.PURELOVE.1");
