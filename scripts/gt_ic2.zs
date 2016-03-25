@@ -1,4 +1,5 @@
 // --- Created by Jason McRay --- 
+// --- InfiTech2 script for IndustrialCraft 2 and GregTech 5u ---
 
 import mods.gregtech.Canner;
 import mods.gregtech.ArcFurnace;
@@ -8,6 +9,7 @@ import mods.gregtech.Printer;
 import mods.gregtech.CuttingSaw;
 import mods.nei.NEI;
 import minetweaker.game.IGame;
+import mods.ic2.Compressor;
 
 # Aliases
 var CESU                    = <IC2:blockElectric:7>;
@@ -126,6 +128,8 @@ var shaftSteel              = <IC2:itemRecipePart:12>;
 var stickIron               = <ore:stickIron>;
 var teleporter              = <IC2:blockMachine2>;
 var uraniumEnriched         = <IC2:itemUran>;
+var plantball               = <IC2:itemFuelPlantBall>;
+var sapling                 = <ore:treeSapling>;
 
 # seeds
 
@@ -578,3 +582,5 @@ ArcFurnace.addRecipe([charcoal], logWood13, oxygen * 25, [10000], 160, 32);
 ArcFurnace.addRecipe([charcoal], logWood14, oxygen * 25, [10000], 160, 32);
 ArcFurnace.addRecipe([charcoal], logWood15, oxygen * 25, [10000], 160, 32);
 ArcFurnace.addRecipe([charcoal], logWood16, oxygen * 25, [10000], 160, 32);
+
+Compressor.addRecipe(plantball, sapling * 4);
