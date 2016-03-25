@@ -103,9 +103,8 @@ var waxMagic = <MagicBees:wax>;
 var wheat = <minecraft:wheat>;
 var worktable = <Forestry:factory2:2>;
 var wrench = <ore:craftingToolWrench>;
-var letter	= <Forestry:letters>;
-var woodpulp	= <gregtech:gt.metaitem.01:2809>;
-var water	= <liquid:water>;
+var letter = <Forestry:letters>;
+var woodpulp = <ore:pulpWood>;
 
 # Item removal
 recipes.remove(engineClock);
@@ -212,7 +211,7 @@ Carpenter.addRecipe(bogEarth * 9, [[crateBogEarth, null, null],
 Carpenter.removeRecipe(letter);
 Carpenter.addRecipe(letter,[[woodpulp, woodpulp, woodpulp],
                             [woodpulp, woodpulp, woodpulp],
-                            [null, null, null]], water * 250, 5);
+                            [null, null, null]], liquidWater * 250, 5);
 recipes.remove(unlitCandle);
 Carpenter.removeRecipe(unlitCandle);
 Assembler.addRecipe(unlitCandle * 8, waxMagic * 2, silkWisp, liquidWater * 200, 16, 8);
