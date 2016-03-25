@@ -1,5 +1,6 @@
 // --- Created by Jason McRay ---
 // --- Few scripts created by DreamMasterXXL ---
+// --- InfiTech2 script for Forestry ---
 
 import mods.gregtech.Assembler;
 import mods.gregtech.Mixer;
@@ -102,6 +103,8 @@ var waxMagic = <MagicBees:wax>;
 var wheat = <minecraft:wheat>;
 var worktable = <Forestry:factory2:2>;
 var wrench = <ore:craftingToolWrench>;
+var letter = <Forestry:letters>;
+var woodpulp = <ore:pulpWood>;
 
 # Item removal
 recipes.remove(engineClock);
@@ -205,6 +208,10 @@ Carpenter.removeRecipe(bogEarth);
 Carpenter.addRecipe(bogEarth * 9, [[crateBogEarth, null, null],
                                    [null, null, null],
                                    [null, null, null]], 5);
+Carpenter.removeRecipe(letter);
+Carpenter.addRecipe(letter,[[woodpulp, woodpulp, woodpulp],
+                            [woodpulp, woodpulp, woodpulp],
+                            [null, null, null]], liquidWater * 250, 5);
 recipes.remove(unlitCandle);
 Carpenter.removeRecipe(unlitCandle);
 Assembler.addRecipe(unlitCandle * 8, waxMagic * 2, silkWisp, liquidWater * 200, 16, 8);
