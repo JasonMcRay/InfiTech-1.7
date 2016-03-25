@@ -129,7 +129,7 @@ var stickIron               = <ore:stickIron>;
 var teleporter              = <IC2:blockMachine2>;
 var uraniumEnriched         = <IC2:itemUran>;
 var plantball               = <IC2:itemFuelPlantBall>;
-var sapling                 = <minecraft:sapling:*>;
+var sapling                 = <ore:treeSapling>;
 
 # seeds
 
