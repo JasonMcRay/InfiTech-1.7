@@ -44,6 +44,8 @@ var craftingGrinder = <ore:craftingGrinder>;
 var crystalEnder = <EnderIO:itemMaterial:8>;
 var crystalPulsating = <EnderIO:itemMaterial:5>;
 var crystalVibrant = <EnderIO:itemMaterial:6>;
+var darkClearGlass = <EnderIO:blockFusedQuartz:5>;
+var darkFusedQuartz = <EnderIO:blockFusedQuartz:4>;
 var diamond = <minecraft:diamond>;
 var dimTransceiver = <EnderIO:blockTransceiver>;
 var dimTransceiverOld = <EnderIO:blockHyperCube>;
@@ -108,6 +110,7 @@ var machineChassis = <EnderIO:itemMachinePart>;
 var moldBall = <gregtech:gt.metaitem.01:32307>;
 var moltenBlaze = <liquid:molten.blaze>;
 var moltenConcrete = <liquid:molten.concrete>;
+var moltenDarkSteel = <liquid:molten.darksteel>;
 var moltenEnderiumBase = <liquid:molten.enderiumbase>;
 var moltenEnergeticAlloy = <liquid:molten.energeticalloy>;
 var moltenGlowstone = <liquid:molten.glowstone>;
@@ -232,6 +235,8 @@ ChemicalBath.addRecipe([fusedQuartzEnlighten], fusedQuartz, moltenGlowstone * 57
 ChemicalBath.addRecipe([clearGlassEnlighten], clearGlass, moltenGlowstone * 576, [10000], 100, 4);
 ChemicalBath.addRecipe([ingotConductiveIron], itemIngotIron, moltenRedstone * 144, [10000], 200, 8);
 ChemicalBath.addRecipe([clearGlass], glass, moltenChlorine * 50, [10000], 400, 2);
+ChemicalBath.addRecipe([darkClearGlass], clearGlass, moltenDarkSteel * 18, [10000], 400, 2);
+ChemicalBath.addRecipe([darkFusedQuartz], fusedQuartz, moltenDarkSteel * 18, [10000], 400, 2);
 
 # Oredictionary
 itemSilicon.remove(EISilicon);
