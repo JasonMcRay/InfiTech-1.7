@@ -70,7 +70,7 @@ var moltenUranium238        = <liquid:molten.uranium>;
 
 
 // Purified Ores
-var purifiedAlmandine	    = <gregtech:gt.metaitem.01:6319>;
+var purifiedAlmandine	    = <gregtech:gt.metaitem.01:6820>;
 var purifiedAluminium       = <gregtech:gt.metaitem.01:6019>;	
 var purifiedApatite	        = <gregtech:gt.metaitem.01:6530>;
 var purifiedBandedIron	    = <gregtech:gt.metaitem.01:6917>;
