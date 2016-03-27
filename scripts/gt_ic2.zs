@@ -130,6 +130,7 @@ var teleporter              = <IC2:blockMachine2>;
 var uraniumEnriched         = <IC2:itemUran>;
 var plantball               = <IC2:itemFuelPlantBall>;
 var sapling                 = <ore:treeSapling>;
+var sugarcane               = <minecraft:reeds>;
 
 # seeds
 
@@ -586,3 +587,4 @@ ArcFurnace.addRecipe([charcoal], logWood15, oxygen * 25, [10000], 160, 32);
 ArcFurnace.addRecipe([charcoal], logWood16, oxygen * 25, [10000], 160, 32);
 
 Compressor.addRecipe(plantball, sapling * 4);
+Compressor.addRecipe(plantball, sugarcane * 4);
