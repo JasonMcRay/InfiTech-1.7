@@ -799,9 +799,9 @@ Arcane.addShaped("INFUSION", <Thaumcraft:blockStoneDevice:2>, "ordo 40", [[<Thau
 Arcane.addShaped("INFUSION", <Thaumcraft:blockStoneDevice:1>, "aer 15, ordo 15, ignis 3, aqua 3, terra 3, perditio 3", [[<Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>], [null, <Thaumcraft:blockCosmeticSolid:6>, null], [<Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>]]);
 
 // Warded Arcana
-Arcane.addShaped("WARDEDARCANA", <Thaumcraft:blockCosmeticOpaque:2>, "ordo 10, aqua 5, terra 5, ignis 5", [[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<Thaumcraft:blockWoodenDevice:6>, <IC2:itemPartCircuitAdv>, <Thaumcraft:blockWoodenDevice:6>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>]]);
-Arcane.addShaped("WARDEDARCANA", <Thaumcraft:ItemArcaneDoor>, "aqua 20, ordo 10, terra 10, ignis 10", [[<ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>], [<Thaumcraft:blockWoodenDevice:6>, <IC2:itemPartCircuitAdv>, <Thaumcraft:blockWoodenDevice:6>], [<ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>]]);
-Arcane.addShaped("WARDEDARCANA", <Thaumcraft:blockWoodenDevice:2>, "aqua 20, ordo 10, terra 10, ignis 5", [[null, <IC2:itemPartCircuitAdv>, null], [<Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>]]);
+Arcane.addShaped("WARDEDARCANA", <Thaumcraft:blockCosmeticOpaque:2>, "ordo 10, aqua 5, terra 5, ignis 5", [[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<Thaumcraft:blockWoodenDevice:6>, <gregtech:gt.metaitem.01:32702>, <Thaumcraft:blockWoodenDevice:6>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>]]);
+Arcane.addShaped("WARDEDARCANA", <Thaumcraft:ItemArcaneDoor>, "aqua 20, ordo 10, terra 10, ignis 10", [[<ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>], [<Thaumcraft:blockWoodenDevice:6>, <gregtech:gt.metaitem.01:32702>, <Thaumcraft:blockWoodenDevice:6>], [<ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>]]);
+Arcane.addShaped("WARDEDARCANA", <Thaumcraft:blockWoodenDevice:2>, "aqua 20, ordo 10, terra 10, ignis 5", [[null, <gregtech:gt.metaitem.01:32702>, null], [<Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>]]);
 
 print('Artifice Majorly Gregged');
 
