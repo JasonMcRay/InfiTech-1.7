@@ -700,7 +700,7 @@ Lathe.addRecipe([<Thaumcraft:blockStoneDevice:1>, <gregtech:gt.metaitem.01:1299>
 
 // Arcane Lamp
 Arcane.addShaped("ARCANELAMP", <Thaumcraft:blockMetalDevice:7> * 2, "ignis 12, aer 12, aqua 6, perditio 6", [[dustPyrotheum, <minecraft:daylight_detector>, dustPyrotheum], 
-                                                                                                             [dustPyrotheum, <bluepower:part.cagelamp.yellow>, dustPyrotheum],
+                                                                                                             [dustPyrotheum, <ProjRed|Illumination:projectred.illumination.cagelamp2:4>, dustPyrotheum],
 																										     [dustPyrotheum, <Thaumcraft:ItemResource:1>, dustPyrotheum]]);
 
 // Arcane Bellows

@@ -63,6 +63,8 @@ var Wrench = <ore:craftingToolWrench>;
 var CompressedMeteoricIron = <ore:compressedMeteoricIron>;
 var CompressedDesh = <ore:compressedDesh>;
 var plateTin = <ore:plateTin>;
+var fixtureWhite = <ProjRed|Illumination:projectred.illumination.fixture>;
+var fixtureRed = <ProjRed|Illumination:projectred.illumination.fixture:14>;
 
 // --- remove Recipes ---
 //Sealable Cables
@@ -481,7 +483,7 @@ recipes.addShaped(<GalacticraftCore:tile.telemetry>, [
 //Arc Lamp
 recipes.addShaped(<GalacticraftCore:tile.arclamp>, [
 [DeshPlate,DeshPlate,DeshPlate],
-[DeshPlate, <GalacticraftCore:item.battery:*>, <bluepower:part.fixture.white>],
+[DeshPlate, <GalacticraftCore:item.battery:*>, fixtureWhite],
 [DeshPlate, DeshPlate, DeshPlate]]);
 
 //Oxygen Mask
@@ -682,7 +684,7 @@ recipes.addShaped(<GalacticraftCore:item.engine:1>, [
 
 //Nose Cone
 recipes.addShaped(<GalacticraftCore:item.noseCone>, [
-[null, <bluepower:part.fixture.red>, null],
+[null, fixtureRed, null],
 [null, HeavyPlating, null],
 [HeavyPlating, HeavyPlating, HeavyPlating]]);
 

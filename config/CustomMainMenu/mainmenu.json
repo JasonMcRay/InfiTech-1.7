@@ -1,12 +1,21 @@
 {
     "images":
     {
-        "title":
+        /*"title":
         {
             "image" : "infitech2:textures/gui/title/Infitech2Logo.png",
             "hoverImage" : "infitech2:textures/gui/title/Infitech2LogoHover.png",
             "posX" : -125,
             "posY" : 15,
+            "width" : 250,
+            "height" : 100,
+            "alignment" : "top_center"
+        },*/
+        "title2":
+        {
+            "image" : "infitech2:textures/gui/title/BPRemoval.png",
+            "posX" : -125,
+            "posY" : 5,
             "width" : 250,
             "height" : 100,
             "alignment" : "top_center"
@@ -219,14 +228,14 @@
     
     "other":
     {
-        "splash-text":
+        /*"splash-text":
         {
             "posX" : 90,
             "posY" : 90,
             "color" : -256,
             "alignment" : "top_center",
             "file" : "texts/splashes.txt"
-        },
+        },*/
                 
         "background":
         {
