@@ -9,12 +9,10 @@ var bluepowerItems = [<bluepower:part.wire.bluestone.bundled.white:*>, <bluepowe
 
 for block in bluepowerBlocks {
     recipes.remove(block);
-    furnace.remove(block);
     block.addTooltip(format.red(format.bold("This item is DISABLED and will be REMOVED in v3.2.4")));
     }
 
 for item in bluepowerItems {
     recipes.remove(item);
-    furnace.remove(item);
     item.addTooltip(format.red(format.bold("This item is DISABLED and will be REMOVED in v3.2.4")));
     }
