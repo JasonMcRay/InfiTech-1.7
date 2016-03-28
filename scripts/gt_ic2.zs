@@ -10,6 +10,7 @@ import mods.gregtech.CuttingSaw;
 import mods.nei.NEI;
 import minetweaker.game.IGame;
 import mods.ic2.Compressor;
+import minetweaker.item.IIngredient;
 
 # Aliases
 var advancedMiner           = <IC2:blockMachine2:11>;
@@ -553,41 +554,13 @@ furnace.setFuel(<gregtech:gt.metaitem.01:17809>, 100);
 
 # Charcoal
 var charcoal = <minecraft:coal:1>;
-var logWood = <minecraft:log:*>;
-var logWood2 = <minecraft:log2:*>;
-var logWood3 = <ExtrabiomesXL:log1:*>;
-var logWood4 = <ExtrabiomesXL:log2:*>;
-var logWood5 = <ExtrabiomesXL:mini_log_1>;
-var logWood6 = <ExtrabiomesXL:cornerlog_baldcypress>;
-var logWood7 = <ExtrabiomesXL:cornerlog_rainboweucalyptus>;
-var logWood8 = <ExtrabiomesXL:cornerlog_oak>;
-var logWood9 = <ExtrabiomesXL:cornerlog_fir>;
-var logWood10 = <ExtrabiomesXL:cornerlog_redwood>;
-var logWood11 = <ExtrabiomesXL:log_elbow_baldcypress>;
-var logWood12 = <ExtrabiomesXL:log_elbow_rainbow_eucalyptus>;
-var logWood13 = <Forestry:logs>;
-var logWood14 = <Forestry:logsFireproof>;
-var logWood15 = <Thaumcraft:blockMagicalLog:*>;
-var logWood16 = <IC2:blockRubWood>;
+var logWood = [<minecraft:log:*>, <minecraft:log2:*>, <ExtrabiomesXL:log1:*>, <ExtrabiomesXL:log2:*>, <ExtrabiomesXL:mini_log_1>, <ExtrabiomesXL:cornerlog_baldcypress>, <ExtrabiomesXL:cornerlog_rainboweucalyptus>, <ExtrabiomesXL:cornerlog_oak>, <ExtrabiomesXL:cornerlog_fir>, <ExtrabiomesXL:cornerlog_redwood>, <ExtrabiomesXL:log_elbow_baldcypress>, <ExtrabiomesXL:log_elbow_rainbow_eucalyptus>, <Forestry:logs>, <Forestry:logsFireproof>, <Thaumcraft:blockMagicalLog:*>, <IC2:blockRubWood>] as IIngredient[];
 var oxygen = <liquid:oxygen>;
 
 //ArcFurnace.addRecipe([output1, output2, output3, output4], input, liquid, [chance1, chance2, chance3, chance4], durationTicks, euPerTick);
-ArcFurnace.addRecipe([charcoal], logWood, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood2, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood3, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood4, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood5, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood6, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood7, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood8, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood9, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood10, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood11, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood12, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood13, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood14, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood15, oxygen * 25, [10000], 160, 32);
-ArcFurnace.addRecipe([charcoal], logWood16, oxygen * 25, [10000], 160, 32);
+for log in logWood {
+    ArcFurnace.addRecipe([charcoal], log, oxygen * 25, [10000], 160, 32);
+}
 
 Compressor.addRecipe(plantball, sapling * 4);
 Compressor.addRecipe(plantball, sugarcane * 8);
