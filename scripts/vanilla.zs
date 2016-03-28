@@ -1,33 +1,39 @@
 // --- Created by Jason McRay --- 
 
 # Aliases
+var HHammer = <ore:craftingToolHardHammer>;
+var Wrench	= <ore:craftingToolWrench>;
 var blazePowder = <minecraft:blaze_powder>;
 var blazeRod = <minecraft:blaze_rod>;
 var buttonWood = <minecraft:wooden_button>;
 var chestEnder = <minecraft:ender_chest>;
 var chestWood = <minecraft:chest>;
+var coal = <ore:gemCoal>;
+var diamondBoots = <minecraft:diamond_boots>;
+var diamondChestplate = <minecraft:diamond_chestplate>;
+var diamondHelm = <minecraft:diamond_helmet>;
+var diamondLeggings = <minecraft:diamond_leggings>;
+var dustCoal = <ore:dustCoal>;
+var dustLapis = <ore:dustLapis>;
 var enderEye = <minecraft:ender_eye>;
 var enderPearl = <minecraft:ender_pearl>;
 var gemNetherQuartz = <ore:gemNetherQuartz>;
 var glass = <ore:blockGlass>;
 var ingotEnderium = <ore:ingotEnderium>;
+var ironBars = <minecraft:iron_bars>;
+var lapis = <ore:gemLapis>;
 var logWood = <ore:logWood>;
+var plankOak = <minecraft:planks>;
 var plankWood = <ore:plankWood>;
+var plateDiamond = <ore:plateDiamond>;
 var plateObsidian = <ore:plateObsidian>;
 var potionHealing = <ore:potionHealing>;
+var rodIron	= <ore:stickIron>;
 var saw = <ore:craftingToolSaw>;
 var sensorDaylight = <minecraft:daylight_detector>;
+var slabOak = <minecraft:wooden_slab>;
 var slabWood = <ore:slabWood>;
 var teleporter = <IC2:blockMachine2>;
-var slabOak = <minecraft:wooden_slab>;
-var plankOak = <minecraft:planks>;
-var lapis	= <ore:gemLapis>;
-var dustLapis	= <ore:dustLapis>;
-var coal	= <ore:gemCoal>;
-var dustCoal	= <ore:dustCoal>;
-var ironBars	= <minecraft:iron_bars>;
-var rodIron	= <ore:stickIron>;
-var Wrench	= <ore:craftingToolWrench>;
 
 # OreDictionary
 potionHealing.add(<minecraft:potion:8197>);
@@ -72,6 +78,26 @@ recipes.addShaped(ironBars * 8, [
 	[null, Wrench, null],
 	[rodIron, rodIron, rodIron],
 	[rodIron, rodIron, rodIron]]);
+    
+# Diamond Armor change
+recipes.remove(diamondHelm);
+recipes.addShaped(diamondHelm, [
+    [plateDiamond, plateDiamond, plateDiamond],
+    [plateDiamond, HHammer, plateDiamond]]);
+recipes.remove(diamondChestplate);
+recipes.addShaped(diamondChestplate, [
+    [plateDiamond, HHammer, plateDiamond],
+    [plateDiamond, plateDiamond, plateDiamond],
+    [plateDiamond, plateDiamond, plateDiamond]]);
+recipes.remove(diamondLeggings);
+recipes.addShaped(diamondLeggings, [
+    [plateDiamond, plateDiamond, plateDiamond],
+    [plateDiamond, HHammer, plateDiamond],
+    [plateDiamond, null, plateDiamond]]);
+recipes.remove(diamondBoots);
+recipes.addShaped(diamondBoots, [
+    [plateDiamond, null, plateDiamond],
+    [plateDiamond, HHammer, plateDiamond]]);
 
 # Removal of Brewing Stand
 /*recipes.remove(<minecraft:brewing_stand>);
