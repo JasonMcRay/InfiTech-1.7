@@ -548,6 +548,9 @@ game.setLocalization("ic2.fluidBiomass", "Industrial Biomass");
 <ore:dustTinyAnyCopper>.remove(<gregtech:gt.metaitem.01:345>);          // Annealed Copper Dust (Tiny)
 <ore:nuggetAnyCopper>.remove(<gregtech:gt.metaitem.01:9345>);           // Annealed Copper Nugget
 
+# Burn Value fix
+furnace.setFuel(<gregtech:gt.metaitem.01:17809>, 100);
+
 # Charcoal
 var charcoal = <minecraft:coal:1>;
 var logWood = <minecraft:log:*>;
