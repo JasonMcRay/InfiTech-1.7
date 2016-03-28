@@ -802,9 +802,9 @@ Arcane.addShaped("INFUSION", <Thaumcraft:blockStoneDevice:2>, "ordo 40", [[<Thau
 Arcane.addShaped("INFUSION", <Thaumcraft:blockStoneDevice:1>, "aer 15, ordo 15, ignis 3, aqua 3, terra 3, perditio 3", [[<Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>], [null, <Thaumcraft:blockCosmeticSolid:6>, null], [<Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>]]);
 
 // Warded Arcana
-Arcane.addShaped("WARDEDARCANA", <Thaumcraft:blockCosmeticOpaque:2>, "ordo 10, aqua 5, terra 5, ignis 5", [[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<Thaumcraft:blockWoodenDevice:6>, <IC2:itemPartCircuitAdv>, <Thaumcraft:blockWoodenDevice:6>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>]]);
-Arcane.addShaped("WARDEDARCANA", <Thaumcraft:ItemArcaneDoor>, "aqua 20, ordo 10, terra 10, ignis 10", [[<ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>], [<Thaumcraft:blockWoodenDevice:6>, <IC2:itemPartCircuitAdv>, <Thaumcraft:blockWoodenDevice:6>], [<ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>]]);
-Arcane.addShaped("WARDEDARCANA", <Thaumcraft:blockWoodenDevice:2>, "aqua 20, ordo 10, terra 10, ignis 5", [[null, <IC2:itemPartCircuitAdv>, null], [<Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>]]);
+Arcane.addShaped("WARDEDARCANA", <Thaumcraft:blockCosmeticOpaque:2>, "ordo 10, aqua 5, terra 5, ignis 5", [[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<Thaumcraft:blockWoodenDevice:6>, <gregtech:gt.metaitem.01:32702>, <Thaumcraft:blockWoodenDevice:6>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>]]);
+Arcane.addShaped("WARDEDARCANA", <Thaumcraft:ItemArcaneDoor>, "aqua 20, ordo 10, terra 10, ignis 10", [[<ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>], [<Thaumcraft:blockWoodenDevice:6>, <gregtech:gt.metaitem.01:32702>, <Thaumcraft:blockWoodenDevice:6>], [<ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>]]);
+Arcane.addShaped("WARDEDARCANA", <Thaumcraft:blockWoodenDevice:2>, "aqua 20, ordo 10, terra 10, ignis 5", [[null, <gregtech:gt.metaitem.01:32702>, null], [<Thaumcraft:blockWoodenDevice:6>, <ore:plateThaumium>, <Thaumcraft:blockWoodenDevice:6>]]);
 
 print('Artifice Majorly Gregged');
 
@@ -921,7 +921,7 @@ Infusion.addRecipe("COREALCHEMY", <Thaumcraft:ItemGolemCore:5>, [<Thaumcraft:blo
 Infusion.addRecipe("CORELUMBER", <Thaumcraft:ItemGolemCore:3>, [<Thaumcraft:ItemAxeElemental>, <gregtech:gt.metaitem.02:3335>, <gregtech:gt.metaitem.01:32652>, <gregtech:gt.metaitem.02:3339>], "arbor 16, instrumentum 16, meto 32, electrum 8", <Thaumcraft:ItemGolemCore:7>, 5);
 Infusion.addRecipe("COREUSE", <Thaumcraft:ItemGolemCore:1>, [<ExtraUtilities:glove>, <OpenComputers:item:42>, <gregtech:gt.metaitem.01:32652>, <WitchingGadgets:item.WG_ThaumiumShears>], "machina 16, instrumentum 16, humanus 32, electrum 8", <Thaumcraft:ItemGolemCore:8>, 5);
 Infusion.addRecipe("CORESORTING", <Thaumcraft:ItemGolemCore:1>, [<Thaumcraft:ItemZombieBrain>, <minecraft:writable_book>, <gregtech:gt.metaitem.01:32651>, <gregtech:gt.metaitem.01:32729>], "cognitio 16, vacuos 16, permutatio 32, electrum 8", <Thaumcraft:ItemGolemCore:10>, 5);
-Infusion.addRecipe("COREFISHING", <Thaumcraft:ItemGolemCore:3>, [<minecraft:fishing_rod>, <harvestcraft:calamarirawItem>, <gregtech:gt.metaitem.01:30711>, <gregtech:gt.metaitem.01:32652>, <minecraft:fish:*>, <Thaumcraft:ItemNuggetFish>], "aqua 16, bestia 16, meto 32, electrum 8", <Thaumcraft:ItemGolemCore:11>, 5);
+Infusion.addRecipe("COREFISHING", <Thaumcraft:ItemGolemCore:3>, [<minecraft:fishing_rod>, <harvestcraft:calamarirawItem>, <gregtech:gt.metaitem.01:30711>, <gregtech:gt.metaitem.01:32602>, <minecraft:fish:*>, <Thaumcraft:ItemNuggetFish>], "aqua 16, bestia 16, meto 32, electrum 8", <Thaumcraft:ItemGolemCore:11>, 5);
 
 // Golem Upgrade Recipes
 Arcane.removeRecipe(<Thaumcraft:ItemGolemUpgrade:0>);
@@ -1222,10 +1222,10 @@ Research.addPrereq("GT_NAQUADAH", "ELDRITCHMAJOR", false);
 Research.addPrereq("GT_NAQUADAH", "VOIDMETAL", true);
 Research.addPrereq("GT_NAQUADAH", "GT_TRANSIRIDIUM", true);
 Research.addPrereq("GT_NAQUADAH", "GT_TRANSURANIUM", true);
-Crucible.addRecipe("GT_NAQUADAH", <gregtech:gt.metaitem.01:9324>, <Thaumcraft:ItemResource:17>, "auram 1, radio 1, alienis 1, potentia 1, tenebrae 1, electrum 1");
-Research.addCruciblePage("GT_NAQUADAH", <gregtech:gt.metaitem.01:9324>);
-Crucible.removeRecipe(<gregtech:gt.metaitem.01:9324>);
-Crucible.addRecipe("GT_NAQUADAH", <gregtech:gt.metaitem.01:324>, <Thaumcraft:ItemResource:17>, "auram 1, radio 1, alienis 1, potentia 1, tenebrae 1, electrum 1");
+Infusion.addRecipe("GT_NAQUADAH", <gregtech:gt.metaitem.01:1097>, [<Thaumcraft:ItemResource:17>, <Thaumcraft:ItemResource:17>], "auram 3, radio 3, alienis 3, nebrisum 3, tenebrae 3, electrum 3", <gregtech:gt.metaitem.01:1324>, 5);
+Infusion.addRecipe("GT_NAQUADAH", <gregtech:gt.metaitem.01:2097>, [<Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemEldritchObject:3>], "vacuos 6, potentia 6, tenebrae 6, lucrum 6, perditio 6, machina 6", <InfinityCore:itemSpecialWG>, 7);
+Research.addInfusionPage("GT_NAQUADAH", <gregtech:gt.metaitem.01:1324>);
+Research.addInfusionPage("GT_NAQUADAH", <gregtech:gt.metaitem.01:2324>);
 Research.setConcealed("GT_NAQUADAH", true);
 Warp.addToResearch("GT_NAQUADAH", 5);
 
@@ -2028,6 +2028,11 @@ Research.addArcanePage("VOIDMETAL", <Railcraft:tool.crowbar.void>);
 
 // Transmutations
 Crucible.addRecipe("GT_TRANSALUMINIUM", nuggetAluminium * 3, nuggetAluminium, "ignis 1, ordo 1, volatus 1, metallum 2");
+
+// Remove Infused Crops
+Research.orphanResearch("INFUSED_POTIONS");
+Research.removeResearch("INFUSED_POTIONS");
+
 
 // Refresh Recipes
 Research.refreshResearchRecipe("PLANTS");
