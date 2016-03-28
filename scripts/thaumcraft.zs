@@ -1219,10 +1219,10 @@ Research.addPrereq("GT_NAQUADAH", "ELDRITCHMAJOR", false);
 Research.addPrereq("GT_NAQUADAH", "VOIDMETAL", true);
 Research.addPrereq("GT_NAQUADAH", "GT_TRANSIRIDIUM", true);
 Research.addPrereq("GT_NAQUADAH", "GT_TRANSURANIUM", true);
-Crucible.addRecipe("GT_NAQUADAH", <gregtech:gt.metaitem.01:9324>, <Thaumcraft:ItemResource:17>, "auram 1, radio 1, alienis 1, potentia 1, tenebrae 1, electrum 1");
-Research.addCruciblePage("GT_NAQUADAH", <gregtech:gt.metaitem.01:9324>);
-Crucible.removeRecipe(<gregtech:gt.metaitem.01:9324>);
-Crucible.addRecipe("GT_NAQUADAH", <gregtech:gt.metaitem.01:324>, <Thaumcraft:ItemResource:17>, "auram 1, radio 1, alienis 1, potentia 1, tenebrae 1, electrum 1");
+Infusion.addRecipe("GT_NAQUADAH", <gregtech:gt.metaitem.01:1097>, [<Thaumcraft:ItemResource:17>, <Thaumcraft:ItemResource:17>], "auram 3, radio 3, alienis 3, nebrisum 3, tenebrae 3, electrum 3", <gregtech:gt.metaitem.01:1324>, 5);
+Infusion.addRecipe("GT_NAQUADAH", <gregtech:gt.metaitem.01:2097>, [<Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemEldritchObject:3>], "vacuos 6, potentia 6, tenebrae 6, lucrum 6, perditio 6, machina 6", <InfinityCore:itemSpecialWG>, 7);
+Research.addInfusionPage("GT_NAQUADAH", <gregtech:gt.metaitem.01:1324>);
+Research.addInfusionPage("GT_NAQUADAH", <gregtech:gt.metaitem.01:2324>);
 Research.setConcealed("GT_NAQUADAH", true);
 Warp.addToResearch("GT_NAQUADAH", 5);
 
