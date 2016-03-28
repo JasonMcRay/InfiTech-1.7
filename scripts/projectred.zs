@@ -16,6 +16,9 @@ var ICChip = <ProjRed|Fabrication:projectred.fabrication.icchip>;
 var LVBatteryBuffer1x = <gregtech:gt.blockmachines:161>;
 var LVHull = <gregtech:gt.blockmachines:11>;
 var PRBattery = <ProjRed|Expansion:projectred.expansion.battery>;
+var PRJetpack = <ProjRed|Expansion:projectred.expansion.jetpack>;
+var PRModules = <ProjRed|Transportation:projectred.transportation.routingchip:*>;
+var PRPipes = <ProjRed|Transportation:projectred.transportation.pipe:*>;
 var PRSilicon = <ProjRed|Core:projectred.core.part:12>;
 var PRSolar = <ProjRed|Expansion:projectred.expansion.solar_panel>;
 var autoCraftingBench = <ProjRed|Expansion:projectred.expansion.machine2:11>;
@@ -39,6 +42,7 @@ var brick = <minecraft:brick_block>;
 var brickBasalt = <ProjRed|Exploration:projectred.exploration.stone:4>;
 var brickMarble = <ProjRed|Exploration:projectred.exploration.stone:1>;
 var carbonPlate = <ore:plateAlloyCarbon>;
+var chargingBench = <ProjRed|Expansion:projectred.expansion.machine2:6>;
 var circuitBasic = <ore:circuitBasic>;
 var coalBlock = <minecraft:coal_block>;
 var cobble = <ore:cobblestone>;
@@ -55,6 +59,7 @@ var dustRedstone = <minecraft:redstone>;
 var electroSilicon = <ProjRed|Core:projectred.core.part:59>;
 var electroSiliconCompound = <ProjRed|Core:projectred.core.part:58>;
 var electrolineWall = <ProjRed|Exploration:projectred.exploration.stonewalls:11>;
+var electrotineGenerator = <ProjRed|Expansion:projectred.expansion.machine1:1>;
 var electrotineIronCompound = <ProjRed|Core:projectred.core.part:57>;
 var energizedSilicon = <ProjRed|Core:projectred.core.part:14>;
 var fireStarter = <ProjRed|Expansion:projectred.expansion.machine2:4>;
@@ -100,10 +105,12 @@ var piston = <minecraft:piston>;
 var plankWood = <ore:plankWood>;
 var plateIron = <ore:plateIron>;
 var plateSilicon = <ore:plateSilicon>;
+var projectBench = <ProjRed|Expansion:projectred.expansion.machine2:10>;
 var recipePlan = <ProjRed|Expansion:projectred.expansion.plan>;
 var redSiliconCompound = <ProjRed|Core:projectred.core.part:42>;
 var redironCompound = <ProjRed|Core:projectred.core.part:40>;
 var rodIron = <gregtech:gt.metaitem.01:23032>;
+var routerUtil = <ProjRed|Transportation:projectred.transportation.routerutil>;
 var rubyAxe = <ProjRed|Exploration:projectred.exploration.axeruby>;
 var rubyBoots = <ProjRed|Exploration:projectred.exploration.rubyboots>;
 var rubyChest = <ProjRed|Exploration:projectred.exploration.rubychestplate>;
@@ -141,16 +148,26 @@ var water = <liquid:water>;
 var wireFineCopperGT = <gregtech:gt.metaitem.02:19035>;
 var wireFineGoldGT = <gregtech:gt.metaitem.02:19086>;
 var wireFineIronGT = <gregtech:gt.metaitem.02:19032>;
+var powerLine = <ProjRed|Transmission:projectred.transmission.wire:34>;
+var powerLineFramed = <ProjRed|Transmission:projectred.transmission.framewire:34>;
 
 var PRWalls = [marbleWall, marbleBrickWall, basaltCobbleWall, basaltWall, basaltBrickWall, rubyWall, sapphireWall, peridotWall, copperWall, tinWall, silverWall, electrolineWall] as IItemStack[];
 var blocks = [blockMarble, brickMarble, cobbleBasalt, blockBasalt, brickBasalt, blockRuby, blockSapphire, blockPeridot, blockCopper, blockTin, blockSilver, blockElectrotine] as IIngredient[];
 var PRArmor = [peridotLeggings, peridotHelmet, peridotChest, peridotBoots, rubyLeggings, rubyHelmet, rubyChest, rubyBoots, sapphireLeggings, sapphireHelmet, sapphireChest, sapphireBoots] as IItemStack[];
 var PRTools = [peridotSword, peridotShovel, peridotSickle, peridotPickaxe, peridotAxe, peridotHoe, rubySword, rubyShovel, rubySickle, rubyPickaxe, rubyAxe, rubyHoe, sapphireSword, sapphireShovel, sapphireSickle, sapphirePickaxe, sapphireAxe, sapphireHoe, diamondSickle, stoneSickle] as IItemStack[];
-var disabled = [drawplate, blockBreaker, blockPlacer, frameMotor, teleposer, frameLinearActuator] as IItemStack[];
+
+var disabled = [batteryBox, inductiveFurnace, drawplate, blockBreaker, blockPlacer, frameMotor, teleposer, frameLinearActuator, autoCraftingBench, PRBattery, PRSolar, chargingBench, electrotineGenerator, PRJetpack] as IItemStack[];
+var disabledHidden = [PRPipes, routerUtil, PRModules, powerLine, powerLineFramed] as IItemStack[];
 
 // Removing Recipes
 furnace.remove(itemIngotRedalloy);
 recipes.remove(redironCompound);
+
+for item in disabledHidden {
+    recipes.remove(item);
+    NEI.hide(item);
+    item.addTooltip(format.red(format.bold("This item is DISABLED!")));
+    }
 
 for item in disabled {
     recipes.remove(item);
@@ -225,11 +242,11 @@ recipes.remove(ICChip);
 Assembler.addRecipe(ICChip, netherQuartz * 2, diamond, moltenGold * 96, 100, 8);
 Assembler.addRecipe(ICChip, netherQuartz * 2, diamondInd, moltenGold * 96, 100, 8);
 
-recipes.remove(inductiveFurnace);
-recipes.addShaped(inductiveFurnace, [
-    [brick, brick, brick],
-    [brick, LVHull, brick],
-    [ingotIron, ingotElectrotineAlloy, ingotIron]]);
+recipes.remove(projectBench);
+recipes.addShaped(projectBench, [
+    [stone, stone, stone],
+    [plankWood, FTWorktable, plankWood],
+    [plankWood, recipePlan, plankWood]]);
 recipes.remove(itemImporter);
 recipes.addShaped(itemImporter, [
     [slabWood, pipeObsidian, slabWood],
@@ -240,25 +257,5 @@ recipes.addShaped(fireStarter, [
     [netherrack, flintAndSteel, netherrack],
     [cobble, piston, cobble],
     [cobble, dustRedstone, cobble]]);
-recipes.remove(batteryBox);
-recipes.addShaped(batteryBox, [
-    [PRBattery, plankWood, PRBattery],
-    [PRBattery, LVBatteryBuffer1x, PRBattery],
-    [plateIron, ingotElectrotineAlloy, plateIron]]);
-recipes.remove(autoCraftingBench);
-recipes.addShaped(autoCraftingBench, [
-    [stone, FTWorktable, stone],
-    [smallIronGear, hopper, smallIronGear],
-    [plankWood, ingotElectrotineAlloy, plankWood]]);
-recipes.remove(PRBattery);
-Canner.addRecipe([PRBattery], dustElectrotine * 6, smallBatteryHull, 200, 2);
 recipes.remove(recipePlan);
 Assembler.addRecipe(recipePlan, paper, integratedCircuit1, moltenDyeBlue * 144, 40, 8);
-recipes.remove(PRSolar);
-recipes.addShaped(PRSolar, [
-    [electroSilicon, electroSilicon, electroSilicon],
-    [plateSilicon, paneGlassColorless, plateSilicon],
-    [circuitBasic, carbonPlate, circuitBasic]]);
-recipes.addShaped(PRSolar, [
-    [electroSilicon, electroSilicon, electroSilicon],
-    [null, GTSolar, null]]);
