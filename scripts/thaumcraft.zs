@@ -2026,6 +2026,11 @@ Research.addArcanePage("VOIDMETAL", <Railcraft:tool.crowbar.void>);
 // Transmutations
 Crucible.addRecipe("GT_TRANSALUMINIUM", nuggetAluminium * 3, nuggetAluminium, "ignis 1, ordo 1, volatus 1, metallum 2");
 
+// Remove Infused Crops
+Research.orphanResearch("INFUSED_POTIONS");
+Research.removeResearch("INFUSED_POTIONS");
+
+
 // Refresh Recipes
 Research.refreshResearchRecipe("PLANTS");
 Research.refreshResearchRecipe("INFUSION");
