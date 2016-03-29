@@ -46,6 +46,10 @@ dustSalt.remove(saltPHC);
 itemSalt.remove(saltGT);
 dustSalt.remove(saltGT);
 
+# Cooking Food
+furnace.addRecipe(cookedRabbit, rawRabbit);
+furnace.addRecipe(cookedVenison, rawVenison);
+
 # Centrifuging Food
 for meat in rawMeat {
     Centrifuge.addRecipe([null], null, meat, null, <liquid:methane> * 96, [0], 384, 5);
