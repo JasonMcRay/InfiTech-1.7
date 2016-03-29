@@ -82,6 +82,8 @@ var itemCasingGold          = <IC2:itemCasing:3>;
 var itemDustSalt            = <gregtech:gt.metaitem.01:2817>;
 var itemDustSmallSalt       = <gregtech:gt.metaitem.01:1817>;
 var itemDustTinySalt        = <gregtech:gt.metaitem.01:817>;
+var itemPlankWood           = <gregtech:gt.metaitem.01:17809>;
+var itemRingWood            = <gregtech:gt.metaitem.01:28809>;
 var itemSteelCasing         = <IC2:itemCasing:5>;
 var machineCasingAdvanced   = <IC2:blockMachine:12>;
 var machineHullHV           = <gregtech:gt.blockmachines:13>;
@@ -121,6 +123,7 @@ var rotorIron               = <IC2:itemironrotor>;
 var rotorSteel              = <IC2:itemsteelrotor>;
 var rotorWood               = <IC2:itemwoodrotor>;
 var sapling                 = <ore:treeSapling>;
+var Saw                     = <ore:craftingToolSaw>;
 var Screwdriver             = <ore:craftingToolScrewdriver>;
 var screwIridium            = <ore:screwIridium>;
 var screwIron               = <ore:screwIron>;
@@ -416,10 +419,10 @@ game.setLocalization("ic2.blockChargepadCESU", "Medium Voltage Charge Pad");
 <ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:101>);
 <ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:103>);
 <ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:105>);
-<ore:craftingToolSaw>.add(<gregtech:gt.metatool.01:111>);
-<ore:craftingToolSaw>.add(<gregtech:gt.metatool.01:113>);
-<ore:craftingToolSaw>.add(<gregtech:gt.metatool.01:115>);
-<ore:craftingToolSaw>.add(<gregtech:gt.metatool.01:141>);
+Saw.add(<gregtech:gt.metatool.01:111>);
+Saw.add(<gregtech:gt.metatool.01:113>);
+Saw.add(<gregtech:gt.metatool.01:115>);
+Saw.add(<gregtech:gt.metatool.01:141>);
 <ore:craftingToolWrench>.add(<gregtech:gt.metatool.01:121>);
 <ore:craftingToolWrench>.add(<gregtech:gt.metatool.01:123>);
 <ore:craftingToolWrench>.add(<gregtech:gt.metatool.01:125>);
@@ -442,6 +445,10 @@ CuttingSaw.addRecipe([<gregtech:gt.metaitem.01:29874> * 2], <ore:ingotPlastic>, 
 CuttingSaw.addRecipe([<gregtech:gt.metaitem.01:29874> * 2], <ore:platePlastic>, <liquid:lubricant> * 5, 60, 8);
 
 # Recipe Tweaks
+recipes.remove(itemRingWood);
+recipes.addShaped(itemRingWood, [
+    [Saw],
+    [itemPlankWood]]);
 recipes.remove(GTDough);
 recipes.addShapeless(GTDough, [anyWater, dustWheat]);
 recipes.remove(reBatteryAdv);
