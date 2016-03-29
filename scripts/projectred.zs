@@ -258,4 +258,4 @@ recipes.addShaped(fireStarter, [
     [cobble, piston, cobble],
     [cobble, dustRedstone, cobble]]);
 recipes.remove(recipePlan);
-Assembler.addRecipe(recipePlan, paper, integratedCircuit1, moltenDyeBlue * 144, 40, 8);
+Assembler.addRecipe(recipePlan, paper, integratedCircuit1 * 0, moltenDyeBlue * 144, 40, 8);
