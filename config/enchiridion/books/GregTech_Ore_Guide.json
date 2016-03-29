@@ -2697,7 +2697,7 @@
         {
           "type": "FeatureItem",
           "properties": {
-            "item": "gregtech:gt.blockores 100",
+            "item": "gregtech:gt.blockores 878",
             "xPos": 327,
             "yPos": 27,
             "width": 32.0,
@@ -2942,14 +2942,14 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Plutonium",
+            "text": "Oil Sands",
             "wrap": 0,
             "size": 1.0,
             "color": "FFFF0000",
             "xPos": 358,
-            "yPos": 39,
+            "yPos": 34,
             "width": 44.0,
-            "height": 7.0
+            "height": 16.0
           }
         },
         {
@@ -3172,7 +3172,7 @@
         {
           "type": "FeatureJump",
           "properties": {
-            "jumpTo": "OV4",
+            "jumpTo": "OV6",
             "texture": "",
             "xPos": 331,
             "yPos": 27,
@@ -4136,14 +4136,14 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Uranium",
+            "text": "Uranium 238",
             "wrap": 0,
             "size": 1.0,
             "color": "FFFF0000",
             "xPos": 168,
-            "yPos": 39,
-            "width": 38.0,
-            "height": 7.0
+            "yPos": 34,
+            "width": 41.0,
+            "height": 17.0
           }
         },
         {
@@ -5016,7 +5016,7 @@
             "color": "FF555555",
             "xPos": 219,
             "yPos": 26,
-            "width": 113.0,
+            "width": 120.0,
             "height": 158.0
           }
         },
@@ -5342,7 +5342,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "[b]Magnetite (2)[/b]\n[i]Height(Y):[/i] 50 - 120\n[i]Mining tool level: 2[/i]\n[i]Dimensions:[/i] OW, N, MN, MS\n[i]Primary:[/i] Magnetite (2)\n[i]Secondary:[/i] Magnetite (2)\n[i]Inbetween:[/i] Iron (2)\n[i]Around:[/i] Vanadium Magnetite (2)\n\n[b]Manganese[/b]\n[i]Height(Y):[/i] 20 - 30\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, E, EA, MN, AS\n[i]Primary:[/i] Grossular (1)\n[i]Secondary:[/i] Spessartine (2)\n[i]Inbetween:[/i] Pyrolusite (2)\n[i]Around:[/i] Tantalite (3)\n\n[b]Molybdenum[/b]\n[i]Height(Y):[/i] 20 - 50\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, E, EA, MN, MS, AS\n[i]Primary:[/i] Wulfenite (3)\n[i]Secondary:[/i] Molybdenite (2)\n[i]Inbetween:[/i] Molybdenum (2)\n[i]Around:[/i] Powellite (2)",
+            "text": "[b]Magnetite[/b]\n[i]Height(Y):[/i] 50 - 120\n[i]Mining tool level: 2[/i]\n[i]Dimensions:[/i] OW, N, MN, MS\n[i]Primary:[/i] Magnetite (2)\n[i]Secondary:[/i] Magnetite (2)\n[i]Inbetween:[/i] Iron (2)\n[i]Around:[/i] Vanadium Magnetite (2)\n\n[b]Manganese[/b]\n[i]Height(Y):[/i] 20 - 30\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, E, EA, MN, AS\n[i]Primary:[/i] Grossular (1)\n[i]Secondary:[/i] Spessartine (2)\n[i]Inbetween:[/i] Pyrolusite (2)\n[i]Around:[/i] Tantalite (3)\n\n[b]Molybdenum[/b]\n[i]Height(Y):[/i] 20 - 50\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, E, EA, MN, MS, AS\n[i]Primary:[/i] Wulfenite (3)\n[i]Secondary:[/i] Molybdenite (2)\n[i]Inbetween:[/i] Molybdenum (2)\n[i]Around:[/i] Powellite (2)",
             "wrap": 0,
             "size": 0.6999999,
             "color": "FF555555",
@@ -5355,7 +5355,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "[b]Monazite[/b]\n[i]Height(Y):[/i] 20 - 40\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, MN, MS, AS\n[i]Primary:[/i] Bastnasite (2)\n[i]Secondary:[/i] Bastnasite (2)\n[i]Inbetween:[/i] Monazite (1)\n[i]Around:[/i] Neodymium (2)\n\n[b]Naquadah[/b]\n[i]Height(Y):[/i] 10 - 60\n[i]Mining tool level:[/i] 4\n[i]Dimensions:[/i] E, EA, MS, AS\n[i]Primary:[/i] Naquadah (4)\n[i]Secondary:[/i] Naquadah (4)\n[i]Inbetween:[/i] Naquadah (4)\n[i]Around:[/i] Enriched Naquadah (4)\n\n[b]Nether Quartz[/b]\n[i]Height(Y):[/i] 40 - 80\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] N\n[i]Primary:[/i] Nether Quartz (1)\n[i]Secondary:[/i] Nether Quartz (1)\n[i]Inbetween:[/i] Nether Quartz (1)\n[i]Around:[/i] Nether Quartz (1)",
+            "text": "[b]Monazite[/b]\n[i]Height(Y):[/i] 20 - 40\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, MN, MS, AS\n[i]Primary:[/i] Bastnasite (2)\n[i]Secondary:[/i] Bastnasite (2)\n[i]Inbetween:[/i] Monazite (1)\n[i]Around:[/i] Neodymium (2)\n\n[b]Naquadah[/b]\n[i]Height(Y):[/i] 10 - 60\n[i]Mining tool level:[/i] 4\n[i]Dimensions:[/i] AS\n[i]Primary:[/i] Naquadah (4)\n[i]Secondary:[/i] Naquadah (4)\n[i]Inbetween:[/i] Naquadah (4)\n[i]Around:[/i] Naquadah (4)\n\n[b]Nether Quartz[/b]\n[i]Height(Y):[/i] 40 - 80\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] N\n[i]Primary:[/i] Nether Quartz (1)\n[i]Secondary:[/i] Nether Quartz (1)\n[i]Inbetween:[/i] Nether Quartz (1)\n[i]Around:[/i] Nether Quartz (1)",
             "wrap": 0,
             "size": 0.6999999,
             "color": "FF555555",
@@ -5496,20 +5496,20 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "[b]Nickel[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, N, E, EA, MN, MS, AS\n[i]Primary:[/i] Garnierite (3)\n[i]Secondary:[/i] Nickel (2)\n[i]Inbetween:[/i] Cobaltite (1)\n[i]Around:[/i] Pentlandite (2)\n\n[b]Olivine[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, E, EA, MN, MS, AS\n[i]Primary:[/i] Bentonite (2)\n[i]Secondary:[/i] Magnesite (2)\n[i]Inbetween:[/i] Olivine (2)\n[i]Around:[/i] Glauconite (2)\n\n[b]Pitchblende[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 3\n[i]Dimensions:[/i] OW, MN, MS, AS\n[i]Primary:[/i] Pitchblende (3)\n[i]Secondary:[/i] Pitchblende (3)\n[i]Inbetween:[/i] Uraninite (3)\n[i]Around:[/i] Uraninite (3)",
+            "text": "[b]Nickel[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, N, E, EA, MN, MS, AS\n[i]Primary:[/i] Garnierite (3)\n[i]Secondary:[/i] Nickel (2)\n[i]Inbetween:[/i] Cobaltite (1)\n[i]Around:[/i] Pentlandite (2)\n\n[b]Olivine[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, E, EA, MN, MS, AS\n[i]Primary:[/i] Bentonite (2)\n[i]Secondary:[/i] Magnesite (2)\n[i]Inbetween:[/i] Olivine (2)\n[i]Around:[/i] Glauconite (2)\n\n[b]Pitchblende[/b]\n[i]Height(Y):[/i] 10 - 40\n[i]Mining tool level:[/i] 3\n[i]Dimensions:[/i] OW, MN, MS, AS\n[i]Primary:[/i] Pitchblende (3)\n[i]Secondary:[/i] Pitchblende (3)\n[i]Inbetween:[/i] Uranium 238 (3)\n[i]Around:[/i] Uraninite (3)",
             "wrap": 0,
             "size": 0.6999999,
             "color": "FF555555",
             "xPos": 24,
             "yPos": 26,
-            "width": 120.0,
+            "width": 130.0,
             "height": 160.0
           }
         },
         {
           "type": "FeatureText",
           "properties": {
-            "text": "[b]Platinum[/b]\n[i]Height(Y):[/i] 40 - 50\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, E, EA, MS, AS\n[i]Primary:[/i] Sheldonite (1)\n[i]Secondary:[/i] Palladium (2)\n[i]Inbetween:[/i] Platinum (2)\n[i]Around:[/i] Iridium (4)\n\n[b]Uranium[/b]\n[i]Height(Y):[/i] 20 - 30\n[i]Mining tool level:[/i] 3\n[i]Dimensions:[/i] OW, EA, MN, MS, AS\n[i]Primary:[/i] Uraninite (3)\n[i]Secondary:[/i] Uraninite (3)\n[i]Inbetween:[/i] Uranium (3)\n[i]Around:[/i] Uranium (3)\n\n[b]Quartz[/b]\n[i]Height(Y):[/i] 40 - 80\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, EA, MN, MS, AS\n[i]Primary:[/i] Quartzite (1)\n[i]Secondary:[/i] Barite (2)\n[i]Inbetween:[/i] Certus Quartz (1)\n[i]Around:[/i] Certus Quartz (1)",
+            "text": "[b]Platinum[/b]\n[i]Height(Y):[/i] 40 - 50\n[i]Mining tool level:[/i] 2\n[i]Dimensions:[/i] OW, E, EA, MS, AS\n[i]Primary:[/i] Sheldonite (1)\n[i]Secondary:[/i] Palladium (2)\n[i]Inbetween:[/i] Platinum (2)\n[i]Around:[/i] Iridium (4)\n\n[b]Uranium 238[/b]\n[i]Height(Y):[/i] 20 - 30\n[i]Mining tool level:[/i] 3\n[i]Dimensions:[/i] OW, MN, MS, AS\n[i]Primary:[/i] Uraninite (3)\n[i]Secondary:[/i] Uraninite (3)\n[i]Inbetween:[/i] Uranium 238 (3)\n[i]Around:[/i] Uranium 238 (3)\n\n[b]Quartz[/b]\n[i]Height(Y):[/i] 40 - 80\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, EA, MN, MS, AS\n[i]Primary:[/i] Quartzite (1)\n[i]Secondary:[/i] Barite (2)\n[i]Inbetween:[/i] Certus Quartz (1)\n[i]Around:[/i] Certus Quartz (1)",
             "wrap": 0,
             "size": 0.6999999,
             "color": "FF555555",
@@ -5562,7 +5562,7 @@
         {
           "type": "FeatureItem",
           "properties": {
-            "item": "gregtech:gt.blockores 100",
+            "item": "gregtech:gt.blockores 98",
             "xPos": 355,
             "yPos": 93,
             "width": 32.0,
@@ -5807,6 +5807,16 @@
             "item": "gregtech:gt.blockores 841",
             "xPos": 150,
             "yPos": 37,
+            "width": 32.0,
+            "height": 32.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockores 878",
+            "xPos": 150,
+            "yPos": 93,
             "width": 32.0,
             "height": 32.0
           }
