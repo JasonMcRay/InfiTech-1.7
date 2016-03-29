@@ -1300,6 +1300,15 @@ val potionJump4 = <minecraft:potion:8490>.withTag({CustomPotionEffects: [{Durati
 // val potionTravel4 = <minecraft:potion:8490>.withTag({CustomPotionEffects: [{Duration: 9600, Id: 1, Amplifier: 2}, {Duration: 9600, Id: 8, Amplifier: 3}], display: {Name: "\u00A7rPotion of Travel"}});
 
 // Thaumcraft Potions
+Research.addResearch("GT_BREWING", "ALCHEMY", "fabrico 4, praecantatio 4, aqua 4", 1, -3, 1, <minecraft:brewing_stand>);
+game.setLocalization("en_US", "tc.research_name.GT_BREWING", "Potion Brewing");
+game.setLocalization("en_US", "tc.research_text.GT_BREWING", "Hellfire Elixirs");
+Research.addPage("GT_BREWING", "kirara.research_page.GT_BREWING.1");
+game.setLocalization("en_US", "kirara.research_page.GT_BREWING.1", "There had been rumors of course, but you've discovered the secret to potion brewing now, the refined essence of magical fire taken from the blazes of the nether.");
+Research.addPrereq("GT_BREWING", "PHIAL", false);
+Arcane.addShaped("GT_BREWING", <minecraft:brewing_stand>, "aqua 30", [[null, <minecraft:blaze_rod>, null], [<Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>]]);
+Research.addArcanePage("GT_BREWING", <minecraft:brewing_stand>);
+
 Research.addResearch("GT_ADVANCED_BREWING", "ALCHEMY", "fabrico 8, auram 4, praecantatio 4, aqua 4", 1, -4, 6, <minecraft:brewing_stand>);
 game.setLocalization("en_US", "tc.research_name.GT_ADVANCED_BREWING", "Advanced Brewing");
 game.setLocalization("en_US", "tc.research_text.GT_ADVANCED_BREWING", "Infusing potions with essentia");
