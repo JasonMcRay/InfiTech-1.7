@@ -1203,7 +1203,7 @@ Research.addPage("GT_MAGICABSORB2", "gt.research.page.1.GT_MAGICABSORB2");
 Infusion.removeRecipe(<gregtech:gt.blockmachines:1129>);
 Infusion.addRecipe("GT_MAGICABSORB2", <gregtech:gt.blockmachines:13>, [<gregtech:gt.metaitem.01:32673>, <gregtech:gt.metaitem.01:32705>, <gregtech:gt.metaitem.01:17319>, <gregtech:gt.metaitem.01:32692>, <Thaumcraft:blockStoneDevice:5>, <gregtech:gt.metaitem.01:32705>, <gregtech:gt.metaitem.01:17319>, <gregtech:gt.metaitem.01:32692>], "potentia 64, machina 128, praecantatio 64, electrum 128, instrumentum 128, vacuos 64", <gregtech:gt.blockmachines:1129>, 10);
 Infusion.removeRecipe(<gregtech:gt.blockmachines:1130>);
-Infusion.addRecipe("GT_MAGICABSORB2", <gregtech:gt.blockmachines:14>, [<gregtech:gt.metaitem.01:32674>, <gregtech:gt.metaitem.01:32706>, <gregtech:gt.metaitem.01:22319>, <gregtech:gt.metaitem.01:32693>, <Thaumcraft:blockStoneDevice:5>, <gregtech:gt.metaitem.01:32706>, <gregtech:gt.metaitem.01:22319>, <gregtech:gt.metaitem.01:32693>], "potentia 128, machina 256, praecantatio 128, electrum 256, instrumentum 256, vacuos 128, strontio 16, radio 32", <gregtech:gt.blockmachines:1130>, 12);
+Infusion.addRecipe("GT_MAGICABSORB2", <gregtech:gt.blockmachines:14>, [<gregtech:gt.metaitem.01:32674>, <gregtech:gt.metaitem.01:32706>, <gregtech:gt.metaitem.01:17070>, <gregtech:gt.metaitem.01:32693>, <Thaumcraft:blockStoneDevice:5>, <gregtech:gt.metaitem.01:32706>, <gregtech:gt.metaitem.01:17070>, <gregtech:gt.metaitem.01:32693>], "potentia 128, machina 256, praecantatio 128, electrum 256, instrumentum 256, vacuos 128, strontio 16, radio 32", <gregtech:gt.blockmachines:1130>, 12);
 Research.addInfusionPage("GT_MAGICABSORB2", <gregtech:gt.blockmachines:1129>);
 Research.addInfusionPage("GT_MAGICABSORB2", <gregtech:gt.blockmachines:1130>);
 
@@ -1302,13 +1302,24 @@ val potionJump4 = <minecraft:potion:8490>.withTag({CustomPotionEffects: [{Durati
 // val potionTravel3 = <minecraft:potion:8426>.withTag({CustomPotionEffects: [{Duration: 4800, Id: 1, Amplifier: 2}, {Duration: 4800, Id: 8, Amplifier: 3}], display: {Name: "\u00A7rPotion of Travel"}});
 // val potionTravel4 = <minecraft:potion:8490>.withTag({CustomPotionEffects: [{Duration: 9600, Id: 1, Amplifier: 2}, {Duration: 9600, Id: 8, Amplifier: 3}], display: {Name: "\u00A7rPotion of Travel"}});
 
+
 // Thaumcraft Potions
-Research.addResearch("GT_ADVANCED_BREWING", "ALCHEMY", "fabrico 8, auram 4, praecantatio 4, aqua 4", 1, -4, 3, <minecraft:brewing_stand>);
+Research.addResearch("GT_BREWING", "ALCHEMY", "fabrico 4, praecantatio 4, aqua 4", 1, -3, 1, <minecraft:brewing_stand>);
+game.setLocalization("en_US", "tc.research_name.GT_BREWING", "Potion Brewing");
+game.setLocalization("en_US", "tc.research_text.GT_BREWING", "Hellfire Elixirs");
+Research.addPage("GT_BREWING", "kirara.research_page.GT_BREWING.1");
+game.setLocalization("en_US", "kirara.research_page.GT_BREWING.1", "There had been rumors of course, but you've discovered the secret to potion brewing now, the refined essence of magical fire taken from the blazes of the nether.");
+Research.addPrereq("GT_BREWING", "PHIAL", false);
+Recipes.remove(<minecraft:brewing_stand>);
+Arcane.addShaped("GT_BREWING", <minecraft:brewing_stand>, "aqua 30", [[null, <minecraft:blaze_rod>, null], [<Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>]]);
+Research.addArcanePage("GT_BREWING", <minecraft:brewing_stand>);
+
+Research.addResearch("GT_ADVANCED_BREWING", "ALCHEMY", "fabrico 8, auram 4, praecantatio 4, aqua 4", 1, -5, 3, <HardcoreEnderExpansion:enhanced_brewing_stand>);
 game.setLocalization("en_US", "tc.research_name.GT_ADVANCED_BREWING", "Advanced Brewing");
 game.setLocalization("en_US", "tc.research_text.GT_ADVANCED_BREWING", "Infusing potions with essentia");
 Research.addPage("GT_ADVANCED_BREWING", "kirara.research_page.GT_ADVANCED_BREWING.1");
 game.setLocalization("en_US", "kirara.research_page.GT_ADVANCED_BREWING.1", "The mundane, wasteful method of potion brewery is quite limited in its ability to mix powerful concoctions.<BR>Advanced thaumaturgy via the infusion altar allows you to surpass the limitations of flimsy brewing stands, though the precision required in the infusion process makes it difficult to automate mass production of potions in this manner.");
-Research.addPrereq("GT_ADVANCED_BREWING", "PHIAL", false);
+Research.addPrereq("GT_ADVANCED_BREWING", "GT_BREWING", false);
 Research.addPrereq("GT_ADVANCED_BREWING", "INFUSION", true);
 Infusion.addRecipe("GT_ADVANCED_BREWING", <minecraft:potion:8226>, [salisMundus, <minecraft:redstone>, <minecraft:glowstone_dust>], "auram 4, motus 8, praecantatio 8", potionSwift3, 2);
 Research.addInfusionPage("GT_ADVANCED_BREWING", potionSwift3);
@@ -2032,7 +2043,6 @@ Crucible.addRecipe("GT_TRANSALUMINIUM", nuggetAluminium * 3, nuggetAluminium, "i
 // Remove Infused Crops
 Research.orphanResearch("INFUSED_POTIONS");
 Research.removeResearch("INFUSED_POTIONS");
-
 
 // Refresh Recipes
 Research.refreshResearchRecipe("PLANTS");
