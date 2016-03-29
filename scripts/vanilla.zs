@@ -110,23 +110,23 @@ recipes.addShaped(diamondBoots, [
 # Diamond Tool change
 recipes.remove(diamondAxe);
 recipes.addShaped(diamondAxe, [
-    [plateDiamond, diamond, HHammer],
-    [plateDiamond, stick, null],
+    [diamond, diamond, null],
+    [diamond, stick, null],
     [File, stick, null]]);
 recipes.remove(diamondPickaxe);
 recipes.addShaped(diamondPickaxe, [
-    [plateDiamond, diamond, diamond],
-    [File, stick, HHammer],
+    [diamond, diamond, diamond],
+    [File, stick, null],
     [null, stick, null]]);
 recipes.remove(diamondShovel);
 recipes.addShaped(diamondShovel, [
-    [File, plateDiamond, HHammer],
+    [File, diamond, null],
     [null, stick, null],
     [null, stick, null]]);
 recipes.remove(diamondSword);
 recipes.addShaped(diamondSword, [
-    [null, plateDiamond, null],
-    [File, plateDiamond, HHammer],
+    [null, diamond, null],
+    [File, diamond, null],
     [null, stick, null]]);
 
 # Removal of Brewing Stand
