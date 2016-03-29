@@ -75,4 +75,3 @@ recipes.addShaped(ironBars * 8, [
 
 # Removal of Brewing Stand
 recipes.remove(<minecraft:brewing_stand>);
-<minecraft:brewing_stand>.addTooltip(format.red(format.bold("This item is DISABLED!")));
