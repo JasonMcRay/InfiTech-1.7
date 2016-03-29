@@ -1,3 +1,68 @@
+v3.2.3
+New Mods:
+- ProjectRed
+
+Mods prepared for removal in next update:
+- Bluepower (still trying to resolve the issue with removed volcanos; Bluepower items are no longer craftable; All Bluepower items, blocks, GATES and CANVAS BAGS from Bluepower will be removed in v3.2.4!).
+
+Mod Updates:
+- Buildcraft -> 7.1.16
+- BuildCraftCompat -> 7.1.4
+- Chisel -> 2.9.5.11
+- Ding -> 1.7.10v2
+- EnderCore -> 0.2.0.32
+- Forestry -> 4.2.11.59
+- Galacticraft -> 3.0.12.454
+- GregTech -> 5.09.21
+- IndustrialCraft 2 -> 2.2.817
+- InfinityCore -> 1.3
+- LogisticsPipes -> 0.9.3.108
+- NEIAddons -> 1.12.15.41
+- Railcraft -> 9.10.0.0
+- StorageDrawers -> 1.9.5
+- Yampst -> 3.2.3
+
+Quests:
+- Changed few rewards
+- Re-ordered and revised some LV quests to lower excessive task requirements and removed a couple of duplicated tasks.
+- Added tooltip to reward bags (cannot be seen in quest book, only inventory/NEI)
+- Fixed "Ore Annoyance" to ask for tin instead of cassiterite.
+- "Magical Steel" quest is now dependant on Magic "Alchemical Dabling"
+- Removed from "Magical Steel" need to have crucible, since the dependency already has it.
+- "Magical Steel" added info about heating up the crucible
+
+Changes/Fixes:
+- You can now see server time in the server selection (experimental but WUUT?!)
+- Nether Star Plate can be made by compressing Nether Star Dust (no longer need to cut block)
+- Fixed Iron Bars recipe
+- Fixed complexities, moved node transducer, and sorting core to correct tier
+- Fix malisis/vanilla door recipe clash (Malisis doors need Framing Saw to craft)
+- Fix shunting wire and wire frame recipe
+- Fix TC enchantment complexities
+- Slightly lower early alchemical fabrication costs
+- Fixed Kinesis Pipes crafting consuming integrated circuits
+- Plantball fix (saplings and reeds)
+- Fixed Letter recipe
+- Uranium 238 now spawns also in Pitchblende veins
+- Fixed purifying Almandine to give Almandine (Bees)
+- Dark Glass from eIO can now be crafted
+- Added missing mob drops to FT Hunter's Backpack
+- Added Reeds to FT Forester's Backpack
+- Lower warded arcana to LV
+- Fishing core lowered to early MV from late MV
+- Modify naquadah creation
+- Disable infused crops (due to them not being obtainable and being crashaholic)
+- Fixed burn value of Wood Plank (compressed Pulp)
+- Re-enabled vanilla Brewing Stand and moved it to Thaumcraft research
+- Vanilla diamond armor is now made from Diamond Plates
+- Vanilla diamond tools require File
+- EV Magic Generator now made from Europium
+- Boosted Warded Glass recipe
+- Fixed crafting of Wooden Rings
+- Added Centrifuge recipes for Harvestcraft Meats -> Methane
+- Added cooking recipe for raw Harvestcraft Meats
+- Updated GT OreGen Guide
+
 v3.2.2
 Quests:
 - "Dust A Must" Moved grind stone to separate quest "Grind That"
