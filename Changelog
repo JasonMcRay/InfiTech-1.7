@@ -32,7 +32,6 @@ Quests:
 - "Magical Steel" added info about heating up the crucible
 
 Changes/Fixes:
-- You can now see server time in the server selection (experimental but WUUT?!)
 - Nether Star Plate can be made by compressing Nether Star Dust (no longer need to cut block)
 - Fixed Iron Bars recipe
 - Fixed complexities, moved node transducer, and sorting core to correct tier
