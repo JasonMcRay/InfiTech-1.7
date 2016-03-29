@@ -1,6 +1,8 @@
 // --- Created by Jason McRay --- 
 
 import mods.nei.NEI;
+import mods.gregtech.Centrifuge;
+import minetweaker.item.IItemStack;
 
 # Aliases
 var piston = <minecraft:piston>;
@@ -14,6 +16,13 @@ var saltGT = <gregtech:gt.metaitem.01:2817>;
 var foodSalt = <ore:foodSalt>;
 var itemSalt = <ore:itemSalt>;
 var dustSalt = <ore:dustSalt>;
+var rawRabbit = <harvestcraft:rabbitrawItem>;
+var rawVenison = <harvestcraft:venisonrawItem>;
+var cookedRabbit = <harvestcraft:rabbitcookedItem>;
+var cookedVenison = <harvestcraft:venisoncookedItem>;
+
+var cookedMeat = [cookedRabbit, cookedVenison] as IItemStack[];
+var rawMeat = [rawRabbit, rawVenison] as IItemStack[];
 
 # Blocks/Items Removal
 recipes.remove(sink);
@@ -37,3 +46,11 @@ dustSalt.remove(saltPHC);
 itemSalt.remove(saltGT);
 dustSalt.remove(saltGT);
 
+# Centrifuging Food
+for meat in rawMeat {
+    Centrifuge.addRecipe([null], null, meat, null, <liquid:methane> * 96, [0], 384, 5);
+    }
+
+for meat in cookedMeat {
+    Centrifuge.addRecipe([null], null, meat, null, <liquid:methane> * 72, [0], 288, 5);
+    }
