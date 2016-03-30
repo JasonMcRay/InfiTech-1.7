@@ -7,10 +7,12 @@ import mods.gregtech.PlasmaArcFurnace;
 import mods.ic2.SemiFluidGenerator;
 import mods.gregtech.Printer;
 import mods.gregtech.CuttingSaw;
+import mods.gregtech.Mixer;
 import mods.nei.NEI;
 import minetweaker.game.IGame;
 import mods.ic2.Compressor;
 import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
 
 # Aliases
 var advancedMiner           = <IC2:blockMachine2:11>;
@@ -48,12 +50,15 @@ var electricJetpack         = <IC2:itemArmorJetpackElectric>;
 var electricWrench          = <IC2:itemToolWrenchElectric:*>;
 var energiumDust            = <IC2:itemDust2:2>;
 var energyCrystal           = <IC2:itemBatCrystal:*>;
+var foodSalt                = <ore:foodSalt>;
 var fuelRodEmpty            = <IC2:itemFuelRod>;
 var fuelRodMOX              = <IC2:reactorMOXSimple:1>;
 var fuelRodThorium          = <gregtech:gt.Thoriumcell>;
 var fuelRodUranium          = <IC2:reactorUraniumSimple:1>;
 var genKinWind              = <IC2:blockKineticGenerator>;
 var GTDough                 = <gregtech:gt.metaitem.02:32559>;
+var GTFlour					= <gregtech:gt.metaitem.01:2881>;
+var GTSalt					= <gregtech:gt.metaitem.01:2817>;
 var HHammer                 = <ore:craftingToolHardHammer>;
 var ic2BlastFurnace         = <IC2:blockMachine3:1>;
 var ic2BlockCuttingMachine  = <IC2:blockMachine3:2>;
@@ -372,7 +377,6 @@ electricWrench.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(miner);
 miner.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
-
 # Disabling IC2 Energy Storages
 recipes.remove(batbox);
 batbox.addTooltip(format.red(format.bold("This item is DISABLED!")));
@@ -443,14 +447,14 @@ recipes.addShaped(itemDustTinySalt * 9, [
 # GT Processing
 CuttingSaw.addRecipe([<gregtech:gt.metaitem.01:29874> * 2], <ore:ingotPlastic>, <liquid:lubricant> * 5, 60, 8);
 CuttingSaw.addRecipe([<gregtech:gt.metaitem.01:29874> * 2], <ore:platePlastic>, <liquid:lubricant> * 5, 60, 8);
+Compressor.addRecipe(plantball, sapling * 4);
+Compressor.addRecipe(plantball, sugarcane * 8);
 
 # Recipe Tweaks
 recipes.remove(itemRingWood);
 recipes.addShaped(itemRingWood, [
     [Saw],
     [itemPlankWood]]);
-recipes.remove(GTDough);
-recipes.addShapeless(GTDough, [anyWater, dustWheat]);
 recipes.remove(reBatteryAdv);
 recipes.addShaped(reBatteryAdv, [
     [cableCopperAnnealed1x, itemCasingBronze, cableCopperAnnealed1x],
@@ -569,5 +573,12 @@ for log in logWood {
     ArcFurnace.addRecipe([charcoal], log, oxygen * 25, [10000], 160, 32);
 }
 
-Compressor.addRecipe(plantball, sapling * 4);
-Compressor.addRecipe(plantball, sugarcane * 8);
+# Food Tweaks
+recipes.remove(GTDough);
+# Not using oredict flour so that PHC dough can still be crafted
+recipes.addShapeless(GTDough, [anyWater, foodSalt, dustWheat]);
+recipes.addShapeless(GTDough, [anyWater, GTSalt, dustWheat]);
+//Mixer
+//OutputStack, OutputFluid (optional), InputArray, FluidInput, Time in Ticks, EnergyUsage
+Mixer.addRecipe(GTDough * 2, null, [GTFlour, <InfinityCore:itemMaterial:16>], <liquid:water> * 1000, 32, 256);
+Mixer.addRecipe(GTDough * 2, null, [GTFlour, GTSalt], <liquid:water> * 1000, 32, 256);
