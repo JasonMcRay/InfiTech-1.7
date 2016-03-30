@@ -6,6 +6,7 @@ import mods.gregtech.ArcFurnace;
 import mods.gregtech.PlasmaArcFurnace;
 import mods.ic2.SemiFluidGenerator;
 import mods.gregtech.Printer;
+import mods.gregtech.Centrifuge;
 import mods.gregtech.CuttingSaw;
 import mods.nei.NEI;
 import minetweaker.game.IGame;
@@ -41,8 +42,14 @@ var cropHarvester           = <IC2:blockMachine3:7>;
 var diamondDrill            = <IC2:itemToolDDrill:*>;
 var dustGlowstone           = <ore:dustGlowstone>;
 var dustLead                = <ore:dustLead>;
+var dustPlutonium244        = <gregtech:gt.metaitem.01:2100>;
 var dustSulfur              = <ore:dustSulfur>;
 var dustThorium             = <gregtech:gt.metaitem.01:2096>;
+var dustTinyPlutonium241    = <gregtech:gt.metaitem.01:101>;
+var dustTinyPlutonium244    = <gregtech:gt.metaitem.01:100>;
+var dustTinyUranium235      = <gregtech:gt.metaitem.01:97>;
+var dustTinyUranium238      = <gregtech:gt.metaitem.01:98>;
+var dustUranium238          = <gregtech:gt.metaitem.01:2098>;
 var dustWheat               = <ore:dustWheat>;
 var electricJetpack         = <IC2:itemArmorJetpackElectric>;
 var electricWrench          = <IC2:itemToolWrenchElectric:*>;
@@ -571,3 +578,8 @@ for log in logWood {
 
 Compressor.addRecipe(plantball, sapling * 4);
 Compressor.addRecipe(plantball, sugarcane * 8);
+
+# Uranium Centrifuge Buff
+//OutputArray, InputFluid, InputStack, InputCell, OutputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
+Centrifuge.addRecipe([dustTinyUranium235, dustTinyPlutonium244], null, dustUranium238, null, null, [8000, 800], 799, 320);
+Centrifuge.addRecipe([dustTinyPlutonium241, dustTinyUranium238 * 2], null, dustPlutonium244, null, null, [8000, 6000], 1599, 320);
