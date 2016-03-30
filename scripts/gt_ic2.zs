@@ -39,6 +39,7 @@ var coil                    = <IC2:itemRecipePart>;
 var craftingGenerator       = <ore:craftingGenerator>;
 var cropHarvester           = <IC2:blockMachine3:7>;
 var diamondDrill            = <IC2:itemToolDDrill:*>;
+var dough                   = <gregtech:gt.metaitem.02:32559>;
 var dustGlowstone           = <ore:dustGlowstone>;
 var dustLead                = <ore:dustLead>;
 var dustSulfur              = <ore:dustSulfur>;
@@ -48,6 +49,8 @@ var electricJetpack         = <IC2:itemArmorJetpackElectric>;
 var electricWrench          = <IC2:itemToolWrenchElectric:*>;
 var energiumDust            = <IC2:itemDust2:2>;
 var energyCrystal           = <IC2:itemBatCrystal:*>;
+var foodSalt                = <ore:foodSalt>;
+var flour                   = <gregtech:gt.metaitem.01:2881>;
 var fuelRodEmpty            = <IC2:itemFuelRod>;
 var fuelRodMOX              = <IC2:reactorMOXSimple:1>;
 var fuelRodThorium          = <gregtech:gt.Thoriumcell>;
@@ -372,7 +375,6 @@ electricWrench.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(miner);
 miner.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
-
 # Disabling IC2 Energy Storages
 recipes.remove(batbox);
 batbox.addTooltip(format.red(format.bold("This item is DISABLED!")));
@@ -443,6 +445,8 @@ recipes.addShaped(itemDustTinySalt * 9, [
 # GT Processing
 CuttingSaw.addRecipe([<gregtech:gt.metaitem.01:29874> * 2], <ore:ingotPlastic>, <liquid:lubricant> * 5, 60, 8);
 CuttingSaw.addRecipe([<gregtech:gt.metaitem.01:29874> * 2], <ore:platePlastic>, <liquid:lubricant> * 5, 60, 8);
+Compressor.addRecipe(plantball, sapling * 4);
+Compressor.addRecipe(plantball, sugarcane * 8);
 
 # Recipe Tweaks
 recipes.remove(itemRingWood);
@@ -569,5 +573,6 @@ for log in logWood {
     ArcFurnace.addRecipe([charcoal], log, oxygen * 25, [10000], 160, 32);
 }
 
-Compressor.addRecipe(plantball, sapling * 4);
-Compressor.addRecipe(plantball, sugarcane * 8);
+# Food Tweaks
+recipe.remove(dough);
+recipe.addShapeless(dough, [anyWater, foodSalt, flour]); # Not using oredict flour so that PHC dough can still be crafted
