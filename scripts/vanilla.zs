@@ -41,6 +41,7 @@ var slabOak = <minecraft:wooden_slab>;
 var slabWood = <ore:slabWood>;
 var stick = <minecraft:stick>;
 var teleporter = <IC2:blockMachine2>;
+var wool = <ore:blockWool>;
 var Wrench = <ore:craftingToolWrench>;
 
 # OreDictionary
@@ -133,3 +134,6 @@ recipes.addShaped(diamondSword, [
 /*recipes.remove(<minecraft:brewing_stand>);
 <minecraft:brewing_stand>.addTooltip(format.red(format.bold("This item is DISABLED!")));
 */
+
+# Burn Value
+furnace.setFuel(wool, 100);
