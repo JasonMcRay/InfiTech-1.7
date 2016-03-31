@@ -74,6 +74,7 @@ var ic2MassFab              = <IC2:blockMachine:14>;
 var ic2MetalFormer          = <IC2:blockMachine2:4>;
 var ic2OreWashingPlant      = <IC2:blockMachine2:5>;
 var ic2PatternStorage       = <IC2:blockMachine2:6>;
+var ic2Painter              = <IC2:itemToolPainter>;
 var ic2Recycler             = <IC2:blockMachine:11>;
 var ic2Replicator           = <IC2:blockMachine2:8>;
 var ic2Scanner              = <IC2:blockMachine2:7>;
@@ -511,6 +512,11 @@ recipes.addShaped(rotorCarbon, [
     [screwIridium, rotorBladeCarbon, HHammer],
     [rotorBladeCarbon, rotorSteel, rotorBladeCarbon],
     [Wrench, rotorBladeCarbon, screwIridium]]);
+recipes.remove(ic2Painter);
+recipes.addShaped(ic2Painter,
+[[<ore:blockWool>, <ore:blockWool>, <ore:blockWool>],
+[null, <ore:stickTinAlloy>, <ore:craftingToolHardHammer>],
+[null, <ore:stickTinAlloy>, <ore:plateRubber>]]);
     
 # Specials
 SemiFluidGenerator.addFluid(<liquid:creosote> * 53, 8);
