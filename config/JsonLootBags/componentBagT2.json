@@ -139,7 +139,7 @@
             "weight": 100,
             "itemstack":
             {
-                "item": "gregtech:gt.metaitem.01",
+                "item": "gregtech:gt.metaitem.02",
                 "stacksize": 1,
                 "damage": 21300
             }
@@ -183,7 +183,7 @@
             "weight": 100,
             "itemstack":
             {
-                "item": "gregtech:gt.metaitem.02",
+                "item": "gregtech:gt.metaitem.01",
                 "stacksize": 1,
                 "damage": 32651
             }
