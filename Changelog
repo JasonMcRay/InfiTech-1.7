@@ -1,3 +1,21 @@
+v3.2.3.1 Patch
+Updated Mods:
+- FastCraft -> 1.22
+
+Quests:
+- Fixed "Water from the Sky" quest not being able to submit water
+
+Changes/Fixes:
+- Fixed Recipe Plan consuming Integrated Circuit
+- Completed Prereqs for Thaumcraft
+- GT Dough now takes salt to craft
+- Fixed plantball from saplings again
+- Disabled hiding of recycling recipes
+- Disabled ProjectRed Marble
+- Disabled BuildCraft Paintbrush
+- Changed OpenBlocks and IC2 paintbrush recipes
+- Fixed crash on opening Tier 2 Component Bag
+
 v3.2.3
 New Mods:
 - ProjectRed
