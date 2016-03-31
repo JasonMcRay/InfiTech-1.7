@@ -18,6 +18,7 @@ var craneControl      = <OpenBlocks:craneControl>;
 var craneMagnet       = <OpenBlocks:generic:3>;
 var craneEngine       = <OpenBlocks:generic:2>;
 var luggage           = <OpenBlocks:luggage>;
+var paintbrush        = <OpenBlocks:paintBrush>;
 
 # Recipe Tweaks
 recipes.remove(vacuumHopper);
@@ -61,3 +62,9 @@ craneEngine.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 recipes.remove(luggage);
 luggage.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
+recipes.remove(paintbrush);
+recipes.addShaped(paintbrush,
+  [[<ore:blockWool>, null, null],
+  [<ore:craftingToolFile>, <Forestry:oakStick>, null],
+  [null, null, <Forestry:oakStick>]]);
