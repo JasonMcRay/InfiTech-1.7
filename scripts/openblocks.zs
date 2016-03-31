@@ -67,4 +67,4 @@ recipes.remove(paintbrush);
 recipes.addShaped(paintbrush,
   [[<ore:blockWool>, null, null],
   [<ore:craftingToolFile>, <Forestry:oakStick>, null],
-  [null, null, <Forestry:oakStick>]]);
+  [null, null, <ore:woodStickSealed>]]);
