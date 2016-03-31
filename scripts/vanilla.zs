@@ -7,6 +7,7 @@ var blazeRod = <minecraft:blaze_rod>;
 var buttonWood = <minecraft:wooden_button>;
 var chestEnder = <minecraft:ender_chest>;
 var chestWood = <minecraft:chest>;
+var charcoal = <ore:charcoal>;
 var coal = <ore:gemCoal>;
 var diamond = <ore:gemDiamond>;
 var diamondAxe = <minecraft:diamond_axe>;
@@ -133,3 +134,7 @@ recipes.addShaped(diamondSword, [
 /*recipes.remove(<minecraft:brewing_stand>);
 <minecraft:brewing_stand>.addTooltip(format.red(format.bold("This item is DISABLED!")));
 */
+
+# Tooltip
+
+charcoal.addTooltip("Make a Charcoal Pile Igniter for your first charcoal");
