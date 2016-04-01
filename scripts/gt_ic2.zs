@@ -6,6 +6,7 @@ import mods.gregtech.ArcFurnace;
 import mods.gregtech.PlasmaArcFurnace;
 import mods.ic2.SemiFluidGenerator;
 import mods.gregtech.Printer;
+import mods.gregtech.Centrifuge;
 import mods.gregtech.CuttingSaw;
 import mods.nei.NEI;
 import minetweaker.game.IGame;
@@ -24,6 +25,7 @@ var cableCopperAnnealed1x   = <gregtech:gt.blockmachines:1386>;
 var cableElectrum4x         = <gregtech:gt.blockmachines:1448>;
 var cableGold1x             = <ore:cableGt01Gold>;
 var cableGold2x             = <ore:cableGt02Gold>;
+var cellLargeSteel          = <gregtech:gt.metaitem.01:32405>;
 var CESU                    = <IC2:blockElectric:7>;
 var chainsaw                = <IC2:itemToolChainsaw:*>;
 var chargePadBatbox         = <IC2:blockChargepad>;
@@ -41,6 +43,7 @@ var cropHarvester           = <IC2:blockMachine3:7>;
 var diamondDrill            = <IC2:itemToolDDrill:*>;
 var dustGlowstone           = <ore:dustGlowstone>;
 var dustLead                = <ore:dustLead>;
+var dustRedstone            = <ore:dustRedstone>;
 var dustSulfur              = <ore:dustSulfur>;
 var dustThorium             = <gregtech:gt.metaitem.01:2096>;
 var dustWheat               = <ore:dustWheat>;
@@ -79,12 +82,14 @@ var ingotSteel              = <ore:ingotSteel>;
 var iridiumDrill            = <IC2:itemToolIridiumDrill:*>;
 var itemCasingBronze        = <IC2:itemCasing:2>;
 var itemCasingGold          = <IC2:itemCasing:3>;
+var itemCasingIron          = <IC2:itemCasing:4>;
 var itemDustSalt            = <gregtech:gt.metaitem.01:2817>;
 var itemDustSmallSalt       = <gregtech:gt.metaitem.01:1817>;
 var itemDustTinySalt        = <gregtech:gt.metaitem.01:817>;
 var itemPlankWood           = <gregtech:gt.metaitem.01:17809>;
 var itemRingWood            = <gregtech:gt.metaitem.01:28809>;
 var itemSteelCasing         = <IC2:itemCasing:5>;
+var jetpack                 = <IC2:itemArmorJetpack:27>;
 var machineCasingAdvanced   = <IC2:blockMachine:12>;
 var machineHullHV           = <gregtech:gt.blockmachines:13>;
 var MFE                     = <IC2:blockElectric:1>;
@@ -571,3 +576,10 @@ for log in logWood {
 
 Compressor.addRecipe(plantball, sapling * 4);
 Compressor.addRecipe(plantball, sugarcane * 8);
+
+# Jetpack Buff
+recipes.remove(jetpack);
+recipes.addShaped(jetpack, [
+    [itemCasingIron, circuitBasic, itemCasingIron],
+    [itemCasingIron, cellLargeSteel, itemCasingIron],
+    [dustRedstone, null, dustRedstone]]);
