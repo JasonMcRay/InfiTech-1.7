@@ -793,9 +793,8 @@ Research.addArcanePage("ARCANEBORE", <Thaumcraft:blockWoodenDevice:4>);
 Research.addPage("ARCANEBORE", "tc.research_page.ARCANEBORE.3");
 
 // Thaumostatic Harness
-Slicer.addRecipe(<gregtech:gt.metaitem.01:29880> * 4, <gregtech:gt.metaitem.01:17880>, <gregtech:gt.metaitem.01:32398> * 0, 320, 8);
 Infusion.addRecipe("HOVERHARNESS", <WitchingGadgets:item.WG_AdvancedRobeChest>, [<Thaumcraft:BlockJarFilledItem>.withTag({Aspects: [{amount: 64, key: "potentia"}]}), <Thaumcraft:blockTube:1>, <gregtech:gt.metaitem.01:32610>, <Thaumcraft:ItemShard:0>, <gregtech:gt.metaitem.02:21330>, <Thaumcraft:ItemShard:0>, <gregtech:gt.metaitem.01:32610>, <Thaumcraft:blockTube:1>], "iter 32, machina 32, potentia 32, volatus 96", <Thaumcraft:HoverHarness>, 6);
-Infusion.addRecipe("HOVERGIRDLE", <Thaumcraft:ItemBaubleBlanks:2>, [<gregtech:gt.metaitem.01:29880>, <chisel:cloud>, <OpenComputers:item:100>, <gregtech:gt.metaitem.01:29880>, <chisel:cloud>, <Thaumcraft:blockCrystal:0>, <gregtech:gt.metaitem.01:29880>, <chisel:cloud>, <OpenComputers:item:100>, <gregtech:gt.metaitem.01:29880>, <chisel:cloud>, <Thaumcraft:blockCrystal:0>], "aer 48, iter 32, potentia 48, volatus 32", <Thaumcraft:ItemGirdleHover>, 8);
+Infusion.addRecipe("HOVERGIRDLE", <Thaumcraft:ItemBaubleBlanks:2>, [<Thaumcraft:blockCrystal:0>, <chisel:cloud>, <IC2:blockRubber>, <gregtech:gt.metaitem.01:11351>, <Thaumcraft:blockCrystal:3>, <Thaumcraft:blockCrystal:0>, <chisel:cloud>, <IC2:blockRubber>, <gregtech:gt.metaitem.01:11351>, <Thaumcraft:blockCrystal:3>], "aer 48, iter 32, potentia 48, volatus 32", <Thaumcraft:ItemGirdleHover>, 8);
 
 // Infusion Altar
 Arcane.addShaped("INFUSION", <Thaumcraft:blockStoneDevice:2>, "ordo 40", [[<Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:ItemShard:*>, <Thaumcraft:blockCosmeticSolid:6>], [<Thaumcraft:ItemShard:*>, <ore:gemVinteum>, <Thaumcraft:ItemShard:*>], [<Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:ItemShard:*>, <Thaumcraft:blockCosmeticSolid:6>]]);
