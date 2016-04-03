@@ -33,6 +33,7 @@ Just what each label on given issue means:
 
 ## Pull Requests
 [Squash](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html) them, and make sure they works
+Pull Requests with HQM file changed will NOT BE ACCEPTED EVER. If you feel like there should be a change with some quest, please make an Issue, PM Jason McRay on FTB forums, or DM Jason McRay on discord.
 
 ## Important for using dev configs
 I made these configs available for public so you can tinker with them. WARNING! I hold no responsibility if it will break something in your world!
