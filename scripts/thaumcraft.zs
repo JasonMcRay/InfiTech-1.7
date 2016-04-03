@@ -458,6 +458,267 @@ Research.orphanResearch("WGFAKEINFERNALFURNACE");
 Research.clearPrereqs("WGFAKEINFERNALFURNACE");
 Research.removeResearch("WGFAKEINFERNALFURNACE");
 
+// Wrought Iron
+Research.addResearch("GT_TRANSIRONWROUGHT", "ALCHEMY", "metallum 3, permutatio 3, ordo 1", 4, 5, 1, <gregtech:gt.metaitem.01:9304>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSIRONWROUGHT", "Wrought Iron Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSIRONWROUGHT", "[GT] Transforming iron to wrought iron");
+Research.addPage("GT_TRANSIRONWROUGHT", "kirara.research_page.GT_TRANSIRONWROUGHT.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSIRONWROUGHT.1", "You have discovered a way of making iron harder by thoroughly heating its components.<BR>This method can be used to create a material called wrought iron, which is used in many non-Thaumaturgic applications.");
+Research.addPrereq("GT_TRANSIRONWROUGHT", "ALUMENTUM", false);
+Research.addPrereq("GT_TRANSIRONWROUGHT", "TRANSGOLD", false);
+Crucible.addRecipe("GT_TRANSIRONWROUGHT", <gregtech:gt.metaitem.01:9304>, <ore:nuggetIron>, "ignis 1");
+Research.addCruciblePage("GT_TRANSIRONWROUGHT", <gregtech:gt.metaitem.01:9304>);
+Research.setConcealed("GT_TRANSIRONWROUGHT", true);
+
+// Thaumium
+Research.addResearch("GT_TRANSTHAUMIUM", "ALCHEMY", "metallum 3, permutatio 3, praecantatio 1", 6, 5, 2, <Thaumcraft:ItemResource:2>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSTHAUMIUM", "Thaumium Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSTHAUMIUM", "[GT] Transforming iron to thaumium");
+Research.addPage("GT_TRANSTHAUMIUM", "kirara.research_page.GT_TRANSTHAUMIUM.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSTHAUMIUM.1", "As it is quite expensive to expend even slivers of shards to produce thaumium, you have devised an alternative method of manufacturing the magical metal.<BR>By exposing wrought iron to praecantatio essentia in the same fashion that you used ignis to manufacture wrought iron, you have effectively created a method to manufacture thaumium without the use of valuable crystal shards.");
+Research.addPrereq("GT_TRANSTHAUMIUM", "GT_TRANSIRONWROUGHT", false);
+Crucible.addRecipe("GT_TRANSTHAUMIUM", <Thaumcraft:ItemResource:2>, <ore:ingotWroughtIron>, "praecantatio 4");
+Research.addCruciblePage("GT_TRANSTHAUMIUM", <Thaumcraft:ItemResource:2>);
+Research.setConcealed("GT_TRANSTHAUMIUM", true);
+
+// Steel
+Research.moveResearch("GT_IRON_TO_STEEL", "ALCHEMY", 6, 7); 
+Research.clearPages("GT_IRON_TO_STEEL"); 
+Research.addPage("GT_IRON_TO_STEEL", "kirara.research_page.GT_IRON_TO_STEEL.1");
+game.setLocalization("en_US", "kirara.research_page.GT_IRON_TO_STEEL.1", "You have discovered a way of making wrought iron even harder by breaking down and reordering its components.<BR>This method can be used to create a material called steel, which is used in many non-Thaumaturgic applications.");
+Crucible.addRecipe("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:9305>, <gregtech:gt.metaitem.01:9304>, "ordo 1");
+Research.addCruciblePage("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:9305>);
+Research.clearPrereqs("GT_IRON_TO_STEEL"); 
+Research.addPrereq("GT_IRON_TO_STEEL", "GT_TRANSIRONWROUGHT", false); 
+Warp.addToResearch("GT_IRON_TO_STEEL", 3);
+
+// Steeleaf
+Research.addResearch("GT_TRANSSTEELEAF", "ALCHEMY", "metallum 3, permutatio 3, tutamen 1, lucrum 1", 8, 6, 2, <gregtech:gt.metaitem.01:9339>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSSTEELEAF", "Steeleaf Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSSTEELEAF", "[GT] Mixing life with metal");
+Research.addPage("GT_TRANSSTEELEAF", "kirara.research_page.GT_TRANSSTEELEAF.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSSTEELEAF.1", "You have discovered a way of imbuing inorganic steel with praecantatio and herba essentia to create an organic alloy that has interesting magical properties.<BR>Unfortunately, this process irreversibly transmutes a significant fraction of the steel consumed in the process, rendering only one-half of the metal recoverable.");
+Research.addPrereq("GT_TRANSSTEELEAF", "GT_IRON_TO_STEEL", false);
+Research.addPrereq("GT_TRANSSTEELEAF", "GT_TRANSTHAUMIUM", false);
+Crucible.addRecipe("GT_TRANSSTEELEAF", <gregtech:gt.metaitem.01:9339>, <ore:nuggetSteel>, "praecantatio 1, herba 1");
+Research.addCruciblePage("GT_TRANSSTEELEAF", <gregtech:gt.metaitem.01:9339>);
+Research.setConcealed("GT_TRANSSTEELEAF", true);
+
+// Knightmetal
+Research.addResearch("GT_TRANSKNIGHTMETAL", "ALCHEMY", "metallum 3, permutatio 3, tutamen 1, lucrum 1", 10, 7, 2, <gregtech:gt.metaitem.01:9362>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSKNIGHTMETAL", "Knightmetal Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSKNIGHTMETAL", "[GT] Alchemically reinforced steel");
+Research.addPage("GT_TRANSKNIGHTMETAL", "kirara.research_page.GT_TRANSKNIGHTMETAL.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSKNIGHTMETAL.1", "You have discovered a way of making steel even harder by imbuing it with magic.<BR>This method creates a strange, green material that is much tougher than the base steel it originated from. Unfortunately, this process vaporizes a significant fraction of the steel consumed in the process, rendering only two-thirds of the metal recoverable.");
+Research.addPrereq("GT_TRANSKNIGHTMETAL", "GT_TRANSSTEELEAF", false);
+Crucible.addRecipe("GT_TRANSKNIGHTMETAL", <gregtech:gt.metaitem.01:9362>, <ore:nuggetSteel>, "praecantatio 1, tutamen 2");
+Research.addCruciblePage("GT_TRANSKNIGHTMETAL", <gregtech:gt.metaitem.01:9362>);
+Research.setConcealed("GT_TRANSKNIGHTMETAL", true);
+
+// Fiery Steel
+Research.addResearch("GT_TRANSFIERYSTEEL", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 10, 5, 3, <gregtech:gt.metaitem.01:9346>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSFIERYSTEEL", "Fiery Steel Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSFIERYSTEEL", "[GT] Enriching steel with cleansing fire");
+Research.addPage("GT_TRANSFIERYSTEEL", "kirara.research_page.GT_TRANSFIERYSTEEL.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSFIERYSTEEL.1", "You theorized that altering the knightmetal transmutation recipe by based off the legends of the hyrda would produce a metal with strength unknown.<BR>As it turns out, the process was even more effective than you initially theorized, while the process does unfortunately cause the metal to crumble into dust it nevertheless radiates the power of the hyrda's breath.");
+Research.addPrereq("GT_TRANSFIERYSTEEL", "GT_TRANSKNIGHTMETAL", false);
+Research.addPrereq("GT_TRANSFIERYSTEEL", "GT_FIRESTONE", false);
+Crucible.addRecipe("GT_TRANSFIERYSTEEL", <gregtech:gt.metaitem.01:9346>, <ore:nuggetSteel>, "praecantatio 1, ignis 4, corpus 2");
+Research.addCruciblePage("GT_TRANSFIERYSTEEL", <gregtech:gt.metaitem.01:9346>);
+Crucible.removeRecipe(<gregtech:gt.metaitem.01:9346>);
+Crucible.addRecipe("GT_TRANSFIERYSTEEL", <gregtech:gt.metaitem.01:346>, <ore:nuggetSteel>, "praecantatio 1, ignis 4, corpus 2");
+Research.setConcealed("GT_TRANSFIERYSTEEL", true);
+
+// Fiery Blood
+Research.addResearch("GT_TRANSFIERYBLOOD", "ALCHEMY", "permutatio 3, victus 3, ignis 3, praecantatio 3", 10, 3, 3, <gregtech:gt.metaitem.01:30346>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSFIERYBLOOD", "Fiery Blood Infusion");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSFIERYBLOOD", "[GT] 100% iron free steel");
+Research.addPage("GT_TRANSFIERYBLOOD", "kirara.research_page.GT_TRANSFIERYBLOOD.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSFIERYBLOOD.1", "You long thought that there was something more to fiery steel, a way to reclaim the metal should be possible should it not? After much work you created this process, exploiting the power of infusion you have managed to remove all traces of metal within the substance, leaving only a liquid that thrums with fire unlike any other you've seen. <BR>This process uses far larger amounts of fiery steel than you initially predicted and requires the strongest beer you can produce, the legendary Dragon Blood.");
+Research.addPrereq("GT_TRANSFIERYBLOOD", "GT_TRANSFIERYSTEEL", false);
+Research.addPrereq("GT_TRANSFIERYBLOOD", "INFUSION", true);
+Infusion.addRecipe("GT_TRANSFIERYBLOOD", <IC2:itemCellEmpty:2>, [<gregtech:gt.metaitem.01:2346>, <gregtech:gt.metaitem.02:32114>, <gregtech:gt.metaitem.01:2346>, <Thaumcraft:ItemShard:2>, <gregtech:gt.metaitem.01:2346>, <gregtech:gt.metaitem.02:32114>, <gregtech:gt.metaitem.01:2346>, <gregtech:gt.metaitem.02:32114>, <gregtech:gt.metaitem.01:2346>, <Thaumcraft:ItemShard:2>, <gregtech:gt.metaitem.01:2346>, <gregtech:gt.metaitem.02:32114>], "aqua 16, victus 16, ignis 16, ordo 16", <gregtech:gt.metaitem.01:30346>, 8);
+Research.addInfusionPage("GT_TRANSFIERYBLOOD", <gregtech:gt.metaitem.01:30346>);
+Research.setConcealed("GT_TRANSFIERYBLOOD", true);
+Warp.addToResearch("GT_TRANSFIERYBLOOD", 3);
+Warp.addToItem(<gregtech:gt.metaitem.01:30346>, 1);
+
+// Astral Silver
+Research.addResearch("GT_TRANSASTRALSILVER", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 12, 7, 2, <gregtech:gt.metaitem.01:9333>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSASTRALSILVER", "Astral Silver Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSASTRALSILVER", "[GT] Teleporters hate this");
+Research.addPage("GT_TRANSASTRALSILVER", "kirara.research_page.GT_TRANSASTRALSILVER.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSASTRALSILVER.1", "The same process used to produce knightmetal may be used to imbue silver with alienis essentia, rendering it far more effective against End-affiliated opponents.");
+Research.addPrereq("GT_TRANSASTRALSILVER", "GT_TRANSKNIGHTMETAL", false);
+Crucible.addRecipe("GT_TRANSASTRALSILVER", <gregtech:gt.metaitem.01:9333>, <ore:nuggetSilver>, "praecantatio 1, alienis 1, iter 1");
+Research.addCruciblePage("GT_TRANSASTRALSILVER", <gregtech:gt.metaitem.01:9333>);
+Research.setConcealed("GT_TRANSASTRALSILVER", true);
+
+// Enderium
+Research.addResearch("GT_TRANSENDERIUM", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 12, 5, 3, <gregtech:gt.metaitem.01:9321>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSENDERIUM", "Enderium Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSENDERIUM", "[GT] Harnessing the power of the End");
+Research.addPage("GT_TRANSENDERIUM", "kirara.research_page.GT_TRANSENDERIUM.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSENDERIUM.1", "By substituting silver with platinum in the Astral Silver transmutation process, you have managed to create an exotic alloy with surprising attributes - the metal pulses as though it were an ender pearl, and possess many of its properties.");
+Research.addPrereq("GT_TRANSENDERIUM", "GT_TRANSASTRALSILVER", false);
+Crucible.addRecipe("GT_TRANSENDERIUM", <gregtech:gt.metaitem.01:9321>, <ore:nuggetEnderiumBase>, "praecantatio 1, alienis 1, iter 1, ignis 2");
+Research.addCruciblePage("GT_TRANSENDERIUM", <gregtech:gt.metaitem.01:9321>);
+Research.setConcealed("GT_TRANSENDERIUM", true);
+
+
+// Adamantium
+Research.addResearch("GT_TRANSADAMANTIUM", "ALCHEMY", "metallum 3, permutatio 3, tutamen 3, praecantatio 1, ordo 1, tempus 1, telum 1, instrumentum 1", 12, 3, 1, <gregtech:gt.metaitem.01:9319>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSADAMANTIUM", "Adamantium Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSADAMANTIUM", "[GT] Second only to the stars themselves");
+Research.addPage("GT_TRANSADAMANTIUM", "kirara.research_page.GT_TRANSADAMANTIUM.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSADAMANTIUM.1", "Building off past sucesses with knightmetal and enderium you have managed your ultimate creation in the field of metallurgy. Unfortunately the process is far from cheap and the temperatures required to shape the metal are barely achievable even with all your power and skill leveraged to that end.<BR>As with many others, this recipe was initially transcribed incorrectly and is actually performed with only tiny amounts of dust, I really should go to that appointment...");
+Research.addPrereq("GT_TRANSADAMANTIUM",  "GT_TRANSENDERIUM", false);
+Crucible.addRecipe("GT_TRANSADAMANTIUM", <gregtech:gt.metaitem.01:9319>, <ore:dustTinyKnightmetal>, "tutamen 4, ordo 4, nebrisum 4");
+Research.addCruciblePage("GT_TRANSADAMANTIUM", <gregtech:gt.metaitem.01:9319>);
+Crucible.removeRecipe(<gregtech:gt.metaitem.01:9319>);
+Crucible.addRecipe("GT_TRANSADAMANTIUM", <gregtech:gt.metaitem.01:319>, <ore:dustTinyKnightmetal>, "tutamen 4, ordo 4, nebrisum 4");
+Research.setConcealed("GT_TRANSADAMANTIUM", true);
+game.setLocalization("en_US", "gt.metaitem.01.12319.name", "Hot Adamantium Ingot");
+// NEI.addEntry(<gregtech:gt.metaitem.01:12319>);
+BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12319>], [<gregtech:gt.metaitem.01:2319>], 2500, 1600, 3598);
+VacuumFreezer.addRecipe(<gregtech:gt.metaitem.01:11319>, <gregtech:gt.metaitem.01:12319>, 800);
+
+// Damascus Steel
+Research.addResearch("GT_TRANSSTEELDAMASCUS", "ALCHEMY", "metallum 3, permutatio 3, vitreus 1, perditio 1", 13, 9, 2, <gregtech:gt.metaitem.01:9335>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSSTEELDAMASCUS", "Damascus Steel Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSSTEELDAMASCUS", "[GT] Refining steel even further");
+Research.addPage("GT_TRANSSTEELDAMASCUS", "kirara.research_page.GT_TRANSSTEELDAMASCUS.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSSTEELDAMASCUS.1", "You have discovered a way of making steel even harder by breaking down and crystallizing its components on an atomic level.<BR>This method can be used to refine an amazingly durable variant of steel resembling that of the legendary Damascus Steel normally only found in ancient ruins. Unfortunately, this process leaves the material in dust form, requiring further processing via non-Thaumaturgical means.");
+Research.addPrereq("GT_TRANSSTEELDAMASCUS", "GT_IRON_TO_STEEL", false);
+Crucible.addRecipe("GT_TRANSSTEELDAMASCUS", <gregtech:gt.metaitem.01:9335>, <ore:nuggetSteel>, "ordo 1, machina 1");
+Research.addCruciblePage("GT_TRANSSTEELDAMASCUS", <gregtech:gt.metaitem.01:9335>);
+Research.setConcealed("GT_TRANSSTEELDAMASCUS", true);
+
+// Advanced Metallurgy
+Research.clearPrereqs("GT_ADVANCEDMETALLURGY");
+Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSELECTRUM", false);
+Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSBRASS", false);
+Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSBATTERYALLOY", false);
+Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSSOLDERINGALLOY", false);
+Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSINVAR", false);
+Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSCUPRONICKEL", false);
+Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSBISMUTH", false);
+Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSSTEELDAMASCUS", false);
+
+
+// Platinum
+Research.addResearch("GT_TRANSPLATINUM", "ALCHEMY", "metallum 5, nebrisum 3, permutatio 3, ordo 3, lucrum 3", 19, 15, 2, <gregtech:gt.metaitem.01:9085>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSPLATINUM", "Platinum Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSPLATINUM", "[GT] Transformation of metals to Platinum");
+
+// Research.clearPages("GT_TRANSPLATINUM"); 
+Research.addPage("GT_TRANSPLATINUM", "kirara.research_page.GT_TRANSPLATINUM.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSPLATINUM.1", "You have discovered a way to multiply Platinum by steeping Platinum nuggets in metallum harvested from other metals.<BR>This transmutation is quite costly, requiring a whole ingot of platinum's worth in nebrisum to create a mere nugget of the same metal. Perhaps if you could discover an alternative source for this essentia...");
+Crucible.addRecipe("GT_TRANSPLATINUM", <gregtech:gt.metaitem.01:9085> * 3, <gregtech:gt.metaitem.01:9085>, "nebrisum 1, lucrum 2, metallum 2");
+Research.addCruciblePage("GT_TRANSPLATINUM", <gregtech:gt.metaitem.01:9085>);
+Research.addPrereq("GT_TRANSPLATINUM", "GT_ADVANCEDMETALLURGY", false); 
+Research.addPrereq("GT_TRANSPLATINUM", "GT_TRANSALUMINIUM", true); 
+Research.setConcealed("GT_TRANSPLATINUM", true);
+Warp.addToResearch("GT_TRANSPLATINUM", 1);
+
+// Iridium
+Research.addResearch("GT_TRANSIRIDIUM", "ALCHEMY", "metallum 5, machina 3, permutatio 3, tutamen 3, electrum 3", 21, 15, 3, <gregtech:gt.metaitem.01:9084>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSIRIDIUM", "Iridium Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSIRIDIUM", "[GT] Transformation of metals to Iridium");
+
+// Research.clearPages("GT_TRANSIRIDIUM"); 
+Research.addPage("GT_TRANSIRIDIUM", "kirara.research_page.GT_TRANSIRIDIUM.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSIRIDIUM.1", "You have discovered a way to multiply Iridium by steeping Iridium nuggets in metallum harvested from other metals.<BR>This transmutation is quite costly, requiring a whole ingot of platinum's worth in nebrisum to create a mere nugget of iridium. Perhaps if you could discover an alternative source for this essentia...");
+Crucible.addRecipe("GT_TRANSIRIDIUM", <gregtech:gt.metaitem.01:9084> * 3, <gregtech:gt.metaitem.01:9084>, "lucrum 1, nebrisum 1, metallum 2, machina 1");
+Research.addCruciblePage("GT_TRANSIRIDIUM", <gregtech:gt.metaitem.01:9084>);
+Crucible.removeRecipe(<gregtech:gt.metaitem.01:9084>);
+Crucible.addRecipe("GT_TRANSIRIDIUM", <gregtech:gt.metaitem.01:84> * 3, <gregtech:gt.metaitem.01:9084>, "lucrum 1, nebrisum 1, metallum 2, machina 1");
+Research.addPrereq("GT_TRANSIRIDIUM", "GT_TRANSPLATINUM", false); 
+Research.setConcealed("GT_TRANSIRIDIUM", true);
+Warp.addToResearch("GT_TRANSIRIDIUM", 1);
+
+// Titanium
+Research.addResearch("GT_TRANSTITANIUM", "ALCHEMY", "metallum 5, tutamen 3, permutatio 3, ordo 3, instrumentum 3", 19, 16, 3, <gregtech:gt.metaitem.01:9028>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSTITANIUM", "Titanium Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSTITANIUM", "[GT] Transformation of metals to Titanium");
+
+// Research.clearPages("GT_TRANSTITANIUM"); 
+Research.addPage("GT_TRANSTITANIUM", "kirara.research_page.GT_TRANSTITANIUM.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSTITANIUM.1", "You have discovered a way to multiply Titanium by steeping Titanium nuggets in metallum harvested from other metals.<BR>Unfortunately, this process leaves the material in an oxidized form, requiring further processing via non-Thaumaturgical means.");
+Crucible.addRecipe("GT_TRANSTITANIUM", <gregtech:gt.metaitem.01:375> * 3, <gregtech:gt.metaitem.01:9028>, "metallum 2, tutamen 1, permutatio 1, machina 1");
+Research.addCruciblePage("GT_TRANSTITANIUM", <gregtech:gt.metaitem.01:375>);
+Research.addPrereq("GT_TRANSTITANIUM", "GT_ADVANCEDMETALLURGY", false); 
+Research.addPrereq("GT_TRANSTITANIUM", "GT_TRANSPLATINUM", true); 
+Research.setConcealed("GT_TRANSTITANIUM", true);
+Warp.addToResearch("GT_TRANSTITANIUM", 1);
+
+// Tungsten
+Research.addResearch("GT_TRANSTUNGSTEN", "ALCHEMY", "metallum 5, tutamen 3, permutatio 3, sano 3, lux 3", 19, 17, 3, <gregtech:gt.metaitem.01:9081>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSTUNGSTEN", "Tungsten Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSTUNGSTEN", "[GT] Transformation of metals to Tungsten");
+Research.addPage("GT_TRANSTUNGSTEN", "kirara.research_page.GT_TRANSTUNGSTEN.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSTUNGSTEN.1", "You have discovered a way to multiply Tungsten by steeping Tungsten nuggets in metallum harvested from other metals.<BR>Unfortunately, this process leaves the material in an oxidized form, requiring further processing via non-Thaumaturgical means.");
+Crucible.addRecipe("GT_TRANSTUNGSTEN", <gregtech:gt.metaitem.01:910> * 21, <gregtech:gt.metaitem.01:9081>, "metallum 2, tutamen 1, sano 1, lux 1");
+Research.addCruciblePage("GT_TRANSTUNGSTEN", <gregtech:gt.metaitem.01:910>);
+Research.addPrereq("GT_TRANSTUNGSTEN", "GT_ADVANCEDMETALLURGY", true); 
+Research.addPrereq("GT_TRANSTUNGSTEN", "GT_TRANSTITANIUM", false); 
+Research.setConcealed("GT_TRANSTUNGSTEN", true);
+
+// Uranium
+Research.addResearch("GT_TRANSURANIUM", "ALCHEMY", "metallum 5, radio 3, permutatio 3, venenum 3, potentia 3", 21, 16, 3, <gregtech:gt.metaitem.01:9098>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSURANIUM", "Uranium Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSURANIUM", "[GT] Transformation of metals to Uranium");
+Research.addPage("GT_TRANSURANIUM", "kirara.research_page.GT_TRANSURANIUM.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSURANIUM.1", "You have discovered a way to multiply Uranium by steeping Uranium nuggets in a vast number of different essentia.<BR>Unfortunately, this process leaves the material in an oxidized form, requiring further processing via non-Thaumaturgical means.");
+Crucible.addRecipe("GT_TRANSURANIUM", <gregtech:gt.metaitem.01:2922>, <gregtech:gt.metaitem.01:9098>, "potentia 1, radio 1, metallum 2, venenum 1");
+Research.addCruciblePage("GT_TRANSURANIUM", <gregtech:gt.metaitem.01:2922>);
+Research.addPrereq("GT_TRANSURANIUM", "GT_TRANSPLATINUM", false); 
+Research.addPrereq("GT_TRANSURANIUM", "GT_TRANSTITANIUM", false); 
+Research.addPrereq("GT_TRANSURANIUM", "GT_TRANSTUNGSTEN", false); 
+Research.setConcealed("GT_TRANSURANIUM", true);
+Warp.addToResearch("GT_TRANSURANIUM", 5);
+
+// Chromium
+Research.addResearch("GT_TRANSCHROMIUM", "ALCHEMY", "metallum 5, machina 3, permutatio 3, nebrisum 3, lucrum 3", 19, 13, 2, <gregtech:gt.metaitem.01:9030>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSCHROMIUM", "Chromium Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSCHROMIUM", "[GT] Transformation of metals to Chromium");
+Research.addPage("GT_TRANSCHROMIUM", "kirara.research_page.GT_TRANSCHROMIUM.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSCHROMIUM.1", "You have discovered a way to multiply Chromium by steeping Chromium nuggets in metallum harvested from other metals.<BR>This transmutation is quite costly, requiring a large quantity of rare essentia to produce a tiny pile of chrome dust.<BR>While not the most worthwhile recipe by itself, you wonder if this discovery could lead to other, far more valuable transmutations.");
+Crucible.addRecipe("GT_TRANSCHROMIUM", <gregtech:gt.metaitem.01:9030> * 3, <gregtech:gt.metaitem.01:9030>, "machina 1, nebrisum 1, metallum 2, auram 1");
+Research.addCruciblePage("GT_TRANSCHROMIUM", <gregtech:gt.metaitem.01:9030>);
+Crucible.removeRecipe(<gregtech:gt.metaitem.01:9030>);
+Crucible.addRecipe("GT_TRANSCHROMIUM", <gregtech:gt.metaitem.01:30> * 3, <gregtech:gt.metaitem.01:9030>, "machina 1, nebrisum 1, metallum 2, auram 1");
+Research.addPrereq("GT_TRANSCHROMIUM", "GT_TRANSALUMINIUM", true);
+Research.addPrereq("GT_TRANSCHROMIUM", "GT_ADVANCEDMETALLURGY", false); 
+Research.setConcealed("GT_TRANSCHROMIUM", true);
+
+// Manganese
+Research.addResearch("GT_TRANSMANGANESE", "ALCHEMY", "metallum 5, tenebrae 3, permutatio 3, nebrisum 3, volatus 3", 19, 12, 2, <gregtech:gt.metaitem.01:9031>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSMANGANESE", "Manganese Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSMANGANESE", "[GT] Transformation of metals to Manganese");
+Research.addPage("GT_TRANSMANGANESE", "kirara.research_page.GT_TRANSMANGANESE.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSMANGANESE.1", "You have discovered a way to multiply Manganese by steeping Manganese nuggets in metallum harvested from other metals.<BR>It was a lucky break with this, the recipe coming to you in a dream, unfortunately as dreams are want to things got exaggerated a tad, in reality only nuggets may be used.");
+Crucible.addRecipe("GT_TRANSMANGANESE", <gregtech:gt.metaitem.01:9031> * 3, <gregtech:gt.metaitem.01:9031>, "tenebrae 1, vitreus 1, volatus 1, metallum 2");
+Research.addCruciblePage("GT_TRANSMANGANESE", <gregtech:gt.metaitem.01:9031>);
+//Crucible.removeRecipe(<gregtech:gt.metaitem.01:11031>);
+Research.addPrereq("GT_TRANSMANGANESE", "GT_TRANSCHROMIUM", true); 
+Research.addPrereq("GT_TRANSMANGANESE", "GT_ADVANCEDMETALLURGY", false); 
+Research.setConcealed("GT_TRANSMANGANESE", true);
+
+// Stainless Steel
+Research.addResearch("GT_TRANSSTAINLESS", "ALCHEMY", "metallum 5, permutatio 3, machina 3, ordo 3, ignis 3", 21, 12, 3, <gregtech:gt.metaitem.01:9306>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSSTAINLESS", "Stainless Steel Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSSTAINLESS", "[GT] Transformation of metals to stainless steel");
+Research.addPage("GT_TRANSSTAINLESS", "kirara.research_page.GT_TRANSSTAINLESS.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSSTAINLESS.1", "After much experimentation with refining Nickel, Invar, Chrome, and Manganese, you have discovered a way to multiply the complex stainless steel alloy by steeping its nuggets in metallum harvested from other metals.<BR>This transmutation is significantly harder to achieve, as stainless steel is a complex alloy with a large number of components.");
+Crucible.addRecipe("GT_TRANSSTAINLESS", <gregtech:gt.metaitem.01:9306> * 3, <gregtech:gt.metaitem.01:9306>, "ignis 1, metallum 2, volatus 1, nebrisum 1, machina 1, tenebrae 1");
+Research.addCruciblePage("GT_TRANSSTAINLESS", <gregtech:gt.metaitem.01:9306>);
+Research.addPrereq("GT_TRANSSTAINLESS", "GT_TRANSCHROMIUM", false); 
+Research.addPrereq("GT_TRANSSTAINLESS", "GT_TRANSMANGANESE", false); 
+Research.setConcealed("GT_TRANSSTAINLESS", true);
+
+print('Transmutation Initialized');
+
 // Equal Trade
 Research.clearPages("FOCUSTRADE"); 
 Research.addPage("FOCUSTRADE", "tc.research_page.FOCUSTRADE.1");
@@ -1788,267 +2049,6 @@ Research.addCruciblePage("GT_COAL_COKE", <Railcraft:fuel.coke>);
 Research.setConcealed("GT_COAL_COKE", true);
 
 print('Rudimentary Alchemy Complete');
-
-// Wrought Iron
-Research.addResearch("GT_TRANSIRONWROUGHT", "ALCHEMY", "metallum 3, permutatio 3, ordo 1", 4, 5, 1, <gregtech:gt.metaitem.01:9304>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSIRONWROUGHT", "Wrought Iron Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSIRONWROUGHT", "[GT] Transforming iron to wrought iron");
-Research.addPage("GT_TRANSIRONWROUGHT", "kirara.research_page.GT_TRANSIRONWROUGHT.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSIRONWROUGHT.1", "You have discovered a way of making iron harder by thoroughly heating its components.<BR>This method can be used to create a material called wrought iron, which is used in many non-Thaumaturgic applications.");
-Research.addPrereq("GT_TRANSIRONWROUGHT", "ALUMENTUM", false);
-Research.addPrereq("GT_TRANSIRONWROUGHT", "TRANSGOLD", false);
-Crucible.addRecipe("GT_TRANSIRONWROUGHT", <gregtech:gt.metaitem.01:9304>, <ore:nuggetIron>, "ignis 1");
-Research.addCruciblePage("GT_TRANSIRONWROUGHT", <gregtech:gt.metaitem.01:9304>);
-Research.setConcealed("GT_TRANSIRONWROUGHT", true);
-
-// Thaumium
-Research.addResearch("GT_TRANSTHAUMIUM", "ALCHEMY", "metallum 3, permutatio 3, praecantatio 1", 6, 5, 2, <Thaumcraft:ItemResource:2>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSTHAUMIUM", "Thaumium Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSTHAUMIUM", "[GT] Transforming iron to thaumium");
-Research.addPage("GT_TRANSTHAUMIUM", "kirara.research_page.GT_TRANSTHAUMIUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSTHAUMIUM.1", "As it is quite expensive to expend even slivers of shards to produce thaumium, you have devised an alternative method of manufacturing the magical metal.<BR>By exposing wrought iron to praecantatio essentia in the same fashion that you used ignis to manufacture wrought iron, you have effectively created a method to manufacture thaumium without the use of valuable crystal shards.");
-Research.addPrereq("GT_TRANSTHAUMIUM", "GT_TRANSIRONWROUGHT", false);
-Crucible.addRecipe("GT_TRANSTHAUMIUM", <Thaumcraft:ItemResource:2>, <ore:ingotWroughtIron>, "praecantatio 4");
-Research.addCruciblePage("GT_TRANSTHAUMIUM", <Thaumcraft:ItemResource:2>);
-Research.setConcealed("GT_TRANSTHAUMIUM", true);
-
-// Steel
-Research.moveResearch("GT_IRON_TO_STEEL", "ALCHEMY", 6, 7); 
-Research.clearPages("GT_IRON_TO_STEEL"); 
-Research.addPage("GT_IRON_TO_STEEL", "kirara.research_page.GT_IRON_TO_STEEL.1");
-game.setLocalization("en_US", "kirara.research_page.GT_IRON_TO_STEEL.1", "You have discovered a way of making wrought iron even harder by breaking down and reordering its components.<BR>This method can be used to create a material called steel, which is used in many non-Thaumaturgic applications.");
-Crucible.addRecipe("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:9305>, <gregtech:gt.metaitem.01:9304>, "ordo 1");
-Research.addCruciblePage("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:9305>);
-Research.clearPrereqs("GT_IRON_TO_STEEL"); 
-Research.addPrereq("GT_IRON_TO_STEEL", "GT_TRANSIRONWROUGHT", false); 
-Warp.addToResearch("GT_IRON_TO_STEEL", 3);
-
-// Steeleaf
-Research.addResearch("GT_TRANSSTEELEAF", "ALCHEMY", "metallum 3, permutatio 3, tutamen 1, lucrum 1", 8, 6, 2, <gregtech:gt.metaitem.01:9339>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSSTEELEAF", "Steeleaf Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSSTEELEAF", "[GT] Mixing life with metal");
-Research.addPage("GT_TRANSSTEELEAF", "kirara.research_page.GT_TRANSSTEELEAF.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSSTEELEAF.1", "You have discovered a way of imbuing inorganic steel with praecantatio and herba essentia to create an organic alloy that has interesting magical properties.<BR>Unfortunately, this process irreversibly transmutes a significant fraction of the steel consumed in the process, rendering only one-half of the metal recoverable.");
-Research.addPrereq("GT_TRANSSTEELEAF", "GT_IRON_TO_STEEL", false);
-Research.addPrereq("GT_TRANSSTEELEAF", "GT_TRANSTHAUMIUM", false);
-Crucible.addRecipe("GT_TRANSSTEELEAF", <gregtech:gt.metaitem.01:9339>, <ore:nuggetSteel>, "praecantatio 1, herba 1");
-Research.addCruciblePage("GT_TRANSSTEELEAF", <gregtech:gt.metaitem.01:9339>);
-Research.setConcealed("GT_TRANSSTEELEAF", true);
-
-// Knightmetal
-Research.addResearch("GT_TRANSKNIGHTMETAL", "ALCHEMY", "metallum 3, permutatio 3, tutamen 1, lucrum 1", 10, 7, 2, <gregtech:gt.metaitem.01:9362>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSKNIGHTMETAL", "Knightmetal Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSKNIGHTMETAL", "[GT] Alchemically reinforced steel");
-Research.addPage("GT_TRANSKNIGHTMETAL", "kirara.research_page.GT_TRANSKNIGHTMETAL.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSKNIGHTMETAL.1", "You have discovered a way of making steel even harder by imbuing it with magic.<BR>This method creates a strange, green material that is much tougher than the base steel it originated from. Unfortunately, this process vaporizes a significant fraction of the steel consumed in the process, rendering only two-thirds of the metal recoverable.");
-Research.addPrereq("GT_TRANSKNIGHTMETAL", "GT_TRANSSTEELEAF", false);
-Crucible.addRecipe("GT_TRANSKNIGHTMETAL", <gregtech:gt.metaitem.01:9362>, <ore:nuggetSteel>, "praecantatio 1, tutamen 2");
-Research.addCruciblePage("GT_TRANSKNIGHTMETAL", <gregtech:gt.metaitem.01:9362>);
-Research.setConcealed("GT_TRANSKNIGHTMETAL", true);
-
-// Fiery Steel
-Research.addResearch("GT_TRANSFIERYSTEEL", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 10, 5, 3, <gregtech:gt.metaitem.01:9346>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSFIERYSTEEL", "Fiery Steel Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSFIERYSTEEL", "[GT] Enriching steel with cleansing fire");
-Research.addPage("GT_TRANSFIERYSTEEL", "kirara.research_page.GT_TRANSFIERYSTEEL.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSFIERYSTEEL.1", "You theorized that altering the knightmetal transmutation recipe by based off the legends of the hyrda would produce a metal with strength unknown.<BR>As it turns out, the process was even more effective than you initially theorized, while the process does unfortunately cause the metal to crumble into dust it nevertheless radiates the power of the hyrda's breath.");
-Research.addPrereq("GT_TRANSFIERYSTEEL", "GT_TRANSKNIGHTMETAL", false);
-Research.addPrereq("GT_TRANSFIERYSTEEL", "GT_FIRESTONE", false);
-Crucible.addRecipe("GT_TRANSFIERYSTEEL", <gregtech:gt.metaitem.01:9346>, <ore:nuggetSteel>, "praecantatio 1, ignis 4, corpus 2");
-Research.addCruciblePage("GT_TRANSFIERYSTEEL", <gregtech:gt.metaitem.01:9346>);
-Crucible.removeRecipe(<gregtech:gt.metaitem.01:9346>);
-Crucible.addRecipe("GT_TRANSFIERYSTEEL", <gregtech:gt.metaitem.01:346>, <ore:nuggetSteel>, "praecantatio 1, ignis 4, corpus 2");
-Research.setConcealed("GT_TRANSFIERYSTEEL", true);
-
-// Fiery Blood
-Research.addResearch("GT_TRANSFIERYBLOOD", "ALCHEMY", "permutatio 3, victus 3, ignis 3, praecantatio 3", 10, 3, 3, <gregtech:gt.metaitem.01:30346>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSFIERYBLOOD", "Fiery Blood Infusion");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSFIERYBLOOD", "[GT] 100% iron free steel");
-Research.addPage("GT_TRANSFIERYBLOOD", "kirara.research_page.GT_TRANSFIERYBLOOD.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSFIERYBLOOD.1", "You long thought that there was something more to fiery steel, a way to reclaim the metal should be possible should it not? After much work you created this process, exploiting the power of infusion you have managed to remove all traces of metal within the substance, leaving only a liquid that thrums with fire unlike any other you've seen. <BR>This process uses far larger amounts of fiery steel than you initially predicted and requires the strongest beer you can produce, the legendary Dragon Blood.");
-Research.addPrereq("GT_TRANSFIERYBLOOD", "GT_TRANSFIERYSTEEL", false);
-Research.addPrereq("GT_TRANSFIERYBLOOD", "INFUSION", true);
-Infusion.addRecipe("GT_TRANSFIERYBLOOD", <IC2:itemCellEmpty:2>, [<gregtech:gt.metaitem.01:2346>, <gregtech:gt.metaitem.02:32114>, <gregtech:gt.metaitem.01:2346>, <Thaumcraft:ItemShard:2>, <gregtech:gt.metaitem.01:2346>, <gregtech:gt.metaitem.02:32114>, <gregtech:gt.metaitem.01:2346>, <gregtech:gt.metaitem.02:32114>, <gregtech:gt.metaitem.01:2346>, <Thaumcraft:ItemShard:2>, <gregtech:gt.metaitem.01:2346>, <gregtech:gt.metaitem.02:32114>], "aqua 16, victus 16, ignis 16, ordo 16", <gregtech:gt.metaitem.01:30346>, 8);
-Research.addInfusionPage("GT_TRANSFIERYBLOOD", <gregtech:gt.metaitem.01:30346>);
-Research.setConcealed("GT_TRANSFIERYBLOOD", true);
-Warp.addToResearch("GT_TRANSFIERYBLOOD", 3);
-Warp.addToItem(<gregtech:gt.metaitem.01:30346>, 1);
-
-// Astral Silver
-Research.addResearch("GT_TRANSASTRALSILVER", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 12, 7, 2, <gregtech:gt.metaitem.01:9333>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSASTRALSILVER", "Astral Silver Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSASTRALSILVER", "[GT] Teleporters hate this");
-Research.addPage("GT_TRANSASTRALSILVER", "kirara.research_page.GT_TRANSASTRALSILVER.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSASTRALSILVER.1", "The same process used to produce knightmetal may be used to imbue silver with alienis essentia, rendering it far more effective against End-affiliated opponents.");
-Research.addPrereq("GT_TRANSASTRALSILVER", "GT_TRANSKNIGHTMETAL", false);
-Crucible.addRecipe("GT_TRANSASTRALSILVER", <gregtech:gt.metaitem.01:9333>, <ore:nuggetSilver>, "praecantatio 1, alienis 1, iter 1");
-Research.addCruciblePage("GT_TRANSASTRALSILVER", <gregtech:gt.metaitem.01:9333>);
-Research.setConcealed("GT_TRANSASTRALSILVER", true);
-
-// Enderium
-Research.addResearch("GT_TRANSENDERIUM", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 12, 5, 3, <gregtech:gt.metaitem.01:9321>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSENDERIUM", "Enderium Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSENDERIUM", "[GT] Harnessing the power of the End");
-Research.addPage("GT_TRANSENDERIUM", "kirara.research_page.GT_TRANSENDERIUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSENDERIUM.1", "By substituting silver with platinum in the Astral Silver transmutation process, you have managed to create an exotic alloy with surprising attributes - the metal pulses as though it were an ender pearl, and possess many of its properties.");
-Research.addPrereq("GT_TRANSENDERIUM", "GT_TRANSASTRALSILVER", false);
-Crucible.addRecipe("GT_TRANSENDERIUM", <gregtech:gt.metaitem.01:9321>, <ore:nuggetEnderiumBase>, "praecantatio 1, alienis 1, iter 1, ignis 2");
-Research.addCruciblePage("GT_TRANSENDERIUM", <gregtech:gt.metaitem.01:9321>);
-Research.setConcealed("GT_TRANSENDERIUM", true);
-
-
-// Adamantium
-Research.addResearch("GT_TRANSADAMANTIUM", "ALCHEMY", "metallum 3, permutatio 3, tutamen 3, praecantatio 1, ordo 1, tempus 1, telum 1, instrumentum 1", 12, 3, 1, <gregtech:gt.metaitem.01:9319>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSADAMANTIUM", "Adamantium Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSADAMANTIUM", "[GT] Second only to the stars themselves");
-Research.addPage("GT_TRANSADAMANTIUM", "kirara.research_page.GT_TRANSADAMANTIUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSADAMANTIUM.1", "Building off past sucesses with knightmetal and enderium you have managed your ultimate creation in the field of metallurgy. Unfortunately the process is far from cheap and the temperatures required to shape the metal are barely achievable even with all your power and skill leveraged to that end.<BR>As with many others, this recipe was initially transcribed incorrectly and is actually performed with only tiny amounts of dust, I really should go to that appointment...");
-Research.addPrereq("GT_TRANSADAMANTIUM",  "GT_TRANSENDERIUM", false);
-Crucible.addRecipe("GT_TRANSADAMANTIUM", <gregtech:gt.metaitem.01:9319>, <ore:dustTinyKnightmetal>, "tutamen 4, ordo 4, nebrisum 4");
-Research.addCruciblePage("GT_TRANSADAMANTIUM", <gregtech:gt.metaitem.01:9319>);
-Crucible.removeRecipe(<gregtech:gt.metaitem.01:9319>);
-Crucible.addRecipe("GT_TRANSADAMANTIUM", <gregtech:gt.metaitem.01:319>, <ore:dustTinyKnightmetal>, "tutamen 4, ordo 4, nebrisum 4");
-Research.setConcealed("GT_TRANSADAMANTIUM", true);
-game.setLocalization("en_US", "gt.metaitem.01.12319.name", "Hot Adamantium Ingot");
-// NEI.addEntry(<gregtech:gt.metaitem.01:12319>);
-BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12319>], [<gregtech:gt.metaitem.01:2319>], 2500, 1600, 3598);
-VacuumFreezer.addRecipe(<gregtech:gt.metaitem.01:11319>, <gregtech:gt.metaitem.01:12319>, 800);
-
-// Damascus Steel
-Research.addResearch("GT_TRANSSTEELDAMASCUS", "ALCHEMY", "metallum 3, permutatio 3, vitreus 1, perditio 1", 13, 9, 2, <gregtech:gt.metaitem.01:9335>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSSTEELDAMASCUS", "Damascus Steel Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSSTEELDAMASCUS", "[GT] Refining steel even further");
-Research.addPage("GT_TRANSSTEELDAMASCUS", "kirara.research_page.GT_TRANSSTEELDAMASCUS.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSSTEELDAMASCUS.1", "You have discovered a way of making steel even harder by breaking down and crystallizing its components on an atomic level.<BR>This method can be used to refine an amazingly durable variant of steel resembling that of the legendary Damascus Steel normally only found in ancient ruins. Unfortunately, this process leaves the material in dust form, requiring further processing via non-Thaumaturgical means.");
-Research.addPrereq("GT_TRANSSTEELDAMASCUS", "GT_IRON_TO_STEEL", false);
-Crucible.addRecipe("GT_TRANSSTEELDAMASCUS", <gregtech:gt.metaitem.01:9335>, <ore:nuggetSteel>, "ordo 1, machina 1");
-Research.addCruciblePage("GT_TRANSSTEELDAMASCUS", <gregtech:gt.metaitem.01:9335>);
-Research.setConcealed("GT_TRANSSTEELDAMASCUS", true);
-
-// Advanced Metallurgy
-Research.clearPrereqs("GT_ADVANCEDMETALLURGY");
-Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSELECTRUM", false);
-Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSBRASS", false);
-Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSBATTERYALLOY", false);
-Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSSOLDERINGALLOY", false);
-Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSINVAR", false);
-Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSCUPRONICKEL", false);
-Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSBISMUTH", false);
-Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSSTEELDAMASCUS", false);
-
-
-// Platinum
-Research.addResearch("GT_TRANSPLATINUM", "ALCHEMY", "metallum 5, nebrisum 3, permutatio 3, ordo 3, lucrum 3", 19, 15, 2, <gregtech:gt.metaitem.01:9085>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSPLATINUM", "Platinum Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSPLATINUM", "[GT] Transformation of metals to Platinum");
-
-// Research.clearPages("GT_TRANSPLATINUM"); 
-Research.addPage("GT_TRANSPLATINUM", "kirara.research_page.GT_TRANSPLATINUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSPLATINUM.1", "You have discovered a way to multiply Platinum by steeping Platinum nuggets in metallum harvested from other metals.<BR>This transmutation is quite costly, requiring a whole ingot of platinum's worth in nebrisum to create a mere nugget of the same metal. Perhaps if you could discover an alternative source for this essentia...");
-Crucible.addRecipe("GT_TRANSPLATINUM", <gregtech:gt.metaitem.01:9085> * 3, <gregtech:gt.metaitem.01:9085>, "nebrisum 1, lucrum 2, metallum 2");
-Research.addCruciblePage("GT_TRANSPLATINUM", <gregtech:gt.metaitem.01:9085>);
-Research.addPrereq("GT_TRANSPLATINUM", "GT_ADVANCEDMETALLURGY", false); 
-Research.addPrereq("GT_TRANSPLATINUM", "GT_TRANSALUMINIUM", true); 
-Research.setConcealed("GT_TRANSPLATINUM", true);
-Warp.addToResearch("GT_TRANSPLATINUM", 1);
-
-// Iridium
-Research.addResearch("GT_TRANSIRIDIUM", "ALCHEMY", "metallum 5, machina 3, permutatio 3, tutamen 3, electrum 3", 21, 15, 3, <gregtech:gt.metaitem.01:9084>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSIRIDIUM", "Iridium Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSIRIDIUM", "[GT] Transformation of metals to Iridium");
-
-// Research.clearPages("GT_TRANSIRIDIUM"); 
-Research.addPage("GT_TRANSIRIDIUM", "kirara.research_page.GT_TRANSIRIDIUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSIRIDIUM.1", "You have discovered a way to multiply Iridium by steeping Iridium nuggets in metallum harvested from other metals.<BR>This transmutation is quite costly, requiring a whole ingot of platinum's worth in nebrisum to create a mere nugget of iridium. Perhaps if you could discover an alternative source for this essentia...");
-Crucible.addRecipe("GT_TRANSIRIDIUM", <gregtech:gt.metaitem.01:9084> * 3, <gregtech:gt.metaitem.01:9084>, "lucrum 1, nebrisum 1, metallum 2, machina 1");
-Research.addCruciblePage("GT_TRANSIRIDIUM", <gregtech:gt.metaitem.01:9084>);
-Crucible.removeRecipe(<gregtech:gt.metaitem.01:9084>);
-Crucible.addRecipe("GT_TRANSIRIDIUM", <gregtech:gt.metaitem.01:84> * 3, <gregtech:gt.metaitem.01:9084>, "lucrum 1, nebrisum 1, metallum 2, machina 1");
-Research.addPrereq("GT_TRANSIRIDIUM", "GT_TRANSPLATINUM", false); 
-Research.setConcealed("GT_TRANSIRIDIUM", true);
-Warp.addToResearch("GT_TRANSIRIDIUM", 1);
-
-// Titanium
-Research.addResearch("GT_TRANSTITANIUM", "ALCHEMY", "metallum 5, tutamen 3, permutatio 3, ordo 3, instrumentum 3", 19, 16, 3, <gregtech:gt.metaitem.01:9028>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSTITANIUM", "Titanium Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSTITANIUM", "[GT] Transformation of metals to Titanium");
-
-// Research.clearPages("GT_TRANSTITANIUM"); 
-Research.addPage("GT_TRANSTITANIUM", "kirara.research_page.GT_TRANSTITANIUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSTITANIUM.1", "You have discovered a way to multiply Titanium by steeping Titanium nuggets in metallum harvested from other metals.<BR>Unfortunately, this process leaves the material in an oxidized form, requiring further processing via non-Thaumaturgical means.");
-Crucible.addRecipe("GT_TRANSTITANIUM", <gregtech:gt.metaitem.01:375> * 3, <gregtech:gt.metaitem.01:9028>, "metallum 2, tutamen 1, permutatio 1, machina 1");
-Research.addCruciblePage("GT_TRANSTITANIUM", <gregtech:gt.metaitem.01:375>);
-Research.addPrereq("GT_TRANSTITANIUM", "GT_ADVANCEDMETALLURGY", false); 
-Research.addPrereq("GT_TRANSTITANIUM", "GT_TRANSPLATINUM", true); 
-Research.setConcealed("GT_TRANSTITANIUM", true);
-Warp.addToResearch("GT_TRANSTITANIUM", 1);
-
-// Tungsten
-Research.addResearch("GT_TRANSTUNGSTEN", "ALCHEMY", "metallum 5, tutamen 3, permutatio 3, sano 3, lux 3", 19, 17, 3, <gregtech:gt.metaitem.01:9081>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSTUNGSTEN", "Tungsten Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSTUNGSTEN", "[GT] Transformation of metals to Tungsten");
-Research.addPage("GT_TRANSTUNGSTEN", "kirara.research_page.GT_TRANSTUNGSTEN.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSTUNGSTEN.1", "You have discovered a way to multiply Tungsten by steeping Tungsten nuggets in metallum harvested from other metals.<BR>Unfortunately, this process leaves the material in an oxidized form, requiring further processing via non-Thaumaturgical means.");
-Crucible.addRecipe("GT_TRANSTUNGSTEN", <gregtech:gt.metaitem.01:910> * 21, <gregtech:gt.metaitem.01:9081>, "metallum 2, tutamen 1, sano 1, lux 1");
-Research.addCruciblePage("GT_TRANSTUNGSTEN", <gregtech:gt.metaitem.01:910>);
-Research.addPrereq("GT_TRANSTUNGSTEN", "GT_ADVANCEDMETALLURGY", true); 
-Research.addPrereq("GT_TRANSTUNGSTEN", "GT_TRANSTITANIUM", false); 
-Research.setConcealed("GT_TRANSTUNGSTEN", true);
-
-// Uranium
-Research.addResearch("GT_TRANSURANIUM", "ALCHEMY", "metallum 5, radio 3, permutatio 3, venenum 3, potentia 3", 21, 16, 3, <gregtech:gt.metaitem.01:9098>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSURANIUM", "Uranium Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSURANIUM", "[GT] Transformation of metals to Uranium");
-Research.addPage("GT_TRANSURANIUM", "kirara.research_page.GT_TRANSURANIUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSURANIUM.1", "You have discovered a way to multiply Uranium by steeping Uranium nuggets in a vast number of different essentia.<BR>Unfortunately, this process leaves the material in an oxidized form, requiring further processing via non-Thaumaturgical means.");
-Crucible.addRecipe("GT_TRANSURANIUM", <gregtech:gt.metaitem.01:2922>, <gregtech:gt.metaitem.01:9098>, "potentia 1, radio 1, metallum 2, venenum 1");
-Research.addCruciblePage("GT_TRANSURANIUM", <gregtech:gt.metaitem.01:2922>);
-Research.addPrereq("GT_TRANSURANIUM", "GT_TRANSPLATINUM", false); 
-Research.addPrereq("GT_TRANSURANIUM", "GT_TRANSTITANIUM", false); 
-Research.addPrereq("GT_TRANSURANIUM", "GT_TRANSTUNGSTEN", false); 
-Research.setConcealed("GT_TRANSURANIUM", true);
-Warp.addToResearch("GT_TRANSURANIUM", 5);
-
-// Chromium
-Research.addResearch("GT_TRANSCHROMIUM", "ALCHEMY", "metallum 5, machina 3, permutatio 3, nebrisum 3, lucrum 3", 19, 13, 2, <gregtech:gt.metaitem.01:9030>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSCHROMIUM", "Chromium Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSCHROMIUM", "[GT] Transformation of metals to Chromium");
-Research.addPage("GT_TRANSCHROMIUM", "kirara.research_page.GT_TRANSCHROMIUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSCHROMIUM.1", "You have discovered a way to multiply Chromium by steeping Chromium nuggets in metallum harvested from other metals.<BR>This transmutation is quite costly, requiring a large quantity of rare essentia to produce a tiny pile of chrome dust.<BR>While not the most worthwhile recipe by itself, you wonder if this discovery could lead to other, far more valuable transmutations.");
-Crucible.addRecipe("GT_TRANSCHROMIUM", <gregtech:gt.metaitem.01:9030> * 3, <gregtech:gt.metaitem.01:9030>, "machina 1, nebrisum 1, metallum 2, auram 1");
-Research.addCruciblePage("GT_TRANSCHROMIUM", <gregtech:gt.metaitem.01:9030>);
-Crucible.removeRecipe(<gregtech:gt.metaitem.01:9030>);
-Crucible.addRecipe("GT_TRANSCHROMIUM", <gregtech:gt.metaitem.01:30> * 3, <gregtech:gt.metaitem.01:9030>, "machina 1, nebrisum 1, metallum 2, auram 1");
-Research.addPrereq("GT_TRANSCHROMIUM", "GT_TRANSALUMINIUM", true);
-Research.addPrereq("GT_TRANSCHROMIUM", "GT_ADVANCEDMETALLURGY", false); 
-Research.setConcealed("GT_TRANSCHROMIUM", true);
-
-// Manganese
-Research.addResearch("GT_TRANSMANGANESE", "ALCHEMY", "metallum 5, tenebrae 3, permutatio 3, nebrisum 3, volatus 3", 19, 12, 2, <gregtech:gt.metaitem.01:9031>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSMANGANESE", "Manganese Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSMANGANESE", "[GT] Transformation of metals to Manganese");
-Research.addPage("GT_TRANSMANGANESE", "kirara.research_page.GT_TRANSMANGANESE.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSMANGANESE.1", "You have discovered a way to multiply Manganese by steeping Manganese nuggets in metallum harvested from other metals.<BR>It was a lucky break with this, the recipe coming to you in a dream, unfortunately as dreams are want to things got exaggerated a tad, in reality only nuggets may be used.");
-Crucible.addRecipe("GT_TRANSMANGANESE", <gregtech:gt.metaitem.01:9031> * 3, <gregtech:gt.metaitem.01:9031>, "tenebrae 1, vitreus 1, volatus 1, metallum 2");
-Research.addCruciblePage("GT_TRANSMANGANESE", <gregtech:gt.metaitem.01:9031>);
-//Crucible.removeRecipe(<gregtech:gt.metaitem.01:11031>);
-Research.addPrereq("GT_TRANSMANGANESE", "GT_TRANSCHROMIUM", true); 
-Research.addPrereq("GT_TRANSMANGANESE", "GT_ADVANCEDMETALLURGY", false); 
-Research.setConcealed("GT_TRANSMANGANESE", true);
-
-// Stainless Steel
-Research.addResearch("GT_TRANSSTAINLESS", "ALCHEMY", "metallum 5, permutatio 3, machina 3, ordo 3, ignis 3", 21, 12, 3, <gregtech:gt.metaitem.01:9306>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSSTAINLESS", "Stainless Steel Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSSTAINLESS", "[GT] Transformation of metals to stainless steel");
-Research.addPage("GT_TRANSSTAINLESS", "kirara.research_page.GT_TRANSSTAINLESS.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSSTAINLESS.1", "After much experimentation with refining Nickel, Invar, Chrome, and Manganese, you have discovered a way to multiply the complex stainless steel alloy by steeping its nuggets in metallum harvested from other metals.<BR>This transmutation is significantly harder to achieve, as stainless steel is a complex alloy with a large number of components.");
-Crucible.addRecipe("GT_TRANSSTAINLESS", <gregtech:gt.metaitem.01:9306> * 3, <gregtech:gt.metaitem.01:9306>, "ignis 1, metallum 2, volatus 1, nebrisum 1, machina 1, tenebrae 1");
-Research.addCruciblePage("GT_TRANSSTAINLESS", <gregtech:gt.metaitem.01:9306>);
-Research.addPrereq("GT_TRANSSTAINLESS", "GT_TRANSCHROMIUM", false); 
-Research.addPrereq("GT_TRANSSTAINLESS", "GT_TRANSMANGANESE", false); 
-Research.setConcealed("GT_TRANSSTAINLESS", true);
-
-print('Transmutation Initialized');
 
 // Voidmetal
 Crucible.addRecipe("VOIDMETAL", <Thaumcraft:ItemNugget:7> * 3, <Thaumcraft:ItemResource:17>, "metallum 3");
