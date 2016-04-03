@@ -586,5 +586,5 @@ recipes.addShapeless(GTDough, [anyWater, foodSalt, dustWheat]);
 recipes.addShapeless(GTDough, [anyWater, GTSalt, dustWheat]);
 //Mixer
 //OutputStack, OutputFluid (optional), InputArray, FluidInput, Time in Ticks, EnergyUsage
-Mixer.addRecipe(GTDough * 2, null, [GTFlour, <InfinityCore:itemMaterial:16>], <liquid:water> * 1000, 31, 256);
-Mixer.addRecipe(GTDough * 2, null, [GTFlour, GTSalt], <liquid:water> * 1000, 31, 256);
+Mixer.addRecipe(GTDough * 2, null, [GTFlour, <InfinityCore:itemMaterial:16>], <liquid:water> * 1000, 31, 8);
+Mixer.addRecipe(GTDough * 2, null, [GTFlour, GTSalt], <liquid:water> * 1000, 31, 8);
