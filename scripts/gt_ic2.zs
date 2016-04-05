@@ -534,6 +534,17 @@ game.setLocalization("ic2.fluidBiomass", "Industrial Biomass");
 <ore:blockYellowStripes>.add(<gregtech:gt.blockcasings3:1>);
 <ore:craftingWireCopper>.remove(<IC2:itemCable>);
 <ore:wireCopper>.remove(<IC2:itemCable>);
+<ore:listAllCoalOre>.add(<gregtech:gt.blockores:535>);
+<ore:listAllCoalOre>.add(<gregtech:gt.blockores:1535>);
+<ore:listAllCoalOre>.add(<gregtech:gt.blockores:2535>);
+<ore:listAllCoalOre>.add(<gregtech:gt.blockores:3535>);
+<ore:listAllCoalOre>.add(<gregtech:gt.blockores:4535>);
+<ore:listAllCoalOre>.add(<minecraft:coal_ore>);
+<ore:listAllChalcoOre>.add(<gregtech:gt.blockores:855>);
+<ore:listAllChalcoOre>.add(<gregtech:gt.blockores:1855>);
+<ore:listAllChalcoOre>.add(<gregtech:gt.blockores:2855>);
+<ore:listAllChalcoOre>.add(<gregtech:gt.blockores:3855>);
+<ore:listAllChalcoOre>.add(<gregtech:gt.blockores:4855>);
 
 # -- Fixing JABBA unification exploits --
 
