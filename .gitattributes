@@ -16,3 +16,38 @@
 *.PDF  diff=astextplain
 *.rtf  diff=astextplain
 *.RTF  diff=astextplain
+
+# Normalize text files
+*.zs            text
+*.txt           text
+*.cfg           text
+*.ini           text
+*.js            text
+*.md            text
+*.html          text
+*.csv           text
+*.css           text
+*.htm           text
+*.html          text
+*.json          text
+*.properties    text
+*.sh            text
+*.xml           text
+*.recipe        text
+*.recipes       text
+*.conf          text
+*.toc           text
+*.lang          text
+*.config        text
+
+
+# Binaries
+*.jar         binary
+*.jpg         binary
+*.jpeg        binary
+*.png         binary
+*.bin         binary
+*.zip         binary
+*.disabled    binary
+*.hqm         binary
+*.hqm-backup  binary
