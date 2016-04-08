@@ -6,6 +6,14 @@ import mods.forestry.Carpenter;
 var backpackThaumaturge = <MagicBees:backpack.thaumaturgeT1>;
 var backpackThaumaturgeT2 = <MagicBees:backpack.thaumaturgeT2>;
 
+var oreComb = <ore:beeComb>;
+var moltenComb = <MagicBees:comb:1>;
+var occultComb = <MagicBees:comb:2>;
+var otherworldyComb = <MagicBees:comb:3>;
+var transmutingComb = <MagicBees:comb:4>;
+var paperyComb = <MagicBees:comb:5>;
+var soulComb = <MagicBees:comb:6>;
+
 # Recipe tweaks
 // --- Backs ---
 recipes.remove(backpackThaumaturge);
@@ -18,3 +26,11 @@ Carpenter.removeRecipe(backpackThaumaturgeT2);
 Carpenter.addRecipe(backpackThaumaturgeT2, [[<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
                                             [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
                                             [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>]], <liquid:seedoil> * 5000, 600, backpackThaumaturge);
+
+# OreDict fix
+oreComb.add(moltenComb);
+oreComb.add(occultComb);
+oreComb.add(otherworldyComb);
+oreComb.add(transmutingComb);
+oreComb.add(paperyComb);
+oreComb.add(soulComb);
