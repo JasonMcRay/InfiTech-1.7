@@ -490,7 +490,7 @@ Crucible.addRecipe("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:9305>, <gregtech
 Research.addCruciblePage("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:9305>);
 Research.clearPrereqs("GT_IRON_TO_STEEL"); 
 Research.addPrereq("GT_IRON_TO_STEEL", "GT_TRANSIRONWROUGHT", false); 
-Warp.addToResearch("GT_IRON_TO_STEEL", 3);
+Warp.addToResearch("GT_IRON_TO_STEEL", 2);
 
 // Steeleaf
 Research.addResearch("GT_TRANSSTEELEAF", "ALCHEMY", "metallum 3, permutatio 3, tutamen 1, lucrum 1", 8, 6, 2, <gregtech:gt.metaitem.01:9339>);
@@ -619,7 +619,6 @@ Research.addCruciblePage("GT_TRANSPLATINUM", <gregtech:gt.metaitem.01:9085>);
 Research.addPrereq("GT_TRANSPLATINUM", "GT_ADVANCEDMETALLURGY", false); 
 Research.addPrereq("GT_TRANSPLATINUM", "GT_TRANSALUMINIUM", true); 
 Research.setConcealed("GT_TRANSPLATINUM", true);
-Warp.addToResearch("GT_TRANSPLATINUM", 1);
 
 // Iridium
 Research.addResearch("GT_TRANSIRIDIUM", "ALCHEMY", "metallum 5, machina 3, permutatio 3, tutamen 3, electrum 3", 21, 15, 3, <gregtech:gt.metaitem.01:9084>);
@@ -635,7 +634,7 @@ Crucible.removeRecipe(<gregtech:gt.metaitem.01:9084>);
 Crucible.addRecipe("GT_TRANSIRIDIUM", <gregtech:gt.metaitem.01:84> * 3, <gregtech:gt.metaitem.01:9084>, "lucrum 1, nebrisum 1, metallum 2, machina 1");
 Research.addPrereq("GT_TRANSIRIDIUM", "GT_TRANSPLATINUM", false); 
 Research.setConcealed("GT_TRANSIRIDIUM", true);
-Warp.addToResearch("GT_TRANSIRIDIUM", 1);
+Warp.addToResearch("GT_TRANSIRIDIUM", 2);
 
 // Titanium
 Research.addResearch("GT_TRANSTITANIUM", "ALCHEMY", "metallum 5, tutamen 3, permutatio 3, ordo 3, instrumentum 3", 19, 16, 3, <gregtech:gt.metaitem.01:9028>);
@@ -663,6 +662,7 @@ Research.addCruciblePage("GT_TRANSTUNGSTEN", <gregtech:gt.metaitem.01:910>);
 Research.addPrereq("GT_TRANSTUNGSTEN", "GT_ADVANCEDMETALLURGY", true); 
 Research.addPrereq("GT_TRANSTUNGSTEN", "GT_TRANSTITANIUM", false); 
 Research.setConcealed("GT_TRANSTUNGSTEN", true);
+Warp.addToResearch("GT_TRANSTUNGSTEN", 1);
 
 // Uranium
 Research.addResearch("GT_TRANSURANIUM", "ALCHEMY", "metallum 5, radio 3, permutatio 3, venenum 3, potentia 3", 21, 16, 3, <gregtech:gt.metaitem.01:9098>);
@@ -676,7 +676,7 @@ Research.addPrereq("GT_TRANSURANIUM", "GT_TRANSPLATINUM", false);
 Research.addPrereq("GT_TRANSURANIUM", "GT_TRANSTITANIUM", false); 
 Research.addPrereq("GT_TRANSURANIUM", "GT_TRANSTUNGSTEN", false); 
 Research.setConcealed("GT_TRANSURANIUM", true);
-Warp.addToResearch("GT_TRANSURANIUM", 5);
+Warp.addToResearch("GT_TRANSURANIUM", 4);
 
 // Chromium
 Research.addResearch("GT_TRANSCHROMIUM", "ALCHEMY", "metallum 5, machina 3, permutatio 3, nebrisum 3, lucrum 3", 19, 13, 2, <gregtech:gt.metaitem.01:9030>);
@@ -716,6 +716,7 @@ Research.addCruciblePage("GT_TRANSSTAINLESS", <gregtech:gt.metaitem.01:9306>);
 Research.addPrereq("GT_TRANSSTAINLESS", "GT_TRANSCHROMIUM", false); 
 Research.addPrereq("GT_TRANSSTAINLESS", "GT_TRANSMANGANESE", false); 
 Research.setConcealed("GT_TRANSSTAINLESS", true);
+Warp.addToResearch("GT_TRANSSTAINLESS", 2);
 
 print('Transmutation Initialized');
 
@@ -881,12 +882,11 @@ game.setLocalization("en_US", "tile.extrautils:pureLove.name", "Pure Love");
 // Adding Warp to Research
 //*************************
 
-Warp.addToResearch("TRANSGOLD", 2);
-Warp.addToResearch("GT_ADVANCEDMETALLURGY", 3);
-Warp.addToResearch("RUNICARMOR", 5);
-Warp.addToResearch("INFERNALFURNACE", 4);
+Warp.addToResearch("GT_ADVANCEDMETALLURGY", 2);
+Warp.addToResearch("RUNICARMOR", 3);
+Warp.addToResearch("INFERNALFURNACE", 2);
 Warp.addToResearch("BONEBOW", 1);
-Warp.addToResearch("MIRROR", 3);
+Warp.addToResearch("MIRROR", 2);
 
 // GT Advanced Metallurgy Lore
 
@@ -1541,7 +1541,7 @@ Crucible.addRecipe("AM_GEMVINTEUM", gemVinteum, <Thaumcraft:ItemShard:6>, "praec
 Research.addCruciblePage("AM_GEMVINTEUM", gemVinteum);
 Crucible.addRecipe("AM_GEMVINTEUM", gemVinteum, <ore:dustVinteum>, "vitreus 4");
 Research.setConcealed("AM_GEMVINTEUM", true);
-Warp.addToResearch("AM_GEMVINTEUM", 2);
+Warp.addToResearch("AM_GEMVINTEUM", 1);
 
 Research.addPrereq("RUNICARMOR", "AM_GEMVINTEUM", true);
 Research.addPrereq("MIRROR", "AM_GEMVINTEUM", true);
@@ -1975,7 +1975,6 @@ Research.addInfusionPage("GT_FIRESTONE", <Railcraft:firestone.refined:0>);
 Infusion.addRecipe("GT_FIRESTONE", <Railcraft:firestone.cracked:*>, [dustPyrotheum, dustPyrotheum, dustPyrotheum, dustPyrotheum], "ignis 32, praecantatio 64, vitreus 32", <Railcraft:firestone.refined:4999>, 3);
 Research.addInfusionPage("GT_FIRESTONE", <Railcraft:firestone.refined:4999>);
 Research.setConcealed("GT_FIRESTONE", true);
-Warp.addToResearch("GT_FIRESTONE", 1);
 
 // Basic Wand Craft Thaumonomicon Entry
 Research.clearPages("BASICTHAUMATURGY"); 
@@ -2012,7 +2011,6 @@ Research.addPrereq("RC_ABYSSAL_STONE", "RC_QUARRIED_STONE", false);
 Crucible.addRecipe("RC_ABYSSAL_STONE", <Railcraft:cube:6>, <minecraft:stone>, "tenebrae 2");
 Research.addCruciblePage("RC_ABYSSAL_STONE", <Railcraft:cube:6>);
 Research.setConcealed("RC_ABYSSAL_STONE", true);
-Warp.addToResearch("RC_ABYSSAL_STONE", 1);
 
 // Peat
 Research.addResearch("GT_MATURE_PEAT", "ALCHEMY", "ignis 3, aqua 1, permutatio 1, potentia 3", -7, -1, 2, <Forestry:peat>);
