@@ -294,24 +294,6 @@ Research.addPrereq("PUREALUMINIUM", "PUREIRON", false);
 BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:11019> * 2], [<InfinityCore:itemCluster:0>], 1700, 120, 1700);
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2019> * 3, <gregtech:gt.metaitem.01:2019>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:0>, [10000, 5000, 500], 400, 2);
 
-<ore:listAllOreUranium235>.addAll(<ore:oreUranium235>);
-<ore:listAllOreUranium235>.add(<gregtech:gt.blockores:97>);
-<ore:listAllOreUranium235>.add(<gregtech:gt.blockores:1097>);
-<ore:listAllOreUranium235>.add(<gregtech:gt.blockores:2097>);
-<ore:listAllOreUranium235>.add(<gregtech:gt.blockores:3097>);
-<ore:listAllOreUranium235>.add(<gregtech:gt.blockores:4097>);
-Research.addResearch("PUREURANIUM235", "ALCHEMY", "metallum 3, ordo 2, radio 2", -8, 5, 2, <InfinityCore:itemCluster:12>);
-game.setLocalization("en_US", "tc.research_name.PUREURANIUM235", "Uranium 235 Purification");
-game.setLocalization("en_US", "tc.research_text.PUREURANIUM235", "[GT] Purification of uranium 235 into native clusters");
-Research.addPage("PUREURANIUM235", "kirara.research_page.PUREURANIUM235.1");
-game.setLocalization("en_US", "kirara.research_page.PUREURANIUM235.1", "Native clusters are rare concentrations of metal in its purest form. You have discovered a way to purify and concentrate normal uranium 235 ore into a native uranium 235 cluster.<BR>When smelted these clusters provide twice the normal amount of uranium 235 ingots, and when carefully pulverized can provide as much as four uranium 235 dust.");
-Crucible.addRecipe("PUREURANIUM235", <InfinityCore:itemCluster:12>, <ore:listAllOreUranium235>, "metallum 1, ordo 1");
-Research.addCruciblePage("PUREURANIUM235", <InfinityCore:itemCluster:12>);
-Research.setSecondary("PUREURANIUM235", true);
-Research.addPrereq("PUREURANIUM235", "PUREIRON", false);
-
-Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2097> * 3, <gregtech:gt.metaitem.01:2097>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:12>, [10000, 5000, 500], 400, 2);
-
 <ore:listAllOreUranium238>.addAll(<ore:oreUranium238>);
 <ore:listAllOreUranium238>.add(<gregtech:gt.blockores:98>);
 <ore:listAllOreUranium238>.add(<gregtech:gt.blockores:1098>);
