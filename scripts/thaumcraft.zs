@@ -329,6 +329,15 @@ Infusion.removeRecipe(<Thaumcraft:WandRod:4>); // Quartz
 Infusion.removeRecipe(<Thaumcraft:WandRod:5>); // Reed
 Infusion.removeRecipe(<Thaumcraft:WandRod:6>); // Blaze
 Infusion.removeRecipe(<Thaumcraft:WandRod:7>); // Bone
+// Staff Cores
+Arcane.removeRecipe(<Thaumcraft:WandRod:50>);
+Arcane.removeRecipe(<Thaumcraft:WandRod:51>);
+Arcane.removeRecipe(<Thaumcraft:WandRod:52>);
+Arcane.removeRecipe(<Thaumcraft:WandRod:53>);
+Arcane.removeRecipe(<Thaumcraft:WandRod:54>);
+Arcane.removeRecipe(<Thaumcraft:WandRod:55>);
+Arcane.removeRecipe(<Thaumcraft:WandRod:56>);
+Arcane.removeRecipe(<Thaumcraft:WandRod:57>);
 // Basic Infusion Tools
 Infusion.removeRecipe(<Thaumcraft:ItemPickaxeElemental>);
 Infusion.removeRecipe(<Thaumcraft:ItemAxeElemental>);
@@ -1396,6 +1405,7 @@ Research.addPrereq("ROD_greatwood", "GT_IRON_TO_STEEL", true);
 Arcane.addShaped("ROD_greatwood", <Thaumcraft:WandRod>, "perditio 25, terra 25", [[null, null, <Thaumcraft:blockMagicalLog>], 
                                                                                   [null, <ore:stickSteel>, null],
                                                                                   [<Thaumcraft:blockMagicalLog>, null, null]]);
+Arcane.addShaped("ROD_greatwood_staff", <Thaumcraft:WandRod:50>, "terra 62", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:0>, null], [<Thaumcraft:WandRod:0>, null, null]]);
 
 // Adjust NEI to match
 NEI.addEntry(<Thaumcraft:WandCasting:2>.withTag({cap: "copper", rod: "wood", aqua: 2500, terra: 2500, ignis: 2500, ordo: 2500, perditio: 2500, aer: 2500}));
@@ -1407,37 +1417,37 @@ NEI.addEntry(<Thaumcraft:WandCasting:192>.withTag({cap: "void", rod: "primal_sta
 // Obsidian Rod
 Research.addPrereq("ROD_obsidian", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_obsidian", <gregtech:gt.metaitem.01:23306>, [<minecraft:obsidian>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:3>], "praecantatio 48, tenebrae 48, terra 96", <Thaumcraft:WandRod:1>, 2);
-// Assembler.addRecipe(<Thaumcraft:WandRod:1>, <minecraft:obsidian>, <Thaumcraft:WandRod:1> * 0, 360, 120);
+Arcane.addShaped("ROD_obsidian_staff", <Thaumcraft:WandRod:51>, "terra 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:1>, null], [<Thaumcraft:WandRod:1>, null, null]]);
 
 // Icy Rod
 Research.addPrereq("ROD_ice", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_ice", <gregtech:gt.metaitem.01:23306>, [<minecraft:ice>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:2>], "aqua 96, gelum 48, praecantatio 48", <Thaumcraft:WandRod:3>, 2);
-// Assembler.addRecipe(<Thaumcraft:WandRod:3>, <minecraft:ice>, <Thaumcraft:WandRod:3> * 0, 360, 120);
+Arcane.addShaped("ROD_ice_staff", <Thaumcraft:WandRod:53>, "aqua 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:3>, null], [<Thaumcraft:WandRod:3>, null, null]]);
 
 // Quartz Rod
 Research.addPrereq("ROD_quartz", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_quartz", <gregtech:gt.metaitem.01:23306>, [<minecraft:quartz_block>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:4>], "ordo 96, praecantatio 48, vitreus 48", <Thaumcraft:WandRod:4>, 2);
-// Assembler.addRecipe(<Thaumcraft:WandRod:4>, <minecraft:quartz_block>, <Thaumcraft:WandRod:4> * 0, 360, 120);
+Arcane.addShaped("ROD_quartz_staff", <Thaumcraft:WandRod:54>, "ordo 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:4>, null], [<Thaumcraft:WandRod:4>, null, null]]);
 
 // Reed Rod
 Research.addPrereq("ROD_reed", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_reed", <gregtech:gt.metaitem.01:23306>, [<minecraft:reeds>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard>], "aer 96, motus 48, praecantatio 48", <Thaumcraft:WandRod:5>, 2);
-// Assembler.addRecipe(<Thaumcraft:WandRod:5>, <minecraft:reeds>, <Thaumcraft:WandRod:5> * 0, 360, 120);
+Arcane.addShaped("ROD_reed_staff", <Thaumcraft:WandRod:55>, "aer 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:5>, null], [<Thaumcraft:WandRod:5>, null, null]]);
 
 // Blazing Rod
 Research.addPrereq("ROD_blaze", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_blaze", <gregtech:gt.metaitem.01:23306>, [<minecraft:blaze_rod>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:1>], "bestia 48, ignis 96, praecantatio 48", <Thaumcraft:WandRod:6>, 2);
-// Assembler.addRecipe(<Thaumcraft:WandRod:6>, <minecraft:blaze_rod>, <Thaumcraft:WandRod:6> * 0, 360, 120);
+Arcane.addShaped("ROD_blaze_staff", <Thaumcraft:WandRod:56>, "ignis 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:6>, null], [<Thaumcraft:WandRod:6>, null, null]]);
 
 // Bone Rod
 Research.addPrereq("ROD_bone", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_bone", <gregtech:gt.metaitem.01:23306>, [<minecraft:bone>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:5>], "exanimis 48, perditio 96, praecantatio 48", <Thaumcraft:WandRod:7>, 2);
-// Assembler.addRecipe(<Thaumcraft:WandRod:7>, <minecraft:bone>, <Thaumcraft:WandRod:7> * 0, 360, 120);
+Arcane.addShaped("ROD_bone_staff", <Thaumcraft:WandRod:57>, "perditio 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:7>, null], [<Thaumcraft:WandRod:7>, null, null]]);
 
 // Silverwood Rod
 Research.addPrereq("ROD_silverwood", "GT_TRANSTITANIUM", true);
 Infusion.addRecipe("ROD_silverwood", rodTitanium, [<Thaumcraft:blockMagicalLog:1>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard>, <Thaumcraft:ItemShard:1>, <Thaumcraft:ItemShard:2>, <Thaumcraft:ItemShard:3>, <Thaumcraft:ItemShard:4>, <Thaumcraft:ItemShard:5>], "aer 64, aqua 64, ignis 64, ordo 64, perditio 64, praecantatio 64, terra 64", <Thaumcraft:WandRod:2>, 5);
-// Assembler.addRecipe(<Thaumcraft:WandRod:2>, <Thaumcraft:blockMagicalLog:1> * 2, <Thaumcraft:WandRod:2> * 0, 360, 120);
+Arcane.addShaped("ROD_silverwood_staff", <Thaumcraft:WandRod:52>, "ordo 132", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:2>, null], [<Thaumcraft:WandRod:2>, null, null]]);
 
 // Sceptre
 Research.removeResearch("CAP_gold");
@@ -2130,6 +2140,14 @@ Research.refreshResearchRecipe("ROD_quartz");
 Research.refreshResearchRecipe("ROD_reed");
 Research.refreshResearchRecipe("ROD_blaze");
 Research.refreshResearchRecipe("ROD_bone");
+Research.refreshResearchRecipe("ROD_greatwood_staff");
+Research.refreshResearchRecipe("ROD_silverwood_staff");
+Research.refreshResearchRecipe("ROD_obsidian_staff");
+Research.refreshResearchRecipe("ROD_ice_staff");
+Research.refreshResearchRecipe("ROD_quartz_staff");
+Research.refreshResearchRecipe("ROD_reed_staff");
+Research.refreshResearchRecipe("ROD_blaze_staff");
+Research.refreshResearchRecipe("ROD_bone_staff");
 Research.refreshResearchRecipe("AUTOHANDMIRROR");
 Research.refreshResearchRecipe("ENCHANTER");
 Research.refreshResearchRecipe("SPINNINGWHEEL");
