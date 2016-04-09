@@ -28,3 +28,9 @@
 *.xml       text
 *.lang      text
 *.recipes   text
+
+# Special ones
+AmadronOffersPeriodic.cfg       -text
+AmadronOffersStatic.cfg         -text
+AmadronTradingSettings.cfg      -text
+ProgrammingPuzzleBlacklist.cfg  -text
