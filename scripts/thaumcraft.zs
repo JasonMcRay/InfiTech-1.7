@@ -496,6 +496,7 @@ Research.moveResearch("GT_IRON_TO_STEEL", "ALCHEMY", 6, 7);
 Research.clearPages("GT_IRON_TO_STEEL"); 
 Research.addPage("GT_IRON_TO_STEEL", "kirara.research_page.GT_IRON_TO_STEEL.1");
 game.setLocalization("en_US", "kirara.research_page.GT_IRON_TO_STEEL.1", "You have discovered a way of making wrought iron even harder by breaking down and reordering its components.<BR>This method can be used to create a material called steel, which is used in many non-Thaumaturgic applications.");
+Crucible.removeRecipe(<gregtech:gt.metaitem.01:9305>);
 Crucible.addRecipe("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:9305>, <gregtech:gt.metaitem.01:9304>, "ordo 1");
 Research.addCruciblePage("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:9305>);
 Research.clearPrereqs("GT_IRON_TO_STEEL"); 
@@ -871,7 +872,6 @@ Research.addPrereq("GT_IRON_TO_STEEL", "ALUMENTUM", false);
 Research.moveResearch("GT_FILL_WATER_BUCKET", "ALCHEMY", 4, 2);
 Crucible.removeRecipe(<minecraft:gunpowder>); // Gunpowder
 Crucible.removeRecipe(nuggetAluminium); // Aluminium
-Crucible.removeRecipe(<gregtech:gt.metaitem.01:9305>); // Steel
 
 // Instability: 1 = Negligible, 3 = Minor, 5 = Moderate, 7 = High, 9 = Very High, 10+ = Dangerous
 
