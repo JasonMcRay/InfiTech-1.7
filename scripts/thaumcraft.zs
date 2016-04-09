@@ -1401,12 +1401,7 @@ Arcane.addShaped("CAP_void", <Thaumcraft:WandCap:8> * 2, "perditio 200, ordo 200
 Infusion.addRecipe("CAP_void", <Thaumcraft:WandCap:8>, [salisMundus, salisMundus, salisMundus, salisMundus], "alienis 32, auram 32, potentia 32, vacuos 32", <Thaumcraft:WandCap:7>, 9);
 
 // Greatwood Rod
-<<<<<<< HEAD
 Arcane.addShaped("ROD_greatwood", <Thaumcraft:WandRod>, "perditio 20, terra 20", [[null, null, <Thaumcraft:blockMagicalLog>], 
-=======
-Research.addPrereq("ROD_greatwood", "GT_IRON_TO_STEEL", true);
-Arcane.addShaped("ROD_greatwood", <Thaumcraft:WandRod>, "perditio 25, terra 25", [[null, null, <Thaumcraft:blockMagicalLog>], 
->>>>>>> master
                                                                                   [null, <ore:stickSteel>, null],
                                                                                   [<Thaumcraft:blockMagicalLog>, null, null]]);
 Arcane.addShaped("ROD_greatwood_staff", <Thaumcraft:WandRod:50>, "terra 62", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:0>, null], [<Thaumcraft:WandRod:0>, null, null]]);
