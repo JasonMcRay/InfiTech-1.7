@@ -6,4 +6,16 @@
     </biomeFilter>
   </entry>
  --> 
+ <entry id="ConcussionCreeper" mobName="enderzoo.ConcussionCreeper" creatureType="monster" rate="40"
+    minGroupSize="1" maxGroupSize="3" remove="false">
+    <biomeFilter type="any">
+      <biome type="BASE_LAND_TYPES" />
+      <biome type="NETHER" exclude="true" />
+      <biome type="END" exclude="true" />
+      <biome type="MUSHROOM" exclude="true" />
+    </biomeFilter>   
+    <dimensionExclude name="Twilight Forest"/>           
+    <dimensionExclude name="Dungeon"/>
+    <dimensionExclude name="The Outer Lands"/>
+  </entry>
 </SpawnConfig>
