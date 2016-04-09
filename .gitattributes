@@ -20,7 +20,6 @@
 # Text files
 *.zs        text
 *.conf      text
-*.ini       text
 *.cfg       text
 *.js        text
 *.txt       text
