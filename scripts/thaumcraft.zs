@@ -1525,7 +1525,7 @@ print('Magic Generators Unfuseable');
 Research.moveResearch("GT_CRYSTALLISATION", "ALCHEMY", -8, -2);
 
 // Naquadah
-Research.addResearch("GT_TRANSNAQUADAH", "ELDRITCH", "auram 2, radio 2, alienis 2, potentia 2, tenebrae 2, vitreus 2, nebrisum 2", -3, 0, 1, <gregtech:gt.metaitem.01:9324>);
+Research.addResearch("GT_TRANSNAQUADAH", "ELDRITCH", "auram 2, radio 2, alienis 2, tenebrae 2, vitreus 2, nebrisum 2", -3, 0, 1, <gregtech:gt.metaitem.01:9324>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSNAQUADAH", "Naquadah Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSNAQUADAH", "[GT] And now I understand, for I decided to learn of nothing except the void");
 Research.addPage("GT_TRANSNAQUADAH", "kirara.research_page.GT_TRANSNAQUADAH.1");
@@ -1535,11 +1535,21 @@ Research.addPrereq("GT_TRANSNAQUADAH", "VOIDMETAL", true);
 Research.addPrereq("GT_TRANSNAQUADAH", "GT_TRANSIRIDIUM", true);
 Research.addPrereq("GT_TRANSNAQUADAH", "GT_TRANSURANIUM", true);
 Infusion.addRecipe("GT_TRANSNAQUADAH", <gregtech:gt.metaitem.01:1097>, [<Thaumcraft:ItemResource:17>, <Thaumcraft:ItemResource:17>], "auram 3, radio 3, alienis 3, nebrisum 3, tenebrae 3, electrum 3", <gregtech:gt.metaitem.01:1324>, 5);
-Infusion.addRecipe("GT_TRANSNAQUADAH", <gregtech:gt.metaitem.01:2097>, [<Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemEldritchObject:3>], "vacuos 6, potentia 6, tenebrae 6, lucrum 6, perditio 6, machina 6", <InfinityCore:itemSpecialWG>, 7);
 Research.addInfusionPage("GT_TRANSNAQUADAH", <gregtech:gt.metaitem.01:1324>);
-Research.addInfusionPage("GT_TRANSNAQUADAH", <gregtech:gt.metaitem.01:2324>);
 Research.setConcealed("GT_TRANSNAQUADAH", true);
 Warp.addToResearch("GT_TRANSNAQUADAH", 5);
+
+Research.addResearch("GT_TRANSNAQUADAH2", "ELDRITCH", "iter 4, vacuos 4, tenebrae 4, lucrum 4, perditio 4, machina 4, radio 4, strontio 4, potentia 4", 2, 7, 1, <gregtech:gt.metaitem.01:11324>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSNAQUADAH2", "Advanced Naquadah Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSNAQUADAH2", "[GT] Beyond the void there was chaos");
+Research.addPage("GT_TRANSNAQUADAH2", "kirara.research_page.GT_TRANSNAQUADAH2.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSNAQUADAH2.1", "While your current methods of producing naquadah work they are far from simple, noxious fumes and rare ingredients abound. However using the power of a pearl you can advance things further, greatly simplifying the process.");
+Research.addPrereq("GT_TRANSNAQUADAH2", "PRIMPEARL", false);
+Research.addPrereq("GT_TRANSNAQUADAH2", "GT_TRANSNAQUADAH", true);
+Infusion.addRecipe("GT_TRANSNAQUADAH2", <gregtech:gt.metaitem.01:2097>, [<Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemEldritchObject:3>], "vacuos 6, potentia 6, tenebrae 6, lucrum 6, perditio 6, machina 6", <InfinityCore:itemSpecialWG>, 7);
+Research.addInfusionPage("GT_TRANSNAQUADAH2", <InfinityCore:itemSpecialWG>);
+Research.setConcealed("GT_TRANSNAQUADAH2", true);
+Warp.addToResearch("GT_TRANSNAQUADAH2", 1);
 
 // Vinteum Crystal
 Research.addResearch("AM_GEMVINTEUM", "ALCHEMY", "praecantatio 2, auram 2, tenebrae 2, alienis 2, permutatio 2, vitreus 2", -11, -2, 2, gemVinteum);
