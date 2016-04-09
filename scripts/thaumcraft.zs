@@ -240,6 +240,7 @@ import mods.gregtech.FluidExtractor;
 import mods.gregtech.AlloySmelter;
 import mods.gregtech.Slicer;
 import mods.gregtech.ChemicalBath;
+import mods.witchinggadgets.InfernalBlastfurnace;
 
 print("Initializing Thaumcraft Changes");
 
@@ -2105,5 +2106,33 @@ Research.refreshResearchRecipe("THIRSTYTANK");
 Research.refreshResearchRecipe("PRIMORDIALARMOR");
 Research.refreshResearchRecipe("PRIMORDIALWEAPONRY");
 Research.refreshResearchRecipe("ANIMATION_TABLET");
+
+print("Refreshed researches");
+
+InfernalBlastfurnace.removeRecipe(<minecraft:iron_ingot>);
+InfernalBlastfurnace.removeRecipe(<minecraft:gold_ingot>);
+InfernalBlastfurnace.removeRecipe(<IC2:itemIngot:0>);
+InfernalBlastfurnace.removeRecipe(<IC2:itemIngot:1>);
+InfernalBlastfurnace.removeRecipe(<IC2:itemIngot:5>);
+InfernalBlastfurnace.removeRecipe(<IC2:itemIngot:6>);
+InfernalBlastfurnace.removeRecipe(<Thaumcraft:ItemResource:3>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11085>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11034>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11033>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11081>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11084>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11324>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11036>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11097>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11098>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11008>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11096>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11052>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11048>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11067>);
+InfernalBlastfurnace.removeRecipe(<IC2:itemIngot:3>);
+InfernalBlastfurnace.removeRecipe(<IC2:blockMetal:5>);
+InfernalBlastfurnace.removeRecipe(<GalacticraftMars:item.itemBasicAsteroids:5>);
+InfernalBlastfurnace.removeRecipe(<GalacticraftCore:item.basicItem:5>);
 
 print("Finished Thaumcraft Changes");
