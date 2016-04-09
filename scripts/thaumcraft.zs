@@ -801,7 +801,7 @@ Research.refreshResearchRecipe("FOCUS_FLIGHT");
 // Telekinesis Focus
 Research.addPrereq("FOCUS_TELEKINESIS", "GT_TRANSSTEELEAF", true);
 Infusion.removeRecipe(<ThaumicTinkerer:focusTelekinesis>);
-Infusion.addRecipe("FOCUS_TELEKINESIS", <gregtech:gt.metaitem.01:24509>, [<gregtech:gt.metaitem.01:28339>, <minecraft:ender_pearl>, <gregtech:gt.metaitem.01:28339>, <minecraft:gold_ingot>, <gregtech:gt.metaitem.01:28339>, <minecraft:ender_pearl>, <gregtech:gt.metaitem.01:28339>, <minecraft:gold_ingot>], "aer 20, cognitio 10, iter 10, motus 10, perditio 20", <ThaumicTinkerer:focusTelekinesis>, 5);
+Infusion.addRecipe("FOCUS_TELEKINESIS", <gregtech:gt.metaitem.01:24527>, [<gregtech:gt.metaitem.01:28339>, <minecraft:ender_pearl>, <gregtech:gt.metaitem.01:28339>, <minecraft:gold_ingot>, <gregtech:gt.metaitem.01:28339>, <minecraft:ender_pearl>, <gregtech:gt.metaitem.01:28339>, <minecraft:gold_ingot>], "aer 20, cognitio 10, iter 10, motus 10, perditio 20", <ThaumicTinkerer:focusTelekinesis>, 5);
 Research.refreshResearchRecipe("FOCUS_TELEKINESIS");
 
 // Dislocation Focus
