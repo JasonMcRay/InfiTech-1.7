@@ -240,6 +240,7 @@ import mods.gregtech.FluidExtractor;
 import mods.gregtech.AlloySmelter;
 import mods.gregtech.Slicer;
 import mods.gregtech.ChemicalBath;
+import mods.witchinggadgets.InfernalBlastfurnace;
 
 print("Initializing Thaumcraft Changes");
 
@@ -328,6 +329,15 @@ Infusion.removeRecipe(<Thaumcraft:WandRod:4>); // Quartz
 Infusion.removeRecipe(<Thaumcraft:WandRod:5>); // Reed
 Infusion.removeRecipe(<Thaumcraft:WandRod:6>); // Blaze
 Infusion.removeRecipe(<Thaumcraft:WandRod:7>); // Bone
+// Staff Cores
+Arcane.removeRecipe(<Thaumcraft:WandRod:50>);
+Arcane.removeRecipe(<Thaumcraft:WandRod:51>);
+Arcane.removeRecipe(<Thaumcraft:WandRod:52>);
+Arcane.removeRecipe(<Thaumcraft:WandRod:53>);
+Arcane.removeRecipe(<Thaumcraft:WandRod:54>);
+Arcane.removeRecipe(<Thaumcraft:WandRod:55>);
+Arcane.removeRecipe(<Thaumcraft:WandRod:56>);
+Arcane.removeRecipe(<Thaumcraft:WandRod:57>);
 // Basic Infusion Tools
 Infusion.removeRecipe(<Thaumcraft:ItemPickaxeElemental>);
 Infusion.removeRecipe(<Thaumcraft:ItemAxeElemental>);
@@ -809,7 +819,7 @@ Research.refreshResearchRecipe("FOCUS_FLIGHT");
 // Telekinesis Focus
 Research.addPrereq("FOCUS_TELEKINESIS", "GT_TRANSSTEELEAF", true);
 Infusion.removeRecipe(<ThaumicTinkerer:focusTelekinesis>);
-Infusion.addRecipe("FOCUS_TELEKINESIS", <gregtech:gt.metaitem.01:24509>, [<gregtech:gt.metaitem.01:28339>, <minecraft:ender_pearl>, <gregtech:gt.metaitem.01:28339>, <minecraft:gold_ingot>, <gregtech:gt.metaitem.01:28339>, <minecraft:ender_pearl>, <gregtech:gt.metaitem.01:28339>, <minecraft:gold_ingot>], "aer 20, cognitio 10, iter 10, motus 10, perditio 20", <ThaumicTinkerer:focusTelekinesis>, 5);
+Infusion.addRecipe("FOCUS_TELEKINESIS", <gregtech:gt.metaitem.01:24527>, [<gregtech:gt.metaitem.01:28339>, <minecraft:ender_pearl>, <gregtech:gt.metaitem.01:28339>, <minecraft:gold_ingot>, <gregtech:gt.metaitem.01:28339>, <minecraft:ender_pearl>, <gregtech:gt.metaitem.01:28339>, <minecraft:gold_ingot>], "aer 20, cognitio 10, iter 10, motus 10, perditio 20", <ThaumicTinkerer:focusTelekinesis>, 5);
 Research.refreshResearchRecipe("FOCUS_TELEKINESIS");
 
 // Dislocation Focus
@@ -1391,10 +1401,15 @@ Arcane.addShaped("CAP_void", <Thaumcraft:WandCap:8> * 2, "perditio 200, ordo 200
 Infusion.addRecipe("CAP_void", <Thaumcraft:WandCap:8>, [salisMundus, salisMundus, salisMundus, salisMundus], "alienis 32, auram 32, potentia 32, vacuos 32", <Thaumcraft:WandCap:7>, 9);
 
 // Greatwood Rod
+<<<<<<< HEAD
+Arcane.addShaped("ROD_greatwood", <Thaumcraft:WandRod>, "perditio 20, terra 20", [[null, null, <Thaumcraft:blockMagicalLog>], 
+=======
 Research.addPrereq("ROD_greatwood", "GT_IRON_TO_STEEL", true);
 Arcane.addShaped("ROD_greatwood", <Thaumcraft:WandRod>, "perditio 25, terra 25", [[null, null, <Thaumcraft:blockMagicalLog>], 
+>>>>>>> master
                                                                                   [null, <ore:stickSteel>, null],
                                                                                   [<Thaumcraft:blockMagicalLog>, null, null]]);
+Arcane.addShaped("ROD_greatwood_staff", <Thaumcraft:WandRod:50>, "terra 62", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:0>, null], [<Thaumcraft:WandRod:0>, null, null]]);
 
 // Adjust NEI to match
 NEI.addEntry(<Thaumcraft:WandCasting:2>.withTag({cap: "copper", rod: "wood", aqua: 2500, terra: 2500, ignis: 2500, ordo: 2500, perditio: 2500, aer: 2500}));
@@ -1406,37 +1421,37 @@ NEI.addEntry(<Thaumcraft:WandCasting:192>.withTag({cap: "void", rod: "primal_sta
 // Obsidian Rod
 Research.addPrereq("ROD_obsidian", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_obsidian", <gregtech:gt.metaitem.01:23306>, [<minecraft:obsidian>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:3>], "praecantatio 48, tenebrae 48, terra 96", <Thaumcraft:WandRod:1>, 2);
-// Assembler.addRecipe(<Thaumcraft:WandRod:1>, <minecraft:obsidian>, <Thaumcraft:WandRod:1> * 0, 360, 120);
+Arcane.addShaped("ROD_obsidian_staff", <Thaumcraft:WandRod:51>, "terra 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:1>, null], [<Thaumcraft:WandRod:1>, null, null]]);
 
 // Icy Rod
 Research.addPrereq("ROD_ice", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_ice", <gregtech:gt.metaitem.01:23306>, [<minecraft:ice>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:2>], "aqua 96, gelum 48, praecantatio 48", <Thaumcraft:WandRod:3>, 2);
-// Assembler.addRecipe(<Thaumcraft:WandRod:3>, <minecraft:ice>, <Thaumcraft:WandRod:3> * 0, 360, 120);
+Arcane.addShaped("ROD_ice_staff", <Thaumcraft:WandRod:53>, "aqua 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:3>, null], [<Thaumcraft:WandRod:3>, null, null]]);
 
 // Quartz Rod
 Research.addPrereq("ROD_quartz", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_quartz", <gregtech:gt.metaitem.01:23306>, [<minecraft:quartz_block>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:4>], "ordo 96, praecantatio 48, vitreus 48", <Thaumcraft:WandRod:4>, 2);
-// Assembler.addRecipe(<Thaumcraft:WandRod:4>, <minecraft:quartz_block>, <Thaumcraft:WandRod:4> * 0, 360, 120);
+Arcane.addShaped("ROD_quartz_staff", <Thaumcraft:WandRod:54>, "ordo 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:4>, null], [<Thaumcraft:WandRod:4>, null, null]]);
 
 // Reed Rod
 Research.addPrereq("ROD_reed", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_reed", <gregtech:gt.metaitem.01:23306>, [<minecraft:reeds>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard>], "aer 96, motus 48, praecantatio 48", <Thaumcraft:WandRod:5>, 2);
-// Assembler.addRecipe(<Thaumcraft:WandRod:5>, <minecraft:reeds>, <Thaumcraft:WandRod:5> * 0, 360, 120);
+Arcane.addShaped("ROD_reed_staff", <Thaumcraft:WandRod:55>, "aer 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:5>, null], [<Thaumcraft:WandRod:5>, null, null]]);
 
 // Blazing Rod
 Research.addPrereq("ROD_blaze", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_blaze", <gregtech:gt.metaitem.01:23306>, [<minecraft:blaze_rod>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:1>], "bestia 48, ignis 96, praecantatio 48", <Thaumcraft:WandRod:6>, 2);
-// Assembler.addRecipe(<Thaumcraft:WandRod:6>, <minecraft:blaze_rod>, <Thaumcraft:WandRod:6> * 0, 360, 120);
+Arcane.addShaped("ROD_blaze_staff", <Thaumcraft:WandRod:56>, "ignis 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:6>, null], [<Thaumcraft:WandRod:6>, null, null]]);
 
 // Bone Rod
 Research.addPrereq("ROD_bone", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_bone", <gregtech:gt.metaitem.01:23306>, [<minecraft:bone>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:5>], "exanimis 48, perditio 96, praecantatio 48", <Thaumcraft:WandRod:7>, 2);
-// Assembler.addRecipe(<Thaumcraft:WandRod:7>, <minecraft:bone>, <Thaumcraft:WandRod:7> * 0, 360, 120);
+Arcane.addShaped("ROD_bone_staff", <Thaumcraft:WandRod:57>, "perditio 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:7>, null], [<Thaumcraft:WandRod:7>, null, null]]);
 
 // Silverwood Rod
 Research.addPrereq("ROD_silverwood", "GT_TRANSTITANIUM", true);
 Infusion.addRecipe("ROD_silverwood", rodTitanium, [<Thaumcraft:blockMagicalLog:1>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard>, <Thaumcraft:ItemShard:1>, <Thaumcraft:ItemShard:2>, <Thaumcraft:ItemShard:3>, <Thaumcraft:ItemShard:4>, <Thaumcraft:ItemShard:5>], "aer 64, aqua 64, ignis 64, ordo 64, perditio 64, praecantatio 64, terra 64", <Thaumcraft:WandRod:2>, 5);
-// Assembler.addRecipe(<Thaumcraft:WandRod:2>, <Thaumcraft:blockMagicalLog:1> * 2, <Thaumcraft:WandRod:2> * 0, 360, 120);
+Arcane.addShaped("ROD_silverwood_staff", <Thaumcraft:WandRod:52>, "ordo 132", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:2>, null], [<Thaumcraft:WandRod:2>, null, null]]);
 
 // Sceptre
 Research.removeResearch("CAP_gold");
@@ -1514,7 +1529,7 @@ print('Magic Generators Unfuseable');
 Research.moveResearch("GT_CRYSTALLISATION", "ALCHEMY", -8, -2);
 
 // Naquadah
-Research.addResearch("GT_TRANSNAQUADAH", "ELDRITCH", "auram 2, radio 2, alienis 2, potentia 2, tenebrae 2, vitreus 2, nebrisum 2", -3, 0, 1, <gregtech:gt.metaitem.01:9324>);
+Research.addResearch("GT_TRANSNAQUADAH", "ELDRITCH", "auram 2, radio 2, alienis 2, tenebrae 2, vitreus 2, nebrisum 2", -3, 0, 1, <gregtech:gt.metaitem.01:9324>);
 game.setLocalization("en_US", "tc.research_name.GT_TRANSNAQUADAH", "Naquadah Transmutation");
 game.setLocalization("en_US", "tc.research_text.GT_TRANSNAQUADAH", "[GT] And now I understand, for I decided to learn of nothing except the void");
 Research.addPage("GT_TRANSNAQUADAH", "kirara.research_page.GT_TRANSNAQUADAH.1");
@@ -1524,11 +1539,21 @@ Research.addPrereq("GT_TRANSNAQUADAH", "VOIDMETAL", true);
 Research.addPrereq("GT_TRANSNAQUADAH", "GT_TRANSIRIDIUM", true);
 Research.addPrereq("GT_TRANSNAQUADAH", "GT_TRANSURANIUM", true);
 Infusion.addRecipe("GT_TRANSNAQUADAH", <gregtech:gt.metaitem.01:1097>, [<Thaumcraft:ItemResource:17>, <Thaumcraft:ItemResource:17>], "auram 3, radio 3, alienis 3, nebrisum 3, tenebrae 3, electrum 3", <gregtech:gt.metaitem.01:1324>, 5);
-Infusion.addRecipe("GT_TRANSNAQUADAH", <gregtech:gt.metaitem.01:2097>, [<Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemEldritchObject:3>], "vacuos 6, potentia 6, tenebrae 6, lucrum 6, perditio 6, machina 6", <InfinityCore:itemSpecialWG>, 7);
 Research.addInfusionPage("GT_TRANSNAQUADAH", <gregtech:gt.metaitem.01:1324>);
-Research.addInfusionPage("GT_TRANSNAQUADAH", <gregtech:gt.metaitem.01:2324>);
 Research.setConcealed("GT_TRANSNAQUADAH", true);
 Warp.addToResearch("GT_TRANSNAQUADAH", 5);
+
+Research.addResearch("GT_TRANSNAQUADAH2", "ELDRITCH", "iter 4, vacuos 4, tenebrae 4, lucrum 4, perditio 4, machina 4, radio 4, strontio 4, potentia 4", 2, 7, 1, <gregtech:gt.metaitem.01:11324>);
+game.setLocalization("en_US", "tc.research_name.GT_TRANSNAQUADAH2", "Advanced Naquadah Transmutation");
+game.setLocalization("en_US", "tc.research_text.GT_TRANSNAQUADAH2", "[GT] Beyond the void there was chaos");
+Research.addPage("GT_TRANSNAQUADAH2", "kirara.research_page.GT_TRANSNAQUADAH2.1");
+game.setLocalization("en_US", "kirara.research_page.GT_TRANSNAQUADAH2.1", "While your current methods of producing naquadah work they are far from simple, noxious fumes and rare ingredients abound. However using the power of a pearl you can advance things further, greatly simplifying the process.");
+Research.addPrereq("GT_TRANSNAQUADAH2", "PRIMPEARL", false);
+Research.addPrereq("GT_TRANSNAQUADAH2", "GT_TRANSNAQUADAH", true);
+Infusion.addRecipe("GT_TRANSNAQUADAH2", <gregtech:gt.metaitem.01:2097>, [<Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemEldritchObject:3>], "vacuos 6, potentia 6, tenebrae 6, lucrum 6, perditio 6, machina 6", <InfinityCore:itemSpecialWG>, 7);
+Research.addInfusionPage("GT_TRANSNAQUADAH2", <InfinityCore:itemSpecialWG>);
+Research.setConcealed("GT_TRANSNAQUADAH2", true);
+Warp.addToResearch("GT_TRANSNAQUADAH2", 1);
 
 // Vinteum Crystal
 Research.addResearch("AM_GEMVINTEUM", "ALCHEMY", "praecantatio 2, auram 2, tenebrae 2, alienis 2, permutatio 2, vitreus 2", -11, -2, 2, gemVinteum);
@@ -2129,6 +2154,14 @@ Research.refreshResearchRecipe("ROD_quartz");
 Research.refreshResearchRecipe("ROD_reed");
 Research.refreshResearchRecipe("ROD_blaze");
 Research.refreshResearchRecipe("ROD_bone");
+Research.refreshResearchRecipe("ROD_greatwood_staff");
+Research.refreshResearchRecipe("ROD_silverwood_staff");
+Research.refreshResearchRecipe("ROD_obsidian_staff");
+Research.refreshResearchRecipe("ROD_ice_staff");
+Research.refreshResearchRecipe("ROD_quartz_staff");
+Research.refreshResearchRecipe("ROD_reed_staff");
+Research.refreshResearchRecipe("ROD_blaze_staff");
+Research.refreshResearchRecipe("ROD_bone_staff");
 Research.refreshResearchRecipe("AUTOHANDMIRROR");
 Research.refreshResearchRecipe("ENCHANTER");
 Research.refreshResearchRecipe("SPINNINGWHEEL");
@@ -2143,5 +2176,33 @@ Research.refreshResearchRecipe("THIRSTYTANK");
 Research.refreshResearchRecipe("PRIMORDIALARMOR");
 Research.refreshResearchRecipe("PRIMORDIALWEAPONRY");
 Research.refreshResearchRecipe("ANIMATION_TABLET");
+
+print("Refreshed researches");
+
+InfernalBlastfurnace.removeRecipe(<minecraft:iron_ingot>);
+InfernalBlastfurnace.removeRecipe(<minecraft:gold_ingot>);
+InfernalBlastfurnace.removeRecipe(<IC2:itemIngot:0>);
+InfernalBlastfurnace.removeRecipe(<IC2:itemIngot:1>);
+InfernalBlastfurnace.removeRecipe(<IC2:itemIngot:5>);
+InfernalBlastfurnace.removeRecipe(<IC2:itemIngot:6>);
+InfernalBlastfurnace.removeRecipe(<Thaumcraft:ItemResource:3>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11085>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11034>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11033>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11081>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11084>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11324>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11036>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11097>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11098>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11008>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11096>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11052>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11048>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11067>);
+InfernalBlastfurnace.removeRecipe(<IC2:itemIngot:3>);
+InfernalBlastfurnace.removeRecipe(<IC2:blockMetal:5>);
+InfernalBlastfurnace.removeRecipe(<GalacticraftMars:item.itemBasicAsteroids:5>);
+InfernalBlastfurnace.removeRecipe(<GalacticraftCore:item.basicItem:5>);
 
 print("Finished Thaumcraft Changes");
