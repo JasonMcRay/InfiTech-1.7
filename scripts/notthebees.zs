@@ -37,6 +37,7 @@ var combTitanium            = <gendustry:HoneyComb:133>;
 var combTungsten            = <gendustry:HoneyComb:135>;	
 var combUranium238          = <gendustry:HoneyComb:138>;	
 var combZinc                = <gendustry:HoneyComb:128>;	
+var combOsmium              = <gendustry:HoneyComb:143>;
 
 
 // Liquids
@@ -67,6 +68,7 @@ var moltenSilver            = <liquid:molten.silver>;
 var moltenThorium	        = <liquid:molten.thorium>;
 var moltenTin               = <liquid:molten.tin>;	
 var moltenUranium238        = <liquid:molten.uranium>;	
+var moltenOsmium            = <liquid:molten.osmium>;
 
 
 // Purified Ores
@@ -375,6 +377,7 @@ ChemicalReactor.addRecipe(purifiedVanMagnetite * 4, null, combIron * 9, crushedV
 ChemicalReactor.addRecipe(purifiedWulfenite * 4, null, combNickel * 9, crushedWulfenite, water * 1000, 96);
 ChemicalReactor.addRecipe(purifiedYLimonite * 4, moltenNickel * 144, combIron * 9, crushedYLimonite, water * 1000, 96);
 ChemicalReactor.addRecipe(purifiedZinc * 4, moltenTin * 144, combZinc * 9, crushedZinc, water * 1000, 96);
+ChemicalReactor.addRecipe(purifiedIridium * 4, moltenOsmium * 144, combOsmium * 9, crushedIridium, water * 1000, 96);
 
 
 # Autoclaving
@@ -412,3 +415,4 @@ Autoclave.addRecipe(purifiedTitanium, combTitanium * 16, UUM * 5, 10000, 1000, 2
 Autoclave.addRecipe(purifiedTungstate, combTungsten * 16, UUM * 4, 10000, 1000, 24);
 Autoclave.addRecipe(purifiedUranium238, combUranium238 * 16, UUM * 24, 10000, 1000, 24);
 Autoclave.addRecipe(purifiedZinc, combZinc * 16, UUM * 7, 10000, 1000, 24);
+Autoclave.addRecipe(purifiedOsmium, combOsmium * 16, UUM * 19, 10000, 1000, 24);
