@@ -217,6 +217,8 @@ var emptyPCB = <PneumaticCraft:emptyPCB>;
 var emptyPCBFresh = <PneumaticCraft:emptyPCB:100>;
 var itemFoilAnnealedCopper = <gregtech:gt.metaitem.01:29345>;
 var epoxyCoatedPlastic = <InfinityCore:itemMaterial:11>;
+var nitricAcid = <liquid:nitricacid>;
+var waterCell = <IC2:itemCellEmpty:1>;
 
 # Recipe tweaks version 3
 recipes.remove(heatSink);
@@ -476,7 +478,7 @@ Assembler.addRecipe(logisticFrameActiveProvider, plasticPurple * 8, integratedCi
 recipes.remove(logisticFrameDefaultStorage);
 Assembler.addRecipe(logisticFrameDefaultStorage, plasticLime * 8, integratedCircuit8 * 0, null, 38, 32);
 Pressure.removeRecipe([etchingAcidBucket]);
-Mixer.addRecipe(null, etchingAcid * 50, [spiderEye, plasticGreen, rottenFlesh, gunpowder], water * 50, 60, 20);
+Mixer.addRecipe(emptyCell * 4, etchingAcid * 5000, [waterCell * 4], nitricAcid * 1000, 300, 20);
 ChemicalBath.addRecipe([unassembledPCB], emptyPCB, etchingAcid * 100, [7000], 1200, 8);
 Pressure.removeRecipe([emptyPCBFresh]);
 
