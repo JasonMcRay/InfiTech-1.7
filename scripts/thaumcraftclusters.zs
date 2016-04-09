@@ -28,6 +28,7 @@ Crucible.removeRecipe(<Thaumcraft:ItemNugget:16>);
 Crucible.addRecipe("PUREIRON", <Thaumcraft:ItemNugget:16>, <ore:listAllOreIron>, "metallum 1, ordo 1");
 Research.addCruciblePage("PUREIRON", <Thaumcraft:ItemNugget:16>);
 Pulverizer.addRecipe([<IC2:itemDust:5> * 3, <IC2:itemDust:5>, <gregtech:gt.metaitem.01:2299>], <Thaumcraft:ItemNugget:16>, [10000, 5000, 500], 400, 2);
+BlastFurnace.addRecipe([<minecraft:iron_ingot> * 4, <gregtech:gt.metaitem.01:1816>], [<Thaumcraft:ItemNugget:16>, <gregtech:gt.metaitem.01:2823>], 500, 120, 1500);
 
 <ore:listAllOreGold>.addAll(<ore:oreGold>);
 <ore:listAllOreGold>.add(<gregtech:gt.blockores:86>);
