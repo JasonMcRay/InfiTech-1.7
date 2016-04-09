@@ -841,10 +841,7 @@ Research.refreshResearchRecipe("FOCUSCRAFTING");
 print('Foci reconfigured');
 
 // Transmutations
-Crucible.removeRecipe(<minecraft:coal:1>); // Charcoal
-Research.orphanResearch("GT_WOOD_TO_CHARCOAL");
-Research.removeResearch("GT_WOOD_TO_CHARCOAL");
-Research.addPrereq("GT_IRON_TO_STEEL", "ALUMENTUM", false);
+Research.moveResearch("GT_WOOD_TO_CHARCOAL", "ALCHEMY", 4, 0);
 Research.moveResearch("GT_FILL_WATER_BUCKET", "ALCHEMY", 4, 2);
 Crucible.removeRecipe(<minecraft:gunpowder>); // Gunpowder
 Crucible.removeRecipe(nuggetAluminium); // Aluminium
