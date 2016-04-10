@@ -16,6 +16,19 @@ import minetweaker.item.IIngredient;
 import minetweaker.item.IItemStack;
 
 # Aliases
+var CESU                    = <IC2:blockElectric:7>;
+var GTDough                 = <gregtech:gt.metaitem.02:32559>;
+var GTFlour                 = <gregtech:gt.metaitem.01:2881>;
+var GTSalt                  = <gregtech:gt.metaitem.01:2817>;
+var HHammer                 = <ore:craftingToolHardHammer>;
+var MFE                     = <IC2:blockElectric:1>;
+var MFSU                    = <IC2:blockElectric:2>;
+var MOX                     = <IC2:itemMOX>;
+var ODScanner               = <IC2:itemScanner:*>;
+var OVScanner               = <IC2:itemScannerAdv>;
+var Saw                     = <ore:craftingToolSaw>;
+var Screwdriver             = <ore:craftingToolScrewdriver>;
+var Wrench                  = <ore:craftingToolWrench>;
 var advancedMiner           = <IC2:blockMachine2:11>;
 var anyWater                = <ore:listAllwater>;
 var batbox                  = <IC2:blockElectric>;
@@ -27,8 +40,8 @@ var cableCopperAnnealed1x   = <gregtech:gt.blockmachines:1386>;
 var cableElectrum4x         = <gregtech:gt.blockmachines:1448>;
 var cableGold1x             = <ore:cableGt01Gold>;
 var cableGold2x             = <ore:cableGt02Gold>;
+var cableTin1x              = <ore:cableGt01Tin>;
 var cellLargeSteel          = <gregtech:gt.metaitem.01:32405>;
-var CESU                    = <IC2:blockElectric:7>;
 var chainsaw                = <IC2:itemToolChainsaw:*>;
 var chargePadBatbox         = <IC2:blockChargepad>;
 var chargePadCESU           = <IC2:blockChargepad:1>;
@@ -59,10 +72,7 @@ var fuelRodMOX              = <IC2:reactorMOXSimple:1>;
 var fuelRodThorium          = <gregtech:gt.Thoriumcell>;
 var fuelRodUranium          = <IC2:reactorUraniumSimple:1>;
 var genKinWind              = <IC2:blockKineticGenerator>;
-var GTDough                 = <gregtech:gt.metaitem.02:32559>;
-var GTFlour                 = <gregtech:gt.metaitem.01:2881>;
-var GTSalt                  = <gregtech:gt.metaitem.01:2817>;
-var HHammer                 = <ore:craftingToolHardHammer>;
+var hydratedCoal            = <ore:dustHydratedCoal>;
 var ic2BlastFurnace         = <IC2:blockMachine3:1>;
 var ic2BlockCuttingMachine  = <IC2:blockMachine3:2>;
 var ic2Compressor           = <IC2:blockMachine:5>;
@@ -76,8 +86,8 @@ var ic2Macerator            = <IC2:blockMachine:3>;
 var ic2MassFab              = <IC2:blockMachine:14>;
 var ic2MetalFormer          = <IC2:blockMachine2:4>;
 var ic2OreWashingPlant      = <IC2:blockMachine2:5>;
-var ic2PatternStorage       = <IC2:blockMachine2:6>;
 var ic2Painter              = <IC2:itemToolPainter>;
+var ic2PatternStorage       = <IC2:blockMachine2:6>;
 var ic2Recycler             = <IC2:blockMachine:11>;
 var ic2Replicator           = <IC2:blockMachine2:8>;
 var ic2Scanner              = <IC2:blockMachine2:7>;
@@ -98,18 +108,13 @@ var itemSteelCasing         = <IC2:itemCasing:5>;
 var jetpack                 = <IC2:itemArmorJetpack:27>;
 var machineCasingAdvanced   = <IC2:blockMachine:12>;
 var machineHullHV           = <gregtech:gt.blockmachines:13>;
-var MFE                     = <IC2:blockElectric:1>;
-var MFSU                    = <IC2:blockElectric:2>;
 var miner                   = <IC2:blockMachine:7>;
 var miningDrill             = <IC2:itemToolDrill:*>;
 var moduleConveyorHV        = <gregtech:gt.metaitem.01:32632>;
 var motorElectricHV         = <gregtech:gt.metaitem.01:32602>;
-var MOX                     = <IC2:itemMOX>;
 var nuggetSteel             = <gregtech:gt.metaitem.01:9305>;
-var ODScanner               = <IC2:itemScanner:*>;
-var OVScanner               = <IC2:itemScannerAdv>;
-var plantball               = <IC2:itemFuelPlantBall>;
 var pistonElectricHV        = <gregtech:gt.metaitem.01:32642>;
+var plantball               = <IC2:itemFuelPlantBall>;
 var plateAlloyAdvanced      = <ore:plateAlloyAdvanced>;
 var plateCarbon             = <ore:plateAlloyCarbon>;
 var plateIron               = <ore:plateIron>;
@@ -134,18 +139,16 @@ var rotorIron               = <IC2:itemironrotor>;
 var rotorSteel              = <IC2:itemsteelrotor>;
 var rotorWood               = <IC2:itemwoodrotor>;
 var sapling                 = <minecraft:sapling:*>;
-var Saw                     = <ore:craftingToolSaw>;
-var Screwdriver             = <ore:craftingToolScrewdriver>;
 var screwIridium            = <ore:screwIridium>;
 var screwIron               = <ore:screwIron>;
 var sensorHV                = <gregtech:gt.metaitem.01:32692>;
 var shaftIron               = <IC2:itemRecipePart:11>;
 var shaftSteel              = <IC2:itemRecipePart:12>;
+var singleUseBattery        = <IC2:itemBatSU>;
 var stickIron               = <ore:stickIron>;
 var sugarcane               = <minecraft:reeds>;
 var teleporter              = <IC2:blockMachine2>;
 var uraniumEnriched         = <IC2:itemUran>;
-var Wrench                  = <ore:craftingToolWrench>;
 
 # seeds
 
@@ -457,6 +460,11 @@ Compressor.addRecipe(plantball, sapling * 4);
 Compressor.addRecipe(plantball, sugarcane * 8);
 
 # Recipe Tweaks
+recipes.remove(singleUseBattery);
+recipes.addShaped(singleUseBattery * 6, [
+    [cableTin1x],
+    [hydratedCoal],
+    [dustRedstone]]);
 recipes.remove(itemRingWood);
 recipes.addShaped(itemRingWood, [
     [Saw],
