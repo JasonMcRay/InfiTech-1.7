@@ -13,6 +13,7 @@ import mods.gregtech.Mixer;
 import mods.nei.NEI;
 import minetweaker.game.IGame;
 import mods.ic2.Compressor;
+import mods.forestry.Moistener;
 import minetweaker.item.IIngredient;
 import minetweaker.item.IItemStack;
 
@@ -54,6 +55,14 @@ var circuitElite            = <ore:circuitElite>;
 var circuitEnergyFlow       = <gregtech:gt.metaitem.01:32706>;
 var circuitGood             = <ore:circuitGood>;
 var coil                    = <IC2:itemRecipePart>;
+var concreteDarkBrick       = <gregtech:gt.blockconcretes:3>;
+var concreteDarkCobble      = <gregtech:gt.blockconcretes:1>;
+var concreteDarkMossyBrick  = <gregtech:gt.blockconcretes:5>;
+var concreteDarkMossyCobble = <gregtech:gt.blockconcretes:2>;
+var concreteLightBrick      = <gregtech:gt.blockconcretes:11>;
+var concreteLightCobble     = <gregtech:gt.blockconcretes:9>;
+var concreteLightMossyBrick = <gregtech:gt.blockconcretes:13>;
+var concreteLightMossyCobble= <gregtech:gt.blockconcretes:10>;
 var craftingGenerator       = <ore:craftingGenerator>;
 var cropHarvester           = <IC2:blockMachine3:7>;
 var diamondDrill            = <IC2:itemToolDDrill:*>;
@@ -629,3 +638,9 @@ recipes.addShaped(jetpack, [
     [itemCasingIron, circuitBasic, itemCasingIron],
     [itemCasingIron, cellLargeSteel, itemCasingIron],
     [dustRedstone, null, dustRedstone]]);
+    
+# Add GT Concrete recipe for Mossy versions
+Moistener.addRecipe(concreteLightMossyCobble, concreteLightCobble, 500);
+Moistener.addRecipe(concreteLightMossyBrick, concreteLightBrick, 500);
+Moistener.addRecipe(concreteDarkMossyCobble, concreteDarkCobble, 500);
+Moistener.addRecipe(concreteDarkMossyBrick, concreteDarkBrick, 500);
