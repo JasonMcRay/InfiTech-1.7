@@ -18,6 +18,7 @@ recipes.addShaped(chiselObsidian, [
 	[chiselIron]]);
 
 # Recipe Fixes
+furnace.remove(<chisel:concrete>);
 
 # Chiseling fixes
 <ore:cobblestone>.remove(<minecraft:mossy_cobblestone>);
@@ -27,3 +28,5 @@ recipes.addShaped(chiselObsidian, [
 Groups.addGroup("basaltcobble");
 Groups.addVariation("basaltcobble", <ProjRed|Exploration:projectred.exploration.stone:2>);
 Groups.addVariation("basaltcobble", <IC2:blockBasalt>);
+Groups.addVariation("concrete", <gregtech:gt.blockconcretes:8>);
+Groups.addVariation("concrete", <gregtech:gt.blockconcretes:11>);
