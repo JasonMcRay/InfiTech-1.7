@@ -3,6 +3,7 @@
 
 import mods.gregtech.Canner;
 import mods.gregtech.ArcFurnace;
+import mods.gregtech.AlloySmelter;
 import mods.gregtech.PlasmaArcFurnace;
 import mods.ic2.SemiFluidGenerator;
 import mods.gregtech.Printer;
@@ -100,8 +101,12 @@ var itemCasingBronze        = <IC2:itemCasing:2>;
 var itemCasingGold          = <IC2:itemCasing:3>;
 var itemCasingIron          = <IC2:itemCasing:4>;
 var itemDustSalt            = <gregtech:gt.metaitem.01:2817>;
+var itemDustSilver          = <IC2:itemDust:6>;
 var itemDustSmallSalt       = <gregtech:gt.metaitem.01:1817>;
 var itemDustTinySalt        = <gregtech:gt.metaitem.01:817>;
+var itemIngotBlueAlloy      = <gregtech:gt.metaitem.01:11309>;
+var itemIngotElectrotine    = <ProjRed|Core:projectred.core.part:55>;
+var itemIngotSilver         = <gregtech:gt.metaitem.01:11054>;
 var itemPlankWood           = <gregtech:gt.metaitem.01:17809>;
 var itemRingWood            = <gregtech:gt.metaitem.01:28809>;
 var itemSteelCasing         = <IC2:itemCasing:5>;
@@ -458,6 +463,8 @@ CuttingSaw.addRecipe([<gregtech:gt.metaitem.01:29874> * 2], <ore:ingotPlastic>, 
 CuttingSaw.addRecipe([<gregtech:gt.metaitem.01:29874> * 2], <ore:platePlastic>, <liquid:lubricant> * 5, 60, 8);
 Compressor.addRecipe(plantball, sapling * 4);
 Compressor.addRecipe(plantball, sugarcane * 8);
+AlloySmelter.addRecipe(itemIngotBlueAlloy * 2, itemDustSilver, itemIngotElectrotine, 100, 16);
+AlloySmelter.addRecipe(itemIngotBlueAlloy * 2, itemIngotSilver, itemIngotElectrotine, 100, 16);
 
 # Recipe Tweaks
 recipes.remove(singleUseBattery);
