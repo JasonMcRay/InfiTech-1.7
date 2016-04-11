@@ -22,3 +22,8 @@ recipes.addShaped(chiselObsidian, [
 # Chiseling fixes
 <ore:cobblestone>.remove(<minecraft:mossy_cobblestone>);
 <ore:chest>.remove(<minecraft:ender_chest>);
+
+# Extra chisel groups
+Groups.addGroup("basaltcobble");
+Groups.addVariation("basaltcobble", <ProjRed|Exploration:projectred.exploration.stone:2>);
+Groups.addVariation("basaltcobble", <IC2:blockBasalt>);
