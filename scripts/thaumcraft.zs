@@ -2103,9 +2103,35 @@ Research.addArcanePage("VOIDMETAL", <Railcraft:tool.crowbar.void>);
 // Transmutations
 Crucible.addRecipe("GT_TRANSALUMINIUM", nuggetAluminium * 3, nuggetAluminium, "ignis 1, ordo 1, volatus 1, metallum 2");
 
-// Remove Infused Crops
+// Fix Infused Crops
 Research.orphanResearch("INFUSED_POTIONS");
 Research.removeResearch("INFUSED_POTIONS");
+Research.addResearch("GT_INFUSED_POTIONS", "TT_CATEGORY", "aqua 5, perditio 5", 7, -5, 2, <ThaumicTinkerer:infusedSeeds>.withTag({mainAspect: {Aspects: [{amount: 1, key: "ignis"}]}}));
+game.setLocalization("en_US", "tc.research_name.GT_INFUSED_POTIONS", "Infused Crops");
+game.setLocalization("en_US", "tc.research_text.GT_INFUSED_POTIONS", "[TT] Who said bees? No one said bees.");
+Research.addPrereq("GT_INFUSED_POTIONS", "BRIGHT_NITOR", false);
+Research.addPrereq("GT_INFUSED_POTIONS", "INFUSION", true);
+Infusion.removeRecipe(<ThaumicTinkerer:infusedSeeds>);
+Infusion.addRecipe("GT_INFUSED_POTIONS", <minecraft:wheat_seeds>, [<Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:6>], "meto 32, messis 32", <InfinityCore:itemMaterial:17>, 5);
+Crucible.addRecipe("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedSeeds>.withTag({mainAspect: {Aspects: [{amount: 1, key: "aer"}]}, aspectTendencies: {Aspects: []}}), <InfinityCore:itemMaterial:17>, "aer 8");
+Crucible.addRecipe("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedSeeds>.withTag({mainAspect: {Aspects: [{amount: 1, key: "ignis"}]}, aspectTendencies: {Aspects: []}}), <InfinityCore:itemMaterial:17>, "ignis 8");
+Crucible.addRecipe("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedSeeds>.withTag({mainAspect: {Aspects: [{amount: 1, key: "aqua"}]}, aspectTendencies: {Aspects: []}}), <InfinityCore:itemMaterial:17>, "aqua 8");
+Crucible.addRecipe("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedSeeds>.withTag({mainAspect: {Aspects: [{amount: 1, key: "terra"}]}, aspectTendencies: {Aspects: []}}), <InfinityCore:itemMaterial:17>, "terra 8");
+Crucible.addRecipe("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedSeeds>.withTag({mainAspect: {Aspects: [{amount: 1, key: "ordo"}]}, aspectTendencies: {Aspects: []}}), <InfinityCore:itemMaterial:17>, "ordo 8");
+Crucible.addRecipe("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedSeeds>.withTag({mainAspect: {Aspects: [{amount: 1, key: "perditio"}]}, aspectTendencies: {Aspects: []}}), <InfinityCore:itemMaterial:17>, "perditio 8");
+Research.clearPages("GT_INFUSED_POTIONS");
+Research.addPage("GT_INFUSED_POTIONS", "ttresearch.page.INFUSED_POTIONS.0");
+Research.addPage("GT_INFUSED_POTIONS", "ttresearch.page.INFUSED_POTIONS.1");
+Research.addPage("GT_INFUSED_POTIONS", "ttresearch.page.INFUSED_POTIONS.2");
+Research.addPage("GT_INFUSED_POTIONS", "ttresearch.page.INFUSED_POTIONS.3");
+Research.addPage("GT_INFUSED_POTIONS", "ttresearch.page.INFUSED_POTIONS.4");
+Research.addPage("GT_INFUSED_POTIONS", "ttresearch.page.INFUSED_POTIONS.5");
+Research.addInfusionPage("GT_INFUSED_POTIONS", <InfinityCore:itemMaterial:17>);
+Research.addCruciblePage("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedSeeds>);
+Research.addCruciblePage("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedPotion:0>);
+Research.addCruciblePage("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedPotion:1>);
+Research.addCruciblePage("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedPotion:2>);
+Research.addCruciblePage("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedPotion:3>);
 
 // Refresh Recipes
 Research.refreshResearchRecipe("PLANTS");
