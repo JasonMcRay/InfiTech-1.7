@@ -1,3 +1,69 @@
+v3.2.4 - BLUEPOWER IS GOOOOOONE!
+Note: You might want to enable Electrotine retrogen in ProjectRed.cfg (B:"Electrotine Ore retrogen")
+
+Quests:
+- Jetpack quest moved to later
+- Coal and Chalco stone types (granite, stone, black granite,...) now oredicted for sake of "Ore Annoyance" quest.
+- Changed the "Blast Furnace Upgrade" - More Storage task to require 4slot instead of 16slot Buffer.
+- Fixed typo in "Magical Steel" quest.
+- Fixed "Water in the Sky" quest
+
+New Mods:
+- Railcraft Cosmetics
+
+Removed Mods:
+- Bluepower
+
+Updated Mods:
+- FastCraft -> 1.23
+- Gendustry -> 1.6.4.135
+- IC2 NEI Crop Plugin -> 1.1.0
+- IndustrialCraft 2 -> 2.2.820
+- InfinityCore -> 1.4
+- LogisticsPipes -> 0.9.3.114
+- StorageDrawers -> 1.9.6
+- Yampst -> 3.2.4
+
+Downgraded mods:
+- Thaumic Tinkerer -> 2.5.517
+
+Changes/Fixes:
+- Jetpack needs Large Fluid Cell
+- Thaumostatic Girdle no longer needs PCB
+- Fixed EU/t requirement for Mixing GT Dough
+- Added Storage Drawers redstone upgrades
+- Taking items from drawers will try to put them directly in your inventory first, then drop them in front of drawer.
+- Obsidian storage upgrade gives drawers higher blast resistance
+- Fixed crafting of Wireless Golem Backpack.
+- Made the node transducer a bit easier to craft. Added a SEEECRET recipe for the node transducer. It should take players SEVERAL SECONDS to discover it.
+- Fixed calculation of air quality for IC2 crops
+- Water Mill now checks for Biome Type
+- Nerfed Osmium Bees. If you are crashing with invalid chromosomes after the update: "Setting `genetics.clear.invalid.chromosomes` to `true` in config/forestry/common.cfg will fix it"
+- Adjusted Warp Levels
+- Changed Thaumcraft prereqs (no longer deps on Transmutations)
+- Removed U-235 Cluster processing
+- Changed TK Foci to require Red Garnet Lense.
+- Added Iron Cluster + calcite recipe in EBF
+- Re-added Thaumcraft Charcoal fabrication
+- Fixed Naquadah transmutation
+- Removed IBF recipes from NEI
+- Greatwood Wand no longer require discount gear
+- Staff Cores require discount gear
+- Removed Concussion Creepers spawn in Outer Lands
+- Fixed steel transmutation, back to requiring Wrought Iron Nuggets
+- XACT crafter will no longer try to pull from Production Table or Forestry Worktable to fix dupe exploit.
+- IC2 Single-Use battery crafting boosted
+- Basalt can be chiseled to different types (crossmod)
+- Chiseling Concrete is now available (GT <> Chisel)
+- Epoxy Coated Plastic creation chance is now at 100%
+- Etching of PCB now corresponds the Ething Success in Chemical Bath, but it is lowered by 15% due to it being FASTer and "intensive". Amount of Etching Acid needed in ChB might get changed in future.
+- Blue Alloy is now crafted in Alloy Smelter with Silver+Electrotine Alloy
+- Added recipes for GT Mossy Concrete (thanks to @poly)
+- Fixed Multi Smelter Guide book crafting
+- Disabled Fiery Steel Dust, Ingot and Plate as magical fuel
+- Fixed crashing with Infused Crops. Fixed crafting of them as well.
+- Re-enabled Harvestcraft NEI Handler
+
 v3.2.3.1 Patch
 Updated Mods:
 - FastCraft -> 1.22
