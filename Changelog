@@ -63,6 +63,8 @@ Changes/Fixes:
 - Disabled Fiery Steel Dust, Ingot and Plate as magical fuel
 - Fixed crashing with Infused Crops. Fixed crafting of them as well.
 - Re-enabled Harvestcraft NEI Handler
+- Wooden Rails are cheaper and pre-tech
+- Added MagicBees combs to oreComb dictionary (thanks @livingLegend)
 
 v3.2.3.1 Patch
 Updated Mods:
