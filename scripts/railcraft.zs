@@ -47,6 +47,7 @@ var railElectric = <Railcraft:part.rail:5>;
 var railHS = <Railcraft:part.rail:3>;
 var railReinforced = <Railcraft:part.rail:4>;
 var railStandard = <Railcraft:part.rail>;
+var railWooden = <Railcraft:part.rail:2>;
 var trackDisposal = <Railcraft:track:2264>.withTag({track: "railcraft:track.disposal"});
 var woodenTie = <Railcraft:part.tie>;
 var cokeOven = <Railcraft:machine.alpha:7>;
@@ -95,6 +96,19 @@ var plateIron = <ore:plateIron>;
 var shuntingWire = <Railcraft:machine.delta>;
 var wireSupportFrame = <Railcraft:frame>;
 var rebar = <Railcraft:part.rebar>;
+var woodenTrackResult = <Railcraft:track:736>.withTag({track: "railcraft:track.slow"});
+var woodenTrackMatch = <Railcraft:track:736>.onlyWithTag({track: "railcraft:track.slow"});
+var woodenBoosterResult = <Railcraft:track>.withTag({track: "railcraft:track.slow.boost"});
+var woodenBoosterMatch = <Railcraft:track>.onlyWithTag({track: "railcraft:track.slow.boost"});
+var woodenJunctionResult = <Railcraft:track>.withTag({track: "railcraft:track.slow.junction"});
+var woodenJunctionMatch = <Railcraft:track>.onlyWithTag({track: "railcraft:track.slow.junction"});
+var woodenSwitchResult = <Railcraft:track:19986>.withTag({track: "railcraft:track.slow.switch"});
+var woodenSwitchMatch = <Railcraft:track:19986>.onlyWithTag({track: "railcraft:track.slow.switch"});
+var woodenWyeResult = <Railcraft:track>.withTag({track: "railcraft:track.slow.wye"});
+var woodenWyeMatch = <Railcraft:track>.onlyWithTag({track: "railcraft:track.slow.wye"});
+var stickWood = <ore:stickWood>;
+var plankWood = <ore:plankWood>;
+
 
 # Block/item Removal
 
@@ -127,7 +141,33 @@ recipes.addShaped(metalPlatform * 4, [[ironSlab], [metalPostColor]]);
 
 ChemicalReactor.addRecipe(railReinforced * 2, null, railStandard * 2, dustObsidian, null, 100);
 
+recipes.addShapeless(railWooden * 3, [ingotIron, stickWood]);
 
+recipes.remove(woodenTrackMatch);
+recipes.addShaped(woodenTrackResult * 64, [
+	[railWooden, null, railWooden],
+	[railWooden, plankWood, railWooden],
+	[railWooden, null, railWooden]]);
+recipes.remove(woodenBoosterMatch);
+recipes.addShaped(woodenBoosterResult * 32, [
+	[railWooden, null, railWooden],
+	[ingotGold, plankWood, ingotGold],
+	[railWooden, dustRedstone, railWooden]]);
+recipes.remove(woodenJunctionMatch);
+recipes.addShaped(woodenJunctionResult * 32, [
+	[railWooden, railWooden, railWooden],
+	[railWooden, plankWood, railWooden],
+	[railWooden, railWooden, railWooden]]);
+recipes.remove(woodenSwitchMatch);
+recipes.addShaped(woodenSwitchResult * 32, [
+	[railWooden, plankWood, railWooden],
+	[railWooden, railWooden, railWooden],
+	[railWooden, railWooden, railWooden]]);
+recipes.remove(woodenWyeMatch);
+recipes.addShaped(woodenWyeResult * 32, [
+	[railWooden, railWooden, railWooden],
+	[railWooden, railWooden, plankWood],
+	[railWooden, railWooden, railWooden]]);
 recipes.remove(reinforcedTrackMatch);
 recipes.addShaped(reinforcedTrackResult * 32, [
 	[railReinforced, null, railReinforced],
