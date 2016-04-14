@@ -672,7 +672,7 @@ Research.addCruciblePage("GT_TRANSTUNGSTEN", <gregtech:gt.metaitem.01:910>);
 Research.addPrereq("GT_TRANSTUNGSTEN", "GT_ADVANCEDMETALLURGY", true); 
 Research.addPrereq("GT_TRANSTUNGSTEN", "GT_TRANSTITANIUM", false); 
 Research.setConcealed("GT_TRANSTUNGSTEN", true);
-Warp.addToResearch("GT_TRANSURANIUM", 1);
+Warp.addToResearch("GT_TRANSTUNGSTEN", 1);
 
 // Uranium
 Research.addResearch("GT_TRANSURANIUM", "ALCHEMY", "metallum 5, radio 3, permutatio 3, venenum 3, potentia 3", 21, 16, 3, <gregtech:gt.metaitem.01:9098>);
