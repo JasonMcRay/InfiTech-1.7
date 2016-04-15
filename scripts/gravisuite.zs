@@ -26,6 +26,7 @@ var plateAlloyIridium = <ore:plateAlloyIridium>;
 var gravitool = <GraviSuite:graviTool:*>;
 var advancedChainsaw = <GraviSuite:advChainsaw:*>;
 var advancedDiamondDrill = <GraviSuite:advDDrill:*>;
+var relocator = <GraviSuite:relocator:*>;
 
 // Recipe removal
 recipes.remove(gravitool);
@@ -34,6 +35,7 @@ recipes.remove(advancedChainsaw);
 advancedChainsaw.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(advancedDiamondDrill);
 advancedDiamondDrill.addTooltip(format.red(format.bold("This item is DISABLED!")));
+relocator.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 // --- Glass Fiber Recipes ---
 recipes.remove(superconductor);
