@@ -38,6 +38,7 @@ var batteryChargerEV        = <gregtech:gt.blockmachines:694>;
 var batteryChargerHV        = <gregtech:gt.blockmachines:693>;
 var batteryChargerLV        = <gregtech:gt.blockmachines:691>;
 var batteryChargerMV        = <gregtech:gt.blockmachines:692>;
+var blockEnderium           = <ore:blockEnderium>;
 var cableCopperAnnealed1x   = <gregtech:gt.blockmachines:1386>;
 var cableElectrum4x         = <gregtech:gt.blockmachines:1448>;
 var cableGold1x             = <ore:cableGt01Gold>;
@@ -428,7 +429,7 @@ game.setLocalization("ic2.blockChargepadBatBox", "Low Voltage Charge Pad");
 recipes.remove(advancedMiner);
 recipes.addShaped(advancedMiner, [
     [plateAlloyAdvanced, circuitAdvanced, plateAlloyAdvanced],
-    [batteryChargerHV, machineCasingAdvanced, teleporter],
+    [batteryChargerHV, machineCasingAdvanced, blockEnderium],
     [plateAlloyAdvanced, circuitAdvanced, plateAlloyAdvanced]]);
 recipes.remove(chargePadMFE);
 recipes.addShaped(chargePadMFE, [
