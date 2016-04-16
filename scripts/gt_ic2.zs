@@ -42,7 +42,9 @@ var cableCopperAnnealed1x   = <gregtech:gt.blockmachines:1386>;
 var cableElectrum4x         = <gregtech:gt.blockmachines:1448>;
 var cableGold1x             = <ore:cableGt01Gold>;
 var cableGold2x             = <ore:cableGt02Gold>;
+var cablePlatinum1x         = <ore:cableGt01Platinum>;
 var cableTin1x              = <ore:cableGt01Tin>;
+var casingBasic             = <IC2:blockMachine>;
 var cellLargeSteel          = <gregtech:gt.metaitem.01:32405>;
 var chainsaw                = <IC2:itemToolChainsaw:*>;
 var chargePadBatbox         = <IC2:blockChargepad>;
@@ -77,6 +79,7 @@ var electricWrench          = <IC2:itemToolWrenchElectric:*>;
 var energiumDust            = <IC2:itemDust2:2>;
 var energyCrystal           = <IC2:itemBatCrystal:*>;
 var foodSalt                = <ore:foodSalt>;
+var frequencyTrans          = <IC2:itemFreq>;
 var fuelRodEmpty            = <IC2:itemFuelRod>;
 var fuelRodMOX              = <IC2:reactorMOXSimple:1>;
 var fuelRodThorium          = <gregtech:gt.Thoriumcell>;
@@ -132,6 +135,7 @@ var plantball               = <IC2:itemFuelPlantBall>;
 var plateAlloyAdvanced      = <ore:plateAlloyAdvanced>;
 var plateCarbon             = <ore:plateAlloyCarbon>;
 var plateIron               = <ore:plateIron>;
+var plateNaquadahAlloy      = <ore:plateNaquadahAlloy>;
 var plateRubber             = <ore:plateRubber>;
 var plateSteel              = <ore:plateSteel>;
 var plateTungstenSteel      = <ore:plateTungstenSteel>;
@@ -441,6 +445,11 @@ recipes.addShaped(chargePadCESU, [
     [circuitGood, pressurePlate, circuitGood],
     [plateRubber, batteryChargerMV, plateRubber]]);
 game.setLocalization("ic2.blockChargepadCESU", "Medium Voltage Charge Pad");
+recipes.remove(teleporter);
+recipes.addShaped(teleporter, [
+    [circuitAdvanced, frequencyTrans, circuitAdvanced],
+    [cablePlatinum1x, casingBasic, cablePlatinum1x],
+    [circuitAdvanced, plateNaquadahAlloy, circuitAdvanced]]);
 
 # Electrical Tools Oredictionary Stuff
 <ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:101>);
