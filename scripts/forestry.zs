@@ -523,3 +523,7 @@ recipes.addShaped(<Forestry:builderBag>, [
 Carpenter.addRecipe(<Forestry:builderBagT2>, [[<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
                                               [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
                                               [<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>]], <liquid:seedoil> * 5000, 600, <Forestry:builderBag>);
+
+
+// --- Loot tables ---
+vanilla.loot.removeChestLoot("naturalistChest", scoopFT);
