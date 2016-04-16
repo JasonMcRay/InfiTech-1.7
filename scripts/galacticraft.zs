@@ -65,6 +65,7 @@ var CompressedDesh = <ore:compressedDesh>;
 var plateTin = <ore:plateTin>;
 var fixtureWhite = <ProjRed|Illumination:projectred.illumination.fixture>;
 var fixtureRed = <ProjRed|Illumination:projectred.illumination.fixture:14>;
+var deshFrameBox = <ore:frameGtDesh>;
 
 // --- remove Recipes ---
 //Sealable Cables
@@ -721,19 +722,19 @@ recipes.addShaped(<GalacticraftCore:item.basicItem:19>, [
 //Walk way
 recipes.addShaped(<GalacticraftMars:tile.walkway> * 2, [
 [DeshPlate, DeshPlate, DeshPlate],
-[null, <ore:blockDesh>, null],
+[null, deshFrameBox, null],
 [DeshPlate, DeshPlate, DeshPlate]]);
 
 // Walk way Aluminum
 recipes.addShaped(<GalacticraftMars:tile.walkwayWire> * 2, [
 [DeshPlate, DeshPlate, DeshPlate],
-[<GalacticraftCore:tile.aluminumWire:1>, <ore:blockDesh>, <GalacticraftCore:tile.aluminumWire:1>],
+[<GalacticraftCore:tile.aluminumWire:1>, deshFrameBox, <GalacticraftCore:tile.aluminumWire:1>],
 [DeshPlate, DeshPlate, DeshPlate]]);
 
 // Walk way Oxygen
 recipes.addShaped(<GalacticraftMars:tile.walkwayOxygenPipe> * 2, [
 [DeshPlate, DeshPlate, DeshPlate],
-[<GalacticraftCore:tile.oxygenPipe>, <ore:blockDesh>, <GalacticraftCore:tile.oxygenPipe>],
+[<GalacticraftCore:tile.oxygenPipe>, deshFrameBox, <GalacticraftCore:tile.oxygenPipe>],
 [DeshPlate, DeshPlate, DeshPlate]]);
 
 //Thermal Cloth
