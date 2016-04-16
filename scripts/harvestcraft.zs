@@ -20,6 +20,9 @@ var rawRabbit = <harvestcraft:rabbitrawItem>;
 var rawVenison = <harvestcraft:venisonrawItem>;
 var cookedRabbit = <harvestcraft:rabbitcookedItem>;
 var cookedVenison = <harvestcraft:venisoncookedItem>;
+var fishingtrapBait = <harvestcraft:fishtrapbaitItem>;
+//var string = <minecraft:string>;
+var fishBait = <ore:listAllFishBait>;
 
 var cookedMeat = [cookedRabbit, cookedVenison] as IItemStack[];
 var rawMeat = [rawRabbit, rawVenison] as IItemStack[];
@@ -58,3 +61,9 @@ for meat in rawMeat {
 for meat in cookedMeat {
     Centrifuge.addRecipe([null], null, meat, null, <liquid:methane> * 72, [0], 288, 5);
     }
+    
+# Grub as fish bait
+fishBait.addAll(<ore:listAllfishraw>);
+fishBait.addAll(<ore:grubBee>);
+recipes.remove(fishingtrapBait);
+recipes.addShapeless(fishingtrapBait * 4, [<minecraft:string>, fishBait, fishBait, fishBait]);
