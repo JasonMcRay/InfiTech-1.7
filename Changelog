@@ -1,3 +1,24 @@
+v3.2.4.1 Patch
+
+Mod Updates:
+- HardcoreEnderExpansion v1.8.5 -> Customized
+- InfinityCore -> 1.4a
+
+Changes/Fixes:
+- Disabled MB Osmium Bee for sure now
+- Fixed thaumcraft scripts from previous patch not being in
+- Added disabled tooltip to Relocator
+- Fixed Osmium Bee localization
+- Raised power cost for Telepad, and changed the recipe
+- Disabled overlapping MB Resource bees (Iron, Copper, etc...)
+- Removed Forestry scoop from Naturalists Chests
+- Disabled normal Dragon Eggs crafting from Draconic Bees.
+- Introduced new way of making Dragon Eggs. (Hint: Requires combination of Bees, Thaumcraft, HEE)
+- Changed recipe for IC2 Teleporter
+- Changed Recipe for Advanced Miner (IC2) to require Enderium Block instead of Teleporter
+- Steel Comb processing gives Molten Steel + Multiplied crushed ore instead of just Molten Iron
+- Few more comb processing tweaks
+
 v3.2.4 - BLUEPOWER IS GOOOOOONE!
 Note: You might want to enable Electrotine retrogen in ProjectRed.cfg (B:"Electrotine Ore retrogen")
 
