@@ -31,3 +31,7 @@ Aspects.set(<harvestcraft:skilletItem>, "fames 4, messis 1");
 Aspects.set(<harvestcraft:saucepanItem>, "fames 4, corpus 1");
 Aspects.set(<harvestcraft:cuttingboardItem>, "fames 4, ordo 1");
 Aspects.set(<harvestcraft:potItem>, "fames 4, aqua 1, ignis 1");
+
+// Mana beans/crystals
+Aspects.set(<Thaumcraft:ItemManaBean>, "herba 0");
+Aspects.set(<Thaumcraft:ItemCrystalEssence>, "vitreus 0");
