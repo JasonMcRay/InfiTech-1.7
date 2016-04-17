@@ -71,7 +71,7 @@ var moltenUranium238        = <liquid:molten.uranium>;
 var moltenOsmium            = <liquid:molten.osmium>;
 var moltenSteel             = <liquid:molten.steel>;
 var chlorine                = <liquid:chlorine>;
-var titaniumtetrachlroide   = <liquid:titaniumtetrachloride>;
+var titaniumtetrachloride   = <liquid:titaniumtetrachloride>;
 
 
 // Purified Ores
