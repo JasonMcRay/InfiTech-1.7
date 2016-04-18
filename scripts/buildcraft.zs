@@ -8,6 +8,8 @@ import mods.gregtech.ChemicalBath;
 import mods.gregtech.Packer;
 import mods.buildcraft.AssemblyTable;
 import mods.gregtech.Lathe;
+import minetweaker.liquid.ILiquidStack;
+import minetweaker.item.IItemStack;
 
 # Aliases
 var architectTable = <BuildCraft|Builders:architectBlock>;
@@ -319,40 +321,67 @@ recipes.addShaped(chute, [
 	[null, gearIron, null]]);
 recipes.addShapeless(chute, [hopper, gearStone]);
 
-// --- PIPES ---
+// --- COLORED PIPES ---
+//OutputArray, InputStack, InputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
+var chemicalColors = [<liquid:dye.chemical.dyewhite>,<liquid:dye.chemical.dyeorange>,<liquid:dye.chemical.dyemagenta>,<liquid:dye.chemical.dyelightblue>,<liquid:dye.chemical.dyeyellow>,<liquid:dye.chemical.dyelime>,<liquid:dye.chemical.dyepink>,<liquid:dye.chemical.dyegray>,<liquid:dye.chemical.dyelightgray>,<liquid:dye.chemical.dyecyan>,<liquid:dye.chemical.dyepurple>,<liquid:dye.chemical.dyeblue>,<liquid:dye.chemical.dyebrown>,<liquid:dye.chemical.dyegreen>,<liquid:dye.chemical.dyered>,<liquid:dye.chemical.dyeblack>] as ILiquidStack[];
+var watermixedColors = [<liquid:dye.watermixed.dyewhite>,<liquid:dye.watermixed.dyeorange>,<liquid:dye.watermixed.dyemagenta>,<liquid:dye.watermixed.dyelightblue>,<liquid:dye.watermixed.dyeyellow>,<liquid:dye.watermixed.dyelime>,<liquid:dye.watermixed.dyepink>,<liquid:dye.watermixed.dyegray>,<liquid:dye.watermixed.dyelightgray>,<liquid:dye.watermixed.dyecyan>,<liquid:dye.watermixed.dyepurple>,<liquid:dye.watermixed.dyeblue>,<liquid:dye.watermixed.dyebrown>,<liquid:dye.watermixed.dyegreen>,<liquid:dye.watermixed.dyered>,<liquid:dye.watermixed.dyeblack>] as ILiquidStack[];
+var meta = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] as int[];
 
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemswood:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsemerald:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemscobblestone:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsstone:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsquartz:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsiron:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsgold:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsdiamond:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsobsidian:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemslapis:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsdaizuli:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemssandstone:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsvoid:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsemzuli:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsclay:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidsquartz:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidsiron:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidsgold:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidsemerald:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidsdiamond:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipefluidsvoid:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepowerwood:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepowercobblestone:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepowerstone:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepowerquartz:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepoweriron:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepowergold:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepowerdiamond:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepoweremerald:*>);
-recipes.remove(<BuildCraft|Transport:item.buildcraftPipe.pipepowersandstone:*>);
-
+for i, color in chemicalColors {
+    var itemMeta = meta[i];
+    
+    recipes.removeShaped(woodPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(emeraldPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(cobblePipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(stonePipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(quartzPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(ironPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(goldPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(diamondPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(obsidianPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(lazuliPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(daizuliPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(sandstonePipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(voidPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(emzuliPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(stripesPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(clayPipe.definition.makeStack(itemMeta));
+    ChemicalBath.addRecipe([woodPipe.definition.makeStack(itemMeta)], woodPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([emeraldPipe.definition.makeStack(itemMeta)], emeraldPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([cobblePipe.definition.makeStack(itemMeta)], cobblePipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([stonePipe.definition.makeStack(itemMeta)], stonePipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([quartzPipe.definition.makeStack(itemMeta)], quartzPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([ironPipe.definition.makeStack(itemMeta)], ironPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([goldPipe.definition.makeStack(itemMeta)], goldPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([diamondPipe.definition.makeStack(itemMeta)], diamondPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([obsidianPipe.definition.makeStack(itemMeta)], obsidianPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([lazuliPipe.definition.makeStack(itemMeta)], lazuliPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([daizuliPipe.definition.makeStack(itemMeta)], daizuliPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([sandstonePipe.definition.makeStack(itemMeta)], sandstonePipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([voidPipe.definition.makeStack(itemMeta)], voidPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([emzuliPipe.definition.makeStack(itemMeta)], emzuliPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([stripesPipe.definition.makeStack(itemMeta)], stripesPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([clayPipe.definition.makeStack(itemMeta)], clayPipe, color * 4, [10000], 64, 2);
+    }
+for i, color in watermixedColors {
+    var itemMeta = meta[i];
+    ChemicalBath.addRecipe([woodPipe.definition.makeStack(itemMeta)], woodPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([emeraldPipe.definition.makeStack(itemMeta)], emeraldPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([cobblePipe.definition.makeStack(itemMeta)], cobblePipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([stonePipe.definition.makeStack(itemMeta)], stonePipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([quartzPipe.definition.makeStack(itemMeta)], quartzPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([ironPipe.definition.makeStack(itemMeta)], ironPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([goldPipe.definition.makeStack(itemMeta)], goldPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([diamondPipe.definition.makeStack(itemMeta)], diamondPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([obsidianPipe.definition.makeStack(itemMeta)], obsidianPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([lazuliPipe.definition.makeStack(itemMeta)], lazuliPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([daizuliPipe.definition.makeStack(itemMeta)], daizuliPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([sandstonePipe.definition.makeStack(itemMeta)], sandstonePipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([voidPipe.definition.makeStack(itemMeta)], voidPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([emzuliPipe.definition.makeStack(itemMeta)], emzuliPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([stripesPipe.definition.makeStack(itemMeta)], stripesPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([clayPipe.definition.makeStack(itemMeta)], clayPipe, color * 4, [10000], 64, 2);
+    }
 
 # Transport
 recipes.remove(rodStone);
