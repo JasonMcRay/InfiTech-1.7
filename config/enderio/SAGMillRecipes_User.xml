@@ -151,6 +151,12 @@ found in the core file.
     <recipe name="Sulfur Ore" />
     <recipe name="Saltpeter" />
   </recipeGroup>
+  
+  <recipeGroup name="Forestry" >
+    <recipe name="ApatiteOre" />
+  </recipeGroup>
+
+  <recipeGroup name="Mekanism" enabled="false" />
 
   <recipeGroup name="GT Ores">
     <recipe name="NetherrackTinOre" energyCost="32000">
