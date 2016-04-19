@@ -138,6 +138,11 @@ found in the core file.
     <recipe name="LapisLazuliOre" />
     <recipe name="Quartz Ore" />
   </recipeGroup>
+  
+  <recipeGroup name="Applied Energistics 2">
+    <recipe name="ChargedCertusQuartzOre" />
+    <recipe name="CertusQuartzOre" />
+  </recipeGroup>
 
   <recipeGroup name="Common Ores/Ingots/Blocks" enabled="false" />
   
