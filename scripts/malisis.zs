@@ -118,74 +118,74 @@ recipes.remove(gateAcacia);
 recipes.addShaped(gateAcacia, [
 	[stickWood, plankAcacia, stickWood],
 	[stickWood, plankAcacia, stickWood],
-	[null, framingSaw.reuse(), null]]);
+	[null, framingSaw, null]]);
 recipes.remove(trapdoorAcacia);
 recipes.addShaped(trapdoorAcacia, [
 	[plankAcacia, plankAcacia, plankAcacia],
 	[plankAcacia, plankAcacia, plankAcacia],
-	[null, framingSaw.reuse(), null]]);
+	[null, framingSaw, null]]);
 recipes.remove(doorAcacia);
 recipes.addShaped(doorAcacia, [
 	[plankAcacia, plankAcacia, null],
-	[plankAcacia, plankAcacia, framingSaw.reuse()],
+	[plankAcacia, plankAcacia, framingSaw],
 	[plankAcacia, plankAcacia, null]]);
 recipes.remove(gateBirch);
 recipes.addShaped(gateBirch, [
 	[stickWood, plankBirch, stickWood],
 	[stickWood, plankBirch, stickWood],
-	[null, framingSaw.reuse(), null]]);
+	[null, framingSaw, null]]);
 recipes.remove(trapdoorBirch);
 recipes.addShaped(trapdoorBirch, [
 	[plankBirch, plankBirch, plankBirch],
 	[plankBirch, plankBirch, plankBirch],
-	[null, framingSaw.reuse(), null]]);
+	[null, framingSaw, null]]);
 recipes.remove(doorBirch);
 recipes.addShaped(doorBirch, [
 	[plankBirch, plankBirch, null],
-	[plankBirch, plankBirch, framingSaw.reuse()],
+	[plankBirch, plankBirch, framingSaw],
 	[plankBirch, plankBirch, null]]);
 recipes.remove(gateJungle);
 recipes.addShaped(gateJungle, [
 	[stickWood, plankJungle, stickWood],
 	[stickWood, plankJungle, stickWood],
-	[null, framingSaw.reuse(), null]]);
+	[null, framingSaw, null]]);
 recipes.remove(trapdoorJungle);
 recipes.addShaped(trapdoorJungle, [
 	[plankJungle, plankJungle, plankJungle],
 	[plankJungle, plankJungle, plankJungle],
-	[null, framingSaw.reuse(), null]]);
+	[null, framingSaw, null]]);
 recipes.remove(doorJungle);
 recipes.addShaped(doorJungle, [
 	[plankJungle, plankJungle, null],
-	[plankJungle, plankJungle, framingSaw.reuse()],
+	[plankJungle, plankJungle, framingSaw],
 	[plankJungle, plankJungle, null]]);
 recipes.remove(gateDarkOak);
 recipes.addShaped(gateDarkOak, [
 	[stickWood, plankDarkOak, stickWood],
 	[stickWood, plankDarkOak, stickWood],
-	[null, framingSaw.reuse(), null]]);
+	[null, framingSaw, null]]);
 recipes.remove(trapdoorDarkOak);
 recipes.addShaped(trapdoorDarkOak, [
 	[plankDarkOak, plankDarkOak, plankDarkOak],
 	[plankDarkOak, plankDarkOak, plankDarkOak],
-	[null, framingSaw.reuse(), null]]);
+	[null, framingSaw, null]]);
 recipes.remove(doorDarkOak);
 recipes.addShaped(doorDarkOak, [
 	[plankDarkOak, plankDarkOak, null],
-	[plankDarkOak, plankDarkOak, framingSaw.reuse()],
+	[plankDarkOak, plankDarkOak, framingSaw],
 	[plankDarkOak, plankDarkOak, null]]);
 recipes.remove(gateSpruce);
 recipes.addShaped(gateSpruce, [
 	[stickWood, plankSpruce, stickWood],
 	[stickWood, plankSpruce, stickWood],
-	[null, framingSaw.reuse(), null]]);
+	[null, framingSaw, null]]);
 recipes.remove(trapdoorSpruce);
 recipes.addShaped(trapdoorSpruce, [
 	[plankSpruce, plankSpruce, plankSpruce],
 	[plankSpruce, plankSpruce, plankSpruce],
-	[null, framingSaw.reuse(), null]]);
+	[null, framingSaw, null]]);
 recipes.remove(doorSpruce);
 recipes.addShaped(doorSpruce, [
 	[plankSpruce, plankSpruce, null],
-	[plankSpruce, plankSpruce, framingSaw.reuse()],
+	[plankSpruce, plankSpruce, framingSaw],
 	[plankSpruce, plankSpruce, null]]);
