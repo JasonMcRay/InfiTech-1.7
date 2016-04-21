@@ -392,12 +392,14 @@ for i, color in watermixedColors {
 for i in meta {
     recipes.remove(quartzFluidPipe.definition.makeStack(i));
     recipes.remove(goldFluidPipe.definition.makeStack(i));
+    recipes.remove(clayFluidPipe.definition.makeStack(i));
     recipes.remove(voidFluidPipe.definition.makeStack(i));
     recipes.remove(ironFluidPipe.definition.makeStack(i));
     recipes.remove(emeraldFluidPipe.definition.makeStack(i));
     recipes.remove(diamondFluidPipe.definition.makeStack(i));
     Packer.addRecipe(quartzFluidPipe.definition.makeStack(i), quartzPipe.definition.makeStack(i), pipeSealant, 100, 8);
     Packer.addRecipe(goldFluidPipe.definition.makeStack(i), goldPipe.definition.makeStack(i), pipeSealant, 100, 8);
+    Packer.addRecipe(clayFluidPipe.definition.makeStack(i), clayPipe.definition.makeStack(i), pipeSealant, 100, 8);
     Packer.addRecipe(voidFluidPipe.definition.makeStack(i), voidPipe.definition.makeStack(i), pipeSealant, 100, 8);
     Packer.addRecipe(ironFluidPipe.definition.makeStack(i), ironPipe.definition.makeStack(i), pipeSealant, 100, 8);
     Packer.addRecipe(emeraldFluidPipe.definition.makeStack(i), emeraldPipe.definition.makeStack(i), pipeSealant, 100, 8);
@@ -498,6 +500,8 @@ recipes.remove(quartzFluidPipe);
 Packer.addRecipe(quartzFluidPipe, quartzPipe, pipeSealant, 100, 8);
 recipes.remove(goldFluidPipe);
 Packer.addRecipe(goldFluidPipe, goldPipe, pipeSealant, 100, 8);
+recipes.remove(clayFluidPipe);
+Packer.addRecipe(clayFluidPipe, clayPipe, pipeSealant, 100, 8);
 recipes.remove(voidFluidPipe);
 Packer.addRecipe(voidFluidPipe, voidPipe, pipeSealant, 100, 8);
 recipes.remove(ironFluidPipe);
