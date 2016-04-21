@@ -142,6 +142,7 @@ var pipeSmallTungstenSteel = <ore:pipeSmallTungstenSteel>;
 var piston = <minecraft:piston>;
 var pistonMV = <gregtech:gt.metaitem.01:32641>;
 var plateDarkSteel = <ore:plateDarkSteel>;
+var plateEnderium = <ore:pllateEnderium>;
 var plateIron = <ore:plateIron>;
 var plateSilicon = <ore:plateSilicon>;
 var plateSteel = <ore:plateSteel>;
@@ -149,6 +150,7 @@ var pressurePlateDarkSteel = <EnderIO:blockDarkSteelPressurePlate>;
 var probeConduit = <EnderIO:itemConduitProbe>;
 var pulsatingCrystal = <EnderIO:itemMaterial:5>;
 var pumpElectricMV = <gregtech:gt.metaitem.01:32611>;
+var pumpElectricHV = <gregtech:gt.metaitem.01:32612>;
 var reservoir = <EnderIO:blockReservoir>;
 var resonatorEnder = <EnderIO:itemFrankenSkull:3>;
 var rodDarkSteel = <ore:stickDarkSteel>;
@@ -294,8 +296,8 @@ recipes.addShaped(travelAnchor, [
 	[ingotElectricalSteel, conduitBinder, ingotElectricalSteel]]);
 recipes.remove(dimTransceiver);
 recipes.addShaped(dimTransceiver, [
-	[ingotDarkSteel, resonatorEnder, ingotDarkSteel],
-	[capacitorBank, crystalEnder, pumpElectricMV],
+	[plateEnderium, resonatorEnder, plateEnderium],
+	[capacitorBank, crystalEnder, pumpElectricHV],
 	[ingotDarkSteel, capacitorOctadic, ingotDarkSteel]]);
 recipes.addShapeless(dimTransceiver, [dimTransceiverOld]);
 recipes.remove(tankFluidPressurized);
