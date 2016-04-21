@@ -8,6 +8,7 @@ var vacuumHopper      = <OpenBlocks:vacuumhopper>;
 var blockPlacer       = <OpenBlocks:blockPlacer>;
 var blockbreaker      = <OpenBlocks:blockbreaker>;
 var elevator          = <OpenBlocks:elevator>;
+var elevatorRotating  = <OpenBlocks:elevator_rotating>;
 var fan               = <OpenBlocks:fan>;
 var sponge            = <OpenBlocks:sponge>;
 var spongeonastick    = <OpenBlocks:spongeonastick>;
@@ -62,6 +63,9 @@ craneEngine.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 recipes.remove(luggage);
 luggage.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
+recipes.remove(elevatorRotating);
+elevatorRotating.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 recipes.remove(paintbrush);
 recipes.addShaped(paintbrush,
