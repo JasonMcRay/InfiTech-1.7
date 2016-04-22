@@ -1545,7 +1545,10 @@ Research.addPrereq("BONEBOW", "AM_GEMVINTEUM", true);
 Arcane.removeRecipe(<Thaumcraft:blockStoneDevice:11>);
 Arcane.addShaped("VISPOWER", <Thaumcraft:blockStoneDevice:11>, "ignis 32, aer 32, perditio 32", [[<ore:blockRedstone>, <gregtech:gt.metaitem.01:32681>, <ore:blockRedstone>], [<ore:dustSmallNaquadah>, <Thaumcraft:blockStoneDevice:9>, <ore:dustSmallNaquadah>], [<ore:blockRedstone>, <gregtech:gt.metaitem.01:32691>, <ore:blockRedstone>]]);
 Research.refreshResearchRecipe("VISPOWER");
+Arcane.removeRecipe(<Thaumcraft:blockStoneDevice:11>);
 Arcane.addShaped("VISPOWER", <Thaumcraft:blockStoneDevice:11>, "ignis 32, aer 32, perditio 32", [[<ore:blockRedstone>, <gregtech:gt.metaitem.01:32681>, <ore:blockRedstone>], [<Thaumcraft:FocusPech>, <Thaumcraft:blockStoneDevice:9>, <Thaumcraft:FocusPech>], [<ore:blockRedstone>, <gregtech:gt.metaitem.01:32691>, <ore:blockRedstone>]]);
+Research.addArcanePage("VISPOWER", <Thaumcraft:blockStoneDevice:11>);
+Arcane.addShaped("VISPOWER", <Thaumcraft:blockStoneDevice:11>, "ignis 32, aer 32, perditio 32", [[<ore:blockRedstone>, <gregtech:gt.metaitem.01:32681>, <ore:blockRedstone>], [<ore:dustSmallNaquadah>, <Thaumcraft:blockStoneDevice:9>, <ore:dustSmallNaquadah>], [<ore:blockRedstone>, <gregtech:gt.metaitem.01:32691>, <ore:blockRedstone>]]);
 
 // Bone Bow
 Research.clearPages("BONEBOW"); 
