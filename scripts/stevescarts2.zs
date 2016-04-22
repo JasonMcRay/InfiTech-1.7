@@ -89,7 +89,7 @@ var plateGold           = <ore:plateGold>;
 var plateNeodymium      = <ore:plateNeodymium>;
 var rodSteel            = <ore:stickSteel>;
 var platestainlesssteel = <ore:plateStainlessSteel>;
-var sawSteel            = <ore:toolHeadSawSteel>;
+var sawStainlessSteel   = <gregtech:gt.metaitem.02:7306>;
 var gearSteel           = <ore:gearSteel>;
 var drillIron           = <ore:toolHeadDrillIron>;
 var basiccircuit        = <ore:circuitBasic>;
@@ -129,6 +129,7 @@ var fieryBlood          = <liquid:fieryblood>;
 var liquidGlowstone     = <liquid:molten.glowstone>;
 var moltenBlueSteel     = <liquid:molten.bluesteel>;
 var strongSwiftnessBrew = <liquid:potion.speed.strong>;
+var foilPolycap         = <ore:foilPolycaprolactam>;
 
 //railcraft
 var standardrail        = <Railcraft:part.rail>;
@@ -423,7 +424,7 @@ recipes.addShaped(compactsolarengine, [
 
 recipes.remove(sawblade);
 recipes.addShaped(sawblade, [
-    [sawSteel, diamond, null],
+    [sawStainlessSteel, diamond, null],
     [file, HHammer, null],
     [null, null, null]]);
 
@@ -503,9 +504,9 @@ recipes.addShaped(galgadoriandrill, [
 
 recipes.remove(woodcuttingcore);
 recipes.addShaped(woodcuttingcore, [
-    [treesapling, treesapling, treesapling],
-    [treesapling, simplepcb, treesapling],
-    [treesapling, treesapling, treesapling]]);
+    [treesapling, foilPolycap, treesapling],
+    [foilPolycap, simplepcb, foilPolycap],
+    [treesapling, foilPolycap, treesapling]]);
 
 recipes.remove(blankupgrade);
 recipes.addShaped(blankupgrade, [
