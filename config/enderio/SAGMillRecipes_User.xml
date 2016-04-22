@@ -4951,4 +4951,19 @@ found in the core file.
     </recipe>
   </recipeGroup>
 
+  <grindingBalls>
+    <grindingBall id="Flint" remove="true" />
+    <grindingBall id="DarkSteelBall" remove="true" />
+
+    <grindingBall id="IronRound" grindingMultiplier="1.2" chanceMultiplier="1.25" powerMultiplier="0.85" durationRF="6000" >
+      <itemStack oreDictionary="roundIron" />
+    </grindingBall>
+    <grindingBall id="DarkSteelRound" grindingMultiplier="1.5" chanceMultiplier="2" powerMultiplier="0.7" durationRF="12000" >
+      <itemStack oreDictionary="roundDarkSteel" />
+    </grindingBall>
+    <grindingBall id="TungstenSteelRound" grindingMultiplier="1.5" chanceMultiplier="2" powerMultiplier="0.7" durationRF="60000" >
+      <itemStack oreDictionary="roundTungstenSteel" />
+    </grindingBall>
+  </grindingBalls>
+
 </SAGMillRecipes>
