@@ -227,6 +227,14 @@ var woodKinesisPipe = <BuildCraft|Transport:item.buildcraftPipe.pipepowerwood>;
 var woodPipe = <BuildCraft|Transport:item.buildcraftPipe.pipeitemswood>;
 var worktable = <Forestry:factory2:2>;
 var wrench = <ore:craftingToolWrench>;
+var dustSmallStone = <gregtech:gt.metaitem.01:1299>;
+var dustSmallObsidian = <gregtech:gt.metaitem.01:1804>;
+var dustSmallClay = <gregtech:gt.metaitem.01:1805>;
+var sand = <minecraft:sand>;
+var sandstone = <minecraft:sandstone>;
+var cobblestone = <minecraft:cobblestone>;
+var stickWood = <minecraft:stick>;
+var hardenedClay = <minecraft:hardened_clay>;
 
 # Items/Blocks Removal
 recipes.remove(BCRefinery);
@@ -326,10 +334,16 @@ recipes.remove(rodStone);
 recipes.addShaped(rodStone, [
     [File, null, null],
     [null, stone, null]]);
+Lathe.addRecipe([rodStone, dustSmallStone * 2], stone, 98, 16);
 recipes.remove(rodObsidian);
 recipes.addShaped(rodObsidian, [
     [File, null, null],
     [null, obsidian, null]]);
+Lathe.addRecipe([rodObsidian, dustSmallObsidian * 2], obsidian, 198, 16);
+Lathe.addRecipe([rodCobble, dustSmallStone], cobblestone, 148, 16);
+Lathe.addRecipe([rodSandstone, sand], sandstone, 64, 16);
+Lathe.addRecipe([rodWooden], stickWood, 16, 16);
+Lathe.addRecipe([rodClay, dustSmallClay * 2], hardenedClay, 16, 16);
 recipes.remove(stonePipe);
 recipes.addShaped(stonePipe * 6, [
     [rodStone, HHammer, rodStone],
