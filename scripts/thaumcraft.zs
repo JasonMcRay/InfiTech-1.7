@@ -849,6 +849,16 @@ Arcane.removeRecipe(<Automagy:focusCrafting>);
 Arcane.addShaped("FOCUSCRAFTING", <Automagy:focusCrafting>, "ordo 30, terra 10, perditio 5", [[<ore:craftingTableWood>, <ore:ringBeryllium>, <Thaumcraft:blockTable:15>], [<ore:ringBeryllium>, <ore:lensOlivine>, <ore:ringBeryllium>], [<StevesWorkshop:production_table>, <ore:ringBeryllium>, <BiblioCraft:BiblioWorkbench>]]);
 Research.refreshResearchRecipe("FOCUSCRAFTING");
 
+// Pech's Curse
+Research.addResearch("GT_FOCUSPECH", "TT_CATEGORY", "venenum 5, vitium 5, lucrum 5, telum 5", -8, -3, 3, <Thaumcraft:FocusPech>);
+game.setLocalization("en_US", "tc.research_name.GT_FOCUSPECH", "Wand Focus: Pech's Curse");
+game.setLocalization("en_US", "tc.research_text.GT_FOCUSPECH", "[GT] Curses of your own");
+Research.addPage("GT_FOCUSPECH", "kirara.research_page.GT_FOCUSPECH.1");
+game.setLocalization("en_US", "kirara.research_page.GT_FOCUSPECH.1", "After much experimentation you've managed to recreate the foci that the pechs used, giving you access to all the curses you could ever need.");
+Infusion.addRecipe("GT_FOCUSPECH", <gregtech:gt.metaitem.01:24504>, [<gregtech:gt.metaitem.01:28097>, <IC2:itemFluidCell>.withTag({Fluid: {FluidName: "fluxgoo", Amount: 1000}}), <gregtech:gt.metaitem.01:28097>, <minecraft:potion:16456>, <gregtech:gt.metaitem.01:28097>, <minecraft:potion:16458>, <gregtech:gt.metaitem.01:28097>, <minecraft:potion:16452>], "venenum 25, telum 25, vitium 10, lucrum 10", <Thaumcraft:FocusPech>, 8);
+Research.addInfusionPage("GT_FOCUSPECH", <Thaumcraft:FocusPech>);
+Research.addPrereq("GT_FOCUSPECH", "FOCUS_HEAL", false);
+
 print('Foci reconfigured');
 
 // Transmutations
@@ -1534,7 +1544,10 @@ Research.addPrereq("BONEBOW", "AM_GEMVINTEUM", true);
 Arcane.removeRecipe(<Thaumcraft:blockStoneDevice:11>);
 Arcane.addShaped("VISPOWER", <Thaumcraft:blockStoneDevice:11>, "ignis 32, aer 32, perditio 32", [[<ore:blockRedstone>, <gregtech:gt.metaitem.01:32681>, <ore:blockRedstone>], [<ore:dustSmallNaquadah>, <Thaumcraft:blockStoneDevice:9>, <ore:dustSmallNaquadah>], [<ore:blockRedstone>, <gregtech:gt.metaitem.01:32691>, <ore:blockRedstone>]]);
 Research.refreshResearchRecipe("VISPOWER");
+Arcane.removeRecipe(<Thaumcraft:blockStoneDevice:11>);
 Arcane.addShaped("VISPOWER", <Thaumcraft:blockStoneDevice:11>, "ignis 32, aer 32, perditio 32", [[<ore:blockRedstone>, <gregtech:gt.metaitem.01:32681>, <ore:blockRedstone>], [<Thaumcraft:FocusPech>, <Thaumcraft:blockStoneDevice:9>, <Thaumcraft:FocusPech>], [<ore:blockRedstone>, <gregtech:gt.metaitem.01:32691>, <ore:blockRedstone>]]);
+Research.addArcanePage("VISPOWER", <Thaumcraft:blockStoneDevice:11>);
+Arcane.addShaped("VISPOWER", <Thaumcraft:blockStoneDevice:11>, "ignis 32, aer 32, perditio 32", [[<ore:blockRedstone>, <gregtech:gt.metaitem.01:32681>, <ore:blockRedstone>], [<ore:dustSmallNaquadah>, <Thaumcraft:blockStoneDevice:9>, <ore:dustSmallNaquadah>], [<ore:blockRedstone>, <gregtech:gt.metaitem.01:32691>, <ore:blockRedstone>]]);
 
 // Bone Bow
 Research.clearPages("BONEBOW"); 
