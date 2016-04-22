@@ -164,11 +164,6 @@ var wrench = <ore:craftingToolWrench>;
 var wrenchYeta = <EnderIO:itemYetaWrench>;
 
 # Recipe fixes
-recipes.remove(ballDarkSteel);
-recipes.addShaped(ballDarkSteel * 5, [
-	[null, ingotDarkSteel, null],
-	[ingotDarkSteel, ingotDarkSteel, ingotDarkSteel],
-	[null, ingotDarkSteel, null]]);
 recipes.remove(obsidianReinforced);
 recipes.addShaped(obsidianReinforced, [
 	[ingotDarkSteel, barsDarkSteel, ingotDarkSteel],
@@ -250,6 +245,8 @@ gearStone.remove(gearBasic);
 gearBasic.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(alloySmelter);
 alloySmelter.addTooltip(format.red(format.bold("This item is DISABLED!")));
+recipes.remove(ballDarkSteel);
+ballDarkSteel.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # Recipe Tweaks
 recipes.remove(probeConduit);
