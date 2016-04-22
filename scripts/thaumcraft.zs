@@ -855,10 +855,9 @@ game.setLocalization("en_US", "tc.research_name.GT_FOCUSPECH", "Wand Focus: Pech
 game.setLocalization("en_US", "tc.research_text.GT_FOCUSPECH", "[GT] Curses of your own");
 Research.addPage("GT_FOCUSPECH", "kirara.research_page.GT_FOCUSPECH.1");
 game.setLocalization("en_US", "kirara.research_page.GT_FOCUSPECH.1", "After much experimentation you've managed to recreate the foci that the pechs used, giving you access to all the curses you could ever need.");
-Infusion.addRecipe("GT_FOCUSPECH", <gregtech:gt.metaitem.01:24504>, [<gregtech:gt.metaitem.01:28097>, <WitchingGadgets:item.WG_CrystalFlask>.withTag({fluid: "fluxgoo"}), <gregtech:gt.metaitem.01:28097>, <minecraft:potion:16456>, <gregtech:gt.metaitem.01:28097>, <minecraft:potion:16458>, <gregtech:gt.metaitem.01:28097>, <minecraft:potion:16452>], "venenum 25, telum 25, vitium 10, lucrum 10", <Thaumcraft:FocusPech>, 8);
+Infusion.addRecipe("GT_FOCUSPECH", <gregtech:gt.metaitem.01:24504>, [<gregtech:gt.metaitem.01:28097>, <IC2:itemFluidCell>.withTag({Fluid: {FluidName: "fluxgoo", Amount: 1000}}), <gregtech:gt.metaitem.01:28097>, <minecraft:potion:16456>, <gregtech:gt.metaitem.01:28097>, <minecraft:potion:16458>, <gregtech:gt.metaitem.01:28097>, <minecraft:potion:16452>], "venenum 25, telum 25, vitium 10, lucrum 10", <Thaumcraft:FocusPech>, 8);
 Research.addInfusionPage("GT_FOCUSPECH", <Thaumcraft:FocusPech>);
 Research.addPrereq("GT_FOCUSPECH", "FOCUS_HEAL", false);
-Research.addPrereq("GT_FOCUSPECH", "CRYSTALCAPSULE", true);
 
 print('Foci reconfigured');
 
