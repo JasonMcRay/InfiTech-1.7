@@ -127,7 +127,7 @@ var moltenPulsatingIron = <liquid:molten.pulsatingiron>;
 var moltenRedstone = <liquid:molten.redstone>;
 var moltenTin = <liquid:molten.tin>;
 var moltenVibrantAlloy = <liquid:molten.vibrantalloy>;
-var motorMV = <gregtech:gt.metaitem.01:32601>;
+var motorHV = <gregtech:gt.metaitem.01:32602>;
 var netherQuartz = <minecraft:quartz>;
 var nuggetEnderium = <ore:nuggetEnderium>;
 var nuggetPulsatingIron = <ore:nuggetPulsatingIron>;
@@ -140,7 +140,7 @@ var pipeSmallBronze = <ore:pipeSmallBronze>;
 var pipeSmallSteel = <ore:pipeSmallSteel>;
 var pipeSmallTungstenSteel = <ore:pipeSmallTungstenSteel>;
 var piston = <minecraft:piston>;
-var pistonMV = <gregtech:gt.metaitem.01:32641>;
+var pistonHV = <gregtech:gt.metaitem.01:32642>;
 var plateDarkSteel = <ore:plateDarkSteel>;
 var plateIron = <ore:plateIron>;
 var plateSilicon = <ore:plateSilicon>;
@@ -164,11 +164,6 @@ var wrench = <ore:craftingToolWrench>;
 var wrenchYeta = <EnderIO:itemYetaWrench>;
 
 # Recipe fixes
-recipes.remove(ballDarkSteel);
-recipes.addShaped(ballDarkSteel * 5, [
-	[null, ingotDarkSteel, null],
-	[ingotDarkSteel, ingotDarkSteel, ingotDarkSteel],
-	[null, ingotDarkSteel, null]]);
 recipes.remove(obsidianReinforced);
 recipes.addShaped(obsidianReinforced, [
 	[ingotDarkSteel, barsDarkSteel, ingotDarkSteel],
@@ -250,6 +245,8 @@ gearStone.remove(gearBasic);
 gearBasic.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(alloySmelter);
 alloySmelter.addTooltip(format.red(format.bold("This item is DISABLED!")));
+recipes.remove(ballDarkSteel);
+ballDarkSteel.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # Recipe Tweaks
 recipes.remove(probeConduit);
@@ -310,9 +307,9 @@ recipes.addShaped(tankFluid, [
     [plateIron, barsIron, plateIron]]);
 recipes.remove(sagMill);
 recipes.addShaped(sagMill, [
-    [ingotElectricalSteel, craftingGrinder, ingotElectricalSteel],
+    [plateDarkSteel, craftingGrinder, plateDarkSteel],
     [flint, machineChassis, flint],
-    [pistonMV, capacitorDualLayer, motorMV]]);
+    [pistonHV, capacitorDualLayer, motorHV]]);
 recipes.remove(generatorCombustion);
 recipes.addShaped(generatorCombustion, [
     [ingotElectricalSteel, ingotElectricalSteel, ingotElectricalSteel],
