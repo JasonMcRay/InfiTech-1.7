@@ -63,7 +63,7 @@ var emitterMV = <gregtech:gt.metaitem.01:32681>;
 var emptyCell = <IC2:itemCellEmpty>;
 var enderEye = <minecraft:ender_eye>;
 var enderResonator = <EnderIO:itemFrankenSkull:3>;
-var furnace = <minecraft:furnace>;
+var blockFurnace = <minecraft:furnace>;
 var fermentedSpiderEye = <minecraft:fermented_spider_eye>;
 var file = <ore:craftingToolFile>;
 var gasLift = <PneumaticCraft:gasLift>;
@@ -219,6 +219,18 @@ var itemFoilAnnealedCopper = <gregtech:gt.metaitem.01:29345>;
 var epoxyCoatedPlastic = <InfinityCore:itemMaterial:11>;
 var nitricAcid = <liquid:nitricacid>;
 var waterCell = <IC2:itemCellEmpty:1>;
+var bucketLPG = <PneumaticCraft:lpgBucket>;
+var bucketGasoline = <PneumaticCraft:fuelBucket>;
+var bucketKerosene = <PneumaticCraft:keroseneBucket>;
+var bucketDiesel = <PneumaticCraft:dieselBucket>;
+var bucketOil = <PneumaticCraft:oilBucket>;
+
+// Nerf PC fuel buckets
+furnace.setFuel(bucketLPG, 90000);
+furnace.setFuel(bucketGasoline, 75000);
+furnace.setFuel(bucketKerosene, 55000);
+furnace.setFuel(bucketDiesel, 35000);
+furnace.setFuel(bucketOil, 7500);
 
 # Recipe tweaks version 3
 recipes.remove(heatSink);
@@ -235,12 +247,12 @@ recipes.remove(compressorAir);
 recipes.addShaped(compressorAir, [
     [plateCompressedIron, heatConductor, plateCompressedIron],
     [plateCompressedIron, pneumaticHull, plateCompressedIron],
-    [plateCompressedIron, furnace, plateCompressedIron]]);
+    [plateCompressedIron, blockFurnace, plateCompressedIron]]);
 recipes.remove(compressorAirAdv);
 recipes.addShaped(compressorAirAdv, [
     [plateCompressedIron, plateCompressedIron, plateCompressedIron],
     [plateCompressedIron, pneumaticHullAdv, plateCompressedIron],
-    [plateCompressedIron, furnace, plateCompressedIron]]);
+    [plateCompressedIron, blockFurnace, plateCompressedIron]]);
 recipes.remove(cannonBarrel);
 Assembler.addRecipe(cannonBarrel, itemPlateCompressedIron * 6, safetyTubeModule, null, 200, 16);
 recipes.remove(pressureChamberWall);
