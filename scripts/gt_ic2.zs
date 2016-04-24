@@ -109,6 +109,7 @@ var ic2SolidCanningMachine  = <IC2:blockMachine2:9>;
 var ic2ThermalCentrifuge    = <IC2:blockMachine2:3>;
 var ic2solarpanel           = <IC2:blockGenerator:3>;
 var ingotSteel              = <ore:ingotSteel>;
+var ingotPlutonium244       = <ore:ingotPlutonium>;
 var iridiumDrill            = <IC2:itemToolIridiumDrill:*>;
 var itemCasingBronze        = <IC2:itemCasing:2>;
 var itemCasingGold          = <IC2:itemCasing:3>;
@@ -135,6 +136,7 @@ var pistonElectricHV        = <gregtech:gt.metaitem.01:32642>;
 var plantball               = <IC2:itemFuelPlantBall>;
 var plateAlloyAdvanced      = <ore:plateAlloyAdvanced>;
 var plateCarbon             = <ore:plateAlloyCarbon>;
+var plateDenseIron          = <ore:plateDenseIron>;
 var plateIron               = <ore:plateIron>;
 var plateNaquadahAlloy      = <ore:plateNaquadahAlloy>;
 var plateRubber             = <ore:plateRubber>;
@@ -157,6 +159,7 @@ var rotorCarbon             = <IC2:itemwcarbonrotor>;
 var rotorIron               = <IC2:itemironrotor>;
 var rotorSteel              = <IC2:itemsteelrotor>;
 var rotorWood               = <IC2:itemwoodrotor>;
+var RTGPellet               = <IC2:itemRTGPellet>;
 var sapling                 = <minecraft:sapling:*>;
 var screwIridium            = <ore:screwIridium>;
 var screwIron               = <ore:screwIron>;
@@ -476,6 +479,15 @@ recipes.addShaped(itemDustSmallSalt * 4, [
     [null, itemDustSalt]]);
 recipes.addShaped(itemDustTinySalt * 9, [
     [itemDustSalt, null]]);
+recipes.remove(RTGPellet);
+recipes.addShaped(RTGPellet, [
+    [plateDenseIron, ingotPlutonium244, plateDenseIron],
+    [plateDenseIron, ingotPlutonium244, plateDenseIron],
+    [plateDenseIron, ingotPlutonium244, plateDenseIron]]);
+recipes.addShaped(RTGPellet, [
+    [plateDenseIron, plateDenseIron, plateDenseIron],
+    [ingotPlutonium244, ingotPlutonium244, ingotPlutonium244],
+    [plateDenseIron, plateDenseIron, plateDenseIron]]);
 
 # GT Processing
 CuttingSaw.addRecipe([<gregtech:gt.metaitem.01:29874> * 2], <ore:ingotPlastic>, <liquid:lubricant> * 5, 60, 8);
@@ -579,6 +591,8 @@ game.setLocalization("ic2.fluidBiomass", "Industrial Biomass");
 <ore:listAllChalcoOre>.add(<gregtech:gt.blockores:2855>);
 <ore:listAllChalcoOre>.add(<gregtech:gt.blockores:3855>);
 <ore:listAllChalcoOre>.add(<gregtech:gt.blockores:4855>);
+<ore:ingotUranium>.add(<IC2:itemUran238>);
+<ore:ingotPlutonium>.add(<IC2:itemPlutonium>);
 
 # -- Fixing JABBA unification exploits --
 
