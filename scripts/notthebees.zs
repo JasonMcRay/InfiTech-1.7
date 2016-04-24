@@ -2,6 +2,7 @@
 
 import mods.gregtech.Autoclave;
 import mods.gregtech.ChemicalReactor;
+import minetweaker.item.IItemStack;
 
 # Aliases
 // Combs
@@ -269,6 +270,10 @@ var crushedWulfenite	    = <gregtech:gt.metaitem.01:5882>;
 var crushedYLimonite	    = <gregtech:gt.metaitem.01:5931>;
 var crushedZinc             = <gregtech:gt.metaitem.01:5036>;	
 
+// Extras
+var oreOilsands = [<gregtech:gt.blockores:878>, <gregtech:gt.blockores:1878>, <gregtech:gt.blockores:2878>, <gregtech:gt.blockores:3878>, <gregtech:gt.blockores:4878>] as IItemStack[];
+var oil = <liquid:oil>;
+var dustSiliconDioxide = <gregtech:gt.metaitem.01:2837>;
 
 # Multiplication (Chemical Reactor)
 //OutputStack, OutputFluid, InputStack1, InputStack2, InputFluid, Time in Ticks
@@ -333,7 +338,7 @@ ChemicalReactor.addRecipe(purifiedNaquadah * 4, moltenNaquadahEnriched * 144, co
 ChemicalReactor.addRecipe(purifiedNaquadria * 4, null, combNaquadah * 9, crushedNaquadria, water * 1000, 96);
 ChemicalReactor.addRecipe(purifiedNeodymium * 4, null, combChrome * 9, crushedNeodymium, water * 1000, 96);
 ChemicalReactor.addRecipe(purifiedNickel * 4, moltenCobalt * 144, combNickel * 9, crushedNickel, water * 1000, 96);
-ChemicalReactor.addRecipe(purifiedOilsands * 4, null, combOil * 9, crushedOilsands, water * 1000, 96);
+//ChemicalReactor.addRecipe(purifiedOilsands * 4, null, combOil * 9, crushedOilsands, water * 1000, 96); - Crushed Oilsands is unobtainable
 ChemicalReactor.addRecipe(purifiedOlivine * 4, null, combOlivine * 9, crushedOlivine, water * 1000, 96);
 ChemicalReactor.addRecipe(purifiedOsmium * 4, moltenIridium * 144, combIridium * 9, crushedOsmium, water * 1000, 96);
 ChemicalReactor.addRecipe(purifiedPalladium * 4, null, combPlatinum * 9, crushedPalladium, water * 1000, 96);
@@ -405,7 +410,7 @@ Autoclave.addRecipe(purifiedManganese, combManganese * 16, UUM * 6, 10000, 1000,
 Autoclave.addRecipe(purifiedMolybdenite, combSteel * 16, UUM * 6, 10000, 1000, 24);
 Autoclave.addRecipe(purifiedNaquadah, combNaquadah * 16, UUM * 10, 10000, 1000, 24);
 Autoclave.addRecipe(purifiedNickel, combNickel * 16, UUM * 6, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedOilsands, combOil * 16, UUM * 10, 10000, 1000, 24);
+//Autoclave.addRecipe(purifiedOilsands, combOil * 16, UUM * 10, 10000, 1000, 24); - Purified Oilsands are useless
 Autoclave.addRecipe(purifiedOlivine, combOlivine * 16, UUM * 3, 10000, 1000, 24);
 Autoclave.addRecipe(purifiedPlatinum, combPlatinum * 16, UUM * 20, 10000, 1000, 24);
 Autoclave.addRecipe(purifiedPlutonium, combPlutonium * 16, UUM * 25, 10000, 1000, 24);
@@ -421,3 +426,9 @@ Autoclave.addRecipe(purifiedTungstate, combTungsten * 16, UUM * 4, 10000, 1000, 
 Autoclave.addRecipe(purifiedUranium238, combUranium238 * 16, UUM * 24, 10000, 1000, 24);
 Autoclave.addRecipe(purifiedZinc, combZinc * 16, UUM * 7, 10000, 1000, 24);
 Autoclave.addRecipe(purifiedOsmium, combOsmium * 16, UUM * 19, 10000, 1000, 24);
+
+# Special cases
+# Oil Comb
+for ore in oreOilsands {
+    ChemicalReactor.addRecipe(dustSiliconDioxide, oil * 2000, combOil * 9, ore, water * 1000, 96);
+}
