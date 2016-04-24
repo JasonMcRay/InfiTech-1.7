@@ -1,3 +1,37 @@
+v3.2.5
+
+Quests:
+- Fixed typo in Oil Quests about amount of fluid needed to complete
+- Added 2 extra quests about explaining QDS
+
+Mod Updates:
+- EnderCore -> 0.2.0.33
+- Industrial Craft 2 -> 2.2.821
+- Thaumic Energistics -> 1.0.0.5
+
+Changes/Fixes
+- Changed Oblivion Essence crafting recipe
+- Fixed Framing Saw duping in crafting Malisis Doors
+- Rods for BC pipes are Lathe compatible
+- Disabled Rotating Elevators
+- Nerfed recipe for Dimensional Transceiver
+- Moved Wood Cuuters from SC2 to MV
+- Changed recipes for all Colored Buildcraft pipes.
+- Lowered burntime of PcCraft fuels.
+- Bees now require resource blocks to breed and as flowers to produce.
+- Add SAG Mill support for all GT ores
+- Remove standard apatite and osmium ore milling
+- Disable normal certus quartz milling
+- Swap SAG Mill recipes style
+- Modify grinding balls to be based off GT rounds
+- Disable dark steel grinding balls
+- Move SAG Mill to HV
+- SAGMill primary use is better yield on Byproducts
+- Added aspects for a ton of stuff
+- Changed Oil Comb processing
+- Plutonium and Uranium from IC2 are now oredicted with GT relevant versions.
+- Added April patrons
+
 v3.2.4.1 Patch
 
 Mod Updates:
