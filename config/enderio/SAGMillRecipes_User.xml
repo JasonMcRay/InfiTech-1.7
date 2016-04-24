@@ -4949,6 +4949,61 @@ found in the core file.
         <itemStack oreDictionary="crushedAntimony" number="1" chance="0.1" />
       </output>
     </recipe>
+    <recipe name="NetherrackPitchblendeOre" energyCost="32000">
+      <input>
+        <itemStack oreDictionary="oreNetherrackPitchblende" />
+      </input>
+      <output>
+        <itemStack oreDictionary="dustSmallPitchblende" number="1" />
+        <itemStack oreDictionary="crushedThorium" number="1" />
+        <itemStack oreDictionary="crushedUranium" number="1" chance="0.33" />
+        <itemStack oreDictionary="crushedLead" number="1" chance="0.1" />
+      </output>
+    </recipe>
+    <recipe name="EndstonePitchblendeOre" energyCost="32000">
+      <input>
+        <itemStack oreDictionary="oreEndstonePitchblende" />
+      </input>
+      <output>
+        <itemStack oreDictionary="dustSmallPitchblende" number="1" />
+        <itemStack oreDictionary="crushedThorium" number="1" />
+        <itemStack oreDictionary="crushedUranium" number="1" chance="0.33" />
+        <itemStack oreDictionary="crushedLead" number="1" chance="0.1" />
+      </output>
+    </recipe>
+    <recipe name="PitchblendeOre" energyCost="32000">
+      <input>
+        <itemStack oreDictionary="orePitchblende" />
+      </input>
+      <output>
+        <itemStack oreDictionary="dustSmallPitchblende" number="1" />
+        <itemStack oreDictionary="crushedThorium" number="1" />
+        <itemStack oreDictionary="crushedUranium" number="1" chance="0.33" />
+        <itemStack oreDictionary="crushedLead" number="1" chance="0.1" />
+      </output>
+    </recipe>
+    <recipe name="RedgranitePitchblendeOre" energyCost="32000">
+      <input>
+        <itemStack oreDictionary="oreRedgranitePitchblende" />
+      </input>
+      <output>
+        <itemStack oreDictionary="dustSmallPitchblende" number="1" />
+        <itemStack oreDictionary="crushedThorium" number="1" />
+        <itemStack oreDictionary="crushedUranium" number="1" chance="0.33" />
+        <itemStack oreDictionary="crushedLead" number="1" chance="0.1" />
+      </output>
+    </recipe>
+    <recipe name="BlackgranitePitchblendeOre" energyCost="32000">
+      <input>
+        <itemStack oreDictionary="oreBlackgranitePitchblende" />
+      </input>
+      <output>
+        <itemStack oreDictionary="dustSmallPitchblende" number="1" />
+        <itemStack oreDictionary="crushedThorium" number="1" />
+        <itemStack oreDictionary="crushedUranium" number="1" chance="0.33" />
+        <itemStack oreDictionary="crushedLead" number="1" chance="0.1" />
+      </output>
+    </recipe>
   </recipeGroup>
 
   <grindingBalls>
