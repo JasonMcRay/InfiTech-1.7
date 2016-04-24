@@ -8,12 +8,10 @@ import mods.gregtech.ChemicalBath;
 import mods.gregtech.Packer;
 import mods.buildcraft.AssemblyTable;
 import mods.gregtech.Lathe;
+import minetweaker.liquid.ILiquidStack;
+import minetweaker.item.IItemStack;
 
 # Aliases
-var architectTable = <BuildCraft|Builders:architectBlock>;
-var assemblyTable = <BuildCraft|Silicon:laserTableBlock>;
-var autoWorkbench = <BuildCraft|Factory:autoWorkbenchBlock>;
-var barsIron = <minecraft:iron_bars>;
 var BCGate = <BuildCraft|Transport:pipeGate>;
 var BCGearDiamond = <BuildCraft|Core:diamondGearItem>;
 var BCGearGold = <BuildCraft|Core:goldGearItem>;
@@ -23,6 +21,14 @@ var BCGearWood = <BuildCraft|Core:woodenGearItem>;
 var BCPump = <BuildCraft|Factory:pumpBlock>;
 var BCRefinery = <BuildCraft|Factory:refineryBlock>;
 var BCRobot = <BuildCraft|Robotics:robot>;
+var File = <ore:craftingToolFile>;
+var HHammer = <ore:craftingToolHardHammer>;
+var SHammer = <ore:craftingToolSoftHammer>;
+var Saw = <ore:craftingToolSaw>;
+var architectTable = <BuildCraft|Builders:architectBlock>;
+var assemblyTable = <BuildCraft|Silicon:laserTableBlock>;
+var autoWorkbench = <BuildCraft|Factory:autoWorkbenchBlock>;
+var barsIron = <minecraft:iron_bars>;
 var bcTank = <BuildCraft|Factory:tankBlock>;
 var blackDyeEXBL = <ExtrabiomesXL:extrabiomes.dye>;
 var blackDyeGT = <gregtech:gt.metaitem.02:32414>;
@@ -48,7 +54,9 @@ var chipsetQuartz = <BuildCraft|Silicon:redstoneChipset:5>;
 var chipsetRedstone = <BuildCraft|Silicon:redstoneChipset>;
 var chipsetRedstoneComp = <BuildCraft|Silicon:redstoneChipset:6>;
 var chute = <BuildCraft|Factory:blockHopper>;
+var clayFluidPipe = <BuildCraft|Transport:item.buildcraftPipe.pipefluidsclay>;
 var clayPipe = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsclay>;
+var cobbleFluidPipe = <BuildCraft|Transport:item.buildcraftPipe.pipefluidscobblestone>;
 var cobbleKinesisPipe = <BuildCraft|Transport:item.buildcraftPipe.pipepowercobblestone>;
 var cobblePipe = <BuildCraft|Transport:item.buildcraftPipe.pipeitemscobblestone>;
 var computerCaseT1 = <ore:oc:case1>;
@@ -71,7 +79,6 @@ var emzuliPipe = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsemzuli>;
 var engineCombustion = <BuildCraft|Core:engineBlock:2>;
 var engineRedstone = <BuildCraft|Core:engineBlock>;
 var engineStirling = <BuildCraft|Core:engineBlock:1>;
-var File = <ore:craftingToolFile>;
 var filler = <BuildCraft|Builders:fillerBlock>;
 var filterBlack = <BuildCraft|Transport:pipeLens:16>;
 var filterBlue = <BuildCraft|Transport:pipeLens:20>;
@@ -117,7 +124,6 @@ var glassYellow = <minecraft:stained_glass:4>;
 var goldFluidPipe = <BuildCraft|Transport:item.buildcraftPipe.pipefluidsgold>;
 var goldKinesisPipe = <BuildCraft|Transport:item.buildcraftPipe.pipepowergold>;
 var goldPipe = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsgold>;
-var HHammer = <ore:craftingToolHardHammer>;
 var hopper = <minecraft:hopper>;
 var inkSac = <minecraft:dye>;
 var integratedCircuit1 = <gregtech:gt.integrated_circuit:1>;
@@ -142,11 +148,6 @@ var lensBlue = <BuildCraft|Transport:pipeLens:4>;
 var lensBrown = <BuildCraft|Transport:pipeLens:3>;
 var lensClear = <BuildCraft|Transport:pipeLens:32>;
 var lensCyan = <BuildCraft|Transport:pipeLens:6>;
-var lenseIgnis = <gregtech:gt.metaitem.01:24541>;
-var lenseJasper = <gregtech:gt.metaitem.01:24511>;
-var lenseRedGarnet = <gregtech:gt.metaitem.01:24527>;
-var lenseRuby = <gregtech:gt.metaitem.01:24502>;
-var lenseRuby2 = <gregtech:gt.metaitem.01:24512>;
 var lensGray = <BuildCraft|Transport:pipeLens:8>;
 var lensGreen = <BuildCraft|Transport:pipeLens:2>;
 var lensLightBlue = <BuildCraft|Transport:pipeLens:12>;
@@ -159,6 +160,11 @@ var lensPurple = <BuildCraft|Transport:pipeLens:5>;
 var lensRed = <BuildCraft|Transport:pipeLens:1>;
 var lensWhite = <BuildCraft|Transport:pipeLens:15>;
 var lensYellow = <BuildCraft|Transport:pipeLens:11>;
+var lenseIgnis = <gregtech:gt.metaitem.01:24541>;
+var lenseJasper = <gregtech:gt.metaitem.01:24511>;
+var lenseRedGarnet = <gregtech:gt.metaitem.01:24527>;
+var lenseRuby = <gregtech:gt.metaitem.01:24502>;
+var lenseRuby2 = <gregtech:gt.metaitem.01:24512>;
 var list = <BuildCraft|Core:list:1>;
 var mapLocation = <BuildCraft|Core:mapLocation>;
 var memoryT15 = <ore:oc:ram2>;
@@ -203,19 +209,20 @@ var rodQuartz = <gregtech:gt.metaitem.01:23522>;
 var rodSandstone = <InfinityCore:itemMaterial:14>;
 var rodStone = <ForgeMicroblock:stoneRod>;
 var rodWooden = <InfinityCore:itemMaterial>;
+var sandstoneFluidPipe = <BuildCraft|Transport:item.buildcraftPipe.pipefluidssandstone>;
 var sandstoneKinesisPipe = <BuildCraft|Transport:item.buildcraftPipe.pipepowersandstone>;
 var sandstonePipe = <BuildCraft|Transport:item.buildcraftPipe.pipeitemssandstone>;
 var saw = <ore:craftingToolSaw>;
-var Saw = <ore:craftingToolSaw>;
 var screwdriver = <ore:craftingToolScrewdriver>;
-var SHammer = <ore:craftingToolSoftHammer>;
 var smallAnyIronGear = <ore:gearGtSmallAnyIron>;
 var stainlesssteeltip = <ore:toolHeadDrillStainlessSteel>;
 var stone = <minecraft:stone>;
 var stoneCobble = <ore:stoneCobble>;
+var stoneFluidPipe = <BuildCraft|Transport:item.buildcraftPipe.pipefluidsstone>;
 var stoneKinesisPipe = <BuildCraft|Transport:item.buildcraftPipe.pipepowerstone>;
 var stonePipe = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstone>;
 var stripesPipe = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes>;
+var structurePipe = <BuildCraft|Transport:item.buildcraftPipe.pipestructurecobblestone>;
 var template = <BuildCraft|Builders:templateItem>;
 var voidFluidPipe = <BuildCraft|Transport:item.buildcraftPipe.pipefluidsvoid>;
 var voidPipe = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsvoid>;
@@ -223,10 +230,19 @@ var watermixedBlackDye = <liquid:dye.watermixed.dyeblack>;
 var watermixedBlueDye = <liquid:dye.watermixed.dyeblue>;
 var watermixedGreenDye = <liquid:dye.watermixed.dyegreen>;
 var watermixedYellowDye = <liquid:dye.watermixed.dyeyellow>;
+var woodFluidPipe = <BuildCraft|Transport:item.buildcraftPipe.pipefluidswood>;
 var woodKinesisPipe = <BuildCraft|Transport:item.buildcraftPipe.pipepowerwood>;
 var woodPipe = <BuildCraft|Transport:item.buildcraftPipe.pipeitemswood>;
 var worktable = <Forestry:factory2:2>;
 var wrench = <ore:craftingToolWrench>;
+var dustSmallStone = <gregtech:gt.metaitem.01:1299>;
+var dustSmallObsidian = <gregtech:gt.metaitem.01:1804>;
+var dustSmallClay = <gregtech:gt.metaitem.01:1805>;
+var sand = <minecraft:sand>;
+var sandstone = <minecraft:sandstone>;
+var cobblestone = <minecraft:cobblestone>;
+var stickWood = <minecraft:stick>;
+var hardenedClay = <minecraft:hardened_clay>;
 
 # Items/Blocks Removal
 recipes.remove(BCRefinery);
@@ -319,17 +335,132 @@ recipes.addShaped(chute, [
 	[null, gearIron, null]]);
 recipes.addShapeless(chute, [hopper, gearStone]);
 
-// --- PIPES ---
+// --- COLORED PIPES ---
+//OutputArray, InputStack, InputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
+var chemicalColors = [<liquid:dye.chemical.dyewhite>,<liquid:dye.chemical.dyeorange>,<liquid:dye.chemical.dyemagenta>,<liquid:dye.chemical.dyelightblue>,<liquid:dye.chemical.dyeyellow>,<liquid:dye.chemical.dyelime>,<liquid:dye.chemical.dyepink>,<liquid:dye.chemical.dyegray>,<liquid:dye.chemical.dyelightgray>,<liquid:dye.chemical.dyecyan>,<liquid:dye.chemical.dyepurple>,<liquid:dye.chemical.dyeblue>,<liquid:dye.chemical.dyebrown>,<liquid:dye.chemical.dyegreen>,<liquid:dye.chemical.dyered>,<liquid:dye.chemical.dyeblack>] as ILiquidStack[];
+var watermixedColors = [<liquid:dye.watermixed.dyewhite>,<liquid:dye.watermixed.dyeorange>,<liquid:dye.watermixed.dyemagenta>,<liquid:dye.watermixed.dyelightblue>,<liquid:dye.watermixed.dyeyellow>,<liquid:dye.watermixed.dyelime>,<liquid:dye.watermixed.dyepink>,<liquid:dye.watermixed.dyegray>,<liquid:dye.watermixed.dyelightgray>,<liquid:dye.watermixed.dyecyan>,<liquid:dye.watermixed.dyepurple>,<liquid:dye.watermixed.dyeblue>,<liquid:dye.watermixed.dyebrown>,<liquid:dye.watermixed.dyegreen>,<liquid:dye.watermixed.dyered>,<liquid:dye.watermixed.dyeblack>] as ILiquidStack[];
+var meta = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] as int[];
+
+# Transport Pipes
+for i, color in chemicalColors {
+    var itemMeta = meta[i];
+    recipes.removeShaped(woodPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(emeraldPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(cobblePipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(stonePipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(quartzPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(ironPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(goldPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(diamondPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(obsidianPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(lazuliPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(daizuliPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(sandstonePipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(voidPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(emzuliPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(stripesPipe.definition.makeStack(itemMeta));
+    recipes.removeShaped(clayPipe.definition.makeStack(itemMeta));
+    ChemicalBath.addRecipe([woodPipe.definition.makeStack(itemMeta)], woodPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([emeraldPipe.definition.makeStack(itemMeta)], emeraldPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([cobblePipe.definition.makeStack(itemMeta)], cobblePipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([stonePipe.definition.makeStack(itemMeta)], stonePipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([quartzPipe.definition.makeStack(itemMeta)], quartzPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([ironPipe.definition.makeStack(itemMeta)], ironPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([goldPipe.definition.makeStack(itemMeta)], goldPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([diamondPipe.definition.makeStack(itemMeta)], diamondPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([obsidianPipe.definition.makeStack(itemMeta)], obsidianPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([lazuliPipe.definition.makeStack(itemMeta)], lazuliPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([daizuliPipe.definition.makeStack(itemMeta)], daizuliPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([sandstonePipe.definition.makeStack(itemMeta)], sandstonePipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([voidPipe.definition.makeStack(itemMeta)], voidPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([emzuliPipe.definition.makeStack(itemMeta)], emzuliPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([stripesPipe.definition.makeStack(itemMeta)], stripesPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([clayPipe.definition.makeStack(itemMeta)], clayPipe, color * 4, [10000], 64, 2);
+    }
+for i, color in watermixedColors {
+    var itemMeta = meta[i];
+    ChemicalBath.addRecipe([woodPipe.definition.makeStack(itemMeta)], woodPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([emeraldPipe.definition.makeStack(itemMeta)], emeraldPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([cobblePipe.definition.makeStack(itemMeta)], cobblePipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([stonePipe.definition.makeStack(itemMeta)], stonePipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([quartzPipe.definition.makeStack(itemMeta)], quartzPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([ironPipe.definition.makeStack(itemMeta)], ironPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([goldPipe.definition.makeStack(itemMeta)], goldPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([diamondPipe.definition.makeStack(itemMeta)], diamondPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([obsidianPipe.definition.makeStack(itemMeta)], obsidianPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([lazuliPipe.definition.makeStack(itemMeta)], lazuliPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([daizuliPipe.definition.makeStack(itemMeta)], daizuliPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([sandstonePipe.definition.makeStack(itemMeta)], sandstonePipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([voidPipe.definition.makeStack(itemMeta)], voidPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([emzuliPipe.definition.makeStack(itemMeta)], emzuliPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([stripesPipe.definition.makeStack(itemMeta)], stripesPipe, color * 4, [10000], 64, 2);
+    ChemicalBath.addRecipe([clayPipe.definition.makeStack(itemMeta)], clayPipe, color * 4, [10000], 64, 2);
+    }
+# Fluid Pipes
+for i in meta {
+    recipes.remove(quartzFluidPipe.definition.makeStack(i));
+    recipes.remove(goldFluidPipe.definition.makeStack(i));
+    recipes.remove(clayFluidPipe.definition.makeStack(i));
+    recipes.remove(voidFluidPipe.definition.makeStack(i));
+    recipes.remove(ironFluidPipe.definition.makeStack(i));
+    recipes.remove(emeraldFluidPipe.definition.makeStack(i));
+    recipes.remove(diamondFluidPipe.definition.makeStack(i));
+    Packer.addRecipe(quartzFluidPipe.definition.makeStack(i), quartzPipe.definition.makeStack(i), pipeSealant, 100, 8);
+    Packer.addRecipe(goldFluidPipe.definition.makeStack(i), goldPipe.definition.makeStack(i), pipeSealant, 100, 8);
+    Packer.addRecipe(clayFluidPipe.definition.makeStack(i), clayPipe.definition.makeStack(i), pipeSealant, 100, 8);
+    Packer.addRecipe(voidFluidPipe.definition.makeStack(i), voidPipe.definition.makeStack(i), pipeSealant, 100, 8);
+    Packer.addRecipe(ironFluidPipe.definition.makeStack(i), ironPipe.definition.makeStack(i), pipeSealant, 100, 8);
+    Packer.addRecipe(emeraldFluidPipe.definition.makeStack(i), emeraldPipe.definition.makeStack(i), pipeSealant, 100, 8);
+    ChemicalBath.addRecipe([diamondFluidPipe.definition.makeStack(i)], diamondPipe.definition.makeStack(i), chemicalGreenDye * 288, [10000], 200, 24);
+}
+# Kinesis Pipes
+for i in meta {
+    recipes.remove(woodKinesisPipe.definition.makeStack(i));
+    recipes.remove(cobbleKinesisPipe.definition.makeStack(i));
+    recipes.remove(stoneKinesisPipe.definition.makeStack(i));
+    recipes.remove(quartzKinesisPipe.definition.makeStack(i));
+    recipes.remove(ironKinesisPipe.definition.makeStack(i));
+    recipes.remove(goldKinesisPipe.definition.makeStack(i));
+    recipes.remove(diamondKinesisPipe.definition.makeStack(i));
+    recipes.remove(emeraldKinesisPipe.definition.makeStack(i));
+    recipes.remove(sandstoneKinesisPipe.definition.makeStack(i));
+    Assembler.addRecipe(woodKinesisPipe.definition.makeStack(i), woodPipe.definition.makeStack(i), integratedCircuit1 * 0, moltenRedstone * 72, 40, 20);
+    Assembler.addRecipe(cobbleKinesisPipe.definition.makeStack(i), cobblePipe.definition.makeStack(i), integratedCircuit1 * 0, moltenRedstone * 144, 40, 20);
+    Assembler.addRecipe(stoneKinesisPipe.definition.makeStack(i), stonePipe.definition.makeStack(i), integratedCircuit1 * 0, moltenRedstone * 216, 40, 20);
+    Assembler.addRecipe(quartzKinesisPipe.definition.makeStack(i), quartzPipe.definition.makeStack(i), integratedCircuit1 * 0, moltenRedstone * 288, 40, 20);
+    Assembler.addRecipe(ironKinesisPipe.definition.makeStack(i), ironPipe.definition.makeStack(i), integratedCircuit1 * 0, moltenRedstone * 360, 40, 20);
+    Assembler.addRecipe(goldKinesisPipe.definition.makeStack(i), goldPipe.definition.makeStack(i), integratedCircuit1 * 0, moltenRedstone * 432, 40, 20);
+    Assembler.addRecipe(diamondKinesisPipe.definition.makeStack(i), diamondPipe.definition.makeStack(i), integratedCircuit1 * 0, moltenRedstone * 504, 40, 20);
+    Assembler.addRecipe(emeraldKinesisPipe.definition.makeStack(i), emeraldPipe.definition.makeStack(i), integratedCircuit1 * 0, moltenRedstone * 576, 40, 20);
+    Assembler.addRecipe(sandstoneKinesisPipe.definition.makeStack(i), sandstonePipe.definition.makeStack(i), integratedCircuit1 * 0, moltenRedstone * 648, 40, 20);
+}
+# Structure Pipes
+for i, color in chemicalColors {
+    var itemMeta = meta[i];
+    recipes.remove(structurePipe.definition.makeStack(itemMeta));
+    ChemicalBath.addRecipe([structurePipe.definition.makeStack(itemMeta)], structurePipe, color * 4, [10000], 64, 2);
+}
+for i, color in watermixedColors {
+    var itemMeta = meta[i];
+    ChemicalBath.addRecipe([structurePipe.definition.makeStack(itemMeta)], structurePipe, color * 4, [10000], 64, 2);
+}
+    
 
 # Transport
 recipes.remove(rodStone);
 recipes.addShaped(rodStone, [
     [File, null, null],
     [null, stone, null]]);
+Lathe.addRecipe([rodStone, dustSmallStone * 2], stone, 98, 16);
 recipes.remove(rodObsidian);
 recipes.addShaped(rodObsidian, [
     [File, null, null],
     [null, obsidian, null]]);
+Lathe.addRecipe([rodObsidian, dustSmallObsidian * 2], obsidian, 198, 16);
+Lathe.addRecipe([rodCobble, dustSmallStone], cobblestone, 148, 16);
+Lathe.addRecipe([rodSandstone, sand], sandstone, 64, 16);
+Lathe.addRecipe([rodWooden], stickWood, 16, 16);
+Lathe.addRecipe([rodClay, dustSmallClay * 2], hardenedClay, 16, 16);
 recipes.remove(stonePipe);
 recipes.addShaped(stonePipe * 6, [
     [rodStone, HHammer, rodStone],
@@ -383,6 +514,8 @@ recipes.remove(quartzFluidPipe);
 Packer.addRecipe(quartzFluidPipe, quartzPipe, pipeSealant, 100, 8);
 recipes.remove(goldFluidPipe);
 Packer.addRecipe(goldFluidPipe, goldPipe, pipeSealant, 100, 8);
+recipes.remove(clayFluidPipe);
+Packer.addRecipe(clayFluidPipe, clayPipe, pipeSealant, 100, 8);
 recipes.remove(voidFluidPipe);
 Packer.addRecipe(voidFluidPipe, voidPipe, pipeSealant, 100, 8);
 recipes.remove(ironFluidPipe);
