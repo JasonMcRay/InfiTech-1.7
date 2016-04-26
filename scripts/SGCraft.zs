@@ -18,6 +18,7 @@ var circuitMaster = <ore:circuitMaster>;
 var conveyorEV = <gregtech:gt.metaitem.01:32633>;
 var crystalSGController = <SGCraft:sgControllerCrystal>;
 var crystalSGCore = <SGCraft:sgCoreCrystal>;
+var dhd = <SGCraft:stargateController>;
 var dustCarbon = <gregtech:gt.metaitem.01:2010>;
 var dustIron = <IC2:itemDust:5>;
 var dustNaqAlloy = <gregtech:gt.metaitem.01:2325>;
@@ -126,3 +127,5 @@ ChemicalReactor.addRecipe(dustNaqAlloy, dustNaquadah, dustIron, 12000);
 
 //Naq Alloy Block to Oredict
 oreDict.blockNaquadahAlloy.add(blockNaqAlloy);
+
+dhd.displayName = "DHD (Dial Home Device)";
