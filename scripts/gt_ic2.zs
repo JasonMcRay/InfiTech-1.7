@@ -10,6 +10,8 @@ import mods.gregtech.Printer;
 import mods.gregtech.Centrifuge;
 import mods.gregtech.CuttingSaw;
 import mods.gregtech.Mixer;
+import mods.gregtech.FormingPress;
+import mods.gregtech.PlateBender;
 import mods.nei.NEI;
 import minetweaker.game.IGame;
 import mods.ic2.Compressor;
@@ -79,6 +81,7 @@ var electricJetpack         = <IC2:itemArmorJetpackElectric>;
 var electricWrench          = <IC2:itemToolWrenchElectric:*>;
 var energiumDust            = <IC2:itemDust2:2>;
 var energyCrystal           = <IC2:itemBatCrystal:*>;
+var foilTin					= <gregtech:gt.metaitem.01:29057>;
 var foodSalt                = <ore:foodSalt>;
 var frequencyTrans          = <IC2:itemFreq>;
 var fuelRodEmpty            = <IC2:itemFuelRod>;
@@ -114,6 +117,7 @@ var iridiumDrill            = <IC2:itemToolIridiumDrill:*>;
 var itemCasingBronze        = <IC2:itemCasing:2>;
 var itemCasingGold          = <IC2:itemCasing:3>;
 var itemCasingIron          = <IC2:itemCasing:4>;
+var itemCasingSteel         = <IC2:itemCasing:5>;
 var itemDustSalt            = <gregtech:gt.metaitem.01:2817>;
 var itemDustSilver          = <IC2:itemDust:6>;
 var itemDustSmallSalt       = <gregtech:gt.metaitem.01:1817>;
@@ -123,7 +127,6 @@ var itemIngotElectrotine    = <ProjRed|Core:projectred.core.part:55>;
 var itemIngotSilver         = <gregtech:gt.metaitem.01:11054>;
 var itemPlankWood           = <gregtech:gt.metaitem.01:17809>;
 var itemRingWood            = <gregtech:gt.metaitem.01:28809>;
-var itemSteelCasing         = <IC2:itemCasing:5>;
 var jetpack                 = <IC2:itemArmorJetpack:27>;
 var machineCasingAdvanced   = <IC2:blockMachine:12>;
 var machineHullHV           = <gregtech:gt.blockmachines:13>;
@@ -135,6 +138,7 @@ var nuggetSteel             = <gregtech:gt.metaitem.01:9305>;
 var pistonElectricHV        = <gregtech:gt.metaitem.01:32642>;
 var plantball               = <IC2:itemFuelPlantBall>;
 var plateAlloyAdvanced      = <ore:plateAlloyAdvanced>;
+var plateAluminium			= <gregtech:gt.metaitem.01:17019>;
 var plateCarbon             = <ore:plateAlloyCarbon>;
 var plateDenseIron          = <ore:plateDenseIron>;
 var plateIron               = <ore:plateIron>;
@@ -170,6 +174,8 @@ var singleUseBattery        = <IC2:itemBatSU>;
 var stickIron               = <ore:stickIron>;
 var sugarcane               = <minecraft:reeds>;
 var teleporter              = <IC2:blockMachine2>;
+var tinCan					= <IC2:itemTinCan>;
+var tinnedSteel				= <InfinityCore:itemMaterial:18>;
 var uraniumEnriched         = <IC2:itemUran>;
 
 # seeds
@@ -421,8 +427,8 @@ MFSU.addTooltip(format.red(format.bold("This item is DISABLED!")));
 # Fixing recipes due to disabled energy storages
 recipes.remove(electricJetpack);
 recipes.addShaped(electricJetpack, [
-    [itemSteelCasing, circuitAdvanced, itemSteelCasing],
-    [itemSteelCasing, batteryChargerLV, itemSteelCasing],
+    [itemCasingSteel, circuitAdvanced, itemCasingSteel],
+    [itemCasingSteel, batteryChargerLV, itemCasingSteel],
     [dustGlowstone, null, dustGlowstone]]);
 recipes.remove(chargePadBatbox);
 recipes.addShaped(chargePadBatbox, [
@@ -653,8 +659,14 @@ recipes.addShapeless(GTDough, [anyWater, GTSalt, dustWheat]);
 Mixer.addRecipe(GTDough * 2, null, [GTFlour, <InfinityCore:itemMaterial:16>], <liquid:water> * 1000, 31, 8);
 Mixer.addRecipe(GTDough * 2, null, [GTFlour, GTSalt], <liquid:water> * 1000, 31, 8);
 
+# PlantBalls
 Compressor.addRecipe(plantball, sapling * 4);
 Compressor.addRecipe(plantball, sugarcane * 8);
+
+# Food tin crafting (aka tin cans, aka food cans)
+FormingPress.addRecipe(tinnedSteel, foilTin * 2, itemCasingSteel, 20, 48);
+PlateBender.addRecipe(tinCan * 12, plateAluminium * 6, 552, 8);
+PlateBender.addRecipe(tinCan, tinnedSteel, 100, 8);
 
 # Jetpack Buff
 recipes.remove(jetpack);
