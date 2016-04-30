@@ -659,6 +659,10 @@ recipes.addShapeless(GTDough, [anyWater, GTSalt, dustWheat]);
 Mixer.addRecipe(GTDough * 2, null, [GTFlour, <InfinityCore:itemMaterial:16>], <liquid:water> * 1000, 31, 8);
 Mixer.addRecipe(GTDough * 2, null, [GTFlour, GTSalt], <liquid:water> * 1000, 31, 8);
 
+# PlantBalls
+Compressor.addRecipe(plantball, sapling * 4);
+Compressor.addRecipe(plantball, sugarcane * 8);
+
 # Food tin crafting (aka tin cans, aka food cans)
 FormingPress.addRecipe(tinnedSteel, foilTin * 2, itemCasingSteel, 20, 48);
 PlateBender.addRecipe(tinCan * 12, plateAluminium * 6, 552, 8);
