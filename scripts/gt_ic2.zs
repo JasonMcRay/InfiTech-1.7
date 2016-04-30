@@ -127,7 +127,7 @@ var itemIngotElectrotine    = <ProjRed|Core:projectred.core.part:55>;
 var itemIngotSilver         = <gregtech:gt.metaitem.01:11054>;
 var itemPlankWood           = <gregtech:gt.metaitem.01:17809>;
 var itemRingWood            = <gregtech:gt.metaitem.01:28809>;
-var jetpack                 = <IC2:itemArmorJetpack:27>;
+var jetpack                 = <IC2:itemArmorJetpack:*>;
 var machineCasingAdvanced   = <IC2:blockMachine:12>;
 var machineHullHV           = <gregtech:gt.blockmachines:13>;
 var miner                   = <IC2:blockMachine:7>;
@@ -670,7 +670,7 @@ PlateBender.addRecipe(tinCan, tinnedSteel, 100, 8);
 
 # Jetpack Buff
 recipes.remove(jetpack);
-recipes.addShaped(jetpack, [
+recipes.addShaped(<IC2:itemArmorJetpack:27>, [
     [itemCasingIron, circuitBasic, itemCasingIron],
     [itemCasingIron, cellLargeSteel, itemCasingIron],
     [dustRedstone, null, dustRedstone]]);
