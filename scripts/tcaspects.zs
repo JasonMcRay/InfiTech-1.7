@@ -73,7 +73,7 @@ Aspects.set(<chisel:glass2:*>, "vitreus 1");
 Aspects.set(<chisel:glowstone:*>, "lux 10, sensus 3");
 Aspects.set(<chisel:gold2:*>, "metallum 20, lucrum 13");
 Aspects.set(<chisel:gold_block:*>, "metallum 20, lucrum 13");
-Aspects.set(<chisel:granite:*>, "terra 1, ordo 1");
+Aspects.set(<chisel:granite:*>, "terra 1, tutamen 1");
 Aspects.set(<chisel:grimstone:*>, "terra 1, tenebrae 1");
 Aspects.set(<chisel:hexLargePlating:*>, "terra 1, potentia 2");
 Aspects.set(<chisel:hexPlating:*>, "terra 1, potentia 2");
@@ -107,7 +107,7 @@ Aspects.set(<chisel:jackolantern13:*>, "messis 1, lux 1");
 Aspects.set(<chisel:jackolantern14:*>, "messis 1, lux 1");
 Aspects.set(<chisel:jackolantern15:*>, "messis 1, lux 1");
 Aspects.set(<chisel:jackolantern16:*>, "messis 1, lux 1");
-Aspects.set(<chisel:jungle_planks:*>, "messis 1, lux 1");
+Aspects.set(<chisel:jungle_planks:*>, "arbor 1");
 Aspects.set(<chisel:laboratoryblock:*>, "terra 1, ordo 1");
 Aspects.set(<chisel:lapis_block:*>, "sensus 6");
 Aspects.set(<chisel:lavastone:*>, "terra 1, ignis 1");
@@ -260,7 +260,7 @@ for i, id in wireIDs {
 }
 
 Aspects.set(<gregtech:gt.blockconcretes:*>, "terra 1, motus 1");
-Aspects.set(<gregtech:gt.blockgranites:*>, "terra 1, ordo 1");
+Aspects.set(<gregtech:gt.blockgranites:*>, "terra 1, tutamen 1");
 Aspects.set(<IC2:itemPartCircuit>, "machina 3, electrum 3");
 Aspects.set(<gregtech:gt.integrated_circuit>, "machina 3, electrum 3");
 Aspects.set(<gregtech:gt.metaitem.01:32700>, "machina 2, electrum 2");
@@ -312,6 +312,6 @@ Aspects.set(<BuildCraft|Transport:item.buildcraftPipe.pipepowersandstone:*>, "mo
 Aspects.set(<BuildCraft|Transport:item.buildcraftPipe.pipestructurecobblestone:*>, "terra 1");
 
 // Extrabiomes
-Aspects.set(<ExtrabiomesXL:flower1:*>, "victus 1, sensus 1");
-Aspects.set(<ExtrabiomesXL:flower2:*>, "victus 1, sensus 1");
-Aspects.set(<ExtrabiomesXL:flower3:*>, "victus 1, sensus 1");
+Aspects.set(<ExtrabiomesXL:flower1:*>, "herba 1, victus 1, sensus 1");
+Aspects.set(<ExtrabiomesXL:flower2:*>, "herba 1, victus 1, sensus 1");
+Aspects.set(<ExtrabiomesXL:flower3:*>, "herba 1, victus 1, sensus 1");
