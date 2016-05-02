@@ -81,6 +81,7 @@ var electricJetpack         = <IC2:itemArmorJetpackElectric>;
 var electricWrench          = <IC2:itemToolWrenchElectric:*>;
 var energiumDust            = <IC2:itemDust2:2>;
 var energyCrystal           = <IC2:itemBatCrystal:*>;
+var enrichedMOX             = <IC2:itemUran>;
 var foilTin					= <gregtech:gt.metaitem.01:29057>;
 var foodSalt                = <ore:foodSalt>;
 var frequencyTrans          = <IC2:itemFreq>;
@@ -487,13 +488,23 @@ recipes.addShaped(itemDustTinySalt * 9, [
     [itemDustSalt, null]]);
 recipes.remove(RTGPellet);
 recipes.addShaped(RTGPellet, [
-    [plateDenseIron, ingotPlutonium244, plateDenseIron],
-    [plateDenseIron, ingotPlutonium244, plateDenseIron],
-    [plateDenseIron, ingotPlutonium244, plateDenseIron]]);
+    [plateDenseIron, <ore:listIngotPlutonium>, plateDenseIron],
+    [plateDenseIron, <ore:listIngotPlutonium>, plateDenseIron],
+    [plateDenseIron, <ore:listIngotPlutonium>, plateDenseIron]]);
 recipes.addShaped(RTGPellet, [
     [plateDenseIron, plateDenseIron, plateDenseIron],
-    [ingotPlutonium244, ingotPlutonium244, ingotPlutonium244],
+    [<ore:listIngotPlutonium>, <ore:listIngotPlutonium>, <ore:listIngotPlutonium>],
     [plateDenseIron, plateDenseIron, plateDenseIron]]);
+recipes.remove(MOX);
+recipes.addShaped(MOX, [
+    [<ore:listIngotUranium>, <ore:listIngotUranium>, <ore:listIngotUranium>],
+    [<ore:listIngotPlutonium>, <ore:listIngotPlutonium>, <ore:listIngotPlutonium>],
+    [<ore:listIngotUranium>, <ore:listIngotUranium>, <ore:listIngotUranium>]]);
+recipes.remove(enrichedMOX);
+recipes.addShaped(enrichedMOX, [
+    [<ore:listIngotUranium>, <ore:listIngotUranium>, <ore:listIngotUranium>],
+    [<ore:listNuggetUranium235>, <ore:listNuggetUranium235>, <ore:listNuggetUranium235>],
+    [<ore:listIngotUranium>, <ore:listIngotUranium>, <ore:listIngotUranium>]]);
 
 # GT Processing
 CuttingSaw.addRecipe([<gregtech:gt.metaitem.01:29874> * 2], <ore:ingotPlastic>, <liquid:lubricant> * 5, 60, 8);
@@ -597,8 +608,12 @@ game.setLocalization("ic2.fluidBiomass", "Industrial Biomass");
 <ore:listAllChalcoOre>.add(<gregtech:gt.blockores:2855>);
 <ore:listAllChalcoOre>.add(<gregtech:gt.blockores:3855>);
 <ore:listAllChalcoOre>.add(<gregtech:gt.blockores:4855>);
-<ore:ingotUranium>.add(<IC2:itemUran238>);
-<ore:ingotPlutonium>.add(<IC2:itemPlutonium>);
+<ore:listIngotPlutonium>.add(<IC2:itemPlutonium>);
+<ore:listIngotPlutonium>.add(<gregtech:gt.metaitem.01:11100>);
+<ore:listIngotUranium>.add(<IC2:itemUran238>);
+<ore:listIngotUranium>.add(<gregtech:gt.metaitem.01:11098>);
+<ore:listNuggetUranium235>.add(<IC2:itemUran235small>);
+<ore:listNuggetUranium235>.add(<gregtech:gt.metaitem.01:9097>);
 
 # -- Fixing JABBA unification exploits --
 
