@@ -133,3 +133,11 @@ recipes.addShaped(diamondSword, [
 /*recipes.remove(<minecraft:brewing_stand>);
 <minecraft:brewing_stand>.addTooltip(format.red(format.bold("This item is DISABLED!")));
 */
+
+recipes.addShapeless(<minecraft:coal_ore>, [<ore:oreCoal>]);
+recipes.addShapeless(<minecraft:gold_ore>, [<ore:oreGold>]);
+recipes.addShapeless(<minecraft:iron_ore>, [<ore:oreIron>]);
+recipes.addShapeless(<minecraft:lapis_ore>, [<ore:oreLapis>]);
+recipes.addShapeless(<minecraft:diamond_ore>, [<ore:oreDiamond>]);
+recipes.addShapeless(<minecraft:emerald_ore>, [<ore:oreEmerald>]);
+recipes.addShapeless(<minecraft:redstone_ore>, [<ore:oreRedstone>]);
