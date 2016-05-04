@@ -127,16 +127,33 @@
                 "gui" : "options"
             }
         },
-        
-        "quit":
+        "Server Download":
         {
-            "text" : "menu.quit",
+            "text" : "Server Download",
             "posX" : 2,
             "posY" : 132,
             "width" : 100,
             "height" : 20,
             "texture" : "infitech2:textures/gui/images/button.png",
             "imageWidth" : 500,
+            "imageHeight" : 125,
+            "normalTextColor" : 65280,
+            "hoverTextColor": 65280,
+            "action" :
+            {
+                "type" : "openLink"
+                "link" : "http://ftb.cursecdn.com/FTB2/privatepacks/InfiTech2/3_2_5_1/InfiTech2Server.zip"
+            }
+        },
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : -102,
+            "posY" : 154,
+            "width" : 204,
+            "height" : 20,
+            "texture" : "infitech2:textures/gui/images/button.png",
+            "imageWidth" : 1000,
             "imageHeight" : 125,
             "normalTextColor" : 65280,
             "hoverTextColor" : 16711680,
