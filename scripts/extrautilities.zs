@@ -67,6 +67,7 @@ var sandCompressed = <ExtraUtilities:cobblestone_compressed:14>;
 var sandCompressed2 = <ExtraUtilities:cobblestone_compressed:15>;
 var schematic3x3 = <gregtech:gt.metaitem.01:32497>;
 var tradingPost = <ExtraUtilities:trading_post>;
+var portalDark = <ExtraUtilities:dark_portal>;
 
 # -- Block/item Removal
 recipes.remove(enderReceiver);
@@ -81,6 +82,8 @@ nodeEnergy.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(nodeHyperEnergy);
 nodeHyperEnergy.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
+recipes.remove(portalDark);
+portalDark.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 
 # ---Recipe tweaks---
