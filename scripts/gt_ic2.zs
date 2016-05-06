@@ -477,6 +477,17 @@ Saw.add(<gregtech:gt.metatool.01:141>);
 <ore:craftingToolSolderingIron>.add(<gregtech:gt.metatool.01:161>);
 
 # Recipe Fixes
+var wireAluminium16 = <ore:wireGt16Aluminium>;
+var chest = <minecraft:chest>;
+var machineHullEV = <gregtech:gt.blockmachines:14>;
+var batteryMaster = <ore:batteryMaster>;
+var circuitData = <ore:circuitData>;
+
+recipes.remove(batteryChargerEV); // Remove after fix in GT
+recipes.addShaped(batteryChargerEV, [
+    [wireAluminium16, chest, wireAluminium16],
+    [wireAluminium16, machineHullEV, wireAluminium16],
+    [batteryMaster, circuitData, batteryMaster]]);
 recipes.remove(OVScanner);
 recipes.addShaped(OVScanner, [
     [itemCasingGold, energyCrystal, itemCasingGold],
