@@ -242,7 +242,7 @@ recipes.addShaped(tubePressure * 6, [
     [plateCompressedIron, wrench, plateCompressedIron],
     [plateCompressedIron, null, plateCompressedIron],
     [plateCompressedIron, HHammer, plateCompressedIron]]);
-Extruder.addRecipe(tubePressure, ingotCompressedIron, shapeSmallPipe, 8, 128);
+Extruder.addRecipe(tubePressure, ingotCompressedIron, shapeSmallPipe * 0, 8, 128);
 recipes.remove(compressorAir);
 recipes.addShaped(compressorAir, [
     [plateCompressedIron, heatConductor, plateCompressedIron],
