@@ -210,6 +210,8 @@ var UStorageHousing = <appliedenergistics2:item.ItemMultiMaterial:39>;
 var VibrantQGlass =<appliedenergistics2:tile.BlockQuartzLamp>;
 var WirelessReceiver = <appliedenergistics2:item.ItemMultiMaterial:41>;
 var WirelessTerminal = <appliedenergistics2:item.ToolWirelessTerminal>;
+var WirelessCraftingTerminal = <ae2wct:wirelessCraftingTerminal>;
+var Singularity = <appliedenergistics2:item.ItemMultiMaterial:47>;
 
 // --- OreDictionary Fix ---
 
@@ -342,6 +344,9 @@ recipes.remove(PatternTerminal);
 
 // --- Wireless Terminal
 recipes.remove(WirelessTerminal);
+
+// --- Wireless Crafting Terminal
+recipes.remove(WirelessCraftingTerminal);
 
 // --- Quartz Glass
 recipes.remove(QuartzGlass);
@@ -791,6 +796,12 @@ recipes.addShaped(PatternTerminal, [
 recipes.addShaped(WirelessTerminal, [
 [WirelessReceiver, Terminal, WirelessReceiver],
 [NQuartzPlate, DiamondCircuit, NQuartzPlate],
+[NQuartzPlate, DEnergyCell, NQuartzPlate]]);
+
+// --- Wireless Crafting Terminal
+recipes.addShaped(WirelessCraftingTerminal, [
+[WirelessReceiver, CraftingTerminal, WirelessReceiver],
+[NQuartzPlate, Singularity, NQuartzPlate],
 [NQuartzPlate, DEnergyCell, NQuartzPlate]]);
 
 // --- Vibrant Quartz Glass
