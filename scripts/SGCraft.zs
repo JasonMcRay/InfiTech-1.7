@@ -126,3 +126,5 @@ ChemicalReactor.addRecipe(dustNaqAlloy, dustNaquadah, dustIron, 12000);
 
 //Naq Alloy Block to Oredict
 oreDict.blockNaquadahAlloy.add(blockNaqAlloy);
+
+stargateController.displayName = "DHD (Dial Home Device)";

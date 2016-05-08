@@ -1,3 +1,87 @@
+v3.2.5.1
+
+Changes/Fixes
+- Fixed Dimensional Transceiver not being craftable
+
+v3.2.5
+
+Quests:
+- Fixed typo in Oil Quests about amount of fluid needed to complete
+- Added 2 extra quests about explaining QDS
+- "Magic": "Clustered" - Removed U235 cluster from the 4th task
+
+New Mods:
+- Ztones
+
+Mod Updates:
+- EnderCore -> 0.2.0.33
+- Industrial Craft 2 -> 2.2.821
+- Thaumic Energistics -> 1.0.0.5
+- InfinityCore -> 1.5
+- SGCraft -> 1.11.2
+- AppliedEnergistics 2 -> rv3-beta-6
+- Buildcraft Compat -> 7.1.5
+- Forestry -> 4.2.12.60
+- JourneyMap -> 5.1.4p1
+- Magic Bees -> Customized
+- Pam's Harvestcraft -> Customized
+- ProjectRed -> Customized
+
+Changes/Fixes
+- Changed Oblivion Essence crafting recipe
+- Fixed Framing Saw duping in crafting Malisis Doors
+- Rods for BC pipes are Lathe compatible
+- Disabled Rotating Elevators
+- Nerfed recipe for Dimensional Transceiver
+- Moved Wood Cuuters from SC2 to MV
+- Changed recipes for all Colored Buildcraft pipes.
+- Lowered burntime of PcCraft fuels.
+- Bees now require resource blocks to breed and as flowers to produce.
+- Add SAG Mill support for all GT ores
+- Remove standard apatite and osmium ore milling
+- Disable normal certus quartz milling
+- Swap SAG Mill recipes style
+- Modify grinding balls to be based off GT rounds
+- Disable dark steel grinding balls
+- Move SAG Mill to HV
+- SAGMill primary use is better yield on Byproducts
+- Added aspects for a ton of stuff
+- Changed Oil Comb processing
+- Plutonium and Uranium from IC2 are now oredicted with GT relevant versions.
+- Removed PHC presser recipe for making Logs -> Paper
+- Fixed GT Tools vanishing in PrRed tables
+- IC2 Fertilizer compatible with FT
+- Fixed crash with fluid modules/pipes from Logistics Pipes
+- Fixed crash with "most likely" button in Logistics Pipes
+- Lowered EU/t gained from Dragon Eggs and Vis
+- Fixed jetpack recipes
+- Disabled StorageDrawers item conversion to prevent oreDict exploits
+- Renamed Stargate Controller to DHD
+- Changed Tin Can recipe
+- Added April patrons
+
+v3.2.4.1 Patch
+
+Mod Updates:
+- HardcoreEnderExpansion v1.8.5 -> Customized
+- InfinityCore -> 1.4a
+
+Changes/Fixes:
+- Disabled MB Osmium Bee for sure now
+- Fixed thaumcraft scripts from previous patch not being in
+- Added disabled tooltip to Relocator
+- Fixed Osmium Bee localization
+- Raised power cost for Telepad, and changed the recipe
+- Disabled overlapping MB Resource bees (Iron, Copper, etc...)
+- Removed Forestry scoop from Naturalists Chests
+- Disabled normal Dragon Eggs crafting from Draconic Bees.
+- Introduced new way of making Dragon Eggs. (Hint: Requires combination of Bees, Thaumcraft, HEE)
+- Added different way in Oblivion Essence crafting.
+- Changed recipe for IC2 Teleporter
+- Changed Recipe for Advanced Miner (IC2) to require Enderium Block instead of Teleporter
+- Steel Comb processing gives Molten Steel + Multiplied crushed ore instead of just Molten Iron
+- Few more comb processing tweaks
+
 v3.2.4 - BLUEPOWER IS GOOOOOONE!
 Note: You might want to enable Electrotine retrogen in ProjectRed.cfg (B:"Electrotine Ore retrogen")
 

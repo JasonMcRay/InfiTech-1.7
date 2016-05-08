@@ -6,7 +6,7 @@
             "image" : "infitech2:textures/gui/title/Infitech2Logo.png",
             "hoverImage" : "infitech2:textures/gui/title/Infitech2LogoHover.png",
             "posX" : -125,
-            "posY" : 15,
+            "posY" : 0,
             "width" : 250,
             "height" : 100,
             "alignment" : "top_center"
@@ -19,7 +19,7 @@
         {
             "text" : "menu.singleplayer",
             "posX" : -102,
-            "posY" : 48,
+            "posY" : 28,
             "width" : 100,
             "height" : 20,
             "texture" : "infitech2:textures/gui/images/button.png",
@@ -38,7 +38,7 @@
         {
             "text" : "menu.multiplayer",
             "posX" : 2,
-            "posY" : 48,
+            "posY" : 28,
             "width" : 100,
             "height" : 20,
             "texture" : "infitech2:textures/gui/images/button.png",
@@ -57,7 +57,7 @@
         {
             "text" : "Mods",
             "posX" : -102,
-            "posY" : 92,
+            "posY" : 72,
             "width" : 204,
             "height" : 20,
             "texture" : "infitech2:textures/gui/images/buttonlong.png",
@@ -76,7 +76,7 @@
         {
             "text" : "Issue Tracker",
             "posX" : -102,
-            "posY" : 70,
+            "posY" : 50,
             "width" : 100,
             "height" : 20,
             "texture" : "infitech2:textures/gui/images/button.png",
@@ -95,7 +95,7 @@
         {
             "text" : "Forum",
             "posX" : 2,
-            "posY" : 70,
+            "posY" : 50,
             "width" : 100,
             "height" : 20,
             "texture" : "infitech2:textures/gui/images/button.png",
@@ -113,7 +113,7 @@
         {
             "text" : "menu.options",
             "posX" : -102,
-            "posY" : 132,
+            "posY" : 112,
             "width" : 100,
             "height" : 20,
             "texture" : "infitech2:textures/gui/images/button.png",
@@ -127,16 +127,33 @@
                 "gui" : "options"
             }
         },
-        
-        "quit":
+        "Server Download":
         {
-            "text" : "menu.quit",
+            "text" : "Server Download",
             "posX" : 2,
-            "posY" : 132,
+            "posY" : 112,
             "width" : 100,
             "height" : 20,
             "texture" : "infitech2:textures/gui/images/button.png",
             "imageWidth" : 500,
+            "imageHeight" : 125,
+            "normalTextColor" : 65280,
+            "hoverTextColor": 65280,
+            "action" :
+            {
+                "type" : "openLink",
+                "link" : "http://ftb.cursecdn.com/FTB2/privatepacks/InfiTech2/3_2_6/InfiTech2Server.zip"
+            }
+        },
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : -102,
+            "posY" : 134,
+            "width" : 204,
+            "height" : 20,
+            "texture" : "infitech2:textures/gui/images/buttonlong.png",
+            "imageWidth" : 1000,
             "imageHeight" : 125,
             "normalTextColor" : 65280,
             "hoverTextColor" : 16711680,
@@ -151,7 +168,7 @@
         {
             "text" : "",
             "posX" : -128,
-            "posY" : 132,
+            "posY" : 112,
             "width" : 20,
             "height" : 20,
             "texture" : "infitech2:textures/gui/images/buttonlang.png",
@@ -167,9 +184,9 @@
         "patreon wall":
         {
             "text" : "",
-            "posX" : -100,
-            "posY" : 155,
-            "width" : 200,
+            "posX" : -102,
+            "posY" : 156,
+            "width" : 204,
             "height" : 20,
             "texture" : "infitech2:textures/gui/images/buttonlongpatreon.png",
             "imageWidth" : 1000,
@@ -185,7 +202,7 @@
         {
             "text" : "",
             "posX" : -154,
-            "posY" : 132,
+            "posY" : 112,
             "width" : 20,
             "height" : 20,
             "texture" : "custommainmenu:textures/gui/buttons.png",

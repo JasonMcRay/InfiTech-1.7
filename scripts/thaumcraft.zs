@@ -501,7 +501,7 @@ Crucible.addRecipe("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:9305>, <gregtech
 Research.addCruciblePage("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:9305>);
 Research.clearPrereqs("GT_IRON_TO_STEEL"); 
 Research.addPrereq("GT_IRON_TO_STEEL", "GT_TRANSIRONWROUGHT", false); 
-Warp.addToResearch("GT_IRON_TO_STEEL", 3);
+Warp.addToResearch("GT_IRON_TO_STEEL", 2);
 
 // Steeleaf
 Research.addResearch("GT_TRANSSTEELEAF", "ALCHEMY", "metallum 3, permutatio 3, tutamen 1, lucrum 1", 8, 6, 2, <gregtech:gt.metaitem.01:9339>);
@@ -510,7 +510,6 @@ game.setLocalization("en_US", "tc.research_text.GT_TRANSSTEELEAF", "[GT] Mixing 
 Research.addPage("GT_TRANSSTEELEAF", "kirara.research_page.GT_TRANSSTEELEAF.1");
 game.setLocalization("en_US", "kirara.research_page.GT_TRANSSTEELEAF.1", "You have discovered a way of imbuing inorganic steel with praecantatio and herba essentia to create an organic alloy that has interesting magical properties.<BR>Unfortunately, this process irreversibly transmutes a significant fraction of the steel consumed in the process, rendering only one-half of the metal recoverable.");
 Research.addPrereq("GT_TRANSSTEELEAF", "GT_IRON_TO_STEEL", false);
-Research.addPrereq("GT_TRANSSTEELEAF", "GT_TRANSTHAUMIUM", false);
 Crucible.addRecipe("GT_TRANSSTEELEAF", <gregtech:gt.metaitem.01:9339>, <ore:nuggetSteel>, "praecantatio 1, herba 1");
 Research.addCruciblePage("GT_TRANSSTEELEAF", <gregtech:gt.metaitem.01:9339>);
 Research.setConcealed("GT_TRANSSTEELEAF", true);
@@ -630,7 +629,6 @@ Research.addCruciblePage("GT_TRANSPLATINUM", <gregtech:gt.metaitem.01:9085>);
 Research.addPrereq("GT_TRANSPLATINUM", "GT_ADVANCEDMETALLURGY", false); 
 Research.addPrereq("GT_TRANSPLATINUM", "GT_TRANSALUMINIUM", true); 
 Research.setConcealed("GT_TRANSPLATINUM", true);
-Warp.addToResearch("GT_TRANSPLATINUM", 1);
 
 // Iridium
 Research.addResearch("GT_TRANSIRIDIUM", "ALCHEMY", "metallum 5, machina 3, permutatio 3, tutamen 3, electrum 3", 21, 15, 3, <gregtech:gt.metaitem.01:9084>);
@@ -646,7 +644,7 @@ Crucible.removeRecipe(<gregtech:gt.metaitem.01:9084>);
 Crucible.addRecipe("GT_TRANSIRIDIUM", <gregtech:gt.metaitem.01:84> * 3, <gregtech:gt.metaitem.01:9084>, "lucrum 1, nebrisum 1, metallum 2, machina 1");
 Research.addPrereq("GT_TRANSIRIDIUM", "GT_TRANSPLATINUM", false); 
 Research.setConcealed("GT_TRANSIRIDIUM", true);
-Warp.addToResearch("GT_TRANSIRIDIUM", 1);
+Warp.addToResearch("GT_TRANSIRIDIUM", 2);
 
 // Titanium
 Research.addResearch("GT_TRANSTITANIUM", "ALCHEMY", "metallum 5, tutamen 3, permutatio 3, ordo 3, instrumentum 3", 19, 16, 3, <gregtech:gt.metaitem.01:9028>);
@@ -674,6 +672,7 @@ Research.addCruciblePage("GT_TRANSTUNGSTEN", <gregtech:gt.metaitem.01:910>);
 Research.addPrereq("GT_TRANSTUNGSTEN", "GT_ADVANCEDMETALLURGY", true); 
 Research.addPrereq("GT_TRANSTUNGSTEN", "GT_TRANSTITANIUM", false); 
 Research.setConcealed("GT_TRANSTUNGSTEN", true);
+Warp.addToResearch("GT_TRANSTUNGSTEN", 1);
 
 // Uranium
 Research.addResearch("GT_TRANSURANIUM", "ALCHEMY", "metallum 5, radio 3, permutatio 3, venenum 3, potentia 3", 21, 16, 3, <gregtech:gt.metaitem.01:9098>);
@@ -687,7 +686,7 @@ Research.addPrereq("GT_TRANSURANIUM", "GT_TRANSPLATINUM", false);
 Research.addPrereq("GT_TRANSURANIUM", "GT_TRANSTITANIUM", false); 
 Research.addPrereq("GT_TRANSURANIUM", "GT_TRANSTUNGSTEN", false); 
 Research.setConcealed("GT_TRANSURANIUM", true);
-Warp.addToResearch("GT_TRANSURANIUM", 5);
+Warp.addToResearch("GT_TRANSURANIUM", 4);
 
 // Chromium
 Research.addResearch("GT_TRANSCHROMIUM", "ALCHEMY", "metallum 5, machina 3, permutatio 3, nebrisum 3, lucrum 3", 19, 13, 2, <gregtech:gt.metaitem.01:9030>);
@@ -727,6 +726,7 @@ Research.addCruciblePage("GT_TRANSSTAINLESS", <gregtech:gt.metaitem.01:9306>);
 Research.addPrereq("GT_TRANSSTAINLESS", "GT_TRANSCHROMIUM", false); 
 Research.addPrereq("GT_TRANSSTAINLESS", "GT_TRANSMANGANESE", false); 
 Research.setConcealed("GT_TRANSSTAINLESS", true);
+Warp.addToResearch("GT_TRANSSTAINLESS", 2);
 
 print('Transmutation Initialized');
 
@@ -740,7 +740,6 @@ Research.addPrereq("FOCUSTRADE", "GT_TRANSASTRALSILVER", true);
 
 // Primal
 Research.addPrereq("FOCUSPRIMAL", "INFUSION", true);
-Research.addPrereq("FOCUSPRIMAL", "GT_TRANSENDERIUM", true);
 Research.clearPages("FOCUSPRIMAL"); 
 Research.addPage("FOCUSPRIMAL", "tc.research_page.FOCUSPRIMAL.1");
 Arcane.removeRecipe(<Thaumcraft:FocusPrimal>);
@@ -749,16 +748,13 @@ Research.addInfusionPage("FOCUSPRIMAL", <Thaumcraft:FocusPrimal>);
 
 // Excavation
 Research.addPrereq("FOCUSEXCAVATION", "INFUSION", true);
-Research.addPrereq("FOCUSEXCAVATION", "GT_TRANSTITANIUM", true);
 Research.clearPages("FOCUSEXCAVATION"); 
 Research.addPage("FOCUSEXCAVATION", "tc.research_page.FOCUSEXCAVATION.1");
 Arcane.removeRecipe(<Thaumcraft:FocusExcavation>);
 Infusion.addRecipe("FOCUSEXCAVATION", <gregtech:gt.metaitem.01:24501>, [<gregtech:gt.metaitem.01:28028>, <Thaumcraft:ItemShard:3>, <gregtech:gt.metaitem.01:28028>, <Thaumcraft:ItemPickThaumium>, <gregtech:gt.metaitem.01:28028>, <Thaumcraft:ItemShard:3>, <gregtech:gt.metaitem.01:28028>, <Thaumcraft:ItemPickThaumium>], "ordo 25, perditio 25, perfodio 10, terra 10", <Thaumcraft:FocusExcavation>, 3);
 Research.addInfusionPage("FOCUSEXCAVATION", <Thaumcraft:FocusExcavation>);
-Research.addPrereq("FOCUSEXCAVATION", "GT_TRANSSTEELDAMASCUS", true);
 
 // Warding Focus
-Research.addPrereq("FOCUSWARDING", "GT_TRANSIRIDIUM", true);
 Research.clearPages("FOCUSWARDING");
 Research.addPage("FOCUSWARDING", "tc.research_page.FOCUSWARDING.1");
 Infusion.removeRecipe(<Thaumcraft:FocusWarding>);
@@ -767,7 +763,6 @@ Research.addInfusionPage("FOCUSWARDING", <Thaumcraft:FocusWarding>);
 Compressor.addRecipe(<gregtech:gt.metaitem.01:17506>, <gregtech:gt.metaitem.01:2506>);
 
 // Fire Focus
-Research.addPrereq("FOCUSFIRE", "GT_TRANSINVAR", true);
 Research.clearPages("FOCUSFIRE");
 Research.addPage("FOCUSFIRE", "tc.research_page.FOCUSFIRE.1");
 Research.addPage("FOCUSFIRE", "tc.research_page.FOCUSFIRE.2");
@@ -776,7 +771,6 @@ Arcane.addShaped("FOCUSFIRE", <Thaumcraft:FocusFire>, "ignis 20, perditio 10", [
 Research.addArcanePage("FOCUSFIRE", <Thaumcraft:FocusFire>);
 
 // Frost Focus
-Research.addPrereq("FOCUSFROST", "GT_TRANSALUMINIUM", true);
 Research.clearPages("FOCUSFROST");
 Research.addPage("FOCUSFROST", "tc.research_page.FOCUSFROST.1");
 Arcane.removeRecipe(<Thaumcraft:FocusFrost>);
@@ -798,7 +792,6 @@ Infusion.addRecipe("FOCUSHELLBAT", <gregtech:gt.metaitem.01:24514>, [<gregtech:g
 Research.addInfusionPage("FOCUSHELLBAT", <Thaumcraft:FocusHellbat>);
 
 // Portable Hole Focus
-Research.addPrereq("FOCUSPORTABLEHOLE", "TRANSLEAD", true);
 Research.clearPages("FOCUSPORTABLEHOLE");
 Research.addPage("FOCUSPORTABLEHOLE", "tc.research_page.FOCUSPORTABLEHOLE.1");
 Infusion.removeRecipe(<Thaumcraft:FocusPortableHole>);
@@ -812,7 +805,6 @@ Arcane.addShaped("FOCUS_SMELT", <ThaumicTinkerer:focusSmelt>, "ignis 10, perditi
 Research.refreshResearchRecipe("FOCUS_SMELT");
 
 // Uprising Focus
-Research.addPrereq("FOCUS_FLIGHT", "GT_TRANSBISMUTH", true);
 Infusion.removeRecipe(<ThaumicTinkerer:focusFlight>);
 Infusion.addRecipe("FOCUS_FLIGHT", <gregtech:gt.metaitem.01:24540>, [<gregtech:gt.metaitem.01:28090>, <minecraft:feather>, <gregtech:gt.metaitem.01:28090>, <minecraft:ender_pearl>, <gregtech:gt.metaitem.01:28090>, <minecraft:feather>, <gregtech:gt.metaitem.01:28090>, <minecraft:ender_pearl>], "aer 15, iter 10, motus 20", <ThaumicTinkerer:focusFlight>, 3);
 Research.refreshResearchRecipe("FOCUS_FLIGHT");
@@ -824,32 +816,27 @@ Infusion.addRecipe("FOCUS_TELEKINESIS", <gregtech:gt.metaitem.01:24527>, [<gregt
 Research.refreshResearchRecipe("FOCUS_TELEKINESIS");
 
 // Dislocation Focus
-Research.addPrereq("FOCUS_DISLOCATION", "GT_TRANSENDERIUM", true);
 Infusion.removeRecipe(<ThaumicTinkerer:focusDislocation>);
 Infusion.addRecipe("FOCUS_DISLOCATION", <gregtech:gt.metaitem.01:24533>, [<gregtech:gt.metaitem.01:28321>, <minecraft:diamond>, <gregtech:gt.metaitem.01:28321>, <Thaumcraft:blockCosmeticOpaque>, <gregtech:gt.metaitem.01:28321>, <minecraft:diamond>, <gregtech:gt.metaitem.01:28321>, <Thaumcraft:blockCosmeticOpaque>], "alienis 20, praecantatio 20, tenebrae 10, vacuos 25, vitium 5", <ThaumicTinkerer:focusDislocation>, 10);
 Research.refreshResearchRecipe("FOCUS_DISLOCATION");
 
 // Deflect Focus
-Research.addPrereq("FOCUS_DEFLECT", "GT_TRANSPLATINUM", true);
 Infusion.removeRecipe(<ThaumicTinkerer:focusDeflect>);
 Infusion.addRecipe("FOCUS_DEFLECT", <gregtech:gt.metaitem.01:24503>, [<gregtech:gt.metaitem.01:28085>, <Thaumcraft:blockCosmeticSolid:3>, <gregtech:gt.metaitem.01:28085>, <Thaumcraft:ItemResource:3>, <gregtech:gt.metaitem.01:28085>, <Thaumcraft:blockCosmeticSolid:3>, <gregtech:gt.metaitem.01:28085>, <Thaumcraft:ItemResource:3>], "ordo 20, aer 15, tutamen 5", <ThaumicTinkerer:focusDeflect>, 5);
 Research.refreshResearchRecipe("FOCUS_DEFLECT");
 
 // Mending Focus
-Research.addPrereq("FOCUS_HEAL", "TRANSSILVER", true);
 Infusion.removeRecipe(<ThaumicTinkerer:focusHeal>);
 Infusion.addRecipe("FOCUS_HEAL", <Thaumcraft:FocusPech>, [<gregtech:gt.metaitem.01:28054>, <minecraft:golden_carrot>, <gregtech:gt.metaitem.01:28054>, <minecraft:speckled_melon>, <gregtech:gt.metaitem.01:28054>, <minecraft:golden_carrot>, <gregtech:gt.metaitem.01:28054>, <minecraft:speckled_melon>], "sano 20, spiritus 10, victus 15", <ThaumicTinkerer:focusHeal>, 5);
 Research.refreshResearchRecipe("FOCUS_HEAL");
 
 // Ender Rift Focus
-Research.addPrereq("FOCUS_ENDER_CHEST", "GT_TRANSENDERIUM", true);
 Research.addPrereq("FOCUS_ENDER_CHEST", "AM_GEMVINTEUM", true);
 Arcane.removeRecipe(<ThaumicTinkerer:focusEnderChest>);
 Arcane.addShaped("FOCUS_ENDER_CHEST", <ThaumicTinkerer:focusEnderChest>, "ordo 20, perditio 20", [[<ore:gemVinteum>, <ore:ringEnderium>, <ore:itemEnderCrystal>], [<ore:ringEnderium>, <ore:lensEnderEye>, <ore:ringEnderium>], [<ore:itemEnderCrystal>, <ore:ringEnderium>, <ore:gemVinteum>]]);
 Research.refreshResearchRecipe("FOCUS_ENDER_CHEST");
 
 // Wrench Focus
-Research.addPrereq("thaumicenergistics.TEFOCUSWRENCH", "GT_IRON_TO_STEEL", true);
 Research.clearPages("thaumicenergistics.TEFOCUSWRENCH");
 Research.addPage("thaumicenergistics.TEFOCUSWRENCH", "kirara.research_page.TEFOCUSWRENCH.1");
 game.setLocalization("en_US", "kirara.research_page.TEFOCUSWRENCH.1", "This wand focus interacts with blocks and machinery as if it were an AE2 wrench. Interestingly the incredible complexity of such an interaction prevents you from using your normal lenses instead requiring the use of carefully created crystals attuned to the machines.<BR>Sneak + left click: Rotate.<BR>Sneak + right click: Dismantle.");
@@ -865,10 +852,7 @@ Research.refreshResearchRecipe("FOCUSCRAFTING");
 print('Foci reconfigured');
 
 // Transmutations
-Crucible.removeRecipe(<minecraft:coal:1>); // Charcoal
-Research.orphanResearch("GT_WOOD_TO_CHARCOAL");
-Research.removeResearch("GT_WOOD_TO_CHARCOAL");
-Research.addPrereq("GT_IRON_TO_STEEL", "ALUMENTUM", false);
+Research.moveResearch("GT_WOOD_TO_CHARCOAL", "ALCHEMY", 4, 0);
 Research.moveResearch("GT_FILL_WATER_BUCKET", "ALCHEMY", 4, 2);
 Crucible.removeRecipe(<minecraft:gunpowder>); // Gunpowder
 Crucible.removeRecipe(nuggetAluminium); // Aluminium
@@ -891,12 +875,11 @@ game.setLocalization("en_US", "tile.extrautils:pureLove.name", "Pure Love");
 // Adding Warp to Research
 //*************************
 
-Warp.addToResearch("TRANSGOLD", 2);
-Warp.addToResearch("GT_ADVANCEDMETALLURGY", 3);
-Warp.addToResearch("RUNICARMOR", 5);
-Warp.addToResearch("INFERNALFURNACE", 4);
+Warp.addToResearch("GT_ADVANCEDMETALLURGY", 2);
+Warp.addToResearch("RUNICARMOR", 3);
+Warp.addToResearch("INFERNALFURNACE", 2);
 Warp.addToResearch("BONEBOW", 1);
-Warp.addToResearch("MIRROR", 3);
+Warp.addToResearch("MIRROR", 2);
 
 // GT Advanced Metallurgy Lore
 
@@ -1009,7 +992,6 @@ Research.addCraftingPage("BASICARTIFACE", <Thaumcraft:ItemBaubleBlanks:2>);
 
 
 // Goggles of Revealing
-Research.addPrereq("GOGGLES", "TRANSGOLD", true);
 Arcane.addShaped("GOGGLES", <Thaumcraft:ItemGoggles>, "ordo 5, perditio 5, terra 5, aqua 5, ignis 5, aer 5", [[<minecraft:leather>, <ore:springSmallGold>, <minecraft:leather>], [<minecraft:leather>, null, <minecraft:leather>], [<Thaumcraft:ItemThaumometer>, <ore:stickGold>, <Thaumcraft:ItemThaumometer>]]);
 
 // Focus Pouch
@@ -1065,15 +1047,10 @@ Research.addCraftingPage("THAUMIUM", <Thaumcraft:ItemBootsThaumium>);
 Research.addArcanePage("THAUMIUM", <Railcraft:tool.crowbar.magic>);
 
 // Basic Infusion Tools
-Research.addPrereq("ELEMENTALPICK", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ELEMENTALPICK", <gregtech:gt.metaitem.01:23306>, [<Thaumcraft:ItemShard:1>, <Thaumcraft:ItemShard:1>, <gregtech:gt.metaitem.02:1330>, salisMundus], "ignis 64, perfodio 64, sensus 64", <Thaumcraft:ItemPickaxeElemental>, 5);
-Research.addPrereq("ELEMENTALAXE", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ELEMENTALAXE", <gregtech:gt.metaitem.01:23306>, [<Thaumcraft:ItemShard:2>, <Thaumcraft:ItemShard:2>, <gregtech:gt.metaitem.02:3330>, salisMundus], "aqua 128, arbor 64", <Thaumcraft:ItemAxeElemental>, 5);
-Research.addPrereq("ELEMENTALSWORD", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ELEMENTALSWORD", <gregtech:gt.metaitem.01:23306>, [<Thaumcraft:ItemShard:0>, <Thaumcraft:ItemShard:0>, <gregtech:gt.metaitem.02:330>, salisMundus], "aer 64, motus 64, potentia 64", <Thaumcraft:ItemSwordElemental>, 5);
-Research.addPrereq("ELEMENTALSHOVEL", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ELEMENTALSHOVEL", <gregtech:gt.metaitem.01:23306>, [<Thaumcraft:ItemShard:3>, <Thaumcraft:ItemShard:3>, <gregtech:gt.metaitem.02:2330>, salisMundus], "fabrico 64, terra 128", <Thaumcraft:ItemShovelElemental>, 5);
-Research.addPrereq("ELEMENTALHOE", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ELEMENTALHOE", <gregtech:gt.metaitem.01:23306>, [<Thaumcraft:ItemShard:4>, <Thaumcraft:ItemShard:5>, <gregtech:gt.metaitem.02:4330>, salisMundus], "herba 64, meto 64, terra 64", <Thaumcraft:ItemHoeElemental>, 5);
 
 // Arcane Bore
@@ -1102,8 +1079,6 @@ Arcane.addShaped("WARDEDARCANA", <Thaumcraft:blockWoodenDevice:2>, "aqua 20, ord
 
 print('Artifice Majorly Gregged');
 
-Research.addPrereq("PRIMORDIALARMOR", "GT_TRANSENDERIUM", true);
-Research.addPrereq("PRIMORDIALWEAPONRY", "GT_TRANSENDERIUM", true);
 Infusion.addRecipe("PRIMORDIALARMOR", <WitchingGadgets:WG_MetalDevice:7>, [<Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemEldritchObject:3>, <gregtech:gt.metaitem.01:18321>, <Thaumcraft:ItemHelmetFortress>, <gregtech:gt.metaitem.01:18321>, <Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>], "aer 32, aqua 32, ignis 32, terra 32, ordo 32, perditio 32, tutamen 64, praecantatio 64, metallum 128", <WitchingGadgets:item.WG_PrimordialHelm>, 10);
 Infusion.addRecipe("PRIMORDIALARMOR", <WitchingGadgets:WG_MetalDevice:7>, [<Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemEldritchObject:3>, <gregtech:gt.metaitem.01:18321>, <Thaumcraft:ItemChestplateFortress>, <gregtech:gt.metaitem.01:18321>, <Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>], "aer 32, aqua 32, ignis 32, terra 32, ordo 32, perditio 32, tutamen 64, praecantatio 64, metallum 128", <WitchingGadgets:item.WG_PrimordialChest>, 10);
 Infusion.addRecipe("PRIMORDIALARMOR", <WitchingGadgets:WG_MetalDevice:7>, [<Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemEldritchObject:3>, <gregtech:gt.metaitem.01:18321>, <Thaumcraft:ItemLeggingsFortress>, <gregtech:gt.metaitem.01:18321>, <Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemWispEssence>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemWispEssence>], "aer 32, aqua 32, ignis 32, terra 32, ordo 32, perditio 32, tutamen 64, praecantatio 64, metallum 128", <WitchingGadgets:item.WG_PrimordialLegs>, 10);
@@ -1115,9 +1090,6 @@ Infusion.addRecipe("PRIMORDIALWEAPONRY", <WitchingGadgets:WG_MetalDevice:7>, [<g
 print('Witching Greg');
 
 // Thaumic Restorer
-Research.addPrereq("REPAIRER", "GT_TRANSBRONZE", true);
-Research.addPrereq("REPAIRER", "GT_IRON_TO_STEEL", true);
-Research.addPrereq("REPAIRER", "TRANSGOLD", true);
 Research.addPrereq("REPAIRER", "GT_TRANSFIERYSTEEL", true);
 Research.addPrereq("REPAIRER", "VOIDMETAL", true);
 Infusion.addRecipe("REPAIRER", <WitchingGadgets:WG_MetalDevice:7>, [<OpenBlocks:autoanvil>, <gregtech:gt.metaitem.01:17300>, <gregtech:gt.metaitem.01:17305>, <gregtech:gt.metaitem.01:17086>, <gregtech:gt.metaitem.01:17346>, <IC2:itemPartIndustrialDiamond>, <chisel:ballomoss>, <harvestcraft:hardenedleatherItem>, <Thaumcraft:ItemResource:7>, <IC2:itemPartCarbonPlate>, <gregtech:gt.metaitem.01:17330>, <InfinityCore:itemMaterial:10>], "fabrico 50, instrumentum 20, ordo 15, praecantatio 20", <ThaumicTinkerer:repairer>, 8);
@@ -1414,37 +1386,30 @@ NEI.addEntry(<Thaumcraft:WandCasting:128>.withTag({aqua: 15000, terra: 15000, ig
 NEI.addEntry(<Thaumcraft:WandCasting:192>.withTag({cap: "void", rod: "primal_staff", sceptre: 1 as byte, terra: 37500, aqua: 37500, ignis: 37500, ordo: 37500, aer: 37500, perditio: 37500, AttributeModifiers: [{UUIDMost: -3801225194067177672 as long, UUIDLeast: -6586624321849018929 as long, Amount: 6.0, AttributeName: "generic.attackDamage", Operation: 0, Name: "Weapon modifier"}]}));
 
 // Obsidian Rod
-Research.addPrereq("ROD_obsidian", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_obsidian", <gregtech:gt.metaitem.01:23306>, [<minecraft:obsidian>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:3>], "praecantatio 48, tenebrae 48, terra 96", <Thaumcraft:WandRod:1>, 2);
 Arcane.addShaped("ROD_obsidian_staff", <Thaumcraft:WandRod:51>, "terra 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:1>, null], [<Thaumcraft:WandRod:1>, null, null]]);
 
 // Icy Rod
-Research.addPrereq("ROD_ice", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_ice", <gregtech:gt.metaitem.01:23306>, [<minecraft:ice>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:2>], "aqua 96, gelum 48, praecantatio 48", <Thaumcraft:WandRod:3>, 2);
 Arcane.addShaped("ROD_ice_staff", <Thaumcraft:WandRod:53>, "aqua 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:3>, null], [<Thaumcraft:WandRod:3>, null, null]]);
 
 // Quartz Rod
-Research.addPrereq("ROD_quartz", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_quartz", <gregtech:gt.metaitem.01:23306>, [<minecraft:quartz_block>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:4>], "ordo 96, praecantatio 48, vitreus 48", <Thaumcraft:WandRod:4>, 2);
 Arcane.addShaped("ROD_quartz_staff", <Thaumcraft:WandRod:54>, "ordo 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:4>, null], [<Thaumcraft:WandRod:4>, null, null]]);
 
 // Reed Rod
-Research.addPrereq("ROD_reed", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_reed", <gregtech:gt.metaitem.01:23306>, [<minecraft:reeds>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard>], "aer 96, motus 48, praecantatio 48", <Thaumcraft:WandRod:5>, 2);
 Arcane.addShaped("ROD_reed_staff", <Thaumcraft:WandRod:55>, "aer 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:5>, null], [<Thaumcraft:WandRod:5>, null, null]]);
 
 // Blazing Rod
-Research.addPrereq("ROD_blaze", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_blaze", <gregtech:gt.metaitem.01:23306>, [<minecraft:blaze_rod>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:1>], "bestia 48, ignis 96, praecantatio 48", <Thaumcraft:WandRod:6>, 2);
 Arcane.addShaped("ROD_blaze_staff", <Thaumcraft:WandRod:56>, "ignis 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:6>, null], [<Thaumcraft:WandRod:6>, null, null]]);
 
 // Bone Rod
-Research.addPrereq("ROD_bone", "GT_TRANSSTAINLESS", true);
 Infusion.addRecipe("ROD_bone", <gregtech:gt.metaitem.01:23306>, [<minecraft:bone>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:5>], "exanimis 48, perditio 96, praecantatio 48", <Thaumcraft:WandRod:7>, 2);
 Arcane.addShaped("ROD_bone_staff", <Thaumcraft:WandRod:57>, "perditio 100", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:7>, null], [<Thaumcraft:WandRod:7>, null, null]]);
 
 // Silverwood Rod
-Research.addPrereq("ROD_silverwood", "GT_TRANSTITANIUM", true);
 Infusion.addRecipe("ROD_silverwood", rodTitanium, [<Thaumcraft:blockMagicalLog:1>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard>, <Thaumcraft:ItemShard:1>, <Thaumcraft:ItemShard:2>, <Thaumcraft:ItemShard:3>, <Thaumcraft:ItemShard:4>, <Thaumcraft:ItemShard:5>], "aer 64, aqua 64, ignis 64, ordo 64, perditio 64, praecantatio 64, terra 64", <Thaumcraft:WandRod:2>, 5);
 Arcane.addShaped("ROD_silverwood_staff", <Thaumcraft:WandRod:52>, "ordo 132", [[null, null, <Thaumcraft:ItemResource:15>], [null, <Thaumcraft:WandRod:2>, null], [<Thaumcraft:WandRod:2>, null, null]]);
 
@@ -1489,7 +1454,6 @@ Infusion.removeRecipe(<gregtech:gt.blockmachines:1123>);
 Infusion.addRecipe("GT_MAGICENERGY", <gregtech:gt.blockmachines:11>, [<minecraft:beacon>, <gregtech:gt.metaitem.01:32702>, <gregtech:gt.metaitem.01:17346>, <gregtech:gt.metaitem.01:32690>, <Thaumcraft:blockStoneDevice:0>, <gregtech:gt.metaitem.01:32702>, <gregtech:gt.metaitem.01:17346>, <gregtech:gt.metaitem.01:32690>], "potentia 16, machina 32, praecantatio 16, electrum 32", <gregtech:gt.blockmachines:1123>, 5);
 Research.refreshResearchRecipe("GT_MAGICENERGY");
 
-Research.addPrereq("GT_MAGICENERGY2", "GT_TRANSENDERIUM", true);
 Infusion.removeRecipe(<gregtech:gt.blockmachines:1124>);
 Infusion.addRecipe("GT_MAGICENERGY2", <gregtech:gt.blockmachines:12>, [<gregtech:gt.metaitem.01:32672>, <IC2:itemPartCircuitAdv>, <gregtech:gt.metaitem.01:17321>, <gregtech:gt.metaitem.01:32691>, <Thaumcraft:blockStoneDevice:0>, <IC2:itemPartCircuitAdv>, <gregtech:gt.metaitem.01:17321>, <gregtech:gt.metaitem.01:32691>], "potentia 32, machina 64, praecantatio 32, electrum 64", <gregtech:gt.blockmachines:1124>, 7);
 Research.refreshResearchRecipe("GT_MAGICENERGY2");
@@ -1500,7 +1464,6 @@ Infusion.addRecipe("GT_MAGICENERGY3", <gregtech:gt.blockmachines:13>, [<gregtech
 Research.refreshResearchRecipe("GT_MAGICENERGY3");
 
 Research.addPrereq("GT_MAGICABSORB", "WANDPED", true);
-Research.addPrereq("GT_MAGICABSORB", "GT_TRANSENDERIUM", true);
 Infusion.removeRecipe(<gregtech:gt.blockmachines:1127>);
 Infusion.addRecipe("GT_MAGICABSORB", <gregtech:gt.blockmachines:11>, [<minecraft:beacon>, <gregtech:gt.metaitem.01:32702>, <gregtech:gt.metaitem.01:17346>, <gregtech:gt.metaitem.01:32690>, <Thaumcraft:blockStoneDevice:5>, <gregtech:gt.metaitem.01:32702>, <gregtech:gt.metaitem.01:17346>, <gregtech:gt.metaitem.01:32690>], "potentia 16, machina 32, praecantatio 16, electrum 32, instrumentum 32, vacuos 16", <gregtech:gt.blockmachines:1127>, 6);
 Research.refreshResearchRecipe("GT_MAGICABSORB");
@@ -1561,7 +1524,7 @@ Crucible.addRecipe("AM_GEMVINTEUM", gemVinteum, <Thaumcraft:ItemShard:6>, "praec
 Research.addCruciblePage("AM_GEMVINTEUM", gemVinteum);
 Crucible.addRecipe("AM_GEMVINTEUM", gemVinteum, <ore:dustVinteum>, "vitreus 4");
 Research.setConcealed("AM_GEMVINTEUM", true);
-Warp.addToResearch("AM_GEMVINTEUM", 2);
+Warp.addToResearch("AM_GEMVINTEUM", 1);
 
 Research.addPrereq("RUNICARMOR", "AM_GEMVINTEUM", true);
 Research.addPrereq("MIRROR", "AM_GEMVINTEUM", true);
@@ -1579,7 +1542,6 @@ Research.addPage("BONEBOW", "tc.research_page.BONEBOW.1");
 Infusion.addRecipe("BONEBOW", <gregtech:gt.metaitem.02:22306>, [<minecraft:bone>, gemVinteum, <minecraft:string>, <Thaumcraft:ItemShard:5>, <minecraft:bone>, gemVinteum, <minecraft:string>, <Thaumcraft:ItemShard:5>], "perditio 48, aer 24, telum 48, exanimis 24", <Thaumcraft:ItemBowBone>, 6);
 Research.addInfusionPage("BONEBOW", <Thaumcraft:ItemBowBone>);
 Research.addPrereq("BONEBOW", "INFUSION", true);
-Research.addPrereq("BONEBOW", "GT_TRANSSTAINLESS", true);
 
 // Mirrors
 Research.addPrereq("MIRROR", "AM_GEMVINTEUM", true);
@@ -1995,7 +1957,6 @@ Research.addInfusionPage("GT_FIRESTONE", <Railcraft:firestone.refined:0>);
 Infusion.addRecipe("GT_FIRESTONE", <Railcraft:firestone.cracked:*>, [dustPyrotheum, dustPyrotheum, dustPyrotheum, dustPyrotheum], "ignis 32, praecantatio 64, vitreus 32", <Railcraft:firestone.refined:4999>, 3);
 Research.addInfusionPage("GT_FIRESTONE", <Railcraft:firestone.refined:4999>);
 Research.setConcealed("GT_FIRESTONE", true);
-Warp.addToResearch("GT_FIRESTONE", 1);
 
 // Basic Wand Craft Thaumonomicon Entry
 Research.clearPages("BASICTHAUMATURGY"); 
@@ -2032,7 +1993,6 @@ Research.addPrereq("RC_ABYSSAL_STONE", "RC_QUARRIED_STONE", false);
 Crucible.addRecipe("RC_ABYSSAL_STONE", <Railcraft:cube:6>, <minecraft:stone>, "tenebrae 2");
 Research.addCruciblePage("RC_ABYSSAL_STONE", <Railcraft:cube:6>);
 Research.setConcealed("RC_ABYSSAL_STONE", true);
-Warp.addToResearch("RC_ABYSSAL_STONE", 1);
 
 // Peat
 Research.addResearch("GT_MATURE_PEAT", "ALCHEMY", "ignis 3, aqua 1, permutatio 1, potentia 3", -7, -1, 2, <Forestry:peat>);

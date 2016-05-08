@@ -27,8 +27,8 @@
     <itemStack oreDictionary="ingotDarkSteel" number="16"/> 
 	</enchantment>
 	
-	<enchantment name="enchantment.haste" costPerLevel="5">
-    <itemStack modID="ThaumicTinkerer" itemName="brightNitor"/>
+	<enchantment name="enchantment.haste" costPerLevel="7">
+    <itemStack modID="Automagy" itemName="golemWorkbenchUpgrade" number="3"/>
 	</enchantment>
 
 	<enchantment name="enchantment.repair" costPerLevel="15">

@@ -30,9 +30,12 @@ Just what each label on given issue means:
 * Waiting for fix: Issue has been moved to propper authorities and we are waiting for a fix
 * Wontfix/add: Denied requests (mod suggestions or enhancements)
 * Workaround fix: Fix made just to work around the issue
+* Quests: Quest related bug
+* No Response from Mod Dev: Mainly used for closed issues, where mod dev doesnt response for long time, or the mod development has been stopped for 1.7.10
 
 ## Pull Requests
-[Squash](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html) them, and make sure they works
+[Squash](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html) them, and make sure they work.
+
 Pull Requests with HQM file changed will NOT BE ACCEPTED EVER. If you feel like there should be a change with some quest, please make an Issue, PM Jason McRay on FTB forums, or DM Jason McRay on discord.
 
 ## Important for using dev configs
