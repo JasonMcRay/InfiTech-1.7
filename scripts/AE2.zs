@@ -393,6 +393,9 @@ recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:31>);
 // --- Acceleration Card
 recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:30>);
 
+// --- Magnet Card
+recipes.remove(<ae2ect:magnetCard>);
+
 // --- Wireless Booster
 recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:42>);
 
@@ -856,6 +859,9 @@ recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:31>, [<appliede
 
 // --- Acceleration Card
 recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:30>, [<appliedenergistics2:item.ItemMultiMaterial:28>, DiamondCircuit, GoldCircuit, FluixCrystal]);
+
+// --- Magnet Card
+recipes.addShapeless(<ae2wct:magnetCard>, [<appliedenergistics2:item.ItemMultiMaterial:28>, DiamondCircuit, GoldCircuit, <EnderIO:itemMagnet:*>]);
 
 // --- Wireless Booster
 recipes.addShaped(<appliedenergistics2:item.ItemMultiMaterial:42>, [
