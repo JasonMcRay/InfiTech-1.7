@@ -290,3 +290,6 @@ recipes.remove(<Railcraft:stair>);
 recipes.remove(<Railcraft:wall.alpha:1>);
 recipes.remove(<Railcraft:slab>);
 // Possible to make Wet Brick non placeable (Block Properties mod)
+
+recipes.remove(<Railcraft:cart.redstone.flux>);
+NEI.hide(<Railcraft:cart.redstone.flux>);
