@@ -394,7 +394,7 @@ recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:31>);
 recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:30>);
 
 // --- Magnet Card
-recipes.remove(<ae2ect:magnetCard>);
+recipes.remove(<ae2wct:magnetCard>);
 
 // --- Wireless Booster
 recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:42>);
