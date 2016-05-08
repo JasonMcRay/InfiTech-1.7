@@ -9,6 +9,10 @@ import mods.forestry.ThermionicFabricator;
 import mods.nei.NEI;
 
 # Aliases
+var plateNaquadah = <ore:plateNaquadah>;
+var electricMotorEV = <gregtech:gt.metaitem.01:32603>;
+var darkIronBars = <EnderIO:blockDarkIronBars>;
+var gearGtSmallFierySteel = <gregtech:gt.metaitem.02:20346>;
 var analyzer = <Forestry:core>;
 var bcTank = <BuildCraft|Factory:tankBlock>;
 var bioGenerator = <Forestry:engine:3>;
@@ -144,11 +148,12 @@ recipes.remove(scoopFT);
 scoopFT.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # Recipe Tweaks
+
 recipes.remove(centrifuge);
 recipes.addShaped(centrifuge, [
-    [plateCupronickel, electricMotorLV, plateCupronickel],
-    [ironBars, sturdyCasing, ironBars],
-    [gearGtSmallSteel, electricMotorLV, gearGtSmallSteel]]);
+    [plateNaquadah, electricMotorEV, plateNaquadah],
+    [darkIronBars, sturdyCasing, darkIronBars],
+    [gearGtSmallFierySteel, electricMotorEV, gearGtSmallFierySteel]]);
 recipes.remove(enginePeat);
 recipes.addShaped(enginePeat, [
 	[plateCopper, plateCopper, plateCopper],
@@ -527,3 +532,11 @@ Carpenter.addRecipe(<Forestry:builderBagT2>, [[<Forestry:craftingMaterial:3>, <F
 
 // --- Loot tables ---
 vanilla.loot.removeChestLoot("naturalistChest", scoopFT);
+
+// --- DOB Comb Centrifuging ----
+mods.forestry.Centrifuge.removeRecipe(<*>);
+mods.forestry.Centrifuge.addRecipe([<IC2:itemHarz> % 15, <IC2:itemFuelPlantBall> % 1, <gregtech:gt.metaitem.01:2538> % 15, <gregtech:gt.metaitem.01:535> % 15, <minecraft:coal> % 15, <gendustry:HoneyDrop:10> % 15, <gregtech:gt.metaitem.01:308> % 15, <EnderIO:itemAlloy:1> % 1, <EnderIO:itemMaterial:4> % 15, <EnderIO:itemMaterial:3> % 15, <Thaumcraft:ItemShard> % 1, <Thaumcraft:ItemShard:1> % 1, <Thaumcraft:ItemShard:2> % 1, <Thaumcraft:ItemShard:3> % 1, <Thaumcraft:ItemShard:4> % 1, <Thaumcraft:ItemShard:5> % 1, <Thaumcraft:ItemShard:6> % 1, <gregtech:gt.metaitem.01:330> % 15, <gregtech:gt.metaitem.01:2299> % 7, <gregtech:gt.metaitem.01:516> % 15, <appliedenergistics2:item.ItemMultiMaterial:8> % 1, <gregtech:gt.metaitem.01:810> % 15, <gregtech:gt.metaitem.01:526> % 15, <gregtech:gt.metaitem.01:502> % 15, <gregtech:gt.metaitem.01:503> % 5, <gregtech:gt.metaitem.01:504> % 5, <gregtech:gt.metaitem.01:500> % 15, <gregtech:gt.metaitem.01:505> % 15, <gregtech:gt.metaitem.01:501> % 15, <gregtech:gt.metaitem.01:35> % 15, <gregtech:gt.metaitem.01:57> % 15, <gregtech:gt.metaitem.01:89> % 15, <gregtech:gt.metaitem.01:32> % 15, <gregtech:gt.metaitem.01:305> % 15, <gregtech:gt.metaitem.01:34> % 15, <gregtech:gt.metaitem.01:36> % 15, <gregtech:gt.metaitem.01:54> % 15, <gregtech:gt.metaitem.01:86> % 15, <gregtech:gt.metaitem.01:19> % 5, <gregtech:gt.metaitem.01:31> % 5, <gregtech:gt.metaitem.01:28> % 5, <gregtech:gt.metaitem.01:30> % 5, <gregtech:gt.metaitem.01:81> % 5, <gregtech:gt.metaitem.01:85> % 5, <gregtech:gt.metaitem.01:84> % 5, <gregtech:gt.metaitem.01:83> % 1, <gregtech:gt.metaitem.01:97> % 5, <gregtech:gt.metaitem.01:10> % 4, <gregtech:gt.metaitem.01:324> % 3], <gendustry:HoneyComb:142>, 40);
+
+// Centrifuge Renaming
+NEI.overrideName(<Forestry:factory:2>, "D-O-B Separator");
+<Forestry:factory:2>.displayName = "D-O-B Separator";
