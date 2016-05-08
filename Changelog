@@ -1,3 +1,32 @@
+v3.2.6
+
+Quests:
+- "Silicon Age" - "Industrialist TNT" - Enhanced the tasks
+
+New Mods:
+- Wireless Crafting AE2 Terminal
+
+Mod Updates:
+- AppleCore -> 1.3.1
+- Galacticraft -> 3.0.12.460
+- InfinityCore -> 1.6
+- Railcraft -> 9.11.0.0
+- LogisticPipes -> 0.9.3.121
+
+Changes/Fixes:
+- Fixed few aspect errors
+- Enhanced Compatibility with IC2 (Pu, U)
+- Sped up world loading time
+- Changed eIO Enchanter recipe for Haste enchant
+- Fixed EV Battery Charger (Workaround until GT.22)
+- Lowered Volcano Spawnrate
+- Added button for server download
+- Added conversion recipe for GT Ores -> Vanilla (because of XU stabilization ritual)
+- Enabled Last Millennium Dimension (default recipe, moved to QED)
+- Fixed Extruder crafting recipe for PneumaticCraft Tubes (no longer consumes the Shape)
+- Activated DOB bee
+- Fixed Diamond Nugget unification
+
 v3.2.5.1
 
 Changes/Fixes
