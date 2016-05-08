@@ -210,6 +210,8 @@ var UStorageHousing = <appliedenergistics2:item.ItemMultiMaterial:39>;
 var VibrantQGlass =<appliedenergistics2:tile.BlockQuartzLamp>;
 var WirelessReceiver = <appliedenergistics2:item.ItemMultiMaterial:41>;
 var WirelessTerminal = <appliedenergistics2:item.ToolWirelessTerminal>;
+var WirelessCraftingTerminal = <ae2wct:wirelessCraftingTerminal>;
+var Singularity = <appliedenergistics2:item.ItemMultiMaterial:47>;
 
 // --- OreDictionary Fix ---
 
@@ -343,6 +345,9 @@ recipes.remove(PatternTerminal);
 // --- Wireless Terminal
 recipes.remove(WirelessTerminal);
 
+// --- Wireless Crafting Terminal
+recipes.remove(WirelessCraftingTerminal);
+
 // --- Quartz Glass
 recipes.remove(QuartzGlass);
 
@@ -387,6 +392,9 @@ recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:31>);
 
 // --- Acceleration Card
 recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:30>);
+
+// --- Magnet Card
+recipes.remove(<ae2wct:magnetCard>);
 
 // --- Wireless Booster
 recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:42>);
@@ -793,6 +801,12 @@ recipes.addShaped(WirelessTerminal, [
 [NQuartzPlate, DiamondCircuit, NQuartzPlate],
 [NQuartzPlate, DEnergyCell, NQuartzPlate]]);
 
+// --- Wireless Crafting Terminal
+recipes.addShaped(WirelessCraftingTerminal, [
+[WirelessReceiver, CraftingTerminal, WirelessReceiver],
+[NQuartzPlate, Singularity, NQuartzPlate],
+[NQuartzPlate, DEnergyCell, NQuartzPlate]]);
+
 // --- Vibrant Quartz Glass
 recipes.addShaped(VibrantQGlass, [
 [GlowstoneDust, GlowstonePlate, GlowstoneDust],
@@ -845,6 +859,9 @@ recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:31>, [<appliede
 
 // --- Acceleration Card
 recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:30>, [<appliedenergistics2:item.ItemMultiMaterial:28>, DiamondCircuit, GoldCircuit, FluixCrystal]);
+
+// --- Magnet Card
+recipes.addShapeless(<ae2wct:magnetCard>, [<appliedenergistics2:item.ItemMultiMaterial:28>, DiamondCircuit, GoldCircuit, <EnderIO:itemMagnet:*>]);
 
 // --- Wireless Booster
 recipes.addShaped(<appliedenergistics2:item.ItemMultiMaterial:42>, [
