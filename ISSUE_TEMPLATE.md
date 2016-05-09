@@ -15,7 +15,7 @@ Please state if you modified the modpack in any way.
 
 
 
-#### Steps to reproduce:
+#### Steps to reproduce (if aplicable):
 
 1.
 2.
