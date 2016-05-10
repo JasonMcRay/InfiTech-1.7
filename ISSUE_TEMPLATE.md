@@ -4,8 +4,8 @@ Please state if you modified the modpack in any way.
 
 
 #### Is the issue happening on server? Client? Both?
-- [ ] Client
-- [ ] Server
+
+
 
 #### What happens:
 
