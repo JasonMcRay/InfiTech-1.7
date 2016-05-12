@@ -1881,10 +1881,11 @@ Research.addResearch("GT_FARMLAND", "ALCHEMY", "messis 2, aqua 2, ordo 2", 4, 1,
 game.setLocalization("en_US", "tc.research_name.GT_FARMLAND", "Preparing Farmland");
 game.setLocalization("en_US", "tc.research_text.GT_FARMLAND", "[GT] Pre-tilled, hydrated dirt");
 Research.addPage("GT_FARMLAND", "kirara.research_page.GT_FARMLAND.1");
-game.setLocalization("en_US", "kirara.research_page.GT_FARMLAND.1", "You have discovered a way of infusing dirt with aqua essentia to create a patch of damp, hydrated farmland that can immediately be used to plant crops without tilling.<BR>Unfortunately, this farmland will still eventually dry out if there is no nearby water.");
+game.setLocalization("en_US", "kirara.research_page.GT_FARMLAND.1", "You have discovered a way of infusing dirt with aqua essentia to create a patch of damp, hydrated farmland that can immediately be used to plant crops without tilling.");
 Research.addPrereq("GT_FARMLAND", "GT_FILL_WATER_BUCKET", false);
-Crucible.addRecipe("GT_FARMLAND", <minecraft:farmland:7>, <minecraft:dirt>, "aqua 1");
-Research.addCruciblePage("GT_FARMLAND", <minecraft:farmland:7>);
+recipes.remove(<Ztones:cleanDirt>);
+Crucible.addRecipe("GT_FARMLAND", <Ztones:cleanDirt>, <minecraft:dirt>, "aqua 2");
+Research.addCruciblePage("GT_FARMLAND", <Ztones:cleanDirt>);
 Research.setConcealed("GT_FARMLAND", true);
 
 // Pyrotheum
