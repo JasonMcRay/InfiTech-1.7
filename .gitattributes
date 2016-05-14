@@ -1,1 +1,4 @@
 *.jar filter=lfs diff=lfs merge=lfs -text
+
+# Files that will have LF ending always
+config/PneumaticCraft/*.cfg eol=lf
