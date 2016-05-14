@@ -1,5 +1,5 @@
 #### Issue Description:
-Please state if you modified the modpack in any way.
+Also please state if you modified the modpack in any way.
 
 
 
