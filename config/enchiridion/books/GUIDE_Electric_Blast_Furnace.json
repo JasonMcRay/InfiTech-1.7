@@ -219,18 +219,8 @@
             "color": "FF555555",
             "xPos": 27,
             "yPos": 30,
-            "width": 180.0,
-            "height": 91.0
-          }
-        },
-        {
-          "type": "FeatureImage",
-          "properties": {
-            "path": "GUIDE_Electric_Blast_Furnace/Maintenance_Problems.png",
-            "xPos": 47,
-            "yPos": 135,
-            "width": 133.0,
-            "height": 55.0
+            "width": 182.0,
+            "height": 72.0
           }
         },
         {
@@ -244,6 +234,32 @@
             "yPos": 30,
             "width": 180.0,
             "height": 60.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Possible Problems       Tool to Fix\n",
+            "wrap": 0,
+            "size": 1.4000001,
+            "color": "FFFF0000",
+            "xPos": 24,
+            "yPos": 116,
+            "width": 193.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "\"Pipe is loose\"                                      Wrench \n\"Screws are missing\"                      Screwdriver\n\"Something is stuck\"                    Soft Hammer\n\"Plantings are dented\"                  Hard Hammer\n\"Circuitry burned out\"                   Soldering Iron\n\"That doesn\u0027t belong there\"             Crowbar",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 24,
+            "yPos": 132,
+            "width": 198.0,
+            "height": 53.0
           }
         }
       ],

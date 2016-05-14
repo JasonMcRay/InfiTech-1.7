@@ -28,37 +28,55 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "This multiblock is used to manufacture steel, and is the first steel-producing machine you are able to make.",
+            "text": "This multiblock is used to manufacture steel, and is the first steel-producing machine you are able to make. It is somewhat slow, but you can and should build multiple of them to speed up the production.\n\nMultiple Bronze Blast Furnaces can share side or back wall. Keeping this in mind you can save considerable amount of bronze.\n\nBronze Blast Furnace CANNOT be properly automated. If you will try it, it will start putting inserted items into different slots (for example it will put Coal into output slot).",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
             "xPos": 220,
             "yPos": 20,
-            "width": 187.0,
-            "height": 34.0
+            "width": 197.0,
+            "height": 127.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Bronze_Blast_Furnace/BBFRecipes.png",
+            "xPos": 24,
+            "yPos": 42,
+            "width": 181.0,
+            "height": 144.0
           }
         },
         {
           "type": "FeatureText",
           "properties": {
-            "text": "To make your first steel you must put Iron in top slot and Coal in bottom slot.",
+            "text": "Recipe Examples",
+            "wrap": 0,
+            "size": 1.7000002,
+            "color": "FFFF0000",
+            "xPos": 67,
+            "yPos": 19,
+            "width": 144.0,
+            "height": 13.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "To make your first steel you must put Iron (ingot or dust works) in top slot and Coal/Charcoal/Coal Coke in bottom slot.\n\nYou can also put Steel Dust in top and Coal/Charcoal in bottom slot in case you found some steel on your adventures.",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
             "xPos": 220,
-            "yPos": 54,
-            "width": 183.0,
-            "height": 34.0
-          }
-        },
-        {
-          "type": "FeatureImage",
-          "properties": {
-            "path": "GUIDE_Bronze_Blast_Furnace/BBFRecipes.png",
-            "xPos": 215,
-            "yPos": 85,
-            "width": 189.0,
-            "height": 110.0
+            "yPos": 20,
+            "width": 182.0,
+            "height": 68.0
           }
         }
       ],
@@ -216,6 +234,10 @@
           }
         }
       ],
+      "pageName": ""
+    },
+    {
+      "features": [],
       "pageName": ""
     }
   ],

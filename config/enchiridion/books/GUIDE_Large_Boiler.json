@@ -224,13 +224,29 @@
           }
         },
         {
-          "type": "FeatureImage",
+          "type": "FeatureText",
           "properties": {
-            "path": "GUIDE_Large_Boiler/Maintenance_Problems.png",
-            "xPos": 47,
-            "yPos": 135,
-            "width": 133.0,
-            "height": 55.0
+            "text": "Possible Problems       Tool to Fix\n",
+            "wrap": 0,
+            "size": 1.4000001,
+            "color": "FFFF0000",
+            "xPos": 24,
+            "yPos": 116,
+            "width": 193.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "\"Pipe is loose\"                                      Wrench \n\"Screws are missing\"                      Screwdriver\n\"Something is stuck\"                    Soft Hammer\n\"Plantings are dented\"                  Hard Hammer\n\"Circuitry burned out\"                   Soldering Iron\n\"That doesn\u0027t belong there\"             Crowbar",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 24,
+            "yPos": 132,
+            "width": 198.0,
+            "height": 53.0
           }
         },
         {

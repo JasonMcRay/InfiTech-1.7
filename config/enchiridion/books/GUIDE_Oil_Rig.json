@@ -214,13 +214,29 @@
           }
         },
         {
-          "type": "FeatureImage",
+          "type": "FeatureText",
           "properties": {
-            "path": "GUIDE_Oil_Rig/Maintenance_Problems.png",
-            "xPos": 47,
-            "yPos": 135,
-            "width": 133.0,
-            "height": 55.0
+            "text": "Possible Problems       Tool to Fix\n",
+            "wrap": 0,
+            "size": 1.4000001,
+            "color": "FFFF0000",
+            "xPos": 24,
+            "yPos": 116,
+            "width": 193.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "\"Pipe is loose\"                                      Wrench \n\"Screws are missing\"                      Screwdriver\n\"Something is stuck\"                    Soft Hammer\n\"Plantings are dented\"                  Hard Hammer\n\"Circuitry burned out\"                   Soldering Iron\n\"That doesn\u0027t belong there\"             Crowbar",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 24,
+            "yPos": 132,
+            "width": 198.0,
+            "height": 53.0
           }
         },
         {
@@ -257,7 +273,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "An Oil source is 96x96 blocks big. 50% of these areas are empty. The others each have a chance of 12.5% to contain Natural Gas, Light Oil, Oil, Heavy Oil. Oil sources do not vary in the amount of oil contained, but rather the speed it can be pumped out. The speed is random beween 1-1024L/cycle. One cycle is 8 sec long using LV. With IV a cycle is down to 0.5 sec. Only 2% of all sources produce more than 500L/cycle, 4% more than 250L/cycle.... After some time pumping the speed slowly drops until it finally reaches 0.",
+            "text": "An Oil source is 96x96 blocks big. 50% of these areas are empty. The others each have a chance of 12.5% to contain Natural Gas, Light Oil, Oil, Heavy Oil. Oil sources do not vary in the amount of oil contained, but rather the speed it can be pumped out. The speed is random beween 1-1024L/cycle. One cycle is 8 sec long using LV. With IV a cycle is down to 0.5 sec. Only 2% of all sources produce more than 500L/cycle, 4% more than 250L/cycle.... After some time pumping the speed slowly drops until it finally reaches 0. Also keep in mind that you can have multiple Oil Rigs in the same area of 96x96 blocks to raise the speed of drilling the oil.",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
