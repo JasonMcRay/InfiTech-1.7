@@ -10,6 +10,7 @@ Mod Updates:
 - Railcraft -> 9.12.2.0
 - Wireless Crafting Terminal -> 1.8.3b
 - StorageDrawers -> 1.9.8
+- Framez 2 -> 0.1.2
 
 Changes/Fixes:
 - DOB Bees now require catalyst also for breeding inside Mutatron
@@ -23,6 +24,7 @@ Changes/Fixes:
 - Re-enabled Ztones Splat Axe - No crafting recipe, rare loot
 - Halved tungstate cluster output in Blast Furnace/Pulverizer
 - Travel Anchor can't be used as unpowered elevator now. You MUST have Staff of Travelling
+- Disabled Metamorphic Stone wordgen
 
 v3.2.6
 
