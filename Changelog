@@ -25,6 +25,7 @@ Changes/Fixes:
 - Halved tungstate cluster output in Blast Furnace/Pulverizer
 - Travel Anchor can't be used as unpowered elevator now. You MUST have Staff of Travelling
 - Disabled Metamorphic Stone wordgen
+- Metamorphic Stone cannot be silk touched anymore. Always gives Cracked version, which needs to be "fixed"
 
 v3.2.6
 
