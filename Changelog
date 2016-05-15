@@ -1,3 +1,28 @@
+v3.2.7
+
+New Mods:
+- Hardcore Wither - Disabled per default; for testing.
+- Chisel Tones
+
+Mod Updates:
+- EnderIO -> 2.3.0.425
+- InfinityCore -> 1.6a
+- Railcraft -> 9.12.2.0
+- Wireless Crafting Terminal -> 1.8.3b
+- StorageDrawers -> 1.9.8
+
+Changes/Fixes:
+- DOB Bees now require catalyst also for breeding inside Mutatron
+- Fixed Certus and Platinum bee Flower blocks
+- Fixed Fishing Core infusion
+- Added aspects to Ztones blocks
+- Upgraded TC Farmland recipes to garden soil (from Ztones)
+- GUIDE BOOKS: Removed Maintenance problems table -> Replaced by text version
+- GUIDE BOOKS: Moved BBF Example recipes to another page
+- Re-enabled Ztones Ofanix - with changed recipe
+- Re-enabled Ztones Splat Axe - No crafting recipe, rare loot
+- Halved tungstate cluster output in Blast Furnace/Pulverizer
+
 v3.2.6
 
 Forge updated: 1614
