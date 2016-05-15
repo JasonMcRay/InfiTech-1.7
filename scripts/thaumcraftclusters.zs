@@ -215,8 +215,8 @@ Research.addCruciblePage("PURETUNGSTEN", <InfinityCore:itemCluster:11>);
 Research.setSecondary("PURETUNGSTEN", true);
 Research.addPrereq("PURETUNGSTEN", "PUREIRON", false);
 
-BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12081> * 2], [<InfinityCore:itemCluster:11>], 10000, 120, 2500);
-Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2081> * 3, <gregtech:gt.metaitem.01:2081>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:11>, [10000, 5000, 500], 400, 2);
+BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12081>], [<InfinityCore:itemCluster:11>], 8000, 120, 2500);
+Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2081>, <gregtech:gt.metaitem.01:2081>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:11>, [10000, 7500, 500], 400, 2);
 
 <ore:listAllOreIridium>.addAll(<ore:oreIridium>);
 <ore:listAllOreIridium>.add(<gregtech:gt.blockores:84>);
