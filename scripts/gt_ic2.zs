@@ -476,6 +476,27 @@ Saw.add(<gregtech:gt.metatool.01:141>);
 <ore:craftingToolScrewdriver>.add(<gregtech:gt.metatool.01:151>);
 <ore:craftingToolSolderingIron>.add(<gregtech:gt.metatool.01:161>);
 
+// Electrical Tools Special Oredict for quests
+<ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:111>);
+<ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:110>);
+<ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:113>);
+<ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:112>);
+<ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:115>);
+<ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:114>);
+
+<ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:121>);
+<ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:120>);
+<ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:123>);
+<ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:122>);
+<ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:125>);
+<ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:124>);
+
+<ore:craftingToolElectricBuzzsaw>.add(<gregtech:gt.metatool.01:141>);
+<ore:craftingToolElectricBuzzsaw>.add(<gregtech:gt.metatool.01:140>);
+
+<ore:craftingToolElectricScrewdriver>.add(<gregtech:gt.metatool.01:151>);
+<ore:craftingToolElectricScrewdriver>.add(<gregtech:gt.metatool.01:150>);
+
 # Recipe Fixes
 var wireAluminium16 = <ore:wireGt16Aluminium>;
 var chest = <minecraft:chest>;
