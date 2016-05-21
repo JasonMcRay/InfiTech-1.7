@@ -129,6 +129,7 @@ recipes.remove(railAdvanced);
 recipes.remove(railHS);
 recipes.remove(railReinforced);
 recipes.remove(railElectric);
+recipes.remove(rebar);
 // Remove all Rock Crusher recipes
 mods.railcraft.RockCrusher.removeRecipe(<*>);
 
