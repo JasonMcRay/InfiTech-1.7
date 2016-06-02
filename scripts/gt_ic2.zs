@@ -463,39 +463,37 @@ recipes.addShaped(teleporter, [
     [circuitAdvanced, plateNaquadahAlloy, circuitAdvanced]]);
 
 # Electrical Tools Oredictionary Stuff
-<ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:101>);
-<ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:103>);
-<ore:craftingToolMiningDrill>.add(<gregtech:gt.metatool.01:105>);
-Saw.add(<gregtech:gt.metatool.01:111>);
-Saw.add(<gregtech:gt.metatool.01:113>);
-Saw.add(<gregtech:gt.metatool.01:115>);
-Saw.add(<gregtech:gt.metatool.01:141>);
-<ore:craftingToolWrench>.add(<gregtech:gt.metatool.01:121>);
-<ore:craftingToolWrench>.add(<gregtech:gt.metatool.01:123>);
-<ore:craftingToolWrench>.add(<gregtech:gt.metatool.01:125>);
-<ore:craftingToolScrewdriver>.add(<gregtech:gt.metatool.01:151>);
-<ore:craftingToolSolderingIron>.add(<gregtech:gt.metatool.01:161>);
 
 // Electrical Tools Special Oredict for quests
-<ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:111>);
 <ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:110>);
-<ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:113>);
+<ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:111>);
 <ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:112>);
-<ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:115>);
+<ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:113>);
 <ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:114>);
+<ore:craftingToolElectricSaw>.add(<gregtech:gt.metatool.01:115>);
 
-<ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:121>);
 <ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:120>);
-<ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:123>);
+<ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:121>);
 <ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:122>);
-<ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:125>);
+<ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:123>);
 <ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:124>);
+<ore:craftingToolElectricWrench>.add(<gregtech:gt.metatool.01:125>);
 
-<ore:craftingToolElectricBuzzsaw>.add(<gregtech:gt.metatool.01:141>);
 <ore:craftingToolElectricBuzzsaw>.add(<gregtech:gt.metatool.01:140>);
+<ore:craftingToolElectricBuzzsaw>.add(<gregtech:gt.metatool.01:141>);
 
-<ore:craftingToolElectricScrewdriver>.add(<gregtech:gt.metatool.01:151>);
 <ore:craftingToolElectricScrewdriver>.add(<gregtech:gt.metatool.01:150>);
+<ore:craftingToolElectricScrewdriver>.add(<gregtech:gt.metatool.01:151>);
+
+<ore:craftingToolElectricMiningDrill>.add(<gregtech:gt.metatool.01:100>);
+<ore:craftingToolElectricMiningDrill>.add(<gregtech:gt.metatool.01:101>);
+<ore:craftingToolElectricMiningDrill>.add(<gregtech:gt.metatool.01:102>);
+<ore:craftingToolElectricMiningDrill>.add(<gregtech:gt.metatool.01:103>);
+<ore:craftingToolElectricMiningDrill>.add(<gregtech:gt.metatool.01:104>);
+<ore:craftingToolElectricMiningDrill>.add(<gregtech:gt.metatool.01:105>);
+
+<ore:craftingToolElectricSolderingIron>.add(<gregtech:gt.metatool.01:160>);
+<ore:craftingToolElectricSolderingIron>.add(<gregtech:gt.metatool.01:161>);
 
 # Recipe Fixes
 var wireAluminium16 = <ore:wireGt16Aluminium>;
