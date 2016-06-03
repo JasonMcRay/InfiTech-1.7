@@ -1,3 +1,40 @@
+v3.2.8
+
+Quests:
+- New quest about getting higher tier material - Bronze Age
+- New quest to obtain Cropnalyzer early. - Bronze Age
+- New shop item - Single-Use Acid Batteries
+- "Manufactured Diamonds" - Lowered required amount of iDiamonds, raised optional reward
+- "Electrical Tools" - Fixed quest not recognizing charged tools.
+- Added Soldering Iron Quest
+
+Mod Updates:
+- BiblioCraft -> 1.11.5
+- EnderCore -> 0.2.0.35
+- EnderIO -> 2.3.0.426
+- IC2 Nuclear Control -> 2.4.0a
+- InfinityCore -> 1.6b
+- Jabba -> 1.2.2
+- Railcraft Cosmetics -> 1.7.2
+- WCT -> 1.8.6.2b
+- IndustrialCraft 2 -> 2.2.822
+- LogisticsPipes -> 0.9.3.122
+
+Enabled Hardcore Wither mod by default
+
+Changes/Fixes:
+- Fixed Railcraft Lead Plate name
+- Removed its crafting recipe since its not used
+- Removed Rebar crafting table recipe
+- OpenComputers Manual no longer given to new players (since players can't start with OC before HV). Still craftable
+- Added microblocks to few GT blocks
+- Disabled Translocator Crafting Grid (dupe exploit)
+- Raised energy usage of Telepad by 0.85x allowing it to be charged with HV and speeding the teleport process by 0.85x
+- Disabled Slotted Book from Bibliocraft (dupe exploit)
+- Fixed Electrical Tools dissapearing when running out of energy instead of just not being usable.
+- Expanded Thaumcraft Native Cluster Support (couple new clusters)
+- Enabled KAMI with "this-is-fucking-insane-hard" recipes
+
 v3.2.7
 
 New Mods:
