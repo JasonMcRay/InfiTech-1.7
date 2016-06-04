@@ -115,7 +115,7 @@ var enhancedEnderPearl  = <HardcoreEnderExpansion:enhanced_ender_pearl>.withTag(
 var notchAppleCider     = <gregtech:gt.metaitem.02:32130>;
 var dustDiamond         = <gregtech:gt.metaitem.01:2500>;
 var ptfeSpring          = <gregtech:gt.metaitem.02:24473>;
-var pfeSpring           = <gregtech:gt.metaitem.02:24874>;
+var pcpSpring           = <gregtech:gt.metaitem.02:24472>;
 var wireOsmiridium      = <gregtech:gt.metaitem.02:19317>;
 var oxygen              = <liquid:oxygen>;
 var nitrogen            = <liquid:nitrogen>;
@@ -263,7 +263,7 @@ Warp.addToItem(ichor, 2);
 // Ichorcloth
 Research.clearPrereqs("ICHOR_CLOTH");
 Research.addPrereq("ICHOR_CLOTH", "IT_ICHOR", false);
-SpinningWheel.addRecipe(threadReinforced * 2, [threadThaumium, carbonFibre, ptfeSpring, pfeSpring, wireOsmiridium]);
+SpinningWheel.addRecipe(threadReinforced * 2, [threadThaumium, carbonFibre, ptfeSpring, pcpSpring, wireOsmiridium]);
 SpinningWheel.addRecipe(threadIchor * 2, [yarn, yarn, threadGolden, dustDiamond, ichor]);
 Arcane.addShapeless("ICHOR_CLOTH", ichorcloth, "aer 150, ignis 150, aqua 150, terra 150, ordo 150, perditio 150", [threadReinforced, threadReinforced, threadIchor, threadIchor]);
 Research.refreshResearchRecipe("ICHOR_CLOTH");
