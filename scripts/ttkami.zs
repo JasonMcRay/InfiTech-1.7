@@ -346,10 +346,10 @@ game.setLocalization("en_US", "tc.research_text.IT_ICHOR_TOOLS", "[TTkami] The t
 Research.addPage("IT_ICHOR_TOOLS", "ttresearch.page.ICHOR_TOOLS.0");
 Research.setConcealed("IT_ICHOR_TOOLS", true);
 
-Arcane.addShaped("IT_ICHOR_TOOLS", pickIchor, "ignis 3000", [[ichorium, ichorium, ichorium], [null, rodSilverwood, null], [null, rodSilverwood, null]]);
-Arcane.addShaped("IT_ICHOR_TOOLS", shovelIchor, "terra 3000", [[null, ichorium, null], [null, rodSilverwood, null], [null, rodSilverwood, null]]);
-Arcane.addShaped("IT_ICHOR_TOOLS", axeIchor, "aqua 3000", [[ichorium, ichorium, null], [ichor, rodSilverwood, null], [null, rodSilverwood, null]]);
-Arcane.addShaped("IT_ICHOR_TOOLS", swordIchor, "aer 3000", [[null, ichorium, null], [null, ichorium, null], [null, rodSilverwood, null]]);
+Arcane.addShaped("IT_ICHOR_TOOLS", pickIchor, "ignis 2000", [[ichorium, ichorium, ichorium], [null, rodSilverwood, null], [null, rodSilverwood, null]]);
+Arcane.addShaped("IT_ICHOR_TOOLS", shovelIchor, "terra 2000", [[null, ichorium, null], [null, rodSilverwood, null], [null, rodSilverwood, null]]);
+Arcane.addShaped("IT_ICHOR_TOOLS", axeIchor, "aqua 2000", [[ichorium, ichorium, null], [ichor, rodSilverwood, null], [null, rodSilverwood, null]]);
+Arcane.addShaped("IT_ICHOR_TOOLS", swordIchor, "aer 2000", [[null, ichorium, null], [null, ichorium, null], [null, rodSilverwood, null]]);
 
 Research.addArcanePage("IT_ICHOR_TOOLS", pickIchor);
 Research.addArcanePage("IT_ICHOR_TOOLS", shovelIchor);
@@ -392,10 +392,10 @@ Research.refreshResearchRecipe("ICHOR_SWORD_GEM");
 // Armour
 Research.clearPrereqs("ICHORCLOTH_ARMOR");
 Research.addPrereq("ICHORCLOTH_ARMOR", "ICHOR_CLOTH", false);
-Arcane.addShaped("ICHORCLOTH_ARMOR", helmIchor, "aqua 3000", [[ichorcloth, ichorcloth, ichorcloth], [ichorcloth, null, ichorcloth], [null, null, null]]);
-Arcane.addShaped("ICHORCLOTH_ARMOR", chestplateIchor, "aer 3000", [[ichorcloth, null, ichorcloth], [ichorcloth, ichorcloth, ichorcloth], [ichorcloth, ichorcloth, ichorcloth]]);
-Arcane.addShaped("ICHORCLOTH_ARMOR", legsIchor, "ignis 3000", [[ichorcloth, ichorcloth, ichorcloth], [ichorcloth, null, ichorcloth], [ichorcloth, null, ichorcloth]]);
-Arcane.addShaped("ICHORCLOTH_ARMOR", bootsIchor, "terra 3000", [[ichorcloth, null, ichorcloth], [ichorcloth, null, ichorcloth], [null, null, null]]);
+Arcane.addShaped("ICHORCLOTH_ARMOR", helmIchor, "aqua 2000", [[ichorcloth, ichorcloth, ichorcloth], [ichorcloth, null, ichorcloth], [null, null, null]]);
+Arcane.addShaped("ICHORCLOTH_ARMOR", chestplateIchor, "aer 2000", [[ichorcloth, null, ichorcloth], [ichorcloth, ichorcloth, ichorcloth], [ichorcloth, ichorcloth, ichorcloth]]);
+Arcane.addShaped("ICHORCLOTH_ARMOR", legsIchor, "ignis 2000", [[ichorcloth, ichorcloth, ichorcloth], [ichorcloth, null, ichorcloth], [ichorcloth, null, ichorcloth]]);
+Arcane.addShaped("ICHORCLOTH_ARMOR", bootsIchor, "terra 2000", [[ichorcloth, null, ichorcloth], [ichorcloth, null, ichorcloth], [null, null, null]]);
 Research.refreshResearchRecipe("ICHORCLOTH_ARMOR");
 
 Research.clearPrereqs("ICHORCLOTH_HELM_GEM");
