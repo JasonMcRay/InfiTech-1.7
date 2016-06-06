@@ -4,12 +4,13 @@ import mods.gregtech.Assembler;
 import mods.nei.NEI;
 
 # Aliases
+var GTFilter = <gregtech:gt.metaitem.01:32729>;
 var blockRedstone = <ore:blockRedstone>;
 var chestWood = <minecraft:chest>;
 var circuit10 = <gregtech:gt.integrated_circuit:10>;
+var circuitMaster = <ore:circuitMaster>;
 var conveyorLV = <gregtech:gt.metaitem.01:32630>;
 var genGeothermal = <IC2:blockGenerator:1>;
-var GTFilter = <gregtech:gt.metaitem.01:32729>;
 var itemDustLapis = <gregtech:gt.metaitem.01:2526>;
 var lava = <liquid:lava>;
 var moltenGold = <liquid:molten.gold>;
@@ -17,19 +18,20 @@ var moltenRedstone = <liquid:molten.redstone>;
 var moltenSpeedPotion = <liquid:potion.speed>;
 var plankWood = <ore:plankWood>;
 var plateIron = <ore:plateIron>;
-var productionTable = <StevesWorkshop:production_table>;
-var upgradeBlank = <StevesWorkshop:production_table_upgrade>;
-var upgradeCapacity = <StevesWorkshop:production_table_upgrade:11>;
-var upgradeCharger = <StevesWorkshop:production_table_upgrade:3>;
-var upgradeCrafter = <StevesWorkshop:production_table_upgrade:1>;
-var upgradeEfficiency = <StevesWorkshop:production_table_upgrade:6>;
-var upgradeFilter = <StevesWorkshop:production_table_upgrade:10>;
-var upgradeLava = <StevesWorkshop:production_table_upgrade:7>;
-var upgradeSolar = <StevesWorkshop:production_table_upgrade:8>;
-var upgradeSpeed = <StevesWorkshop:production_table_upgrade:4>;
-var upgradeStorage = <StevesWorkshop:production_table_upgrade:2>;
-var upgradeTransfer = <StevesWorkshop:production_table_upgrade:9>;
-var upgradeQueue =  <StevesWorkshop:production_table_upgrade:5>;
+var productionTable = <ewysworkshop:WorkshopTable>;
+var upgradeBlank = <ewysworkshop:WorkshopTableUpgrade>;
+var upgradeCapacity = <ewysworkshop:WorkshopTableUpgrade:12>;
+var upgradeCharger = <ewysworkshop:WorkshopTableUpgrade:3>;
+var upgradeCrafter = <ewysworkshop:WorkshopTableUpgrade:1>;
+var upgradeEfficiency = <ewysworkshop:WorkshopTableUpgrade:6>;
+var upgradeFilter = <ewysworkshop:WorkshopTableUpgrade:11>;
+var upgradeLava = <ewysworkshop:WorkshopTableUpgrade:7>;
+var upgradeQueue =  <ewysworkshop:WorkshopTableUpgrade:5>;
+var upgradeRF = <ewysworkshop:WorkshopTableUpgrade:8>;
+var upgradeSolar = <ewysworkshop:WorkshopTableUpgrade:9>;
+var upgradeSpeed = <ewysworkshop:WorkshopTableUpgrade:4>;
+var upgradeStorage = <ewysworkshop:WorkshopTableUpgrade:2>;
+var upgradeTransfer = <ewysworkshop:WorkshopTableUpgrade:10>;
 var workbenchAuto = <BuildCraft|Factory:autoWorkbenchBlock>;
 
 # Blocks/Items Removal
@@ -63,9 +65,11 @@ recipes.remove(upgradeFilter);
 Assembler.addRecipe(upgradeFilter, upgradeBlank, GTFilter, null, 128, 16);
 recipes.remove(upgradeCapacity);
 Assembler.addRecipe(upgradeCapacity, upgradeTransfer, conveyorLV, moltenRedstone * 1296, 128, 16);
+recipes.remove(upgradeRF);
+Assembler.addRecipe(upgradeRF, upgradeBlank, circuitMaster, moltenRedstone * 5184, 128, 256);
 
 // Localization Fix
-productionTable.displayName = "Production Table";
+/*productionTable.displayName = "Production Table";
 NEI.overrideName(productionTable, "Production Table");
 upgradeBlank.displayName = "Blank Upgrade";
 NEI.overrideName(upgradeBlank, "Blank Upgrade");
@@ -90,4 +94,4 @@ NEI.overrideName(upgradeStorage, "Extra Storage");
 upgradeTransfer.displayName = "Auto Transfer";
 NEI.overrideName(upgradeTransfer, "Auto Transfer");
 upgradeQueue.displayName = "Input Queue";
-NEI.overrideName(upgradeQueue, "Input Queue");
+NEI.overrideName(upgradeQueue, "Input Queue");*/

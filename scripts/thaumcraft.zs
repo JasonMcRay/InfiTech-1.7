@@ -846,7 +846,7 @@ Research.addArcanePage("thaumicenergistics.TEFOCUSWRENCH", <thaumicenergistics:f
 
 // Crafting Focus
 Arcane.removeRecipe(<Automagy:focusCrafting>);
-Arcane.addShaped("FOCUSCRAFTING", <Automagy:focusCrafting>, "ordo 30, terra 10, perditio 5", [[<ore:craftingTableWood>, <ore:ringBeryllium>, <Thaumcraft:blockTable:15>], [<ore:ringBeryllium>, <ore:lensOlivine>, <ore:ringBeryllium>], [<StevesWorkshop:production_table>, <ore:ringBeryllium>, <BiblioCraft:BiblioWorkbench>]]);
+Arcane.addShaped("FOCUSCRAFTING", <Automagy:focusCrafting>, "ordo 30, terra 10, perditio 5", [[<ore:craftingTableWood>, <ore:ringBeryllium>, <Thaumcraft:blockTable:15>], [<ore:ringBeryllium>, <ore:lensOlivine>, <ore:ringBeryllium>], [<ewysworkshop:WorkshopTable>, <ore:ringBeryllium>, <BiblioCraft:BiblioWorkbench>]]);
 Research.refreshResearchRecipe("FOCUSCRAFTING");
 
 print('Foci reconfigured');
