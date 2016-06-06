@@ -41,4 +41,4 @@ Pull Requests with HQM file changed will NOT BE ACCEPTED EVER. If you feel like 
 ## Important for using dev configs
 I made these configs available for public so you can tinker with them. WARNING! I hold no responsibility if it will break something in your world!
 
-The DEV version was tested with Forge 1566.
+The DEV version was tested with Forge 1614.
