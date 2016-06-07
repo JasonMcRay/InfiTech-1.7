@@ -600,7 +600,7 @@ game.setLocalization("en_US", "tc.research_text.GT_TRANSSTEELDAMASCUS", "[GT] Re
 Research.addPage("GT_TRANSSTEELDAMASCUS", "kirara.research_page.GT_TRANSSTEELDAMASCUS.1");
 game.setLocalization("en_US", "kirara.research_page.GT_TRANSSTEELDAMASCUS.1", "You have discovered a way of making steel even harder by breaking down and crystallizing its components on an atomic level.<BR>This method can be used to refine an amazingly durable variant of steel resembling that of the legendary Damascus Steel normally only found in ancient ruins. Unfortunately, this process leaves the material in dust form, requiring further processing via non-Thaumaturgical means.");
 Research.addPrereq("GT_TRANSSTEELDAMASCUS", "GT_IRON_TO_STEEL", false);
-Crucible.addRecipe("GT_TRANSSTEELDAMASCUS", <gregtech:gt.metaitem.01:9335>, <ore:nuggetSteel>, "ordo 1, machina 1");
+Crucible.addRecipe("GT_TRANSSTEELDAMASCUS", <gregtech:gt.metaitem.01:9335>, <ore:nuggetSteel>, "vitreus 1, ordo 1, machina 1");
 Research.addCruciblePage("GT_TRANSSTEELDAMASCUS", <gregtech:gt.metaitem.01:9335>);
 Research.setConcealed("GT_TRANSSTEELDAMASCUS", true);
 
