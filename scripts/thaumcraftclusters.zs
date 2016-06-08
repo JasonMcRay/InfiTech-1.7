@@ -418,11 +418,11 @@ BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12067> * 2], [<InfinityCore:ite
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2067> * 3, <gregtech:gt.metaitem.01:2067>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:6>, [10000, 5000, 500], 400, 2);
 
 <ore:listAllOreLithium>.addAll(<ore:oreLithium>);
-<ore:listAllOreLithium>.add(<gregtech:gt.blockores:8>);
-<ore:listAllOreLithium>.add(<gregtech:gt.blockores:1008>);
-<ore:listAllOreLithium>.add(<gregtech:gt.blockores:2008>);
-<ore:listAllOreLithium>.add(<gregtech:gt.blockores:3008>);
-<ore:listAllOreLithium>.add(<gregtech:gt.blockores:4008>);
+<ore:listAllOreLithium>.add(<gregtech:gt.blockores:6>);
+<ore:listAllOreLithium>.add(<gregtech:gt.blockores:1006>);
+<ore:listAllOreLithium>.add(<gregtech:gt.blockores:2006>);
+<ore:listAllOreLithium>.add(<gregtech:gt.blockores:3006>);
+<ore:listAllOreLithium>.add(<gregtech:gt.blockores:4006>);
 Research.addResearch("PURELITHIUM", "ALCHEMY", "metallum 1, ordo 2, vitreus 1, potentia 2", -2, 11, 2, <InfinityCore:itemCluster:17>);
 game.setLocalization("en_US", "tc.research_name.PURELITHIUM", "Lithium Purification");
 game.setLocalization("en_US", "tc.research_text.PURELITHIUM", "[GT] Purification of lithium into native clusters");
@@ -435,11 +435,11 @@ Research.addPrereq("PURELITHIUM", "PUREIRON", false);
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2008> * 3, <gregtech:gt.metaitem.01:2008>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:17>, [10000, 5000, 500], 400, 2);
 
 <ore:listAllOreManganese>.addAll(<ore:oreManganese>);
-<ore:listAllOreManganese>.add(<gregtech:gt.blockores:31>);
-<ore:listAllOreManganese>.add(<gregtech:gt.blockores:1031>);
-<ore:listAllOreManganese>.add(<gregtech:gt.blockores:2031>);
-<ore:listAllOreManganese>.add(<gregtech:gt.blockores:3031>);
-<ore:listAllOreManganese>.add(<gregtech:gt.blockores:4031>);
+<ore:listAllOreManganese>.add(<gregtech:gt.blockores:943>);
+<ore:listAllOreManganese>.add(<gregtech:gt.blockores:1943>);
+<ore:listAllOreManganese>.add(<gregtech:gt.blockores:2943>);
+<ore:listAllOreManganese>.add(<gregtech:gt.blockores:3943>);
+<ore:listAllOreManganese>.add(<gregtech:gt.blockores:4943>);
 Research.addResearch("PUREMANGANESE", "ALCHEMY", "metallum 4, ordo 2", -4, 11, 2, <InfinityCore:itemCluster:18>);
 game.setLocalization("en_US", "tc.research_name.PUREMANGANESE", "Manganese Purification");
 game.setLocalization("en_US", "tc.research_text.PUREMANGANESE", "[GT] Purification of pyrolusite into native clusters");
