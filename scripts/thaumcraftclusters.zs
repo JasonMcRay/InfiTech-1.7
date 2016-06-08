@@ -452,11 +452,11 @@ Research.addPrereq("PUREMANGANESE", "PUREIRON", false);
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2031> * 3, <gregtech:gt.metaitem.01:2031>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:18>, [10000, 5000, 500], 400, 2);
 
 <ore:listAllOreAntimony>.addAll(<ore:oreAntimony>);
-<ore:listAllOreAntimony>.add(<gregtech:gt.blockores:58>);
-<ore:listAllOreAntimony>.add(<gregtech:gt.blockores:1058>);
-<ore:listAllOreAntimony>.add(<gregtech:gt.blockores:2058>);
-<ore:listAllOreAntimony>.add(<gregtech:gt.blockores:3058>);
-<ore:listAllOreAntimony>.add(<gregtech:gt.blockores:4058>);
+<ore:listAllOreAntimony>.add(<gregtech:gt.blockores:945>);
+<ore:listAllOreAntimony>.add(<gregtech:gt.blockores:1945>);
+<ore:listAllOreAntimony>.add(<gregtech:gt.blockores:2945>);
+<ore:listAllOreAntimony>.add(<gregtech:gt.blockores:3945>);
+<ore:listAllOreAntimony>.add(<gregtech:gt.blockores:4945>);
 Research.addResearch("PUREANTIMONY", "ALCHEMY", "metallum 3, ordo 2, aqua 1", -6, 11, 2, <InfinityCore:itemCluster:19>);
 game.setLocalization("en_US", "tc.research_name.PUREANTIMONY", "Antimony Purification");
 game.setLocalization("en_US", "tc.research_text.PUREANTIMONY", "[GT] Purification of stibnite into native clusters");
