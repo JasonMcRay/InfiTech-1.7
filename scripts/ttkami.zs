@@ -284,6 +284,7 @@ Arcane.addShaped("IT_ICHORIUM", ingotMidasium, "aer 100, ignis 100, aqua 100, te
 Research.addArcanePage("IT_ICHORIUM", ingotMidasium);
 Infusion.addRecipe("IT_ICHORIUM", ingotMidasium, [ingotEGalgador, ingotVoid, ingotMobius, ingotLove, ingotEndium, ingotBedrockium, ingotEnderium, ingotAdamantium], "ordo 96", ichorium * 3, 15);
 Research.addInfusionPage("IT_ICHORIUM", ichorium);
+Research.setConcealed("IT_ICHORIUM", true);
 
 // Ichorium Wand Caps
 Research.orphanResearch("CAP_ICHOR");
