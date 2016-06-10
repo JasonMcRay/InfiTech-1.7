@@ -356,36 +356,38 @@ Research.addArcanePage("IT_ICHOR_TOOLS", shovelIchor);
 Research.addArcanePage("IT_ICHOR_TOOLS", axeIchor);
 Research.addArcanePage("IT_ICHOR_TOOLS", swordIchor);
 
-Research.addResearch("PUREUNIVERSAL", "ALCHEMY", "metallum 32, ordo 16, terra 16", -3, 2, 3, <InfinityCore:itemCluster:16>);
+Research.addResearch("PUREUNIVERSAL", "TT_CATEGORY", "metallum 32, ordo 16, terra 16", 14, 13, 3, <InfinityCore:itemCluster:16>);
 game.setLocalization("en_US", "tc.research_name.PUREUNIVERSAL", "Universal Purification");
 game.setLocalization("en_US", "tc.research_text.PUREUNIVERSAL", "[TTKami] Purifying Reality");
 Research.addPage("PUREUNIVERSAL", "kirara.research_page.PUREUNIVERSAL.1");
-game.setLocalization("en_US", "kirara.research_page.PUREUNIVERSAL.1", "The knowledge of ichor and the blood of the gods has granted you many new avenues of study, and while you may not yet know what it is useful for you have discovered a way of combining all your knowledge of purification into a single whole. A cluster aligned with every metal, suited for even the most strenuous of tasks.");
+game.setLocalization("en_US", "kirara.research_page.PUREUNIVERSAL.1", "Heading back towards your roots gives new knowledge, pushing further forwards than even ichorium in the pursuit of metallurgy requires new heights of power. Taking everything you know about purification allows you to reach those heights, creating a cluster composed of every natural metal, suited for even the most strenuous of tasks.");
 // It's every cluster. Not doing single use variables for all of them.
 Infusion.addRecipe("PUREUNIVERSAL", <Thaumcraft:ItemNugget:16>, [<Thaumcraft:ItemNugget:21>, <Thaumcraft:ItemNugget:31>, <Thaumcraft:ItemNugget:17>, <Thaumcraft:ItemNugget:18>, <Thaumcraft:ItemNugget:19>, <Thaumcraft:ItemNugget:20>, <InfinityCore:itemCluster:0>, <InfinityCore:itemCluster:1>, <InfinityCore:itemCluster:2>, <InfinityCore:itemCluster:3>, <InfinityCore:itemCluster:4>, <InfinityCore:itemCluster:5>, <InfinityCore:itemCluster:6>, <InfinityCore:itemCluster:7>, <InfinityCore:itemCluster:8>, <InfinityCore:itemCluster:9>, <InfinityCore:itemCluster:10>, <InfinityCore:itemCluster:11>, <InfinityCore:itemCluster:13>, <InfinityCore:itemCluster:14>, <InfinityCore:itemCluster:15>, <InfinityCore:itemCluster:17>, <InfinityCore:itemCluster:18>, <InfinityCore:itemCluster:19>, <InfinityCore:itemCluster:20>, <InfinityCore:itemCluster:21>, <InfinityCore:itemCluster:22>], "metallum 16, permutatio 16", clusterUniversal, 6);
 Research.addInfusionPage("PUREUNIVERSAL", clusterUniversal);
 Research.setConcealed("PUREUNIVERSAL", true);
-Research.addPrereq("PUREUNIVERSAL", "IT_ICHOR", true);
-Research.addPrereq("PUREUNIVERSAL", "PUREIRON", false);
-
+Research.addPrereq("PUREUNIVERSAL", "IT_ICHOR_TOOLS", false);
 
 Research.clearPrereqs("ICHOR_PICK_GEM");
 Research.addPrereq("ICHOR_PICK_GEM", "IT_ICHOR_TOOLS", false);
+Research.addPrereq("ICHOR_PICK_GEM", "PUREUNIVERSAL", true);
 Infusion.addRecipe("ICHOR_PICK_GEM", pickIchor, [ichorium, ichor, pickElemental, focusExcavation, focusExcavation, focusExcavation, pickElemental, enhancedTNT, clusterUniversal, emeraldExquisite, pickElemental, ichorcloth], "ignis 128, nebrisum 32, lucrum 32, metallum 64, meto 64, perfodio 128, sensus 32, terra 64", pickIchorAwake, 30);
 Research.refreshResearchRecipe("ICHOR_PICK_GEM");
 
 Research.clearPrereqs("ICHOR_SHOVEL_GEM");
 Research.addPrereq("ICHOR_SHOVEL_GEM", "IT_ICHOR_TOOLS", false);
+Research.addPrereq("ICHOR_SHOVEL_GEM", "PUREUNIVERSAL", true);
 Infusion.addRecipe("ICHOR_SHOVEL_GEM", shovelIchor, [ichorium, ichor, shovelElemental, focusExcavation, focusExcavation, focusExcavation, shovelElemental, enhancedTNT, clusterUniversal, emeraldExquisite, shovelElemental, ichorcloth], "nebrisum 32, vinculum 32, instrumentum 64, meto 64, perfodio 128, sensus 32, terra 196", shovelIchorAwake, 30);
 Research.refreshResearchRecipe("ICHOR_SHOVEL_GEM");
 
 Research.clearPrereqs("ICHOR_AXE_GEM");
 Research.addPrereq("ICHOR_AXE_GEM", "IT_ICHOR_TOOLS", false);
+Research.addPrereq("ICHOR_AXE_GEM", "PUREUNIVERSAL", true);
 Infusion.addRecipe("ICHOR_AXE_GEM", axeIchor, [ichorium, ichor, axeElemental, focusExcavation, focusExcavation, focusExcavation, axeElemental, enhancedTNT, clusterUniversal, emeraldExquisite, axeElemental, ichorcloth], "aqua 128, messis 32, nebrisum 32, instrumentum 64, meto 64, perfodio 128, sensus 32, arbor 64", axeIchorAwake, 30);
 Research.refreshResearchRecipe("ICHOR_AXE_GEM");
 
 Research.clearPrereqs("ICHOR_SWORD_GEM");
 Research.addPrereq("ICHOR_SWORD_GEM", "IT_ICHOR_TOOLS", false);
+Research.addPrereq("ICHOR_SWORD_GEM", "PUREUNIVERSAL", true);
 Infusion.addRecipe("ICHOR_SWORD_GEM", swordIchor, [ichorium, ichor, swordElemental, focusFrost, focusFrost, focusFrost, swordElemental, thornyBush, clusterUniversal, emeraldExquisite, swordElemental, ichorcloth], "aer 128, ordo 32, nebrisum 32, telum 64, potentia 64, fames 128, vitreus 32, spiritus 64", swordIchorAwake, 30);
 Research.refreshResearchRecipe("ICHOR_SWORD_GEM");
 
