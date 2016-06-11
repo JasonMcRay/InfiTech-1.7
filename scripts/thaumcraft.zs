@@ -2191,9 +2191,15 @@ InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11096>);
 InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11052>);
 InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11048>);
 InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11067>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11006>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11031>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11058>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11770>);
+InfernalBlastfurnace.removeRecipe(<gregtech:gt.metaitem.01:11884>);
 InfernalBlastfurnace.removeRecipe(<IC2:itemIngot:3>);
 InfernalBlastfurnace.removeRecipe(<IC2:blockMetal:5>);
 InfernalBlastfurnace.removeRecipe(<GalacticraftMars:item.itemBasicAsteroids:5>);
 InfernalBlastfurnace.removeRecipe(<GalacticraftCore:item.basicItem:5>);
+InfernalBlastfurnace.removeRecipe(<BigReactors:BRIngot>);
 
 print("Finished Thaumcraft Changes");
