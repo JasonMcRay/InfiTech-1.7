@@ -750,10 +750,10 @@ recipes.addShapeless(<GalacticraftMars:item.null:1>, [<gregtech:gt.metaitem.01:2
 recipes.addShapeless(<gregtech:gt.metaitem.01:23884>, [<GalacticraftMars:item.null:1>]);
 
 //Battery
-recipes.addShapeless(<GalacticraftCore:item.battery:*>, [<gregtech:gt.metaitem.01:32500>]);
+recipes.addShapeless(<GalacticraftCore:item.battery:100>, [<gregtech:gt.metaitem.01:32500>]);
 
 //Standard Wrenche
-recipes.addShapeless(<GalacticraftCore:item.standardWrench>, [<gregtech:gt.metatool.01:16>.withTag({"GT.ToolStats": {PrimaryMaterial: "Steel", MaxDamage: 51200 as long, SecondaryMaterial: "Steel"}})]);
+recipes.addShapeless(<GalacticraftCore:item.standardWrench>, [<gregtech:gt.metatool.01:16>.onlyWithTag({"GT.ToolStats": {PrimaryMaterial: "Steel", MaxDamage: 51200 as long, SecondaryMaterial: "Steel"}}).noReturn()]);
 
 //Heavy Rocket Engine
 recipes.addShaped(<GalacticraftMars:item.itemBasicAsteroids:1> , [

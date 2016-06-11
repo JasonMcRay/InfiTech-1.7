@@ -1648,6 +1648,7 @@ Infusion.addRecipe("GT_BREWREGEN", <minecraft:potion:8225>, [salisMundus, <minec
 Research.addInfusionPage("GT_BREWREGEN", potionRegeneration3);
 Infusion.addRecipe("GT_BREWREGEN", potionRegeneration3, [salisMundus, <minecraft:glowstone_dust>, <minecraft:ghast_tear>], "auram 8, sano 16, praecantatio 16", potionRegeneration4, 5);
 Research.addInfusionPage("GT_BREWREGEN", potionRegeneration4);
+Research.setConcealed("GT_BREWREGEN", true);
 
 // Absorption
 Research.addResearch("GT_BREWABSORPTION", "ALCHEMY", "permutatio 4, auram 2, volatus 2", 1, -7, 2, <minecraft:potion:8195>);
@@ -1666,6 +1667,7 @@ Infusion.addRecipe("GT_BREWABSORPTION", potionAbsorption3, [salisMundus, <minecr
 Research.addInfusionPage("GT_BREWABSORPTION", potionAbsorption4);
 Infusion.addRecipe("GT_BREWABSORPTION", potionAbsorption4, [salisMundus, <minecraft:golden_apple>, <minecraft:glowstone_dust>, <minecraft:redstone>], "auram 10, praecantatio 10, tutamen 10", potionAbsorption5, 6);
 Research.addInfusionPage("GT_BREWABSORPTION", potionAbsorption5);
+Research.setConcealed("GT_BREWABSORPTION", true);
 
 // Haste
 Research.addResearch("GT_BREWHASTE", "ALCHEMY", "permutatio 4, auram 2, perfodio 2", 2, -6, 2, <minecraft:potion:8228>);
@@ -1682,6 +1684,7 @@ Infusion.addRecipe("GT_BREWHASTE", potionHaste2, [salisMundus, <minecraft:glowst
 Research.addInfusionPage("GT_BREWHASTE", potionHaste3);
 Infusion.addRecipe("GT_BREWHASTE", potionHaste3, [salisMundus, <minecraft:glowstone_dust>, <minecraft:redstone>], "auram 8, praecantatio 16, perfodio 16", potionHaste4, 5);
 Research.addInfusionPage("GT_BREWHASTE", potionHaste4);
+Research.setConcealed("GT_BREWHASTE", true);
 
 // Jump
 Research.addResearch("GT_BREWJUMP", "ALCHEMY", "permutatio 4, auram 2, volatus 2", 3, -5, 2, <minecraft:potion:8232>);
@@ -1698,6 +1701,7 @@ Infusion.addRecipe("GT_BREWJUMP", potionJump2, [salisMundus, <minecraft:glowston
 Research.addInfusionPage("GT_BREWJUMP", potionJump3);
 Infusion.addRecipe("GT_BREWJUMP", potionJump3, [salisMundus, <minecraft:glowstone_dust>, <minecraft:redstone>], "auram 4, praecantatio 8, volatus 8", potionJump4, 5);
 Research.addInfusionPage("GT_BREWJUMP", potionJump4);
+Research.setConcealed("GT_BREWJUMP", true);
 
 // Travel
 // Research.addResearch("GT_BREWTRAVEL", "ALCHEMY", "permutatio 4, auram 2, volatus 2", 3, -5, 2, <minecraft:potion:8258>);
@@ -1736,6 +1740,7 @@ game.setLocalization("en_US", "kirara.research_page.PURELOVE.1", "Constantly pla
 Infusion.addRecipe("PURELOVE", <ExtraUtilities:decorativeBlock2:8>, [<Thaumcraft:blockMetalDevice:13>, <ThaumicTinkerer:mobAspect:29>, <Forestry:cratedWheat>, <Thaumcraft:blockMetalDevice:13>, <ThaumicTinkerer:mobAspect:29>, <Forestry:cratedSeeds>, <Thaumcraft:blockMetalDevice:13>, <ThaumicTinkerer:mobAspect:29>, <Forestry:cratedApples>, <Thaumcraft:blockMetalDevice:13>, <ThaumicTinkerer:mobAspect:29>, <Forestry:cratedCarrots>], "victus 256, bestia 64, tempus 32", <ExtraUtilities:pureLove>, 8);
 Research.addInfusionPage("PURELOVE", <ExtraUtilities:pureLove>);
 Research.addPrereq("PURELOVE", "LAMPFERTILITY", false);
+Research.setConcealed("PURELOVE", true);
 
 // Mundane Accessories
 Research.addResearch("GT_APPRENTICE_ARTIFICING", "ARTIFICE", "praecantatio 3, instrumentum 3", 3, 4, 2, <Thaumcraft:ItemBaubleBlanks:1>);
@@ -2096,6 +2101,7 @@ Research.addCruciblePage("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedPotion:0>
 Research.addCruciblePage("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedPotion:1>);
 Research.addCruciblePage("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedPotion:2>);
 Research.addCruciblePage("GT_INFUSED_POTIONS", <ThaumicTinkerer:infusedPotion:3>);
+Research.setConcealed("GT_INFUSED_POTIONS", true);
 
 // Refresh Recipes
 Research.refreshResearchRecipe("PLANTS");

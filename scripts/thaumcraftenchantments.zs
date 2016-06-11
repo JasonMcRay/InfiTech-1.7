@@ -28,7 +28,7 @@ Research.addInfusionPage("GT_INFUSIONENCHANTMENT", <minecraft:enchanted_book>);
 Infusion.removeRecipe(<minecraft:enchanted_book>);
 Research.addPrereq("GT_INFUSIONENCHANTMENT", "JARBRAIN", false);
 Research.setConcealed("GT_INFUSIONENCHANTMENT", true);
-Research.addPrereq("RUNICARMOR", "GT_INFUSIONENCHANTMENT", false);
+Research.addPrereq("RUNICARMOR", "GT_INFUSIONENCHANTMENT", true);
 
 // Efficiency
 Research.addResearch("GT_ENCHANTMENTEFFICIENCY", "ARTIFICE", "praecantatio 2, instrumentum 2, perfodio 2, meto 2", -7, 15, 1, <minecraft:iron_pickaxe>);
