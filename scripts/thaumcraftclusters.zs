@@ -133,6 +133,7 @@ Crucible.addRecipe("GT_PURECINNABAR", <Thaumcraft:ItemNugget:21>, <ore:listAllOr
 Research.addCruciblePage("GT_PURECINNABAR", <Thaumcraft:ItemNugget:21>);
 Research.setSecondary("GT_PURECINNABAR", true);
 Research.addPrereq("GT_PURECINNABAR", "PUREIRON", false);
+Research.setConcealed("GT_PURECINNABAR", true);
 
 Centrifuge.addRecipe([<Thaumcraft:ItemResource:3>, <gregtech:gt.metaitem.01:2299>], null, <Thaumcraft:ItemNugget:21>, null, <liquid:mercury> * 3000, [5000, 500], 800, 5);
 
@@ -152,6 +153,7 @@ Crucible.addRecipe("PUREPLATINUM", <InfinityCore:itemCluster:9>, <ore:listAllOre
 Research.addCruciblePage("PUREPLATINUM", <InfinityCore:itemCluster:9>);
 Research.setSecondary("PUREPLATINUM", true);
 Research.addPrereq("PUREPLATINUM", "PUREIRON", false);
+Research.setConcealed("PUREPLATINUM", true);
 
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2085> * 3, <gregtech:gt.metaitem.01:2085>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:9>, [10000, 5000, 500], 400, 2);
 
@@ -176,6 +178,7 @@ Crucible.addRecipe("PURENICKEL", <InfinityCore:itemCluster:7>, <ore:listAllOreNi
 Research.addCruciblePage("PURENICKEL", <InfinityCore:itemCluster:7>);
 Research.setSecondary("PURENICKEL", true);
 Research.addPrereq("PURENICKEL", "PUREIRON", false);
+Research.setConcealed("PURENICKEL", true);
 
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2034> * 3, <gregtech:gt.metaitem.01:2034>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:7>, [10000, 5000, 500], 400, 2);
 
@@ -195,6 +198,7 @@ Crucible.addRecipe("PURECOBALT", <InfinityCore:itemCluster:2>, <ore:listAllOreCo
 Research.addCruciblePage("PURECOBALT", <InfinityCore:itemCluster:2>);
 Research.setSecondary("PURECOBALT", true);
 Research.addPrereq("PURECOBALT", "PUREIRON", false);
+Research.setConcealed("PURECOBALT", true);
 
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2033> * 3, <gregtech:gt.metaitem.01:2033>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:2>, [10000, 5000, 500], 400, 2);
 
@@ -214,6 +218,7 @@ Crucible.addRecipe("PURETUNGSTEN", <InfinityCore:itemCluster:11>, <ore:listAllOr
 Research.addCruciblePage("PURETUNGSTEN", <InfinityCore:itemCluster:11>);
 Research.setSecondary("PURETUNGSTEN", true);
 Research.addPrereq("PURETUNGSTEN", "PUREIRON", false);
+Research.setConcealed("PURETUNGSTEN", true);
 
 BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12081>], [<InfinityCore:itemCluster:11>], 8000, 120, 2500);
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2081>, <gregtech:gt.metaitem.01:2081>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:11>, [10000, 7500, 500], 400, 2);
@@ -233,6 +238,7 @@ Crucible.addRecipe("PUREIRIDIUM", <InfinityCore:itemCluster:3>, <ore:listAllOreI
 Research.addCruciblePage("PUREIRIDIUM", <InfinityCore:itemCluster:3>);
 Research.setSecondary("PUREIRIDIUM", true);
 Research.addPrereq("PUREIRIDIUM", "PUREIRON", false);
+Research.setConcealed("PUREIRIDIUM", true);
 
 BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12084> * 2], [<InfinityCore:itemCluster:3>], 10876, 120, 2719);
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2084> * 3, <gregtech:gt.metaitem.01:2084>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:3>, [10000, 5000, 500], 400, 2);
@@ -252,6 +258,7 @@ Crucible.addRecipe("PURENAQUADAH", <InfinityCore:itemCluster:5>, <ore:listAllOre
 Research.addCruciblePage("PURENAQUADAH", <InfinityCore:itemCluster:5>);
 Research.setSecondary("PURENAQUADAH", true);
 Research.addPrereq("PURENAQUADAH", "PUREIRON", false);
+Research.setConcealed("PURENAQUADAH", true);
 
 BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12324> * 2], [<InfinityCore:itemCluster:5>], 6000, 120, 3000);
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2324> * 3, <gregtech:gt.metaitem.01:2324>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:5>, [10000, 5000, 500], 400, 2);
@@ -272,6 +279,7 @@ Crucible.addRecipe("PUREZINC", <InfinityCore:itemCluster:14>, <ore:listAllOreZin
 Research.addCruciblePage("PUREZINC", <InfinityCore:itemCluster:14>);
 Research.setSecondary("PUREZINC", true);
 Research.addPrereq("PUREZINC", "PUREIRON", false);
+Research.setConcealed("PUREZINC", true);
 
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2036> * 3, <gregtech:gt.metaitem.01:2036>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:14>, [10000, 5000, 500], 400, 2);
 
@@ -291,6 +299,7 @@ Crucible.addRecipe("PUREALUMINIUM", <InfinityCore:itemCluster:0>, <ore:listAllOr
 Research.addCruciblePage("PUREALUMINIUM", <InfinityCore:itemCluster:0>);
 Research.setSecondary("PUREALUMINIUM", true);
 Research.addPrereq("PUREALUMINIUM", "PUREIRON", false);
+Research.setConcealed("PUREALUMINIUM", true);
 
 BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:11019> * 2], [<InfinityCore:itemCluster:0>], 1700, 120, 1700);
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2019> * 3, <gregtech:gt.metaitem.01:2019>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:0>, [10000, 5000, 500], 400, 2);
@@ -316,6 +325,7 @@ Crucible.addRecipe("PUREURANIUM238", <InfinityCore:itemCluster:13>, <ore:listAll
 Research.addCruciblePage("PUREURANIUM238", <InfinityCore:itemCluster:13>);
 Research.setSecondary("PUREURANIUM238", true);
 Research.addPrereq("PUREURANIUM238", "PUREIRON", false);
+Research.setConcealed("PUREURANIUM238", true);
 
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2098> * 3, <gregtech:gt.metaitem.01:2098>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:13>, [10000, 5000, 500], 400, 2);
 
@@ -334,6 +344,7 @@ Crucible.addRecipe("PUREBERYLLIUM", <InfinityCore:itemCluster:1>, <ore:listAllOr
 Research.addCruciblePage("PUREBERYLLIUM", <InfinityCore:itemCluster:1>);
 Research.setSecondary("PUREBERYLLIUM", true);
 Research.addPrereq("PUREBERYLLIUM", "PUREIRON", false);
+Research.setConcealed("PUREBERYLLIUM", true);
 
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2008> * 3, <gregtech:gt.metaitem.01:2008>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:1>, [10000, 5000, 500], 400, 2);
 
@@ -352,6 +363,7 @@ Crucible.addRecipe("PURETHORIUM", <InfinityCore:itemCluster:10>, <ore:listAllOre
 Research.addCruciblePage("PURETHORIUM", <InfinityCore:itemCluster:10>);
 Research.setSecondary("PURETHORIUM", true);
 Research.addPrereq("PURETHORIUM", "PUREIRON", false);
+Research.setConcealed("PURETHORIUM", true);
 
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2096> * 3, <gregtech:gt.metaitem.01:2096>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:10>, [10000, 5000, 500], 400, 2);
 
@@ -370,6 +382,7 @@ Crucible.addRecipe("PUREPALLADIUM", <InfinityCore:itemCluster:8>, <ore:listAllOr
 Research.addCruciblePage("PUREPALLADIUM", <InfinityCore:itemCluster:8>);
 Research.setSecondary("PUREPALLADIUM", true);
 Research.addPrereq("PUREPALLADIUM", "PUREIRON", false);
+Research.setConcealed("PUREPALLADIUM", true);
 
 BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12052> * 2], [<InfinityCore:itemCluster:8>], 3656, 120, 1828);
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2052> * 3, <gregtech:gt.metaitem.01:2052>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:8>, [10000, 5000, 500], 400, 2);
@@ -395,6 +408,7 @@ Crucible.addRecipe("PUREMOLYBDENUM", <InfinityCore:itemCluster:4>, <ore:listAllO
 Research.addCruciblePage("PUREMOLYBDENUM", <InfinityCore:itemCluster:4>);
 Research.setSecondary("PUREMOLYBDENUM", true);
 Research.addPrereq("PUREMOLYBDENUM", "PUREIRON", false);
+Research.setConcealed("PUREMOLYBDENUM", true);
 
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2048> * 3, <gregtech:gt.metaitem.01:2048>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:4>, [10000, 5000, 500], 400, 2);
 
@@ -413,6 +427,7 @@ Crucible.addRecipe("PURENEODYMIUM", <InfinityCore:itemCluster:6>, <ore:listAllOr
 Research.addCruciblePage("PURENEODYMIUM", <InfinityCore:itemCluster:6>);
 Research.setSecondary("PURENEODYMIUM", true);
 Research.addPrereq("PURENEODYMIUM", "PUREIRON", false);
+Research.setConcealed("PURENEODYMIUM", true);
 
 BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12067> * 2], [<InfinityCore:itemCluster:5>], 3891, 120, 1297);
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2067> * 3, <gregtech:gt.metaitem.01:2067>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:6>, [10000, 5000, 500], 400, 2);
@@ -432,6 +447,8 @@ Crucible.addRecipe("PURELITHIUM", <InfinityCore:itemCluster:17>, <ore:listAllOre
 Research.addCruciblePage("PURELITHIUM", <InfinityCore:itemCluster:17>);
 Research.setSecondary("PURELITHIUM", true);
 Research.addPrereq("PURELITHIUM", "PUREIRON", false);
+Research.setConcealed("PURELITHIUM", true);
+
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2008> * 3, <gregtech:gt.metaitem.01:2008>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:17>, [10000, 5000, 500], 400, 2);
 
 <ore:listAllOreManganese>.addAll(<ore:oreManganese>);
@@ -449,6 +466,8 @@ Crucible.addRecipe("PUREMANGANESE", <InfinityCore:itemCluster:18>, <ore:listAllO
 Research.addCruciblePage("PUREMANGANESE", <InfinityCore:itemCluster:18>);
 Research.setSecondary("PUREMANGANESE", true);
 Research.addPrereq("PUREMANGANESE", "PUREIRON", false);
+Research.setConcealed("PUREMANGANESE", true);
+
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2031> * 3, <gregtech:gt.metaitem.01:2031>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:18>, [10000, 5000, 500], 400, 2);
 
 <ore:listAllOreAntimony>.addAll(<ore:oreAntimony>);
@@ -466,6 +485,8 @@ Crucible.addRecipe("PUREANTIMONY", <InfinityCore:itemCluster:19>, <ore:listAllOr
 Research.addCruciblePage("PUREANTIMONY", <InfinityCore:itemCluster:19>);
 Research.setSecondary("PUREANTIMONY", true);
 Research.addPrereq("PUREANTIMONY", "PUREIRON", false);
+Research.setConcealed("PUREANTIMONY", true);
+
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2058> * 3, <gregtech:gt.metaitem.01:2058>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:19>, [10000, 5000, 500], 400, 2);
 
 <ore:listAllOreEndium>.addAll(<ore:oreEndium>);
@@ -484,6 +505,8 @@ Crucible.addRecipe("PUREENDIUM", <InfinityCore:itemCluster:20>, <ore:listAllOreE
 Research.addCruciblePage("PUREENDIUM", <InfinityCore:itemCluster:20>);
 Research.setSecondary("PUREENDIUM", true);
 Research.addPrereq("PUREENDIUM", "PUREIRON", false);
+Research.setConcealed("PUREENDIUM", true);
+
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2770> * 3, <gregtech:gt.metaitem.01:2770>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:20>, [10000, 5000, 500], 400, 2);
 
 <ore:listAllOreYellorium>.addAll(<ore:oreYellorium>);
@@ -496,6 +519,8 @@ Crucible.addRecipe("PUREYELLORIUM", <InfinityCore:itemCluster:21>, <ore:listAllO
 Research.addCruciblePage("PUREYELLORIUM", <InfinityCore:itemCluster:21>);
 Research.setSecondary("PUREYELLORIUM", true);
 Research.addPrereq("PUREYELLORIUM", "PUREIRON", false);
+Research.setConcealed("PUREYELLORIUM", true);
+
 Pulverizer.addRecipe([<BigReactors:BRIngot:4> * 3, <BigReactors:BRIngot:4>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:21>, [10000, 5000, 500], 400, 2);
 
 <ore:listAllOreDesh>.addAll(<ore:oreDesh>);
@@ -513,4 +538,6 @@ Crucible.addRecipe("PUREDESH", <InfinityCore:itemCluster:22>, <ore:listAllOreDes
 Research.addCruciblePage("PUREDESH", <InfinityCore:itemCluster:22>);
 Research.setSecondary("PUREDESH", true);
 Research.addPrereq("PUREDESH", "PUREIRON", false);
+Research.setConcealed("PUREDESH", true);
+
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2884> * 3, <gregtech:gt.metaitem.01:2884>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:22>, [10000, 5000, 500], 400, 2);
