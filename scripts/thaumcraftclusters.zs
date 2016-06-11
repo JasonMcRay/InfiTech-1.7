@@ -432,7 +432,7 @@ Crucible.addRecipe("PURELITHIUM", <InfinityCore:itemCluster:17>, <ore:listAllOre
 Research.addCruciblePage("PURELITHIUM", <InfinityCore:itemCluster:17>);
 Research.setSecondary("PURELITHIUM", true);
 Research.addPrereq("PURELITHIUM", "PUREIRON", false);
-Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2008> * 3, <gregtech:gt.metaitem.01:2008>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:17>, [10000, 5000, 500], 400, 2);
+Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2006> * 3, <gregtech:gt.metaitem.01:2006>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:17>, [10000, 5000, 500], 400, 2);
 
 <ore:listAllOreManganese>.addAll(<ore:oreManganese>);
 <ore:listAllOreManganese>.add(<gregtech:gt.blockores:943>);
