@@ -1,6 +1,9 @@
 // --- Created by Jason McRay --- 
 // --- InfiTech2 script for vanilla Minecraft ---
 
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+
 # Aliases
 var blazePowder = <minecraft:blaze_powder>;
 var blazeRod = <minecraft:blaze_rod>;
@@ -66,9 +69,20 @@ recipes.addShaped(chestWood * 4, [
     [logWood, logWood, logWood],
     [logWood, saw, logWood],
     [logWood, logWood, logWood]]);
+    
+var slabs = [<minecraft:stone_slab>,<minecraft:stone_slab:1>,<minecraft:stone_slab:3>,<minecraft:stone_slab:4>,<minecraft:stone_slab:5>,<minecraft:stone_slab:6>,<minecraft:stone_slab:7>] as IItemStack[];
+var stones = [<ore:stone>, <ore:stoneSand>, <ore:stoneCobble>, <minecraft:brick_block>, <ore:stoneBricks>, <ore:stoneNetherBrick>, <minecraft:quartz_block:*>] as IIngredient[];
+
+for i, slab in slabs {
+    var stone = stones[i];
+    
+    recipes.remove(slab);
+    recipes.addShaped(slab * 2, [
+        [saw, stone]]);
+    }
 recipes.remove(slabOak);
 recipes.addShaped(slabOak * 2, [
-	[saw, plankOak]]);
+    [saw, plankOak]]);
 recipes.removeShapeless(lapis);
 recipes.removeShapeless(dustLapis);
 recipes.removeShapeless(coal);
