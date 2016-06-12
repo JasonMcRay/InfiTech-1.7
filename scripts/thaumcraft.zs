@@ -241,6 +241,7 @@ import mods.gregtech.AlloySmelter;
 import mods.gregtech.Slicer;
 import mods.gregtech.ChemicalBath;
 import mods.witchinggadgets.InfernalBlastfurnace;
+import minetweaker.game.IGame;
 
 print("Initializing Thaumcraft Changes");
 
@@ -870,6 +871,8 @@ game.setLocalization("en_US", "potion.potency.7", "VIII");
 game.setLocalization("en_US", "potion.potency.8", "IX");
 game.setLocalization("en_US", "potion.potency.9", "X");
 game.setLocalization("en_US", "tile.extrautils:pureLove.name", "Pure Love");
+game.setLocalization("item.TravellersGear.simpleGear.cloak.name","Simple Cloak");
+
 
 //*************************
 // Adding Warp to Research
