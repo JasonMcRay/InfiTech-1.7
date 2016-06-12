@@ -20,6 +20,9 @@ Mod Updates:
 - AppleCore -> 1.3.2
 - LogisticsPipes -> 0.9.3.124
 
+Mod Downgrade>
+- EnderIO -> 2.3.0.425
+
 Changes/Fixes:
 - Removed empty script files (Just in case I recommend deleting manually your scripts folder before the update)
 - Swapped Polyethylene to Polyprolactam in reinforced thread crafting recipe
@@ -37,6 +40,7 @@ Changes/Fixes:
 - QDS can now be crafted with any wooden plank, not only vanilla
 - Stone slabs are now crafted in same way as wooden ones (saw)
 - Renamed Travellers Gear Cloak to Simple Cloak (To stop confusing some players. Simple Cloak is the one used for Wolven Cloak or Voluminous Pockets)
+- Fixed EnderIO farm not working
 
 
 v3.2.8
