@@ -1358,8 +1358,8 @@ Arcane.addShaped("ESSENTIACRYSTAL", <Thaumcraft:blockTube:7>, "terra 15, aqua 5,
 
 print('Alchemical Greggery');
 
-// Copper Wand Cap
-recipes.addShaped(<Thaumcraft:WandCap:3>, [[null, <ore:roundCopper>, null], [<Thaumcraft:ItemThaumonomicon>.reuse(), <ore:ringCopper>, <ore:craftingToolHardHammer>]]);
+// Copper Wand Cap ( RECIPE NOW IN INFINITY CORE - FIX CONSUMPTION OF THAUMONOMICON )
+//recipes.addShaped(<Thaumcraft:WandCap:3>, [[null, <ore:roundCopper>, null], [<Thaumcraft:ItemThaumonomicon>.reuse(), <ore:ringCopper>, <ore:craftingToolHardHammer>]]);
 
 // Wood + Copper Wand
 recipes.addShaped(<gregtech:gt.metaitem.01:2809>, [[<ore:craftingToolMortar>, <ore:logWood>, <ore:craftingToolKnife>]]);
