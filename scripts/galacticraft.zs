@@ -66,6 +66,16 @@ var plateTin = <ore:plateTin>;
 var fixtureWhite = <ProjRed|Illumination:projectred.illumination.fixture>;
 var fixtureRed = <ProjRed|Illumination:projectred.illumination.fixture:14>;
 var deshFrameBox = <ore:frameGtDesh>;
+var Refinery                = <GalacticraftCore:tile.refinery>;
+var CoalGenerator           = <GalacticraftCore:tile.machine>;
+var Compressor              = <GalacticraftCore:tile.machine:12>;
+var ElectricCompressor      = <GalacticraftCore:tile.machine2>;
+var CircuitFabricator       = <GalacticraftCore:tile.machine2:4>;
+var ElectricFurnace         = <GalacticraftCore:tile.machineTiered:4>;
+var ElectricArcFurnace      = <GalacticraftCore:tile.machineTiered:12>;
+var MethanSynthezizerezizer = <GalacticraftMars:tile.marsMachineT2:4>;
+var WaterElectrolyzer       = <GalacticraftMars:tile.marsMachineT2:8>;
+var AtmosphericValve        = <GalacticraftMars:item.atmosphericValve>;
 
 // --- remove Recipes ---
 //Sealable Cables
@@ -74,6 +84,11 @@ recipes.remove(cableSealableGold);
 recipes.remove(cableSealableHV);
 recipes.remove(cableSealableFibre);
 recipes.remove(cableSealableTin);
+cableSealableCopper .addTooltip(format.red(format.bold("This item is DISABLED!")));
+cableSealableGold   .addTooltip(format.red(format.bold("This item is DISABLED!")));
+cableSealableHV     .addTooltip(format.red(format.bold("This item is DISABLED!")));
+cableSealableFibre  .addTooltip(format.red(format.bold("This item is DISABLED!")));
+cableSealableTin    .addTooltip(format.red(format.bold("This item is DISABLED!")));
 //Rocket Launch Pad
 recipes.remove(<GalacticraftCore:tile.landingPad>);
 //Buggy Fueling Pad
@@ -95,7 +110,8 @@ recipes.remove(<GalacticraftCore:tile.oxygenDetector>);
 //Oxygen Pipe
 recipes.remove(OxygenPipe);
 //Refinery
-recipes.remove(<GalacticraftCore:tile.refinery>);
+recipes.remove(Refinery);
+Refinery.addTooltip(format.red(format.bold("This item is DISABLED!")));
 //Fuel Loader
 recipes.remove(<GalacticraftCore:tile.fuelLoader>);
 //Fuel Loader
@@ -138,21 +154,27 @@ recipes.remove(<GalacticraftCore:item.basicItem>);
 //Full Solar Panel
 recipes.remove(<GalacticraftCore:item.basicItem:1>);
 //Coal Generator
-recipes.remove(<GalacticraftCore:tile.machine>);
+recipes.remove(CoalGenerator);
+CoalGenerator.addTooltip(format.red(format.bold("This item is DISABLED!")));
 //Compressor
-recipes.remove(<GalacticraftCore:tile.machine:12>);
+recipes.remove(Compressor);
+Compressor.addTooltip(format.red(format.bold("This item is DISABLED!")));
 //Electric Compressor
-recipes.remove(<GalacticraftCore:tile.machine2>);
+recipes.remove(ElectricCompressor);
+ElectricCompressor.addTooltip(format.red(format.bold("This item is DISABLED!")));
 //Circuit Fabricator
-recipes.remove(<GalacticraftCore:tile.machine2:4>);
+recipes.remove(CircuitFabricator);
+CircuitFabricator.addTooltip(format.red(format.bold("This item is DISABLED!")));
 //Energy Storage Module
 recipes.remove(<GalacticraftCore:tile.machineTiered>);
 //Electric Furnace
-recipes.remove(<GalacticraftCore:tile.machineTiered:4>);
+recipes.remove(ElectricFurnace);
+ElectricFurnace.addTooltip(format.red(format.bold("This item is DISABLED!")));
 //Energy Storage Cluster
 recipes.remove(<GalacticraftCore:tile.machineTiered:8>);
 //Electric Arc Furnace
-recipes.remove(<GalacticraftCore:tile.machineTiered:12>);
+recipes.remove(ElectricArcFurnace);
+ElectricArcFurnace.addTooltip(format.red(format.bold("This item is DISABLED!")));
 //Glowstone Torch
 recipes.remove(<GalacticraftCore:tile.glowstoneTorch>);
 //Spin Truster
@@ -259,9 +281,11 @@ recipes.remove(<gregtech:gt.metaitem.01:11884>);
 //Desh Stick
 recipes.remove(<GalacticraftMars:item.null:1>);
 //Methan Synthezizerezizer
-recipes.remove(<GalacticraftMars:tile.marsMachineT2:4>);
+recipes.remove(MethanSynthezizerezizer);
+MethanSynthezizerezizer.addTooltip(format.red(format.bold("This item is DISABLED!")));
 //Water Electrolyzer
-recipes.remove(<GalacticraftMars:tile.marsMachineT2:8>);
+recipes.remove(WaterElectrolyzer);
+WaterElectrolyzer.addTooltip(format.red(format.bold("This item is DISABLED!")));
 //Walk Away
 recipes.remove(<GalacticraftMars:tile.walkway>);
 //Walk Away Aluminium
@@ -271,7 +295,8 @@ recipes.removeShaped(<GalacticraftMars:tile.walkwayOxygenPipe>);
 //Thermal Cloth
 recipes.remove(<GalacticraftMars:item.itemBasicAsteroids:7>);
 //Atmospheric Valve
-recipes.remove(<GalacticraftMars:item.atmosphericValve>);
+recipes.remove(AtmosphericValve);
+AtmosphericValve.addTooltip(format.red(format.bold("This item is DISABLED!")));
 //Heavy Rocket Fines
 recipes.removeShaped(<GalacticraftMars:item.itemBasicAsteroids:2>, [
 [null, <GalacticraftMars:item.itemBasicAsteroids:6>, null],
