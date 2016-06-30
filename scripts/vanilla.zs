@@ -25,6 +25,7 @@ var dustLapis = <ore:dustLapis>;
 var enderEye = <minecraft:ender_eye>;
 var enderPearl = <minecraft:ender_pearl>;
 var File = <ore:craftingToolFile>;
+var FlintAndSteel = <minecraft:flint_and_steel:*>;
 var gemNetherQuartz = <ore:gemNetherQuartz>;
 var glass = <ore:blockGlass>;
 var HHammer = <ore:craftingToolHardHammer>;
@@ -142,6 +143,9 @@ recipes.addShaped(diamondSword, [
     [null, diamond, null],
     [File, diamond, null],
     [null, stick, null]]);
+
+# Tooltip
+FlintAndSteel.addTooltip(format.red("chance to start fire below 50%"));
 
 # Removal of Brewing Stand
 /*recipes.remove(<minecraft:brewing_stand>);
