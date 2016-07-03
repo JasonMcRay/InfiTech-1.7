@@ -1,17 +1,27 @@
-v3.2.10 (WIP)
+v3.2.10.1 - Experimental update, HUGE changes, pollution introduced (not yet any effects), HQM not updated to reflect changes in GT yet.
+
+Mod Updates:
+- Gregtech -> 5.09.22
+
+Changelog:
+Same as v3.2.10 + http://forum.industrial-craft.net/index.php?page=Thread&postID=201665#post201665
+
+v3.2.10
 
 Quests:
+Fixed few quest typos
+Changed "Magnetizing" quest from Crafting to Detect
 
 Mod Updates:
 - Carpenter's Blocks -> 3.3.8.1__dev_r1
 - EnderCore -> 0.2.0.36
 - EnderIO -> 2.3.0.427
 - Ewy's Workshop -> 1.1.2
-- Infinity Core -> 1.6c
+- Infinity Core -> 1.7
 - StorageDrawers -> 1.9.9
 - XACT -> 0.5.5c
 - Forestry -> 4.2.14.62
-- LogisticsPipes -> 0.9.3.125
+- LogisticsPipes -> 0.9.3.126
 
 Removed Mods:
 - YAMPST - discontinued
@@ -24,7 +34,14 @@ Changes/Fixes:
 - Fixes dupe issue with XACT crafter and Forestry Worktable, by ignoring it.
 - Fixed QDS recipe consuming the book
 - Added few disabled tooltips to Galacticraft items
-
+- Added more info to veins in OreBook (shows all possible ores in "header" of the vein)
+- Added tooltip to Flint and Steel about chance to light up things
+- Fixed few wrongly assigned clusters to ores
+- Desh clusters can now be obtained from desh ore
+- Added Electrical Steel Item Casing for future use
+- Fixed few tooltip localizations for LogisticsPipes items
+- Removed invalid entries from HEE orb blacklist (bluepower items)
+- Added alternative use for Irradiated Combs to redsuce material cost of Mutagen (lowers Royal Jelly requirement)
 
 v3.2.9
 
