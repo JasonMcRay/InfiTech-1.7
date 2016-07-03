@@ -1,6 +1,7 @@
 // --- Created by BeyondReality Team --- 
 
 import mods.gregtech.Autoclave;
+import mods.gregtech.ChemicalReactor;
 
 # Aliases
 var apiaryIndustrial = <gendustry:IndustrialApiary>;
@@ -40,6 +41,7 @@ var tin = <ore:ingotTin>;
 var transposer = <gendustry:Transposer>;
 var uranium238 = <IC2:itemUran238>;
 var biomass = <liquid:ic2biomass>;
+var combIrradiated = <Forestry:beeCombs:9>;
 
 
 # Recipes Tweaks
@@ -57,6 +59,7 @@ recipes.addShaped(mutagen, [
     [dropHoneyRed, capsuleWaxBiomass, dropHoneyRed],
     [dropHoneyRed, dropHoneyRed, dropHoneyRed]]);
 Autoclave.addRecipe(mutagen, dropHoneyRed * 6, biomass * 3000, 10000, 300, 24);
+ChemicalReactor.addRecipe(mutagen, null, dropHoneyRed * 5, combIrradiated * 4, biomass * 2000, 840);
 recipes.remove(frameUpgrade);
 recipes.addShaped(frameUpgrade, [
     [ingotAluminium, ingotGold, ingotAluminium],
@@ -77,11 +80,6 @@ recipes.addShaped(beeReceptacle, [
     [ingotAluminium, ingotAluminium, ingotAluminium],
     [ingotAluminium, glassPane, ingotAluminium],
     [blockRedstone, pressurePlateLightWeighted, blockRedstone]]);
-recipes.remove(tankMutagen);
-recipes.addShaped(tankMutagen, [
-    [plateAluminium, glassPane, plateAluminium],
-    [plateAluminium, glassPane, plateAluminium],
-    [plateAluminium, glassPane, plateAluminium]]);													
 recipes.remove(mutagenProducer);
 recipes.addShaped(mutagenProducer, [
     [plateAluminium, pipeSmallBronze, plateAluminium],
@@ -91,22 +89,22 @@ recipes.remove(apiaryIndustrial);
 recipes.addShaped(apiaryIndustrial, [
     [swarmer, processorGenetics, swarmer],
     [modulePower, hullMachineHV, modulePower],
-    [gearAluminium, beeReceptacle, gearAluminium]]);		
+    [gearAluminium, beeReceptacle, gearAluminium]]);
 recipes.remove(imprinter);
 recipes.addShaped(imprinter, [
     [gearAluminium, processorGenetics, gearAluminium],
     [beeReceptacle, hullMachineHV, beeReceptacle],
-    [gearAluminium, modulePower, gearAluminium]]);	
+    [gearAluminium, modulePower, gearAluminium]]);
 recipes.remove(liquifier);
 recipes.addShaped(liquifier, [
     [gearAluminium, tankMutagen, gearAluminium],
     [ingotAluminium, hullMachineHV, gearAluminium],
-    [gearAluminium, modulePower, gearAluminium]]);	
+    [gearAluminium, modulePower, gearAluminium]]);
 recipes.remove(extractor);
 recipes.addShaped(extractor, [
     [gearAluminium, tankMutagen, gearAluminium],
     [processorGenetics, hullMachineHV, processorGenetics],
-    [gearAluminium, modulePower, gearAluminium]]);	
+    [gearAluminium, modulePower, gearAluminium]]);
 recipes.remove(transposer);
 recipes.addShaped(transposer, [
     [pipeSmallBronze, tankMutagen, pipeSmallBronze],
@@ -116,9 +114,9 @@ recipes.remove(replicator);
 recipes.addShaped(replicator, [
     [gearAluminium, processorGenetics, gearAluminium],
     [modulePower, hullMachineHV, modulePower],
-    [gearAluminium, processorGenetics, gearAluminium]]);			
+    [gearAluminium, processorGenetics, gearAluminium]]);
 recipes.remove(mutatron);
 recipes.addShaped(mutatron, [
     [beeReceptacle, processorGenetics, gearAluminium],
     [modulePower, hullMachineHV, beeReceptacle],
-    [beeReceptacle, tankMutagen, gearAluminium]]);				
+    [beeReceptacle, tankMutagen, gearAluminium]]);
