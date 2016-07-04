@@ -107,7 +107,7 @@ var energyWandCore      = <HardcoreEnderExpansion:energy_wand_core>;
 var enhancedTNT         = <HardcoreEnderExpansion:enhanced_tnt>.withTag({HEE_enhancements: ["EXTRA_POWER", "NO_FUSE", "NO_ENTITY_DAMAGE", "TRAP"]});
 var thornyBush          = <HardcoreEnderExpansion:crossed_decoration:2>;
 var potionNVisonLong    = <minecraft:potion:8198>.withTag({CustomPotionEffects: [{Ambient: 0 as byte, Duration: 12000, Id: 16 as byte, Amplifier: 0 as byte}]});
-var potionFResistLong   = <minecraft:potion:8195>.withTag({CustomPotionEffects: [{Ambient: 0 as byte, Duration: 12000, Id: 16 as byte, Amplifier: 0 as byte}]});
+var potionFResistLong   = <minecraft:potion:8195>.withTag({CustomPotionEffects: [{Ambient: 0 as byte, Duration: 12000, Id: 12 as byte, Amplifier: 0 as byte}]});
 var igneousRock         = <HardcoreEnderExpansion:igneous_rock>;
 var enhancedEnderPearl  = <HardcoreEnderExpansion:enhanced_ender_pearl>.withTag({HEE_enhancements: ["INCREASED_RANGE", "DOUBLE_SPEED", "NO_FALL_DAMAGE"]});
 
