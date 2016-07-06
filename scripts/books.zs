@@ -5,7 +5,7 @@ import mods.gregtech.Assembler; //OutputStack, InputStack1, InputStack2, InputFl
 var GTOreGenGuide = <Enchiridion2:book>.withTag({identifier: "GregTech_Ore_Guide"});
 var guideAM = <Enchiridion2:book>.withTag({identifier: "GUIDE_Advanced_Miner_II"});
 var guideBBF = <Enchiridion2:book>.withTag({identifier: "GUIDE_Bronze_Blast_Furnace"});
-var guideCharcoalPit = <Enchiridion2:book>.withTag({identifier: "GUIDE_Charcoal_Pit"});
+var guideCP = <Enchiridion2:book>.withTag({identifier: "GUIDE_Charcoal_Pit"});
 var guideDT = <Enchiridion2:book>.withTag({identifier: "GUIDE_Distillation_Tower"});
 var guideEBF = <Enchiridion2:book>.withTag({identifier: "GUIDE_Electric_Blast_Furnace"});
 var guideFR = <Enchiridion2:book>.withTag({identifier: "GUIDE_Fusion_Reactor"});
@@ -19,11 +19,13 @@ var guideODR = <Enchiridion2:book>.withTag({identifier: "GUIDE_Oil_Rig"});
 var guidePA = <Enchiridion2:book>.withTag({identifier: "GUIDE_Processing_Array"});
 var guidePyro = <Enchiridion2:book>.withTag({identifier: "GUIDE_Pyrolyse_Oven"});
 var guideVF = <Enchiridion2:book>.withTag({identifier: "GUIDE_Vacuum_Freezer"});
+var guideLDE = <Enchiridion2:book>.withTag({identifier: "GUIDE_Large_Diesel_Engine"});
+var guideAL = <Enchiridion2:book>.withTag({identifier: "GUIDE_Assembly_Line"});
 
 // Multiblock Controllers
 var AM = <gregtech:gt.blockmachines:1158>;
 var BBF = <gregtech:gt.blockmachines:108>;
-var charcoalPit = <gregtech:gt.blockmachines:1155>;
+var CP = <gregtech:gt.blockmachines:1155>;
 var DT = <gregtech:gt.blockmachines:1126>;
 var EBF = <gregtech:gt.blockmachines:1000>;
 var FR1 = <gregtech:gt.blockmachines:1193>;
@@ -45,6 +47,8 @@ var ODR = <gregtech:gt.blockmachines:1157>;
 var PA = <gregtech:gt.blockmachines:1199>;
 var PyroOven = <gregtech:gt.blockmachines:1159>;
 var VF = <gregtech:gt.blockmachines:1002>;
+var LDE = <gregtech:gt.blockmachines:1171>;
+var AL = <gregtech:gt.blockmachines:1170>;
 
 // Oredictionary specialty
 var itemAnyOre = <gregtech:gt.blockores:*>;
@@ -69,11 +73,11 @@ var stone = <minecraft:stone>;
 recipes.addShapeless(GTOreGenGuide, [book, inkSac, stone, itemAnyOre]);
 
 //Charcoal Pit Guide Book
-recipes.addShaped(guideCharcoalPit, [
+recipes.addShaped(guideCP, [
     [paper, inkSac, paper],
-    [paper, charcoalPit.reuse(), paper],
+    [paper, CP.reuse(), paper],
     [paper, leather, paper]]);
-Assembler.addRecipe(guideCharcoalPit, book, charcoalPit * 0, ink * 144, 200, 2);
+Assembler.addRecipe(guideCharcoalPit, book, CP * 0, ink * 144, 200, 2);
 
 //Bronze Blast Furnace Guide Book
 recipes.addShaped(guideBBF, [
@@ -131,3 +135,9 @@ Assembler.addRecipe(guidePyro, book, PyroOven * 0, ink * 144, 200, 2);
 Assembler.addRecipe(guideFR, book, FR1 * 0, ink * 144, 200, 2);
 Assembler.addRecipe(guideFR, book, FR2 * 0, ink * 144, 200, 2);
 Assembler.addRecipe(guideFR, book, FR3 * 0, ink * 144, 200, 2);
+
+// Large Diesel Engine Guide Book
+Assembler.addRecipe(guideLDE, book, LDE * 0, ink * 144, 200, 2);
+
+// Assembly Line Guide Book
+Assembler.addRecipe(guideAL, book, AL * 0, ink * 144, 200, 2);

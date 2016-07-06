@@ -5,12 +5,12 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Advanced Miner II",
+            "text": "Large Turbines",
             "wrap": 0,
-            "size": 2.0000005,
+            "size": 2.3000002,
             "color": "FF555555",
-            "xPos": 26,
-            "yPos": 18,
+            "xPos": 25,
+            "yPos": 17,
             "width": 215.0,
             "height": 13.0
           }
@@ -18,24 +18,24 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Advanced Miner II is the best mining machine there is in the game. It has huge radius (6x6 chunks) and everything it mines will produce up to 5 times the output of a universal macerator.",
+            "text": "Large Turbine is a multiblock generator producing large amounts of EU. They come in 4 variants, Steam, High Pressure, Gas and Plasma. The amount of Steam/Gas/Plasma used depends on the Turbine build in. It slowly speeds up, so it should be used for constant Energy supply.",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
             "xPos": 220,
             "yPos": 20,
-            "width": 185.0,
-            "height": 78.0
+            "width": 182.0,
+            "height": 45.0
           }
         },
         {
           "type": "FeatureImage",
           "properties": {
-            "path": "GUIDE_Advanced_Miner_II/AMMain.png",
-            "xPos": 62,
-            "yPos": 37,
-            "width": 94.0,
-            "height": 176.0
+            "path": "GUIDE_Large_Turbine/LTMain.png",
+            "xPos": 33,
+            "yPos": 57,
+            "width": 167.0,
+            "height": 142.0
           }
         }
       ],
@@ -46,7 +46,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Step 1",
+            "text": "Frame",
             "wrap": 0,
             "size": 1.0,
             "color": "FFFF0000",
@@ -59,12 +59,12 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "First build a base of 3x3 Solid Steel Casings. The controller goes into the middle of one side. It also needs an MV (or better) Energy Hatch, Maintenance Hatch, Output Bus and Input Hatch.",
+            "text": "Frame is 3x4x3 build from Turbine Casings. The inside of the Frame is empty.",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
-            "xPos": 28,
-            "yPos": 31,
+            "xPos": 27,
+            "yPos": 30,
             "width": 179.0,
             "height": 77.0
           }
@@ -72,7 +72,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Step 2",
+            "text": "Finished Frame",
             "wrap": 0,
             "size": 1.0,
             "color": "FFFF0000",
@@ -85,101 +85,34 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "After that, place 3 more Solid Steel Casings on the middle of the base.",
-            "wrap": 0,
-            "size": 1.0,
-            "color": "FF555555",
-            "xPos": 222,
-            "yPos": 30,
-            "width": 179.0,
-            "height": 45.0
-          }
-        },
-        {
-          "type": "FeatureImage",
-          "properties": {
-            "path": "GUIDE_Advanced_Miner_II/AM_1.png",
-            "xPos": 52,
-            "yPos": 106,
-            "width": 125.0,
-            "height": 88.0
-          }
-        },
-        {
-          "type": "FeatureImage",
-          "properties": {
-            "path": "GUIDE_Advanced_Miner_II/AM_2.png",
-            "xPos": 261,
-            "yPos": 69,
-            "width": 100.0,
-            "height": 132.0
-          }
-        }
-      ],
-      "pageName": ""
-    },
-    {
-      "features": [
-        {
-          "type": "FeatureText",
-          "properties": {
-            "text": "Step 3",
-            "wrap": 0,
-            "size": 1.0,
-            "color": "FFFF0000",
-            "xPos": 27,
-            "yPos": 18,
-            "width": 112.0,
-            "height": 8.0
-          }
-        },
-        {
-          "type": "FeatureText",
-          "properties": {
-            "text": "Finally place 3 Steel Frames on top of and to each side of the 3 middle Casings.\nLastly resolve issues in Maintenance Hatch.",
-            "wrap": 0,
-            "size": 1.0,
-            "color": "FF555555",
-            "xPos": 27,
-            "yPos": 30,
-            "width": 177.0,
-            "height": 82.0
-          }
-        },
-        {
-          "type": "FeatureText",
-          "properties": {
-            "text": "Finalized",
-            "wrap": 0,
-            "size": 1.0,
-            "color": "FFFF0000",
-            "xPos": 222,
-            "yPos": 18,
-            "width": 90.0,
-            "height": 9.0
-          }
-        },
-        {
-          "type": "FeatureText",
-          "properties": {
-            "text": "After the machine is build, place Mining Pipes into Controller GUI. And insert Drilling Fluid into Input Hatch.",
+            "text": "Front center is Turbine Controller (Plasma, Steam, Gas, High Pressure).\nBack center needs Dynamo Hatch.\nSides must have:\n- 1 or more Input Hatches\n- 1 Output Hatch (only for Steam and High Pressure Turbine)\n- 1 Maintenance Hatch\n- 1 Muffler Hatch (only for Gas Turbine)\n- Remaining spots on sides Turbine Casings.",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
             "xPos": 222,
             "yPos": 30,
             "width": 182.0,
-            "height": 44.0
+            "height": 109.0
           }
         },
         {
           "type": "FeatureImage",
           "properties": {
-            "path": "GUIDE_Advanced_Miner_II/AMMain.png",
-            "xPos": 109,
-            "yPos": 65,
-            "width": 81.0,
-            "height": 147.0
+            "path": "GUIDE_Large_Turbine/LTFrame.png",
+            "xPos": 49,
+            "yPos": 79,
+            "width": 126.0,
+            "height": 120.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Large_Turbine/LTMain.png",
+            "xPos": 277,
+            "yPos": 136,
+            "width": 76.0,
+            "height": 66.0
           }
         }
       ],
@@ -222,8 +155,8 @@
             "color": "FFFF0000",
             "xPos": 24,
             "yPos": 116,
-            "width": 299.0,
-            "height": 10.0
+            "width": 193.0,
+            "height": 8.0
           }
         },
         {
@@ -235,8 +168,8 @@
             "color": "FF555555",
             "xPos": 24,
             "yPos": 132,
-            "width": 321.0,
-            "height": 52.0
+            "width": 198.0,
+            "height": 53.0
           }
         },
         {
@@ -266,29 +199,42 @@
             "color": "FFFF0000",
             "xPos": 27,
             "yPos": 18,
-            "width": 150.0,
-            "height": 6.0
+            "width": 50.0,
+            "height": 9.0
           }
         },
         {
           "type": "FeatureText",
           "properties": {
-            "text": "100 liters of Drilling fluid is required for each operation whether or not an ore is found and mined and consumes 48 EU/t.\n\nOnly Gregtech ores are mined. All other ores are ignored. When a GT ore is found the miner performs a lookup for the ore\u0027s universal macerator recipes and returns the output multiplied by 1-5. In other words, the miner will produce up to 5 times the output of a universal macerator per ore it finds.\n\nIt has an operation area of 96x96 blocks (6x6 chunks).",
+            "text": "The main Turbine block changes the fluids the turbine can run with.\n\n- Large Steam Turbine runs with Steam\n- Large High Pressure Turbine runs with Superheated Steam\n- Large Gas Turbine runs with Methane, Hydrogen and Biogas\n- Large Plasma Generator runs with all types of plasmas generated in the Fusion Reactor",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
             "xPos": 27,
             "yPos": 30,
+            "width": 177.0,
+            "height": 165.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "The Large Turbine also requires a turbine rotor. Turbine rotors vary greatly in size and material and contribute efficiency, durability and optimal flow modifiers to the running of the turbine.",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 30,
             "width": 179.0,
-            "height": 162.0
+            "height": 56.0
           }
         }
       ],
       "pageName": ""
     }
   ],
-  "uniqueName": "GUIDE_Advanced_Miner_II",
-  "color": 4927043,
+  "uniqueName": "GUIDE_Large_Diesel_Engine",
+  "color": 16777067,
   "showBackground": true,
   "showArrows": true,
   "showNumber": true,
@@ -299,6 +245,6 @@
   "iconColorPass1": 0,
   "iconColorPass2": 0,
   "language": "en_US",
-  "displayName": "[GUIDE] Advanced Miner II",
+  "displayName": "[GUIDE] Large Diesel Engine",
   "displayInCreative": true
 }

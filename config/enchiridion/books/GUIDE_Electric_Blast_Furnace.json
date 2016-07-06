@@ -245,7 +245,7 @@
             "color": "FFFF0000",
             "xPos": 24,
             "yPos": 116,
-            "width": 193.0,
+            "width": 293.0,
             "height": 8.0
           }
         },
@@ -258,8 +258,8 @@
             "color": "FF555555",
             "xPos": 24,
             "yPos": 132,
-            "width": 198.0,
-            "height": 53.0
+            "width": 288.0,
+            "height": 54.0
           }
         }
       ],
