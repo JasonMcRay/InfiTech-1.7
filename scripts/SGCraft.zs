@@ -20,7 +20,6 @@ var crystalSGController = <SGCraft:sgControllerCrystal>;
 var crystalSGCore = <SGCraft:sgCoreCrystal>;
 var dustCarbon = <gregtech:gt.metaitem.01:2010>;
 var dustIron = <IC2:itemDust:5>;
-var dustNaqAlloy = <gregtech:gt.metaitem.01:2325>;
 var dustNaquadah = <gregtech:gt.metaitem.01:2324>;
 var emitterEV = <gregtech:gt.metaitem.01:32683>;
 var enderEye = <minecraft:ender_eye>;
@@ -116,7 +115,6 @@ recipes.addShaped(stargateInterfaceOC, [
     [ingotIron, <ore:oc:materialCircuitBoardPrinted>, ingotIron]]);
 
 # Recipe Creation
-ChemicalReactor.addRecipe(dustNaqAlloy, dustNaquadah, dustIron, 12000);
 # Assembler.addRecipe(crystalSGController, lapotronChip, lensTopaz, 6000, 32);
 # Assembler.addRecipe(crystalSGController, lapotronChip, lensAmber, 6000, 32);
 # Assembler.addRecipe(crystalSGCore, lapotronChip, lensSapphire, 6000, 32);
