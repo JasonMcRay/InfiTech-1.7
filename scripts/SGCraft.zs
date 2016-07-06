@@ -116,7 +116,7 @@ recipes.addShaped(stargateInterfaceOC, [
     [ingotIron, <ore:oc:materialCircuitBoardPrinted>, ingotIron]]);
 
 # Recipe Creation
-ChemicalReactor.addRecipe(dustNaqAlloy, dustNaquadah, dustIron, 12000);
+# ChemicalReactor.addRecipe(dustNaqAlloy, dustNaquadah, dustIron, 12000);
 # Assembler.addRecipe(crystalSGController, lapotronChip, lensTopaz, 6000, 32);
 # Assembler.addRecipe(crystalSGController, lapotronChip, lensAmber, 6000, 32);
 # Assembler.addRecipe(crystalSGCore, lapotronChip, lensSapphire, 6000, 32);
