@@ -338,7 +338,6 @@ ChemicalReactor.addRecipe(purifiedNaquadah * 4, moltenNaquadahEnriched * 144, co
 ChemicalReactor.addRecipe(purifiedNaquadria * 4, null, combNaquadah * 9, crushedNaquadria, water * 1000, 96);
 ChemicalReactor.addRecipe(purifiedNeodymium * 4, null, combChrome * 9, crushedNeodymium, water * 1000, 96);
 ChemicalReactor.addRecipe(purifiedNickel * 4, moltenCobalt * 144, combNickel * 9, crushedNickel, water * 1000, 96);
-//ChemicalReactor.addRecipe(purifiedOilsands * 4, null, combOil * 9, crushedOilsands, water * 1000, 96); - Crushed Oilsands is unobtainable
 ChemicalReactor.addRecipe(purifiedOlivine * 4, null, combOlivine * 9, crushedOlivine, water * 1000, 96);
 ChemicalReactor.addRecipe(purifiedOsmium * 4, moltenIridium * 144, combIridium * 9, crushedOsmium, water * 1000, 96);
 ChemicalReactor.addRecipe(purifiedPalladium * 4, null, combPlatinum * 9, crushedPalladium, water * 1000, 96);
@@ -392,40 +391,39 @@ ChemicalReactor.addRecipe(purifiedIridium * 4, moltenOsmium * 144, combOsmium * 
 
 # Autoclaving
 //OutputStack, InputStack, InputFluid, OutputStackChance, Time in Ticks, EnergyUsage
-//Autoclave.addRecipe(Purified ore, Comb * 16, <liquid:UUM> * 1, 1000, 1000, 24);
-Autoclave.addRecipe(purifiedAluminium, combAluminium * 16, UUM * 3, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedCertus, combCertus * 16, UUM * 10, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedChrome, combChrome * 16, UUM * 6, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedCoal, combCoal * 16, UUM * 3, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedCopper, combCopper * 16, UUM * 7, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedDiamond, combDiamond * 16, UUM * 77, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedEmerald, combEmerald * 16, UUM * 2, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedGold, combGold * 16, UUM * 20, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedIridium, combIridium * 16, UUM * 20, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedIron, combIron * 16, UUM * 6, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedLapis, combLapis * 16, UUM * 3, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedLead, combLead * 16, UUM * 21, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedLignite, combLignite * 16, UUM * 1, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedManganese, combManganese * 16, UUM * 6, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedMolybdenite, combSteel * 16, UUM * 6, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedNaquadah, combNaquadah * 16, UUM * 10, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedNickel, combNickel * 16, UUM * 6, 10000, 1000, 24);
-//Autoclave.addRecipe(purifiedOilsands, combOil * 16, UUM * 10, 10000, 1000, 24); - Purified Oilsands are useless
-Autoclave.addRecipe(purifiedOlivine, combOlivine * 16, UUM * 3, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedPlatinum, combPlatinum * 16, UUM * 20, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedPlutonium, combPlutonium * 16, UUM * 25, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedRedstone, combRedstone * 16, UUM * 9, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedRuby, combRuby * 16, UUM * 3, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedSalt, combSlag * 16, UUM * 3, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedSapphire, combSapphire * 16, UUM * 2, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedSilver, combSilver * 16, UUM * 11, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedSoapstone, combStone * 16, UUM * 2, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedTin, combTin * 16, UUM * 12, 1000, 10000, 24);
-Autoclave.addRecipe(purifiedTitanium, combTitanium * 16, UUM * 5, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedTungstate, combTungsten * 16, UUM * 4, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedUranium238, combUranium238 * 16, UUM * 24, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedZinc, combZinc * 16, UUM * 7, 10000, 1000, 24);
-Autoclave.addRecipe(purifiedOsmium, combOsmium * 16, UUM * 19, 10000, 1000, 24);
+//Autoclave.addRecipe(Purified ore, Comb * 16, <liquid:UUM> * 1, 10000, 1000, 384);
+Autoclave.addRecipe(purifiedAluminium, combAluminium * 16, UUM * 3, 10000, 3328, 384);
+Autoclave.addRecipe(purifiedCertus, combCertus * 16, UUM * 10, 10000, 12544, 384);
+Autoclave.addRecipe(purifiedChrome, combChrome * 16, UUM * 6, 10000, 6656, 384);
+Autoclave.addRecipe(purifiedCoal, combCoal * 16, UUM * 3, 10000, 3072, 384);
+Autoclave.addRecipe(purifiedCopper, combCopper * 16, UUM * 7, 10000, 8064, 384);
+Autoclave.addRecipe(purifiedDiamond, combDiamond * 16, UUM * 77, 10000, 98304, 384);
+Autoclave.addRecipe(purifiedEmerald, combEmerald * 16, UUM * 2, 10000, 2304, 384);
+Autoclave.addRecipe(purifiedGold, combGold * 16, UUM * 20, 10000, 25088, 384);
+Autoclave.addRecipe(purifiedIridium, combIridium * 16, UUM * 20, 10000, 24576, 384);
+Autoclave.addRecipe(purifiedIron, combIron * 16, UUM * 6, 10000, 7168, 384);
+Autoclave.addRecipe(purifiedLapis, combLapis * 16, UUM * 3, 10000, 3584, 384);
+Autoclave.addRecipe(purifiedLead, combLead * 16, UUM * 21, 10000, 26496, 384);
+Autoclave.addRecipe(purifiedLignite, combLignite * 16, UUM * 1, 10000, 1280, 384);
+Autoclave.addRecipe(purifiedManganese, combManganese * 16, UUM * 6, 10000, 7040, 384);
+Autoclave.addRecipe(purifiedMolybdenite, combSteel * 16, UUM * 6, 10000, 6784, 384);
+Autoclave.addRecipe(purifiedNaquadah, combNaquadah * 16, UUM * 10, 10000, 12544, 384);
+Autoclave.addRecipe(purifiedNickel, combNickel * 16, UUM * 6, 10000, 7424, 384);
+Autoclave.addRecipe(purifiedOlivine, combOlivine * 16, UUM * 3, 10000, 3584, 384);
+Autoclave.addRecipe(purifiedPlatinum, combPlatinum * 16, UUM * 20, 10000, 24960, 384);
+Autoclave.addRecipe(purifiedPlutonium, combPlutonium * 16, UUM * 25, 10000, 31488, 384);
+Autoclave.addRecipe(purifiedRedstone, combRedstone * 16, UUM * 9, 10000, 10880, 384);
+Autoclave.addRecipe(purifiedRuby, combRuby * 16, UUM * 3, 10000, 3200, 384);
+Autoclave.addRecipe(purifiedSalt, combSlag * 16, UUM * 3, 10000, 3584, 384);
+Autoclave.addRecipe(purifiedSapphire, combSapphire * 16, UUM * 2, 10000, 2560, 384);
+Autoclave.addRecipe(purifiedSilver, combSilver * 16, UUM * 11, 10000, 13696, 384);
+Autoclave.addRecipe(purifiedSoapstone, combStone * 16, UUM * 2, 10000, 2304, 384);
+Autoclave.addRecipe(purifiedTin, combTin * 16, UUM * 12, 10000, 15104, 384);
+Autoclave.addRecipe(purifiedTitanium, combTitanium * 16, UUM * 5, 10000, 6144, 384);
+Autoclave.addRecipe(purifiedTungstate, combTungsten * 16, UUM * 4, 10000, 5888, 384);
+Autoclave.addRecipe(purifiedUranium238, combUranium238 * 16, UUM * 24, 10000, 30464, 384);
+Autoclave.addRecipe(purifiedZinc, combZinc * 16, UUM * 7, 10000, 8320, 384);
+Autoclave.addRecipe(purifiedOsmium, combOsmium * 16, UUM * 19, 10000, 24320, 384);
 
 # Special cases
 # Oil Comb
