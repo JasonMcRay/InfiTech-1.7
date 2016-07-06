@@ -77,7 +77,7 @@ recipes.addShaped(guideCP, [
     [paper, inkSac, paper],
     [paper, CP.reuse(), paper],
     [paper, leather, paper]]);
-Assembler.addRecipe(guideCharcoalPit, book, CP * 0, ink * 144, 200, 2);
+Assembler.addRecipe(guideCP, book, CP * 0, ink * 144, 200, 2);
 
 //Bronze Blast Furnace Guide Book
 recipes.addShaped(guideBBF, [
