@@ -495,6 +495,8 @@ recipes.addShaped(teleporter, [
 <ore:craftingToolElectricSolderingIron>.add(<gregtech:gt.metatool.01:160>);
 <ore:craftingToolElectricSolderingIron>.add(<gregtech:gt.metatool.01:161>);
 
+<ore:craftingToolJackHammer>.add(<gregtech:gt.metatool.01:131>);
+
 # Recipe Fixes
 var wireAluminium16 = <ore:wireGt16Aluminium>;
 var chest = <minecraft:chest>;
