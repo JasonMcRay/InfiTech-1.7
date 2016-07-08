@@ -10,5 +10,5 @@ var questBook = <HardcoreQuesting:quest_book>;
 recipes.remove(QDS);
 recipes.addShaped(QDS, [
     [plankWood, blockGlass, plankWood],
-    [blockGlass, questBook.reuse(), blockGlass],
+    [blockGlass, questBook, blockGlass],
     [plankWood, blockGlass, plankWood]]);
