@@ -834,7 +834,7 @@ Research.refreshResearchRecipe("FOCUS_HEAL");
 // Ender Rift Focus
 Research.addPrereq("FOCUS_ENDER_CHEST", "AM_GEMVINTEUM", true);
 Arcane.removeRecipe(<ThaumicTinkerer:focusEnderChest>);
-Arcane.addShaped("FOCUS_ENDER_CHEST", <ThaumicTinkerer:focusEnderChest>, "ordo 20, perditio 20", [[<ore:gemVinteum>, <ore:ringEnderium>, <ore:itemEnderCrystal>], [<ore:ringEnderium>, <ore:lensEnderEye>, <ore:ringEnderium>], [<ore:itemEnderCrystal>, <ore:ringEnderium>, <ore:gemVinteum>]]);
+Arcane.addShaped("FOCUS_ENDER_CHEST", <ThaumicTinkerer:focusEnderChest>, "ordo 20, perditio 20", [[<ore:gemVinteum>, <ore:ringNaquadah>, <ore:itemEnderCrystal>], [<ore:ringNaquadah>, <ore:lensEnderEye>, <ore:ringNaquadah>], [<ore:itemEnderCrystal>, <ore:ringNaquadah>, <ore:gemVinteum>]]);
 Research.refreshResearchRecipe("FOCUS_ENDER_CHEST");
 
 // Wrench Focus
