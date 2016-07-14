@@ -12,9 +12,11 @@ var blockBedrockium = <ExtraUtilities:block_bedrockium>;
 var blockEmerald = <ore:blockEmerald>;
 var bookEnchanted = <ore:bookEnchanted>;
 var bookshelf = <minecraft:bookshelf>;
+val BurntQuartz = <ore:burntQuartz>;
 var cauldron = <minecraft:cauldron>;
 var carpetAny = <minecraft:carpet:*>;
 var chestIron = <IronChest:BlockIronChest>;
+val clock = <minecraft:clock>;
 var cobblestone = <minecraft:cobblestone>;
 var cobblestoneCompressed = <ExtraUtilities:cobblestone_compressed>;
 var cobblestoneCompressed2 = <ExtraUtilities:cobblestone_compressed:1>;
@@ -32,6 +34,7 @@ var dirtCompressed2 = <ExtraUtilities:cobblestone_compressed:9>;
 var dirtCompressed3 = <ExtraUtilities:cobblestone_compressed:10>;
 var dirtCompressed4 = <ExtraUtilities:cobblestone_compressed:11>;
 var dustRedstone = <ore:dustRedstone>;
+val EminenceStone = <ExtraUtilities:decorativeBlock1:14>;
 var enderCore = <ExtraUtilities:decorativeBlock1:11>;
 var enderInfusedObsidian = <ExtraUtilities:decorativeBlock1:1>;
 var enderPearl = <minecraft:ender_pearl>;
@@ -68,6 +71,8 @@ var sandCompressed2 = <ExtraUtilities:cobblestone_compressed:15>;
 var schematic3x3 = <gregtech:gt.metaitem.01:32497>;
 var tradingPost = <ExtraUtilities:trading_post>;
 var portalDark = <ExtraUtilities:dark_portal>;
+val portalLastMillenium = <ExtraUtilities:dark_portal:2>;
+
 
 # -- Block/item Removal
 recipes.remove(enderReceiver);
@@ -122,6 +127,11 @@ recipes.addShaped(curtains * 8, [
     [carpetAny, carpetAny],
     [carpetAny, carpetAny],
     [carpetAny, carpetAny]]);
+mods.extraUtils.QED.removeRecipe(portalLastMillenium);
+recipes.addShaped(portalLastMillenium, [
+    [BurntQuartz, EminenceStone, BurntQuartz],
+    [EminenceStone, clock, EminenceStone],
+    [BurntQuartz, EminenceStone, BurntQuartz]]);
 	
 # ---GT Integration---
 //ChemicalBath.addRecipe(outpu1, output2, output3, input, liquidInput, chance1, chance2, chance3, durationTicks, euPerTick);
