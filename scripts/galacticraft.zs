@@ -386,20 +386,20 @@ recipes.addShaped(<GalacticraftCore:tile.machine2:8>, [
 
 //Oxygen Bubble Distributor
 recipes.addShaped(<GalacticraftCore:tile.distributor>, [
-[CompressedAl, <GalacticraftCore:item.airFan>, CompressedAl],
+[CompressedAl, <gregtech:gt.metaitem.01:32671>, CompressedAl],
 [AirVent, <gregtech:gt.metaitem.01:32600>, AirVent],
 [CompressedSteel, <GalacticraftCore:item.airFan>, CompressedSteel]]);
 
 //Oxygen Sealer
 recipes.addShaped(<GalacticraftCore:tile.sealer>, [
 [CompressedAl, AirVent, CompressedAl],
-[AirVent, <GalacticraftCore:tile.distributor>, AirVent],
+[<GalacticraftCore:item.airFan>, <gregtech:gt.metaitem.01:32602>, <GalacticraftCore:item.airFan>],
 [CompressedSteel, <GalacticraftCore:tile.oxygenDetector>, CompressedSteel]]);
 
 //Oxygen Detector
 recipes.addShaped(<GalacticraftCore:tile.oxygenDetector>, [
 [CompressedSteel, CompressedSteel, CompressedSteel],
-[AirVent, <gregtech:gt.metaitem.01:32690>, AirVent],
+[AirVent, <gregtech:gt.metaitem.01:32692>, AirVent],
 [CompressedAl, <gregtech:gt.blockmachines:2000>, CompressedAl]]);
 
 //Fuel Loader
@@ -698,7 +698,7 @@ recipes.addShaped(<GalacticraftCore:item.oxygenConcentrator>, [
 
 //Tier 1 Rocket Engine
 recipes.addShaped(<GalacticraftCore:item.engine>, [
-[<gregtech:gt.metaitem.01:32731>, <gregtech:gt.metaitem.01:32476>, <minecraft:stone_button>],
+[<gregtech:gt.metaitem.01:32731>, <gregtech:gt.metaitem.01:32476>.noReturn(), <minecraft:stone_button>],
 [HeavyPlating, <gregtech:gt.blockcasings3:14>, HeavyPlating],
 [HeavyPlating, null, HeavyPlating]]);
 
@@ -808,7 +808,7 @@ recipes.addShaped(<GalacticraftMars:tile.beamReflector>, [
 recipes.addShaped(<GalacticraftMars:tile.beamReceiver>, [
 [CompressedTin, DeshRing, CompressedTin],
 [DeshRing, <GalacticraftMars:item.itemBasicAsteroids:8>, DeshRing],
-[CompressedTin, DeshRing, CompressedTin]]);
+[CompressedTin, <gregtech:gt.metaitem.01:32685>, CompressedTin]]);
 
 //Short range Teleporter
 recipes.addShaped(<GalacticraftMars:tile.telepadShort>, [
@@ -995,3 +995,38 @@ oreDict.blockDesh.add(<GalacticraftMars:tile.mars:8>);
 
 //Meteoric Iron Block to Ore Dict
 oreDict.blockMeteoricIron.add(<GalacticraftCore:tile.gcBlockCore:12>);
+
+// --- Quest relevant tweaks ---
+
+// T1 Rocket
+oreDict.rocketTransportT1.add(<GalacticraftCore:item.spaceship>);
+oreDict.rocketTransportT1.add(<GalacticraftCore:item.spaceship:1>);
+oreDict.rocketTransportT1.add(<GalacticraftCore:item.spaceship:2>);
+oreDict.rocketTransportT1.add(<GalacticraftCore:item.spaceship:3>);
+oreDict.rocketTransportT1.add(<GalacticraftCore:item.spaceship:4>);
+
+// T2 Rocket
+oreDict.rocketTransportT2.add(<GalacticraftMars:item.spaceshipTier2>);
+oreDict.rocketTransportT2.add(<GalacticraftMars:item.spaceshipTier2:1>);
+oreDict.rocketTransportT2.add(<GalacticraftMars:item.spaceshipTier2:2>);
+oreDict.rocketTransportT2.add(<GalacticraftMars:item.spaceshipTier2:3>);
+oreDict.rocketTransportT2.add(<GalacticraftMars:item.spaceshipTier2:4>);
+
+// Cargo Rocket
+oreDict.rocketCargo.add(<GalacticraftMars:item.spaceshipTier2:11>);
+oreDict.rocketCargo.add(<GalacticraftMars:item.spaceshipTier2:12>);
+oreDict.rocketCargo.add(<GalacticraftMars:item.spaceshipTier2:13>);
+oreDict.rocketCargo.add(<GalacticraftMars:item.spaceshipTier2:14>);
+
+// T3 Rocket
+oreDict.rocketTransportT3.add(<GalacticraftMars:item.itemTier3Rocket>);
+oreDict.rocketTransportT3.add(<GalacticraftMars:item.itemTier3Rocket:1>);
+oreDict.rocketTransportT3.add(<GalacticraftMars:item.itemTier3Rocket:2>);
+oreDict.rocketTransportT3.add(<GalacticraftMars:item.itemTier3Rocket:3>);
+oreDict.rocketTransportT3.add(<GalacticraftMars:item.itemTier3Rocket:4>);
+
+// Buggy
+oreDict.buggy.add(<GalacticraftCore:item.buggy>);
+oreDict.buggy.add(<GalacticraftCore:item.buggy:1>);
+oreDict.buggy.add(<GalacticraftCore:item.buggy:2>);
+oreDict.buggy.add(<GalacticraftCore:item.buggy:3>);
