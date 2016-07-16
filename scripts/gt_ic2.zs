@@ -705,7 +705,16 @@ Mixer.addRecipe(GTDough * 2, null, [GTFlour, GTSalt], <liquid:water> * 1000, 31,
 
 # PlantBalls
 Compressor.addRecipe(plantball, sugarcane * 8);
-var saplings = [<minecraft:sapling:*>, <Forestry:saplingGE>, <Forestry:sapling>, <IC2:blockRubSapling>, <Thaumcraft:blockCustomPlant>, <Thaumcraft:blockCustomPlant:1>, <harvestcraft:pamappleSapling>] as IIngredient[];
+val saplings = [<minecraft:sapling:*>, <Forestry:saplingGE>, <Forestry:sapling>, <IC2:blockRubSapling>, <Thaumcraft:blockCustomPlant>, <Thaumcraft:blockCustomPlant:1>,
+    <harvestcraft:pamappleSapling>, <harvestcraft:pamalmondSapling>,     <harvestcraft:pamapricotSapling>,   <harvestcraft:pamavocadoSapling>,    <harvestcraft:pambananaSapling>,
+    <harvestcraft:pamcashewSapling>,<harvestcraft:pamcherrySapling>,     <harvestcraft:pamchestnutSapling>,  <harvestcraft:pamcinnamonSapling>,   <harvestcraft:pamcoconutSapling>, 
+    <harvestcraft:pamdateSapling>,  <harvestcraft:pamdragonfruitSapling>,<harvestcraft:pamdurianSapling>,    <harvestcraft:pamfigSapling>,        <harvestcraft:pamgrapefruitSapling>,
+    <harvestcraft:pamlemonSapling>, <harvestcraft:pamlimeSapling>,       <harvestcraft:pammapleSapling>,     <harvestcraft:pammangoSapling>,      <harvestcraft:pamnutmegSapling>,
+    <harvestcraft:pamoliveSapling>, <harvestcraft:pamorangeSapling>,     <harvestcraft:pampapayaSapling>,    <harvestcraft:pampaperbarkSapling>,  <harvestcraft:pampeachSapling>,
+    <harvestcraft:pampearSapling>,  <harvestcraft:pampecanSapling>,      <harvestcraft:pampeppercornSapling>,<harvestcraft:pampersimmonSapling>,  <harvestcraft:pampistachioSapling>,
+    <harvestcraft:pamplumSapling>,  <harvestcraft:pampomegranateSapling>,<harvestcraft:pamstarfruitSapling>, <harvestcraft:pamvanillabeanSapling>,<harvestcraft:pamwalnutSapling>,
+    <harvestcraft:pamgooseberrySapling>
+] as IIngredient[];
 for baum in saplings {
     Compressor.addRecipe(plantball, baum * 4);
 }
