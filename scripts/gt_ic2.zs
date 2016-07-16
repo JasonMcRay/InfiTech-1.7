@@ -165,7 +165,6 @@ var rotorIron               = <IC2:itemironrotor>;
 var rotorSteel              = <IC2:itemsteelrotor>;
 var rotorWood               = <IC2:itemwoodrotor>;
 var RTGPellet               = <IC2:itemRTGPellet>;
-var sapling                 = <minecraft:sapling:*>;
 var screwIridium            = <ore:screwIridium>;
 var screwIron               = <ore:screwIron>;
 var sensorHV                = <gregtech:gt.metaitem.01:32692>;
@@ -707,8 +706,11 @@ Mixer.addRecipe(GTDough * 2, null, [GTFlour, <InfinityCore:itemMaterial:16>], <l
 Mixer.addRecipe(GTDough * 2, null, [GTFlour, GTSalt], <liquid:water> * 1000, 31, 8);
 
 # PlantBalls
-Compressor.addRecipe(plantball, sapling * 4);
+val saplings = [<minecraft:sapling:*>, <Forestry:saplingGE>, <Forestry:sapling>, <IC2:blockRubSapling>, <Thaumcraft:blockCustomPlant>, <Thaumcraft:blockCustomPlant:1>, <harvestcraft:pamappleSapling>] as IItemStack[];
 Compressor.addRecipe(plantball, sugarcane * 8);
+for i, sapling in saplings {
+    Compressor.addRecipe(plantball, sapling * 4);
+}
 
 # Food tin crafting (aka tin cans, aka food cans)
 FormingPress.addRecipe(tinnedSteel, foilTin * 2, itemCasingSteel, 20, 48);
