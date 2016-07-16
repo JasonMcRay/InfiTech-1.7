@@ -5,7 +5,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Large Turbines",
+            "text": "Assembly Line",
             "wrap": 0,
             "size": 2.3000002,
             "color": "FF555555",
@@ -18,24 +18,24 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Large Turbine is a multiblock generator producing large amounts of EU. They come in 4 variants, Steam, High Pressure, Gas and Plasma. The amount of Steam/Gas/Plasma used depends on the Turbine build in. It slowly speeds up, so it should be used for constant Energy supply.",
+            "text": "Assembly Line is a multiblock machine used for crafting high tier components.",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
             "xPos": 220,
             "yPos": 20,
-            "width": 182.0,
-            "height": 45.0
+            "width": 189.0,
+            "height": 30.0
           }
         },
         {
           "type": "FeatureImage",
           "properties": {
-            "path": "GUIDE_Large_Turbine/LTMain.png",
-            "xPos": 33,
+            "path": "GUIDE_Assembly_Line/ALMain.png",
+            "xPos": 28,
             "yPos": 57,
-            "width": 167.0,
-            "height": 142.0
+            "width": 173.0,
+            "height": 144.0
           }
         }
       ],
@@ -46,7 +46,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Frame",
+            "text": "1st Slice",
             "wrap": 0,
             "size": 1.0,
             "color": "FFFF0000",
@@ -59,7 +59,84 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Frame is 3x4x3 build from Turbine Casings. The inside of the Frame is empty.",
+            "text": "Bottom Layer:\n- Blue: \n  - Solid Steel Machine Casing\n  - Fluid Hatch\n  - or Maintenance Hatch\n- Input Bus (middle)\n- Solid Steel Machine Casing\n\n2nd Layer:\n- Reinforced Glass (sides)\n- Assembly Line Casing (middle)\n\n3rd Layer:\n- Grate Casing\n- Assembler Machine Casing (middle)\n- Assembly Line Controller\n\n4th Layer:\n- Red:\n  - Solid Steel Machine Casing\n  - or Energy Hatch",
+            "wrap": 0,
+            "size": 0.79999995,
+            "color": "FF555555",
+            "xPos": 27,
+            "yPos": 30,
+            "width": 176.0,
+            "height": 150.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Other Slices (except last one)",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 222,
+            "yPos": 18,
+            "width": 177.0,
+            "height": 12.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "They are almost identical to 1st slice. But instead of Assembly Line Machine Controller you need Grate Casing. Also make sure that the Input Buses are facing downwards (since its the only free spot you have).",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 222,
+            "yPos": 29,
+            "width": 183.0,
+            "height": 63.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Assembly_Line/AL1.png",
+            "xPos": 145,
+            "yPos": 11,
+            "width": 67.0,
+            "height": 114.0
+          }
+        },
+        {
+          "type": "FeatureImage",
+          "properties": {
+            "path": "GUIDE_Assembly_Line/AL2.png",
+            "xPos": 276,
+            "yPos": 90,
+            "width": 77.0,
+            "height": 113.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Last Slice",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 27,
+            "yPos": 18,
+            "width": 104.0,
+            "height": 8.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Last Slice is again identical to Other Slices with an exception. Instead of Input Bus you need Output Bus.",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
@@ -72,47 +149,47 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Finished Frame",
+            "text": "Finished Assembly Line",
             "wrap": 0,
             "size": 1.0,
             "color": "FFFF0000",
             "xPos": 222,
             "yPos": 18,
-            "width": 165.0,
-            "height": 11.0
+            "width": 177.0,
+            "height": 12.0
           }
         },
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Front center is Turbine Controller (Plasma, Steam, Gas, High Pressure).\nBack center needs Dynamo Hatch.\nSides must have:\n- 1 or more Input Hatches\n- 1 Output Hatch (only for Steam and High Pressure Turbine)\n- 1 Maintenance Hatch\n- 1 Muffler Hatch (only for Gas Turbine)\n- Remaining spots on sides Turbine Casings.",
+            "text": "Finalized Assembly Line must have minimum of 5 and maximum of 16 total slices. You can also use multiple Energy Hatches to raise the EU/t",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
             "xPos": 222,
-            "yPos": 30,
-            "width": 182.0,
-            "height": 109.0
+            "yPos": 29,
+            "width": 180.0,
+            "height": 44.0
           }
         },
         {
           "type": "FeatureImage",
           "properties": {
-            "path": "GUIDE_Large_Turbine/LTFrame.png",
-            "xPos": 49,
-            "yPos": 79,
-            "width": 126.0,
-            "height": 120.0
+            "path": "GUIDE_Assembly_Line/AL3.png",
+            "xPos": 63,
+            "yPos": 62,
+            "width": 100.0,
+            "height": 145.0
           }
         },
         {
           "type": "FeatureImage",
           "properties": {
-            "path": "GUIDE_Large_Turbine/LTMain.png",
-            "xPos": 277,
-            "yPos": 136,
-            "width": 76.0,
-            "height": 66.0
+            "path": "GUIDE_Assembly_Line/ALMain.png",
+            "xPos": 223,
+            "yPos": 77,
+            "width": 177.0,
+            "height": 130.0
           }
         }
       ],
@@ -141,7 +218,7 @@
             "size": 1.0,
             "color": "FF555555",
             "xPos": 27,
-            "yPos": 30,
+            "yPos": 29,
             "width": 180.0,
             "height": 91.0
           }
@@ -149,27 +226,27 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Possible Problems       Tool to Fix\n",
+            "text": "Possible Problems\n",
             "wrap": 0,
-            "size": 1.4000001,
+            "size": 1.1,
             "color": "FFFF0000",
             "xPos": 24,
-            "yPos": 116,
-            "width": 193.0,
-            "height": 8.0
+            "yPos": 126,
+            "width": 100.0,
+            "height": 6.0
           }
         },
         {
           "type": "FeatureText",
           "properties": {
-            "text": "\"Pipe is loose\"                                      Wrench \n\"Screws are missing\"                      Screwdriver\n\"Something is stuck\"                    Soft Hammer\n\"Plantings are dented\"                  Hard Hammer\n\"Circuitry burned out\"                   Soldering Iron\n\"That doesn\u0027t belong there\"             Crowbar",
+            "text": "\"Pipe is loose\" \n\"Screws are missing\"\n\"Something is stuck\"\n\"Plantings are dented\"\n\"Circuitry burned out\"\n\"That doesn\u0027t belong there\"",
             "wrap": 0,
-            "size": 1.0,
+            "size": 0.79999995,
             "color": "FF555555",
-            "xPos": 24,
-            "yPos": 132,
-            "width": 198.0,
-            "height": 53.0
+            "xPos": 25,
+            "yPos": 140,
+            "width": 125.0,
+            "height": 43.0
           }
         },
         {
@@ -183,6 +260,32 @@
             "yPos": 30,
             "width": 180.0,
             "height": 60.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Wrench\nScrewdriver\nSoft Mallet\nHard Hammer\nSoldering Iron\nCrowbar",
+            "wrap": 0,
+            "size": 0.79999995,
+            "color": "FF555555",
+            "xPos": 148,
+            "yPos": 139,
+            "width": 59.0,
+            "height": 42.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Tool to Fix",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 145,
+            "yPos": 127,
+            "width": 69.0,
+            "height": 7.0
           }
         }
       ],
@@ -206,7 +309,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "The main Turbine block changes the fluids the turbine can run with.\n\n- Large Steam Turbine runs with Steam\n- Large High Pressure Turbine runs with Superheated Steam\n- Large Gas Turbine runs with Methane, Hydrogen and Biogas\n- Large Plasma Generator runs with all types of plasmas generated in the Fusion Reactor",
+            "text": "First you need a Construction Plan. This plan is obtained by scanning previous tier of wanted component. That will give you Data Stick with the information. This Data Stick then needs to be put into your Printer to print the Pages. Last step in creating the plan is binding a book in Assembler.\n\nThis plan will provide you with:\n- Needed EU/t\n- Production Time\n- Required Materials and Fluids",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
@@ -219,14 +322,14 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "The Large Turbine also requires a turbine rotor. Turbine rotors vary greatly in size and material and contribute efficiency, durability and optimal flow modifiers to the running of the turbine.",
+            "text": "Materials must be inserted in separate Input Buses. Due to this ULV Input Buses are enough.\n\nYou must also insert the Contruction Plan into the Assembly Line Controller so the Assembly Line knows what it is making.\n\nAfter all items and fluids are inserted, the Assembly Line will produce the requested item.",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
             "xPos": 222,
             "yPos": 30,
-            "width": 179.0,
-            "height": 56.0
+            "width": 180.0,
+            "height": 69.0
           }
         }
       ],
@@ -234,7 +337,7 @@
     }
   ],
   "uniqueName": "GUIDE_Assembly_Line",
-  "color": 16777067,
+  "color": 14653286,
   "showBackground": true,
   "showArrows": true,
   "showNumber": true,

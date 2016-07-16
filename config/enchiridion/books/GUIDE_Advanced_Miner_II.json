@@ -208,7 +208,7 @@
             "size": 1.0,
             "color": "FF555555",
             "xPos": 27,
-            "yPos": 30,
+            "yPos": 29,
             "width": 180.0,
             "height": 91.0
           }
@@ -216,27 +216,27 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Possible Problems       Tool to Fix\n",
+            "text": "Possible Problems\n",
             "wrap": 0,
-            "size": 1.4000001,
+            "size": 1.1,
             "color": "FFFF0000",
             "xPos": 24,
-            "yPos": 116,
-            "width": 299.0,
-            "height": 10.0
+            "yPos": 126,
+            "width": 100.0,
+            "height": 6.0
           }
         },
         {
           "type": "FeatureText",
           "properties": {
-            "text": "\"Pipe is loose\"                                      Wrench \n\"Screws are missing\"                      Screwdriver\n\"Something is stuck\"                    Soft Hammer\n\"Plantings are dented\"                  Hard Hammer\n\"Circuitry burned out\"                   Soldering Iron\n\"That doesn\u0027t belong there\"             Crowbar",
+            "text": "\"Pipe is loose\" \n\"Screws are missing\"\n\"Something is stuck\"\n\"Plantings are dented\"\n\"Circuitry burned out\"\n\"That doesn\u0027t belong there\"",
             "wrap": 0,
-            "size": 1.0,
+            "size": 0.79999995,
             "color": "FF555555",
-            "xPos": 24,
-            "yPos": 132,
-            "width": 321.0,
-            "height": 52.0
+            "xPos": 25,
+            "yPos": 140,
+            "width": 125.0,
+            "height": 43.0
           }
         },
         {
@@ -250,6 +250,32 @@
             "yPos": 30,
             "width": 180.0,
             "height": 60.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Wrench\nScrewdriver\nSoft Mallet\nHard Hammer\nSoldering Iron\nCrowbar",
+            "wrap": 0,
+            "size": 0.79999995,
+            "color": "FF555555",
+            "xPos": 148,
+            "yPos": 139,
+            "width": 59.0,
+            "height": 42.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Tool to Fix",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 145,
+            "yPos": 127,
+            "width": 69.0,
+            "height": 7.0
           }
         }
       ],

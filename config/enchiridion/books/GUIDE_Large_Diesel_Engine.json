@@ -5,12 +5,12 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Large Turbines",
+            "text": "Large Diesel Engine",
             "wrap": 0,
-            "size": 2.3000002,
+            "size": 1.8000004,
             "color": "FF555555",
             "xPos": 25,
-            "yPos": 17,
+            "yPos": 18,
             "width": 215.0,
             "height": 13.0
           }
@@ -18,7 +18,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Large Turbine is a multiblock generator producing large amounts of EU. They come in 4 variants, Steam, High Pressure, Gas and Plasma. The amount of Steam/Gas/Plasma used depends on the Turbine build in. It slowly speeds up, so it should be used for constant Energy supply.",
+            "text": "Large Diesel Engine is large multiblock energy generator, producing EU from Fuel. The produced EU is static (2048 or 6144 EU/t). The Fuel consumption rate depends on the Fuel Used.\n\nCurrently Available Fuels listed in order from least to most efficient:\n- Sulfuric Light Fuel\n- Diesel (Gasoline), Ethanol\n- Light Fuel\n- Nitro Diesel",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
@@ -31,7 +31,7 @@
         {
           "type": "FeatureImage",
           "properties": {
-            "path": "GUIDE_Large_Turbine/LTMain.png",
+            "path": "GUIDE_Large_Diesel_Engine/LDEMain.png",
             "xPos": 33,
             "yPos": 57,
             "width": 167.0,
@@ -59,7 +59,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Frame is 3x4x3 build from Turbine Casings. The inside of the Frame is empty.",
+            "text": "Frame is 3x4x3 build from Stable Titanium Casings. Front is made from Engine Intake Casings (8x). The inside of the frame is filled with 2 Titanium Gear Box Casings. The Engine Intake Casings must be unobstructed.",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
@@ -85,7 +85,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Front center is Turbine Controller (Plasma, Steam, Gas, High Pressure).\nBack center needs Dynamo Hatch.\nSides must have:\n- 1 or more Input Hatches\n- 1 Output Hatch (only for Steam and High Pressure Turbine)\n- 1 Maintenance Hatch\n- 1 Muffler Hatch (only for Gas Turbine)\n- Remaining spots on sides Turbine Casings.",
+            "text": "Front center is Diesel Engine Controller.\nBack center needs Dynamo Hatch (EV or IV).\nSides must have:\n- 2 or more Input Hatches (For Lubricant and Fuel)\n- 1 Maintenance Hatch\n- 1 Muffler Hatch (On top, closer to the back side)\n- Remaining spots on sides Stable Titanium Casings.",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
@@ -98,17 +98,17 @@
         {
           "type": "FeatureImage",
           "properties": {
-            "path": "GUIDE_Large_Turbine/LTFrame.png",
-            "xPos": 49,
-            "yPos": 79,
-            "width": 126.0,
-            "height": 120.0
+            "path": "GUIDE_Large_Diesel_Engine/LDEFrame.png",
+            "xPos": 56,
+            "yPos": 102,
+            "width": 115.0,
+            "height": 106.0
           }
         },
         {
           "type": "FeatureImage",
           "properties": {
-            "path": "GUIDE_Large_Turbine/LTMain.png",
+            "path": "GUIDE_Large_Diesel_Engine/LDEMain.png",
             "xPos": 277,
             "yPos": 136,
             "width": 76.0,
@@ -141,7 +141,7 @@
             "size": 1.0,
             "color": "FF555555",
             "xPos": 27,
-            "yPos": 30,
+            "yPos": 29,
             "width": 180.0,
             "height": 91.0
           }
@@ -149,27 +149,27 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Possible Problems       Tool to Fix\n",
+            "text": "Possible Problems\n",
             "wrap": 0,
-            "size": 1.4000001,
+            "size": 1.1,
             "color": "FFFF0000",
             "xPos": 24,
-            "yPos": 116,
-            "width": 193.0,
-            "height": 8.0
+            "yPos": 126,
+            "width": 100.0,
+            "height": 6.0
           }
         },
         {
           "type": "FeatureText",
           "properties": {
-            "text": "\"Pipe is loose\"                                      Wrench \n\"Screws are missing\"                      Screwdriver\n\"Something is stuck\"                    Soft Hammer\n\"Plantings are dented\"                  Hard Hammer\n\"Circuitry burned out\"                   Soldering Iron\n\"That doesn\u0027t belong there\"             Crowbar",
+            "text": "\"Pipe is loose\" \n\"Screws are missing\"\n\"Something is stuck\"\n\"Plantings are dented\"\n\"Circuitry burned out\"\n\"That doesn\u0027t belong there\"",
             "wrap": 0,
-            "size": 1.0,
+            "size": 0.79999995,
             "color": "FF555555",
-            "xPos": 24,
-            "yPos": 132,
-            "width": 198.0,
-            "height": 53.0
+            "xPos": 25,
+            "yPos": 140,
+            "width": 125.0,
+            "height": 43.0
           }
         },
         {
@@ -183,6 +183,32 @@
             "yPos": 30,
             "width": 180.0,
             "height": 60.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Wrench\nScrewdriver\nSoft Mallet\nHard Hammer\nSoldering Iron\nCrowbar",
+            "wrap": 0,
+            "size": 0.79999995,
+            "color": "FF555555",
+            "xPos": 148,
+            "yPos": 139,
+            "width": 59.0,
+            "height": 42.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Tool to Fix",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFFF0000",
+            "xPos": 145,
+            "yPos": 127,
+            "width": 69.0,
+            "height": 7.0
           }
         }
       ],
@@ -206,7 +232,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "The main Turbine block changes the fluids the turbine can run with.\n\n- Large Steam Turbine runs with Steam\n- Large High Pressure Turbine runs with Superheated Steam\n- Large Gas Turbine runs with Methane, Hydrogen and Biogas\n- Large Plasma Generator runs with all types of plasmas generated in the Fusion Reactor",
+            "text": "The Large Diesel Engine runs on Diesel, Gasoline, Ethanol, Light Fuel, Sulfuric Light Fuel and Nitro Diesel. It will produce 2048EU/t so at least EV Dynamo Hatch is required.\n\nIt requires Lubricant to be inserted in one of the Input Hatches.\n\nOptionally you can supply Oxygen to boost the output of the engine by 3x and also increasing fuel consumption 2x (gaining total of 50% efficiency bonus). Keep in mind the EU/t will raise to 6144EU/t so Dynamo Hatch must be replaced with IV.",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
@@ -219,7 +245,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "The Large Turbine also requires a turbine rotor. Turbine rotors vary greatly in size and material and contribute efficiency, durability and optimal flow modifiers to the running of the turbine.",
+            "text": "The Diesel Engine has a \"warm-up\" period where it will not produce any power until it\u0027s efficiency is \u003e\u003d 20%\n\nOxygen consumption is static at 2L/t",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
@@ -234,7 +260,7 @@
     }
   ],
   "uniqueName": "GUIDE_Large_Diesel_Engine",
-  "color": 16777067,
+  "color": 11233182,
   "showBackground": true,
   "showArrows": true,
   "showNumber": true,
