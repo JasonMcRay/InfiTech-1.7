@@ -540,8 +540,6 @@ recipes.addShaped(enrichedMOX, [
 # GT Processing
 CuttingSaw.addRecipe([<gregtech:gt.metaitem.01:29874> * 2], <ore:ingotPlastic>, <liquid:lubricant> * 5, 60, 8);
 CuttingSaw.addRecipe([<gregtech:gt.metaitem.01:29874> * 2], <ore:platePlastic>, <liquid:lubricant> * 5, 60, 8);
-Compressor.addRecipe(plantball, sapling * 4);
-Compressor.addRecipe(plantball, sugarcane * 8);
 AlloySmelter.addRecipe(itemIngotBlueAlloy * 2, itemDustSilver, itemIngotElectrotine, 100, 16);
 AlloySmelter.addRecipe(itemIngotBlueAlloy * 2, itemIngotSilver, itemIngotElectrotine, 100, 16);
 
@@ -706,10 +704,10 @@ Mixer.addRecipe(GTDough * 2, null, [GTFlour, <InfinityCore:itemMaterial:16>], <l
 Mixer.addRecipe(GTDough * 2, null, [GTFlour, GTSalt], <liquid:water> * 1000, 31, 8);
 
 # PlantBalls
-val saplings = [<minecraft:sapling:*>, <Forestry:saplingGE>, <Forestry:sapling>, <IC2:blockRubSapling>, <Thaumcraft:blockCustomPlant>, <Thaumcraft:blockCustomPlant:1>, <harvestcraft:pamappleSapling>] as IItemStack[];
 Compressor.addRecipe(plantball, sugarcane * 8);
-for i, sapling in saplings {
-    Compressor.addRecipe(plantball, sapling * 4);
+var saplings = [<minecraft:sapling:*>, <Forestry:saplingGE>, <Forestry:sapling>, <IC2:blockRubSapling>, <Thaumcraft:blockCustomPlant>, <Thaumcraft:blockCustomPlant:1>, <harvestcraft:pamappleSapling>] as IIngredient[];
+for baum in saplings {
+    Compressor.addRecipe(plantball, baum * 4);
 }
 
 # Food tin crafting (aka tin cans, aka food cans)
