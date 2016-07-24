@@ -145,6 +145,7 @@ var stoneSickle = <ProjRed|Exploration:projectred.exploration.sicklestone>;
 var teleposer = <ProjRed|Expansion:projectred.expansion.machine2:7>;
 var tinWall = <ProjRed|Exploration:projectred.exploration.stonewalls:9>;
 var water = <liquid:water>;
+var woodSickle = <ProjRed|Exploration:projectred.exploration.sicklewood>;
 var wireFineCopperGT = <gregtech:gt.metaitem.02:19035>;
 var wireFineGoldGT = <gregtech:gt.metaitem.02:19086>;
 var wireFineIronGT = <gregtech:gt.metaitem.02:19032>;
@@ -154,7 +155,7 @@ var powerLineFramed = <ProjRed|Transmission:projectred.transmission.framewire:34
 var PRWalls = [marbleWall, marbleBrickWall, basaltCobbleWall, basaltWall, basaltBrickWall, rubyWall, sapphireWall, peridotWall, copperWall, tinWall, silverWall, electrolineWall] as IItemStack[];
 var blocks = [blockMarble, brickMarble, cobbleBasalt, blockBasalt, brickBasalt, blockRuby, blockSapphire, blockPeridot, blockCopper, blockTin, blockSilver, blockElectrotine] as IIngredient[];
 var PRArmor = [peridotLeggings, peridotHelmet, peridotChest, peridotBoots, rubyLeggings, rubyHelmet, rubyChest, rubyBoots, sapphireLeggings, sapphireHelmet, sapphireChest, sapphireBoots] as IItemStack[];
-var PRTools = [peridotSword, peridotShovel, peridotSickle, peridotPickaxe, peridotAxe, peridotHoe, rubySword, rubyShovel, rubySickle, rubyPickaxe, rubyAxe, rubyHoe, sapphireSword, sapphireShovel, sapphireSickle, sapphirePickaxe, sapphireAxe, sapphireHoe, diamondSickle, stoneSickle] as IItemStack[];
+var PRTools = [peridotSword, peridotShovel, peridotSickle, peridotPickaxe, peridotAxe, peridotHoe, rubySword, rubyShovel, rubySickle, rubyPickaxe, rubyAxe, rubyHoe, sapphireSword, sapphireShovel, sapphireSickle, sapphirePickaxe, sapphireAxe, sapphireHoe, diamondSickle, woodSickle] as IItemStack[];
 
 var disabled = [batteryBox, inductiveFurnace, drawplate, blockBreaker, blockPlacer, frameMotor, teleposer, frameLinearActuator, autoCraftingBench, PRBattery, PRSolar, chargingBench, electrotineGenerator, PRJetpack] as IItemStack[];
 var disabledHidden = [PRPipes, routerUtil, PRModules, powerLine, powerLineFramed] as IItemStack[];
