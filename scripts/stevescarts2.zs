@@ -187,7 +187,7 @@ var pearlEnder          = <ore:pearlEnder>;
 var lavabucket          = <ore:bucketLava>;
 var obsidian            = <minecraft:obsidian>;
 var glowstonedust       = <ore:dustGlowstone>;
-var teslatite           = <ore:dustTeslatite>;
+var dustElectrotine     = <ProjRed|Core:projectred.core.part:56>;
 var diamond             = <ore:gemDiamond>;
 var diamondblock        = <ore:blockDiamond>;
 var treesapling         = <ore:treeSapling>;
@@ -394,9 +394,9 @@ recipes.addShaped(advthermalengine, [
 
 recipes.remove(solarpanel);
 recipes.addShaped(solarpanel, [
-    [glowstonedust, teslatite, glowstonedust],
-    [teslatite, solarpanelULV, teslatite],
-    [glowstonedust, teslatite, glowstonedust]]);
+    [glowstonedust, dustElectrotine, glowstonedust],
+    [dustElectrotine, solarpanelULV, dustElectrotine],
+    [glowstonedust, dustElectrotine, glowstonedust]]);
 
 recipes.remove(advsolarpanel);
 recipes.addShaped(advsolarpanel, [
