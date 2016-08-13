@@ -20,6 +20,11 @@ var craneMagnet       = <OpenBlocks:generic:3>;
 var craneEngine       = <OpenBlocks:generic:2>;
 var luggage           = <OpenBlocks:luggage>;
 var paintbrush        = <OpenBlocks:paintBrush>;
+var advbuildingguide  = <OpenBlocks:builder_guide>;
+var glass             = <minecraft:glass>;
+var torch             = <minecraft:torch>;
+var redstone          = <minecraft:redstone>;
+var builderswand      = <ExtraUtilities:builderswand>;
 
 # Recipe Tweaks
 recipes.remove(vacuumHopper);
@@ -72,3 +77,9 @@ recipes.addShaped(paintbrush,
   [[<ore:blockWool>, null, null],
   [<ore:craftingToolFile>, <Forestry:oakStick>, null],
   [null, null, <ore:woodStickSealed>]]);
+
+recipes.remove(advbuildingguide);
+recipes.addShaped(advbuildingguide,
+  [[glass, redstone, glass],
+  [builderswand, torch, builderswand],
+  [glass, redstone, glass]]);
