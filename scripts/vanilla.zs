@@ -11,6 +11,7 @@ var buttonWood = <minecraft:wooden_button>;
 var chestEnder = <minecraft:ender_chest>;
 var chestWood = <minecraft:chest>;
 var coal = <ore:gemCoal>;
+var charcoal = <ore:charcoal>;
 var diamond = <ore:gemDiamond>;
 var diamondAxe = <minecraft:diamond_axe>;
 var diamondBoots = <minecraft:diamond_boots>;
@@ -21,6 +22,7 @@ var diamondPickaxe = <minecraft:diamond_pickaxe>;
 var diamondShovel = <minecraft:diamond_shovel>;
 var diamondSword = <minecraft:diamond_sword>;
 var dustCoal = <ore:dustCoal>;
+var dustCharcoal = <ore:dustCharcoal>;
 var dustLapis = <ore:dustLapis>;
 var enderEye = <minecraft:ender_eye>;
 var enderPearl = <minecraft:ender_pearl>;
@@ -88,6 +90,8 @@ recipes.removeShapeless(lapis);
 recipes.removeShapeless(dustLapis);
 recipes.removeShapeless(coal);
 recipes.removeShapeless(dustCoal);
+recipes.removeShapeless(charcoal);
+recipes.removeShapeless(dustCharcoal);
 	
 # Recipe Fixes
 recipes.remove(sensorDaylight);
