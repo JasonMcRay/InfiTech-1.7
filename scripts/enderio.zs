@@ -42,6 +42,7 @@ var chest = <minecraft:chest>;
 var clearGlass = <EnderIO:blockFusedQuartz:1>;
 var clearGlassEnlighten = <EnderIO:blockFusedQuartz:3>;
 var comparator = <minecraft:comparator>;
+var compass = <minecraft:compass>;
 var conduitBinder = <EnderIO:itemMaterial:1>;
 var conduitEnergy = <EnderIO:itemPowerConduit>;
 var conduitFluid = <EnderIO:itemLiquidConduit>;
@@ -51,6 +52,7 @@ var conduitInsulatedRedstone = <EnderIO:itemRedstoneConduit:2>;
 var conduitItem = <EnderIO:itemItemConduit>;
 var conduitRedstone = <EnderIO:itemRedstoneConduit>;
 var conduitRedstoneInsulated = <EnderIO:itemRedstoneConduit:2>;
+var coordinateSelector = <EnderIO:itemCoordSelector>;
 var craftingFurnace = <ore:craftingFurnace>;
 var craftingGrinder = <ore:craftingGrinder>;
 var crystalEnder = <EnderIO:itemMaterial:8>;
@@ -65,6 +67,7 @@ var dustGlass = <gregtech:gt.metaitem.01:2890>;
 var dustGlowstone = <ore:dustGlowstone>;
 var dustSilicon = <ore:dustSilicon>;
 var eIODustCoal = <EnderIO:itemPowderIngot>;
+var elSteelItemCasing = <InfinityCore:itemMaterial:24>;
 var emerald = <minecraft:emerald>;
 var enchanter = <EnderIO:blockEnchanter>;
 var enderPearl = <minecraft:ender_pearl>;
@@ -149,13 +152,14 @@ var plateSteel = <ore:plateSteel>;
 var pressurePlateDarkSteel = <EnderIO:blockDarkSteelPressurePlate>;
 var probeConduit = <EnderIO:itemConduitProbe>;
 var pulsatingCrystal = <EnderIO:itemMaterial:5>;
-var pumpElectricMV = <gregtech:gt.metaitem.01:32611>;
 var pumpElectricHV = <gregtech:gt.metaitem.01:32612>;
+var pumpElectricMV = <gregtech:gt.metaitem.01:32611>;
 var reservoir = <EnderIO:blockReservoir>;
 var resonatorEnder = <EnderIO:itemFrankenSkull:3>;
 var rodDarkSteel = <ore:stickDarkSteel>;
 var sagMill = <EnderIO:blockSagMill>;
 var soulSand = <minecraft:soul_sand>;
+var steelItemCasing = <IC2:itemCasing:5>;
 var stoneBricks = <ore:stoneBricks>;
 var tankFluid = <EnderIO:blockTank>;
 var tankFluidPressurized = <EnderIO:blockTank:1>;
@@ -251,9 +255,14 @@ recipes.remove(ballDarkSteel);
 ballDarkSteel.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # Recipe Tweaks
+recipes.remove(coordinateSelector);
+recipes.addShaped(coordinateSelector, [
+    [elSteelItemCasing, enderPearl, elSteelItemCasing],
+    [null, compass, elSteelItemCasing],
+    [null, null, elSteelItemCasing]]);
 recipes.remove(probeConduit);
 recipes.addShaped(probeConduit, [
-	[ingotSteel, conduitEnergy, ingotSteel],
+	[steelItemCasing, conduitEnergy, steelItemCasing],
 	[glassPane, comparator, glassPane],
 	[plateSilicon, conduitRedstoneInsulated, plateSilicon]]);
 recipes.remove(itemBuffer);

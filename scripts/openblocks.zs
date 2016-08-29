@@ -20,6 +20,11 @@ var craneMagnet       = <OpenBlocks:generic:3>;
 var craneEngine       = <OpenBlocks:generic:2>;
 var luggage           = <OpenBlocks:luggage>;
 var paintbrush        = <OpenBlocks:paintBrush>;
+var steelItemCasing   = <IC2:itemCasing:5>;
+var dustRedstone      = <ore:dustRedstone>;
+var slimeball         = <ore:slimeball>;
+var paneGlass         = <ore:paneGlass>;
+var slimalyzer        = <OpenBlocks:slimalyzer>;
 
 # Recipe Tweaks
 recipes.remove(vacuumHopper);
@@ -72,3 +77,9 @@ recipes.addShaped(paintbrush,
   [[<ore:blockWool>, null, null],
   [<ore:craftingToolFile>, <Forestry:oakStick>, null],
   [null, null, <ore:woodStickSealed>]]);
+  
+recipes.remove(slimalyzer);
+recipes.addShaped(slimalyzer, [
+    [steelItemCasing, paneGlass, steelItemCasing],
+    [steelItemCasing, slimeball, steelItemCasing],
+    [steelItemCasing, dustRedstone, steelItemCasing]]);

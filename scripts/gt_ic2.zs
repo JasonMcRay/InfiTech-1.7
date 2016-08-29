@@ -30,6 +30,7 @@ var MFSU                    = <IC2:blockElectric:2>;
 var MOX                     = <IC2:itemMOX>;
 var ODScanner               = <IC2:itemScanner:*>;
 var OVScanner               = <IC2:itemScannerAdv>;
+var RTGPellet               = <IC2:itemRTGPellet>;
 var Saw                     = <ore:craftingToolSaw>;
 var Screwdriver             = <ore:craftingToolScrewdriver>;
 var Wrench                  = <ore:craftingToolWrench>;
@@ -112,8 +113,8 @@ var ic2Scanner              = <IC2:blockMachine2:7>;
 var ic2SolidCanningMachine  = <IC2:blockMachine2:9>;
 var ic2ThermalCentrifuge    = <IC2:blockMachine2:3>;
 var ic2solarpanel           = <IC2:blockGenerator:3>;
-var ingotSteel              = <ore:ingotSteel>;
 var ingotPlutonium244       = <ore:ingotPlutonium>;
+var ingotSteel              = <ore:ingotSteel>;
 var iridiumDrill            = <IC2:itemToolIridiumDrill:*>;
 var itemCasingBronze        = <IC2:itemCasing:2>;
 var itemCasingGold          = <IC2:itemCasing:3>;
@@ -164,7 +165,6 @@ var rotorCarbon             = <IC2:itemwcarbonrotor>;
 var rotorIron               = <IC2:itemironrotor>;
 var rotorSteel              = <IC2:itemsteelrotor>;
 var rotorWood               = <IC2:itemwoodrotor>;
-var RTGPellet               = <IC2:itemRTGPellet>;
 var screwIridium            = <ore:screwIridium>;
 var screwIron               = <ore:screwIron>;
 var sensorHV                = <gregtech:gt.metaitem.01:32692>;
@@ -177,6 +177,7 @@ var teleporter              = <IC2:blockMachine2>;
 var tinCan					= <IC2:itemTinCan>;
 var tinnedSteel				= <InfinityCore:itemMaterial:18>;
 var uraniumEnriched         = <IC2:itemUran>;
+var weedingTrowel           = <IC2:itemWeedingTrowel>;
 
 # seeds
 
@@ -545,6 +546,12 @@ AlloySmelter.addRecipe(itemIngotBlueAlloy * 2, itemDustSilver, itemIngotElectrot
 AlloySmelter.addRecipe(itemIngotBlueAlloy * 2, itemIngotSilver, itemIngotElectrotine, 100, 16);
 
 # Recipe Tweaks
+recipes.remove(weedingTrowel);
+recipes.addShaped(weedingTrowel, [
+    [stickIron, null, stickIron],
+    [null, stickIron, null],
+    [plateRubber, stickIron, plateRubber]]);
+
 recipes.remove(singleUseBattery);
 recipes.addShaped(singleUseBattery * 6, [
     [cableTin1x],
