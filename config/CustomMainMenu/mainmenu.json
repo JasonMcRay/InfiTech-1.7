@@ -142,7 +142,7 @@
             "action" :
             {
                 "type" : "openLink",
-                "link" : "http://ftb.cursecdn.com/FTB2/modpacks/InfiTech2/3_2_9/InfiTech2Server.zip"
+                "link" : "http://ftb.cursecdn.com/FTB2/modpacks/InfiTech2/3_2_10_2/InfiTech2Server.zip"
             }
         },
         "quit":
@@ -228,7 +228,7 @@
         {
             "text" : "",
             "posX" : 2,
-            "posY" : -50,
+            "posY" : -55,
             "color" : -1,
             "alignment" : "bottom_left"
         }
