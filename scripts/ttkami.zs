@@ -107,7 +107,9 @@ var energyWandCore      = <HardcoreEnderExpansion:energy_wand_core>;
 var enhancedTNT         = <HardcoreEnderExpansion:enhanced_tnt>.withTag({HEE_enhancements: ["EXTRA_POWER", "NO_FUSE", "NO_ENTITY_DAMAGE", "TRAP"]});
 var thornyBush          = <HardcoreEnderExpansion:crossed_decoration:2>;
 var potionNVisonLong    = <minecraft:potion:8198>.withTag({CustomPotionEffects: [{Ambient: 0 as byte, Duration: 12000, Id: 16 as byte, Amplifier: 0 as byte}]});
+var potionNVisonLong2   = <minecraft:potion:8262>.withTag({CustomPotionEffects: [{Ambient: 0 as byte, Duration: 12000, Id: 16 as byte, Amplifier: 0 as byte}]});
 var potionFResistLong   = <minecraft:potion:8195>.withTag({CustomPotionEffects: [{Ambient: 0 as byte, Duration: 12000, Id: 12 as byte, Amplifier: 0 as byte}]});
+var potionFResistLong2  = <minecraft:potion:8259>.withTag({CustomPotionEffects: [{Ambient: 0 as byte, Duration: 12000, Id: 12 as byte, Amplifier: 0 as byte}]});
 var igneousRock         = <HardcoreEnderExpansion:igneous_rock>;
 var enhancedEnderPearl  = <HardcoreEnderExpansion:enhanced_ender_pearl>.withTag({HEE_enhancements: ["INCREASED_RANGE", "DOUBLE_SPEED", "NO_FALL_DAMAGE"]});
 
@@ -410,6 +412,7 @@ Research.refreshResearchRecipe("ICHORCLOTH_ARMOR");
 Research.clearPrereqs("ICHORCLOTH_HELM_GEM");
 Research.addPrereq("ICHORCLOTH_HELM_GEM", "ICHORCLOTH_ARMOR", false);
 Infusion.addRecipe("ICHORCLOTH_HELM_GEM", helmIchor, [sapphireExquisite, ichor, ichor, thaumonomicon, focusPrimal, fluxHelmet, potionNVisonLong, helmRevealing, dragonEgg, eel, cakePineapple, eyeGolden], "nebrisum 32, aqua 128, auram 64, cognitio 32, corpus 32, fames 32, lux 128, tutamen 128", helmIchorGem, 30);
+Infusion.addRecipe("ICHORCLOTH_HELM_GEM", helmIchor, [sapphireExquisite, ichor, ichor, thaumonomicon, focusPrimal, fluxHelmet, potionNVisonLong2, helmRevealing, dragonEgg, eel, cakePineapple, eyeGolden], "nebrisum 32, aqua 128, auram 64, cognitio 32, corpus 32, fames 32, lux 128, tutamen 128", helmIchorGem, 30);
 Research.refreshResearchRecipe("ICHORCLOTH_HELM_GEM");
 
 Research.clearPrereqs("ICHORCLOTH_CHEST_GEM");
@@ -420,6 +423,7 @@ Research.refreshResearchRecipe("ICHORCLOTH_CHEST_GEM");
 Research.clearPrereqs("ICHORCLOTH_LEGS_GEM");
 Research.addPrereq("ICHORCLOTH_LEGS_GEM", "ICHORCLOTH_ARMOR", false);
 Infusion.addRecipe("ICHORCLOTH_LEGS_GEM", legsIchor, [rubyExquisite, ichor, ichor, thaumonomicon, focusPrimal, fluxLegs, potionFResistLong, focusEfreet, nitorHyper, chargedFirestone, dragonEgg, igneousRock], "nebrisum 32, ignis 128, sano 64, lucrum 32, potentia 64, alienis 32, lux 128, tutamen 128", legsIchorGem, 30);
+Infusion.addRecipe("ICHORCLOTH_LEGS_GEM", legsIchor, [rubyExquisite, ichor, ichor, thaumonomicon, focusPrimal, fluxLegs, potionFResistLong2, focusEfreet, nitorHyper, chargedFirestone, dragonEgg, igneousRock], "nebrisum 32, ignis 128, sano 64, lucrum 32, potentia 64, alienis 32, lux 128, tutamen 128", legsIchorGem, 30);
 Research.refreshResearchRecipe("ICHORCLOTH_LEGS_GEM");
 
 Research.clearPrereqs("ICHORCLOTH_BOOTS_GEM");
