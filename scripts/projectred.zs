@@ -11,6 +11,11 @@ import mods.nei.NEI;
 
 var FTWorktable = <Forestry:factory2:2>;
 var GTSolar = <gregtech:gt.metaitem.01:32750>;
+var GTbasaltBrick = <gregtech:gt.blockstones:11>;
+var GTbasaltCobble = <gregtech:gt.blockstones:9>;
+var GTbasaltStone = <gregtech:gt.blockstones:8>;
+var GTmarbleBrick = <gregtech:gt.blockstones:3>;
+var GTmarbleSmooth = <gregtech:gt.blockstones>;
 var ICBlueprint = <ProjRed|Fabrication:projectred.fabrication.icblueprint>;
 var ICChip = <ProjRed|Fabrication:projectred.fabrication.icchip>;
 var LVBatteryBuffer1x = <gregtech:gt.blockmachines:161>;
@@ -22,11 +27,13 @@ var PRPipes = <ProjRed|Transportation:projectred.transportation.pipe:*>;
 var PRSilicon = <ProjRed|Core:projectred.core.part:12>;
 var PRSolar = <ProjRed|Expansion:projectred.expansion.solar_panel>;
 var autoCraftingBench = <ProjRed|Expansion:projectred.expansion.machine2:11>;
+var basaltBrick = <ProjRed|Exploration:projectred.exploration.stone:4>;
 var basaltBrickWall = <ProjRed|Exploration:projectred.exploration.stonewalls:4>;
+var basaltCobble = <ProjRed|Exploration:projectred.exploration.stone:2>;
 var basaltCobbleWall = <ProjRed|Exploration:projectred.exploration.stonewalls:2>;
+var basaltStone = <ProjRed|Exploration:projectred.exploration.stone:3>;
 var basaltWall = <ProjRed|Exploration:projectred.exploration.stonewalls:3>;
 var batteryBox = <ProjRed|Expansion:projectred.expansion.machine2:5>;
-var blockBasalt = <ProjRed|Exploration:projectred.exploration.stone:3>;
 var blockBreaker = <ProjRed|Expansion:projectred.expansion.machine2>;
 var blockCopper = <ore:blockCopper>;
 var blockElectrotine = <ProjRed|Exploration:projectred.exploration.stone:11>;
@@ -39,14 +46,14 @@ var blockSilver = <ore:blockSilver>;
 var blockTin = <ore:blockTin>;
 var bouleSilicon = <ProjRed|Core:projectred.core.part:11>;
 var brick = <minecraft:brick_block>;
-var brickBasalt = <ProjRed|Exploration:projectred.exploration.stone:4>;
-var brickMarble = <ProjRed|Exploration:projectred.exploration.stone:1>;
+var brickBasalt = <ore:brickBasalt>;
+var brickMarble = <ore:brickMarble>;
 var carbonPlate = <ore:plateAlloyCarbon>;
 var chargingBench = <ProjRed|Expansion:projectred.expansion.machine2:6>;
 var circuitBasic = <ore:circuitBasic>;
 var coalBlock = <minecraft:coal_block>;
 var cobble = <ore:cobblestone>;
-var cobbleBasalt = <ProjRed|Exploration:projectred.exploration.stone:2>;
+var cobbleBasalt = <ore:cobbleBasalt>;
 var copperCoil = <ProjRed|Core:projectred.core.part:16>;
 var copperWall = <ProjRed|Exploration:projectred.exploration.stonewalls:8>;
 var diamond = <minecraft:diamond>;
@@ -78,7 +85,9 @@ var ironCoil = <ProjRed|Core:projectred.core.part:17>;
 var itemImporter = <ProjRed|Expansion:projectred.expansion.machine2:1>;
 var itemIngotRedalloy = <gregtech:gt.metaitem.01:11308>;
 var lubricant = <liquid:lubricant>;
+var marbleBrick = <ProjRed|Exploration:projectred.exploration.stone:1>;
 var marbleBrickWall = <ProjRed|Exploration:projectred.exploration.stonewalls:1>;
+var marbleSmooth = <ProjRed|Exploration:projectred.exploration.stone>;
 var marbleWall = <ProjRed|Exploration:projectred.exploration.stonewalls>;
 var moltenDyeBlue = <liquid:dye.watermixed.dyeblue>;
 var moltenGlowstone = <liquid:molten.glowstone>;
@@ -105,6 +114,8 @@ var piston = <minecraft:piston>;
 var plankWood = <ore:plankWood>;
 var plateIron = <ore:plateIron>;
 var plateSilicon = <ore:plateSilicon>;
+var powerLine = <ProjRed|Transmission:projectred.transmission.wire:34>;
+var powerLineFramed = <ProjRed|Transmission:projectred.transmission.framewire:34>;
 var projectBench = <ProjRed|Expansion:projectred.expansion.machine2:10>;
 var recipePlan = <ProjRed|Expansion:projectred.expansion.plan>;
 var redSiliconCompound = <ProjRed|Core:projectred.core.part:42>;
@@ -140,25 +151,49 @@ var silverWall = <ProjRed|Exploration:projectred.exploration.stonewalls:10>;
 var slabWood = <ore:slabWood>;
 var smallBatteryHull = <gregtech:gt.metaitem.01:32500>;
 var smallIronGear = <ore:gearGtSmallAnyIron>;
+var smoothBasalt = <ore:smoothBasalt>;
+var smoothMarble = <ore:smoothMarble>;
 var stone = <ore:stone>;
+var stoneBasalt = <ore:stoneBasalt>;
+var stoneMarble = <ore:stoneMarble>;
 var stoneSickle = <ProjRed|Exploration:projectred.exploration.sicklestone>;
 var teleposer = <ProjRed|Expansion:projectred.expansion.machine2:7>;
 var tinWall = <ProjRed|Exploration:projectred.exploration.stonewalls:9>;
 var water = <liquid:water>;
-var woodSickle = <ProjRed|Exploration:projectred.exploration.sicklewood>;
 var wireFineCopperGT = <gregtech:gt.metaitem.02:19035>;
 var wireFineGoldGT = <gregtech:gt.metaitem.02:19086>;
 var wireFineIronGT = <gregtech:gt.metaitem.02:19032>;
-var powerLine = <ProjRed|Transmission:projectred.transmission.wire:34>;
-var powerLineFramed = <ProjRed|Transmission:projectred.transmission.framewire:34>;
+var woodSickle = <ProjRed|Exploration:projectred.exploration.sicklewood>;
 
 var PRWalls = [marbleWall, marbleBrickWall, basaltCobbleWall, basaltWall, basaltBrickWall, rubyWall, sapphireWall, peridotWall, copperWall, tinWall, silverWall, electrolineWall] as IItemStack[];
-var blocks = [blockMarble, brickMarble, cobbleBasalt, blockBasalt, brickBasalt, blockRuby, blockSapphire, blockPeridot, blockCopper, blockTin, blockSilver, blockElectrotine] as IIngredient[];
+var blocks = [smoothMarble, brickMarble, cobbleBasalt, smoothBasalt, brickBasalt, blockRuby, blockSapphire, blockPeridot, blockCopper, blockTin, blockSilver, blockElectrotine] as IIngredient[];
 var PRArmor = [peridotLeggings, peridotHelmet, peridotChest, peridotBoots, rubyLeggings, rubyHelmet, rubyChest, rubyBoots, sapphireLeggings, sapphireHelmet, sapphireChest, sapphireBoots] as IItemStack[];
 var PRTools = [peridotSword, peridotShovel, peridotSickle, peridotPickaxe, peridotAxe, peridotHoe, rubySword, rubyShovel, rubySickle, rubyPickaxe, rubyAxe, rubyHoe, sapphireSword, sapphireShovel, sapphireSickle, sapphirePickaxe, sapphireAxe, sapphireHoe, diamondSickle, woodSickle] as IItemStack[];
+var PRBasalt = [basaltCobble, basaltStone, basaltBrick] as IItemStack[];
+var PRMarble = [marbleSmooth, marbleBrick] as IItemStack[];
+
 
 var disabled = [batteryBox, inductiveFurnace, drawplate, blockBreaker, blockPlacer, frameMotor, teleposer, frameLinearActuator, autoCraftingBench, PRBattery, PRSolar, chargingBench, electrotineGenerator, PRJetpack] as IItemStack[];
 var disabledHidden = [PRPipes, routerUtil, PRModules, powerLine, powerLineFramed] as IItemStack[];
+
+// Oredictionary Stuff
+for basalt in PRBasalt {
+    stoneBasalt.add(basalt);
+    }
+cobbleBasalt.add(basaltCobble);
+cobbleBasalt.add(GTbasaltCobble);
+smoothBasalt.add(basaltStone);
+smoothBasalt.add(GTbasaltStone);
+brickBasalt.add(basaltBrick);
+brickBasalt.add(GTbasaltBrick);
+
+for marble in PRMarble {
+    stoneMarble.add(marble);
+    }
+smoothMarble.add(marbleSmooth);
+smoothMarble.add(GTmarbleSmooth);
+brickMarble.add(marbleBrick);
+brickMarble.add(GTmarbleBrick);
 
 // Removing Recipes
 furnace.remove(itemIngotRedalloy);

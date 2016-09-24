@@ -98,12 +98,15 @@ config/TravellersGear_inv.cfg
 config/VersionChecker.cfg
 config/YAMPST.nbt
 config/fw.cfg
+TCNodeTracker/*
 mods/carpentersblocks/*
 mods/ic2/*
 servers.dat
+mods/MobiusCore*.jar
+mods/Opis*.jar
 
 # Non essential/custom mods
-mods/FullscreenWindowed*.jar
-mods/OptiFine*.jar
-mods/VersionChecker*.jar
-mods/clearchat*.jar
+mods/FullscreenWindowed*.*
+mods/OptiFine*.*
+mods/VersionChecker*.*
+mods/clearchat*.*
