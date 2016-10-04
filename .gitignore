@@ -104,6 +104,7 @@ mods/ic2/*
 servers.dat
 mods/MobiusCore*.jar
 mods/Opis*.jar
+dumps/*
 
 # Non essential/custom mods
 mods/FullscreenWindowed*.*
