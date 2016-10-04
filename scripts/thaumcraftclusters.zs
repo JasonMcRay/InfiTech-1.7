@@ -201,7 +201,7 @@ Research.addPrereq("PURECOBALT", "PUREIRON", false);
 Research.setConcealed("PURECOBALT", true);
 
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2033> * 3, <gregtech:gt.metaitem.01:2033>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:2>, [10000, 5000, 500], 400, 2);
-
+/*
 <ore:listAllOreTungsten>.addAll(<ore:oreTungsten>);
 <ore:listAllOreTungsten>.addAll(<ore:oreTungstate>);
 <ore:listAllOreTungsten>.add(<gregtech:gt.blockores:841>);
@@ -221,7 +221,8 @@ Research.addPrereq("PURETUNGSTEN", "PUREIRON", false);
 Research.setConcealed("PURETUNGSTEN", true);
 
 BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12081>], [<InfinityCore:itemCluster:11>], 8000, 120, 2500);
-Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2081>, <gregtech:gt.metaitem.01:2081>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:11>, [10000, 7500, 500], 400, 2);
+*/
+Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2841>, <gregtech:gt.metaitem.01:2841>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:11>, [10000, 7500, 500], 400, 2);
 
 <ore:listAllOreIridium>.addAll(<ore:oreIridium>);
 <ore:listAllOreIridium>.add(<gregtech:gt.blockores:84>);
