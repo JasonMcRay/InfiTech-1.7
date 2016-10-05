@@ -1,4 +1,59 @@
-v3.2.10.1 - Experimental update, HUGE changes, pollution introduced (not yet any effects), HQM not updated to reflect changes in GT yet.
+v3.2.11
+
+Quests:
+- Added new questline (GalacticCraft)
+- Added quests for new GregTech blocks
+- "Fast Steel" quest fixed. Now looks only for 128 Wrought Iron.
+- Fixed Jackhammer quest
+- Rebalanced few quests
+
+Mod Updates:
+- GregTech -> 5.09.24
+- Buildcraft -> 7.1.18
+- Galacticraft -> 3.0.12.463
+- Forestry -> 4.2.15.63
+- EnderIO -> 2.3.0.429
+- EnderCore -> 0.2.0.39
+- InfinityCore -> 1.7b
+
+Removed mods:
+- GalacticGreg (now integrated within GT)
+
+Changes/Fixes:
+- Tungsten Clusters no longer obtainable. Current Tungsten Clusters processing changed (gives Tungstate instead of Tungsten)
+- Pollution is now fully implemented (http://forum.industrial-craft.net/index.php?page=Thread&postID=203357#post203357 for more info)
+- Massive load time improvements
+- More heating coils (old ones need to be replaced/converted - put in crafting table will convert them)
+- Marble and Basalt generation now handled by GregTech
+- Lowered Marble gen from Chisel
+- Lategame GT recipe changes (LuV+)
+- Assemblyline fixes and more pollution work
+- Fixed NEI showing Scanners consuming 50mB of Honey instead of 100mB
+- Nerfed Advanced Building Guide
+- Fixed SC2 Solar Panel crafting
+- Removed Wooden Sickle, re-added Stone Sickle.
+- Workaround fix for OC computers not disconecting components on reload, causing "too many components" crash.
+- Fixed few formating issues in Guide books
+- Added Guide Books for Assembly Line and Large Diesel Engine
+- Added info to Large Turbines about different required casings.
+- Fixed T1 Rocket Engine returning empty Lighter
+- Moved Last Millenium portal out from QED
+- Ender rift focus require naquadah rings
+- Fixed book dupe issue with crafting QDS
+- Try fix for wierd lines in maintenance pages of Guide books if you have "wierd/nonstandart" desktop resolutions
+- Removed empty pages in Guide books
+- Re-hauled Autoclaving Combs energy usage (to be in line with Crops)
+- Removed cheap Naq Alloy recipe
+- Fixed crafting of Leggings of the Burning Mantle
+- Fire Resist (meta 8259) and Night Vision (meta 8262) potions can be also now used to make KAMI Leggings and Helmet - these potions still need to be 10 minute versions.
+- Fixed Alvearies in Nether not having Hellish temperature
+- Fixed temperatures of Nitrogen, Oxygen, Methane and Hydrogen gas (now equals to 295K)
+- Added compatibility for Astrominer with GregTech ores
+- Golems no longer suffocate on Planets/Moons
+- Added new Patreons
+
+v3.2.10.1
+- Experimental update, HUGE changes, pollution introduced (not yet any effects), HQM not updated to reflect changes in GT yet.
 
 Mod Updates:
 - Gregtech -> 5.09.22
@@ -9,8 +64,8 @@ Same as v3.2.10 + http://forum.industrial-craft.net/index.php?page=Thread&postID
 v3.2.10
 
 Quests:
-Fixed few quest typos
-Changed "Magnetizing" quest from Crafting to Detect
+- Fixed few quest typos
+- Changed "Magnetizing" quest from Crafting to Detect
 
 Mod Updates:
 - Carpenter's Blocks -> 3.3.8.1__dev_r1
