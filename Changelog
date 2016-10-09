@@ -1,3 +1,16 @@
+v3.2.12 - Hotfix
+
+Quests:
+- Fixed Kanthal coils in Pyrolysis Quest
+- Repeatable Cracking quests made bit less OP
+- Slight nerf to Tungsten and Tungstensteel Shop
+- Fixed icons and labels in shop
+
+Changes/fixes:
+- Workaround fix for Aluminum Compressed Plates (yes it is cheaper on dynamite than other Compressed Plates, deal with it for now)
+- Fixed nugget dupe
+- Fixed certain components not craftable (like Quartzite Screw or Tin Spring/Tin Long Rod) - If more are found, please let us know)
+
 v3.2.11
 
 Quests:
