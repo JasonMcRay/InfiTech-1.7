@@ -15,6 +15,7 @@ import mods.gregtech.PlateBender;
 import mods.nei.NEI;
 import minetweaker.game.IGame;
 import mods.ic2.Compressor;
+import mods.ic2.Extractor;
 import mods.forestry.Moistener;
 import minetweaker.item.IIngredient;
 import minetweaker.item.IItemStack;
@@ -150,6 +151,7 @@ var plateSteel              = <ore:plateSteel>;
 var plateTungstenSteel      = <ore:plateTungstenSteel>;
 var plateWood               = <ore:plateWood>;
 var pressurePlate           = <minecraft:stone_pressure_plate>;
+var reBattery               = <ore:batteryBasic>;
 var reBatteryAdv            = <IC2:itemAdvBat>;
 var ringIridium             = <ore:ringIridium>;
 var ringIron                = <ore:ringIron>;
@@ -172,6 +174,7 @@ var shaftIron               = <IC2:itemRecipePart:11>;
 var shaftSteel              = <IC2:itemRecipePart:12>;
 var singleUseBattery        = <IC2:itemBatSU>;
 var stickIron               = <ore:stickIron>;
+var smallBatteryHull        = <gregtech:gt.metaitem.01:32500>;
 var sugarcane               = <minecraft:reeds>;
 var teleporter              = <IC2:blockMachine2>;
 var tinCan					= <IC2:itemTinCan>;
@@ -546,6 +549,8 @@ AlloySmelter.addRecipe(itemIngotBlueAlloy * 2, itemDustSilver, itemIngotElectrot
 AlloySmelter.addRecipe(itemIngotBlueAlloy * 2, itemIngotSilver, itemIngotElectrotine, 100, 16);
 
 # Recipe Tweaks
+Extractor.addRecipe(smallBatteryHull, reBattery);
+
 recipes.remove(weedingTrowel);
 recipes.addShaped(weedingTrowel, [
     [stickIron, null, stickIron],
