@@ -93,6 +93,7 @@ var fuelRodMOX              = <IC2:reactorMOXSimple:1>;
 var fuelRodThorium          = <gregtech:gt.Thoriumcell>;
 var fuelRodUranium          = <IC2:reactorUraniumSimple:1>;
 var genKinWind              = <IC2:blockKineticGenerator>;
+var geothermalgen           = <ore:craftingGeothermalGenerator>;
 var hydratedCoal            = <ore:dustHydratedCoal>;
 var ic2BlastFurnace         = <IC2:blockMachine3:1>;
 var ic2BlockCuttingMachine  = <IC2:blockMachine3:2>;
@@ -176,6 +177,7 @@ var shaftSteel              = <IC2:itemRecipePart:12>;
 var singleUseBattery        = <IC2:itemBatSU>;
 var stickIron               = <ore:stickIron>;
 var smallBatteryHull        = <gregtech:gt.metaitem.01:32500>;
+var semifluidgen            = <IC2:blockGenerator:7>;
 var sugarcane               = <minecraft:reeds>;
 var teleporter              = <IC2:blockMachine2>;
 var tinCan                  = <IC2:itemTinCan>;
@@ -503,6 +505,7 @@ recipes.addShaped(teleporter, [
 <ore:craftingToolJackHammer>.add(<gregtech:gt.metatool.01:130>);
 <ore:craftingToolJackHammer>.add(<gregtech:gt.metatool.01:131>);
 
+
 # Recipe Fixes
 var wireAluminium16 = <ore:wireGt16Aluminium>;
 var chest = <minecraft:chest>;
@@ -638,6 +641,18 @@ game.setLocalization("ic2.fluidBiomass", "Industrial Biomass");
 
 # combine Universal Fluid Cell and Empty Cell recipes
 <ore:cellEmpty>.add(UniversalFluidCell);
+
+recipes.remove(semifluidgen);
+recipes.addShaped(semifluidgen, [
+     [itemCasingIron, emptyCell, itemCasingIron],
+     [emptyCell, geothermalgen, emptyCell],
+     [itemCasingIron, emptyCell, itemCasingIron]]);
+
+recipes.remove(null);
+recipes.addShaped(null, [
+     [null, null, null],
+     [null, null, null],
+     [null, null, null]]);
 
 
 # Oredictionary
