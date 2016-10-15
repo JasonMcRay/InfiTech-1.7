@@ -1,4 +1,20 @@
-v3.2.12 - Hotfix
+v3.2.14
+
+Mod Updates:
+- GregTech -> 5.09.25
+- Forestry -> 4.2.16.64
+- LogisticPipes -> 0.9.3.128
+- Ewy's Workshop -> 1.1.4
+
+Changes/fixes:
+- SAG Mill Nerf (Lowers base chance rates, increases grinding ball chance rates proportionally, nerfs grinding ball material/power usage)
+- Made StarGate event horizon Opaque (thanks @Nex4rius)
+- Re-Battery can now be extracted to obtain back Small Battery Hull (thanks @Nex4rius)
+- Fixed a lot off missing materials (Vinteum, Steeleaf, Enderium, ...) (but as before, if more found, let us know)
+- Dixed Fupe with Ewy
+- ZTones blocks can be cu to microblocks
+
+v3.2.13 - Hotfix
 
 Quests:
 - Fixed Kanthal coils in Pyrolysis Quest
