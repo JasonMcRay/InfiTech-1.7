@@ -81,6 +81,7 @@ var dustThorium             = <gregtech:gt.metaitem.01:2096>;
 var dustWheat               = <ore:dustWheat>;
 var electricJetpack         = <IC2:itemArmorJetpackElectric>;
 var electricWrench          = <IC2:itemToolWrenchElectric:*>;
+var emptyCell               = <ore:cellEmpty>;
 var energiumDust            = <IC2:itemDust2:2>;
 var energyCrystal           = <IC2:itemBatCrystal:*>;
 var enrichedMOX             = <IC2:itemUran>;
@@ -177,8 +178,9 @@ var stickIron               = <ore:stickIron>;
 var smallBatteryHull        = <gregtech:gt.metaitem.01:32500>;
 var sugarcane               = <minecraft:reeds>;
 var teleporter              = <IC2:blockMachine2>;
-var tinCan					= <IC2:itemTinCan>;
-var tinnedSteel				= <InfinityCore:itemMaterial:18>;
+var tinCan                  = <IC2:itemTinCan>;
+var tinnedSteel             = <InfinityCore:itemMaterial:18>;
+var UniversalFluidCell      = <IC2:itemFluidCell>;
 var uraniumEnriched         = <IC2:itemUran>;
 var weedingTrowel           = <IC2:itemWeedingTrowel>;
 
@@ -633,6 +635,10 @@ SemiFluidGenerator.addFluid(<liquid:creosote> * 53, 8);
 SemiFluidGenerator.addFluid(<liquid:ic2biomass> * 53, 8);
 game.setLocalization("ic2.itemCellBiomass", "Industrial Biomass Cell");
 game.setLocalization("ic2.fluidBiomass", "Industrial Biomass");
+
+# combine Universal Fluid Cell and Empty Cell recipes
+<ore:cellEmpty>.add(UniversalFluidCell);
+
 
 # Oredictionary
 <ore:blockYellowStripes>.add(<gregtech:gt.blockcasings3>);
