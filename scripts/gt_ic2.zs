@@ -93,7 +93,8 @@ var fuelRodMOX              = <IC2:reactorMOXSimple:1>;
 var fuelRodThorium          = <gregtech:gt.Thoriumcell>;
 var fuelRodUranium          = <IC2:reactorUraniumSimple:1>;
 var genKinWind              = <IC2:blockKineticGenerator>;
-var geothermalgen           = <ore:craftingGeothermalGenerator>;
+var geothermalGen           = <IC2:blockGenerator:1>;
+var glass                   = <ore:blockGlass>;
 var hydratedCoal            = <ore:dustHydratedCoal>;
 var ic2BlastFurnace         = <IC2:blockMachine3:1>;
 var ic2BlockCuttingMachine  = <IC2:blockMachine3:2>;
@@ -640,19 +641,25 @@ game.setLocalization("ic2.itemCellBiomass", "Industrial Biomass Cell");
 game.setLocalization("ic2.fluidBiomass", "Industrial Biomass");
 
 # combine Universal Fluid Cell and Empty Cell recipes
-<ore:cellEmpty>.add(UniversalFluidCell);
+emptyCell.add(UniversalFluidCell);
 
 recipes.remove(semifluidgen);
 recipes.addShaped(semifluidgen, [
-     [itemCasingIron, emptyCell, itemCasingIron],
-     [emptyCell, geothermalgen, emptyCell],
-     [itemCasingIron, emptyCell, itemCasingIron]]);
+    [itemCasingIron, emptyCell, itemCasingIron],
+    [emptyCell, geothermalGen, emptyCell],
+    [itemCasingIron, emptyCell, itemCasingIron]]);
 
-recipes.remove(null);
-recipes.addShaped(null, [
-     [null, null, null],
-     [null, null, null],
-     [null, null, null]]);
+recipes.remove(geothermalGen);
+recipes.addShaped(geothermalGen, [
+    [glass, emptyCell, glass],
+    [glass, emptyCell, glass],
+    [itemCasingIron, craftingGenerator, itemCasingIron]]);
+
+recipes.remove(geothermalGen);
+recipes.addShaped(geothermalGen, [
+    [glass, emptyCell, glass],
+    [glass, emptyCell, glass],
+    [itemCasingIron, craftingGenerator, itemCasingIron]]);
 
 
 # Oredictionary
