@@ -42,7 +42,9 @@ var batteryChargerEV        = <gregtech:gt.blockmachines:694>;
 var batteryChargerHV        = <gregtech:gt.blockmachines:693>;
 var batteryChargerLV        = <gregtech:gt.blockmachines:691>;
 var batteryChargerMV        = <gregtech:gt.blockmachines:692>;
+var batteryMaster           = <ore:batteryMaster>;
 var blockEnderium           = <ore:blockEnderium>;
+var bottlingPlant           = <IC2:blockMachine2:10>;
 var cableCopperAnnealed1x   = <gregtech:gt.blockmachines:1386>;
 var cableElectrum4x         = <gregtech:gt.blockmachines:1448>;
 var cableGold1x             = <ore:cableGt01Gold>;
@@ -51,13 +53,17 @@ var cablePlatinum1x         = <ore:cableGt01Platinum>;
 var cableTin1x              = <ore:cableGt01Tin>;
 var casingBasic             = <IC2:blockMachine>;
 var cellLargeSteel          = <gregtech:gt.metaitem.01:32405>;
+var CFSprayer               = <IC2:itemFoamSprayer>;
+var CFBackpack              = <IC2:itemArmorCFPack>;
 var chainsaw                = <IC2:itemToolChainsaw:*>;
 var chargePadBatbox         = <IC2:blockChargepad>;
 var chargePadCESU           = <IC2:blockChargepad:1>;
 var chargePadMFE            = <IC2:blockChargepad:2>;
 var chargePadMFSU           = <IC2:blockChargepad:3>;
+var chest                   = <minecraft:chest>;
 var circuitAdvanced         = <ore:circuitAdvanced>;
 var circuitBasic            = <ore:circuitBasic>;
+var circuitData             = <ore:circuitData>;
 var circuitElite            = <ore:circuitElite>;
 var circuitEnergyFlow       = <gregtech:gt.metaitem.01:32706>;
 var circuitGood             = <ore:circuitGood>;
@@ -70,8 +76,12 @@ var concreteLightBrick      = <gregtech:gt.blockconcretes:11>;
 var concreteLightCobble     = <gregtech:gt.blockconcretes:9>;
 var concreteLightMossyBrick = <gregtech:gt.blockconcretes:13>;
 var concreteLightMossyCobble= <gregtech:gt.blockconcretes:10>;
+var condenser               = <IC2:blockMachine2:15>;
+var copperBoiler            = <IC2:itemRecipePart:6>;
 var craftingGenerator       = <ore:craftingGenerator>;
+var crop                    = <IC2:blockCrop>;
 var cropHarvester           = <IC2:blockMachine3:7>;
+var cropMatron              = <IC2:blockMachine2:2>;
 var diamondDrill            = <IC2:itemToolDDrill:*>;
 var dustGlowstone           = <ore:dustGlowstone>;
 var dustLead                = <ore:dustLead>;
@@ -80,12 +90,18 @@ var dustSulfur              = <ore:dustSulfur>;
 var dustThorium             = <gregtech:gt.metaitem.01:2096>;
 var dustWheat               = <ore:dustWheat>;
 var electricJetpack         = <IC2:itemArmorJetpackElectric>;
+var electricMotor           = <IC2:itemRecipePart:1>;
 var electricWrench          = <IC2:itemToolWrenchElectric:*>;
 var emptyCell               = <ore:cellEmpty>;
 var energiumDust            = <IC2:itemDust2:2>;
 var energyCrystal           = <IC2:itemBatCrystal:*>;
 var enrichedMOX             = <IC2:itemUran>;
-var foilTin					= <gregtech:gt.metaitem.01:29057>;
+var fermenter               = <IC2:blockMachine2:13>;
+var fluidEjectorUpgrade     = <IC2:upgradeModule:4>;
+var fluidDistributor        = <IC2:blockMachine3:4>;
+var fluidHeatGen            = <IC2:blockHeatGenerator:1>;
+var fluidRegulator          = <IC2:blockMachine2:14>;
+var foilTin                 = <gregtech:gt.metaitem.01:29057>;
 var foodSalt                = <ore:foodSalt>;
 var frequencyTrans          = <IC2:itemFreq>;
 var fuelRodEmpty            = <IC2:itemFuelRod>;
@@ -95,6 +111,7 @@ var fuelRodUranium          = <IC2:reactorUraniumSimple:1>;
 var genKinWind              = <IC2:blockKineticGenerator>;
 var geothermalGen           = <IC2:blockGenerator:1>;
 var glass                   = <ore:blockGlass>;
+var heatConductor           = <IC2:itemRecipePart:5>;
 var hydratedCoal            = <ore:dustHydratedCoal>;
 var ic2BlastFurnace         = <IC2:blockMachine3:1>;
 var ic2BlockCuttingMachine  = <IC2:blockMachine3:2>;
@@ -134,17 +151,21 @@ var itemIngotSilver         = <gregtech:gt.metaitem.01:11054>;
 var itemPlankWood           = <gregtech:gt.metaitem.01:17809>;
 var itemRingWood            = <gregtech:gt.metaitem.01:28809>;
 var jetpack                 = <IC2:itemArmorJetpack:*>;
+var KineticSteamGenerator   = <IC2:blockKineticGenerator:1>;
+var LiquidHeatExchanger     = <IC2:blockMachine2:12>;
 var machineCasingAdvanced   = <IC2:blockMachine:12>;
+var machineHullEV           = <gregtech:gt.blockmachines:14>;
 var machineHullHV           = <gregtech:gt.blockmachines:13>;
 var miner                   = <IC2:blockMachine:7>;
 var miningDrill             = <IC2:itemToolDrill:*>;
+var miningPipe              = <IC2:blockMiningPipe>;
 var moduleConveyorHV        = <gregtech:gt.metaitem.01:32632>;
 var motorElectricHV         = <gregtech:gt.metaitem.01:32602>;
 var nuggetSteel             = <gregtech:gt.metaitem.01:9305>;
 var pistonElectricHV        = <gregtech:gt.metaitem.01:32642>;
 var plantball               = <IC2:itemFuelPlantBall>;
 var plateAlloyAdvanced      = <ore:plateAlloyAdvanced>;
-var plateAluminium			= <gregtech:gt.metaitem.01:17019>;
+var plateAluminium          = <gregtech:gt.metaitem.01:17019>;
 var plateCarbon             = <ore:plateAlloyCarbon>;
 var plateDenseIron          = <ore:plateDenseIron>;
 var plateIron               = <ore:plateIron>;
@@ -154,6 +175,7 @@ var plateSteel              = <ore:plateSteel>;
 var plateTungstenSteel      = <ore:plateTungstenSteel>;
 var plateWood               = <ore:plateWood>;
 var pressurePlate           = <minecraft:stone_pressure_plate>;
+var pump                    = <IC2:blockMachine:8>;
 var reBattery               = <ore:batteryBasic>;
 var reBatteryAdv            = <IC2:itemAdvBat>;
 var ringIridium             = <ore:ringIridium>;
@@ -176,6 +198,7 @@ var sensorHV                = <gregtech:gt.metaitem.01:32692>;
 var shaftIron               = <IC2:itemRecipePart:11>;
 var shaftSteel              = <IC2:itemRecipePart:12>;
 var singleUseBattery        = <IC2:itemBatSU>;
+var solarDistiller          = <IC2:blockMachine3:3>;
 var stickIron               = <ore:stickIron>;
 var smallBatteryHull        = <gregtech:gt.metaitem.01:32500>;
 var semifluidgen            = <IC2:blockGenerator:7>;
@@ -183,9 +206,11 @@ var sugarcane               = <minecraft:reeds>;
 var teleporter              = <IC2:blockMachine2>;
 var tinCan                  = <IC2:itemTinCan>;
 var tinnedSteel             = <InfinityCore:itemMaterial:18>;
+var treetap                 = <IC2:itemTreetap>;
 var UniversalFluidCell      = <IC2:itemFluidCell>;
 var uraniumEnriched         = <IC2:itemUran>;
 var weedingTrowel           = <IC2:itemWeedingTrowel>;
+var wireAluminium16         = <ore:wireGt16Aluminium>;
 
 # seeds
 
@@ -508,11 +533,6 @@ recipes.addShaped(teleporter, [
 
 
 # Recipe Fixes
-var wireAluminium16 = <ore:wireGt16Aluminium>;
-var chest = <minecraft:chest>;
-var machineHullEV = <gregtech:gt.blockmachines:14>;
-var batteryMaster = <ore:batteryMaster>;
-var circuitData = <ore:circuitData>;
 
 recipes.remove(batteryChargerEV); // Remove after fix in GT
 recipes.addShaped(batteryChargerEV, [
@@ -655,12 +675,83 @@ recipes.addShaped(geothermalGen, [
     [glass, emptyCell, glass],
     [itemCasingIron, craftingGenerator, itemCasingIron]]);
 
-recipes.remove(geothermalGen);
-recipes.addShaped(geothermalGen, [
-    [glass, emptyCell, glass],
-    [glass, emptyCell, glass],
-    [itemCasingIron, craftingGenerator, itemCasingIron]]);
+recipes.remove(fluidHeatGen);
+recipes.addShaped(fluidHeatGen, [
+    [itemCasingIron, emptyCell, itemCasingIron],
+    [emptyCell, heatConductor, emptyCell],
+    [itemCasingIron, emptyCell, itemCasingIron]]);
 
+recipes.remove(KineticSteamGenerator);
+recipes.addShaped(KineticSteamGenerator, [
+    [itemCasingSteel, itemCasingSteel, itemCasingSteel],
+    [copperBoiler, shaftIron, shaftIron],
+    [emptyCell, itemCasingSteel, itemCasingSteel]]);
+
+recipes.remove(solarDistiller);
+recipes.addShaped(solarDistiller, [
+    [glass, glass, glass],
+    [glass, null, glass],
+    [emptyCell, casingBasic, emptyCell]]);
+
+recipes.remove(CFSprayer);
+recipes.addShaped(CFSprayer, [
+    [itemCasingIron, null, null],
+    [null, itemCasingIron, null],
+    [null, emptyCell, itemCasingIron]]);
+
+recipes.remove(CFBackpack);
+recipes.addShaped(CFBackpack, [
+    [CFSprayer, circuitBasic, CFSprayer],
+    [emptyCell, itemCasingIron, emptyCell],
+    [emptyCell, null, emptyCell]]);
+
+recipes.remove(LiquidHeatExchanger);
+recipes.addShaped(LiquidHeatExchanger, [
+    [glass, emptyCell, glass],
+    [glass, emptyCell, glass],
+    [itemCasingIron, heatConductor, itemCasingIron]]);
+
+recipes.remove(fermenter);
+recipes.addShaped(fermenter, [
+    [itemCasingIron, itemCasingIron, itemCasingIron],
+    [emptyCell, emptyCell, emptyCell],
+    [itemCasingIron, heatConductor, itemCasingIron]]);
+
+recipes.remove(fluidRegulator);
+recipes.addShaped(fluidRegulator, [
+    [itemCasingIron, itemCasingIron, itemCasingIron],
+    [emptyCell, electricMotor, emptyCell],
+    [itemCasingIron, circuitBasic, itemCasingIron]]);
+
+recipes.remove(condenser);
+recipes.addShaped(condenser, [
+    [emptyCell, itemCasingIron, emptyCell],
+    [emptyCell, casingBasic, emptyCell],
+    [itemCasingIron, circuitBasic, itemCasingIron]]);
+
+recipes.remove(fluidDistributor);
+recipes.addShaped(fluidDistributor, [
+    [fluidEjectorUpgrade, fluidEjectorUpgrade, fluidEjectorUpgrade],
+    [fluidEjectorUpgrade, casingBasic, fluidEjectorUpgrade],
+    [emptyCell, emptyCell, emptyCell]]);
+
+recipes.remove(cropMatron);
+recipes.addShaped(cropMatron, [
+    [circuitBasic, chest, circuitBasic],
+    [emptyCell, casingBasic, emptyCell],
+    [crop, crop, crop]]);
+
+recipes.remove(pump);
+recipes.addShaped(pump, [
+    [emptyCell, circuitBasic, emptyCell],
+    [emptyCell, casingBasic, emptyCell],
+    [miningPipe, treetap, miningPipe]]);
+
+recipes.remove(bottlingPlant);
+recipes.addShaped(bottlingPlant, [
+    [null, emptyCell, null],
+    [null, emptyCell, null],
+    [circuitBasic, casingBasic, circuitBasic]]);
 
 # Oredictionary
 <ore:blockYellowStripes>.add(<gregtech:gt.blockcasings3>);
