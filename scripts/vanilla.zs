@@ -92,6 +92,8 @@ recipes.removeShapeless(coal);
 recipes.removeShapeless(dustCoal);
 recipes.removeShapeless(charcoal);
 recipes.removeShapeless(dustCharcoal);
+
+mods.gregtech.Assembler.addRecipe(<minecraft:saddle>, <harvestcraft:hardenedleatherItem> * 8, <minecraft:string> * 4, <liquid:glue> * 1000, 300, 64);
 	
 # Recipe Fixes
 recipes.remove(sensorDaylight);
