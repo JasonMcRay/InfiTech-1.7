@@ -531,7 +531,6 @@ recipes.addShaped(teleporter, [
 <ore:craftingToolJackHammer>.add(<gregtech:gt.metatool.01:130>);
 <ore:craftingToolJackHammer>.add(<gregtech:gt.metatool.01:131>);
 
-
 # Recipe Fixes
 
 recipes.remove(batteryChargerEV); // Remove after fix in GT
@@ -660,7 +659,7 @@ SemiFluidGenerator.addFluid(<liquid:ic2biomass> * 53, 8);
 game.setLocalization("ic2.itemCellBiomass", "Industrial Biomass Cell");
 game.setLocalization("ic2.fluidBiomass", "Industrial Biomass");
 
-# combine Universal Fluid Cell and Empty Cell recipes
+# combining Universal Fluid Cell and Empty Cell recipes --- Nex4rius
 emptyCell.add(UniversalFluidCell);
 
 recipes.remove(semifluidgen);
