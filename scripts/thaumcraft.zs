@@ -1,5 +1,5 @@
 //***************************
-// ITTweak - Thaucraft
+// ITTweak - Thaumcraft
 //  modified by Xavion
 // Nearly entirely derived from KRTweak by Nono
 //
@@ -2206,3 +2206,8 @@ InfernalBlastfurnace.removeRecipe(<GalacticraftCore:item.basicItem:5>);
 InfernalBlastfurnace.removeRecipe(<BigReactors:BRIngot>);
 
 print("Finished Thaumcraft Changes");
+
+// Workarounds
+# Quicksilver Dupe
+recipes.removeShapeless(<Thaumcraft:ItemNugget:5>);
+<ore:nuggetQuicksilver>.remove(<Thaumcraft:ItemResource:3>);
