@@ -532,11 +532,6 @@ recipes.addShaped(<GalacticraftCore:item.oxygenTankLightFull:900>, [
 
 recipes.addShaped(<GalacticraftCore:item.oxygenTankLightFull:900>, [
 [CompressedAl, OxygenPipe,CompressedAl],
-[CompressedAl, <IC2:itemFluidCell>, CompressedAl],
-[CompressedAl, CompressedAl, CompressedAl]]);
-
-recipes.addShaped(<GalacticraftCore:item.oxygenTankLightFull:900>, [
-[CompressedAl, OxygenPipe,CompressedAl],
 [CompressedAl, <GalacticraftCore:item.canister>, CompressedAl],
 [CompressedAl, CompressedAl, CompressedAl]]);
 
