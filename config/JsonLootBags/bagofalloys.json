@@ -7,15 +7,15 @@
     ],
     "invSlotsMin": 36,
     "invSlotsMax": 36,
-    "amountOfItemsMin": 2,
-    "amountOfItemsMax": 2,
+    "amountOfItemsMin": 1,
+    "amountOfItemsMax": 1,
     "rarity": "Epic",
     "items":
     [
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 1,
+            "max": 8,
+            "weight": 2,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -24,9 +24,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -35,9 +35,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -46,9 +46,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -57,9 +57,9 @@
             }    
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -68,9 +68,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -79,9 +79,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -90,9 +90,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -101,9 +101,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -112,9 +112,9 @@
             }    
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -123,9 +123,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -134,9 +134,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -145,9 +145,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -156,9 +156,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -167,9 +167,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -178,9 +178,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -189,9 +189,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -200,9 +200,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -211,9 +211,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -222,9 +222,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -233,9 +233,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -244,9 +244,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -255,9 +255,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -266,9 +266,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -277,9 +277,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -288,9 +288,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -299,9 +299,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -310,9 +310,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -321,9 +321,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -332,9 +332,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -343,9 +343,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -354,9 +354,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -365,9 +365,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -376,9 +376,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "gregtech:gt.metaitem.01",
@@ -387,9 +387,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "EnderIO:itemAlloy",
@@ -398,9 +398,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "EnderIO:itemAlloy",
@@ -409,9 +409,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "EnderIO:itemAlloy",
@@ -420,9 +420,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "EnderIO:itemAlloy",
@@ -431,9 +431,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "EnderIO:itemAlloy",
@@ -442,9 +442,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "EnderIO:itemAlloy",
@@ -453,9 +453,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "EnderIO:itemAlloy",
@@ -464,9 +464,9 @@
             }
         },
         {
-            "min": 8,
-            "max": 64,
-            "weight": 50,
+            "min": 2,
+            "max": 10,
+            "weight": 10,
             "itemstack":
             {
                 "item": "IC2:itemDust",
