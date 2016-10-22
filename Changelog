@@ -1,3 +1,19 @@
+v3.2.15
+
+Mod Updates:
+- NuclearControl 2 -> 2.4.2a
+- HQM -> 4.4.4a - CUSTOMIZED
+
+Changes/Fixes:
+- Sadles can now be crafted (thanks @Nex4rius)
+- Re-enabled Vanilla doors animations
+- Unified usage of Empty Cells and Universal Cells in recipes (thanks @Nex4rius)
+- Nerfed Alloy Bags
+- Fixed crash with Nuclear Control
+- Fixed crash with teams in HQM (huge thanks to @pgelinas)
+- Workaround fix for missing recipe for H-D Alloy
+- Fixed Quicksilver Drop dupe
+
 v3.2.14
 
 Mod Updates:
