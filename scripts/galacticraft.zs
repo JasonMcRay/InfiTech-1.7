@@ -380,9 +380,9 @@ recipes.addShaped(<GalacticraftCore:tile.oxygenCompressor:4>, [
 
 //Oxygen Storage Module
 recipes.addShaped(<GalacticraftCore:tile.machine2:8>, [
-[CompressedSteel, <GalacticraftCore:item.oxygenTankHeavyFull:2700>, CompressedSteel],
-[<GalacticraftCore:item.oxygenTankHeavyFull:2700>, <gregtech:gt.blockcasings2>, <GalacticraftCore:item.oxygenTankHeavyFull:2700>],
-[CompressedSteel, <GalacticraftCore:item.oxygenTankHeavyFull:2700>, CompressedSteel]]);
+[CompressedMeteoricIron, <gregtech:gt.metaitem.01:32405>, CompressedMeteoricIron],
+[<gregtech:gt.metaitem.01:32405>, <gregtech:gt.blockcasings2:13>, <gregtech:gt.metaitem.01:32405>],
+[CompressedMeteoricIron, <gregtech:gt.metaitem.01:32405>, CompressedMeteoricIron]]);
 
 //Oxygen Bubble Distributor
 recipes.addShaped(<GalacticraftCore:tile.distributor>, [
