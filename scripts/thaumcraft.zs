@@ -471,10 +471,10 @@ Research.removeResearch("WGFAKEINFERNALFURNACE");
 
 // Wrought Iron
 Research.addResearch("GT_TRANSIRONWROUGHT", "ALCHEMY", "metallum 3, permutatio 3, ordo 1", 4, 5, 1, <gregtech:gt.metaitem.01:9304>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSIRONWROUGHT", "Wrought Iron Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSIRONWROUGHT", "[GT] Transforming iron to wrought iron");
+game.setLocalization("tc.research_name.GT_TRANSIRONWROUGHT", "Wrought Iron Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSIRONWROUGHT", "[GT] Transforming iron to wrought iron");
 Research.addPage("GT_TRANSIRONWROUGHT", "kirara.research_page.GT_TRANSIRONWROUGHT.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSIRONWROUGHT.1", "You have discovered a way of making iron harder by thoroughly heating its components.<BR>This method can be used to create a material called wrought iron, which is used in many non-Thaumaturgic applications.");
+game.setLocalization("kirara.research_page.GT_TRANSIRONWROUGHT.1", "You have discovered a way of making iron harder by thoroughly heating its components.<BR>This method can be used to create a material called wrought iron, which is used in many non-Thaumaturgic applications.");
 Research.addPrereq("GT_TRANSIRONWROUGHT", "ALUMENTUM", false);
 Research.addPrereq("GT_TRANSIRONWROUGHT", "TRANSGOLD", false);
 Crucible.addRecipe("GT_TRANSIRONWROUGHT", <gregtech:gt.metaitem.01:9304>, <ore:nuggetIron>, "ignis 1");
@@ -483,10 +483,10 @@ Research.setConcealed("GT_TRANSIRONWROUGHT", true);
 
 // Thaumium
 Research.addResearch("GT_TRANSTHAUMIUM", "ALCHEMY", "metallum 3, permutatio 3, praecantatio 1", 6, 5, 2, <Thaumcraft:ItemResource:2>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSTHAUMIUM", "Thaumium Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSTHAUMIUM", "[GT] Transforming iron to thaumium");
+game.setLocalization("tc.research_name.GT_TRANSTHAUMIUM", "Thaumium Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSTHAUMIUM", "[GT] Transforming iron to thaumium");
 Research.addPage("GT_TRANSTHAUMIUM", "kirara.research_page.GT_TRANSTHAUMIUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSTHAUMIUM.1", "As it is quite expensive to expend even slivers of shards to produce thaumium, you have devised an alternative method of manufacturing the magical metal.<BR>By exposing wrought iron to praecantatio essentia in the same fashion that you used ignis to manufacture wrought iron, you have effectively created a method to manufacture thaumium without the use of valuable crystal shards.");
+game.setLocalization("kirara.research_page.GT_TRANSTHAUMIUM.1", "As it is quite expensive to expend even slivers of shards to produce thaumium, you have devised an alternative method of manufacturing the magical metal.<BR>By exposing wrought iron to praecantatio essentia in the same fashion that you used ignis to manufacture wrought iron, you have effectively created a method to manufacture thaumium without the use of valuable crystal shards.");
 Research.addPrereq("GT_TRANSTHAUMIUM", "GT_TRANSIRONWROUGHT", false);
 Crucible.addRecipe("GT_TRANSTHAUMIUM", <Thaumcraft:ItemResource:2>, <ore:ingotWroughtIron>, "praecantatio 4");
 Research.addCruciblePage("GT_TRANSTHAUMIUM", <Thaumcraft:ItemResource:2>);
@@ -496,7 +496,7 @@ Research.setConcealed("GT_TRANSTHAUMIUM", true);
 Research.moveResearch("GT_IRON_TO_STEEL", "ALCHEMY", 6, 7); 
 Research.clearPages("GT_IRON_TO_STEEL"); 
 Research.addPage("GT_IRON_TO_STEEL", "kirara.research_page.GT_IRON_TO_STEEL.1");
-game.setLocalization("en_US", "kirara.research_page.GT_IRON_TO_STEEL.1", "You have discovered a way of making wrought iron even harder by breaking down and reordering its components.<BR>This method can be used to create a material called steel, which is used in many non-Thaumaturgic applications.");
+game.setLocalization("kirara.research_page.GT_IRON_TO_STEEL.1", "You have discovered a way of making wrought iron even harder by breaking down and reordering its components.<BR>This method can be used to create a material called steel, which is used in many non-Thaumaturgic applications.");
 Crucible.removeRecipe(<gregtech:gt.metaitem.01:9305>);
 Crucible.addRecipe("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:9305>, <gregtech:gt.metaitem.01:9304>, "ordo 1");
 Research.addCruciblePage("GT_IRON_TO_STEEL", <gregtech:gt.metaitem.01:9305>);
@@ -506,10 +506,10 @@ Warp.addToResearch("GT_IRON_TO_STEEL", 2);
 
 // Steeleaf
 Research.addResearch("GT_TRANSSTEELEAF", "ALCHEMY", "metallum 3, permutatio 3, tutamen 1, lucrum 1", 8, 6, 2, <gregtech:gt.metaitem.01:9339>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSSTEELEAF", "Steeleaf Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSSTEELEAF", "[GT] Mixing life with metal");
+game.setLocalization("tc.research_name.GT_TRANSSTEELEAF", "Steeleaf Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSSTEELEAF", "[GT] Mixing life with metal");
 Research.addPage("GT_TRANSSTEELEAF", "kirara.research_page.GT_TRANSSTEELEAF.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSSTEELEAF.1", "You have discovered a way of imbuing inorganic steel with praecantatio and herba essentia to create an organic alloy that has interesting magical properties.<BR>Unfortunately, this process irreversibly transmutes a significant fraction of the steel consumed in the process, rendering only one-half of the metal recoverable.");
+game.setLocalization("kirara.research_page.GT_TRANSSTEELEAF.1", "You have discovered a way of imbuing inorganic steel with praecantatio and herba essentia to create an organic alloy that has interesting magical properties.<BR>Unfortunately, this process irreversibly transmutes a significant fraction of the steel consumed in the process, rendering only one-half of the metal recoverable.");
 Research.addPrereq("GT_TRANSSTEELEAF", "GT_IRON_TO_STEEL", false);
 Crucible.addRecipe("GT_TRANSSTEELEAF", <gregtech:gt.metaitem.01:9339>, <ore:nuggetSteel>, "praecantatio 1, herba 1");
 Research.addCruciblePage("GT_TRANSSTEELEAF", <gregtech:gt.metaitem.01:9339>);
@@ -517,10 +517,10 @@ Research.setConcealed("GT_TRANSSTEELEAF", true);
 
 // Knightmetal
 Research.addResearch("GT_TRANSKNIGHTMETAL", "ALCHEMY", "metallum 3, permutatio 3, tutamen 1, lucrum 1", 10, 7, 2, <gregtech:gt.metaitem.01:9362>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSKNIGHTMETAL", "Knightmetal Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSKNIGHTMETAL", "[GT] Alchemically reinforced steel");
+game.setLocalization("tc.research_name.GT_TRANSKNIGHTMETAL", "Knightmetal Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSKNIGHTMETAL", "[GT] Alchemically reinforced steel");
 Research.addPage("GT_TRANSKNIGHTMETAL", "kirara.research_page.GT_TRANSKNIGHTMETAL.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSKNIGHTMETAL.1", "You have discovered a way of making steel even harder by imbuing it with magic.<BR>This method creates a strange, green material that is much tougher than the base steel it originated from. Unfortunately, this process vaporizes a significant fraction of the steel consumed in the process, rendering only two-thirds of the metal recoverable.");
+game.setLocalization("kirara.research_page.GT_TRANSKNIGHTMETAL.1", "You have discovered a way of making steel even harder by imbuing it with magic.<BR>This method creates a strange, green material that is much tougher than the base steel it originated from. Unfortunately, this process vaporizes a significant fraction of the steel consumed in the process, rendering only two-thirds of the metal recoverable.");
 Research.addPrereq("GT_TRANSKNIGHTMETAL", "GT_TRANSSTEELEAF", false);
 Crucible.addRecipe("GT_TRANSKNIGHTMETAL", <gregtech:gt.metaitem.01:9362>, <ore:nuggetSteel>, "praecantatio 1, tutamen 2");
 Research.addCruciblePage("GT_TRANSKNIGHTMETAL", <gregtech:gt.metaitem.01:9362>);
@@ -528,10 +528,10 @@ Research.setConcealed("GT_TRANSKNIGHTMETAL", true);
 
 // Fiery Steel
 Research.addResearch("GT_TRANSFIERYSTEEL", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 10, 5, 3, <gregtech:gt.metaitem.01:9346>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSFIERYSTEEL", "Fiery Steel Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSFIERYSTEEL", "[GT] Enriching steel with cleansing fire");
+game.setLocalization("tc.research_name.GT_TRANSFIERYSTEEL", "Fiery Steel Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSFIERYSTEEL", "[GT] Enriching steel with cleansing fire");
 Research.addPage("GT_TRANSFIERYSTEEL", "kirara.research_page.GT_TRANSFIERYSTEEL.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSFIERYSTEEL.1", "You theorized that altering the knightmetal transmutation recipe by based off the legends of the hyrda would produce a metal with strength unknown.<BR>As it turns out, the process was even more effective than you initially theorized, while the process does unfortunately cause the metal to crumble into dust it nevertheless radiates the power of the hyrda's breath.");
+game.setLocalization("kirara.research_page.GT_TRANSFIERYSTEEL.1", "You theorized that altering the knightmetal transmutation recipe by based off the legends of the hyrda would produce a metal with strength unknown.<BR>As it turns out, the process was even more effective than you initially theorized, while the process does unfortunately cause the metal to crumble into dust it nevertheless radiates the power of the hyrda's breath.");
 Research.addPrereq("GT_TRANSFIERYSTEEL", "GT_TRANSKNIGHTMETAL", false);
 Research.addPrereq("GT_TRANSFIERYSTEEL", "GT_FIRESTONE", false);
 Crucible.addRecipe("GT_TRANSFIERYSTEEL", <gregtech:gt.metaitem.01:9346>, <ore:nuggetSteel>, "praecantatio 1, ignis 4, corpus 2");
@@ -542,10 +542,10 @@ Research.setConcealed("GT_TRANSFIERYSTEEL", true);
 
 // Fiery Blood
 Research.addResearch("GT_TRANSFIERYBLOOD", "ALCHEMY", "permutatio 3, victus 3, ignis 3, praecantatio 3", 10, 3, 3, <gregtech:gt.metaitem.01:30346>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSFIERYBLOOD", "Fiery Blood Infusion");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSFIERYBLOOD", "[GT] 100% iron free steel");
+game.setLocalization("tc.research_name.GT_TRANSFIERYBLOOD", "Fiery Blood Infusion");
+game.setLocalization("tc.research_text.GT_TRANSFIERYBLOOD", "[GT] 100% iron free steel");
 Research.addPage("GT_TRANSFIERYBLOOD", "kirara.research_page.GT_TRANSFIERYBLOOD.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSFIERYBLOOD.1", "You long thought that there was something more to fiery steel, a way to reclaim the metal should be possible should it not? After much work you created this process, exploiting the power of infusion you have managed to remove all traces of metal within the substance, leaving only a liquid that thrums with fire unlike any other you've seen. <BR>This process uses far larger amounts of fiery steel than you initially predicted and requires the strongest beer you can produce, the legendary Dragon Blood.");
+game.setLocalization("kirara.research_page.GT_TRANSFIERYBLOOD.1", "You long thought that there was something more to fiery steel, a way to reclaim the metal should be possible should it not? After much work you created this process, exploiting the power of infusion you have managed to remove all traces of metal within the substance, leaving only a liquid that thrums with fire unlike any other you've seen. <BR>This process uses far larger amounts of fiery steel than you initially predicted and requires the strongest beer you can produce, the legendary Dragon Blood.");
 Research.addPrereq("GT_TRANSFIERYBLOOD", "GT_TRANSFIERYSTEEL", false);
 Research.addPrereq("GT_TRANSFIERYBLOOD", "INFUSION", true);
 Infusion.addRecipe("GT_TRANSFIERYBLOOD", <IC2:itemCellEmpty:2>, [<gregtech:gt.metaitem.01:2346>, <gregtech:gt.metaitem.02:32114>, <gregtech:gt.metaitem.01:2346>, <Thaumcraft:ItemShard:2>, <gregtech:gt.metaitem.01:2346>, <gregtech:gt.metaitem.02:32114>, <gregtech:gt.metaitem.01:2346>, <gregtech:gt.metaitem.02:32114>, <gregtech:gt.metaitem.01:2346>, <Thaumcraft:ItemShard:2>, <gregtech:gt.metaitem.01:2346>, <gregtech:gt.metaitem.02:32114>], "aqua 16, victus 16, ignis 16, ordo 16", <gregtech:gt.metaitem.01:30346>, 8);
@@ -556,10 +556,10 @@ Warp.addToItem(<gregtech:gt.metaitem.01:30346>, 1);
 
 // Astral Silver
 Research.addResearch("GT_TRANSASTRALSILVER", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 12, 7, 2, <gregtech:gt.metaitem.01:9333>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSASTRALSILVER", "Astral Silver Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSASTRALSILVER", "[GT] Teleporters hate this");
+game.setLocalization("tc.research_name.GT_TRANSASTRALSILVER", "Astral Silver Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSASTRALSILVER", "[GT] Teleporters hate this");
 Research.addPage("GT_TRANSASTRALSILVER", "kirara.research_page.GT_TRANSASTRALSILVER.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSASTRALSILVER.1", "The same process used to produce knightmetal may be used to imbue silver with alienis essentia, rendering it far more effective against End-affiliated opponents.");
+game.setLocalization("kirara.research_page.GT_TRANSASTRALSILVER.1", "The same process used to produce knightmetal may be used to imbue silver with alienis essentia, rendering it far more effective against End-affiliated opponents.");
 Research.addPrereq("GT_TRANSASTRALSILVER", "GT_TRANSKNIGHTMETAL", false);
 Crucible.addRecipe("GT_TRANSASTRALSILVER", <gregtech:gt.metaitem.01:9333>, <ore:nuggetSilver>, "praecantatio 1, alienis 1, iter 1");
 Research.addCruciblePage("GT_TRANSASTRALSILVER", <gregtech:gt.metaitem.01:9333>);
@@ -567,10 +567,10 @@ Research.setConcealed("GT_TRANSASTRALSILVER", true);
 
 // Enderium
 Research.addResearch("GT_TRANSENDERIUM", "ALCHEMY", "metallum 3, permutatio 3, ignis 1, praecantatio 1", 12, 5, 3, <gregtech:gt.metaitem.01:9321>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSENDERIUM", "Enderium Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSENDERIUM", "[GT] Harnessing the power of the End");
+game.setLocalization("tc.research_name.GT_TRANSENDERIUM", "Enderium Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSENDERIUM", "[GT] Harnessing the power of the End");
 Research.addPage("GT_TRANSENDERIUM", "kirara.research_page.GT_TRANSENDERIUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSENDERIUM.1", "By substituting silver with platinum in the Astral Silver transmutation process, you have managed to create an exotic alloy with surprising attributes - the metal pulses as though it were an ender pearl, and possess many of its properties.");
+game.setLocalization("kirara.research_page.GT_TRANSENDERIUM.1", "By substituting silver with platinum in the Astral Silver transmutation process, you have managed to create an exotic alloy with surprising attributes - the metal pulses as though it were an ender pearl, and possess many of its properties.");
 Research.addPrereq("GT_TRANSENDERIUM", "GT_TRANSASTRALSILVER", false);
 Crucible.addRecipe("GT_TRANSENDERIUM", <gregtech:gt.metaitem.01:9321>, <ore:nuggetEnderiumBase>, "praecantatio 1, alienis 1, iter 1, ignis 2");
 Research.addCruciblePage("GT_TRANSENDERIUM", <gregtech:gt.metaitem.01:9321>);
@@ -579,27 +579,27 @@ Research.setConcealed("GT_TRANSENDERIUM", true);
 
 // Adamantium
 Research.addResearch("GT_TRANSADAMANTIUM", "ALCHEMY", "metallum 3, permutatio 3, tutamen 3, praecantatio 1, ordo 1, tempus 1, telum 1, instrumentum 1", 12, 3, 1, <gregtech:gt.metaitem.01:9319>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSADAMANTIUM", "Adamantium Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSADAMANTIUM", "[GT] Second only to the stars themselves");
+game.setLocalization("tc.research_name.GT_TRANSADAMANTIUM", "Adamantium Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSADAMANTIUM", "[GT] Second only to the stars themselves");
 Research.addPage("GT_TRANSADAMANTIUM", "kirara.research_page.GT_TRANSADAMANTIUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSADAMANTIUM.1", "Building off past sucesses with knightmetal and enderium you have managed your ultimate creation in the field of metallurgy. Unfortunately the process is far from cheap and the temperatures required to shape the metal are barely achievable even with all your power and skill leveraged to that end.<BR>As with many others, this recipe was initially transcribed incorrectly and is actually performed with only tiny amounts of dust, I really should go to that appointment...");
+game.setLocalization("kirara.research_page.GT_TRANSADAMANTIUM.1", "Building off past sucesses with knightmetal and enderium you have managed your ultimate creation in the field of metallurgy. Unfortunately the process is far from cheap and the temperatures required to shape the metal are barely achievable even with all your power and skill leveraged to that end.<BR>As with many others, this recipe was initially transcribed incorrectly and is actually performed with only tiny amounts of dust, I really should go to that appointment...");
 Research.addPrereq("GT_TRANSADAMANTIUM",  "GT_TRANSENDERIUM", false);
 Crucible.addRecipe("GT_TRANSADAMANTIUM", <gregtech:gt.metaitem.01:9319>, <ore:dustTinyKnightmetal>, "tutamen 4, ordo 4, nebrisum 4");
 Research.addCruciblePage("GT_TRANSADAMANTIUM", <gregtech:gt.metaitem.01:9319>);
 Crucible.removeRecipe(<gregtech:gt.metaitem.01:9319>);
 Crucible.addRecipe("GT_TRANSADAMANTIUM", <gregtech:gt.metaitem.01:319>, <ore:dustTinyKnightmetal>, "tutamen 4, ordo 4, nebrisum 4");
 Research.setConcealed("GT_TRANSADAMANTIUM", true);
-game.setLocalization("en_US", "gt.metaitem.01.12319.name", "Hot Adamantium Ingot");
+game.setLocalization("gt.metaitem.01.12319.name", "Hot Adamantium Ingot");
 // NEI.addEntry(<gregtech:gt.metaitem.01:12319>);
 BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12319>], [<gregtech:gt.metaitem.01:2319>], 2500, 1600, 3598);
 VacuumFreezer.addRecipe(<gregtech:gt.metaitem.01:11319>, <gregtech:gt.metaitem.01:12319>, 800);
 
 // Damascus Steel
 Research.addResearch("GT_TRANSSTEELDAMASCUS", "ALCHEMY", "metallum 3, permutatio 3, vitreus 1, perditio 1", 13, 9, 2, <gregtech:gt.metaitem.01:9335>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSSTEELDAMASCUS", "Damascus Steel Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSSTEELDAMASCUS", "[GT] Refining steel even further");
+game.setLocalization("tc.research_name.GT_TRANSSTEELDAMASCUS", "Damascus Steel Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSSTEELDAMASCUS", "[GT] Refining steel even further");
 Research.addPage("GT_TRANSSTEELDAMASCUS", "kirara.research_page.GT_TRANSSTEELDAMASCUS.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSSTEELDAMASCUS.1", "You have discovered a way of making steel even harder by breaking down and crystallizing its components on an atomic level.<BR>This method can be used to refine an amazingly durable variant of steel resembling that of the legendary Damascus Steel normally only found in ancient ruins. Unfortunately, this process leaves the material in dust form, requiring further processing via non-Thaumaturgical means.");
+game.setLocalization("kirara.research_page.GT_TRANSSTEELDAMASCUS.1", "You have discovered a way of making steel even harder by breaking down and crystallizing its components on an atomic level.<BR>This method can be used to refine an amazingly durable variant of steel resembling that of the legendary Damascus Steel normally only found in ancient ruins. Unfortunately, this process leaves the material in dust form, requiring further processing via non-Thaumaturgical means.");
 Research.addPrereq("GT_TRANSSTEELDAMASCUS", "GT_IRON_TO_STEEL", false);
 Crucible.addRecipe("GT_TRANSSTEELDAMASCUS", <gregtech:gt.metaitem.01:9335>, <ore:nuggetSteel>, "vitreus 1, ordo 1, machina 1");
 Research.addCruciblePage("GT_TRANSSTEELDAMASCUS", <gregtech:gt.metaitem.01:9335>);
@@ -619,12 +619,12 @@ Research.addPrereq("GT_ADVANCEDMETALLURGY", "GT_TRANSSTEELDAMASCUS", false);
 
 // Platinum
 Research.addResearch("GT_TRANSPLATINUM", "ALCHEMY", "metallum 5, nebrisum 3, permutatio 3, ordo 3, lucrum 3", 19, 15, 2, <gregtech:gt.metaitem.01:9085>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSPLATINUM", "Platinum Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSPLATINUM", "[GT] Transformation of metals to Platinum");
+game.setLocalization("tc.research_name.GT_TRANSPLATINUM", "Platinum Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSPLATINUM", "[GT] Transformation of metals to Platinum");
 
 // Research.clearPages("GT_TRANSPLATINUM"); 
 Research.addPage("GT_TRANSPLATINUM", "kirara.research_page.GT_TRANSPLATINUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSPLATINUM.1", "You have discovered a way to multiply Platinum by steeping Platinum nuggets in metallum harvested from other metals.<BR>This transmutation is quite costly, requiring a whole ingot of platinum's worth in nebrisum to create a mere nugget of the same metal. Perhaps if you could discover an alternative source for this essentia...");
+game.setLocalization("kirara.research_page.GT_TRANSPLATINUM.1", "You have discovered a way to multiply Platinum by steeping Platinum nuggets in metallum harvested from other metals.<BR>This transmutation is quite costly, requiring a whole ingot of platinum's worth in nebrisum to create a mere nugget of the same metal. Perhaps if you could discover an alternative source for this essentia...");
 Crucible.addRecipe("GT_TRANSPLATINUM", <gregtech:gt.metaitem.01:9085> * 3, <gregtech:gt.metaitem.01:9085>, "nebrisum 1, lucrum 2, metallum 2");
 Research.addCruciblePage("GT_TRANSPLATINUM", <gregtech:gt.metaitem.01:9085>);
 Research.addPrereq("GT_TRANSPLATINUM", "GT_ADVANCEDMETALLURGY", false); 
@@ -633,12 +633,12 @@ Research.setConcealed("GT_TRANSPLATINUM", true);
 
 // Iridium
 Research.addResearch("GT_TRANSIRIDIUM", "ALCHEMY", "metallum 5, machina 3, permutatio 3, tutamen 3, electrum 3", 21, 15, 3, <gregtech:gt.metaitem.01:9084>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSIRIDIUM", "Iridium Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSIRIDIUM", "[GT] Transformation of metals to Iridium");
+game.setLocalization("tc.research_name.GT_TRANSIRIDIUM", "Iridium Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSIRIDIUM", "[GT] Transformation of metals to Iridium");
 
 // Research.clearPages("GT_TRANSIRIDIUM"); 
 Research.addPage("GT_TRANSIRIDIUM", "kirara.research_page.GT_TRANSIRIDIUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSIRIDIUM.1", "You have discovered a way to multiply Iridium by steeping Iridium nuggets in metallum harvested from other metals.<BR>This transmutation is quite costly, requiring a whole ingot of platinum's worth in nebrisum to create a mere nugget of iridium. Perhaps if you could discover an alternative source for this essentia...");
+game.setLocalization("kirara.research_page.GT_TRANSIRIDIUM.1", "You have discovered a way to multiply Iridium by steeping Iridium nuggets in metallum harvested from other metals.<BR>This transmutation is quite costly, requiring a whole ingot of platinum's worth in nebrisum to create a mere nugget of iridium. Perhaps if you could discover an alternative source for this essentia...");
 Crucible.addRecipe("GT_TRANSIRIDIUM", <gregtech:gt.metaitem.01:9084> * 3, <gregtech:gt.metaitem.01:9084>, "lucrum 1, nebrisum 1, metallum 2, machina 1");
 Research.addCruciblePage("GT_TRANSIRIDIUM", <gregtech:gt.metaitem.01:9084>);
 Crucible.removeRecipe(<gregtech:gt.metaitem.01:9084>);
@@ -649,12 +649,12 @@ Warp.addToResearch("GT_TRANSIRIDIUM", 2);
 
 // Titanium
 Research.addResearch("GT_TRANSTITANIUM", "ALCHEMY", "metallum 5, tutamen 3, permutatio 3, ordo 3, instrumentum 3", 19, 16, 3, <gregtech:gt.metaitem.01:9028>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSTITANIUM", "Titanium Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSTITANIUM", "[GT] Transformation of metals to Titanium");
+game.setLocalization("tc.research_name.GT_TRANSTITANIUM", "Titanium Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSTITANIUM", "[GT] Transformation of metals to Titanium");
 
 // Research.clearPages("GT_TRANSTITANIUM"); 
 Research.addPage("GT_TRANSTITANIUM", "kirara.research_page.GT_TRANSTITANIUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSTITANIUM.1", "You have discovered a way to multiply Titanium by steeping Titanium nuggets in metallum harvested from other metals.<BR>Unfortunately, this process leaves the material in an oxidized form, requiring further processing via non-Thaumaturgical means.");
+game.setLocalization("kirara.research_page.GT_TRANSTITANIUM.1", "You have discovered a way to multiply Titanium by steeping Titanium nuggets in metallum harvested from other metals.<BR>Unfortunately, this process leaves the material in an oxidized form, requiring further processing via non-Thaumaturgical means.");
 Crucible.addRecipe("GT_TRANSTITANIUM", <gregtech:gt.metaitem.01:375> * 3, <gregtech:gt.metaitem.01:9028>, "metallum 2, tutamen 1, permutatio 1, machina 1");
 Research.addCruciblePage("GT_TRANSTITANIUM", <gregtech:gt.metaitem.01:375>);
 Research.addPrereq("GT_TRANSTITANIUM", "GT_ADVANCEDMETALLURGY", false); 
@@ -664,10 +664,10 @@ Warp.addToResearch("GT_TRANSTITANIUM", 1);
 
 // Tungsten
 Research.addResearch("GT_TRANSTUNGSTEN", "ALCHEMY", "metallum 5, tutamen 3, permutatio 3, sano 3, lux 3", 19, 17, 3, <gregtech:gt.metaitem.01:9081>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSTUNGSTEN", "Tungsten Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSTUNGSTEN", "[GT] Transformation of metals to Tungsten");
+game.setLocalization("tc.research_name.GT_TRANSTUNGSTEN", "Tungsten Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSTUNGSTEN", "[GT] Transformation of metals to Tungsten");
 Research.addPage("GT_TRANSTUNGSTEN", "kirara.research_page.GT_TRANSTUNGSTEN.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSTUNGSTEN.1", "You have discovered a way to multiply Tungsten by steeping Tungsten nuggets in metallum harvested from other metals.<BR>Unfortunately, this process leaves the material in an oxidized form, requiring further processing via non-Thaumaturgical means.");
+game.setLocalization("kirara.research_page.GT_TRANSTUNGSTEN.1", "You have discovered a way to multiply Tungsten by steeping Tungsten nuggets in metallum harvested from other metals.<BR>Unfortunately, this process leaves the material in an oxidized form, requiring further processing via non-Thaumaturgical means.");
 Crucible.addRecipe("GT_TRANSTUNGSTEN", <gregtech:gt.metaitem.01:910> * 21, <gregtech:gt.metaitem.01:9081>, "metallum 2, tutamen 1, sano 1, lux 1");
 Research.addCruciblePage("GT_TRANSTUNGSTEN", <gregtech:gt.metaitem.01:910>);
 Research.addPrereq("GT_TRANSTUNGSTEN", "GT_ADVANCEDMETALLURGY", true); 
@@ -677,10 +677,10 @@ Warp.addToResearch("GT_TRANSTUNGSTEN", 1);
 
 // Uranium
 Research.addResearch("GT_TRANSURANIUM", "ALCHEMY", "metallum 5, radio 3, permutatio 3, venenum 3, potentia 3", 21, 16, 3, <gregtech:gt.metaitem.01:9098>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSURANIUM", "Uranium Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSURANIUM", "[GT] Transformation of metals to Uranium");
+game.setLocalization("tc.research_name.GT_TRANSURANIUM", "Uranium Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSURANIUM", "[GT] Transformation of metals to Uranium");
 Research.addPage("GT_TRANSURANIUM", "kirara.research_page.GT_TRANSURANIUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSURANIUM.1", "You have discovered a way to multiply Uranium by steeping Uranium nuggets in a vast number of different essentia.<BR>Unfortunately, this process leaves the material in an oxidized form, requiring further processing via non-Thaumaturgical means.");
+game.setLocalization("kirara.research_page.GT_TRANSURANIUM.1", "You have discovered a way to multiply Uranium by steeping Uranium nuggets in a vast number of different essentia.<BR>Unfortunately, this process leaves the material in an oxidized form, requiring further processing via non-Thaumaturgical means.");
 Crucible.addRecipe("GT_TRANSURANIUM", <gregtech:gt.metaitem.01:2922>, <gregtech:gt.metaitem.01:9098>, "potentia 1, radio 1, metallum 2, venenum 1");
 Research.addCruciblePage("GT_TRANSURANIUM", <gregtech:gt.metaitem.01:2922>);
 Research.addPrereq("GT_TRANSURANIUM", "GT_TRANSPLATINUM", false); 
@@ -691,10 +691,10 @@ Warp.addToResearch("GT_TRANSURANIUM", 4);
 
 // Chromium
 Research.addResearch("GT_TRANSCHROMIUM", "ALCHEMY", "metallum 5, machina 3, permutatio 3, nebrisum 3, lucrum 3", 19, 13, 2, <gregtech:gt.metaitem.01:9030>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSCHROMIUM", "Chromium Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSCHROMIUM", "[GT] Transformation of metals to Chromium");
+game.setLocalization("tc.research_name.GT_TRANSCHROMIUM", "Chromium Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSCHROMIUM", "[GT] Transformation of metals to Chromium");
 Research.addPage("GT_TRANSCHROMIUM", "kirara.research_page.GT_TRANSCHROMIUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSCHROMIUM.1", "You have discovered a way to multiply Chromium by steeping Chromium nuggets in metallum harvested from other metals.<BR>This transmutation is quite costly, requiring a large quantity of rare essentia to produce a tiny pile of chrome dust.<BR>While not the most worthwhile recipe by itself, you wonder if this discovery could lead to other, far more valuable transmutations.");
+game.setLocalization("kirara.research_page.GT_TRANSCHROMIUM.1", "You have discovered a way to multiply Chromium by steeping Chromium nuggets in metallum harvested from other metals.<BR>This transmutation is quite costly, requiring a large quantity of rare essentia to produce a tiny pile of chrome dust.<BR>While not the most worthwhile recipe by itself, you wonder if this discovery could lead to other, far more valuable transmutations.");
 Crucible.addRecipe("GT_TRANSCHROMIUM", <gregtech:gt.metaitem.01:9030> * 3, <gregtech:gt.metaitem.01:9030>, "machina 1, nebrisum 1, metallum 2, auram 1");
 Research.addCruciblePage("GT_TRANSCHROMIUM", <gregtech:gt.metaitem.01:9030>);
 Crucible.removeRecipe(<gregtech:gt.metaitem.01:9030>);
@@ -705,10 +705,10 @@ Research.setConcealed("GT_TRANSCHROMIUM", true);
 
 // Manganese
 Research.addResearch("GT_TRANSMANGANESE", "ALCHEMY", "metallum 5, tenebrae 3, permutatio 3, nebrisum 3, volatus 3", 19, 12, 2, <gregtech:gt.metaitem.01:9031>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSMANGANESE", "Manganese Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSMANGANESE", "[GT] Transformation of metals to Manganese");
+game.setLocalization("tc.research_name.GT_TRANSMANGANESE", "Manganese Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSMANGANESE", "[GT] Transformation of metals to Manganese");
 Research.addPage("GT_TRANSMANGANESE", "kirara.research_page.GT_TRANSMANGANESE.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSMANGANESE.1", "You have discovered a way to multiply Manganese by steeping Manganese nuggets in metallum harvested from other metals.<BR>It was a lucky break with this, the recipe coming to you in a dream, unfortunately as dreams are want to things got exaggerated a tad, in reality only nuggets may be used.");
+game.setLocalization("kirara.research_page.GT_TRANSMANGANESE.1", "You have discovered a way to multiply Manganese by steeping Manganese nuggets in metallum harvested from other metals.<BR>It was a lucky break with this, the recipe coming to you in a dream, unfortunately as dreams are want to things got exaggerated a tad, in reality only nuggets may be used.");
 Crucible.addRecipe("GT_TRANSMANGANESE", <gregtech:gt.metaitem.01:9031> * 3, <gregtech:gt.metaitem.01:9031>, "tenebrae 1, vitreus 1, volatus 1, metallum 2");
 Research.addCruciblePage("GT_TRANSMANGANESE", <gregtech:gt.metaitem.01:9031>);
 //Crucible.removeRecipe(<gregtech:gt.metaitem.01:11031>);
@@ -718,10 +718,10 @@ Research.setConcealed("GT_TRANSMANGANESE", true);
 
 // Stainless Steel
 Research.addResearch("GT_TRANSSTAINLESS", "ALCHEMY", "metallum 5, permutatio 3, machina 3, ordo 3, ignis 3", 21, 12, 3, <gregtech:gt.metaitem.01:9306>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSSTAINLESS", "Stainless Steel Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSSTAINLESS", "[GT] Transformation of metals to stainless steel");
+game.setLocalization("tc.research_name.GT_TRANSSTAINLESS", "Stainless Steel Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSSTAINLESS", "[GT] Transformation of metals to stainless steel");
 Research.addPage("GT_TRANSSTAINLESS", "kirara.research_page.GT_TRANSSTAINLESS.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSSTAINLESS.1", "After much experimentation with refining Nickel, Invar, Chrome, and Manganese, you have discovered a way to multiply the complex stainless steel alloy by steeping its nuggets in metallum harvested from other metals.<BR>This transmutation is significantly harder to achieve, as stainless steel is a complex alloy with a large number of components.");
+game.setLocalization("kirara.research_page.GT_TRANSSTAINLESS.1", "After much experimentation with refining Nickel, Invar, Chrome, and Manganese, you have discovered a way to multiply the complex stainless steel alloy by steeping its nuggets in metallum harvested from other metals.<BR>This transmutation is significantly harder to achieve, as stainless steel is a complex alloy with a large number of components.");
 Crucible.addRecipe("GT_TRANSSTAINLESS", <gregtech:gt.metaitem.01:9306> * 3, <gregtech:gt.metaitem.01:9306>, "ignis 1, metallum 2, volatus 1, nebrisum 1, machina 1, tenebrae 1");
 Research.addCruciblePage("GT_TRANSSTAINLESS", <gregtech:gt.metaitem.01:9306>);
 Research.addPrereq("GT_TRANSSTAINLESS", "GT_TRANSCHROMIUM", false); 
@@ -840,7 +840,7 @@ Research.refreshResearchRecipe("FOCUS_ENDER_CHEST");
 // Wrench Focus
 Research.clearPages("thaumicenergistics.TEFOCUSWRENCH");
 Research.addPage("thaumicenergistics.TEFOCUSWRENCH", "kirara.research_page.TEFOCUSWRENCH.1");
-game.setLocalization("en_US", "kirara.research_page.TEFOCUSWRENCH.1", "This wand focus interacts with blocks and machinery as if it were an AE2 wrench. Interestingly the incredible complexity of such an interaction prevents you from using your normal lenses instead requiring the use of carefully created crystals attuned to the machines.<BR>Sneak + left click: Rotate.<BR>Sneak + right click: Dismantle.");
+game.setLocalization("kirara.research_page.TEFOCUSWRENCH.1", "This wand focus interacts with blocks and machinery as if it were an AE2 wrench. Interestingly the incredible complexity of such an interaction prevents you from using your normal lenses instead requiring the use of carefully created crystals attuned to the machines.<BR>Sneak + left click: Rotate.<BR>Sneak + right click: Dismantle.");
 Arcane.removeRecipe(<thaumicenergistics:focus.aewrench>);
 Arcane.addShaped("thaumicenergistics.TEFOCUSWRENCH", <thaumicenergistics:focus.aewrench>, "aer 10, ignis 10", [[<appliedenergistics2:item.ToolNetherQuartzWrench>, <ore:ringSteel>, <appliedenergistics2:item.ToolCertusQuartzWrench>], [<ore:ringSteel>, <ore:crystalPureFluix>, <ore:ringSteel>], [<appliedenergistics2:item.ToolCertusQuartzWrench>, <ore:ringSteel>, <appliedenergistics2:item.ToolNetherQuartzWrench>]]);
 Research.addArcanePage("thaumicenergistics.TEFOCUSWRENCH", <thaumicenergistics:focus.aewrench>);
@@ -864,13 +864,13 @@ Crucible.removeRecipe(nuggetAluminium); // Aluminium
 // Localizing Strings
 //********************
 
-game.setLocalization("en_US", "potion.potency.4", "V");
-game.setLocalization("en_US", "potion.potency.5", "VI");
-game.setLocalization("en_US", "potion.potency.6", "VII");
-game.setLocalization("en_US", "potion.potency.7", "VIII");
-game.setLocalization("en_US", "potion.potency.8", "IX");
-game.setLocalization("en_US", "potion.potency.9", "X");
-game.setLocalization("en_US", "tile.extrautils:pureLove.name", "Pure Love");
+game.setLocalization("potion.potency.4", "V");
+game.setLocalization("potion.potency.5", "VI");
+game.setLocalization("potion.potency.6", "VII");
+game.setLocalization("potion.potency.7", "VIII");
+game.setLocalization("potion.potency.8", "IX");
+game.setLocalization("potion.potency.9", "X");
+game.setLocalization("tile.extrautils:pureLove.name", "Pure Love");
 game.setLocalization("item.TravellersGear.simpleGear.cloak.name","Simple Cloak");
 
 
@@ -890,7 +890,7 @@ Research.setSpikey("GT_ADVANCEDMETALLURGY", true);
 Research.setRound("GT_ADVANCEDMETALLURGY", true);
 Research.clearPages("GT_ADVANCEDMETALLURGY"); 
 Research.addPage("GT_ADVANCEDMETALLURGY", "kirara.research_page.GT_ADVANCEDMETALLURGY.1");
-game.setLocalization("en_US", "kirara.research_page.GT_ADVANCEDMETALLURGY.1", "Through utilizing the knowledge you have obtained when discovering all the basic metals, you have gained significant insight towards the creation of far more advanced metals using raw essentia.<BR>Despite the malevolent derision from your fellow peers, you are certain that this transgression into the realms of forbidden metallurgy will have no foreseeable consequences.");
+game.setLocalization("kirara.research_page.GT_ADVANCEDMETALLURGY.1", "Through utilizing the knowledge you have obtained when discovering all the basic metals, you have gained significant insight towards the creation of far more advanced metals using raw essentia.<BR>Despite the malevolent derision from your fellow peers, you are certain that this transgression into the realms of forbidden metallurgy will have no foreseeable consequences.");
 
 // Thaumonomicon Change
 recipes.addShaped(<Thaumcraft:ItemThaumonomicon>, [[<gregtech:gt.metaitem.01:27032>, <harvestcraft:hardenedleatherItem>, <gregtech:gt.metaitem.01:17301>], [<Thaumcraft:ItemShard:*>, <BiblioCraft:item.BigBook>, <Thaumcraft:ItemShard:*>], [<gregtech:gt.metaitem.01:27032>, <harvestcraft:hardenedleatherItem>, <gregtech:gt.metaitem.01:17301>]]);
@@ -965,7 +965,7 @@ Arcane.addShaped("TALLOW", <Thaumcraft:blockCandle>, "aer 5, ignis 5", [[null, <
 Assembler.addRecipe(tcLabel * 16, <minecraft:paper> * 16, <minecraft:slime_ball>, <liquid:squidink> * 144, 40, 2);
 Research.clearPages("TALLOW"); 
 Research.addPage("TALLOW", "kirara.research_page.TALLOW.1");
-game.setLocalization("en_US", "kirara.research_page.TALLOW.1", "By processing and heating flesh in a crucible, you can create a mystical tallow suited for many arcane uses.<BR>This tallow can be used with silk and water to craft candles in an \u00A75Assembling Machine\u00A70, or with just string and a touch of magic on your table.");
+game.setLocalization("kirara.research_page.TALLOW.1", "By processing and heating flesh in a crucible, you can create a mystical tallow suited for many arcane uses.<BR>This tallow can be used with silk and water to craft candles in an \u00A75Assembling Machine\u00A70, or with just string and a touch of magic on your table.");
 Research.addCruciblePage("TALLOW", <Thaumcraft:ItemResource:4>);
 Research.addArcanePage("TALLOW", <Thaumcraft:blockCandle>);
 Lathe.addRecipe([<Thaumcraft:blockStoneDevice:1>, <gregtech:gt.metaitem.01:1299>], <Thaumcraft:blockCosmeticSolid:6>, 400, 16);
@@ -1017,7 +1017,7 @@ Research.addPrereq("BOOTSTRAVELLER", "ADVANCEDROBES", true);
 Infusion.addRecipe("BOOTSTRAVELLER", <harvestcraft:hardenedleatherbootsItem>, [<WitchingGadgets:item.WG_Material:5>, <WitchingGadgets:item.WG_Material:5>, <gregtech:gt.metaitem.01:32640>, <OpenComputers:item:49>, <Thaumcraft:ItemShard>, <minecraft:fish:*>], "iter 32, volatus 32", <Thaumcraft:BootsTraveller>, 1);
 
 ChemicalBath.addRecipe([<Thaumcraft:ItemZombieBrain>], <Thaumcraft:ItemResource:5>, <liquid:fishoil> * 10, [10000], 20, 4);
-game.setLocalization("en_US", "item.ItemResource.5.name", "Dull Zombie Brain");
+game.setLocalization("item.ItemResource.5.name", "Dull Zombie Brain");
 
 print('Artifice mildly Gregged');
 
@@ -1223,7 +1223,7 @@ Arcane.addShaped("UPGRADEENTROPY", <Thaumcraft:ItemGolemUpgrade:5>, "perditio 10
 furnace.addRecipe(<minecraft:netherbrick>, <ore:dustNetherBrick>);
 recipes.addShaped(<gregtech:gt.metaitem.02:20310>, [[<ore:plateCupronickel>, null, null], [null, <ore:craftingToolHardHammer>, null], [null, null, null]]);
 FluidSolidifier.addRecipe(<gregtech:gt.metaitem.02:20310>, <gregtech:gt.metaitem.01:32317> * 0, <liquid:molten.cupronickel> * 144, 16, 8);
-game.setLocalization("en_US", "gt.metaitem.02.20310.name", "Small Cupronickel Gear");
+game.setLocalization("gt.metaitem.02.20310.name", "Small Cupronickel Gear");
 furnace.addRecipe(<gregtech:gt.metaitem.01:11310>, <gregtech:gt.metaitem.02:20310>);
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2310>], <gregtech:gt.metaitem.02:20310>, [10000], 60, 4);
 ArcFurnace.addRecipe([<gregtech:gt.metaitem.01:2310>], <gregtech:gt.metaitem.02:20310>, null, [10000], 60, 32);
@@ -1298,7 +1298,7 @@ Research.refreshResearchRecipe("COREGATHER");
 // Research.addPage("COREGATHER", "tc.research_page.COREGATHER.1");
 // Research.addInfusionPage("COREGATHER", <Thaumcraft:ItemGolemCore:2>);
 // Research.addPage("COREGATHER", "kirara.research_page.GT_COREGATHER.1");
-// game.setLocalization("en_US", "kirara.research_page.GT_COREGATHER.1", "Simply right-click on a freshly placed golem with a core to attach it to the golem.<BR>The precision required for the basic animation core means the thaumaturge must channel a very large amount of ordo vis into a block of redstone circuit in a very short amount of time - perhaps more than what your wand can currently handle.<BR>Maybe an alternative manufacturing method using precise assembly machinery could adequately substitute...");
+// game.setLocalization("kirara.research_page.GT_COREGATHER.1", "Simply right-click on a freshly placed golem with a core to attach it to the golem.<BR>The precision required for the basic animation core means the thaumaturge must channel a very large amount of ordo vis into a block of redstone circuit in a very short amount of time - perhaps more than what your wand can currently handle.<BR>Maybe an alternative manufacturing method using precise assembly machinery could adequately substitute...");
 // Research.addArcanePage("COREGATHER", <Thaumcraft:ItemGolemCore:100>);
 
 Research.clearPages("COREHARVEST"); 
@@ -1494,10 +1494,10 @@ Research.moveResearch("GT_CRYSTALLISATION", "ALCHEMY", -8, -2);
 
 // Naquadah
 Research.addResearch("GT_TRANSNAQUADAH", "ELDRITCH", "auram 2, radio 2, alienis 2, tenebrae 2, vitreus 2, nebrisum 2", -3, 0, 1, <gregtech:gt.metaitem.01:9324>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSNAQUADAH", "Naquadah Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSNAQUADAH", "[GT] And now I understand, for I decided to learn of nothing except the void");
+game.setLocalization("tc.research_name.GT_TRANSNAQUADAH", "Naquadah Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSNAQUADAH", "[GT] And now I understand, for I decided to learn of nothing except the void");
 Research.addPage("GT_TRANSNAQUADAH", "kirara.research_page.GT_TRANSNAQUADAH.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSNAQUADAH.1", "This is it, THIS IS IT!<BR>Long they have scorned me for daring to expose my mind to the beyond, but these fools shall now understand the true power of the void.<BR>To imagine that merely modifying void metal could create a substance that pedestrian alchemists cannot even imagine in their wildest dreams - harder than diamond, yet malleable; dense and crystalline, while superconductive; and most importantly, it seems to contain a ludicrous amount of energy.<BR>And to think all it took was a piece of my sanity.");
+game.setLocalization("kirara.research_page.GT_TRANSNAQUADAH.1", "This is it, THIS IS IT!<BR>Long they have scorned me for daring to expose my mind to the beyond, but these fools shall now understand the true power of the void.<BR>To imagine that merely modifying void metal could create a substance that pedestrian alchemists cannot even imagine in their wildest dreams - harder than diamond, yet malleable; dense and crystalline, while superconductive; and most importantly, it seems to contain a ludicrous amount of energy.<BR>And to think all it took was a piece of my sanity.");
 Research.addPrereq("GT_TRANSNAQUADAH", "ELDRITCHMAJOR", false);
 Research.addPrereq("GT_TRANSNAQUADAH", "VOIDMETAL", true);
 Research.addPrereq("GT_TRANSNAQUADAH", "GT_TRANSIRIDIUM", true);
@@ -1508,10 +1508,10 @@ Research.setConcealed("GT_TRANSNAQUADAH", true);
 Warp.addToResearch("GT_TRANSNAQUADAH", 5);
 
 Research.addResearch("GT_TRANSNAQUADAH2", "ELDRITCH", "iter 4, vacuos 4, tenebrae 4, lucrum 4, perditio 4, machina 4, radio 4, strontio 4, potentia 4", 2, 7, 1, <gregtech:gt.metaitem.01:11324>);
-game.setLocalization("en_US", "tc.research_name.GT_TRANSNAQUADAH2", "Advanced Naquadah Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_TRANSNAQUADAH2", "[GT] Beyond the void there was chaos");
+game.setLocalization("tc.research_name.GT_TRANSNAQUADAH2", "Advanced Naquadah Transmutation");
+game.setLocalization("tc.research_text.GT_TRANSNAQUADAH2", "[GT] Beyond the void there was chaos");
 Research.addPage("GT_TRANSNAQUADAH2", "kirara.research_page.GT_TRANSNAQUADAH2.1");
-game.setLocalization("en_US", "kirara.research_page.GT_TRANSNAQUADAH2.1", "While your current methods of producing naquadah work they are far from simple, noxious fumes and rare ingredients abound. However using the power of a pearl you can advance things further, greatly simplifying the process.");
+game.setLocalization("kirara.research_page.GT_TRANSNAQUADAH2.1", "While your current methods of producing naquadah work they are far from simple, noxious fumes and rare ingredients abound. However using the power of a pearl you can advance things further, greatly simplifying the process.");
 Research.addPrereq("GT_TRANSNAQUADAH2", "PRIMPEARL", false);
 Research.addPrereq("GT_TRANSNAQUADAH2", "GT_TRANSNAQUADAH", true);
 Infusion.addRecipe("GT_TRANSNAQUADAH2", <gregtech:gt.metaitem.01:2097>, [<Thaumcraft:ItemEldritchObject:3>, <Thaumcraft:ItemEldritchObject:3>], "vacuos 6, potentia 6, tenebrae 6, lucrum 6, perditio 6, machina 6", <InfinityCore:itemSpecialWG>, 7);
@@ -1521,10 +1521,10 @@ Warp.addToResearch("GT_TRANSNAQUADAH2", 1);
 
 // Vinteum Crystal
 Research.addResearch("AM_GEMVINTEUM", "ALCHEMY", "praecantatio 2, auram 2, tenebrae 2, alienis 2, permutatio 2, vitreus 2", -11, -2, 2, gemVinteum);
-game.setLocalization("en_US", "tc.research_name.AM_GEMVINTEUM", "Vinteum Crystal");
-game.setLocalization("en_US", "tc.research_text.AM_GEMVINTEUM", "[AM] Not quite the philosopher's stone");
+game.setLocalization("tc.research_name.AM_GEMVINTEUM", "Vinteum Crystal");
+game.setLocalization("tc.research_text.AM_GEMVINTEUM", "[AM] Not quite the philosopher's stone");
 Research.addPage("AM_GEMVINTEUM", "kirara.research_page.AM_GEMVINTEUM.1");
-game.setLocalization("en_US", "kirara.research_page.AM_GEMVINTEUM.1", "Your thorough understanding of the recrystallisation process has led you to discover a way to further infuse balanced shards with compound essentia, transmuting them into an entirely different form, although still receptive to the recrystallisation process from which it was derived.<BR>The resulting material is of disappointing structural integrity and gives off an unpleasant, otherworldly aura, though you wonder if it could have interesting thaumaturgical applications...");
+game.setLocalization("kirara.research_page.AM_GEMVINTEUM.1", "Your thorough understanding of the recrystallisation process has led you to discover a way to further infuse balanced shards with compound essentia, transmuting them into an entirely different form, although still receptive to the recrystallisation process from which it was derived.<BR>The resulting material is of disappointing structural integrity and gives off an unpleasant, otherworldly aura, though you wonder if it could have interesting thaumaturgical applications...");
 Research.addPrereq("AM_GEMVINTEUM", "GT_CRYSTALLISATION", false);
 Crucible.addRecipe("AM_GEMVINTEUM", gemVinteum, <Thaumcraft:ItemShard:6>, "praecantatio 2, auram 2, tenebrae 2, alienis 2, permutatio 2, vitreus 2");
 Research.addCruciblePage("AM_GEMVINTEUM", gemVinteum);
@@ -1597,20 +1597,20 @@ val potionJump4 = <minecraft:potion:8490>.withTag({CustomPotionEffects: [{Durati
 
 // Thaumcraft Potions
 Research.addResearch("GT_BREWING", "ALCHEMY", "fabrico 4, praecantatio 4, aqua 4", 1, -3, 1, <minecraft:brewing_stand>);
-game.setLocalization("en_US", "tc.research_name.GT_BREWING", "Potion Brewing");
-game.setLocalization("en_US", "tc.research_text.GT_BREWING", "Hellfire Elixirs");
+game.setLocalization("tc.research_name.GT_BREWING", "Potion Brewing");
+game.setLocalization("tc.research_text.GT_BREWING", "Hellfire Elixirs");
 Research.addPage("GT_BREWING", "kirara.research_page.GT_BREWING.1");
-game.setLocalization("en_US", "kirara.research_page.GT_BREWING.1", "There had been rumors of course, but you've discovered the secret to potion brewing now, the refined essence of magical fire taken from the blazes of the nether.");
+game.setLocalization("kirara.research_page.GT_BREWING.1", "There had been rumors of course, but you've discovered the secret to potion brewing now, the refined essence of magical fire taken from the blazes of the nether.");
 Research.addPrereq("GT_BREWING", "PHIAL", false);
 recipes.remove(<minecraft:brewing_stand>);
 Arcane.addShaped("GT_BREWING", <minecraft:brewing_stand>, "aqua 30", [[null, <minecraft:blaze_rod>, null], [<Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>]]);
 Research.addArcanePage("GT_BREWING", <minecraft:brewing_stand>);
 
 Research.addResearch("GT_ADVANCED_BREWING", "ALCHEMY", "fabrico 8, auram 4, praecantatio 4, aqua 4", 1, -5, 3, <HardcoreEnderExpansion:enhanced_brewing_stand>);
-game.setLocalization("en_US", "tc.research_name.GT_ADVANCED_BREWING", "Advanced Brewing");
-game.setLocalization("en_US", "tc.research_text.GT_ADVANCED_BREWING", "Infusing potions with essentia");
+game.setLocalization("tc.research_name.GT_ADVANCED_BREWING", "Advanced Brewing");
+game.setLocalization("tc.research_text.GT_ADVANCED_BREWING", "Infusing potions with essentia");
 Research.addPage("GT_ADVANCED_BREWING", "kirara.research_page.GT_ADVANCED_BREWING.1");
-game.setLocalization("en_US", "kirara.research_page.GT_ADVANCED_BREWING.1", "The mundane, wasteful method of potion brewery is quite limited in its ability to mix powerful concoctions.<BR>Advanced thaumaturgy via the infusion altar allows you to surpass the limitations of flimsy brewing stands, though the precision required in the infusion process makes it difficult to automate mass production of potions in this manner.");
+game.setLocalization("kirara.research_page.GT_ADVANCED_BREWING.1", "The mundane, wasteful method of potion brewery is quite limited in its ability to mix powerful concoctions.<BR>Advanced thaumaturgy via the infusion altar allows you to surpass the limitations of flimsy brewing stands, though the precision required in the infusion process makes it difficult to automate mass production of potions in this manner.");
 Research.addPrereq("GT_ADVANCED_BREWING", "GT_BREWING", false);
 Research.addPrereq("GT_ADVANCED_BREWING", "INFUSION", true);
 Infusion.addRecipe("GT_ADVANCED_BREWING", <minecraft:potion:8226>, [salisMundus, <minecraft:redstone>, <minecraft:glowstone_dust>], "auram 4, motus 8, praecantatio 8", potionSwift3, 2);
@@ -1625,10 +1625,10 @@ Research.setConcealed("GT_ADVANCED_BREWING", true);
 
 // Healing
 Research.addResearch("GT_BREWHEAL", "ALCHEMY", "sano 4, auram 2, victus 2", -1, -5, 2, <minecraft:potion:8197>);
-game.setLocalization("en_US", "tc.research_name.GT_BREWHEAL", "Potion of Healing");
-game.setLocalization("en_US", "tc.research_text.GT_BREWHEAL", "Improved Potion of Healing");
+game.setLocalization("tc.research_name.GT_BREWHEAL", "Potion of Healing");
+game.setLocalization("tc.research_text.GT_BREWHEAL", "Improved Potion of Healing");
 Research.addPage("GT_BREWHEAL", "kirara.research_page.GT_BREWHEAL.1");
-game.setLocalization("en_US", "kirara.research_page.GT_BREWHEAL.1", "You have discovered a way of significantly improving the efficacy of Potions of Healing by infusing them with essentia.");
+game.setLocalization("kirara.research_page.GT_BREWHEAL.1", "You have discovered a way of significantly improving the efficacy of Potions of Healing by infusing them with essentia.");
 Research.addPrereq("GT_BREWHEAL", "GT_ADVANCED_BREWING", false);
 Infusion.addRecipe("GT_BREWHEAL", <minecraft:potion:8229>, [salisMundus, <minecraft:glowstone_dust>, <minecraft:speckled_melon>], "auram 4, sano 8, praecantatio 8", potionHealing3, 2);
 Research.addInfusionPage("GT_BREWHEAL", potionHealing3);
@@ -1642,10 +1642,10 @@ Research.setConcealed("GT_BREWHEAL", true);
 
 // Regeneration
 Research.addResearch("GT_BREWREGEN", "ALCHEMY", "sano 4, auram 2, humanus 2", 0, -6, 2, <minecraft:potion:8193>);
-game.setLocalization("en_US", "tc.research_name.GT_BREWREGEN", "Potion of Regeneration");
-game.setLocalization("en_US", "tc.research_text.GT_BREWREGEN", "Improved Potion of Regeneration");
+game.setLocalization("tc.research_name.GT_BREWREGEN", "Potion of Regeneration");
+game.setLocalization("tc.research_text.GT_BREWREGEN", "Improved Potion of Regeneration");
 Research.addPage("GT_BREWREGEN", "kirara.research_page.GT_BREWREGEN.1");
-game.setLocalization("en_US", "kirara.research_page.GT_BREWREGEN.1", "You have discovered a way of significantly improving the efficacy of Potions of Regeneration by infusing them with essentia.");
+game.setLocalization("kirara.research_page.GT_BREWREGEN.1", "You have discovered a way of significantly improving the efficacy of Potions of Regeneration by infusing them with essentia.");
 Research.addPrereq("GT_BREWREGEN", "GT_ADVANCED_BREWING", false);
 Infusion.addRecipe("GT_BREWREGEN", <minecraft:potion:8225>, [salisMundus, <minecraft:redstone>, <minecraft:ghast_tear>], "auram 4, sano 8, praecantatio 8", potionRegeneration3, 2);
 Research.addInfusionPage("GT_BREWREGEN", potionRegeneration3);
@@ -1655,10 +1655,10 @@ Research.setConcealed("GT_BREWREGEN", true);
 
 // Absorption
 Research.addResearch("GT_BREWABSORPTION", "ALCHEMY", "permutatio 4, auram 2, volatus 2", 1, -7, 2, <minecraft:potion:8195>);
-game.setLocalization("en_US", "tc.research_name.GT_BREWABSORPTION", "Potion of Absorption");
-game.setLocalization("en_US", "tc.research_text.GT_BREWABSORPTION", "An apple a day keeps the doctor away");
+game.setLocalization("tc.research_name.GT_BREWABSORPTION", "Potion of Absorption");
+game.setLocalization("tc.research_text.GT_BREWABSORPTION", "An apple a day keeps the doctor away");
 Research.addPage("GT_BREWABSORPTION", "kirara.research_page.GT_BREWABSORPTION.1");
-game.setLocalization("en_US", "kirara.research_page.GT_BREWABSORPTION.1", "You have discovered a way of decanting the absorption effect provided by golden apples into a potion, significantly increasing its duration. However, this concoction does not refill hunger nor provides regeneration.");
+game.setLocalization("kirara.research_page.GT_BREWABSORPTION.1", "You have discovered a way of decanting the absorption effect provided by golden apples into a potion, significantly increasing its duration. However, this concoction does not refill hunger nor provides regeneration.");
 Research.addPrereq("GT_BREWABSORPTION", "GT_ADVANCED_BREWING", false);
 Infusion.addRecipe("GT_BREWABSORPTION", <minecraft:potion:16>, [salisMundus, <minecraft:golden_apple>], "auram 2, praecantatio 2, tutamen 2", potionAbsorption1, 2);
 Research.addInfusionPage("GT_BREWABSORPTION", potionAbsorption1);
@@ -1674,10 +1674,10 @@ Research.setConcealed("GT_BREWABSORPTION", true);
 
 // Haste
 Research.addResearch("GT_BREWHASTE", "ALCHEMY", "permutatio 4, auram 2, perfodio 2", 2, -6, 2, <minecraft:potion:8228>);
-game.setLocalization("en_US", "tc.research_name.GT_BREWHASTE", "Potion of Haste");
-game.setLocalization("en_US", "tc.research_text.GT_BREWHASTE", "Furiously move your arm up and down");
+game.setLocalization("tc.research_name.GT_BREWHASTE", "Potion of Haste");
+game.setLocalization("tc.research_text.GT_BREWHASTE", "Furiously move your arm up and down");
 Research.addPage("GT_BREWHASTE", "kirara.research_page.GT_BREWHASTE.1");
-game.setLocalization("en_US", "kirara.research_page.GT_BREWHASTE.1", "You have discovered a way of creating a potion that improves the speed at which you mine blocks, by corrupting the effects of a potion of poison.");
+game.setLocalization("kirara.research_page.GT_BREWHASTE.1", "You have discovered a way of creating a potion that improves the speed at which you mine blocks, by corrupting the effects of a potion of poison.");
 Research.addPrereq("GT_BREWHASTE", "GT_ADVANCED_BREWING", false);
 Infusion.addRecipe("GT_BREWHASTE", <minecraft:potion:8228>, [salisMundus, <minecraft:fermented_spider_eye>], "auram 2, perfodio 4, permutatio 2", potionHaste1, 2);
 Research.addInfusionPage("GT_BREWHASTE", potionHaste1);
@@ -1691,10 +1691,10 @@ Research.setConcealed("GT_BREWHASTE", true);
 
 // Jump
 Research.addResearch("GT_BREWJUMP", "ALCHEMY", "permutatio 4, auram 2, volatus 2", 3, -5, 2, <minecraft:potion:8232>);
-game.setLocalization("en_US", "tc.research_name.GT_BREWJUMP", "Potion of Jump");
-game.setLocalization("en_US", "tc.research_text.GT_BREWJUMP", "Getting high off a mysterious liquid");
+game.setLocalization("tc.research_name.GT_BREWJUMP", "Potion of Jump");
+game.setLocalization("tc.research_text.GT_BREWJUMP", "Getting high off a mysterious liquid");
 Research.addPage("GT_BREWJUMP", "kirara.research_page.GT_BREWJUMP.1");
-game.setLocalization("en_US", "kirara.research_page.GT_BREWJUMP.1", "You have discovered a way of creating a potion that improves the speed at which you mine blocks, by corrupting the effects of a potion of poison.");
+game.setLocalization("kirara.research_page.GT_BREWJUMP.1", "You have discovered a way of creating a potion that improves the speed at which you mine blocks, by corrupting the effects of a potion of poison.");
 Research.addPrereq("GT_BREWJUMP", "GT_ADVANCED_BREWING", false);
 Infusion.addRecipe("GT_BREWJUMP", <minecraft:potion:8202>, [salisMundus, <minecraft:fermented_spider_eye>], "auram 2, volatus 2, permutatio 2", potionJump1, 2);
 Research.addInfusionPage("GT_BREWJUMP", potionJump1);
@@ -1708,10 +1708,10 @@ Research.setConcealed("GT_BREWJUMP", true);
 
 // Travel
 // Research.addResearch("GT_BREWTRAVEL", "ALCHEMY", "permutatio 4, auram 2, volatus 2", 3, -5, 2, <minecraft:potion:8258>);
-// game.setLocalization("en_US", "tc.research_name.GT_BREWTRAVEL", "Potion of Travel");
-// game.setLocalization("en_US", "tc.research_text.GT_BREWTRAVEL", "Getting high off a mysterious liquid");
+// game.setLocalization("tc.research_name.GT_BREWTRAVEL", "Potion of Travel");
+// game.setLocalization("tc.research_text.GT_BREWTRAVEL", "Getting high off a mysterious liquid");
 // Research.addPage("GT_BREWTRAVEL", "kirara.research_page.GT_BREWTRAVEL.1");
-// game.setLocalization("en_US", "kirara.research_page.GT_BREWTRAVEL.1", "You have discovered a way of creating a potion that improves the speed at which you mine blocks, by corrupting the effects of a potion of poison.");
+// game.setLocalization("kirara.research_page.GT_BREWTRAVEL.1", "You have discovered a way of creating a potion that improves the speed at which you mine blocks, by corrupting the effects of a potion of poison.");
 // Research.addPrereq("GT_BREWTRAVEL", "GT_ADVANCED_BREWING", false);
 // Infusion.addRecipe("GT_BREWTRAVEL", <minecraft:potion:8202>, [salisMundus, <minecraft:fermented_spider_eye>], "auram 2, volatus 2, iter 2", potionTravel1, 2);
 // Research.addInfusionPage("GT_BREWTRAVEL", potionTravel1);
@@ -1736,10 +1736,10 @@ Research.moveResearch("RUNICKINETIC", "ARTIFICE", 8, 5);
 
 // Pure Love
 Research.addResearch("PURELOVE", "ARTIFICE", "victus 3, praecantatio 3, bestia 3, tempus 3", -3, 3, 3, <ExtraUtilities:pureLove>);
-game.setLocalization("en_US", "tc.research_name.PURELOVE", "Pure Love");
-game.setLocalization("en_US", "tc.research_text.PURELOVE", "[GT] Romance in a box");
+game.setLocalization("tc.research_name.PURELOVE", "Pure Love");
+game.setLocalization("tc.research_text.PURELOVE", "[GT] Romance in a box");
 Research.addPage("PURELOVE", "kirara.research_page.PURELOVE.1");
-game.setLocalization("en_US", "kirara.research_page.PURELOVE.1", "Constantly plagued by the difficulties of acquiring and supplying the vast amounts of victus needed for your lamps you toiled over a solution, and you stumbled across this. <BR> By infusing massive amounts of victus and bestia into a series of lamps you created a lamp of fertility that would run without a supply of victus, enhancing it with even more bestia and adding some tempus you created your masterpiece, and while lower range it is far, far more effective than your past creations.");
+game.setLocalization("kirara.research_page.PURELOVE.1", "Constantly plagued by the difficulties of acquiring and supplying the vast amounts of victus needed for your lamps you toiled over a solution, and you stumbled across this. <BR> By infusing massive amounts of victus and bestia into a series of lamps you created a lamp of fertility that would run without a supply of victus, enhancing it with even more bestia and adding some tempus you created your masterpiece, and while lower range it is far, far more effective than your past creations.");
 Infusion.addRecipe("PURELOVE", <ExtraUtilities:decorativeBlock2:8>, [<Thaumcraft:blockMetalDevice:13>, <ThaumicTinkerer:mobAspect:29>, <Forestry:cratedWheat>, <Thaumcraft:blockMetalDevice:13>, <ThaumicTinkerer:mobAspect:29>, <Forestry:cratedSeeds>, <Thaumcraft:blockMetalDevice:13>, <ThaumicTinkerer:mobAspect:29>, <Forestry:cratedApples>, <Thaumcraft:blockMetalDevice:13>, <ThaumicTinkerer:mobAspect:29>, <Forestry:cratedCarrots>], "victus 256, bestia 64, tempus 32", <ExtraUtilities:pureLove>, 8);
 Research.addInfusionPage("PURELOVE", <ExtraUtilities:pureLove>);
 Research.addPrereq("PURELOVE", "LAMPFERTILITY", false);
@@ -1747,10 +1747,10 @@ Research.setConcealed("PURELOVE", true);
 
 // Mundane Accessories
 Research.addResearch("GT_APPRENTICE_ARTIFICING", "ARTIFICE", "praecantatio 3, instrumentum 3", 3, 4, 2, <Thaumcraft:ItemBaubleBlanks:1>);
-game.setLocalization("en_US", "tc.research_name.GT_APPRENTICE_ARTIFICING", "Apprentice Artificing");
-game.setLocalization("en_US", "tc.research_text.GT_APPRENTICE_ARTIFICING", "Controlling ancient artifacts");
+game.setLocalization("tc.research_name.GT_APPRENTICE_ARTIFICING", "Apprentice Artificing");
+game.setLocalization("tc.research_text.GT_APPRENTICE_ARTIFICING", "Controlling ancient artifacts");
 Research.addPage("GT_APPRENTICE_ARTIFICING", "kirara.research_page.GT_APPRENTICE_ARTIFICING.1");
-game.setLocalization("en_US", "kirara.research_page.GT_APPRENTICE_ARTIFICING.1", "Many ancient artifacts lurk within the unexplored corners of the world, some of which are imbued with particular thaumic energy that constantly leak into the surrounding environment.<BR>You have learned that channeling ordo vis to such artifacts when they're encased in enchanted fabric can force their energies to lay dormant, but an inert ring is of little use to you... for now.");
+game.setLocalization("kirara.research_page.GT_APPRENTICE_ARTIFICING.1", "Many ancient artifacts lurk within the unexplored corners of the world, some of which are imbued with particular thaumic energy that constantly leak into the surrounding environment.<BR>You have learned that channeling ordo vis to such artifacts when they're encased in enchanted fabric can force their energies to lay dormant, but an inert ring is of little use to you... for now.");
 Research.addPrereq("GT_APPRENTICE_ARTIFICING", "ENCHFABRIC", false);
 Arcane.addShapeless("GT_APPRENTICE_ARTIFICING", <Thaumcraft:ItemBaubleBlanks:1>, "ordo 4", [<Thaumcraft:ItemBaubleBlanks:3>, <Thaumcraft:ItemResource:7>]);
 Arcane.addShapeless("GT_APPRENTICE_ARTIFICING", <Thaumcraft:ItemBaubleBlanks:1>, "ordo 4", [<Thaumcraft:ItemBaubleBlanks:4>, <Thaumcraft:ItemResource:7>]);
@@ -1763,10 +1763,10 @@ Research.setConcealed("GT_APPRENTICE_ARTIFICING", true);
 
 // Vis Stone
 Research.addResearch("GT_VISSTONE", "ARTIFICE", "praecantatio 3, instrumentum 3, vinculum 3", 6, 4, 2, <Thaumcraft:ItemAmuletVis>);
-game.setLocalization("en_US", "tc.research_name.GT_VISSTONE", "Vis Stone");
-game.setLocalization("en_US", "tc.research_text.GT_VISSTONE", "Storing vis for later use");
+game.setLocalization("tc.research_name.GT_VISSTONE", "Vis Stone");
+game.setLocalization("tc.research_text.GT_VISSTONE", "Storing vis for later use");
 Research.addPage("GT_VISSTONE", "kirara.research_page.GT_VISSTONE.1");
-game.setLocalization("en_US", "kirara.research_page.GT_VISSTONE.1", "You have discovered a way of storing a small quantity of vis in a necklace by imbuing it with a mixed crystal cluster, though this process is quite lossy due to the imperfect mechanism via which the vis is transferred.<BR>Depleted amulets may be recharged in an arcane worktable at no additional material cost.");
+game.setLocalization("kirara.research_page.GT_VISSTONE.1", "You have discovered a way of storing a small quantity of vis in a necklace by imbuing it with a mixed crystal cluster, though this process is quite lossy due to the imperfect mechanism via which the vis is transferred.<BR>Depleted amulets may be recharged in an arcane worktable at no additional material cost.");
 Research.addPrereq("GT_VISSTONE", "GT_APPRENTICE_ARTIFICING", false);
 Arcane.addShapeless("GT_VISSTONE", <Thaumcraft:ItemAmuletVis>.withTag({aqua: 2500, ignis: 2500, terra: 2500, ordo: 2500, perditio: 2500, aer: 2500}), "aqua 50, ignis 50, terra 50, ordo 50, perditio 50, aer 50", [<Thaumcraft:ItemBaubleBlanks>, <Thaumcraft:blockCrystal:6>]);
 Research.addArcanePage("GT_VISSTONE", <Thaumcraft:ItemAmuletVis>);
@@ -1777,10 +1777,10 @@ Research.addPrereq("RUNICARMOR", "GT_VISSTONE", false);
 
 // Apprentice Ring of Aer
 Research.addResearch("GT_APPRENTICE_AER", "ARTIFICE", "praecantatio 3, instrumentum 1, aer 1", 2, 3, 1, <Thaumcraft:ItemBaubleBlanks:3>);
-game.setLocalization("en_US", "tc.research_name.GT_APPRENTICE_AER", "Apprentice Ring of Aer");
-game.setLocalization("en_US", "tc.research_text.GT_APPRENTICE_AER", "Imbuing an inert ring with the essence of air");
+game.setLocalization("tc.research_name.GT_APPRENTICE_AER", "Apprentice Ring of Aer");
+game.setLocalization("tc.research_text.GT_APPRENTICE_AER", "Imbuing an inert ring with the essence of air");
 Research.addPage("GT_APPRENTICE_AER", "kirara.research_page.GT_APPRENTICE_AER.1");
-game.setLocalization("en_US", "kirara.research_page.GT_APPRENTICE_AER.1", "By infusing an inert ring with aer, you have created a trinket that reduces your aer vis consumption by a small amount.");
+game.setLocalization("kirara.research_page.GT_APPRENTICE_AER.1", "By infusing an inert ring with aer, you have created a trinket that reduces your aer vis consumption by a small amount.");
 Research.addPrereq("GT_APPRENTICE_AER", "GT_APPRENTICE_ARTIFICING", false);
 Research.addPrereq("GT_APPRENTICE_AER", "INFUSION", true);
 Infusion.addRecipe("GT_APPRENTICE_AER", <Thaumcraft:ItemBaubleBlanks:1>, [<Thaumcraft:ItemShard:0>, <minecraft:feather>], "aer 8, praecantatio 4", <Thaumcraft:ItemBaubleBlanks:3>, 0);
@@ -1790,10 +1790,10 @@ Research.setConcealed("GT_APPRENTICE_AER", true);
 
 // Apprentice Ring of Terra
 Research.addResearch("GT_APPRENTICE_TERRA", "ARTIFICE", "praecantatio 3, instrumentum 1, terra 1", 3, 2, 1, <Thaumcraft:ItemBaubleBlanks:4>);
-game.setLocalization("en_US", "tc.research_name.GT_APPRENTICE_TERRA", "Apprentice Ring of Terra");
-game.setLocalization("en_US", "tc.research_text.GT_APPRENTICE_TERRA", "Imbuing an inert ring with the essence of earth");
+game.setLocalization("tc.research_name.GT_APPRENTICE_TERRA", "Apprentice Ring of Terra");
+game.setLocalization("tc.research_text.GT_APPRENTICE_TERRA", "Imbuing an inert ring with the essence of earth");
 Research.addPage("GT_APPRENTICE_TERRA", "kirara.research_page.GT_APPRENTICE_TERRA.1");
-game.setLocalization("en_US", "kirara.research_page.GT_APPRENTICE_TERRA.1", "By infusing an inert ring with terra, you have created a trinket that reduces your terra vis consumption by a small amount.");
+game.setLocalization("kirara.research_page.GT_APPRENTICE_TERRA.1", "By infusing an inert ring with terra, you have created a trinket that reduces your terra vis consumption by a small amount.");
 Research.addPrereq("GT_APPRENTICE_TERRA", "GT_APPRENTICE_ARTIFICING", false);
 Research.addPrereq("GT_APPRENTICE_TERRA", "INFUSION", true);
 Infusion.addRecipe("GT_APPRENTICE_TERRA", <Thaumcraft:ItemBaubleBlanks:1>, [<Thaumcraft:ItemShard:3>, <minecraft:dirt>], "terra 8, praecantatio 4", <Thaumcraft:ItemBaubleBlanks:4>, 0);
@@ -1803,10 +1803,10 @@ Research.setConcealed("GT_APPRENTICE_TERRA", true);
 
 // Apprentice Ring of Ignis
 Research.addResearch("GT_APPRENTICE_IGNIS", "ARTIFICE", "praecantatio 3, instrumentum 1, ignis 1", 4, 3, 1, <Thaumcraft:ItemBaubleBlanks:5>);
-game.setLocalization("en_US", "tc.research_name.GT_APPRENTICE_IGNIS", "Apprentice Ring of Ignis");
-game.setLocalization("en_US", "tc.research_text.GT_APPRENTICE_IGNIS", "Imbuing an inert ring with the essence of fire");
+game.setLocalization("tc.research_name.GT_APPRENTICE_IGNIS", "Apprentice Ring of Ignis");
+game.setLocalization("tc.research_text.GT_APPRENTICE_IGNIS", "Imbuing an inert ring with the essence of fire");
 Research.addPage("GT_APPRENTICE_IGNIS", "kirara.research_page.GT_APPRENTICE_IGNIS.1");
-game.setLocalization("en_US", "kirara.research_page.GT_APPRENTICE_IGNIS.1", "By infusing an inert ring with ignis, you have created a trinket that reduces your ignis vis consumption by a small amount.");
+game.setLocalization("kirara.research_page.GT_APPRENTICE_IGNIS.1", "By infusing an inert ring with ignis, you have created a trinket that reduces your ignis vis consumption by a small amount.");
 Research.addPrereq("GT_APPRENTICE_IGNIS", "GT_APPRENTICE_ARTIFICING", false);
 Research.addPrereq("GT_APPRENTICE_IGNIS", "INFUSION", true);
 Infusion.addRecipe("GT_APPRENTICE_IGNIS", <Thaumcraft:ItemBaubleBlanks:1>, [<Thaumcraft:ItemShard:1>, <minecraft:torch>], "ignis 8, praecantatio 4", <Thaumcraft:ItemBaubleBlanks:5>, 0);
@@ -1816,10 +1816,10 @@ Research.setConcealed("GT_APPRENTICE_IGNIS", true);
 
 // Apprentice Ring of Aqua
 Research.addResearch("GT_APPRENTICE_AQUA", "ARTIFICE", "praecantatio 3, instrumentum 1, aqua 1", 2, 5, 1, <Thaumcraft:ItemBaubleBlanks:6>);
-game.setLocalization("en_US", "tc.research_name.GT_APPRENTICE_AQUA", "Apprentice Ring of Aqua");
-game.setLocalization("en_US", "tc.research_text.GT_APPRENTICE_AQUA", "Imbuing an inert ring with the essence of water");
+game.setLocalization("tc.research_name.GT_APPRENTICE_AQUA", "Apprentice Ring of Aqua");
+game.setLocalization("tc.research_text.GT_APPRENTICE_AQUA", "Imbuing an inert ring with the essence of water");
 Research.addPage("GT_APPRENTICE_AQUA", "kirara.research_page.GT_APPRENTICE_AQUA.1");
-game.setLocalization("en_US", "kirara.research_page.GT_APPRENTICE_AQUA.1", "By infusing an inert ring with aqua, you have created a trinket that reduces your aqua vis consumption by a small amount.");
+game.setLocalization("kirara.research_page.GT_APPRENTICE_AQUA.1", "By infusing an inert ring with aqua, you have created a trinket that reduces your aqua vis consumption by a small amount.");
 Research.addPrereq("GT_APPRENTICE_AQUA", "GT_APPRENTICE_ARTIFICING", false);
 Research.addPrereq("GT_APPRENTICE_AQUA", "INFUSION", true);
 Infusion.addRecipe("GT_APPRENTICE_AQUA", <Thaumcraft:ItemBaubleBlanks:1>, [<Thaumcraft:ItemShard:2>, <minecraft:potion>], "aqua 8, praecantatio 4", <Thaumcraft:ItemBaubleBlanks:6>, 0);
@@ -1829,10 +1829,10 @@ Research.setConcealed("GT_APPRENTICE_AQUA", true);
 
 // Apprentice Ring of Ordo
 Research.addResearch("GT_APPRENTICE_ORDO", "ARTIFICE", "praecantatio 3, instrumentum 1, ordo 1", 3, 6, 1, <Thaumcraft:ItemBaubleBlanks:7>);
-game.setLocalization("en_US", "tc.research_name.GT_APPRENTICE_ORDO", "Apprentice Ring of Ordo");
-game.setLocalization("en_US", "tc.research_text.GT_APPRENTICE_ORDO", "Imbuing an inert ring with the essence of order");
+game.setLocalization("tc.research_name.GT_APPRENTICE_ORDO", "Apprentice Ring of Ordo");
+game.setLocalization("tc.research_text.GT_APPRENTICE_ORDO", "Imbuing an inert ring with the essence of order");
 Research.addPage("GT_APPRENTICE_ORDO", "kirara.research_page.GT_APPRENTICE_ORDO.1");
-game.setLocalization("en_US", "kirara.research_page.GT_APPRENTICE_ORDO.1", "By infusing an inert ring with ordo, you have created a trinket that reduces your ordo vis consumption by a small amount.");
+game.setLocalization("kirara.research_page.GT_APPRENTICE_ORDO.1", "By infusing an inert ring with ordo, you have created a trinket that reduces your ordo vis consumption by a small amount.");
 Research.addPrereq("GT_APPRENTICE_ORDO", "GT_APPRENTICE_ARTIFICING", false);
 Research.addPrereq("GT_APPRENTICE_ORDO", "INFUSION", true);
 Infusion.addRecipe("GT_APPRENTICE_ORDO", <Thaumcraft:ItemBaubleBlanks:1>, [<Thaumcraft:ItemShard:4>, <minecraft:sandstone:2>], "ordo 8, praecantatio 4", <Thaumcraft:ItemBaubleBlanks:7>, 0);
@@ -1842,10 +1842,10 @@ Research.setConcealed("GT_APPRENTICE_ORDO", true);
 
 // Apprentice Ring of Perditio
 Research.addResearch("GT_APPRENTICE_PERDITIO", "ARTIFICE", "praecantatio 3, instrumentum 1, perditio 1", 4, 5, 1, <Thaumcraft:ItemBaubleBlanks:8>);
-game.setLocalization("en_US", "tc.research_name.GT_APPRENTICE_PERDITIO", "Apprentice Ring of Perditio");
-game.setLocalization("en_US", "tc.research_text.GT_APPRENTICE_PERDITIO", "Imbuing an inert ring with the essence of entropy");
+game.setLocalization("tc.research_name.GT_APPRENTICE_PERDITIO", "Apprentice Ring of Perditio");
+game.setLocalization("tc.research_text.GT_APPRENTICE_PERDITIO", "Imbuing an inert ring with the essence of entropy");
 Research.addPage("GT_APPRENTICE_PERDITIO", "kirara.research_page.GT_APPRENTICE_PERDITIO.1");
-game.setLocalization("en_US", "kirara.research_page.GT_APPRENTICE_PERDITIO.1", "By infusing an inert ring with perditio, you have created a trinket that reduces your perditio vis consumption by a small amount.");
+game.setLocalization("kirara.research_page.GT_APPRENTICE_PERDITIO.1", "By infusing an inert ring with perditio, you have created a trinket that reduces your perditio vis consumption by a small amount.");
 Research.addPrereq("GT_APPRENTICE_PERDITIO", "GT_APPRENTICE_ARTIFICING", false);
 Research.addPrereq("GT_APPRENTICE_PERDITIO", "INFUSION", true);
 Infusion.addRecipe("GT_APPRENTICE_PERDITIO", <Thaumcraft:ItemBaubleBlanks:1>, [<Thaumcraft:ItemShard:5>, <minecraft:cobblestone>], "perditio 8, praecantatio 4", <Thaumcraft:ItemBaubleBlanks:8>, 0);
@@ -1886,10 +1886,10 @@ print('Runes inscribed');
 
 // Farmland
 Research.addResearch("GT_FARMLAND", "ALCHEMY", "messis 2, aqua 2, ordo 2", 4, 1, 2, <minecraft:farmland:7>);
-game.setLocalization("en_US", "tc.research_name.GT_FARMLAND", "Preparing Farmland");
-game.setLocalization("en_US", "tc.research_text.GT_FARMLAND", "[GT] Pre-tilled, hydrated dirt");
+game.setLocalization("tc.research_name.GT_FARMLAND", "Preparing Farmland");
+game.setLocalization("tc.research_text.GT_FARMLAND", "[GT] Pre-tilled, hydrated dirt");
 Research.addPage("GT_FARMLAND", "kirara.research_page.GT_FARMLAND.1");
-game.setLocalization("en_US", "kirara.research_page.GT_FARMLAND.1", "You have discovered a way of infusing dirt with aqua essentia to create a patch of damp, hydrated farmland that can immediately be used to plant crops without tilling.");
+game.setLocalization("kirara.research_page.GT_FARMLAND.1", "You have discovered a way of infusing dirt with aqua essentia to create a patch of damp, hydrated farmland that can immediately be used to plant crops without tilling.");
 Research.addPrereq("GT_FARMLAND", "GT_FILL_WATER_BUCKET", false);
 recipes.remove(<Ztones:cleanDirt>);
 Crucible.addRecipe("GT_FARMLAND", <Ztones:cleanDirt>, <minecraft:dirt>, "aqua 2");
@@ -1898,10 +1898,10 @@ Research.setConcealed("GT_FARMLAND", true);
 
 // Pyrotheum
 Research.addResearch("GT_PYROTHEUM", "ALCHEMY", "ignis 2, potentia 2, ordo 2", 3, -3, 2, dustPyrotheum);
-game.setLocalization("en_US", "tc.research_name.GT_PYROTHEUM", "Pyrotheum");
-game.setLocalization("en_US", "tc.research_text.GT_PYROTHEUM", "[GT] Eternal heat - of sorts");
+game.setLocalization("tc.research_name.GT_PYROTHEUM", "Pyrotheum");
+game.setLocalization("tc.research_text.GT_PYROTHEUM", "[GT] Eternal heat - of sorts");
 Research.addPage("GT_PYROTHEUM", "kirara.research_page.GT_PYROTHEUM.1");
-game.setLocalization("en_US", "kirara.research_page.GT_PYROTHEUM.1", "The eternally burning nitor flame may be a poor energy source, but the fact that this light can be coaxed from mundane glowstone has led you to theorize that the same could be done for the residual heat trapped within the many dusts with energetic affinity.<BR>The alchemical cauldron is not a suitable environment for the mixing of volatile materials in precise portions, but the introduction of ordo essentia allows you to perform this delicate operation on a standard arcane worktable.<BR>The resulting dust is extremely hot to the touch and will require a full hazmat suit to handle safely.");
+game.setLocalization("kirara.research_page.GT_PYROTHEUM.1", "The eternally burning nitor flame may be a poor energy source, but the fact that this light can be coaxed from mundane glowstone has led you to theorize that the same could be done for the residual heat trapped within the many dusts with energetic affinity.<BR>The alchemical cauldron is not a suitable environment for the mixing of volatile materials in precise portions, but the introduction of ordo essentia allows you to perform this delicate operation on a standard arcane worktable.<BR>The resulting dust is extremely hot to the touch and will require a full hazmat suit to handle safely.");
 Research.addPrereq("GT_PYROTHEUM", "NITOR", false);
 Arcane.addShapeless("GT_PYROTHEUM", dustPyrotheum * 2, "ordo 8, ignis 8", [<ore:dustRedstone>, <ore:dustSulfur>, <ore:dustCoal>, <ore:dustBlaze>]);
 furnace.setFuel(dustPyrotheum, 4000);
@@ -1914,10 +1914,10 @@ Research.addPrereq("RUNICARMOR", "GT_PYROTHEUM", true);
 
 // Milk
 Research.addResearch("GT_FILL_MILK_BUCKET", "ALCHEMY", "sano 4, fames 2, aqua 2, permutatio 2", 6, 1, 2, <minecraft:milk_bucket>);
-game.setLocalization("en_US", "tc.research_name.GT_FILL_MILK_BUCKET", "Milk Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_FILL_MILK_BUCKET", "[GT] Filling buckets with milk");
+game.setLocalization("tc.research_name.GT_FILL_MILK_BUCKET", "Milk Transmutation");
+game.setLocalization("tc.research_text.GT_FILL_MILK_BUCKET", "[GT] Filling buckets with milk");
 Research.addPage("GT_FILL_MILK_BUCKET", "kirara.research_page.GT_FILL_MILK_BUCKET.1");
-game.setLocalization("en_US", "kirara.research_page.GT_FILL_MILK_BUCKET.1", "You have discovered a way of filling a water bucket with various essentia in order to get a white, nutritious fluid that strongly resembles milk.");
+game.setLocalization("kirara.research_page.GT_FILL_MILK_BUCKET.1", "You have discovered a way of filling a water bucket with various essentia in order to get a white, nutritious fluid that strongly resembles milk.");
 Research.addPrereq("GT_FILL_MILK_BUCKET", "GT_FILL_WATER_BUCKET", false);
 Crucible.addRecipe("GT_FILL_MILK_BUCKET", <minecraft:milk_bucket>, <minecraft:water_bucket>, "sano 2, fames 2");
 Research.addCruciblePage("GT_FILL_MILK_BUCKET", <minecraft:milk_bucket>);
@@ -1925,10 +1925,10 @@ Research.setConcealed("GT_FILL_MILK_BUCKET", true);
 
 // Lava
 Research.addResearch("GT_FILL_LAVA_BUCKET", "ALCHEMY", "ignis 8, tenebrae 4, terra 6, permutatio 4", 6, 3, 2, <minecraft:lava_bucket>);
-game.setLocalization("en_US", "tc.research_name.GT_FILL_LAVA_BUCKET", "Lava Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_FILL_LAVA_BUCKET", "[GT] Filling buckets with lava");
+game.setLocalization("tc.research_name.GT_FILL_LAVA_BUCKET", "Lava Transmutation");
+game.setLocalization("tc.research_text.GT_FILL_LAVA_BUCKET", "[GT] Filling buckets with lava");
 Research.addPage("GT_FILL_LAVA_BUCKET", "kirara.research_page.GT_FILL_LAVA_BUCKET.1");
-game.setLocalization("en_US", "kirara.research_page.GT_FILL_LAVA_BUCKET.1", "After refining the method through which you used a bucket as a vehicle to transform aqua essentia into water, you have discovered a way of filling a bucket with various energetic essentia in order to get lava.");
+game.setLocalization("kirara.research_page.GT_FILL_LAVA_BUCKET.1", "After refining the method through which you used a bucket as a vehicle to transform aqua essentia into water, you have discovered a way of filling a bucket with various energetic essentia in order to get lava.");
 Research.addPrereq("GT_FILL_LAVA_BUCKET", "GT_FILL_WATER_BUCKET", false);
 Research.addPrereq("GT_FILL_LAVA_BUCKET", "NITOR", true);
 Crucible.addRecipe("GT_FILL_LAVA_BUCKET", <minecraft:lava_bucket>, <minecraft:bucket>, "ignis 8, potentia 8, lux 2, perditio 2, terra 2");
@@ -1937,10 +1937,10 @@ Research.setConcealed("GT_FILL_LAVA_BUCKET", true);
 
 // Rare Earth
 Research.addResearch("GT_RAREEARTH", "ALCHEMY", "ignis 8, perditio 4, terra 4, permutatio 4, lucrum 4, vitreus 2", 8, 2, 3, <gregtech:gt.metaitem.01:2891>);
-game.setLocalization("en_US", "tc.research_name.GT_RAREEARTH", "Rare Earth Transmutation");
-game.setLocalization("en_US", "tc.research_text.GT_RAREEARTH", "[GT] Getting your money's worth");
+game.setLocalization("tc.research_name.GT_RAREEARTH", "Rare Earth Transmutation");
+game.setLocalization("tc.research_text.GT_RAREEARTH", "[GT] Getting your money's worth");
 Research.addPage("GT_RAREEARTH", "kirara.research_page.GT_RAREEARTH.1");
-game.setLocalization("en_US", "kirara.research_page.GT_RAREEARTH.1", "Centrifugation is only able to bring out the most abundant components of molten lava, a melange of many different valuable elements. Even allowing the lava to cool into obsidian renders much of its mass unsalvageable.<BR>Thaumaturgists can approach this matter rather differently, forcing some of the rarest metals to precipitate by sacrificing the rest. This process requires the lava be contained in a nonmetallic casing, however. Unfortunately the magical capsules devised interfere with the process somewhat.");
+game.setLocalization("kirara.research_page.GT_RAREEARTH.1", "Centrifugation is only able to bring out the most abundant components of molten lava, a melange of many different valuable elements. Even allowing the lava to cool into obsidian renders much of its mass unsalvageable.<BR>Thaumaturgists can approach this matter rather differently, forcing some of the rarest metals to precipitate by sacrificing the rest. This process requires the lava be contained in a nonmetallic casing, however. Unfortunately the magical capsules devised interfere with the process somewhat.");
 Research.addPrereq("GT_RAREEARTH", "GT_FILL_LAVA_BUCKET", false);
 Research.addPrereq("GT_RAREEARTH", "GT_ADVANCEDMETALLURGY", true);
 Crucible.addRecipe("GT_RAREEARTH", <gregtech:gt.metaitem.01:891> * 3, <MagicBees:capsule.magic:2>, "ignis 4, perditio 4, terra 2, permutatio 2, lucrum 2, vitreus 2");
@@ -1951,10 +1951,10 @@ Research.setConcealed("GT_RAREEARTH", true);
 
 // Firestone
 Research.addResearch("GT_FIRESTONE", "ALCHEMY", "ignis 8, perditio 4, potentia 6, permutatio 4", 8, 4, 3, <Railcraft:firestone.raw>);
-game.setLocalization("en_US", "tc.research_name.GT_FIRESTONE", "Firestone");
-game.setLocalization("en_US", "tc.research_text.GT_FIRESTONE", "[GT] Harnessing the power of concentrated flame");
+game.setLocalization("tc.research_name.GT_FIRESTONE", "Firestone");
+game.setLocalization("tc.research_text.GT_FIRESTONE", "[GT] Harnessing the power of concentrated flame");
 Research.addPage("GT_FIRESTONE", "kirara.research_page.GT_FIRESTONE.1");
-game.setLocalization("en_US", "kirara.research_page.GT_FIRESTONE.1", "As transmuting of even red-hot lava has not satisfied your quest for power, you have devised a method of concentrating vast amounts of raw primal ignis essentia into a vessel no larger than a single piece of quartz.<BR>The firestone is an extremely potent fuel source, and until its powers are culled, will indiscriminately set surrounding blocks on fire.");
+game.setLocalization("kirara.research_page.GT_FIRESTONE.1", "As transmuting of even red-hot lava has not satisfied your quest for power, you have devised a method of concentrating vast amounts of raw primal ignis essentia into a vessel no larger than a single piece of quartz.<BR>The firestone is an extremely potent fuel source, and until its powers are culled, will indiscriminately set surrounding blocks on fire.");
 Research.addPrereq("GT_FIRESTONE", "GT_FILL_LAVA_BUCKET", false);
 Research.addPrereq("GT_FIRESTONE", "GT_PYROTHEUM", true);
 Research.addPrereq("GT_FIRESTONE", "INFUSION", true);
@@ -1974,7 +1974,7 @@ Research.setConcealed("GT_FIRESTONE", true);
 Research.clearPages("BASICTHAUMATURGY"); 
 Research.addPage("BASICTHAUMATURGY", "tc.research_page.BASICTHAUMATURGY.1");
 Research.addPage("BASICTHAUMATURGY", "kirara.research_page.BASICTHAUMATURGY.1");
-game.setLocalization("en_US", "kirara.research_page.BASICTHAUMATURGY.1", "Holding shift will display exact numbers held by the wand and any possible discounts you have to performing magical tasks.<BR>Wands are always constructed by the combination of a rod and two end-caps. As you progress with your studies, you are sure you will discover different materials that you can use to craft rods and caps to make powerful wands. Only the basic wands can be made in a normal crafting table, the others will require the \u00A75Arcane Workbench\u00A70 and will cost vis to construct.<BR>The basic wand is constructed from carefully shaped mundane wood and copper, both of which make poor materials for working magic.");
+game.setLocalization("kirara.research_page.BASICTHAUMATURGY.1", "Holding shift will display exact numbers held by the wand and any possible discounts you have to performing magical tasks.<BR>Wands are always constructed by the combination of a rod and two end-caps. As you progress with your studies, you are sure you will discover different materials that you can use to craft rods and caps to make powerful wands. Only the basic wands can be made in a normal crafting table, the others will require the \u00A75Arcane Workbench\u00A70 and will cost vis to construct.<BR>The basic wand is constructed from carefully shaped mundane wood and copper, both of which make poor materials for working magic.");
 Research.addCraftingPage("BASICTHAUMATURGY", <Thaumcraft:WandCap:3>);
 Research.addCraftingPage("BASICTHAUMATURGY", <Thaumcraft:WandCasting:2>);
 
@@ -1986,10 +1986,10 @@ Research.addCruciblePage("CAP_silver", <Thaumcraft:WandCap:4>);
 
 // Quarried Stone
 Research.addResearch("RC_QUARRIED_STONE", "ALCHEMY", "ordo 2, permutatio 1, terra 2", -7, -3, 1, <Railcraft:cube:7>);
-game.setLocalization("en_US", "tc.research_name.RC_QUARRIED_STONE", "Quarried Stone");
-game.setLocalization("en_US", "tc.research_text.RC_QUARRIED_STONE", "[RC] Stone to marble in one simple step");
+game.setLocalization("tc.research_name.RC_QUARRIED_STONE", "Quarried Stone");
+game.setLocalization("tc.research_text.RC_QUARRIED_STONE", "[RC] Stone to marble in one simple step");
 Research.addPage("RC_QUARRIED_STONE", "kirara.research_page.RC_QUARRIED_STONE.1");
-game.setLocalization("en_US", "kirara.research_page.RC_QUARRIED_STONE.1", "You have found a way to imbue simple stone with lux essentia to transform its exterior appearance.<BR>The resulting product has a very unique refined look and feel to it; perhaps the addition of other essentia types may yield something completely different...");
+game.setLocalization("kirara.research_page.RC_QUARRIED_STONE.1", "You have found a way to imbue simple stone with lux essentia to transform its exterior appearance.<BR>The resulting product has a very unique refined look and feel to it; perhaps the addition of other essentia types may yield something completely different...");
 Research.addPrereq("RC_QUARRIED_STONE", "ALCHEMICALMANUFACTURE", false);
 Crucible.addRecipe("RC_QUARRIED_STONE", <Railcraft:cube:7>, <minecraft:stone>, "lux 2");
 Research.addCruciblePage("RC_QUARRIED_STONE", <Railcraft:cube:7>);
@@ -1997,10 +1997,10 @@ Research.setConcealed("RC_QUARRIED_STONE", true);
 
 // Abyssal Stone
 Research.addResearch("RC_ABYSSAL_STONE", "ALCHEMY", "ordo 2, permutatio 1, terra 2", -9, -3, 1, <Railcraft:cube:6>);
-game.setLocalization("en_US", "tc.research_name.RC_ABYSSAL_STONE", "Abyssal Stone");
-game.setLocalization("en_US", "tc.research_text.RC_ABYSSAL_STONE", "[RC] Stone to darker marble(?) in one simple step");
+game.setLocalization("tc.research_name.RC_ABYSSAL_STONE", "Abyssal Stone");
+game.setLocalization("tc.research_text.RC_ABYSSAL_STONE", "[RC] Stone to darker marble(?) in one simple step");
 Research.addPage("RC_ABYSSAL_STONE", "kirara.research_page.RC_ABYSSAL_STONE.1");
-game.setLocalization("en_US", "kirara.research_page.RC_ABYSSAL_STONE.1", "By imbuing stone with tenebrae essentia, you have produced an equivalent material that is aesthetically similar to quarried stone, but far darker in appearance.<BR>You are sure that the faint screams you seem to hear from the tenebrous block are just your imagination.");
+game.setLocalization("kirara.research_page.RC_ABYSSAL_STONE.1", "By imbuing stone with tenebrae essentia, you have produced an equivalent material that is aesthetically similar to quarried stone, but far darker in appearance.<BR>You are sure that the faint screams you seem to hear from the tenebrous block are just your imagination.");
 Research.addPrereq("RC_ABYSSAL_STONE", "RC_QUARRIED_STONE", false);
 Crucible.addRecipe("RC_ABYSSAL_STONE", <Railcraft:cube:6>, <minecraft:stone>, "tenebrae 2");
 Research.addCruciblePage("RC_ABYSSAL_STONE", <Railcraft:cube:6>);
@@ -2008,10 +2008,10 @@ Research.setConcealed("RC_ABYSSAL_STONE", true);
 
 // Peat
 Research.addResearch("GT_MATURE_PEAT", "ALCHEMY", "ignis 3, aqua 1, permutatio 1, potentia 3", -7, -1, 2, <Forestry:peat>);
-game.setLocalization("en_US", "tc.research_name.GT_MATURE_PEAT", "Alchemical Peat Formation");
-game.setLocalization("en_US", "tc.research_text.GT_MATURE_PEAT", "[GT] Technomagical peat manufacture");
+game.setLocalization("tc.research_name.GT_MATURE_PEAT", "Alchemical Peat Formation");
+game.setLocalization("tc.research_text.GT_MATURE_PEAT", "[GT] Technomagical peat manufacture");
 Research.addPage("GT_MATURE_PEAT", "kirara.research_page.GT_MATURE_PEAT.1");
-game.setLocalization("en_US", "kirara.research_page.GT_MATURE_PEAT.1", "Waiting for peat to mature tried your patience like no other task. Now, you have found a way to instantly turn bog earth into precious, mature peat fuel inside a crucible.<BR>The careful addition of Ignis, Aqua, and Terra essentia completes the process instantaneously, though the rushed alchemical manufacture of peat in this fashion will not return usable blocks of dirt.");
+game.setLocalization("kirara.research_page.GT_MATURE_PEAT.1", "Waiting for peat to mature tried your patience like no other task. Now, you have found a way to instantly turn bog earth into precious, mature peat fuel inside a crucible.<BR>The careful addition of Ignis, Aqua, and Terra essentia completes the process instantaneously, though the rushed alchemical manufacture of peat in this fashion will not return usable blocks of dirt.");
 Research.addPrereq("GT_MATURE_PEAT", "GT_FILL_WATER_BUCKET", true);
 Research.addPrereq("GT_MATURE_PEAT", "ALCHEMICALMANUFACTURE", false);
 Crucible.addRecipe("GT_MATURE_PEAT", <Forestry:peat>, <Forestry:soil:1>, "ignis 2, aqua 2, terra 1");
@@ -2020,10 +2020,10 @@ Research.setConcealed("GT_MATURE_PEAT", true);
 
 // Bituminous peat
 Research.addResearch("GT_BITUMINOUS_PEAT", "ALCHEMY", "ignis 6, perditio 3, permutatio 3, terra 3, potentia 6", -9, -1, 2, <Forestry:bituminousPeat>);
-game.setLocalization("en_US", "tc.research_name.GT_BITUMINOUS_PEAT", "Alchemical Peat Refining");
-game.setLocalization("en_US", "tc.research_text.GT_BITUMINOUS_PEAT", "[GT] Alchemically treated peat");
+game.setLocalization("tc.research_name.GT_BITUMINOUS_PEAT", "Alchemical Peat Refining");
+game.setLocalization("tc.research_text.GT_BITUMINOUS_PEAT", "[GT] Alchemically treated peat");
 Research.addPage("GT_BITUMINOUS_PEAT", "kirara.research_page.GT_BITUMINOUS_PEAT.1");
-game.setLocalization("en_US", "kirara.research_page.GT_BITUMINOUS_PEAT.1", "Regular peat is not a great source of energy, but you have found that the addition of biomass in the form of Herba essentia can vastly improve its effectiveness.<BR>Additional energy input in the form of Ignis and Potentia essentia is of course required, but the gains from refining the peat block into a rich, bituminous form far outweighs the initial cost.");
+game.setLocalization("kirara.research_page.GT_BITUMINOUS_PEAT.1", "Regular peat is not a great source of energy, but you have found that the addition of biomass in the form of Herba essentia can vastly improve its effectiveness.<BR>Additional energy input in the form of Ignis and Potentia essentia is of course required, but the gains from refining the peat block into a rich, bituminous form far outweighs the initial cost.");
 Research.addPrereq("GT_BITUMINOUS_PEAT", "GT_MATURE_PEAT", false);
 Crucible.addRecipe("GT_BITUMINOUS_PEAT", <Forestry:bituminousPeat>, <Forestry:peat>, "herba 8, ignis 2, potentia 1");
 Research.addCruciblePage("GT_BITUMINOUS_PEAT", <Forestry:bituminousPeat>);
@@ -2032,10 +2032,10 @@ Research.setConcealed("GT_BITUMINOUS_PEAT", true);
 // Coal coke
 Research.moveResearch("ETHEREALBLOOM", "ALCHEMY", -2, -4); 
 Research.addResearch("GT_COAL_COKE", "ALCHEMY", "ignis 5, permutatio 5, terra 2, potentia 5", -3, -2, 2, <Railcraft:fuel.coke>);
-game.setLocalization("en_US", "tc.research_name.GT_COAL_COKE", "Refining Coal");
-game.setLocalization("en_US", "tc.research_text.GT_COAL_COKE", "[GT] Alchemically refining coal");
+game.setLocalization("tc.research_name.GT_COAL_COKE", "Refining Coal");
+game.setLocalization("tc.research_text.GT_COAL_COKE", "[GT] Alchemically refining coal");
 Research.addPage("GT_COAL_COKE", "kirara.research_page.GT_COAL_COKE.1");
-game.setLocalization("en_US", "kirara.research_page.GT_COAL_COKE.1", "Regular coal often contains many impurities that prevent proper combustion, and thus efficient usage of its potential energy. By infusing raw coal with a large quantity of ignis and perditio essentia, that impurity can be driven off and coaxed out of the coal mass.<BR>What you are left with is a grey, porous material that burns far better than raw coal, much akin to the coal coke produced via industrial processes in special ovens. Unfortunately, unlike those industrial processes, the thaumaturgical refining of coal will not produce any byproduct.");
+game.setLocalization("kirara.research_page.GT_COAL_COKE.1", "Regular coal often contains many impurities that prevent proper combustion, and thus efficient usage of its potential energy. By infusing raw coal with a large quantity of ignis and perditio essentia, that impurity can be driven off and coaxed out of the coal mass.<BR>What you are left with is a grey, porous material that burns far better than raw coal, much akin to the coal coke produced via industrial processes in special ovens. Unfortunately, unlike those industrial processes, the thaumaturgical refining of coal will not produce any byproduct.");
 Research.addPrereq("GT_COAL_COKE", "ALCHEMICALMANUFACTURE", false);
 Crucible.addRecipe("GT_COAL_COKE", <Railcraft:fuel.coke>, <minecraft:coal>, "ignis 4, perditio 2, potentia 2");
 Research.addCruciblePage("GT_COAL_COKE", <Railcraft:fuel.coke>);
@@ -2079,8 +2079,8 @@ Crucible.addRecipe("GT_TRANSALUMINIUM", nuggetAluminium * 3, nuggetAluminium, "i
 Research.orphanResearch("INFUSED_POTIONS");
 Research.removeResearch("INFUSED_POTIONS");
 Research.addResearch("GT_INFUSED_POTIONS", "TT_CATEGORY", "aqua 5, perditio 5", 7, -5, 2, <ThaumicTinkerer:infusedSeeds>.withTag({mainAspect: {Aspects: [{amount: 1, key: "ignis"}]}}));
-game.setLocalization("en_US", "tc.research_name.GT_INFUSED_POTIONS", "Infused Crops");
-game.setLocalization("en_US", "tc.research_text.GT_INFUSED_POTIONS", "[TT] Who said bees? No one said bees.");
+game.setLocalization("tc.research_name.GT_INFUSED_POTIONS", "Infused Crops");
+game.setLocalization("tc.research_text.GT_INFUSED_POTIONS", "[TT] Who said bees? No one said bees.");
 Research.addPrereq("GT_INFUSED_POTIONS", "BRIGHT_NITOR", false);
 Research.addPrereq("GT_INFUSED_POTIONS", "INFUSION", true);
 Infusion.removeRecipe(<ThaumicTinkerer:infusedSeeds>);
