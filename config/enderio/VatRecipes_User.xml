@@ -12,4 +12,7 @@
       </output>
     </recipe>
   </recipeGroup>
+  <recipeGroup name="EnderIO">
+    <recipe name="Rocket Fuel"/>
+  </recipeGroup>
 </VatRecipes>  
