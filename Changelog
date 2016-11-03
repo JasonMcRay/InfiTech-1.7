@@ -1,3 +1,37 @@
+v3.2.16
+
+Quests:
+- Quests that required crafting of any GT Casings are now Detection, due to possible use of Assembling Machine.
+- Fixed information for Astrominer quest about Astrominer not able to mine Gregtech ores (it CAN mine them)
+- Moved Oxygen Storage quest down the line, due to recipe change
+
+Mod Updates:
+- GregTech -> 5.09.26
+
+Changes/Fixes:
+- Dissassemblers above IV are now faster in dissasembling
+- Exploding GT machines now drop randomly some of their crafting components
+- eIO Rocket Fuel now compatible with GT + has its own GT based recipe (old recipe in VAT removed)
+- EnderIO Alloys now made in Blast Furnace (removed old recipes, implemented default GT ones)
+- Dough can be made also by throwing flour into cauldron with water
+- Fixed reinforced stone dropping as TNT
+- Wrench shift click can move machine front direction
+- New naquadah fuel rods (stats same as MOX with 10x runtime)
+- New automatic maintenance hatch
+- New recipes for Lapotron Crystals, Mining Pipes, Mining Laser and Quantum Armor
+- Gravisuite armor now made in Assembly Line
+- Pollution fixes and rebalances (https://github.com/Blood-Asp/GT5-Unofficial/blob/unstable/src/main/java/gregtech/common/GT_Pollution.java#L21-L51)
+- Few new pollution effects
+- Adv Miner and Oil Drill now turns off after nothing can be mined/drilled
+- New modular armor now obtainable (still WIP, testing needed, balancing proposals are welcome)
+- Changed Native Cinnabar Cluster processing (requires MV Centrifuge, to get 3.5 Quicksilver)
+- Mercury can be solidified to Quicksilver again (and vice versa)
+- Re-added alumentum from charcoal recipe
+- Removed requirement for disabled tunsten cluster research for kami
+- Enabled missing rounds for SAG Mill (Neutronium, Titanium and NaqAlloy)
+- Fixed Thaumonomicon localizations
+- Changed Oxygen Storage recipe
+
 v3.2.15
 
 Mod Updates:
