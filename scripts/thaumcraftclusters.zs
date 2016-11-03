@@ -135,7 +135,7 @@ Research.setSecondary("GT_PURECINNABAR", true);
 Research.addPrereq("GT_PURECINNABAR", "PUREIRON", false);
 Research.setConcealed("GT_PURECINNABAR", true);
 
-Centrifuge.addRecipe([<Thaumcraft:ItemResource:3>, <gregtech:gt.metaitem.01:2299>], null, <Thaumcraft:ItemNugget:21>, null, <liquid:mercury> * 3000, [5000, 500], 800, 5);
+Centrifuge.addRecipe([<Thaumcraft:ItemResource:3>, <gregtech:gt.metaitem.01:2299>], null, <Thaumcraft:ItemNugget:21>, null, <liquid:mercury> * 3000, [5000, 500], 400, 40);
 
 
 <ore:listAllOrePlatinum>.addAll(<ore:orePlatinum>);
