@@ -1027,10 +1027,3 @@ oreDict.buggy.add(<GalacticraftCore:item.buggy:2>);
 oreDict.buggy.add(<GalacticraftCore:item.buggy:3>);
 
 // Workarounds
-# Compressed Aluminium Plates
-ImplosionCompressor.addRecipe([CompressedAl, <gregtech:gt.metaitem.01:816>], <gregtech:gt.metaitem.01:17019> * 2, 1);
-# Heavy Duty Plates
-recipes.addShaped(<gregtech:gt.metaitem.01:32462>, [
-    [SSteelBolt, HHammer, SSteelBolt],
-    [CompressedBronze, CompressedAl, CompressedSteel],
-    [SSteelBolt, null, SSteelBolt]]);
