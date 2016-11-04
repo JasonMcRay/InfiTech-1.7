@@ -4,11 +4,13 @@ Quests:
 - Quests that required crafting of any GT Casings are now Detection, due to possible use of Assembling Machine.
 - Fixed information for Astrominer quest about Astrominer not able to mine Gregtech ores (it CAN mine them)
 - Moved Oxygen Storage quest down the line, due to recipe change
+- Assembly Line quest asks for correct number of blocks for the next quest
 
 Mod Updates:
 - GregTech -> 5.09.26
 
 Changes/Fixes:
+- Fixed Scanning Components consuming more than 1 data stick
 - Dissassemblers above IV are now faster in dissasembling
 - Exploding GT machines now drop randomly some of their crafting components
 - eIO Rocket Fuel now compatible with GT + has its own GT based recipe (old recipe in VAT removed)
