@@ -382,6 +382,7 @@ shining             .addTooltip("Source of tiny pile of silver dust");
 slimeplant          .addTooltip("Source of slimeball");
 spidernip           .addTooltip("Source of string + spider eye + cobweb");
 stagnium            .addTooltip("Source of tiny pile of tin dust");
+stagnium            .addTooltip(format.red("only grows with a Block of Tin underneath"));
 stargatium          .addTooltip("Source of tiny pile of stargatium leaf + endstone dust");
 stargatium          .addTooltip(format.red("only grows with a Block of Naquadah underneath"));
 starwart            .addTooltip("Source of tiny pile of nether star dust + wither skeleton skull + skeleton skull + small pile of coal dust + coal");
