@@ -406,6 +406,7 @@ venomilia           .addTooltip("Source of purple dye + grin powder");
 weed                .addTooltip("Source of all evil");
 wheat               .addTooltip("Source of wheat");
 withereed           .addTooltip("Source of coal dust + coal");
+withereed           .addTooltip(format.red("only grows with a Block of Coal underneath"));
 zomplant            .addTooltip("Source of rotten flesh");
 
 ic2solarpanel       .addTooltip(format.red(format.bold("This item is DISABLED!")));
