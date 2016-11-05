@@ -300,6 +300,7 @@ var zomplant            = <IC2:itemCropSeed>.onlyWithTag({name: "Zomplant", scan
 # Tooltip
 
 argentia            .addTooltip("Source of argentia leaf");
+argentia            .addTooltip(format.red("only grows with a Block of Silver underneath"));
 aurelia             .addTooltip("Source of gold");
 aurelia             .addTooltip(format.red("only grows with a Block of Gold underneath"));
 bauxia              .addTooltip("Source of bauxia leaf");
@@ -307,6 +308,7 @@ bauxia              .addTooltip(format.red("only grows with a Block of Aluminium
 blackthorn          .addTooltip("Source of ink sac");
 blazereed           .addTooltip("Source of blaze powder + blaze rod");
 bobsyeruncleranks   .addTooltip("Source of bobs-yer-uncle-berry + emerald");
+bobsyeruncleranks   .addTooltip(format.red("only grows with a Block of Emerald underneath"));
 brownMushroom       .addTooltip("Source of brown mushroom");
 brownMushrooms      .addTooltip("Source of brown mushrooms");
 carrots             .addTooltip("Source of carrots");
@@ -324,6 +326,7 @@ cyprium             .addTooltip("Source of tiny pile of copper dust");
 cyprium             .addTooltip(format.red("only grows with a Block of Copper underneath"));
 dandelion           .addTooltip("Source of dandelion yellow");
 diareed             .addTooltip("Source of tiny pile of diamond dust + diamond");
+diareed             .addTooltip(format.red("only grows with a Block of Diamond underneath"));
 eatingplant         .addTooltip("Source of rotten flesh");
 eatingplant         .addTooltip(format.red("DANGER plant likes to eat mobs and players"));
 eggplant            .addTooltip("Source of egg + raw chicken + feather");
@@ -382,6 +385,7 @@ shining             .addTooltip("Source of tiny pile of silver dust");
 slimeplant          .addTooltip("Source of slimeball");
 spidernip           .addTooltip("Source of string + spider eye + cobweb");
 stagnium            .addTooltip("Source of tiny pile of tin dust");
+stagnium            .addTooltip(format.red("only grows with a Block of Tin underneath"));
 stargatium          .addTooltip("Source of tiny pile of stargatium leaf + endstone dust");
 stargatium          .addTooltip(format.red("only grows with a Block of Naquadah underneath"));
 starwart            .addTooltip("Source of tiny pile of nether star dust + wither skeleton skull + skeleton skull + small pile of coal dust + coal");
@@ -404,6 +408,7 @@ venomilia           .addTooltip("Source of purple dye + grin powder");
 weed                .addTooltip("Source of all evil");
 wheat               .addTooltip("Source of wheat");
 withereed           .addTooltip("Source of coal dust + coal");
+withereed           .addTooltip(format.red("only grows with a Block of Coal underneath"));
 zomplant            .addTooltip("Source of rotten flesh");
 
 ic2solarpanel       .addTooltip(format.red(format.bold("This item is DISABLED!")));
