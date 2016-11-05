@@ -308,7 +308,7 @@ bauxia              .addTooltip(format.red("only grows with a Block of Aluminium
 blackthorn          .addTooltip("Source of ink sac");
 blazereed           .addTooltip("Source of blaze powder + blaze rod");
 bobsyeruncleranks   .addTooltip("Source of bobs-yer-uncle-berry + emerald");
-bobsyeruncleranks    .addTooltip(format.red("only grows with a Block of Emerald underneath"));
+bobsyeruncleranks   .addTooltip(format.red("only grows with a Block of Emerald underneath"));
 brownMushroom       .addTooltip("Source of brown mushroom");
 brownMushrooms      .addTooltip("Source of brown mushrooms");
 carrots             .addTooltip("Source of carrots");
