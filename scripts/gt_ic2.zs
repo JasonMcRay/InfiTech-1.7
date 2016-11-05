@@ -326,6 +326,7 @@ cyprium             .addTooltip("Source of tiny pile of copper dust");
 cyprium             .addTooltip(format.red("only grows with a Block of Copper underneath"));
 dandelion           .addTooltip("Source of dandelion yellow");
 diareed             .addTooltip("Source of tiny pile of diamond dust + diamond");
+diareed             .addTooltip(format.red("only grows with a Block of Diamond underneath"));
 eatingplant         .addTooltip("Source of rotten flesh");
 eatingplant         .addTooltip(format.red("DANGER plant likes to eat mobs and players"));
 eggplant            .addTooltip("Source of egg + raw chicken + feather");
