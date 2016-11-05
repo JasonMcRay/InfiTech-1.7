@@ -255,7 +255,7 @@ Warp.addToResearch("IT_ICHOR", 5);
 Research.setConcealed("IT_ICHOR", true);
 
 Research.addPage("IT_ICHOR", "infitech.research_page.IT_ICHOR.1");
-game.setLocalization("infitech.research_page.IT_ICHOR.1", 'Through extensive study in all subjects of thaumaturgy you have discovered a substance that is what you consider to be the next step in your endeavours. This extremely powerful substance, which you call "Ichor" catalyzes a soul with the raw awakened power of a nether star.<BR><BR>While you would be best using using the soul of a god they are so rare that you could go your life without seeing one, by adding a drop of blood, the power of the otherworld, and a cider worthy of Notch himself you can draw in the power to make up the difference.');
+game.setLocalization("infitech.research_page.IT_ICHOR.1", 'Through extensive study in all subjects of thaumaturgy you have discovered a substance that is what you consider to be the next step in your endeavours. This extremely powerful substance, which you call "Ichor" catalyzes a soul with the raw awakened power of a nether star.<BR><BR>While you would be best using using the soul of a god they are so rare that you could go your life without seeing one, by adding a drop of blood, the power of the otherworld, and a cider fermented from the juice of a Notch apple you can draw in the power to make up the difference.');
 Infusion.addRecipe("IT_ICHOR", soulFragmentDeity, [silverfishBlood, netherStar], "humanus 1, lux 1, spiritus 2", ichor * 127, 0);
 Research.addInfusionPage("IT_ICHOR", ichor);
 Infusion.removeRecipe(ichor);
