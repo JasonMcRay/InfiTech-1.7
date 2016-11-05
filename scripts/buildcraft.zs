@@ -465,21 +465,25 @@ recipes.addShaped(stonePipe * 6, [
     [rodStone, HHammer, rodStone],
     [rodStone, glass, rodStone],
     [rodStone, File, rodStone]]);
+Assembler.addRecipe(stonePipe * 3, rodStone * 3, integratedCircuit6 * 0, moltenGlass * 72, 20, 16);
 recipes.remove(woodPipe);
 recipes.addShaped(woodPipe * 6, [
     [rodWooden, SHammer, rodWooden],
     [rodWooden, glass, rodWooden],
     [rodWooden, Saw, rodWooden]]);
+Assembler.addRecipe(woodPipe * 3, rodWooden * 3, integratedCircuit6 * 0, moltenGlass * 72, 20, 16);
 recipes.remove(cobblePipe);
 recipes.addShaped(cobblePipe * 6, [
     [rodCobble, SHammer, rodCobble],
     [rodCobble, glass, rodCobble],
     [rodCobble, Saw, rodCobble]]);
+Assembler.addRecipe(cobblePipe * 3, rodCobble * 3, integratedCircuit6 * 0, moltenGlass * 72, 20, 16);
 recipes.remove(sandstonePipe);
 recipes.addShaped(sandstonePipe * 6, [
     [rodSandstone, SHammer, rodSandstone],
     [rodSandstone, glass, rodSandstone],
     [rodSandstone, Saw, rodSandstone]]);
+Assembler.addRecipe(sandstonePipe * 3, rodSandstone * 3, integratedCircuit6 * 0, moltenGlass * 72, 20, 16);
 recipes.remove(obsidianPipe);
 Assembler.addRecipe(obsidianPipe * 3, rodObsidian * 6, integratedCircuit6 * 0, moltenGlass * 144, 40, 16);
 recipes.remove(quartzPipe);
