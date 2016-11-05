@@ -2206,9 +2206,3 @@ InfernalBlastfurnace.removeRecipe(<GalacticraftCore:item.basicItem:5>);
 InfernalBlastfurnace.removeRecipe(<BigReactors:BRIngot>);
 
 print("Finished Thaumcraft Changes");
-
-// Workarounds
-# Missing Alumentum recipe
-Crucible.addRecipe("ALUMENTUM", <Thaumcraft:ItemResource>, <minecraft:coal:1>, "potentia 3, ignis 3, perditio 3");
-<ore:materialAspectShard>.remove(<Thaumcraft:ItemShard:*>);
-<ore:plateAnyIron>.remove(<gregtech:gt.metaitem.01:17307>);

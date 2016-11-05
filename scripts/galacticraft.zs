@@ -1025,5 +1025,3 @@ oreDict.buggy.add(<GalacticraftCore:item.buggy>);
 oreDict.buggy.add(<GalacticraftCore:item.buggy:1>);
 oreDict.buggy.add(<GalacticraftCore:item.buggy:2>);
 oreDict.buggy.add(<GalacticraftCore:item.buggy:3>);
-
-// Workarounds
