@@ -300,6 +300,7 @@ var zomplant            = <IC2:itemCropSeed>.onlyWithTag({name: "Zomplant", scan
 # Tooltip
 
 argentia            .addTooltip("Source of argentia leaf");
+argentia            .addTooltip(format.red("only grows with a Block of Silver underneath"));
 aurelia             .addTooltip("Source of gold");
 aurelia             .addTooltip(format.red("only grows with a Block of Gold underneath"));
 bauxia              .addTooltip("Source of bauxia leaf");
