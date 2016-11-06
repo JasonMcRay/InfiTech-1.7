@@ -158,10 +158,10 @@ FlintAndSteel.addTooltip(format.red("chance to start fire below 50%"));
 <minecraft:brewing_stand>.addTooltip(format.red(format.bold("This item is DISABLED!")));
 */
 
-recipes.addShapeless(<minecraft:coal_ore>, [<ore:oreCoal>]);
-recipes.addShapeless(<minecraft:gold_ore>, [<ore:oreGold>]);
-recipes.addShapeless(<minecraft:iron_ore>, [<ore:oreIron>]);
-recipes.addShapeless(<minecraft:lapis_ore>, [<ore:oreLapis>]);
-recipes.addShapeless(<minecraft:diamond_ore>, [<ore:oreDiamond>]);
-recipes.addShapeless(<minecraft:emerald_ore>, [<ore:oreEmerald>]);
-recipes.addShapeless(<minecraft:redstone_ore>, [<ore:oreRedstone>]);
+recipes.addShapeless(<minecraft:coal_ore>, [<ore:oreCoal>, <ore:gemCoal>, <ore:gemCoal>, <ore:gemCoal>, <ore:gemCoal>]);
+recipes.addShapeless(<minecraft:gold_ore>, [<ore:oreGold>, <ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>]);
+recipes.addShapeless(<minecraft:iron_ore>, [<ore:oreIron>, <ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]);
+recipes.addShapeless(<minecraft:lapis_ore>, [<ore:oreLapis>, <ore:blockLapis>, <ore:blockLapis>, <ore:blockLapis>, <ore:blockLapis>]);
+recipes.addShapeless(<minecraft:diamond_ore>, [<ore:oreDiamond>, <ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>]);
+recipes.addShapeless(<minecraft:emerald_ore>, [<ore:oreEmerald>, <ore:gemEmerald>, <ore:gemEmerald>, <ore:gemEmerald>, <ore:gemEmerald>]);
+recipes.addShapeless(<minecraft:redstone_ore>, [<ore:oreRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]);
