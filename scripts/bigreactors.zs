@@ -9,6 +9,7 @@ var glass = <minecraft:glass>;
 var ingotCyanite = <ore:ingotCyanite>;
 var ingotGraphite = <ore:ingotGraphite>;
 var ingotYellorium = <ore:ingotYellorium>;
+var ingotUranium = <ore:ingotUranium>;
 var itemDiamond = <minecraft:diamond>;
 var itemPiston = <ore:craftingPiston>;
 var itemQuartzNether = <ore:craftingQuartz>;
@@ -22,7 +23,9 @@ var itemFuelRodYellorium = <BigReactors:YelloriumFuelRod>;
 var itemPortTurbineFluid = <BigReactors:BRTurbinePart:3>;
 var itemReactorCasing = <BigReactors:BRReactorPart>;
 var itemReactorController = <BigReactors:BRReactorPart:1>;
+var itemReactorControlRod = <BigReactors:BRReactorPart:2>;
 var itemReactorGlass = <BigReactors:BRMultiblockGlass>;
+var itemReactorRedNetPort = <BigReactors:BRReactorPart:6>;
 var itemReprocessorCyanite = <BigReactors:BRDevice>;
 var itemTurbineController = <BigReactors:BRTurbinePart:1>;
 var itemTurbineGlass = <BigReactors:BRMultiblockGlass:1>;
@@ -37,11 +40,19 @@ var itemTurbineRotorShaft = <BigReactors:BRTurbineRotorPart>;
 recipes.remove(itemFuelRodYellorium);
 recipes.addShaped(itemFuelRodYellorium, [
 	[plateSteel, ingotGraphite, plateSteel],
+	[plateStainlessSteel, ingotUranium, plateStainlessSteel],
+	[plateSteel, ingotGraphite, plateSteel]]);
+recipes.addShaped(itemFuelRodYellorium, [
+	[plateSteel, ingotGraphite, plateSteel],
 	[plateStainlessSteel, ingotYellorium, plateStainlessSteel],
 	[plateSteel, ingotGraphite, plateSteel]]);
 	
 # Reactor Casing
 recipes.remove(itemReactorCasing);
+recipes.addShaped(itemReactorCasing * 4, [
+	[plateSteel, ingotGraphite, plateSteel],
+	[ingotGraphite, ingotUranium, ingotGraphite],
+	[plateSteel, ingotGraphite, plateSteel]]);
 recipes.addShaped(itemReactorCasing * 4, [
 	[plateSteel, ingotGraphite, plateSteel],
 	[ingotGraphite, ingotYellorium, ingotGraphite],
@@ -56,8 +67,23 @@ recipes.addShaped(itemReactorGlass, [
 recipes.remove(itemReactorController);
 recipes.addShaped(itemReactorController, [
 	[itemReactorCasing, plateStainlessSteel, itemReactorCasing],
+	[ingotUranium, itemDiamond, ingotUranium],
+	[itemReactorCasing, plateStainlessSteel, itemReactorCasing]]);
+recipes.addShaped(itemReactorController, [
+	[itemReactorCasing, plateStainlessSteel, itemReactorCasing],
 	[ingotYellorium, itemDiamond, ingotYellorium],
 	[itemReactorCasing, plateStainlessSteel, itemReactorCasing]]);
+	
+# Reactor Control Rod
+recipes.remove(itemReactorControlRod);
+recipes.addShaped(itemReactorControlRod, [
+	[itemReactorCasing, ingotGraphite, itemReactorCasing],
+	[ingotGraphite, dustRedstone, ingotGraphite],
+	[itemReactorCasing, ingotUranium, itemReactorCasing]]);
+recipes.addShaped(itemReactorControlRod, [
+	[itemReactorCasing, ingotGraphite, itemReactorCasing],
+	[ingotGraphite, dustRedstone, ingotGraphite],
+	[itemReactorCasing, ingotYellorium, itemReactorCasing]]);
 	
 # Cyanite Rercprocessor
 recipes.remove(itemReprocessorCyanite);
@@ -111,3 +137,6 @@ recipes.addShaped(itemTurbineRotorBearing, [
 
 # Reactor Power Tap
 reactorPowerTap.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
+# Reactor RedNet Port
+itemReactorRedNetPort.addTooltip(format.red(format.bold("This item is DISABLED!")));
