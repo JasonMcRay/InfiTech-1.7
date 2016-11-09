@@ -174,7 +174,7 @@ var dragonEgg           = <minecraft:dragon_egg>;
 var eel                 = <harvestcraft:eelrawItem>;
 var cakePineapple       = <harvestcraft:pineappleupsidedowncakeItem>;
 var eyeGolden           = <OpenBlocks:goldenEye:0>;
-var chargedFirestone    = <Railcraft:firestone.refined>;
+var EShiftedFirestone   = <InfinityCore:itemKami:4>;
 var gardenGrass         = <harvestcraft:grassgarden>;
 var beeQueen            = <Forestry:beeQueenGE>;
 var clayBall            = <minecraft:clay_ball>;
@@ -422,8 +422,8 @@ Research.refreshResearchRecipe("ICHORCLOTH_CHEST_GEM");
 
 Research.clearPrereqs("ICHORCLOTH_LEGS_GEM");
 Research.addPrereq("ICHORCLOTH_LEGS_GEM", "ICHORCLOTH_ARMOR", false);
-Infusion.addRecipe("ICHORCLOTH_LEGS_GEM", legsIchor, [rubyExquisite, ichor, ichor, thaumonomicon, focusPrimal, fluxLegs, potionFResistLong, focusEfreet, nitorHyper, chargedFirestone, dragonEgg, igneousRock], "nebrisum 32, ignis 128, sano 64, lucrum 32, potentia 64, alienis 32, lux 128, tutamen 128", legsIchorGem, 30);
-Infusion.addRecipe("ICHORCLOTH_LEGS_GEM", legsIchor, [rubyExquisite, ichor, ichor, thaumonomicon, focusPrimal, fluxLegs, potionFResistLong2, focusEfreet, nitorHyper, chargedFirestone, dragonEgg, igneousRock], "nebrisum 32, ignis 128, sano 64, lucrum 32, potentia 64, alienis 32, lux 128, tutamen 128", legsIchorGem, 30);
+Infusion.addRecipe("ICHORCLOTH_LEGS_GEM", legsIchor, [rubyExquisite, ichor, ichor, thaumonomicon, focusPrimal, fluxLegs, potionFResistLong, focusEfreet, nitorHyper, EShiftedFirestone, dragonEgg, igneousRock], "nebrisum 32, ignis 128, sano 64, lucrum 32, potentia 64, alienis 32, lux 128, tutamen 128", legsIchorGem, 30);
+Infusion.addRecipe("ICHORCLOTH_LEGS_GEM", legsIchor, [rubyExquisite, ichor, ichor, thaumonomicon, focusPrimal, fluxLegs, potionFResistLong2, focusEfreet, nitorHyper, EShiftedFirestone, dragonEgg, igneousRock], "nebrisum 32, ignis 128, sano 64, lucrum 32, potentia 64, alienis 32, lux 128, tutamen 128", legsIchorGem, 30);
 Research.refreshResearchRecipe("ICHORCLOTH_LEGS_GEM");
 
 Research.clearPrereqs("ICHORCLOTH_BOOTS_GEM");
