@@ -1,0 +1,35 @@
+{
+  "_name": "minecraft:lapis_ore",
+  "stats": {
+    "opacity": 255,
+    "brightness": 0,
+    "hardness": 3.0,
+    "resistance": 15.0,
+    "sound": "piston",
+    "slipperiness": 0.6,
+    "tool_data": [
+      {
+        "tool": "pickaxe",
+        "level": 1
+      }
+    ]
+  },
+  "break_speed": [],
+  "drops": [
+    {
+        "function": "add",
+        "id": "minecraft:lapis_ore"
+    },
+    {
+        "function": "remove",
+        "id": "minecraft:dye",
+        "damage": 4
+    }
+        ],
+  "harvest": [],
+  "xp": [
+    {   "function": "set",
+        "value": 0
+    }
+        ]
+}

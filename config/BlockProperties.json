@@ -1,0 +1,8 @@
+{
+  "_comment": "This is the default Block Properties file. When this mod generates a default file for any block, it will be an auto-formatted copy of this file. Remember, comments outside of functions (such as this one) will not be copied.",
+  "stats": {},
+  "break_speed": [],
+  "drops": [],
+  "harvest": [],
+  "xp": []
+}
