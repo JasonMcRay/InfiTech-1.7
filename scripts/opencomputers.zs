@@ -8,6 +8,7 @@ import mods.ic2.Macerator;
 
 var chamelium       = <OpenComputers:item:96>;
 var chameliumBlock  = <OpenComputers:chameliumBlock>;
+var WorldSensorCard = <OpenComputers:item:89>;
 
 # Recipe Tweaks
 
@@ -23,3 +24,5 @@ furnace.remove(<OpenComputers:item:31>);
 <OpenComputers:item:31>.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(<OpenComputers:item:32>);
 <OpenComputers:item:32>.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
+WorldSensorCard.addTooltip(format.red("cannot detect sealed areas"));
