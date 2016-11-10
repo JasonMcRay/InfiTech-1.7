@@ -17,6 +17,7 @@ var plateStainlessSteel = <ore:plateStainlessSteel>;
 var plateSteel = <ore:plateSteel>;
 var plateTungstenSteel = <ore:plateTungstenSteel>;
 var reactorPowerTap = <ore:reactorPowerTap>;
+var comparator = <minecraft:comparator>;
 
 # BigReactors recipes we're changing
 var itemFuelRodYellorium = <BigReactors:YelloriumFuelRod>;
@@ -33,6 +34,7 @@ var itemTurbineHousing = <BigReactors:BRTurbinePart>;
 var itemTurbineRotorBearing = <BigReactors:BRTurbinePart:4>;
 var itemTurbineRotorBlade = <BigReactors:BRTurbineRotorPart:1>;
 var itemTurbineRotorShaft = <BigReactors:BRTurbineRotorPart>;
+var itemReactorMonitor = <IC2NuclearControl:NC-BRinfoFetch>;
 
 ###############################
 
@@ -134,6 +136,20 @@ recipes.addShaped(itemTurbineRotorBearing, [
 	[itemTurbineHousing, itemTurbineRotorShaft, itemTurbineHousing],
 	[itemDiamond, gearDiamond, itemDiamond],
 	[itemTurbineHousing, itemTurbineRotorShaft, itemTurbineHousing]]);
+
+# Reactor Monitor
+recipes.remove(itemReactorMonitor);
+recipes.addShaped(itemReactorMonitor, [
+	[itemReactorCasing, dustRedstone, itemReactorCasing],
+	[ingotUranium, comparator, ingotUranium],
+	[itemReactorCasing, dustRedstone, itemReactorCasing]]);
+recipes.addShaped(itemReactorMonitor, [
+	[itemReactorCasing, dustRedstone, itemReactorCasing],
+	[ingotYellorium, comparator, ingotYellorium],
+	[itemReactorCasing, dustRedstone, itemReactorCasing]]);
+
+# Yellorium Ingot
+furnace.addRecipe(<gregtech:gt.metaitem.01:11098>, ingotYellorium);
 
 # Reactor Power Tap
 reactorPowerTap.addTooltip(format.red(format.bold("This item is DISABLED!")));
