@@ -44,20 +44,12 @@ recipes.addShaped(itemFuelRodYellorium, [
 	[plateSteel, ingotGraphite, plateSteel],
 	[plateStainlessSteel, ingotUranium, plateStainlessSteel],
 	[plateSteel, ingotGraphite, plateSteel]]);
-recipes.addShaped(itemFuelRodYellorium, [
-	[plateSteel, ingotGraphite, plateSteel],
-	[plateStainlessSteel, ingotYellorium, plateStainlessSteel],
-	[plateSteel, ingotGraphite, plateSteel]]);
 	
 # Reactor Casing
 recipes.remove(itemReactorCasing);
 recipes.addShaped(itemReactorCasing * 4, [
 	[plateSteel, ingotGraphite, plateSteel],
 	[ingotGraphite, ingotUranium, ingotGraphite],
-	[plateSteel, ingotGraphite, plateSteel]]);
-recipes.addShaped(itemReactorCasing * 4, [
-	[plateSteel, ingotGraphite, plateSteel],
-	[ingotGraphite, ingotYellorium, ingotGraphite],
 	[plateSteel, ingotGraphite, plateSteel]]);
 
 # Reactor Glass
@@ -71,10 +63,6 @@ recipes.addShaped(itemReactorController, [
 	[itemReactorCasing, plateStainlessSteel, itemReactorCasing],
 	[ingotUranium, itemDiamond, ingotUranium],
 	[itemReactorCasing, plateStainlessSteel, itemReactorCasing]]);
-recipes.addShaped(itemReactorController, [
-	[itemReactorCasing, plateStainlessSteel, itemReactorCasing],
-	[ingotYellorium, itemDiamond, ingotYellorium],
-	[itemReactorCasing, plateStainlessSteel, itemReactorCasing]]);
 	
 # Reactor Control Rod
 recipes.remove(itemReactorControlRod);
@@ -82,10 +70,6 @@ recipes.addShaped(itemReactorControlRod, [
 	[itemReactorCasing, ingotGraphite, itemReactorCasing],
 	[ingotGraphite, dustRedstone, ingotGraphite],
 	[itemReactorCasing, ingotUranium, itemReactorCasing]]);
-recipes.addShaped(itemReactorControlRod, [
-	[itemReactorCasing, ingotGraphite, itemReactorCasing],
-	[ingotGraphite, dustRedstone, ingotGraphite],
-	[itemReactorCasing, ingotYellorium, itemReactorCasing]]);
 	
 # Cyanite Rercprocessor
 recipes.remove(itemReprocessorCyanite);
@@ -142,10 +126,6 @@ recipes.remove(itemReactorMonitor);
 recipes.addShaped(itemReactorMonitor, [
 	[itemReactorCasing, dustRedstone, itemReactorCasing],
 	[ingotUranium, comparator, ingotUranium],
-	[itemReactorCasing, dustRedstone, itemReactorCasing]]);
-recipes.addShaped(itemReactorMonitor, [
-	[itemReactorCasing, dustRedstone, itemReactorCasing],
-	[ingotYellorium, comparator, ingotYellorium],
 	[itemReactorCasing, dustRedstone, itemReactorCasing]]);
 
 # Yellorium Ingot
