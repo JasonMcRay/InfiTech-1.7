@@ -17,6 +17,10 @@
   "break_speed": [],
   "drops": [
     {
+        "function": "default",
+        "value": false
+    },
+    {
         "function": "add",
         "id": "minecraft:diamond_ore"
     },
