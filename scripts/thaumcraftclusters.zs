@@ -261,7 +261,7 @@ Research.setSecondary("PURENAQUADAH", true);
 Research.addPrereq("PURENAQUADAH", "PUREIRON", false);
 Research.setConcealed("PURENAQUADAH", true);
 
-BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12324> * 2], [<InfinityCore:itemCluster:5>], 6000, 120, 3000);
+BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12324> * 2], [<InfinityCore:itemCluster:5>], 10800, 120, 5400);
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2324> * 3, <gregtech:gt.metaitem.01:2324>, <gregtech:gt.metaitem.01:2299>], <InfinityCore:itemCluster:5>, [10000, 5000, 500], 400, 2);
 
 <ore:listAllOreZinc>.addAll(<ore:oreZinc>);
