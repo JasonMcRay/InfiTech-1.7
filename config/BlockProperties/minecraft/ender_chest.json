@@ -1,0 +1,66 @@
+{
+  "_name": "minecraft:ender_chest",
+  "stats": {
+    "opacity": 0,
+    "brightness": 7,
+    "hardness": 22.5,
+    "resistance": 180.0,
+    "sound": "piston",
+    "slipperiness": 0.6,
+    "tool_data": []
+  },
+  "break_speed": [],
+  "drops": [
+    {
+        "function": "!if_silk_touch",
+        "functions": [
+            {
+                "function": "default",
+                "value": false
+            },
+            {
+                "function": "add",
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 17804
+            },
+            {
+                "function": "add",
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 17804
+            },
+            {
+                "function": "add",
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 17804
+            },
+            {
+                "function": "add",
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 17804
+            },
+            {
+                "function": "add",
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 17804
+            },
+            {
+                "function": "add",
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 17804
+            },
+            {
+                "function": "add",
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 1321
+            },
+            {
+                "function": "add",
+                "id": "gregtech:gt.metaitem.01",
+                "damage": 1321
+            }
+        ]
+    }
+    ],
+  "harvest": [],
+  "xp": []
+}

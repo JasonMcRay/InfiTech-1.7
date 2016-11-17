@@ -105,6 +105,7 @@ servers.dat
 mods/MobiusCore*.jar
 mods/Opis*.jar
 dumps/*
+config/BlockProperties.defaults/*
 
 # Non essential/custom mods
 mods/FullscreenWindowed*.*
