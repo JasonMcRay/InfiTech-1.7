@@ -1,3 +1,37 @@
+v3.2.17
+
+New Mod:
+- Block Properties
+
+Mod Updates:
+- InfinityCore -> 1.7c
+- Ewy's Workshop -> 1.1.4 - Customized
+- HardcoreEnderExpansion -> 1.8.6 - Customized
+- GTTweaker -> 1.4.3
+
+Changes/Fixes:
+- Added Assembler recipes for remaining BC Pipes (thanks @codewarrior0)
+- More crop tooltips (thanks @Nex4rius)
+- Fixed Shard Oredictionary Entry
+- Getting killed in the End now spawns properly Gravestone
+- Workaround scripts moved to separate file
+- Show both Node Transducer recipes in Thaumonomicon
+- Include Dragon Blood recipe in thaumonomicon entry
+- More clearly state Notches Brew recipe
+- Added Ender-Shifted Refined Firestone
+    - ESR Firestone is now used in place of Refined Firestone in Kami Leg Recipe
+- Extracted ChickenChunks script file from InfinityCore, for users to modify
+- Vanilla Coal, Diamond, Emerald and Redstone ores will always drop themselves
+- Brought back old EnderIO Alloy recipes (slightly tiered across Steam/LV and MV)
+- Added (warded) Jars back to biliocraft potion shelves
+- Lowered chance and amount of Food in chests (Chance 5 -> 1; Amount 16 -> 4)
+- Updated Naquadah Cluster blast furnace recipe to new EBF requirements
+- Added Dimensional Alloy
+    - Used in place of NaqAlloy in Player X-Dim teleporting machines
+- Changed IC2 Teleport recipe to want Enderium instead of NaqAlloy
+- EnderChest now drops Obsidian Plates and Enderium Dust instead of Obsidian Blocks
+- Fixed HQM crafting detection in Ewy's Workshop table
+
 v3.2.16
 
 Quests:
