@@ -188,6 +188,7 @@ var superBuildersWand   = <ExtraUtilities:creativebuilderswand>;
 var dropper             = <minecraft:dropper>;
 var blazePowder         = <minecraft:blaze_powder>;
 var feather             = <minecraft:feather>;
+var plateDimAlloy       = <InfinityCore:itemMaterial:28>;
 
 
 //******************
@@ -451,7 +452,7 @@ Research.refreshResearchRecipe("PLACEMENT_MIRROR");
 // Celestial Teleportation
 Research.clearPrereqs("WARP_GATE");
 Research.addPrereq("WARP_GATE", "ICHORCLOTH_CHEST_GEM", false);
-Infusion.addRecipe("WARP_GATE", pavingTravel, [ichor, shardEnder, dislocator, plateNaquadahAlloy, ichor, shardNether, feather, plateNaquadahAlloy], "alienis 64, iter 64, volatus 64", celestialGateway, 15);
+Infusion.addRecipe("WARP_GATE", pavingTravel, [ichor, shardEnder, dislocator, plateDimAlloy, ichor, shardNether, feather, plateDimAlloy], "alienis 64, iter 64, volatus 64", celestialGateway, 15);
 Infusion.addRecipe("WARP_GATE", enhancedEnderPearl, [ichor, shardEnder, blockLazurite, cellNaquadah], "aer 16, iter 32, alienis 32, volatus 32", celestialPearl, 12);
 Research.refreshResearchRecipe("WARP_GATE");
 

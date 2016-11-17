@@ -145,6 +145,7 @@ var pipeSmallTungstenSteel = <ore:pipeSmallTungstenSteel>;
 var piston = <minecraft:piston>;
 var pistonHV = <gregtech:gt.metaitem.01:32642>;
 var plateDarkSteel = <ore:plateDarkSteel>;
+var plateDimAlloy = <ore:plateDimensionalAlloy>;
 var plateEnderium = <ore:plateEnderium>;
 var plateIron = <ore:plateIron>;
 var plateSilicon = <ore:plateSilicon>;
@@ -365,7 +366,7 @@ recipes.addShaped(OCConduit * 3, [
 recipes.remove(telepad);
 recipes.addShaped(telepad, [
     [fusedQuartz, fieldGenEV, fusedQuartz],
-    [ingotNaquadahAlloy, travelAnchor, ingotNaquadahAlloy],
+    [plateDimAlloy, travelAnchor, plateDimAlloy],
     [ingotDarkSteel, capacitorOctadic, ingotDarkSteel]]);
     
 # Specialties

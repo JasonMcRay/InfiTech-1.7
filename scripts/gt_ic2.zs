@@ -168,6 +168,7 @@ var plateAlloyAdvanced      = <ore:plateAlloyAdvanced>;
 var plateAluminium          = <gregtech:gt.metaitem.01:17019>;
 var plateCarbon             = <ore:plateAlloyCarbon>;
 var plateDenseIron          = <ore:plateDenseIron>;
+var plateEnderium           = <ore:plateEnderium>;
 var plateIron               = <ore:plateIron>;
 var plateNaquadahAlloy      = <ore:plateNaquadahAlloy>;
 var plateRubber             = <ore:plateRubber>;
@@ -512,7 +513,7 @@ recipes.remove(teleporter);
 recipes.addShaped(teleporter, [
     [circuitAdvanced, frequencyTrans, circuitAdvanced],
     [cablePlatinum1x, casingBasic, cablePlatinum1x],
-    [circuitAdvanced, plateNaquadahAlloy, circuitAdvanced]]);
+    [circuitAdvanced, plateEnderium, circuitAdvanced]]);
 
 # Electrical Tools Oredictionary Stuff
 
