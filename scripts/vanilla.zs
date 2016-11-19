@@ -21,6 +21,7 @@ var diamondLeggings = <minecraft:diamond_leggings>;
 var diamondPickaxe = <minecraft:diamond_pickaxe>;
 var diamondShovel = <minecraft:diamond_shovel>;
 var diamondSword = <minecraft:diamond_sword>;
+var diamondHoe = <minecraft:diamond_hoe>;
 var dustCoal = <ore:dustCoal>;
 var dustCharcoal = <ore:dustCharcoal>;
 var dustLapis = <ore:dustLapis>;
@@ -148,6 +149,11 @@ recipes.remove(diamondSword);
 recipes.addShaped(diamondSword, [
     [null, diamond, null],
     [File, diamond, null],
+    [null, stick, null]]);
+recipes.remove(diamondHoe);
+recipes.addShaped(diamondHoe, [
+    [diamond, diamond, null],
+    [File, stick, null],
     [null, stick, null]]);
 
 # Tooltip
