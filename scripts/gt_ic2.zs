@@ -22,10 +22,14 @@ import minetweaker.item.IItemStack;
 
 # Aliases
 var CESU                    = <IC2:blockElectric:7>;
+var CFBackpack              = <IC2:itemArmorCFPack>;
+var CFSprayer               = <IC2:itemFoamSprayer>;
 var GTDough                 = <gregtech:gt.metaitem.02:32559>;
 var GTFlour                 = <gregtech:gt.metaitem.01:2881>;
 var GTSalt                  = <gregtech:gt.metaitem.01:2817>;
 var HHammer                 = <ore:craftingToolHardHammer>;
+var KineticSteamGenerator   = <IC2:blockKineticGenerator:1>;
+var LiquidHeatExchanger     = <IC2:blockMachine2:12>;
 var MFE                     = <IC2:blockElectric:1>;
 var MFSU                    = <IC2:blockElectric:2>;
 var MOX                     = <IC2:itemMOX>;
@@ -34,6 +38,7 @@ var OVScanner               = <IC2:itemScannerAdv>;
 var RTGPellet               = <IC2:itemRTGPellet>;
 var Saw                     = <ore:craftingToolSaw>;
 var Screwdriver             = <ore:craftingToolScrewdriver>;
+var UniversalFluidCell      = <IC2:itemFluidCell>;
 var Wrench                  = <ore:craftingToolWrench>;
 var advancedMiner           = <IC2:blockMachine2:11>;
 var anyWater                = <ore:listAllwater>;
@@ -51,10 +56,9 @@ var cableGold1x             = <ore:cableGt01Gold>;
 var cableGold2x             = <ore:cableGt02Gold>;
 var cablePlatinum1x         = <ore:cableGt01Platinum>;
 var cableTin1x              = <ore:cableGt01Tin>;
+var capacitor               = <OpenComputers:capacitor>;
 var casingBasic             = <IC2:blockMachine>;
 var cellLargeSteel          = <gregtech:gt.metaitem.01:32405>;
-var CFSprayer               = <IC2:itemFoamSprayer>;
-var CFBackpack              = <IC2:itemArmorCFPack>;
 var chainsaw                = <IC2:itemToolChainsaw:*>;
 var chargePadBatbox         = <IC2:blockChargepad>;
 var chargePadCESU           = <IC2:blockChargepad:1>;
@@ -93,12 +97,13 @@ var electricJetpack         = <IC2:itemArmorJetpackElectric>;
 var electricMotor           = <IC2:itemRecipePart:1>;
 var electricWrench          = <IC2:itemToolWrenchElectric:*>;
 var emptyCell               = <ore:cellEmpty>;
+var emitterMV               = <gregtech:gt.metaitem.01:32681>;
 var energiumDust            = <IC2:itemDust2:2>;
 var energyCrystal           = <IC2:itemBatCrystal:*>;
 var enrichedMOX             = <IC2:itemUran>;
 var fermenter               = <IC2:blockMachine2:13>;
-var fluidEjectorUpgrade     = <IC2:upgradeModule:4>;
 var fluidDistributor        = <IC2:blockMachine3:4>;
+var fluidEjectorUpgrade     = <IC2:upgradeModule:4>;
 var fluidHeatGen            = <IC2:blockHeatGenerator:1>;
 var fluidRegulator          = <IC2:blockMachine2:14>;
 var foilTin                 = <gregtech:gt.metaitem.01:29057>;
@@ -151,8 +156,6 @@ var itemIngotSilver         = <gregtech:gt.metaitem.01:11054>;
 var itemPlankWood           = <gregtech:gt.metaitem.01:17809>;
 var itemRingWood            = <gregtech:gt.metaitem.01:28809>;
 var jetpack                 = <IC2:itemArmorJetpack:*>;
-var KineticSteamGenerator   = <IC2:blockKineticGenerator:1>;
-var LiquidHeatExchanger     = <IC2:blockMachine2:12>;
 var machineCasingAdvanced   = <IC2:blockMachine:12>;
 var machineHullEV           = <gregtech:gt.blockmachines:14>;
 var machineHullHV           = <gregtech:gt.blockmachines:13>;
@@ -185,6 +188,7 @@ var ringSteel               = <ore:ringSteel>;
 var ringTungstenSteel       = <ore:ringTungstenSteel>;
 var ringWood                = <ore:ringWood>;
 var robotArmHV              = <gregtech:gt.metaitem.01:32652>;
+var rodLongMagneticNeodymium= <ore:stickLongNeodymiumMagnetic>;
 var rotorBladeCarbon        = <IC2:itemRecipePart:9>;
 var rotorBladeIron          = <IC2:itemRecipePart:8>;
 var rotorBladeSteel         = <IC2:itemRecipePart:10>;
@@ -195,20 +199,21 @@ var rotorSteel              = <IC2:itemsteelrotor>;
 var rotorWood               = <IC2:itemwoodrotor>;
 var screwIridium            = <ore:screwIridium>;
 var screwIron               = <ore:screwIron>;
+var semifluidgen            = <IC2:blockGenerator:7>;
 var sensorHV                = <gregtech:gt.metaitem.01:32692>;
 var shaftIron               = <IC2:itemRecipePart:11>;
 var shaftSteel              = <IC2:itemRecipePart:12>;
 var singleUseBattery        = <IC2:itemBatSU>;
+var smallBatteryHull        = <gregtech:gt.metaitem.01:32500>;
 var solarDistiller          = <IC2:blockMachine3:3>;
 var stickIron               = <ore:stickIron>;
-var smallBatteryHull        = <gregtech:gt.metaitem.01:32500>;
-var semifluidgen            = <IC2:blockGenerator:7>;
 var sugarcane               = <minecraft:reeds>;
 var teleporter              = <IC2:blockMachine2>;
+var teslaCoil               = <IC2:blockMachine2:1>;
 var tinCan                  = <IC2:itemTinCan>;
 var tinnedSteel             = <InfinityCore:itemMaterial:18>;
+var transformerMV           = <gregtech:gt.blockmachines:22>;
 var treetap                 = <IC2:itemTreetap>;
-var UniversalFluidCell      = <IC2:itemFluidCell>;
 var uraniumEnriched         = <IC2:itemUran>;
 var weedingTrowel           = <IC2:itemWeedingTrowel>;
 var wireAluminium16         = <ore:wireGt16Aluminium>;
@@ -596,12 +601,16 @@ AlloySmelter.addRecipe(itemIngotBlueAlloy * 2, itemIngotSilver, itemIngotElectro
 # Recipe Tweaks
 Extractor.addRecipe(smallBatteryHull, reBattery);
 
+recipes.remove(teslaCoil);
+recipes.addShaped(teslaCoil, [
+    [coil, emitterMV, coil],
+    [coil, transformerMV, coil],
+    [rodLongMagneticNeodymium, capacitor, rodLongMagneticNeodymium]]);
 recipes.remove(weedingTrowel);
 recipes.addShaped(weedingTrowel, [
     [stickIron, null, stickIron],
     [null, stickIron, null],
     [plateRubber, stickIron, plateRubber]]);
-
 recipes.remove(singleUseBattery);
 recipes.addShaped(singleUseBattery * 6, [
     [cableTin1x],
@@ -687,85 +696,71 @@ recipes.addShaped(semifluidgen, [
     [itemCasingIron, emptyCell, itemCasingIron],
     [emptyCell, geothermalGen, emptyCell],
     [itemCasingIron, emptyCell, itemCasingIron]]);
-
 recipes.remove(geothermalGen);
 recipes.addShaped(geothermalGen, [
     [glass, emptyCell, glass],
     [glass, emptyCell, glass],
     [itemCasingIron, craftingGenerator, itemCasingIron]]);
-
 recipes.remove(fluidHeatGen);
 recipes.addShaped(fluidHeatGen, [
     [itemCasingIron, emptyCell, itemCasingIron],
     [emptyCell, heatConductor, emptyCell],
     [itemCasingIron, emptyCell, itemCasingIron]]);
-
 recipes.remove(KineticSteamGenerator);
 recipes.addShaped(KineticSteamGenerator, [
     [itemCasingSteel, itemCasingSteel, itemCasingSteel],
     [copperBoiler, shaftIron, shaftIron],
     [emptyCell, itemCasingSteel, itemCasingSteel]]);
-
 recipes.remove(solarDistiller);
 recipes.addShaped(solarDistiller, [
     [glass, glass, glass],
     [glass, null, glass],
     [emptyCell, casingBasic, emptyCell]]);
-
 recipes.remove(CFSprayer);
 recipes.addShaped(CFSprayer, [
     [itemCasingIron, null, null],
     [null, itemCasingIron, null],
     [null, emptyCell, itemCasingIron]]);
-
 recipes.remove(CFBackpack);
 recipes.addShaped(CFBackpack, [
     [CFSprayer, circuitBasic, CFSprayer],
     [emptyCell, itemCasingIron, emptyCell],
     [emptyCell, null, emptyCell]]);
-
 recipes.remove(LiquidHeatExchanger);
 recipes.addShaped(LiquidHeatExchanger, [
     [glass, emptyCell, glass],
     [glass, emptyCell, glass],
     [itemCasingIron, heatConductor, itemCasingIron]]);
-
 recipes.remove(fermenter);
 recipes.addShaped(fermenter, [
     [itemCasingIron, itemCasingIron, itemCasingIron],
     [emptyCell, emptyCell, emptyCell],
     [itemCasingIron, heatConductor, itemCasingIron]]);
-
 recipes.remove(fluidRegulator);
 recipes.addShaped(fluidRegulator, [
     [itemCasingIron, itemCasingIron, itemCasingIron],
     [emptyCell, electricMotor, emptyCell],
     [itemCasingIron, circuitBasic, itemCasingIron]]);
-
 recipes.remove(condenser);
 recipes.addShaped(condenser, [
     [emptyCell, itemCasingIron, emptyCell],
     [emptyCell, casingBasic, emptyCell],
     [itemCasingIron, circuitBasic, itemCasingIron]]);
-
 recipes.remove(fluidDistributor);
 recipes.addShaped(fluidDistributor, [
     [fluidEjectorUpgrade, fluidEjectorUpgrade, fluidEjectorUpgrade],
     [fluidEjectorUpgrade, casingBasic, fluidEjectorUpgrade],
     [emptyCell, emptyCell, emptyCell]]);
-
 recipes.remove(cropMatron);
 recipes.addShaped(cropMatron, [
     [circuitBasic, chest, circuitBasic],
     [emptyCell, casingBasic, emptyCell],
     [crop, crop, crop]]);
-
 recipes.remove(pump);
 recipes.addShaped(pump, [
     [emptyCell, circuitBasic, emptyCell],
     [emptyCell, casingBasic, emptyCell],
     [miningPipe, treetap, miningPipe]]);
-
 recipes.remove(bottlingPlant);
 recipes.addShaped(bottlingPlant, [
     [null, emptyCell, null],
