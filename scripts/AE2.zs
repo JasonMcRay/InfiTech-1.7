@@ -13,6 +13,7 @@ import mods.nei.NEI;
 import mods.gregtech.Wiremill;
 import mods.gregtech.PrecisionLaser;
 import mods.gregtech.ChemicalBath;
+import minetweaker.item.IItemStack;
 
 
 // --- Variables ---
@@ -511,6 +512,13 @@ recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:33>);
 // --- 128 Spatial Component
 recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:34>);
 
+
+// --- disabled tooltips ---
+
+val disabled = [Charger, CrystalAccelerator] as IItemStack[];
+for i, item in disabled {
+    item.addTooltip(format.red(format.bold("This item is DISABLED!")));
+}
 
 
 // --- Adding Back Recipes ---
