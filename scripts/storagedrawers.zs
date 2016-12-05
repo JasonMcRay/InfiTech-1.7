@@ -33,3 +33,5 @@ mods.storagedrawers.OreDictionaryBlacklist.add("itemCertusQuartz");
 # Credits in Compacting Drawer
 mods.storagedrawers.Compaction.add(<IC2:itemCoin>, <gregtech:gt.metaitem.01:32011>, 8);
 mods.storagedrawers.Compaction.add(<gregtech:gt.metaitem.01:32013>, <IC2:itemCoin>, 8);
+
+drawerCompacting.addTooltip("Also stores Industrial Credits");
