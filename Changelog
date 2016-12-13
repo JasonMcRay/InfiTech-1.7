@@ -1,3 +1,29 @@
+v3.2.18
+
+Quests:
+- Swapped "Material Saviour" and "I Am Bender" quests
+- Separated Pumps, Pistons and Robot Arms from Components quest to optional.
+- Separated Copper Cable creation quests from "Insulation" quest to optional.
+
+Mod Updates:
+- Ewy's Workshop -> 1.1.6
+- SGCraft -> 1.13.0
+
+Changes/Fixes:
+- Greggify Diamond Hoe (thanks @Nex4rius)
+- Wither no longer explodes on death (due to high performance hits and locking the game for even couple minutes)
+- Nerfed Tesla Coil recipes
+- Fixed Vinteum Lens not craftable
+- Added GT Marble and Basalt to Digger's Backpack (thanks @codewarrior0)
+- Added Solid Super Fuel as Dim Anchor fuel (thanks @codewarrior0)
+- Added tooltips to some disabled AE2 items/blocks (thanks @Nex4rius)
+- Workaround fix for Mining Laser Recipe
+- Blacklisted few items in Decomposition Table due to material exploits
+- Fixed chisel concrete speed (now should be in par with GT version)
+- Allow Industrial Credits in Compacting Drawers (thanks @codewarrior0)
+- Fixed LMB dragging with Item over an items.
+- Fixed few aspects in certain items.
+
 v3.2.17
 
 New Mod:
