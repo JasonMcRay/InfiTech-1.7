@@ -1,5 +1,7 @@
 // --- Created by Jason McRay ---
 
+import mods.gregtech.Assembler;
+
 # Aliases
 var drawerController = <StorageDrawers:controller>;
 var sensorHV = <gregtech:gt.metaitem.01:32692>;
@@ -12,6 +14,10 @@ var drawerCompacting = <StorageDrawers:compDrawers>;
 var pistonMV = <gregtech:gt.metaitem.01:32641>;
 var plateSteel = <ore:plateSteel>;
 var plateAluminium = <ore:plateAluminium>;
+var packingTape = <StorageDrawers:tape>;
+var paper = <minecraft:paper>;
+var integratedCircuit13 = <gregtech:gt.integrated_circuit:13>;
+var glue = <liquid:glue>;
 
 # Recipe tweaks
 recipes.remove(drawerController);
@@ -24,6 +30,8 @@ recipes.addShaped(drawerCompacting, [
     [plateSteel, plateSteel, plateSteel],
     [pistonMV, drawerBasic, pistonMV],
     [plateSteel, plateAluminium, plateSteel]]);
+
+Assembler.addRecipe(packingTape, paper * 3, integratedCircuit13, glue * 200, 100, 16);
 
 # Oredictionary Black/Whitelist
 mods.storagedrawers.OreDictionaryBlacklist.add("craftingQuartz");
