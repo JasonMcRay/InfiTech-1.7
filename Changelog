@@ -4,6 +4,16 @@ Quests:
 - Swapped "Material Saviour" and "I Am Bender" quests
 - Separated Pumps, Pistons and Robot Arms from Components quest to optional.
 - Separated Copper Cable creation quests from "Insulation" quest to optional.
+- Titanium quest asks you to pick up the Hot Ingots (thanks @codewarrior0)
+- Tungsten quest does not ask you to pick up the Hot Ingots (thanks @codewarrior0)
+- Tungsten quest and Nichrome Coil quest positions swapped (thanks @codewarrior0)
+- Added TungstenSteel Coils quest, requires TungstenSteel quest (thanks @codewarrior0)
+- Added HSS-G Coils Quest, requires TS Coils quest (thanks @codewarrior0)
+- High End Alloys quest requires HSS-G Coils quest, no longer asks for HSS-G, reduced coin rewards (thanks @codewarrior0)
+- Added quest text describing the variants of HSS (thanks @codewarrior0)
+- Added Naquadah Coils quest between Plasma Generator and Large Plasma Generator (since the latter uses Naquadah Alloy Wires in its Hull). Also requires HSS-G Coils quest. Quest text has tips for acquiring Naquadah. (thanks @codewarrior0)
+- Coils quests have tips on how to reuse old Coils (thanks @codewarrior0)
+- Few extra tweaks to texts regarding temperatures (thanks @codewarrior0)
 
 Mod Updates:
 - Ewy's Workshop -> 1.1.6
