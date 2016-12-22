@@ -418,3 +418,6 @@ Aspects.set(<Railcraft:brick.nether:2>, "terra 1, ordo 1, ignis 2");
 Aspects.set(<Railcraft:brick.nether:3>, "terra 2, ignis 2");
 Aspects.set(<Railcraft:brick.nether:4>, "terra 1, ordo 1, ignis 2");
 Aspects.set(<Railcraft:brick.nether:5>, "terra 1, perditio 1, ignis 2");
+
+// Vanilla
+Aspects.set(<minecraft:flint_and_steel>, "ignis 4, metallum 1");
