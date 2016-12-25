@@ -267,9 +267,9 @@ recipes.addShaped(probeConduit, [
 	[plateSilicon, conduitRedstoneInsulated, plateSilicon]]);
 recipes.remove(itemBuffer);
 recipes.addShaped(itemBuffer, [
-	[itemIngotIron, ingotSteel, itemIngotIron],
-	[ingotSteel, chest, ingotSteel],
-	[itemIngotIron, ingotSteel, itemIngotIron]]);
+	[plateSteel, conduitItem, plateSteel],
+	[conduitItem, chest, conduitItem],
+	[plateSteel, conduitItem, plateSteel]]);
 recipes.remove(paintingMachine);
 recipes.addShaped(paintingMachine, [
 	[netherQuartz, netherQuartz, netherQuartz],
