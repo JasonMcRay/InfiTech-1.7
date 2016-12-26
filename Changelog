@@ -1,3 +1,30 @@
+v3.2.19
+
+Mod Updates:
+- GregTech -> 5.09.27
+
+Changes/Fixes:
+- Packing Tape can be made in assembler
+- Fixed LMB Split Drag
+- Fixed crash with Coord Selector (you must craft new one and toss the old ones away to not crash)
+- Fixed Flint And Steel aspects
+- Fixed Mining Laser recipe
+- Fixed Usability of Single Use batteries
+- Fixed Gas/Diesel generators producing infinite fuel with Universal Fluid Cells
+- Fixed some block tooltips
+- Fixed unlimited EU in Dynamo Hatch
+- Fixed Modular Armor crash
+- Added marble and baselt to ore typefilter
+- Nq Gen MKIII now needs molten enriched nq instead of dusts
+- New usages for Graphite (reflectors, solars, ...)
+- Fixed scanning for oil
+- Reduced damage senses take when harvesting IC2 crops
+- Rebalanced Rocket Fuel
+- Fixed Hydric Sulfide recipe
+- ENF efficiency changes for better coils (-5% EU/t per 900K free heat capacity, One tier overclocking without efficiency loss every 1800K)
+- Memory usage improvements
+- Added December Patrons (thank you very much)
+
 v3.2.18
 
 Quests:
