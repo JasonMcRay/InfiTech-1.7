@@ -16,7 +16,7 @@ Changes/Fixes:
 - Fixed Modular Armor crash
 - Added marble and baselt to ore typefilter
 - Nq Gen MKIII now needs molten enriched nq instead of dusts
-- New usages for Graphite (reflectors, solars, ...)
+- New usages for Graphite (reflectors, ...)
 - Fixed scanning for oil
 - Reduced damage senses take when harvesting IC2 crops
 - Rebalanced Rocket Fuel
