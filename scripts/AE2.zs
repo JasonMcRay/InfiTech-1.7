@@ -433,7 +433,7 @@ recipes.remove(<appliedenergistics2:item.ToolMassCannon>);
 // --- Memory Card
 recipes.remove(<appliedenergistics2:item.ToolMemoryCard>);
 
-// --- Charged Staff
+// --- Charged Stuff
 recipes.remove(<appliedenergistics2:item.ToolChargedStaff>);
 
 // --- Entropy Manipulator
@@ -975,11 +975,11 @@ recipes.addShaped(<appliedenergistics2:item.ToolMemoryCard>, [
 [<ore:plateGold>, <ore:plateRedAlloy>, <ore:plateGold>],
 [null, null, null]]);
 
-// --- Charged Staff
+// --- Charged Stuff
 recipes.addShaped(<appliedenergistics2:item.ToolChargedStaff>, [
-[null, CCertusQuartz, CCertusQuartz],
-[null, <Thaumcraft:FocusShock>, CCertusQuartz],
-[<ore:stickThaumium>, null, null]]);
+[CCertusQuartz, CCertusQuartz, null],
+[CCertusQuartz, <Thaumcraft:FocusShock>, null],
+[null, null, <ore:stickThaumium>]]);
 
 // --- Entropy Manipulator
 recipes.addShaped(<appliedenergistics2:item.ToolEntropyManipulator>, [
