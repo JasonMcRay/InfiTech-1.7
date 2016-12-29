@@ -1,3 +1,12 @@
+v3.2.19.1 hotfix
+
+Mod Updates:
+- GregTech -> 5.09.28pre
+
+Changes/Fixes
+- Fixed Chlorine recipe issues,
+- Fixed NaqReactor not consuming Naq and generating energy for free
+
 v3.2.19
 
 Mod Updates:
@@ -21,7 +30,7 @@ Changes/Fixes:
 - Reduced damage senses take when harvesting IC2 crops
 - Rebalanced Rocket Fuel
 - Fixed Hydric Sulfide recipe
-- ENF efficiency changes for better coils (-5% EU/t per 900K free heat capacity, One tier overclocking without efficiency loss every 1800K)
+- EBF efficiency changes for better coils (-5% EU/t per 900K free heat capacity, One tier overclocking without efficiency loss every 1800K)
 - Memory usage improvements
 - Added December Patrons (thank you very much)
 
