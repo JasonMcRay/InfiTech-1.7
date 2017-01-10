@@ -5355,7 +5355,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "[b]Monazite/Bastansite/Neodymium[/b]\n[i]Height(Y):[/i] 20 - 40\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, MN, MS, AS\n[i]Primary:[/i] Bastnasite (2)\n[i]Secondary:[/i] Bastnasite (2)\n[i]Inbetween:[/i] Monazite (1)\n[i]Around:[/i] Neodymium (2)\n\n[b]Naquadah[/b]\n[i]Height(Y):[/i] 10 - 60\n[i]Mining tool level:[/i] 4\n[i]Dimensions:[/i] AS\n[i]Primary:[/i] Naquadah (4)\n[i]Secondary:[/i] Naquadah (4)\n[i]Inbetween:[/i] Naquadah (4)\n[i]Around:[/i] Naquadah (4)\n\n[b]Nether Quartz[/b]\n[i]Height(Y):[/i] 40 - 80\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] N\n[i]Primary:[/i] Nether Quartz (1)\n[i]Secondary:[/i] Nether Quartz (1)\n[i]Inbetween:[/i] Nether Quartz (1)\n[i]Around:[/i] Nether Quartz (1)",
+            "text": "[b]Monazite/Bastansite/Neodymium[/b]\n[i]Height(Y):[/i] 20 - 40\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] OW, MN, MS, AS\n[i]Primary:[/i] Bastnasite (2)\n[i]Secondary:[/i] Bastnasite (2)\n[i]Inbetween:[/i] Monazite (1)\n[i]Around:[/i] Neodymium (2)\n\n[b]Naquadah[/b]\n[i]Height(Y):[/i] 60 - 120\n[i]Mining tool level:[/i] 4\n[i]Dimensions:[/i] AS\n[i]Primary:[/i] Naquadah (4)\n[i]Secondary:[/i] Naquadah (4)\n[i]Inbetween:[/i] Naquadah (4)\n[i]Around:[/i] Naquadah (4)\n\n[b]Nether Quartz[/b]\n[i]Height(Y):[/i] 40 - 80\n[i]Mining tool level:[/i] 1\n[i]Dimensions:[/i] N\n[i]Primary:[/i] Nether Quartz (1)\n[i]Secondary:[/i] Nether Quartz (1)\n[i]Inbetween:[/i] Nether Quartz (1)\n[i]Around:[/i] Nether Quartz (1)",
             "wrap": 0,
             "size": 0.6999999,
             "color": "FF555555",
