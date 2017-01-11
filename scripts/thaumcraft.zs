@@ -591,7 +591,7 @@ Crucible.addRecipe("GT_TRANSADAMANTIUM", <gregtech:gt.metaitem.01:319>, <ore:dus
 Research.setConcealed("GT_TRANSADAMANTIUM", true);
 game.setLocalization("gt.metaitem.01.12319.name", "Hot Adamantium Ingot");
 // NEI.addEntry(<gregtech:gt.metaitem.01:12319>);
-furnace.removeRecipe(<gregtech:gt.metaitem.01:11319>);
+furnace.remove(<gregtech:gt.metaitem.01:11319>);
 BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:12319>], [<gregtech:gt.metaitem.01:2319>], 2500, 1600, 3598);
 VacuumFreezer.addRecipe(<gregtech:gt.metaitem.01:11319>, <gregtech:gt.metaitem.01:12319>, 800);
 
