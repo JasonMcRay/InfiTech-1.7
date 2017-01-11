@@ -1,3 +1,30 @@
+v3.2.20
+
+New mods:
+- P455w0rdslib
+
+Mod Updates:
+- CoFHCore -> 3.1.3-327
+- OpenComputers -> 1.6.1.11
+- OpenEye -> 0.8
+- Railcraft Cosmetics -> 2.1.1
+- SGCraft -> 1.13.3
+- StorageDrawers -> 1.10.8
+- Thaumcraft Inventory Scan -> 1.0.11
+- Waila Plugins -> 0.2.0-25
+- Wawla -> 1.0.5.120
+- Wireless Crafting Terminal -> 1.8.7.3b
+
+Changes/Fixes:
+- Added new carts
+- Added new tracks
+- Fixed crash on openening stargate GUI
+- Fixed crash on inventory scanning some items without aspects
+- Fixed Adamantium being able to smelt in normal furnace
+- Change naquadah ore gen (y = 60-120)
+- More GT blobs in Asteroid dimension
+- More GT blobs in End dimension
+
 v3.2.19.1 hotfix
 
 Mod Updates:
