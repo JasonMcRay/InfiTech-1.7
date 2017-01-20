@@ -23,7 +23,7 @@ Also please state if you modified the modpack in any way.
 ...
 
 ____
-#### Modpack Version (Do *not* use "latest"):
+#### Modpack Version (Do *not* use word "latest", use the numerical indication of the version):
 
 
 
