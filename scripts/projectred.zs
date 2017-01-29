@@ -173,7 +173,7 @@ var PRBasalt = [basaltCobble, basaltStone, basaltBrick] as IItemStack[];
 var PRMarble = [marbleSmooth, marbleBrick] as IItemStack[];
 
 
-var disabled = [batteryBox, inductiveFurnace, drawplate, blockBreaker, blockPlacer, frameMotor, teleposer, frameLinearActuator, autoCraftingBench, PRBattery, PRSolar, chargingBench, electrotineGenerator, PRJetpack] as IItemStack[];
+var disabled = [projectBench, batteryBox, inductiveFurnace, drawplate, blockBreaker, blockPlacer, frameMotor, teleposer, frameLinearActuator, autoCraftingBench, PRBattery, PRSolar, chargingBench, electrotineGenerator, PRJetpack] as IItemStack[];
 var disabledHidden = [PRPipes, routerUtil, PRModules, powerLine, powerLineFramed] as IItemStack[];
 
 // Oredictionary Stuff
@@ -278,11 +278,6 @@ recipes.remove(ICChip);
 Assembler.addRecipe(ICChip, netherQuartz * 2, diamond, moltenGold * 96, 100, 8);
 Assembler.addRecipe(ICChip, netherQuartz * 2, diamondInd, moltenGold * 96, 100, 8);
 
-recipes.remove(projectBench);
-recipes.addShaped(projectBench, [
-    [stone, stone, stone],
-    [plankWood, FTWorktable, plankWood],
-    [plankWood, recipePlan, plankWood]]);
 recipes.remove(itemImporter);
 recipes.addShaped(itemImporter, [
     [slabWood, pipeObsidian, slabWood],
