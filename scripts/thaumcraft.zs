@@ -917,7 +917,6 @@ Aspects.set(<minecraft:bread>, "messis 4, fames 3");
 recipes.addShapeless(<minecraft:blaze_powder>, [<Thaumcraft:blockCustomPlant:3>]);
 
 // Thaumium
-Compressor.addRecipe(<Thaumcraft:blockCosmeticSolid:4>, <ore:ingotThaumium> * 9);
 recipes.addShaped(<Thaumcraft:ItemResource:2> * 16, [[<ore:crateGtIngotThaumium>, <ore:craftingToolCrowbar>, null],[null, null, null],[null, null, null]]);
 Macerator.addRecipe(<gregtech:gt.metaitem.01:2330> * 9, <ore:blockThaumium>);
 ArcFurnace.addRecipe([<Thaumcraft:ItemResource:2> * 9], <Thaumcraft:blockCosmeticSolid:4>, <liquid:oxygen> * 1000, [10000], 1000, 32);

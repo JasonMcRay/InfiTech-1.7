@@ -38,3 +38,4 @@ Groups.addVariation("concrete", <gregtech:gt.blockconcretes:11>);
 Groups.addVariation("marble", <gregtech:gt.blockstones>);
 Groups.addVariation("marble", <gregtech:gt.blockstones:3>);
 Groups.addVariation("marble", <gregtech:gt.blockstones:7>);
+Groups.addVariation("thaumium", <gregtech:gt.blockmetal7:4>);
