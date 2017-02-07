@@ -18,7 +18,7 @@
         {
           "type": "FeatureText",
           "properties": {
-            "text": "Pyrolyse Oven is fast multiblock machine used for creating:\n- Charcoal and Creosote\n- Heavy Oil\n- Biomass\n\nSpeed can be boosted by providing Nitrogen Gas.",
+            "text": "Pyrolyse Oven is fast multiblock machine used for creating:\n- Charcoal and Creosote*\n- Heavy Oil\n- Biomass\n\n*Speed can be boosted by providing Nitrogen Gas.",
             "wrap": 0,
             "size": 1.0,
             "color": "FF555555",
