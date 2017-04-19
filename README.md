@@ -4,10 +4,12 @@ InfiTech - GregTech focused FTB modpack for Minecraft 1.7
 
 
 * FTB Thread: http://bit.ly/infitech2
+* Our Discord: https://discord.me/jasonmcray
 * FTB Pack code: 17infitech
 
 ## Issue Reporting
 When reporting issues make sure to:
+* Development of Infitech 2 on 1.7.10 has been stopped. We are now fully focusing on 1.10.2 development. For 1.7.10 support feel free to visit our Discord (link above)
 * Provide the best description of problem you are having (include Screenshots if you want)
 * Provide crash report file if you crashed (use pastebin.com)
 * Have FML log ready if that will be needed
