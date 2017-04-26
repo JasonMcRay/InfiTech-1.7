@@ -1,3 +1,19 @@
+v3.2.21 - Last InfiTech 2 Update
+
+Quests:
+- "Better Steam Storage" - Updated information about Railcraft tanks (automatic output and where the tank stores information about the liquid)
+- "Bio Flight" - Quest now detects jetpack that has been worn, used and refilled.
+
+Changes/Fixes:
+- Fixed desh nugget crafting into ingots (crafting table, packager)
+- Naquadria Arrows are craftable
+- Endium Ore is again macerateable
+- Finally fixed naquadah generation in Asteroid Dimension (Workaround)
+- Disabled ProjectRed Bench due to Dupe Exploit
+- Prevented SG chevrons to move (thanks @Nex4rius)
+- Fixed infusion recipes with shards
+- Fixed compressing of Thaumium Blocks
+
 v3.2.20
 
 Quests:
