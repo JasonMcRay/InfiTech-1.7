@@ -66,6 +66,8 @@ var plateTin = <ore:plateTin>;
 var fixtureWhite = <ProjRed|Illumination:projectred.illumination.fixture>;
 var fixtureRed = <ProjRed|Illumination:projectred.illumination.fixture:14>;
 var deshFrameBox = <ore:frameGtDesh>;
+var nuggetDesh = <ore:nuggetDesh>;
+var itemIngotDesh = <gregtech:gt.metaitem.01:11884>;
 var Refinery                = <GalacticraftCore:tile.refinery>;
 var CoalGenerator           = <GalacticraftCore:tile.machine>;
 var Compressor              = <GalacticraftCore:tile.machine:12>;
@@ -976,6 +978,8 @@ VacuumFreezer.addRecipe(<IC2:itemFluidCell>.withTag({Fluid: {Amount: 1000, Fluid
 //Fluid Nitrogen
 VacuumFreezer.addRecipe(<IC2:itemFluidCell>.withTag({Fluid: {Amount: 1000, FluidName: "liquidnitrogen"}}), <gregtech:gt.metaitem.01:30012> * 12, 2400);
 
+// --- Oredictionary Tweaks ---
+
 //Ilmenite to Ore Dict
 oreDict.oreIlmenite.add(<GalacticraftMars:tile.asteroidsBlock:4>);
 
@@ -990,6 +994,14 @@ oreDict.blockDesh.add(<GalacticraftMars:tile.mars:8>);
 
 //Meteoric Iron Block to Ore Dict
 oreDict.blockMeteoricIron.add(<GalacticraftCore:tile.gcBlockCore:12>);
+
+// --- Minor Workarounds ---
+
+// Desh nugget to ingot
+recipes.addShaped(itemIngotDesh, [
+    [nuggetDesh, nuggetDesh, nuggetDesh],
+    [nuggetDesh, nuggetDesh, nuggetDesh],
+    [nuggetDesh, nuggetDesh, nuggetDesh]]);
 
 // --- Quest relevant tweaks ---
 
@@ -1025,3 +1037,4 @@ oreDict.buggy.add(<GalacticraftCore:item.buggy>);
 oreDict.buggy.add(<GalacticraftCore:item.buggy:1>);
 oreDict.buggy.add(<GalacticraftCore:item.buggy:2>);
 oreDict.buggy.add(<GalacticraftCore:item.buggy:3>);
+
