@@ -1,3 +1,5 @@
+## Development of InfiTech 2 for Minecraft 1.7.10 has been officialy stopped. There will be no more pack updates and issues will not be resolved
+
 #### Issue Description:
 Also please state if you modified the modpack in any way.
 
